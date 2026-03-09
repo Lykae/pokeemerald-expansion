@@ -4173,7 +4173,7 @@ static void HandleTurnActionSelectionState(void)
         case STATE_TURN_START_RECORD: // Recorded battle related action on start of every turn.
             RecordedBattle_CopyBattlerMoves(battler);
             gBattleCommunication[battler] = STATE_BEFORE_ACTION_CHOSEN;
-            ComputeBattlerDecisions(battler); // Do AI score computations here so we can use them in AI_TrySwitchOrUseItem
+            //ComputeBattlerDecisions(battler); // Do AI score computations here so we can use them in AI_TrySwitchOrUseItem
             // fallthrough
         case STATE_BEFORE_ACTION_CHOSEN: // Choose an action.
             gBattleStruct->monToSwitchIntoId[battler] = PARTY_SIZE;
@@ -4218,6 +4218,13 @@ static void HandleTurnActionSelectionState(void)
                     }
                     else
                     {
+                        if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
+                        {
+                            u32 playerBattler = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+                        
+                            if (gBattleCommunication[playerBattler] != STATE_WAIT_ACTION_CONFIRMED)
+                                break; // wait until player finished choosing
+                        }
                         gBattleStruct->itemPartyIndex[battler] = PARTY_SIZE;
                         BtlController_EmitChooseAction(battler, B_COMM_TO_CONTROLLER, gChosenActionByBattler[0], gBattleResources->bufferB[0][1] | (gBattleResources->bufferB[0][2] << 8));
                         MarkBattlerForControllerExec(battler);

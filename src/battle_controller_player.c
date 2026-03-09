@@ -55,10 +55,10 @@ static void PlayerHandleTrainerSlide(enum BattlerId battler);
 static void PlayerHandleTrainerSlideBack(enum BattlerId battler);
 static void PlayerHandlePaletteFade(enum BattlerId battler);
 static void PlayerHandlePause(enum BattlerId battler);
-static void PlayerHandleChooseAction(enum BattlerId battler);
+//static void PlayerHandleChooseAction(enum BattlerId battler);
 static void PlayerHandleYesNoBox(enum BattlerId battler);
-static void PlayerHandleChooseItem(enum BattlerId battler);
-static void PlayerHandleChoosePokemon(enum BattlerId battler);
+//static void PlayerHandleChooseItem(enum BattlerId battler);
+//static void PlayerHandleChoosePokemon(enum BattlerId battler);
 static void PlayerHandleCmd23(enum BattlerId battler);
 static void PlayerHandleStatusXor(enum BattlerId battler);
 static void PlayerHandleDMA3Transfer(enum BattlerId battler);
@@ -2022,7 +2022,7 @@ static void HandleChooseActionAfterDma3(enum BattlerId battler)
     }
 }
 
-static void PlayerHandleChooseAction(enum BattlerId battler)
+void PlayerHandleChooseAction(enum BattlerId battler)
 {
     s32 i;
 
@@ -2161,7 +2161,7 @@ void InitMoveSelectionsVarsAndStrings(enum BattlerId battler)
     MoveSelectionDisplayMoveType(battler);
 }
 
-static void PlayerHandleChooseItem(enum BattlerId battler)
+void PlayerHandleChooseItem(enum BattlerId battler)
 {
     s32 i;
 
@@ -2173,7 +2173,7 @@ static void PlayerHandleChooseItem(enum BattlerId battler)
         gBattlePartyCurrentOrder[i] = gBattleResources->bufferA[battler][1 + i];
 }
 
-static void PlayerHandleChoosePokemon(enum BattlerId battler)
+void PlayerHandleChoosePokemon(enum BattlerId battler)
 {
     s32 i;
 

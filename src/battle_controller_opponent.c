@@ -428,12 +428,16 @@ static void OpponentHandleTrainerSlideBack(enum BattlerId battler)
 
 static void OpponentHandleChooseAction(enum BattlerId battler)
 {
-    AI_TrySwitchOrUseItem(battler);
-    BtlController_Complete(battler);
+    PlayerHandleChooseAction(battler);
+    //AI_TrySwitchOrUseItem(battler);
+    //BtlController_Complete(battler);
 }
 
 static void OpponentHandleChooseMove(enum BattlerId battler)
 {
+    PlayerHandleChooseMove(battler);
+    return;
+
     u32 chosenMoveIndex;
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
 
@@ -543,12 +547,16 @@ static void OpponentHandleChooseMove(enum BattlerId battler)
 
 static void OpponentHandleChooseItem(enum BattlerId battler)
 {
-    BtlController_EmitOneReturnValue(battler, B_COMM_TO_ENGINE, gBattleStruct->chosenItem[battler]);
-    BtlController_Complete(battler);
+    PlayerHandleChooseItem(battler);
+    //BtlController_EmitOneReturnValue(battler, B_COMM_TO_ENGINE, gBattleStruct->chosenItem[battler]);
+    //BtlController_Complete(battler);
 }
 
 static void OpponentHandleChoosePokemon(enum BattlerId battler)
 {
+    PlayerHandleChoosePokemon(battler);
+    return;
+
     s32 chosenMonId;
     enum SwitchType switchType = SWITCH_AFTER_KO;
 
