@@ -417,6 +417,9 @@ void HandleChooseMoveAfterDma3(enum BattlerId battler);
 void PlayerHandleChooseAction(enum BattlerId battler);
 void PlayerHandleChooseItem(enum BattlerId battler);
 void PlayerHandleChoosePokemon(enum BattlerId battler);
+void PlayerChooseMoveInBattlePalace(enum BattlerId battler);
+//void WaitForMonSelection(enum BattlerId battler);
+//void HandleChooseActionAfterDma3(enum BattlerId battler)
 
 // recorded player controller
 void SetControllerToRecordedPlayer(enum BattlerId battler);

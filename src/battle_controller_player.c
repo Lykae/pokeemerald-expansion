@@ -1995,7 +1995,7 @@ static void PlayerHandlePause(enum BattlerId battler)
     BtlController_Complete(battler);
 }
 
-static void HandleChooseActionAfterDma3(enum BattlerId battler)
+void HandleChooseActionAfterDma3(enum BattlerId battler)
 {
     if (!IsDma3ManagerBusyWithBgCopy())
     {
@@ -2108,7 +2108,7 @@ void HandleChooseMoveAfterDma3(enum BattlerId battler)
 
 // arenaMindPoints is used here as a placeholder for a timer.
 
-static void PlayerChooseMoveInBattlePalace(enum BattlerId battler)
+void PlayerChooseMoveInBattlePalace(enum BattlerId battler)
 {
     if (--gBattleStruct->arenaMindPoints[battler] == 0)
     {

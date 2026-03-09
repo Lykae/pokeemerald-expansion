@@ -39,6 +39,7 @@
 #include "constants/party_menu.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
+#include "constants/rgb.h"
 #include "trainer_hill.h"
 #include "trainer_tower.h"
 #include "test_runner.h"
@@ -426,197 +427,312 @@ static void OpponentHandleTrainerSlideBack(enum BattlerId battler)
     BtlController_HandleTrainerSlideBack(battler, 35, FALSE);
 }
 
+static void HandleInputChooseAction(enum BattlerId battler)
+{
+    enum Item itemId = gBattleResources->bufferA[battler][2] | (gBattleResources->bufferA[battler][3] << 8);
+
+    DoBounceEffect(battler, BOUNCE_HEALTHBOX, 7, 1);
+    DoBounceEffect(battler, BOUNCE_MON, 7, 1);
+
+    if (JOY_REPEAT(DPAD_ANY) && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)
+        gPlayerDpadHoldFrames++;
+    else
+        gPlayerDpadHoldFrames = 0;
+
+    if (JOY_NEW(A_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        TryHideLastUsedBall();
+
+        switch (gActionSelectionCursor[battler])
+        {
+        case 0: // Top left
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_MOVE, 0);
+            break;
+        case 1: // Top right
+            //BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_ITEM, 0);
+            break;
+        case 2: // Bottom left
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SWITCH, 0);
+            break;
+        case 3: // Bottom right
+            //BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_RUN, 0);
+            break;
+        }
+        BtlController_Complete(battler);
+    }
+    else if (JOY_NEW(DPAD_LEFT))
+    {
+        if (gActionSelectionCursor[battler] & 1) // if is B_ACTION_USE_ITEM or B_ACTION_RUN
+        {
+            PlaySE(SE_SELECT);
+            ActionSelectionDestroyCursorAt(gActionSelectionCursor[battler]);
+            gActionSelectionCursor[battler] ^= 1;
+            ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
+        }
+    }
+    else if (JOY_NEW(DPAD_RIGHT))
+    {
+        if (!(gActionSelectionCursor[battler] & 1)) // if is B_ACTION_USE_MOVE or B_ACTION_SWITCH
+        {
+            PlaySE(SE_SELECT);
+            ActionSelectionDestroyCursorAt(gActionSelectionCursor[battler]);
+            gActionSelectionCursor[battler] ^= 1;
+            ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
+        }
+    }
+else if (JOY_NEW(DPAD_UP))
+{
+    if (gActionSelectionCursor[battler] & 2) // if is B_ACTION_SWITCH or B_ACTION_RUN
+    {
+        PlaySE(SE_SELECT);
+        ActionSelectionDestroyCursorAt(gActionSelectionCursor[battler]);
+        gActionSelectionCursor[battler] ^= 2;
+        ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
+    }
+}
+else if (JOY_NEW(DPAD_DOWN))
+{
+    if (!(gActionSelectionCursor[battler] & 2)) // if is B_ACTION_USE_MOVE or B_ACTION_USE_ITEM
+    {
+        PlaySE(SE_SELECT);
+        ActionSelectionDestroyCursorAt(gActionSelectionCursor[battler]);
+        gActionSelectionCursor[battler] ^= 2;
+        ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
+    }
+}
+    else if (JOY_NEW(B_BUTTON) || gPlayerDpadHoldFrames > 59)
+    {
+        if (IsDoubleBattle()
+         && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT
+         && !(gAbsentBattlerFlags & (1u << GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)))
+         && !(gBattleTypeFlags & BATTLE_TYPE_MULTI))
+        {
+            // Return item to bag if partner had selected one (if consumable).
+            if (gBattleResources->bufferA[battler][1] == B_ACTION_USE_ITEM && GetItemConsumability(itemId))
+            {
+                AddBagItem(itemId, 1);
+            }
+            PlaySE(SE_SELECT);
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_CANCEL_PARTNER, 0);
+            BtlController_Complete(battler);
+        }
+        //else if (B_QUICK_MOVE_CURSOR_TO_RUN)
+        //{
+        //    if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER)) // If wild battle, pressing B moves cursor to "Run".
+        //    {
+        //        PlaySE(SE_SELECT);
+        //        ActionSelectionDestroyCursorAt(gActionSelectionCursor[battler]);
+        //        gActionSelectionCursor[battler] = 3;
+        //        ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
+        //    }
+        //}
+    }
+    else if (JOY_NEW(START_BUTTON))
+    {
+        SwapHpBarsWithHpText();
+    }
+    else if (DEBUG_BATTLE_MENU == TRUE && JOY_NEW(SELECT_BUTTON))
+    {
+        BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_DEBUG, 0);
+        BtlController_Complete(battler);
+    }
+    //else if (B_LAST_USED_BALL == TRUE && B_LAST_USED_BALL_CYCLE == FALSE
+    //         && JOY_NEW(B_LAST_USED_BALL_BUTTON) && CanThrowLastUsedBall())
+    //{
+    //    PlaySE(SE_SELECT);
+    //    TryHideLastUsedBall();
+    //    BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_THROW_BALL, 0);
+    //    BtlController_Complete(battler);
+    //}
+}
+
+void OpponentHandleChooseActionAfterDma3(enum BattlerId battler)
+{
+    if (!IsDma3ManagerBusyWithBgCopy())
+    {
+        gBattle_BG0_X = 0;
+        gBattle_BG0_Y = DISPLAY_HEIGHT;
+        if (gBattleStruct->aiDelayTimer != 0)
+        {
+            gBattleStruct->aiDelayFrames = gMain.vblankCounter1 - gBattleStruct->aiDelayTimer;
+            gBattleStruct->aiDelayTimer = 0;
+            if (DEBUG_AI_DELAY_TIMER)
+            {
+                static const u8 sFramesText[] = _(" frames thinking\n");
+                static const u8 sCyclesText[] = _(" cycles");
+                ConvertIntToDecimalStringN(gDisplayedStringBattle, gBattleStruct->aiDelayFrames, STR_CONV_MODE_RIGHT_ALIGN, 3);
+                u8* end = StringAppend(gDisplayedStringBattle, sFramesText);
+                ConvertIntToDecimalStringN(end, gBattleStruct->aiDelayCycles, STR_CONV_MODE_RIGHT_ALIGN, 8);
+                // Clear old result once read out
+                gBattleStruct->aiDelayCycles = 0;
+                StringAppend(gDisplayedStringBattle, sCyclesText);
+                BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
+            }
+        }
+        gBattlerControllerFuncs[battler] = HandleInputChooseAction;
+    }
+}
+
 static void OpponentHandleChooseAction(enum BattlerId battler)
 {
-    PlayerHandleChooseAction(battler);
-    //AI_TrySwitchOrUseItem(battler);
-    //BtlController_Complete(battler);
+    s32 i;
+
+    gBattlerControllerFuncs[battler] = OpponentHandleChooseActionAfterDma3;
+    BattleTv_ClearExplosionFaintCause();
+    BattlePutTextOnWindow(gText_BattleMenu, B_WIN_ACTION_MENU);
+
+    for (i = 0; i < 4; i++)
+        ActionSelectionDestroyCursorAt(i);
+
+    TryRestoreLastUsedBall();
+    ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
+    PREPARE_MON_NICK_BUFFER(gBattleTextBuff1, battler, gBattlerPartyIndexes[battler]);
+    BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillPkmnDo);
+
+    enum BattlerId partner = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+    if (B_SHOW_PARTNER_TARGET && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && IsBattlerAlive(partner))
+    {
+        StringCopy(gStringVar1, COMPOUND_STRING("Partner will use:\n"));
+        enum Move move = GetBattlerChosenMove(partner);
+        StringAppend(gStringVar1, GetMoveName(move));
+        enum MoveTarget moveTarget = GetBattlerMoveTargetType(partner, move);
+        if (moveTarget == TARGET_SELECTED || moveTarget == TARGET_SMART)
+        {
+            if (gAiBattleData->chosenTarget[partner] == B_POSITION_OPPONENT_LEFT)
+                StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}"));
+            else if (gAiBattleData->chosenTarget[partner] == B_POSITION_OPPONENT_RIGHT)
+                StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-"));
+            else if (gAiBattleData->chosenTarget[partner] == B_POSITION_PLAYER_LEFT)
+                StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}-"));
+            else if (gAiBattleData->chosenTarget[partner] == B_POSITION_PLAYER_RIGHT)
+                StringAppend(gStringVar1, COMPOUND_STRING(" -{DOWN_ARROW}"));
+        }
+        else if (moveTarget == TARGET_USER_AND_ALLY)
+        {
+            StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{DOWN_ARROW}"));
+        }
+        else if (moveTarget == TARGET_BOTH)
+        {
+            StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}{UP_ARROW}"));
+        }
+        else if (moveTarget == TARGET_FOES_AND_ALLY)
+        {
+            StringAppend(gStringVar1, COMPOUND_STRING(" {V_D_ARROW}{UP_ARROW}"));
+        }
+        else if (moveTarget == TARGET_ALL_BATTLERS || moveTarget == TARGET_FIELD)
+        {
+            StringAppend(gStringVar1, COMPOUND_STRING(" {V_D_ARROW}{V_D_ARROW}"));
+        }
+        BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);
+    }
+    else
+    {
+        BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
+    }
 }
 
 static void OpponentHandleChooseMove(enum BattlerId battler)
 {
-    PlayerHandleChooseMove(battler);
-    return;
-
-    u32 chosenMoveIndex;
-    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
-
-    if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_FIRST_BATTLE | BATTLE_TYPE_SAFARI | BATTLE_TYPE_ROAMER)
-     || IsWildMonSmart())
+    if (gBattleTypeFlags & BATTLE_TYPE_PALACE)
     {
-        if (gBattleTypeFlags & BATTLE_TYPE_PALACE)
-        {
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, ChooseMoveAndTargetInBattlePalace(battler));
-        }
-        else if (gAiBattleData->actionFlee)
-        {
-            gAiBattleData->actionFlee = FALSE;
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_RUN, 0);
-        }
-        else if (gAiBattleData->choiceWatch)
-        {
-            gAiBattleData->choiceWatch = FALSE;
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SAFARI_WATCH_CAREFULLY, 0);
-        }
-        else
-        {
-            chosenMoveIndex = gAiBattleData->chosenMoveIndex[battler];
-            gBattlerTarget = gAiBattleData->chosenTarget[battler];
-
-            u32 chosenMove = moveInfo->moves[chosenMoveIndex];
-            enum MoveTarget target = GetBattlerMoveTargetType(battler, chosenMove);
-
-            if (target == TARGET_USER)
-                gBattlerTarget = battler;
-
-            if (target == TARGET_ALLY)
-                gBattlerTarget = BATTLE_PARTNER(battler);
-
-            if (target == TARGET_BOTH)
-            {
-                gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-                if (gAbsentBattlerFlags & (1u << gBattlerTarget))
-                    gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
-            }
-            // If opponent can and should use a gimmick (considering trainer data), do it
-            enum Gimmick usableGimmick = gBattleStruct->gimmick.usableGimmick[battler];
-            if (usableGimmick != GIMMICK_NONE && IsAIUsingGimmick(battler) && !HasTrainerUsedGimmick(battler, usableGimmick))
-            {
-                gBattleStruct->gimmick.toActivate |= 1u << battler;
-                BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, (chosenMoveIndex) | (RET_GIMMICK) | (gBattlerTarget << 8));
-            }
-            else
-            {
-                SetAIUsingGimmick(battler, NO_GIMMICK);
-                BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, (chosenMoveIndex) | (gBattlerTarget << 8));
-            }
-        }
-        BtlController_Complete(battler);
+        gBattleStruct->arenaMindPoints[battler] = 8;
+        gBattlerControllerFuncs[battler] = PlayerChooseMoveInBattlePalace;
     }
-    else // Wild pokemon - use random move
+    else
     {
-        enum Move move;
-        do
-        {
-            chosenMoveIndex = Random() & (MAX_MON_MOVES - 1);
-            move = moveInfo->moves[chosenMoveIndex];
-        } while (move == MOVE_NONE);
+        struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
 
-        enum MoveTarget moveTarget = GetBattlerMoveTargetType(battler, move);
-        if (moveTarget == TARGET_USER || moveTarget == TARGET_USER_OR_ALLY)
-        {
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, (chosenMoveIndex) | (battler << 8));
-        }
-        else if (moveTarget == TARGET_ALLY)
-        {
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, (chosenMoveIndex) | (BATTLE_PARTNER(battler) << 8));
-        }
-        else if (IsDoubleBattle())
-        {
-            enum BattlerId targetBattler;
-            do {
-                enum BattlerPosition pos = RandomPercentage(RNG_WILD_MON_TARGET, 50) ? B_POSITION_PLAYER_LEFT : B_POSITION_PLAYER_RIGHT;
-                targetBattler = GetBattlerAtPosition(pos);
-            } while (!CanTargetBattler(battler, targetBattler, move));
+        InitMoveSelectionsVarsAndStrings(battler);
+        gBattleStruct->gimmick.playerSelect = FALSE;
+        TryToAddMoveInfoWindow();
 
-            // Don't bother to check if they're enemies if the move can't attack ally
-            if (B_WILD_NATURAL_ENEMIES == TRUE && GetBattlerMoveTargetType(battler, move) != TARGET_BOTH)
-            {
-                u32 speciesAttacker, speciesTarget;
-                speciesAttacker = gBattleMons[battler].species;
-                speciesTarget = gBattleMons[GetBattlerAtPosition(BATTLE_PARTNER(battler))].species;
+        AssignUsableZMoves(battler, moveInfo->moves);
+        gBattleStruct->zmove.viable = (gBattleStruct->zmove.possibleZMoves[battler] & (1u << gMoveSelectionCursor[battler])) != 0;
 
-                bool32 isPartnerEnemy = IsNaturalEnemy(speciesAttacker, speciesTarget);
+        if (!IsGimmickTriggerSpriteActive())
+            gBattleStruct->gimmick.triggerSpriteId = 0xFF;
+        else if (!IsGimmickTriggerSpriteMatchingBattler(battler))
+            DestroyGimmickTriggerSprite();
+        if (!(gBattleStruct->gimmick.usableGimmick[battler] == GIMMICK_Z_MOVE && !gBattleStruct->zmove.viable))
+            CreateGimmickTriggerSprite(battler);
 
-                if (isPartnerEnemy && CanTargetBattler(battler, GetBattlerAtPosition(BATTLE_PARTNER(battler)), move))
-                    BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, (chosenMoveIndex) | (GetBattlerAtPosition(BATTLE_PARTNER(battler)) << 8));
-                else
-                    BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, (chosenMoveIndex) | (targetBattler << 8));
-            }
-            else
-            {
-                BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, (chosenMoveIndex) | (targetBattler << 8));
-            }
-        }
-        else
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, (chosenMoveIndex) | (GetBattlerAtPosition(B_POSITION_PLAYER_LEFT) << 8));
-
-        BtlController_Complete(battler);
+        gBattlerControllerFuncs[battler] = HandleChooseMoveAfterDma3;
     }
 }
 
 static void OpponentHandleChooseItem(enum BattlerId battler)
 {
-    PlayerHandleChooseItem(battler);
+    //PlayerHandleChooseItem(battler);
     //BtlController_EmitOneReturnValue(battler, B_COMM_TO_ENGINE, gBattleStruct->chosenItem[battler]);
-    //BtlController_Complete(battler);
+    BtlController_Complete(battler);
+}
+
+static void PrintLinkStandbyMsg(void)
+{
+    if (gBattleTypeFlags & BATTLE_TYPE_LINK)
+    {
+        gBattle_BG0_X = 0;
+        gBattle_BG0_Y = 0;
+        BattlePutTextOnWindow(gText_LinkStandby, B_WIN_MSG);
+    }
+}
+
+static void WaitForMonSelection(enum BattlerId battler)
+{
+    if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
+    {
+        if (gPartyMenuUseExitCallback == TRUE)
+            BtlController_EmitChosenMonReturnValue(battler, B_COMM_TO_ENGINE, gSelectedMonPartyId, gBattlePartyCurrentOrder);
+        else
+            BtlController_EmitChosenMonReturnValue(battler, B_COMM_TO_ENGINE, PARTY_SIZE, NULL);
+
+        if (gBattleResources->bufferA[battler][1] == PARTY_ACTION_SEND_OUT)
+            PrintLinkStandbyMsg();
+
+        BtlController_Complete(battler);
+    }
+}
+
+static void OpenOpponentMenuToChooseMon(enum BattlerId battler)
+{
+    if (!gPaletteFade.active)
+    {
+        u8 caseId;
+
+        gBattlerControllerFuncs[battler] = WaitForMonSelection;
+        caseId = gTasks[gBattleControllerData[battler]].data[0];
+        DestroyTask(gBattleControllerData[battler]);
+        FreeAllWindowBuffers();
+        OpenPartyMenuInBattle(caseId);
+    }
 }
 
 static void OpponentHandleChoosePokemon(enum BattlerId battler)
 {
-    PlayerHandleChoosePokemon(battler);
-    return;
+    s32 i;
 
-    s32 chosenMonId;
-    enum SwitchType switchType = SWITCH_AFTER_KO;
+    for (i = 0; i < ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+        gBattlePartyCurrentOrder[i] = gBattleResources->bufferA[battler][4 + i];
 
-    // Choosing Revival Blessing target
-    if (gBattleResources->bufferA[battler][1] == PARTY_ACTION_CHOOSE_FAINTED_MON)
+    if (gBattleTypeFlags & BATTLE_TYPE_ARENA && gBattleResources->bufferA[battler][1] != PARTY_ACTION_CANT_SWITCH
+        && gBattleResources->bufferA[battler][1] != PARTY_ACTION_CHOOSE_FAINTED_MON
+        && gBattleResources->bufferA[battler][1] != PARTY_ACTION_SEND_MON_TO_BOX)
     {
-        chosenMonId = AI_SelectRevivalBlessingMon(battler);
-        if (chosenMonId == PARTY_SIZE)
-            chosenMonId = GetFirstFaintedPartyIndex(battler);
-        gSelectedMonPartyId = chosenMonId;
-    }
-    // Switching out
-    else if (gBattleStruct->AI_monToSwitchIntoId[battler] == PARTY_SIZE)
-    {
-        if (IsSwitchOutEffect(GetMoveEffect(gCurrentMove)) || gAiLogicData->ejectButtonSwitch || gAiLogicData->ejectPackSwitch)
-            switchType = SWITCH_MID_BATTLE_FORCED;
-
-        // reset the AI data to consider the correct on-field state at time of switch
-        SetBattlerAiData(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT), gAiLogicData);
-        if (IsDoubleBattle())
-            SetBattlerAiData(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT), gAiLogicData);
-
-        chosenMonId = GetMostSuitableMonToSwitchInto(battler, switchType);
-        if (chosenMonId == PARTY_SIZE) // Advanced logic failed so we pick the next available battler
-        {
-            enum BattlerId battler1, battler2;
-            s32 firstId, lastId;
-
-            if (!IsDoubleBattle())
-            {
-                battler2 = battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-            }
-            else
-            {
-                battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-                battler2 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
-            }
-
-            GetAIPartyIndexes(battler, &firstId, &lastId);
-            for (chosenMonId = firstId; chosenMonId < lastId; chosenMonId++)
-            {
-                if (IsValidForBattle(&gEnemyParty[chosenMonId])
-                 && chosenMonId != gBattlerPartyIndexes[battler1]
-                 && chosenMonId != gBattlerPartyIndexes[battler2])
-                    break;
-            }
-        }
-        gBattleStruct->monToSwitchIntoId[battler] = chosenMonId;
+        BtlController_EmitChosenMonReturnValue(battler, B_COMM_TO_ENGINE, gBattlerPartyIndexes[battler] + 1, gBattlePartyCurrentOrder);
+        BtlController_Complete(battler);
     }
     else
     {
-        chosenMonId = gBattleStruct->AI_monToSwitchIntoId[battler];
-        gBattleStruct->AI_monToSwitchIntoId[battler] = PARTY_SIZE;
-        gBattleStruct->monToSwitchIntoId[battler] = chosenMonId;
+        gBattleControllerData[battler] = CreateTask(TaskDummy, 0xFF);
+        gTasks[gBattleControllerData[battler]].data[0] = gBattleResources->bufferA[battler][1];
+        *(&gBattleStruct->battlerPreventingSwitchout) = gBattleResources->bufferA[battler][8];
+        *(&gBattleStruct->prevSelectedPartySlot) = gBattleResources->bufferA[battler][2];
+        *(&gBattleStruct->abilityPreventingSwitchout) = (gBattleResources->bufferA[battler][3] & 0xFF) | (gBattleResources->bufferA[battler][7] << 8);
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
+        gBattlerControllerFuncs[battler] = OpenOpponentMenuToChooseMon;
+        gBattlerInMenuId = battler;
     }
-    #if TESTING
-    TestRunner_Battle_CheckSwitch(battler, chosenMonId);
-    #endif // TESTING
-    BtlController_EmitChosenMonReturnValue(battler, B_COMM_TO_ENGINE, chosenMonId, NULL);
-    BtlController_Complete(battler);
 }
 
 static void OpponentHandleIntroTrainerBallThrow(enum BattlerId battler)

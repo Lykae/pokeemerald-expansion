@@ -4220,10 +4220,19 @@ static void HandleTurnActionSelectionState(void)
                     {
                         if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
                         {
-                            u32 playerBattler = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-                        
-                            if (gBattleCommunication[playerBattler] != STATE_WAIT_ACTION_CONFIRMED)
-                                break; // wait until player finished choosing
+                            u32 playerLeft = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+
+                            if (gBattleCommunication[playerLeft] != STATE_WAIT_ACTION_CONFIRMED)
+                                break;
+
+                            if ((gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
+                            {
+                                u32 playerRight = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                            
+                                if (!(gAbsentBattlerFlags & (1 << playerRight)) &&
+                                    gBattleCommunication[playerRight] != STATE_WAIT_ACTION_CONFIRMED)
+                                    break;
+                            }
                         }
                         gBattleStruct->itemPartyIndex[battler] = PARTY_SIZE;
                         BtlController_EmitChooseAction(battler, B_COMM_TO_CONTROLLER, gChosenActionByBattler[0], gBattleResources->bufferB[0][1] | (gBattleResources->bufferB[0][2] << 8));
