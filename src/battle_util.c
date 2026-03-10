@@ -5632,8 +5632,16 @@ u32 GetBattleMoveTarget(enum Move move, enum MoveTarget moveTarget)
         side = BATTLE_OPPOSITE(GetBattlerSide(gBattlerAttacker));
         if (IsAffectedByFollowMe(gBattlerAttacker, side, move))
             targetBattler = gSideTimers[side].followmeTarget;
-        else
+        else {
             targetBattler = SetRandomTarget(gBattlerAttacker);
+            // Prevent the attacker from targeting itself
+            if (targetBattler == gBattlerAttacker)
+                targetBattler = GetOpposingSideBattler(gBattlerAttacker);
+            
+            // Handle fainted targets in doubles
+            if (IsDoubleBattle() && !IsBattlerAlive(targetBattler))
+                targetBattler ^= BIT_FLANK;
+        }
         break;
     case TARGET_DEPENDS:
     case TARGET_BOTH:
