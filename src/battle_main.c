@@ -4222,7 +4222,8 @@ static void HandleTurnActionSelectionState(void)
                         {
                             u32 playerLeft = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
 
-                            if (gBattleCommunication[playerLeft] != STATE_WAIT_ACTION_CONFIRMED)
+                            if (!(gAbsentBattlerFlags & (1 << playerLeft)) &&
+                                gBattleCommunication[playerLeft] != STATE_WAIT_ACTION_CONFIRMED)
                                 break;
 
                             if ((gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
@@ -4232,6 +4233,20 @@ static void HandleTurnActionSelectionState(void)
                                 if (!(gAbsentBattlerFlags & (1 << playerRight)) &&
                                     gBattleCommunication[playerRight] != STATE_WAIT_ACTION_CONFIRMED)
                                     break;
+
+                                if (GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT) == battler) {
+                                    u32 opponentLeft = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+                                    if (!(gAbsentBattlerFlags & (1 << opponentLeft)) &&
+                                        gBattleCommunication[opponentLeft] != STATE_WAIT_ACTION_CONFIRMED)
+                                        break;
+                                }
+
+                                //if (GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT) == battler) {
+                                //    u32 opponentRight = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                                //    if (!(gAbsentBattlerFlags & (1 << opponentRight)) &&
+                                //        gBattleCommunication[opponentRight] != STATE_WAIT_ACTION_CONFIRMED)
+                                //        break;
+                                //}
                             }
                         }
                         gBattleStruct->itemPartyIndex[battler] = PARTY_SIZE;

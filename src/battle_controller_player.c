@@ -492,21 +492,49 @@ void HandleInputChooseTarget(enum BattlerId battler)
                     gMultiUsePlayerCursor = GetBattlerAtPosition(identities[i]);
                 } while (gMultiUsePlayerCursor >= gBattlersCount);
 
-                switch (GetBattlerPosition(gMultiUsePlayerCursor))
-                {
-                case B_POSITION_PLAYER_LEFT:
-                case B_POSITION_PLAYER_RIGHT:
-                    if (battler != gMultiUsePlayerCursor)
-                        validTarget = TRUE;
-                    break;
-                case B_POSITION_OPPONENT_LEFT:
-                case B_POSITION_OPPONENT_RIGHT:
-                    if (battler != gMultiUsePlayerCursor)
-                        validTarget = TRUE;
-                    break;
-                default:
-                    break;
+                switch (GetBattlerPosition(battler)) {
+                    case B_POSITION_PLAYER_LEFT:
+                    case B_POSITION_PLAYER_RIGHT:
+                        switch (GetBattlerPosition(gMultiUsePlayerCursor))
+                        {
+                            case B_POSITION_PLAYER_LEFT:
+                            case B_POSITION_PLAYER_RIGHT:
+                                if (battler != gMultiUsePlayerCursor)
+                                    validTarget = TRUE;
+                                break;
+                            case B_POSITION_OPPONENT_LEFT:
+                            case B_POSITION_OPPONENT_RIGHT:
+                                validTarget = TRUE;
+                                break;
+                            default:
+                                break;
+                        }
+                        break;
+                    case B_POSITION_OPPONENT_LEFT:
+                    case B_POSITION_OPPONENT_RIGHT:
+                        switch (GetBattlerPosition(gMultiUsePlayerCursor))
+                        {
+                            case B_POSITION_PLAYER_LEFT:
+                            case B_POSITION_PLAYER_RIGHT:
+                                validTarget = TRUE;
+                                break;
+                            case B_POSITION_OPPONENT_LEFT:
+                            case B_POSITION_OPPONENT_RIGHT:
+                                if (battler != gMultiUsePlayerCursor)
+                                    validTarget = TRUE;
+                                break;
+                            default:
+                                break;
+                        }
+                        break;
+                    default:
+                        break;
                 }
+
+                //if (battler != gMultiUsePlayerCursor && IsBattlerAlive(gMultiUsePlayerCursor))
+                //{
+                //    validTarget = TRUE;
+                //}
 
                 if (gAbsentBattlerFlags & (1u << gMultiUsePlayerCursor)
                  || !CanTargetBattler(battler, gMultiUsePlayerCursor, move)
@@ -531,6 +559,7 @@ void HandleInputChooseTarget(enum BattlerId battler)
         }
         else
         {
+            bool32 validTarget = FALSE;
             do
             {
                 enum BattlerPosition currSelIdentity = GetBattlerPosition(gMultiUsePlayerCursor);
@@ -547,30 +576,58 @@ void HandleInputChooseTarget(enum BattlerId battler)
                     gMultiUsePlayerCursor = GetBattlerAtPosition(identities[i]);
                 } while (gMultiUsePlayerCursor == gBattlersCount);
 
-                i = 0;
-                switch (GetBattlerPosition(gMultiUsePlayerCursor))
-                {
-                case B_POSITION_PLAYER_LEFT:
-                case B_POSITION_PLAYER_RIGHT:
-                    if (battler != gMultiUsePlayerCursor)
-                        i++;
-                    break;
-                case B_POSITION_OPPONENT_LEFT:
-                case B_POSITION_OPPONENT_RIGHT:
-                    if (battler != gMultiUsePlayerCursor)
-                        i++;
-                    break;
-                default:
-                    break;
+                switch (GetBattlerPosition(battler)) {
+                    case B_POSITION_PLAYER_LEFT:
+                    case B_POSITION_PLAYER_RIGHT:
+                        switch (GetBattlerPosition(gMultiUsePlayerCursor))
+                        {
+                            case B_POSITION_PLAYER_LEFT:
+                            case B_POSITION_PLAYER_RIGHT:
+                                if (battler != gMultiUsePlayerCursor)
+                                    validTarget = TRUE;
+                                break;
+                            case B_POSITION_OPPONENT_LEFT:
+                            case B_POSITION_OPPONENT_RIGHT:
+                                validTarget = TRUE;
+                                break;
+                            default:
+                                break;
+                        }
+                        break;
+                    case B_POSITION_OPPONENT_LEFT:
+                    case B_POSITION_OPPONENT_RIGHT:
+                        switch (GetBattlerPosition(gMultiUsePlayerCursor))
+                        {
+                            case B_POSITION_PLAYER_LEFT:
+                            case B_POSITION_PLAYER_RIGHT:
+                                validTarget = TRUE;
+                                break;
+                            case B_POSITION_OPPONENT_LEFT:
+                            case B_POSITION_OPPONENT_RIGHT:
+                                if (battler != gMultiUsePlayerCursor)
+                                    validTarget = TRUE;
+                                break;
+                            default:
+                                break;
+                        }
+                        break;
+                    default:
+                        break;
                 }
+                
+                //if (battler != gMultiUsePlayerCursor && IsBattlerAlive(gMultiUsePlayerCursor))
+                //{
+                //    i++;
+                //}
+                
                 if (B_SHOW_EFFECTIVENESS)
                     MoveSelectionDisplayMoveEffectiveness(CheckTypeEffectiveness(battler, gMultiUsePlayerCursor), battler);
 
                 if (gAbsentBattlerFlags & (1u << gMultiUsePlayerCursor)
                  || !CanTargetBattler(battler, gMultiUsePlayerCursor, move)
                  || (moveTarget == TARGET_OPPONENT && GetBattlerSide(gMultiUsePlayerCursor) == GetBattlerSide(battler)))
-                    i = 0;
-            } while (i == 0);
+                    validTarget = FALSE;
+            } while (!validTarget);
         }
 
         gSprites[gBattlerSpriteIds[gMultiUsePlayerCursor]].callback = SpriteCB_ShowAsMoveTarget;
@@ -723,15 +780,18 @@ void HandleInputChooseMove(enum BattlerId battler)
         else if (moveTarget == TARGET_ALLY)
             gMultiUsePlayerCursor = BATTLE_PARTNER(battler);
         else {
-            if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
-            {
-                gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-                if (!IsBattlerAlive(gMultiUsePlayerCursor) && IsDoubleBattle())
-                    gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
-            } else {
-                gMultiUsePlayerCursor = GetOpposingSideBattler(battler);
-            }
+            gMultiUsePlayerCursor = GetOpposingSideBattler(battler);
         }
+        //else {
+        //    if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
+        //    {
+        //        gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+        //        if (!IsBattlerAlive(gMultiUsePlayerCursor) && IsDoubleBattle())
+        //            gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+        //    } else {
+        //        gMultiUsePlayerCursor = GetOpposingSideBattler(battler);
+        //    }
+        //}
 
         if (gBattleResources->bufferA[battler][1]) // a double battle
         {
