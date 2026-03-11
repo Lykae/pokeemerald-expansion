@@ -29,6 +29,9 @@ extern MainCallback gPostMenuFieldCallback;
 extern u8 gSelectedOrderFromParty[MAX_FRONTIER_PARTY_SIZE];
 extern u8 gBattlePartyCurrentOrder[PARTY_SIZE / 2];
 
+extern bool8 enemyPartyEnabled;
+extern enum BattlerId enemyBattler;
+
 extern const struct SpriteSheet gSpriteSheet_HeldItem;
 extern const u16 gHeldItemPalette[];
 
@@ -86,7 +89,7 @@ void ClearSelectedPartyOrder(void);
 void ChooseMonForTradingBoard(u8 menuType, MainCallback callback);
 void ChooseMonForMoveTutor(void);
 void ChooseMonForWirelessMinigame(void);
-void OpenPartyMenuInBattle(u8 partyAction);
+void OpenPartyMenuInBattle(enum BattlerId battler, u8 partyAction);
 void ChooseMonForInBattleItem(void);
 void BufferBattlePartyCurrentOrder(void);
 void BufferBattlePartyCurrentOrderBySide(enum BattlerId battler, u8 flankId);

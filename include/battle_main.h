@@ -117,6 +117,7 @@ void BattleDebug_WonBattle(void);
 s32 Factorial(s32 n);
 
 extern struct MultiPartnerMenuPokemon gMultiPartnerParty[MULTI_PARTY_SIZE];
+extern struct MultiPartnerMenuPokemon gMultiPartnerPartyOpponent[MULTI_PARTY_SIZE];
 
 extern const struct SpriteTemplate gUnusedBattleInitSprite;
 extern const struct OamData gOamData_BattleSpriteOpponentSide;

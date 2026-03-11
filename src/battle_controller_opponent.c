@@ -57,6 +57,11 @@ static void OpponentHandleDrawPartyStatusSummary(enum BattlerId battler);
 static void OpponentHandleEndLinkBattle(enum BattlerId battler);
 static void OpponentBufferRunCommand(enum BattlerId battler);
 
+static void OpponentHandleTwoReturnValues(enum BattlerId battler);
+static void OpponentHandleChosenMonReturnValue(enum BattlerId battler);
+static void OpponentHandleOneReturnValue(enum BattlerId battler);
+static void OpponentHandleOneReturnValue_Duplicate(enum BattlerId battler);
+
 static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(enum BattlerId battler) =
 {
     [CONTROLLER_GETMONDATA]               = BtlController_HandleGetMonData,
@@ -91,10 +96,10 @@ static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(enum Battler
     [CONTROLLER_DMA3TRANSFER]             = BtlController_Empty,
     [CONTROLLER_PLAYBGM]                  = BtlController_Empty,
     [CONTROLLER_32]                       = BtlController_Empty,
-    [CONTROLLER_TWORETURNVALUES]          = BtlController_Empty,
-    [CONTROLLER_CHOSENMONRETURNVALUE]     = BtlController_Empty,
-    [CONTROLLER_ONERETURNVALUE]           = BtlController_Empty,
-    [CONTROLLER_ONERETURNVALUE_DUPLICATE] = BtlController_Empty,
+    [CONTROLLER_TWORETURNVALUES]          = OpponentHandleTwoReturnValues,
+    [CONTROLLER_CHOSENMONRETURNVALUE]     = OpponentHandleChosenMonReturnValue,
+    [CONTROLLER_ONERETURNVALUE]           = OpponentHandleOneReturnValue,
+    [CONTROLLER_ONERETURNVALUE_DUPLICATE] = OpponentHandleOneReturnValue_Duplicate,
     [CONTROLLER_HITANIMATION]             = BtlController_HandleHitAnimation,
     [CONTROLLER_CANTSWITCH]               = BtlController_Empty,
     [CONTROLLER_PLAYSE]                   = BtlController_HandlePlaySE,
@@ -704,7 +709,7 @@ static void OpenOpponentMenuToChooseMon(enum BattlerId battler)
         caseId = gTasks[gBattleControllerData[battler]].data[0];
         DestroyTask(gBattleControllerData[battler]);
         FreeAllWindowBuffers();
-        OpenPartyMenuInBattle(caseId);
+        OpenPartyMenuInBattle(battler, caseId);
     }
 }
 
@@ -733,6 +738,30 @@ static void OpponentHandleChoosePokemon(enum BattlerId battler)
         gBattlerControllerFuncs[battler] = OpenOpponentMenuToChooseMon;
         gBattlerInMenuId = battler;
     }
+}
+
+static void OpponentHandleChosenMonReturnValue(enum BattlerId battler)
+{
+    BtlController_EmitChosenMonReturnValue(battler, B_COMM_TO_ENGINE, 0, NULL);
+    BtlController_Complete(battler);
+}
+
+static void OpponentHandleTwoReturnValues(enum BattlerId battler)
+{
+    BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_MOVE, 0);
+    BtlController_Complete(battler);
+}
+
+static void OpponentHandleOneReturnValue(enum BattlerId battler)
+{
+    BtlController_EmitOneReturnValue(battler, B_COMM_TO_ENGINE, 0);
+    BtlController_Complete(battler);
+}
+
+static void OpponentHandleOneReturnValue_Duplicate(enum BattlerId battler)
+{
+    BtlController_EmitOneReturnValue_Duplicate(battler, B_COMM_TO_ENGINE, 0);
+    BtlController_Complete(battler);
 }
 
 static void OpponentHandleIntroTrainerBallThrow(enum BattlerId battler)

@@ -150,7 +150,9 @@ EWRAM_DATA u8 gBattleTextBuff3[TEXT_BUFF_ARRAY_COUNT + 13] = {0};   // expanded 
 EWRAM_DATA u32 gBattleTypeFlags = 0;
 EWRAM_DATA u8 gBattleEnvironment = 0;
 EWRAM_DATA struct MultiPartnerMenuPokemon gMultiPartnerParty[MULTI_PARTY_SIZE] = {0};
+EWRAM_DATA struct MultiPartnerMenuPokemon gMultiPartnerPartyOpponent[MULTI_PARTY_SIZE] = {0};
 EWRAM_DATA static struct MultiPartnerMenuPokemon *sMultiPartnerPartyBuffer = NULL;
+EWRAM_DATA static struct MultiPartnerMenuPokemon *sMultiPartnerPartyOpponentBuffer = NULL;
 EWRAM_DATA u8 *gBattleAnimBgTileBuffer = NULL;
 EWRAM_DATA u8 *gBattleAnimBgTilemapBuffer = NULL;
 EWRAM_DATA u32 gBattleControllerExecFlags = 0;
@@ -1339,6 +1341,23 @@ static void SetMultiPartnerMenuParty(u8 offset)
 
     for (i = 0; i < MULTI_PARTY_SIZE; i++)
     {
+        gMultiPartnerPartyOpponent[i].species     = GetMonData(&gEnemyParty[offset + i], MON_DATA_SPECIES);
+        gMultiPartnerPartyOpponent[i].heldItem    = GetMonData(&gEnemyParty[offset + i], MON_DATA_HELD_ITEM);
+        GetMonData(&gEnemyParty[offset + i], MON_DATA_NICKNAME, gMultiPartnerPartyOpponent[i].nickname);
+        gMultiPartnerPartyOpponent[i].level       = GetMonData(&gEnemyParty[offset + i], MON_DATA_LEVEL);
+        gMultiPartnerPartyOpponent[i].hp          = GetMonData(&gEnemyParty[offset + i], MON_DATA_HP);
+        gMultiPartnerPartyOpponent[i].maxhp       = GetMonData(&gEnemyParty[offset + i], MON_DATA_MAX_HP);
+        gMultiPartnerPartyOpponent[i].status      = GetMonData(&gEnemyParty[offset + i], MON_DATA_STATUS);
+        gMultiPartnerPartyOpponent[i].personality = GetMonData(&gEnemyParty[offset + i], MON_DATA_PERSONALITY);
+        gMultiPartnerPartyOpponent[i].gender      = GetMonGender(&gEnemyParty[offset + i]);
+        StripExtCtrlCodes(gMultiPartnerPartyOpponent[i].nickname);
+        if (GetMonData(&gEnemyParty[offset + i], MON_DATA_LANGUAGE) != LANGUAGE_JAPANESE)
+            PadNameString(gMultiPartnerPartyOpponent[i].nickname, CHAR_SPACE);
+    }
+    memcpy(sMultiPartnerPartyOpponentBuffer, gMultiPartnerPartyOpponent, sizeof(gMultiPartnerPartyOpponent));
+
+    for (i = 0; i < MULTI_PARTY_SIZE; i++)
+    {
         gMultiPartnerParty[i].species     = GetMonData(&gPlayerParty[offset + i], MON_DATA_SPECIES);
         gMultiPartnerParty[i].heldItem    = GetMonData(&gPlayerParty[offset + i], MON_DATA_HELD_ITEM);
         GetMonData(&gPlayerParty[offset + i], MON_DATA_NICKNAME, gMultiPartnerParty[i].nickname);
@@ -1385,8 +1404,10 @@ static void CB2_PreInitMultiBattle(void)
         if (gReceivedRemoteLinkPlayers && IsLinkTaskFinished())
         {
             sMultiPartnerPartyBuffer = Alloc(sizeof(gMultiPartnerParty));
+            sMultiPartnerPartyOpponentBuffer = Alloc(sizeof(gMultiPartnerPartyOpponent));
             SetMultiPartnerMenuParty(0);
             SendBlock(BitmaskAllOtherLinkPlayers(), sMultiPartnerPartyBuffer, sizeof(gMultiPartnerParty));
+            SendBlock(BitmaskAllOtherLinkPlayers(), sMultiPartnerPartyOpponentBuffer, sizeof(gMultiPartnerPartyOpponent));
             gBattleCommunication[MULTIUSE_STATE]++;
         }
         break;
@@ -1438,6 +1459,7 @@ static void CB2_PreInitMultiBattle(void)
                 gMain.savedCallback = *savedCallback;
                 SetMainCallback2(CB2_InitBattleInternal);
                 FREE_AND_SET_NULL(sMultiPartnerPartyBuffer);
+                FREE_AND_SET_NULL(sMultiPartnerPartyOpponentBuffer);
             }
         }
         else if (gReceivedRemoteLinkPlayers == 0)
@@ -1446,6 +1468,7 @@ static void CB2_PreInitMultiBattle(void)
             gMain.savedCallback = *savedCallback;
             SetMainCallback2(CB2_InitBattleInternal);
             FREE_AND_SET_NULL(sMultiPartnerPartyBuffer);
+            FREE_AND_SET_NULL(sMultiPartnerPartyOpponentBuffer);
         }
         break;
     }
@@ -1467,6 +1490,7 @@ static void CB2_PreInitIngamePlayerPartnerBattle(void)
     {
     case 0:
         sMultiPartnerPartyBuffer = Alloc(sizeof(gMultiPartnerParty));
+        sMultiPartnerPartyOpponentBuffer = Alloc(sizeof(gMultiPartnerPartyOpponent));
         SetMultiPartnerMenuParty(MULTI_PARTY_SIZE);
         gBattleCommunication[MULTIUSE_STATE]++;
         *savedCallback = gMain.savedCallback;
@@ -1484,6 +1508,7 @@ static void CB2_PreInitIngamePlayerPartnerBattle(void)
             gMain.savedCallback = *savedCallback;
             SetMainCallback2(CB2_InitBattleInternal);
             FREE_AND_SET_NULL(sMultiPartnerPartyBuffer);
+            FREE_AND_SET_NULL(sMultiPartnerPartyOpponentBuffer);
         }
         break;
     }

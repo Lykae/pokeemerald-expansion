@@ -1113,6 +1113,11 @@ static inline bool32 IsOnPlayerSide(enum BattlerId battler)
     return GetBattlerSide(battler) == B_SIDE_PLAYER;
 }
 
+static inline bool32 IsOnOpponentSide(enum BattlerId battler)
+{
+    return GetBattlerSide(battler) == B_SIDE_OPPONENT;
+}
+
 static inline bool32 IsBattlerAlly(enum BattlerId battlerAtk, enum BattlerId battlerDef)
 {
     return GetBattlerSide(battlerAtk) == GetBattlerSide(battlerDef);
