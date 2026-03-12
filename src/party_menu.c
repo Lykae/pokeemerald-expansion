@@ -2887,7 +2887,8 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     u8 i, j;
 
     sPartyMenuInternal->numActions = 0;
-    AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
+    if (!enemyPartyEnabled)
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
 
     if (P_PARTY_MOVE_RELEARNER
      && GetMonData(&mons[slotId], MON_DATA_SPECIES)
@@ -3077,9 +3078,11 @@ static void Task_HandleSelectionMenuInput(u8 taskId)
 
 static void CursorCb_Summary(u8 taskId)
 {
-    PlaySE(SE_SELECT);
-    sPartyMenuInternal->exitCallback = CB2_ShowPokemonSummaryScreen;
-    Task_ClosePartyMenu(taskId);
+    if (!enemyPartyEnabled) {
+        PlaySE(SE_SELECT);
+        sPartyMenuInternal->exitCallback = CB2_ShowPokemonSummaryScreen;
+        Task_ClosePartyMenu(taskId);
+    }
 }
 
 static void CB2_ShowPokemonSummaryScreen(void)

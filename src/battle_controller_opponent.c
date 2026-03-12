@@ -446,6 +446,9 @@ static void HandleInputChooseAction(enum BattlerId battler)
 
     if (JOY_NEW(A_BUTTON))
     {
+        // remove bag and run for now
+        if (gActionSelectionCursor[battler] == 1 || gActionSelectionCursor[battler] == 3)
+            return;
         PlaySE(SE_SELECT);
         TryHideLastUsedBall();
 

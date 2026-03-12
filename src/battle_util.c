@@ -2050,22 +2050,26 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, u8 partyIdBattlerOn1, u8 partyI
         }
         return (i == playerId * MULTI_PARTY_SIZE + MULTI_PARTY_SIZE);
     }
-    else if ((gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS) && !isPlayerside)
-    {
-        party = gEnemyParty;
-
-        if (battler == 1)
-            playerId = 0;
-        else
-            playerId = MULTI_PARTY_SIZE;
-
-        for (i = playerId; i < playerId + MULTI_PARTY_SIZE; i++)
-        {
-            if (IsValidForBattle(&party[i]))
-                break;
-        }
-        return (i == playerId + 3);
-    }
+    //else if ((gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS) && !isPlayerside)
+    //{
+    //    party = gEnemyParty;
+    //    
+    //    //for (i = 0; i < PARTY_SIZE; i++)
+    //    //{
+    //    //    if (IsValidForBattle(&party[i])
+    //    //         && i != gBattlerPartyIndexes[battler]
+    //    //         && i != gBattlerPartyIndexes[BATTLE_PARTNER(battler)])
+    //    //        break;
+    //    //}
+//
+    //    return (i == PARTY_SIZE);
+    //    //for (i = playerId; i < playerId + MULTI_PARTY_SIZE; i++)
+    //    //{
+    //    //    if (IsValidForBattle(&party[i]))
+    //    //        break;
+    //    //}
+    //    //return (i == playerId + MULTI_PARTY_SIZE);
+    //}
     else
     {
         if (!isPlayerside)
