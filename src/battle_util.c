@@ -2077,6 +2077,19 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, u8 partyIdBattlerOn1, u8 partyI
             flankId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
             playerId = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
             party = gEnemyParty;
+
+            if (battler == playerId
+                 && (gHitMarker & HITMARKER_FAINTED(flankId))
+                 && (gHitMarker & HITMARKER_FAINTED(playerId)))
+            {   
+                u8 count = 0;
+                for (i = 0; i < PARTY_SIZE; i++)
+                    if (IsValidForBattle(&party[i]))
+                        count++;
+                
+                if (count < 2)
+                    return TRUE;
+            }
         }
         else
         {
@@ -2094,7 +2107,7 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, u8 partyIdBattlerOn1, u8 partyI
         {
             if (IsValidForBattle(&party[i])
              && i != partyIdBattlerOn1 && i != partyIdBattlerOn2
-             && i != gBattleStruct->monToSwitchIntoId[flankId] && i != playerId[gBattleStruct->monToSwitchIntoId])
+             && i != gBattleStruct->monToSwitchIntoId[flankId] && i != gBattleStruct->monToSwitchIntoId[playerId])
                 break;
         }
         return (i == PARTY_SIZE);
