@@ -104,7 +104,7 @@ bool32 BattlerHasAi(enum BattlerId battlerId)
 {
     switch (gBattlerBattleController[battlerId])
     {
-    case BATTLE_CONTROLLER_OPPONENT:
+    //case BATTLE_CONTROLLER_OPPONENT:
     case BATTLE_CONTROLLER_PLAYER_PARTNER:
     case BATTLE_CONTROLLER_SAFARI:
     case BATTLE_CONTROLLER_WALLY:
