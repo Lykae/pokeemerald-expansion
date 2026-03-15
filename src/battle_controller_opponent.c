@@ -61,6 +61,7 @@ static void OpponentHandleTwoReturnValues(enum BattlerId battler);
 static void OpponentHandleChosenMonReturnValue(enum BattlerId battler);
 static void OpponentHandleOneReturnValue(enum BattlerId battler);
 static void OpponentHandleOneReturnValue_Duplicate(enum BattlerId battler);
+static void OpponentHandleDMA3Transfer(enum BattlerId battler);
 
 static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(enum BattlerId battler) =
 {
@@ -93,7 +94,7 @@ static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(enum Battler
     [CONTROLLER_STATUSANIMATION]          = BtlController_HandleStatusAnimation,
     [CONTROLLER_STATUSXOR]                = BtlController_Empty,
     [CONTROLLER_DATATRANSFER]             = BtlController_Empty,
-    [CONTROLLER_DMA3TRANSFER]             = BtlController_Empty,
+    [CONTROLLER_DMA3TRANSFER]             = OpponentHandleDMA3Transfer,
     [CONTROLLER_PLAYBGM]                  = BtlController_Empty,
     [CONTROLLER_32]                       = BtlController_Empty,
     [CONTROLLER_TWORETURNVALUES]          = OpponentHandleTwoReturnValues,
@@ -784,6 +785,33 @@ static void OpponentHandleEndLinkBattle(enum BattlerId battler)
         gMain.inBattle = FALSE;
         gMain.callback1 = gPreBattleCallback1;
         SetMainCallback2(gMain.savedCallback);
+    }
+    BtlController_Complete(battler);
+}
+
+static void OpponentHandleDMA3Transfer(enum BattlerId battler)
+{
+    u32 dstArg = gBattleResources->bufferA[battler][1]
+            | (gBattleResources->bufferA[battler][2] << 8)
+            | (gBattleResources->bufferA[battler][3] << 16)
+            | (gBattleResources->bufferA[battler][4] << 24);
+    u16 sizeArg = gBattleResources->bufferA[battler][5] | (gBattleResources->bufferA[battler][6] << 8);
+
+    const u8 *src = &gBattleResources->bufferA[battler][7];
+    u8 *dst = (u8 *)(dstArg);
+    u32 size = sizeArg;
+
+    while (1)
+    {
+        if (size <= 0x1000)
+        {
+            DmaCopy16(3, src, dst, size);
+            break;
+        }
+        DmaCopy16(3, src, dst, 0x1000);
+        src += 0x1000;
+        dst += 0x1000;
+        size -= 0x1000;
     }
     BtlController_Complete(battler);
 }

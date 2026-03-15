@@ -5402,20 +5402,46 @@ bool32 CanBattlerSwitch(enum BattlerId battler)
     {
         party = gEnemyParty;
 
-        lastMonId = 0;
-        if (GetBattlerPosition(battler) == B_POSITION_OPPONENT_RIGHT)
-            lastMonId = PARTY_SIZE / 2;
+        enum BattlerId partner = BATTLE_PARTNER(battler);
+        u8 count = 0;
 
-        for (i = lastMonId; i < lastMonId + (PARTY_SIZE / 2); i++)
+        for (i = 0; i < PARTY_SIZE; i++)
         {
-            if (GetMonData(&party[i], MON_DATA_SPECIES) != SPECIES_NONE
+            if (GetMonData(&party[i], MON_DATA_HP) != 0
+             && GetMonData(&party[i], MON_DATA_SPECIES) != SPECIES_NONE
              && !GetMonData(&party[i], MON_DATA_IS_EGG)
-             && GetMonData(&party[i], MON_DATA_HP) != 0
-             && gBattlerPartyIndexes[battler] != i)
-                break;
+             && i != gBattlerPartyIndexes[partner] && i != gBattlerPartyIndexes[battler]
+             && i != gBattleStruct->monToSwitchIntoId[partner]
+             && i != gBattleStruct->monToSwitchIntoId[battler])
+                count++;
         }
 
-        ret = (i != lastMonId + (PARTY_SIZE / 2));
+        //if (battler == playerId
+        // && (gHitMarker & HITMARKER_FAINTED(partner))
+        // && (gHitMarker & HITMARKER_FAINTED(battler)))
+        //{
+        //    return (i < 2)
+        //}
+
+        ret = (count > 0);
+
+        //lastMonId = 0;
+        //if (GetBattlerPosition(battler) == B_POSITION_OPPONENT_RIGHT)
+        //    lastMonId = PARTY_SIZE / 2;
+//
+        //enum BattlerId partner = BATTLE_PARTNER(battler);
+//
+        //for (i = lastMonId; i < lastMonId + (PARTY_SIZE / 2); i++)
+        //{
+        //    if (GetMonData(&party[i], MON_DATA_SPECIES) != SPECIES_NONE
+        //     && !GetMonData(&party[i], MON_DATA_IS_EGG)
+        //     && GetMonData(&party[i], MON_DATA_HP) != 0
+        //     && gBattlerPartyIndexes[battler] != i
+        //     && gBattlerPartyIndexes[partner] != i)
+        //        break;
+        //}
+//
+        //ret = (i != lastMonId + (PARTY_SIZE / 2));
     }
     else
     {
@@ -5448,7 +5474,8 @@ bool32 CanBattlerSwitch(enum BattlerId battler)
             if (GetMonData(&party[i], MON_DATA_HP) != 0
              && GetMonData(&party[i], MON_DATA_SPECIES) != SPECIES_NONE
              && !GetMonData(&party[i], MON_DATA_IS_EGG)
-             && i != gBattlerPartyIndexes[battlerIn1] && i != gBattlerPartyIndexes[battlerIn2])
+             && i != gBattlerPartyIndexes[battlerIn1] && i != gBattlerPartyIndexes[battlerIn2]
+             && i != gBattleStruct->monToSwitchIntoId[battlerIn2] && i != gBattleStruct->monToSwitchIntoId[battlerIn1])
                 break;
         }
 
@@ -5484,6 +5511,8 @@ static void ChooseMonToSendOut(enum BattlerId battler, u8 slotId)
     gBattleStruct->monToSwitchIntoId[battler] = PARTY_SIZE;
     gBattleStruct->field_93 &= ~(1u << battler);
 
+    // Fill battlerPartyOrders with the correct current party order
+    //memcpy(gBattleStruct->battlerPartyOrders[battler], gBattlePartyCurrentOrder, sizeof(gBattlePartyCurrentOrder));
     BtlController_EmitChoosePokemon(battler, B_COMM_TO_CONTROLLER, PARTY_ACTION_SEND_OUT, slotId, ABILITY_NONE, 0, gBattleStruct->battlerPartyOrders[battler]);
     MarkBattlerForControllerExec(battler);
 }
@@ -5496,6 +5525,7 @@ static void Cmd_openpartyscreen(void)
     u8 hitmarkerFaintBits = 0;
     enum BattlerId battler = 0;
     const u8 *failInstr = cmd->failInstr;
+    bool8 openedPartyMenu = FALSE;
 
     if (cmd->battler == BS_FAINTED_MULTIPLE_1)
     {
@@ -5514,8 +5544,16 @@ static void Cmd_openpartyscreen(void)
                     }
                     else if (!gSpecialStatuses[battler].faintedHasReplacement)
                     {
-                        ChooseMonToSendOut(battler, PARTY_SIZE);
-                        gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                        if (GetBattlerSide(battler) == B_SIDE_OPPONENT || GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT) {
+                            if (openedPartyMenu == FALSE) {
+                                ChooseMonToSendOut(battler, PARTY_SIZE);
+                                gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                                openedPartyMenu = TRUE;
+                            }
+                        } else {
+                            ChooseMonToSendOut(battler, PARTY_SIZE);
+                            gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                        }
                     }
                 }
                 else
@@ -5547,6 +5585,7 @@ static void Cmd_openpartyscreen(void)
                         continue;
 
                     battler = i;
+
                     if (HasNoMonsToSwitch(battler, PARTY_SIZE, PARTY_SIZE))
                     {
                         gAbsentBattlerFlags |= 1u << battler;
@@ -5583,6 +5622,39 @@ static void Cmd_openpartyscreen(void)
                         BtlController_EmitLinkStandbyMsg(battler, B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
                         MarkBattlerForControllerExec(battler);
                     }
+                }
+            }
+        }
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
+    else if (cmd->battler == BS_FAINTED_MULTIPLE_MIDDLE)
+    {
+        if ((gBattleTypeFlags & BATTLE_TYPE_MULTI))
+        {
+            for (battler = 0; battler < gBattlersCount; battler++)
+            {
+                if (gHitMarker & HITMARKER_FAINTED(battler))
+                {
+                    if (gAbsentBattlerFlags & (1u << battler))
+                        continue;
+                    else if (!gSpecialStatuses[battler].faintedHasReplacement)
+                    {
+                        if (GetBattlerSide(battler) == B_SIDE_OPPONENT || GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT) {
+                            if (openedPartyMenu == FALSE) {
+                                ChooseMonToSendOut(battler, PARTY_SIZE);
+                                gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                                openedPartyMenu = TRUE;
+                            }
+                        } else {
+                            ChooseMonToSendOut(battler, PARTY_SIZE);
+                            gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                        }
+                    }
+                }
+                else
+                {
+                    BtlController_EmitLinkStandbyMsg(battler, B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
+                    MarkBattlerForControllerExec(battler);
                 }
             }
         }
@@ -5625,6 +5697,33 @@ static void Cmd_openpartyscreen(void)
         else
         {
             // Multi battle
+            for (battler = 0; battler < gBattlersCount; battler++)
+            {
+                if (gHitMarker & HITMARKER_FAINTED(battler))
+                {
+                    if (gAbsentBattlerFlags & (1u << battler))
+                        continue;
+                    else if (!gSpecialStatuses[battler].faintedHasReplacement)
+                    {
+                        if (GetBattlerSide(battler) == B_SIDE_OPPONENT || GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT) {
+                            if (openedPartyMenu == FALSE) {
+                                ChooseMonToSendOut(battler, PARTY_SIZE);
+                                gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                                openedPartyMenu = TRUE;
+                            }
+                        } else {
+                            ChooseMonToSendOut(battler, PARTY_SIZE);
+                            gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                        }
+                    }
+                }
+                else
+                {
+                    BtlController_EmitLinkStandbyMsg(battler, B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
+                    MarkBattlerForControllerExec(battler);
+                }
+            }
+            
             gBattlescriptCurrInstr = cmd->nextInstr;
         }
 
@@ -5751,6 +5850,11 @@ static void Cmd_switchhandleorder(void)
         }
         else if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
         {
+            //for (i = 0; i < gBattlersCount; i++)
+            //{
+            //    if (gBattleStruct->monToSwitchIntoId[i] != PARTY_SIZE)
+            //        break;
+            //}
             SwitchPartyOrderInGameMulti(battler, gBattleStruct->monToSwitchIntoId[battler]);
         }
         else

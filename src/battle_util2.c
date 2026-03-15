@@ -108,16 +108,31 @@ void AdjustFriendshipOnBattleFaint(enum BattlerId battler)
 
 void SwitchPartyOrderInGameMulti(enum BattlerId battler, u8 arg1)
 {
-    if (IsOnPlayerSide(battler))
-    {
+    //if (IsOnPlayerSide(battler))
+    //{
+        //s32 i;
+        //for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+        //    gBattlePartyCurrentOrder[i] = *(i + (u8 *)(gBattleStruct->battlerPartyOrders));
+//
+        //SwitchPartyMonSlots(GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[battler]), GetPartyIdFromBattlePartyId(arg1));
+//
+        //for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+        //    *(i + (u8 *)(gBattleStruct->battlerPartyOrders)) = gBattlePartyCurrentOrder[i];
+    //}
+
+    if (IsOnPlayerSide(battler) || GetBattlerSide(battler) == B_SIDE_OPPONENT) {
         s32 i;
-        for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
-            gBattlePartyCurrentOrder[i] = *(i + (u8 *)(gBattleStruct->battlerPartyOrders));
-
-        SwitchPartyMonSlots(GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[battler]), GetPartyIdFromBattlePartyId(arg1));
-
-        for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
-            *(i + (u8 *)(gBattleStruct->battlerPartyOrders)) = gBattlePartyCurrentOrder[i];
+        
+        for (i = 0; i < ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+            gBattlePartyCurrentOrder[i] = gBattleStruct->battlerPartyOrders[battler][i];
+        
+        SwitchPartyMonSlots(
+            GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[battler]),
+            GetPartyIdFromBattlePartyId(arg1)
+        );
+    
+        for (i = 0; i < ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+            gBattleStruct->battlerPartyOrders[battler][i] = gBattlePartyCurrentOrder[i];
     }
 }
 
