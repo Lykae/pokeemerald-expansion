@@ -1962,7 +1962,8 @@ static void fprint_trainers(const char *output_path, FILE *f, struct Parsed *par
         else
         {
             fprintf(f, "// #line AUTO-GENERATED\n");
-            fprintf(f, "        .dynamicLevelRatio = %d,\n", (80 + 5 * trainer->ai_flags_n));
+            fprintf(f, "        .dynamicLevelRatio = %d,\n", (100));
+            //fprintf(f, "        .dynamicLevelRatio = %d,\n", (80 + 5 * trainer->ai_flags_n));
         }
 
         if (trainer->macro_line)
