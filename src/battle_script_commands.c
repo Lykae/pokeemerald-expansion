@@ -5629,7 +5629,7 @@ static void Cmd_openpartyscreen(void)
     }
     else if (cmd->battler == BS_FAINTED_MULTIPLE_MIDDLE)
     {
-        if ((gBattleTypeFlags & BATTLE_TYPE_MULTI))
+        if ((gBattleTypeFlags & BATTLE_TYPE_MULTI) || !(IsDoubleBattle()))
         {
             for (battler = 0; battler < gBattlersCount; battler++)
             {
