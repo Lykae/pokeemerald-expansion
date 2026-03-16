@@ -132,6 +132,7 @@ struct Trainer
     u8 poolPruneIndex;
     u16 overrideTrainer;
     enum TrainerPicID trainerBackPic;
+    u8 dynamicLevelRatio;
 };
 
 struct TrainerClass

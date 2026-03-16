@@ -5526,6 +5526,8 @@ static void Cmd_openpartyscreen(void)
     enum BattlerId battler = 0;
     const u8 *failInstr = cmd->failInstr;
     bool8 openedPartyMenu = FALSE;
+    
+    bool32 isAiBattler = FALSE;
 
     if (cmd->battler == BS_FAINTED_MULTIPLE_1)
     {
@@ -5533,6 +5535,8 @@ static void Cmd_openpartyscreen(void)
         {
             for (battler = 0; battler < gBattlersCount; battler++)
             {
+                
+                isAiBattler = (gBattleTypeFlags & BATTLE_TYPE_HAS_AI || IsWildMonSmart()) && (BattlerHasAi(battler) && !(gBattleTypeFlags & BATTLE_TYPE_PALACE));
                 if (gHitMarker & HITMARKER_FAINTED(battler))
                 {
                     if (HasNoMonsToSwitch(battler, PARTY_SIZE, PARTY_SIZE))
@@ -5544,7 +5548,7 @@ static void Cmd_openpartyscreen(void)
                     }
                     else if (!gSpecialStatuses[battler].faintedHasReplacement)
                     {
-                        if (GetBattlerSide(battler) == B_SIDE_OPPONENT || GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT) {
+                        if (!(isAiBattler)) {
                             if (openedPartyMenu == FALSE) {
                                 ChooseMonToSendOut(battler, PARTY_SIZE);
                                 gSpecialStatuses[battler].faintedHasReplacement = TRUE;
@@ -5572,19 +5576,21 @@ static void Cmd_openpartyscreen(void)
             {
                 if (((1u << i) & hitmarkerFaintBits))
                 {
-                    bool32 skipPartnerCheck = FALSE;
-                    if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS
-                     && GetBattlerSide(i) == B_SIDE_OPPONENT
-                     && TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE)
-                        skipPartnerCheck = TRUE;
-
-                    // In a 1v2 Double Battle if trainer A didn't have any more mons left
-                    // the battler for trainer B wasn't being registered to be send out.
-                    // Likely reason is because hitmarkerFaintBits was not set for battler 1 due to it being missing for a turn or cleared somewhere
-                    if (!skipPartnerCheck && i > 1 && ((1u << BATTLE_PARTNER(i)) & hitmarkerFaintBits))
-                        continue;
+                    //bool32 skipPartnerCheck = FALSE;
+                    //if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS
+                    // && GetBattlerSide(i) == B_SIDE_OPPONENT
+                    // && TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE)
+                    //    skipPartnerCheck = TRUE;
+//
+                    //// In a 1v2 Double Battle if trainer A didn't have any more mons left
+                    //// the battler for trainer B wasn't being registered to be send out.
+                    //// Likely reason is because hitmarkerFaintBits was not set for battler 1 due to it being missing for a turn or cleared somewhere
+                    //if (!skipPartnerCheck && i > 1 && ((1u << BATTLE_PARTNER(i)) & hitmarkerFaintBits))
+                    //    continue;
 
                     battler = i;
+                    
+                    isAiBattler = (gBattleTypeFlags & BATTLE_TYPE_HAS_AI || IsWildMonSmart()) && (BattlerHasAi(battler) && !(gBattleTypeFlags & BATTLE_TYPE_PALACE));
 
                     if (HasNoMonsToSwitch(battler, PARTY_SIZE, PARTY_SIZE))
                     {
@@ -5595,15 +5601,23 @@ static void Cmd_openpartyscreen(void)
                     }
                     else if (!gSpecialStatuses[battler].faintedHasReplacement)
                     {
-                        ChooseMonToSendOut(battler, gBattleStruct->monToSwitchIntoId[BATTLE_PARTNER(battler)]);
-                        gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                        if (!(isAiBattler)) {
+                            if (openedPartyMenu == FALSE) {
+                                ChooseMonToSendOut(battler, PARTY_SIZE);
+                                gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                                openedPartyMenu = TRUE;
+                            }
+                        } else {
+                            ChooseMonToSendOut(battler, PARTY_SIZE);
+                            gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                        }
                     }
-                    else if (battler < 2 || (battler > 1 && !(flags & BATTLE_PARTNER(battler))))
-                    {
-                        BtlController_EmitLinkStandbyMsg(battler, B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
-                        MarkBattlerForControllerExec(battler);
-                        flags |= battler;
-                    }
+                    //else if (battler < 2 || (battler > 1 && !(flags & BATTLE_PARTNER(battler))))
+                    //{
+                    //    BtlController_EmitLinkStandbyMsg(battler, B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
+                    //    MarkBattlerForControllerExec(battler);
+                    //    flags |= battler;
+                    //}
                 }
             }
 
@@ -5629,104 +5643,69 @@ static void Cmd_openpartyscreen(void)
     }
     else if (cmd->battler == BS_FAINTED_MULTIPLE_MIDDLE)
     {
-        if ((gBattleTypeFlags & BATTLE_TYPE_MULTI) || !(IsDoubleBattle()))
+        for (battler = 0; battler < gBattlersCount; battler++)
         {
-            for (battler = 0; battler < gBattlersCount; battler++)
+            
+            isAiBattler = (gBattleTypeFlags & BATTLE_TYPE_HAS_AI || IsWildMonSmart()) && (BattlerHasAi(battler) && !(gBattleTypeFlags & BATTLE_TYPE_PALACE));
+            if (gHitMarker & HITMARKER_FAINTED(battler))
             {
-                if (gHitMarker & HITMARKER_FAINTED(battler))
+                if (gAbsentBattlerFlags & (1u << battler))
+                    continue;
+                else if (!gSpecialStatuses[battler].faintedHasReplacement)
                 {
-                    if (gAbsentBattlerFlags & (1u << battler))
-                        continue;
-                    else if (!gSpecialStatuses[battler].faintedHasReplacement)
-                    {
-                        if (GetBattlerSide(battler) == B_SIDE_OPPONENT || GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT) {
-                            if (openedPartyMenu == FALSE) {
-                                ChooseMonToSendOut(battler, PARTY_SIZE);
-                                gSpecialStatuses[battler].faintedHasReplacement = TRUE;
-                                openedPartyMenu = TRUE;
-                            }
-                        } else {
+                    if (!(isAiBattler)) {
+                        if (openedPartyMenu == FALSE) {
                             ChooseMonToSendOut(battler, PARTY_SIZE);
                             gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                            openedPartyMenu = TRUE;
                         }
+                    } else {
+                        ChooseMonToSendOut(battler, PARTY_SIZE);
+                        gSpecialStatuses[battler].faintedHasReplacement = TRUE;
                     }
                 }
-                else
-                {
-                    BtlController_EmitLinkStandbyMsg(battler, B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
-                    MarkBattlerForControllerExec(battler);
-                }
+            }
+            else
+            {
+                BtlController_EmitLinkStandbyMsg(battler, B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
+                MarkBattlerForControllerExec(battler);
             }
         }
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
     else if (cmd->battler == BS_FAINTED_MULTIPLE_2)
     {
-        if (!(gBattleTypeFlags & BATTLE_TYPE_MULTI))
+        // Multi battle
+        for (battler = 0; battler < gBattlersCount; battler++)
         {
-            if (IsDoubleBattle())
+            
+            isAiBattler = (gBattleTypeFlags & BATTLE_TYPE_HAS_AI || IsWildMonSmart()) && (BattlerHasAi(battler) && !(gBattleTypeFlags & BATTLE_TYPE_PALACE));
+            if (gHitMarker & HITMARKER_FAINTED(battler))
             {
-                hitmarkerFaintBits = gHitMarker >> 28;
-                for (enum BattlerId i = 0; i < MAX_BATTLERS_COUNT / 2; i++)
+                if (gAbsentBattlerFlags & (1u << battler))
+                    continue;
+                else if (!gSpecialStatuses[battler].faintedHasReplacement)
                 {
-                    if ((1 << BATTLE_PARTNER(i)) & hitmarkerFaintBits && (1 << i) & hitmarkerFaintBits)
-                    {
-                        battler = BATTLE_PARTNER(i);
-                        if (HasNoMonsToSwitch(battler, PARTY_SIZE, PARTY_SIZE))
-                        {
-                            gAbsentBattlerFlags |= (1u << battler);
-                            gHitMarker &= ~(HITMARKER_FAINTED(battler));
-                            BtlController_EmitCantSwitch(battler, B_COMM_TO_CONTROLLER);
-                            MarkBattlerForControllerExec(battler);
-                        }
-                        else if (!gSpecialStatuses[battler].faintedHasReplacement)
-                        {
-                            ChooseMonToSendOut(battler, gBattleStruct->monToSwitchIntoId[i]);
+                    if (!(isAiBattler)) {
+                        if (openedPartyMenu == FALSE) {
+                            ChooseMonToSendOut(battler, PARTY_SIZE);
                             gSpecialStatuses[battler].faintedHasReplacement = TRUE;
+                            openedPartyMenu = TRUE;
                         }
+                    } else {
+                        ChooseMonToSendOut(battler, PARTY_SIZE);
+                        gSpecialStatuses[battler].faintedHasReplacement = TRUE;
                     }
                 }
-                gBattlescriptCurrInstr = cmd->nextInstr;
             }
             else
             {
-                // Not multi or double battle
-                gBattlescriptCurrInstr = cmd->nextInstr;
+                BtlController_EmitLinkStandbyMsg(battler, B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
+                MarkBattlerForControllerExec(battler);
             }
         }
-        else
-        {
-            // Multi battle
-            for (battler = 0; battler < gBattlersCount; battler++)
-            {
-                if (gHitMarker & HITMARKER_FAINTED(battler))
-                {
-                    if (gAbsentBattlerFlags & (1u << battler))
-                        continue;
-                    else if (!gSpecialStatuses[battler].faintedHasReplacement)
-                    {
-                        if (GetBattlerSide(battler) == B_SIDE_OPPONENT || GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT) {
-                            if (openedPartyMenu == FALSE) {
-                                ChooseMonToSendOut(battler, PARTY_SIZE);
-                                gSpecialStatuses[battler].faintedHasReplacement = TRUE;
-                                openedPartyMenu = TRUE;
-                            }
-                        } else {
-                            ChooseMonToSendOut(battler, PARTY_SIZE);
-                            gSpecialStatuses[battler].faintedHasReplacement = TRUE;
-                        }
-                    }
-                }
-                else
-                {
-                    BtlController_EmitLinkStandbyMsg(battler, B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
-                    MarkBattlerForControllerExec(battler);
-                }
-            }
-            
-            gBattlescriptCurrInstr = cmd->nextInstr;
-        }
-
+        
+        gBattlescriptCurrInstr = cmd->nextInstr;
         hitmarkerFaintBits = gHitMarker >> 28;
 
         gBattlerFainted = 0;

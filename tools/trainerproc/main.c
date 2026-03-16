@@ -160,6 +160,9 @@ struct Trainer
 
     struct String back_pic;
     int back_pic_line;
+
+    int dynamicLevelRatio;
+    int dynamicLevelRatio_line;
 };
 
 static bool is_empty_string(struct String s)
@@ -1312,6 +1315,14 @@ static bool parse_trainer(struct Parser *p, const struct Parsed *parsed, struct 
             trainer->back_pic_line = value.location.line;
             trainer->back_pic = token_string(&value);
         }
+        else if (is_literal_token(&key, "Dynamic Level Ratio"))
+        {
+            if (trainer->dynamicLevelRatio_line)
+                any_error = !set_show_parse_error(p, key.location, "duplicate 'Dynamic Level Ratio'");
+            trainer->dynamicLevelRatio_line = value.location.line;
+            if (!token_int(p, &value, &trainer->dynamicLevelRatio))
+                any_error = !show_parse_error(p);
+        }
         else
         {
             any_error = !set_show_parse_error(p, key.location, "expected one of 'Name', 'Class', 'Pic', 'Gender', 'Music', 'Items', 'Battle Type', 'Difficulty', 'Party Size', 'Pool Rules', 'Pool Pick Functions', 'Pool Prune' or 'AI'");
@@ -1941,6 +1952,17 @@ static void fprint_trainers(const char *output_path, FILE *f, struct Parsed *par
             fprintf(f, "        .trainerBackPic = ");
             fprint_constant(f, "TRAINER_PIC_FRONT", trainer->pic);
             fprintf(f, ",\n");
+        }
+
+        if (trainer->dynamicLevelRatio_line > 0)
+        {
+            fprintf(f, "#line %d\n", trainer->dynamicLevelRatio_line);
+            fprintf(f, "        .dynamicLevelRatio = %d,\n", trainer->dynamicLevelRatio);
+        }
+        else
+        {
+            fprintf(f, "// #line AUTO-GENERATED\n");
+            fprintf(f, "        .dynamicLevelRatio = %d,\n", (80 + 5 * trainer->ai_flags_n));
         }
 
         if (trainer->macro_line)

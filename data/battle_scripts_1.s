@@ -4117,6 +4117,8 @@ BattleScript_HandleFaintedMonMultipleStart::
 	switchhandleorder BS_FAINTED, 0
 BattleScript_HandleFaintedMonMultipleMiddle::
 	switchhandleorder BS_FAINTED, 0
+	openpartyscreen BS_FAINTED_MULTIPLE_MIDDLE, BattleScript_HandleFaintedMonMultipleMiddle
+	switchhandleorder BS_FAINTED, 0
 	openpartyscreen BS_FAINTED_MULTIPLE_2, BattleScript_HandleFaintedMonMultipleEnd
 	switchhandleorder BS_FAINTED, 0
 BattleScript_HandleFaintedMonLoop::
