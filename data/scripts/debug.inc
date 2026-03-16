@@ -203,6 +203,16 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
+	giveitem ITEM_RARE_CANDY
+	giveitem ITEM_EXP_CANDY_XL
+	giveitem ITEM_MAX_REPEL
+	giveitem ITEM_PROTEIN
+	giveitem ITEM_IRON
+	giveitem ITEM_CALCIUM
+	giveitem ITEM_ZINC
+	giveitem ITEM_CARBOS
+	giveitem ITEM_ESCAPE_ROPE
+	giveitem ITEM_MASTER_BALL 999
 	release
 	end
 

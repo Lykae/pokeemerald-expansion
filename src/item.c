@@ -401,7 +401,7 @@ static bool32 NONNULL BagPocket_RemoveItem(struct BagPocket *pocket, enum Item i
 
 bool32 RemoveBagItem(enum Item itemId, u16 count)
 {
-    if (GetItemPocket(itemId) >= POCKETS_COUNT || itemId == ITEM_NONE)
+    if (GetItemPocket(itemId) >= POCKETS_COUNT || itemId == ITEM_NONE || GetItemPocket(gSpecialVar_ItemId) == POCKET_KEY_ITEMS)
         return FALSE;
 
     // check Battle Pyramid Bag
