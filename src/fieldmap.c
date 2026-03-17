@@ -1076,25 +1076,25 @@ static void LoadTilesetPalette(struct Tileset const *tileset, u16 destOffset, u1
         {
             switch(season){
                 case SEASON_SPRING:
-                    LoadCompressedPalette((const u32 *)tileset->palettes, destOffset, size);
+                    LoadPalette((const u32 *)tileset->palettes, destOffset, size);
                 break;
                 case SEASON_SUMMER:
                     if(tileset->palettes_summer != NULL)
-                        LoadCompressedPalette((const u32 *)tileset->palettes_summer, destOffset, size);
+                        LoadPalette((const u32 *)tileset->palettes_summer, destOffset, size);
                     else
-                        LoadCompressedPalette((const u32 *)tileset->palettes, destOffset, size);
+                        LoadPalette((const u32 *)tileset->palettes, destOffset, size);
                 break;
                 case SEASON_AUTUMN:
                     if(tileset->palettes_autumn != NULL)
-                        LoadCompressedPalette((const u32 *)tileset->palettes_autumn, destOffset, size);
+                        LoadPalette((const u32 *)tileset->palettes_autumn, destOffset, size);
                     else
-                        LoadCompressedPalette((const u32 *)tileset->palettes, destOffset, size);
+                        LoadPalette((const u32 *)tileset->palettes, destOffset, size);
                 break;
                 case SEASON_WINTER:
                     if(tileset->palettes_winter != NULL)
-                        LoadCompressedPalette((const u32 *)tileset->palettes_winter, destOffset, size);
+                        LoadPalette((const u32 *)tileset->palettes_winter, destOffset, size);
                     else
-                        LoadCompressedPalette((const u32 *)tileset->palettes, destOffset, size);
+                        LoadPalette((const u32 *)tileset->palettes, destOffset, size);
                 break;
             }
             ApplyGlobalTintToPaletteEntries(destOffset, size >> 1);

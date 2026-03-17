@@ -15,6 +15,7 @@
 #include "window.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
+#include "event_data.h"
 
 #define tMenuSelection data[0]
 #define tTextSpeed data[1]
@@ -23,15 +24,17 @@
 #define tSound data[4]
 #define tButtonMode data[5]
 #define tWindowFrameType data[6]
+#define tSeason data[7]
 
 enum
 {
-    MENUITEM_TEXTSPEED,
+    //MENUITEM_TEXTSPEED,
     MENUITEM_BATTLESCENE,
     MENUITEM_BATTLESTYLE,
     MENUITEM_SOUND,
     MENUITEM_BUTTONMODE,
     MENUITEM_FRAMETYPE,
+    MENUITEM_SEASON,
     MENUITEM_CANCEL,
     MENUITEM_COUNT,
 };
@@ -42,20 +45,21 @@ enum
     WIN_OPTIONS
 };
 
-#define YPOS_TEXTSPEED    (MENUITEM_TEXTSPEED * 16)
+//#define YPOS_TEXTSPEED    (MENUITEM_TEXTSPEED * 16)
 #define YPOS_BATTLESCENE  (MENUITEM_BATTLESCENE * 16)
 #define YPOS_BATTLESTYLE  (MENUITEM_BATTLESTYLE * 16)
 #define YPOS_SOUND        (MENUITEM_SOUND * 16)
 #define YPOS_BUTTONMODE   (MENUITEM_BUTTONMODE * 16)
 #define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * 16)
+#define YPOS_SEASON       (MENUITEM_SEASON * 16)
 
 static void Task_OptionMenuFadeIn(u8 taskId);
 static void Task_OptionMenuProcessInput(u8 taskId);
 static void Task_OptionMenuSave(u8 taskId);
 static void Task_OptionMenuFadeOut(u8 taskId);
 static void HighlightOptionMenuItem(u8 selection);
-static u8 TextSpeed_ProcessInput(u8 selection);
-static void TextSpeed_DrawChoices(u8 selection);
+//static u8 TextSpeed_ProcessInput(u8 selection);
+//static void TextSpeed_DrawChoices(u8 selection);
 static u8 BattleScene_ProcessInput(u8 selection);
 static void BattleScene_DrawChoices(u8 selection);
 static u8 BattleStyle_ProcessInput(u8 selection);
@@ -66,6 +70,8 @@ static u8 FrameType_ProcessInput(u8 selection);
 static void FrameType_DrawChoices(u8 selection);
 static u8 ButtonMode_ProcessInput(u8 selection);
 static void ButtonMode_DrawChoices(u8 selection);
+static u8 Season_ProcessInput(u8 selection);
+static void Season_DrawChoices(u8 selection);
 static void DrawHeaderText(void);
 static void DrawOptionMenuTexts(void);
 static void DrawBgWindowFrames(void);
@@ -76,6 +82,10 @@ static const u8 gText_Option[]             = _("OPTION");
 static const u8 gText_TextSpeedSlow[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SLOW");
 static const u8 gText_TextSpeedMid[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MID");
 static const u8 gText_TextSpeedFast[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FAST");
+static const u8 gText_SeasonSpring[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SP");
+static const u8 gText_SeasonSummer[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SU");
+static const u8 gText_SeasonFall[]         = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FA");
+static const u8 gText_SeasonWinter[]        = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}WI");
 static const u8 gText_BattleSceneOn[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}ON");
 static const u8 gText_BattleSceneOff[]     = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF");
 static const u8 gText_BattleStyleShift[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SHIFT");
@@ -94,12 +104,13 @@ static const u8 sEqualSignGfx[] = INCBIN_U8("graphics/interface/option_menu_equa
 
 static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 {
-    [MENUITEM_TEXTSPEED]   = COMPOUND_STRING("TEXT SPEED"),
+    //[MENUITEM_TEXTSPEED]   = COMPOUND_STRING("TEXT SPEED"),
     [MENUITEM_BATTLESCENE] = COMPOUND_STRING("BATTLE SCENE"),
     [MENUITEM_BATTLESTYLE] = COMPOUND_STRING("BATTLE STYLE"),
     [MENUITEM_SOUND]       = COMPOUND_STRING("SOUND"),
     [MENUITEM_BUTTONMODE]  = COMPOUND_STRING("BUTTON MODE"),
     [MENUITEM_FRAMETYPE]   = COMPOUND_STRING("FRAME"),
+    [MENUITEM_SEASON]      = COMPOUND_STRING("SEASON"),
     [MENUITEM_CANCEL]      = COMPOUND_STRING("CANCEL"),
 };
 
@@ -167,6 +178,11 @@ static void VBlankCB(void)
 
 void CB2_InitOptionMenu(void)
 {
+    if (gSaveBlock2Ptr->optionsSeason > SEASON_WINTER) // invalid value
+    {
+        gSaveBlock2Ptr->optionsSeason = SEASON_SPRING;
+        VarSet(VAR_CURRENT_SEASON, SEASON_SPRING);
+    }
     switch (gMain.state)
     {
     default:
@@ -244,19 +260,21 @@ void CB2_InitOptionMenu(void)
         u8 taskId = CreateTask(Task_OptionMenuFadeIn, 0);
 
         gTasks[taskId].tMenuSelection = 0;
-        gTasks[taskId].tTextSpeed = gSaveBlock2Ptr->optionsTextSpeed;
+        //gTasks[taskId].tTextSpeed = gSaveBlock2Ptr->optionsTextSpeed;
         gTasks[taskId].tBattleSceneOff = gSaveBlock2Ptr->optionsBattleSceneOff;
         gTasks[taskId].tBattleStyle = gSaveBlock2Ptr->optionsBattleStyle;
         gTasks[taskId].tSound = gSaveBlock2Ptr->optionsSound;
         gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
         gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
+        gTasks[taskId].tSeason = gSaveBlock2Ptr->optionsSeason;
 
-        TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
+        //TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
         BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
         BattleStyle_DrawChoices(gTasks[taskId].tBattleStyle);
         Sound_DrawChoices(gTasks[taskId].tSound);
         ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
         FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
+        Season_DrawChoices(gTasks[taskId].tSeason);
         HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
 
         CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
@@ -310,13 +328,13 @@ static void Task_OptionMenuProcessInput(u8 taskId)
 
         switch (gTasks[taskId].tMenuSelection)
         {
-        case MENUITEM_TEXTSPEED:
-            previousOption = gTasks[taskId].tTextSpeed;
-            gTasks[taskId].tTextSpeed = TextSpeed_ProcessInput(gTasks[taskId].tTextSpeed);
-
-            if (previousOption != gTasks[taskId].tTextSpeed)
-                TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
-            break;
+        //case MENUITEM_TEXTSPEED:
+        //    previousOption = gTasks[taskId].tTextSpeed;
+        //    gTasks[taskId].tTextSpeed = TextSpeed_ProcessInput(gTasks[taskId].tTextSpeed);
+//
+        //    if (previousOption != gTasks[taskId].tTextSpeed)
+        //        TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
+        //    break;
         case MENUITEM_BATTLESCENE:
             previousOption = gTasks[taskId].tBattleSceneOff;
             gTasks[taskId].tBattleSceneOff = BattleScene_ProcessInput(gTasks[taskId].tBattleSceneOff);
@@ -352,6 +370,13 @@ static void Task_OptionMenuProcessInput(u8 taskId)
             if (previousOption != gTasks[taskId].tWindowFrameType)
                 FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
             break;
+        case MENUITEM_SEASON:
+            previousOption = gTasks[taskId].tSeason;
+            gTasks[taskId].tSeason = Season_ProcessInput(gTasks[taskId].tSeason);
+
+            if (previousOption != gTasks[taskId].tSeason)
+                Season_DrawChoices(gTasks[taskId].tSeason);
+            break;
         default:
             return;
         }
@@ -366,12 +391,14 @@ static void Task_OptionMenuProcessInput(u8 taskId)
 
 static void Task_OptionMenuSave(u8 taskId)
 {
-    gSaveBlock2Ptr->optionsTextSpeed = gTasks[taskId].tTextSpeed;
+    //gSaveBlock2Ptr->optionsTextSpeed = gTasks[taskId].tTextSpeed;
     gSaveBlock2Ptr->optionsBattleSceneOff = gTasks[taskId].tBattleSceneOff;
     gSaveBlock2Ptr->optionsBattleStyle = gTasks[taskId].tBattleStyle;
     gSaveBlock2Ptr->optionsSound = gTasks[taskId].tSound;
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
+    gSaveBlock2Ptr->optionsSeason = gTasks[taskId].tSeason;
+    VarSet(VAR_CURRENT_SEASON, gSaveBlock2Ptr->optionsSeason);
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -411,50 +438,117 @@ static void DrawOptionMenuChoice(const u8 *text, u8 x, u8 y, u8 style)
     AddTextPrinterParameterized(WIN_OPTIONS, FONT_NORMAL, dst, x, y + 1, TEXT_SKIP_DRAW, NULL);
 }
 
-static u8 TextSpeed_ProcessInput(u8 selection)
+//static u8 TextSpeed_ProcessInput(u8 selection)
+//{
+//    if (JOY_NEW(DPAD_RIGHT))
+//    {
+//        if (selection <= 1)
+//            selection++;
+//        else
+//            selection = 0;
+//
+//        sArrowPressed = TRUE;
+//    }
+//    if (JOY_NEW(DPAD_LEFT))
+//    {
+//        if (selection != 0)
+//            selection--;
+//        else
+//            selection = 2;
+//
+//        sArrowPressed = TRUE;
+//    }
+//    return selection;
+//}
+
+//static void TextSpeed_DrawChoices(u8 selection)
+//{
+//    u8 styles[3];
+//    s32 widthSlow, widthMid, widthFast, xMid;
+//
+//    styles[0] = 0;
+//    styles[1] = 0;
+//    styles[2] = 0;
+//    styles[selection] = 1;
+//
+//    DrawOptionMenuChoice(gText_TextSpeedSlow, 104, YPOS_TEXTSPEED, styles[0]);
+//
+//    widthSlow = GetStringWidth(FONT_NORMAL, gText_TextSpeedSlow, 0);
+//    widthMid = GetStringWidth(FONT_NORMAL, gText_TextSpeedMid, 0);
+//    widthFast = GetStringWidth(FONT_NORMAL, gText_TextSpeedFast, 0);
+//
+//    widthMid -= 94;
+//    xMid = (widthSlow - widthMid - widthFast) / 2 + 104;
+//    DrawOptionMenuChoice(gText_TextSpeedMid, xMid, YPOS_TEXTSPEED, styles[1]);
+//
+//    DrawOptionMenuChoice(gText_TextSpeedFast, GetStringRightAlignXOffset(FONT_NORMAL, gText_TextSpeedFast, 198), YPOS_TEXTSPEED, styles[2]);
+//}
+
+static u8 Season_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
-        if (selection <= 1)
+        if (selection < 3)   // 0,1,2 → increment
             selection++;
-        else
+        else                 // 3 → wrap around to 0
             selection = 0;
 
         sArrowPressed = TRUE;
     }
+
     if (JOY_NEW(DPAD_LEFT))
     {
-        if (selection != 0)
+        if (selection > 0)   // 1,2,3 → decrement
             selection--;
-        else
-            selection = 2;
+        else                 // 0 → wrap around to 3
+            selection = 3;
 
         sArrowPressed = TRUE;
     }
+
     return selection;
 }
 
-static void TextSpeed_DrawChoices(u8 selection)
+static void Season_DrawChoices(u8 selection)
 {
-    u8 styles[3];
-    s32 widthSlow, widthMid, widthFast, xMid;
+    u8 styles[4];
+    s32 x[4];
+    s32 widths[4];
+    const u8 *const names[] =
+    {
+        gText_SeasonSpring,
+        gText_SeasonSummer,
+        gText_SeasonFall,
+        gText_SeasonWinter,
+    };
 
-    styles[0] = 0;
-    styles[1] = 0;
-    styles[2] = 0;
+    // Reset styles
+    for (int i = 0; i < 4; i++)
+        styles[i] = 0;
+
     styles[selection] = 1;
 
-    DrawOptionMenuChoice(gText_TextSpeedSlow, 104, YPOS_TEXTSPEED, styles[0]);
+    // Get widths
+    for (int i = 0; i < 4; i++)
+        widths[i] = GetStringWidth(FONT_NORMAL, names[i], 0);
 
-    widthSlow = GetStringWidth(FONT_NORMAL, gText_TextSpeedSlow, 0);
-    widthMid = GetStringWidth(FONT_NORMAL, gText_TextSpeedMid, 0);
-    widthFast = GetStringWidth(FONT_NORMAL, gText_TextSpeedFast, 0);
+    // Layout: evenly space across the row
+    // Left anchor same as TextSpeed (104), right edge ~198
+    s32 startX = 104;
+    s32 endX = 198;
+    s32 totalWidth = widths[0] + widths[1] + widths[2] + widths[3];
+    s32 spacing = (endX - startX - totalWidth) / 3;
 
-    widthMid -= 94;
-    xMid = (widthSlow - widthMid - widthFast) / 2 + 104;
-    DrawOptionMenuChoice(gText_TextSpeedMid, xMid, YPOS_TEXTSPEED, styles[1]);
+    x[0] = startX;
+    x[1] = x[0] + widths[0] + spacing;
+    x[2] = x[1] + widths[1] + spacing;
+    x[3] = x[2] + widths[2] + spacing;
 
-    DrawOptionMenuChoice(gText_TextSpeedFast, GetStringRightAlignXOffset(FONT_NORMAL, gText_TextSpeedFast, 198), YPOS_TEXTSPEED, styles[2]);
+    // Draw all four
+    for (int i = 0; i < 4; i++)
+    {
+        DrawOptionMenuChoice(names[i], x[i], YPOS_SEASON, styles[i]);
+    }
 }
 
 static u8 BattleScene_ProcessInput(u8 selection)
