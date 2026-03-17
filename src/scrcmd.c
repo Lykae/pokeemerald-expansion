@@ -2363,14 +2363,15 @@ bool8 ScrCmd_checkfieldmove(struct ScriptContext *ctx)
                     return FALSE; // Continue script execution
                 }
                 // Found a Pokémon but don't have the badge, so fail completely.
-                gSpecialVar_Result = PARTY_SIZE;
-                return FALSE;
+                //gSpecialVar_Result = PARTY_SIZE;
+                //return FALSE;
             }
         }
     }
 
     // 2. If no Pokémon is found, check for the key item.
-    if (keyItem != ITEM_NONE && CheckBagHasItem(keyItem, 1))
+    //if (keyItem != ITEM_NONE && CheckBagHasItem(keyItem, 1))
+    if (keyItem != ITEM_NONE)
     {
         // Key item found. Check for the badge flag.
         if (IsFieldMoveUnlocked(fieldMove))
