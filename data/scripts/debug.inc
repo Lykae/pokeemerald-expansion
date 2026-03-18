@@ -206,12 +206,14 @@ Debug_EventScript_Script_1::
 	giveitem ITEM_RARE_CANDY
 	giveitem ITEM_EXP_CANDY_XL
 	giveitem ITEM_MAX_REPEL
+	giveitem ITEM_ESCAPE_ROPE
+	giveitem ITEM_ABILITY_CAPSULE
+	giveitem ITEM_ABILITY_PATCH
 	giveitem ITEM_PROTEIN
 	giveitem ITEM_IRON
 	giveitem ITEM_CALCIUM
 	giveitem ITEM_ZINC
 	giveitem ITEM_CARBOS
-	giveitem ITEM_ESCAPE_ROPE
 	giveitem ITEM_MASTER_BALL 999
 	release
 	end
