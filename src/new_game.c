@@ -234,6 +234,8 @@ void NewGameInitData(void)
     ResetDexNav();
     ClearFollowerNPCData();
     VarSet(VAR_CURRENT_SEASON, gSaveBlock2Ptr->optionsSeason);
+    FlagSet(DN_FLAG_DEXNAV_GET);
+    FlagSet(DN_FLAG_DETECTOR_MODE);
 }
 
 static void ResetMiniGamesRecords(void)
