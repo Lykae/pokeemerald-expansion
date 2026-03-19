@@ -116,7 +116,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
 	end
 
 	.align 2
-LilycoveCity_DepartmentStore_2F_Pokemart2:^
+LilycoveCity_DepartmentStore_2F_Pokemart2:
 	.2byte ITEM_AUSPICIOUS_ARMOR
 	.2byte ITEM_MALICIOUS_ARMOR
 	.2byte ITEM_BLACK_AUGURITE
