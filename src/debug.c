@@ -74,6 +74,7 @@
 #include "vs_seeker.h"
 #include "load_save.h"
 #include "battle_partner.h"
+#include "randomizer.h"
 
 enum FollowerNPCCreateDebugMenu
 {
@@ -3125,7 +3126,14 @@ static void DebugAction_Give_Pokemon_SelectNature(u8 taskId)
         gTasks[taskId].tInput = 0;
         gTasks[taskId].tDigit = 0;
 
-        Debug_Display_Ability(0, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+        StringCopy(gStringVar2, gText_DigitIndicator[gTasks[taskId].tDigit]);
+        ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, 2);
+        StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
+        abilityId = GetAbilityBySpecies(sDebugMonData->species, 0, FALSE);
+        u8 *end = StringCopy(gStringVar1, gAbilitiesInfo[abilityId].name);
+        WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(gTasks[taskId].tSubWindowId));
+        StringExpandPlaceholders(gStringVar4, sDebugText_PokemonAbility);
+        AddTextPrinterParameterized(gTasks[taskId].tSubWindowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 
         gTasks[taskId].func = DebugAction_Give_Pokemon_SelectAbility;
     }
@@ -3165,18 +3173,23 @@ static void DebugAction_Give_Pokemon_SelectAbility(u8 taskId)
         }
         if (JOY_NEW(DPAD_DOWN))
         {
-            abilityNum = gTasks[taskId].tInput - 1;
-            while (GetSpeciesAbility(sDebugMonData->species, abilityNum) == ABILITY_NONE && abilityNum >= 0)
-            {
-                abilityNum--;
-            }
+            gTasks[taskId].tInput -= sPowersOfTen[gTasks[taskId].tDigit];
+            if (gTasks[taskId].tInput < 0)
+                gTasks[taskId].tInput = 0;
         }
 
-        if (abilityNum >= 0 && abilityNum < NUM_ABILITY_SLOTS)
+        while (GetAbilityBySpecies(sDebugMonData->species, gTasks[taskId].tInput - i, FALSE) == ABILITY_NONE && gTasks[taskId].tInput - i < NUM_ABILITY_SLOTS)
         {
-            gTasks[taskId].tInput = abilityNum;
-            Debug_Display_Ability(abilityNum, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+            i++;
         }
+        abilityId = GetAbilityBySpecies(sDebugMonData->species, gTasks[taskId].tInput - i, FALSE);
+        StringCopy(gStringVar2, gText_DigitIndicator[gTasks[taskId].tDigit]);
+        ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, 2);
+        StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
+        u8 *end = StringCopy(gStringVar1, gAbilitiesInfo[abilityId].name);
+        WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(gTasks[taskId].tSubWindowId));
+        StringExpandPlaceholders(gStringVar4, sDebugText_PokemonAbility);
+        AddTextPrinterParameterized(gTasks[taskId].tSubWindowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
     }
 
     if (JOY_NEW(A_BUTTON))
@@ -3572,7 +3585,14 @@ static void DebugAction_Give_Pokemon_ComplexCreateMon(u8 taskId) //https://githu
             SetMonMoveSlot(&mon, moves[i], i);
     }
 
-    // Ability
+    //Ability
+    if (abilityNum == 0xFF || GetAbilityBySpecies(species, abilityNum, FALSE) == ABILITY_NONE)
+    {
+        do {
+            abilityNum = Random() % NUM_ABILITY_SLOTS;  // includes hidden abilities
+        } while (GetAbilityBySpecies(species, abilityNum, FALSE) == ABILITY_NONE);
+    }
+
     SetMonData(&mon, MON_DATA_ABILITY_NUM, &abilityNum);
 
     //Update mon stats before giving it to the player

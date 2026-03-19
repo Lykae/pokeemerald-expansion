@@ -2896,6 +2896,9 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
                 }.combinedValue;
             }
             break;
+        case MON_DATA_CANT_RANDOMIZE_ABILITY:
+            retVal = substruct3->cantRandomizeAbility;
+            break;
         default:
             break;
         }
@@ -3328,6 +3331,9 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             substruct1->evolutionTracker2 = evoTracker.tracker2;
             break;
         }
+        case MON_DATA_CANT_RANDOMIZE_ABILITY:
+            SET8(substruct3->cantRandomizeAbility);
+            break;
         default:
             break;
         }
@@ -3554,7 +3560,7 @@ u8 GetMonsStateToDoubles_2(void)
     return (aliveCount > 1) ? PLAYER_HAS_TWO_USABLE_MONS : PLAYER_HAS_ONE_USABLE_MON;
 }
 
-enum Ability GetAbilityBySpecies(u16 species, u8 abilityNum)
+enum Ability GetAbilityBySpecies(u16 species, u8 abilityNum, u8 cantRandomizeAbility)
 {
     int i;
 
@@ -3573,8 +3579,15 @@ enum Ability GetAbilityBySpecies(u16 species, u8 abilityNum)
 
     for (i = 0; i < NUM_ABILITY_SLOTS && gLastUsedAbility == ABILITY_NONE; i++) // look for any non-empty ability
     {
-        gLastUsedAbility = GetSpeciesAbility(species, i);
+        gLastUsedAbility = gSpeciesInfo[species].abilities[i];
     }
+
+    #if RANDOMIZER_AVAILABLE == TRUE
+        if(!cantRandomizeAbility && gLastUsedAbility != ABILITY_NONE)
+        {
+            gLastUsedAbility = RandomizeAbility(species, abilityNum, gLastUsedAbility);
+        }
+    #endif
 
     return gLastUsedAbility;
 }
@@ -3583,7 +3596,8 @@ enum Ability GetMonAbility(struct Pokemon *mon)
 {
     u16 species = GetMonData(mon, MON_DATA_SPECIES);
     u8 abilityNum = GetMonData(mon, MON_DATA_ABILITY_NUM);
-    return GetAbilityBySpecies(species, abilityNum);
+    u8 cantRandomizeAbility = GetMonData(mon, MON_DATA_CANT_RANDOMIZE_ABILITY, NULL);
+    return GetAbilityBySpecies(species, abilityNum, cantRandomizeAbility);
 }
 
 void CreateSecretBaseEnemyParty(struct SecretBase *secretBaseRecord)
@@ -3829,34 +3843,35 @@ void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)
         dst->pp[i] = GetMonData(src, MON_DATA_PP1 + i);
     }
 
-    dst->species = GetMonData(src, MON_DATA_SPECIES);
-    dst->item = GetMonData(src, MON_DATA_HELD_ITEM);
-    dst->ppBonuses = GetMonData(src, MON_DATA_PP_BONUSES);
-    dst->friendship = GetMonData(src, MON_DATA_FRIENDSHIP);
-    dst->experience = GetMonData(src, MON_DATA_EXP);
-    dst->hpIV = GetMonData(src, MON_DATA_HP_IV);
-    dst->attackIV = GetMonData(src, MON_DATA_ATK_IV);
-    dst->defenseIV = GetMonData(src, MON_DATA_DEF_IV);
-    dst->speedIV = GetMonData(src, MON_DATA_SPEED_IV);
-    dst->spAttackIV = GetMonData(src, MON_DATA_SPATK_IV);
-    dst->spDefenseIV = GetMonData(src, MON_DATA_SPDEF_IV);
-    dst->personality = GetMonData(src, MON_DATA_PERSONALITY);
-    dst->status1 = GetMonData(src, MON_DATA_STATUS);
-    dst->level = GetMonData(src, MON_DATA_LEVEL);
-    dst->hp = GetMonData(src, MON_DATA_HP);
-    dst->maxHP = GetMonData(src, MON_DATA_MAX_HP);
-    dst->attack = GetMonData(src, MON_DATA_ATK);
-    dst->defense = GetMonData(src, MON_DATA_DEF);
-    dst->speed = GetMonData(src, MON_DATA_SPEED);
-    dst->spAttack = GetMonData(src, MON_DATA_SPATK);
-    dst->spDefense = GetMonData(src, MON_DATA_SPDEF);
-    dst->abilityNum = GetMonData(src, MON_DATA_ABILITY_NUM);
-    dst->otId = GetMonData(src, MON_DATA_OT_ID);
+    dst->species = GetMonData(src, MON_DATA_SPECIES, NULL);
+    dst->item = GetMonData(src, MON_DATA_HELD_ITEM, NULL);
+    dst->ppBonuses = GetMonData(src, MON_DATA_PP_BONUSES, NULL);
+    dst->friendship = GetMonData(src, MON_DATA_FRIENDSHIP, NULL);
+    dst->experience = GetMonData(src, MON_DATA_EXP, NULL);
+    dst->hpIV = GetMonData(src, MON_DATA_HP_IV, NULL);
+    dst->attackIV = GetMonData(src, MON_DATA_ATK_IV, NULL);
+    dst->defenseIV = GetMonData(src, MON_DATA_DEF_IV, NULL);
+    dst->speedIV = GetMonData(src, MON_DATA_SPEED_IV, NULL);
+    dst->spAttackIV = GetMonData(src, MON_DATA_SPATK_IV, NULL);
+    dst->spDefenseIV = GetMonData(src, MON_DATA_SPDEF_IV, NULL);
+    dst->personality = GetMonData(src, MON_DATA_PERSONALITY, NULL);
+    dst->status1 = GetMonData(src, MON_DATA_STATUS, NULL);
+    dst->level = GetMonData(src, MON_DATA_LEVEL, NULL);
+    dst->hp = GetMonData(src, MON_DATA_HP, NULL);
+    dst->maxHP = GetMonData(src, MON_DATA_MAX_HP, NULL);
+    dst->attack = GetMonData(src, MON_DATA_ATK, NULL);
+    dst->defense = GetMonData(src, MON_DATA_DEF, NULL);
+    dst->speed = GetMonData(src, MON_DATA_SPEED, NULL);
+    dst->spAttack = GetMonData(src, MON_DATA_SPATK, NULL);
+    dst->spDefense = GetMonData(src, MON_DATA_SPDEF, NULL);
+    dst->abilityNum = GetMonData(src, MON_DATA_ABILITY_NUM, NULL);
+    dst->cantRandomizeAbility = GetMonData(src, MON_DATA_CANT_RANDOMIZE_ABILITY, NULL);
+    dst->otId = GetMonData(src, MON_DATA_OT_ID, NULL);
     dst->types[0] = GetSpeciesType(dst->species, 0);
     dst->types[1] = GetSpeciesType(dst->species, 1);
     dst->types[2] = TYPE_MYSTERY;
     dst->isShiny = IsMonShiny(src);
-    dst->ability = GetAbilityBySpecies(dst->species, dst->abilityNum);
+    dst->ability = GetAbilityBySpecies(dst->species, dst->abilityNum, dst->cantRandomizeAbility);
     GetMonData(src, MON_DATA_NICKNAME, nickname);
     StringCopy_Nickname(dst->nickname, nickname);
     GetMonData(src, MON_DATA_OT_NAME, dst->otName);

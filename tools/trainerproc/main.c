@@ -133,8 +133,10 @@ struct Trainer
     struct String mugshot;
     int mugshot_line;
 
-    struct String starting_status[STARTING_STATUS_COUNT];
-    int starting_status_n;
+    bool boss;
+    int boss_line;
+
+    struct String starting_status;
     int starting_status_line;
 
     struct String difficulty;
@@ -1250,6 +1252,14 @@ static bool parse_trainer(struct Parser *p, const struct Parsed *parsed, struct 
             trainer->mugshot_line = value.location.line;
             trainer->mugshot = token_string(&value);
         }
+        else if (is_literal_token(&key, "Boss"))
+        {
+            if (trainer->boss_line)
+                any_error = !set_show_parse_error(p, key.location, "duplicate 'Mugshot'");
+            trainer->boss_line = value.location.line;
+            if (!token_bool(p, &value, &trainer->boss))
+                any_error = !show_parse_error(p);
+        }
         else if (is_literal_token(&key, "Starting Status"))
         {
             if (trainer->starting_status_line)
@@ -1892,6 +1902,30 @@ static void fprint_trainers(const char *output_path, FILE *f, struct Parsed *par
             fprintf(f, "#line %d\n", trainer->mugshot_line);
             fprintf(f, "        .mugshotColor = ");
             fprint_constant(f, "MUGSHOT_COLOR", trainer->mugshot);
+            fprintf(f, ",\n");
+        }
+
+        if (trainer->boss_line)
+        {
+            fprintf(f, "#line %d\n", trainer->boss_line);
+            fprintf(f, "        .isBossTrainer = ");
+            fprint_bool(f, trainer->boss);
+            fprintf(f, ",\n");
+        }
+
+        if (!is_empty_string(trainer->starting_status))
+        {
+            fprintf(f, "#line %d\n", trainer->starting_status_line);
+            fprintf(f, "        .startingStatus = ");
+            fprint_constant(f, "STARTING_STATUS", trainer->starting_status);
+            fprintf(f, ",\n");
+        }
+
+        if (trainer->boss_line)
+        {
+            fprintf(f, "#line %d\n", trainer->boss_line);
+            fprintf(f, "        .isBossTrainer = ");
+            fprint_bool(f, trainer->boss);
             fprintf(f, ",\n");
         }
 

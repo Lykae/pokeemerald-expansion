@@ -49,6 +49,7 @@
 #include "constants/map_groups.h"
 #include "constants/items.h"
 #include "difficulty.h"
+#include "randomizer.h"
 #include "follower_npc.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
@@ -236,6 +237,9 @@ void NewGameInitData(void)
     VarSet(VAR_CURRENT_SEASON, gSaveBlock2Ptr->optionsSeason);
     FlagSet(DN_FLAG_DEXNAV_GET);
     FlagSet(DN_FLAG_DETECTOR_MODE);
+    #if (RANDOMIZER_AVAILABLE == TRUE) && (RANDOMIZER_DYNAMIC_SPECIES == TRUE)
+        PreloadRandomizationTables();
+    #endif
 }
 
 static void ResetMiniGamesRecords(void)

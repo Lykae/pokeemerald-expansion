@@ -192,6 +192,7 @@ trainer_ai_flags_definition        = re.compile(r'\.aiFlags = (.*)')
 trainer_ai_flag_definition         = re.compile(r'AI_FLAG_(\w+)')
 trainer_party_definition           = re.compile(r'\.party = TRAINER_PARTY\((\w+)\)')
 trainer_mugshot_definition         = re.compile(r'\.mugshotColor = MUGSHOT_COLOR_(\w+)')
+trainer_boss_definition            = re.compile(r'\.isBossTrainer = (\w+)')
 trainer_starting_status_definition = re.compile(r'\.startingStatus = STARTING_STATUS_(\w+)')
 
 class_fixups = {
@@ -214,6 +215,7 @@ class Trainer:
         self.double_battle = None
         self.ai_flags = None
         self.mugshot = None
+        self.boss = None
         self.starting_status = None
         self.party = None
 
@@ -264,6 +266,12 @@ def convert_trainers(in_path, in_h, parties, out_party):
             elif m := trainer_mugshot_definition.search(line):
                 [color] = m.groups()
                 trainer.mugshot = color.title()
+            elif m := trainer_boss_definition.search(line):
+                [boss] = m.groups()
+                if boss == 'TRUE':
+                    trainer.boss = "Yes"
+                elif boss == 'FALSE':
+                    trainer.boss = "No"
             elif m := trainer_starting_status_definition.search(line):
                 [starting_status] = m.groups()
                 trainer.starting_status = starting_status.replace("_", " ").title()
@@ -290,6 +298,8 @@ def convert_trainers(in_path, in_h, parties, out_party):
                     out_party.write(f"AI: {trainer.ai_flags}\n")
                 if trainer.mugshot:
                     out_party.write(f"Mugshot: {trainer.mugshot}\n")
+                if trainer.boss:
+                    out_party.write(f"Boss: {trainer.boss}\n")
                 if trainer.starting_status:
                     out_party.write(f"Starting Status: {trainer.starting_status}\n")
                 if trainer.party:

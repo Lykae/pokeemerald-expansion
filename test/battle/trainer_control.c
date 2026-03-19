@@ -37,7 +37,7 @@ TEST("CreateNPCTrainerPartyForTrainer generates customized Pokémon")
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 0;
     u8 nickBuffer[20];
-    CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER);
+    CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER, 0);
     EXPECT(IsMonShiny(&testParty[0]));
     EXPECT(!IsMonShiny(&testParty[1]));
 
@@ -113,7 +113,11 @@ TEST("CreateNPCTrainerPartyForTrainer generates different personalities for diff
 {
     enum DifficultyLevel difficulty = GetTrainerDifficultyLevelTest(0);
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
+<<<<<<< HEAD
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[difficulty][0], TRUE, BATTLE_TYPE_TRAINER);
+=======
+    CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[0], TRUE, BATTLE_TYPE_TRAINER, 0);
+>>>>>>> 3d54198f6a9bb04ea759c09d3a4d49637a1ccc5d
     EXPECT(testParty[0].box.personality != testParty[1].box.personality);
     Free(testParty);
 }
@@ -164,8 +168,7 @@ TEST("Trainer Class Balls apply to the entire party")
 {
     ASSUME(B_TRAINER_CLASS_POKE_BALLS >= GEN_8);
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
-    u32 j;
-    CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[DIFFICULTY_NORMAL][11], TRUE, BATTLE_TYPE_TRAINER);
+    CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainer2, TRUE, BATTLE_TYPE_TRAINER);
     for(j = 0; j < 6; j++)
     {
         EXPECT(GetMonData(&testParty[j], MON_DATA_POKEBALL, 0) == gTrainerClasses[sTestTrainers[DIFFICULTY_NORMAL][11].trainerClass].ball);

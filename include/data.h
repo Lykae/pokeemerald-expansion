@@ -133,6 +133,7 @@ struct Trainer
     u16 overrideTrainer;
     enum TrainerPicID trainerBackPic;
     u8 dynamicLevelRatio;
+    bool8 isBossTrainer:1;
 };
 
 struct TrainerClass
@@ -348,6 +349,14 @@ static inline const struct TrainerMon *GetTrainerPartyFromId(u16 trainerId)
 static inline const u64 GetTrainerAIFlagsFromId(u16 trainerId)
 {
     return GetTrainerStructFromId(trainerId)->aiFlags;
+}
+
+static inline const bool32 IsBossTrainerBattle(u16 trainerId)
+{
+    u32 sanitizedTrainerId = SanitizeTrainerId(trainerId);
+    enum DifficultyLevel difficulty = GetTrainerDifficultyLevel(sanitizedTrainerId);
+    
+    return gTrainers[difficulty][sanitizedTrainerId].isBossTrainer;
 }
 
 #endif // GUARD_DATA_H

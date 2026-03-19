@@ -124,6 +124,14 @@ enum MonData {
     MON_DATA_GIGANTAMAX_FACTOR,
     MON_DATA_TERA_TYPE,
     MON_DATA_EVOLUTION_TRACKER,
+    MON_DATA_CANT_RANDOMIZE_ABILITY,
+};
+
+enum {
+    MON_RANDOMIZER_NORMAL,
+    MON_RANDOMIZER_RANDOM_FORM,
+    MON_RANDOMIZER_SPECIAL_FORM,
+    MON_RANDOMIZER_INVALID
 };
 
 struct PokemonSubstruct0
@@ -214,7 +222,7 @@ struct PokemonSubstruct3
     u32 earthRibbon:1;    // Given to teams that have beaten Mt. Battle's 100-battle challenge in Colosseum/XD.
     u32 worldRibbon:1;    // Distributed during Pokémon Festa '04 and '05 to tournament winners.
     u32 isShadow:1;
-    u32 unused_0B:1;
+    u32 cantRandomizeAbility:1;
     u32 abilityNum:2;
 
     // The functionality of this bit changed in FRLG:
@@ -369,6 +377,7 @@ struct BattlePokemon
     /*0x5D*/ u32 otId;
     /*0x61*/ u8 metLevel;
     /*0x62*/ bool8 isShiny;
+    /*0x??*/ u8 cantRandomizeAbility;
 };
 
 struct EvolutionParam
@@ -489,6 +498,7 @@ struct SpeciesInfo /*0xC4*/
     u32 teachingType:1; // Not used in the ROM but used in compilation (check constants/teaching_types.h for explanations)
     u32 isFrontierBanned:1; // This species is not allowed to participate in Battle Frontier facilities.
     u32 isSkyBattleBanned:1;
+    u32 randomizerMode:2; 
     u32 padding4:9;
     // Shadow settings
     s8 enemyShadowXOffset; // This determines the X-offset for an enemy Pokémon's shadow during battle; negative values point left, positive values point right.
@@ -796,8 +806,8 @@ u8 CalculateEnemyPartyCount(void);
 u8 CalculateEnemyPartyCountInSide(enum BattlerId battler);
 u8 GetMonsStateToDoubles(void);
 u8 GetMonsStateToDoubles_2(void);
-enum Ability GetAbilityBySpecies(u16 species, u8 abilityNum);
-enum Ability GetMonAbility(struct Pokemon *mon);
+u16 GetAbilityBySpecies(u16 species, u8 abilityNum, u8 cantRandomizeAbility);
+u16 GetMonAbility(struct Pokemon *mon);
 void CreateSecretBaseEnemyParty(struct SecretBase *secretBaseRecord);
 enum TrainerPicID GetSecretBaseTrainerPicIndex(void);
 enum TrainerClassID GetSecretBaseTrainerClass(void);
