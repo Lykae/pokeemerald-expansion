@@ -14,6 +14,27 @@
 #include "data/randomizer/ability_whitelist.h"
 #include "constants/abilities.h"
 
+enum {
+    RANDO_OFF,
+    RANDO_RANDOM,
+    RANDO_LEGEND,
+    RANDO_BST,
+    RANDO_EVOLUTION
+};
+
+enum {
+    RANDO_MISC_OFF,
+    RANDO_MISC_ITEMS,
+    RANDO_MISC_ABILITIES,
+    RANDO_MISC_ALL
+};
+
+enum {
+    SCALING_OFF,
+    SCALING_EASY,
+    SCALING_NORMAL
+};
+
 // Add the mons you wish to be randomized when given as starter/gift mon to this list
 const u16 gStarterAndGiftMonTable[STARTER_AND_GIFT_MON_COUNT] =
 {
@@ -238,7 +259,7 @@ u16 RandomizerRandRange(enum RandomizerReason reason, u32 data1, u32 data2, u16 
 // Utility functions for the field item randomizer.
 static inline bool32 IsItemTMHM(u16 itemId)
 {
-    return ItemId_GetPocket(itemId) == POCKET_TM_HM;
+    return GetItemPocket(itemId) == POCKET_TM_HM;
 }
 
 static inline bool32 IsItemHM(u16 itemId)
@@ -248,7 +269,7 @@ static inline bool32 IsItemHM(u16 itemId)
 
 static inline bool32 IsKeyItem(u16 itemId)
 {
-    return ItemId_GetPocket(itemId) == POCKET_KEY_ITEMS;
+    return GetItemPocket(itemId) == POCKET_KEY_ITEMS;
 }
 
 // Don't randomize HMs or key items, that can make the game unwinnable.
@@ -322,7 +343,8 @@ void FindHiddenItemRandomize_NativeCall(struct ScriptContext *ctx)
 // Both legendary and mythical Pokémon are included in this category.
 static inline bool32 IsRandomizerLegendary(u16 species)
 {
-    return gSpeciesInfo[species].isLegendary
+    return gSpeciesInfo[species].isSubLegendary
+        || gSpeciesInfo[species].isRestrictedLegendary
         || gSpeciesInfo[species].isMythical
         || gSpeciesInfo[species].isUltraBeast;
 }
@@ -343,10 +365,10 @@ static inline u16 GetSpeciesGroup(const struct SpeciesTable* table, u16 species)
     u16 groupEntry;
     groupEntry = table->groupData[table->speciesToGroupIndex[species]];
 
-    #ifndef NDEBUG
-        MgbaPrintf(MGBA_LOG_INFO, "GetSpeciesGroup: input %lu species %lu group %lu",
-            (unsigned long)species+1, (unsigned long)groupEntry.species, (unsigned long)groupEntry.group);
-    #endif
+    //#ifndef NDEBUG
+    //    MgbaPrintf(MGBA_LOG_INFO, "GetSpeciesGroup: input %lu species %lu group %lu",
+    //        (unsigned long)species+1, (unsigned long)groupEntry.species, (unsigned long)groupEntry.group);
+    //#endif
 
     return groupEntry;
 
@@ -815,11 +837,11 @@ u16 RandomizeMon(enum RandomizerReason reason, enum RandomizerSpeciesMode mode, 
     }
 }
 
-u16 RandomizeWildEncounter(u16 species, u8 mapNum, u8 mapGroup, enum WildArea area, u8 slot)
+u16 RandomizeWildEncounter(u16 species, u8 mapNum, u8 mapGroup, enum WildPokemonArea area, u8 slot)
 {
     if (RandomizerFeatureEnabled(RANDOMIZE_WILD_MON))
     {
-        // Randomization is done based on the map number, the WildArea, and the encounter slot.
+        // Randomization is done based on the map number, the WildPokemonArea, and the encounter slot.
         // This means a distinct species can appear in each encounter slot.
         u32 seed;
         seed = ((u32)mapGroup) << 24;
@@ -988,6 +1010,63 @@ u16 RandomizeAbility(u16 species, u8 abilityNum, u16 originalAbility)
     }
 
     return originalAbility;
+}
+
+void SaveRandomOptions() {
+    switch (gSaveBlock1Ptr->optionsRandomizer) {
+        case RANDO_OFF:
+            FlagClear(FLAG_RANDOMIZER_FEATURES_ENABLED);
+            break;
+        case RANDO_RANDOM:
+            FlagSet(FLAG_RANDOMIZER_FEATURES_ENABLED);
+            VarSet(VAR_RANDOMIZER_SPECIES_MODE, MON_RANDOM);
+            break;
+        case RANDO_LEGEND:
+            FlagSet(FLAG_RANDOMIZER_FEATURES_ENABLED);
+            VarSet(VAR_RANDOMIZER_SPECIES_MODE, MON_RANDOM_LEGEND_AWARE);
+            break;
+        case RANDO_BST:
+            FlagSet(FLAG_RANDOMIZER_FEATURES_ENABLED);
+            VarSet(VAR_RANDOMIZER_SPECIES_MODE, MON_RANDOM_BST);
+            break;
+        case RANDO_EVOLUTION:
+            FlagSet(FLAG_RANDOMIZER_FEATURES_ENABLED);
+            VarSet(VAR_RANDOMIZER_SPECIES_MODE, MON_EVOLUTION);
+            break;
+    }
+
+    switch (gSaveBlock1Ptr->optionsRandoMisc) {
+        case RANDO_MISC_OFF:
+            FlagClear(FLAG_RANDOMIZER_ABILITY_ENABLED);
+            FlagClear(FLAG_RANDOMIZER_ITEMS_ENABLED);
+            break;
+        case RANDO_MISC_ITEMS:
+            FlagClear(FLAG_RANDOMIZER_ABILITY_ENABLED);
+            FlagSet(FLAG_RANDOMIZER_ITEMS_ENABLED);
+            break;
+        case RANDO_MISC_ABILITIES:
+            FlagSet(FLAG_RANDOMIZER_ABILITY_ENABLED);
+            FlagClear(FLAG_RANDOMIZER_ITEMS_ENABLED);
+            break;
+        case RANDO_MISC_ALL:
+            FlagSet(FLAG_RANDOMIZER_ABILITY_ENABLED);
+            FlagSet(FLAG_RANDOMIZER_ITEMS_ENABLED);
+            break;
+    }
+
+    switch (gSaveBlock1Ptr->optionsScaling) {
+        case SCALING_OFF:
+            FlagClear(FLAG_SCALING_ENABLED);
+            break;
+        case SCALING_EASY:
+            FlagSet(FLAG_SCALING_ENABLED);
+            FlagSet(FLAG_SCALING_EASY);
+            break;
+        case SCALING_NORMAL:
+            FlagSet(FLAG_SCALING_ENABLED);
+            FlagClear(FLAG_SCALING_EASY);
+            break;
+    }
 }
 
 #endif // RANDOMIZER_AVAILABLE

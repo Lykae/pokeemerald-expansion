@@ -170,6 +170,9 @@ void NewGameInitData(void)
 #if IS_FRLG
     StringCopy(rivalName, gSaveBlock1Ptr->rivalName);
 #endif
+    u8 optRandomizer = gSaveBlock1Ptr->optionsRandomizer;
+    u8 optRandoMisc = gSaveBlock1Ptr->optionsRandoMisc;
+    u8 optScaling = gSaveBlock1Ptr->optionsScaling;
     gDifferentSaveFile = TRUE;
     gSaveBlock2Ptr->encryptionKey = 0;
     ZeroPlayerPartyMons();
@@ -237,9 +240,15 @@ void NewGameInitData(void)
     VarSet(VAR_CURRENT_SEASON, gSaveBlock2Ptr->optionsSeason);
     FlagSet(DN_FLAG_DEXNAV_GET);
     FlagSet(DN_FLAG_DETECTOR_MODE);
+    gSaveBlock1Ptr->optionsRandomizer = optRandomizer;
+    gSaveBlock1Ptr->optionsRandoMisc = optRandoMisc;
+    gSaveBlock1Ptr->optionsScaling = optScaling;
+    SaveRandomOptions();
+    //FlagSet(FLAG_RANDOMIZER_FEATURES_ENABLED);
     #if (RANDOMIZER_AVAILABLE == TRUE) && (RANDOMIZER_DYNAMIC_SPECIES == TRUE)
         PreloadRandomizationTables();
     #endif
+    gSaveBlock2Ptr->optionsBattleStyle = 1;
 }
 
 static void ResetMiniGamesRecords(void)

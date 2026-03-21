@@ -110,7 +110,7 @@ void FindHiddenItemRandomize_NativeCall(struct ScriptContext *ctx);
 u16 RandomizeMon(enum RandomizerReason reason, enum RandomizerSpeciesMode mode, u32 seed, u16 species);
 u16 RandomizeMonBaseForm(enum RandomizerReason reason, enum RandomizerSpeciesMode mode, u32 seed, u16 species);
 
-u16 RandomizeWildEncounter(u16 species, u8 mapNum, u8 mapGroup, enum WildArea area, u8 slot);
+u16 RandomizeWildEncounter(u16 species, u8 mapNum, u8 mapGroup, enum WildPokemonArea area, u8 slot);
 
 // Returns TRUE if it is possible for the species tableSpecies to randomize into the species matchSpecies.
 // This does not mean that it actually did, though.
@@ -128,6 +128,8 @@ u16 RandomizeEggMon(u16 originalSlot, const u16* originalEggMons);
 
 // Given a species and an abilityNum, returns a replacement for that ability.
 u16 RandomizeAbility(u16 species, u8 abilityNum, u16 originalAbility);
+
+void SaveRandomOptions();
 
 static inline bool32 GroupSetsIntersect(struct RandomizerGroupSet* originalCache, struct RandomizerGroupSet* targetCache)
 {

@@ -1061,26 +1061,27 @@ bool32 OnStep_DexNavSearch(void)
         }
     }
 
-    if (sDexNavSearchDataPtr->proximity <= CREEPING_PROXIMITY && !gPlayerAvatar.creeping && frameCount > 60)
-    { //should be creeping but player walks normally
-        if (sDexNavSearchDataPtr->hiddenSearch)
-        {
-            EndDexNavSearch();
-            return FALSE;
-        }
-        else
-        {
-            EndDexNavSearchSetupScript(EventScript_MovedTooFast);
-            return TRUE;
-        }
-    }
-
-    if (sDexNavSearchDataPtr->proximity <= SNEAKING_PROXIMITY && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH | PLAYER_AVATAR_FLAG_BIKE))
-    { // running/biking too close
-        //always do event script, even if player hasn't revealed a hidden mon. It's assumed they would be creeping towards it
-        EndDexNavSearchSetupScript(EventScript_MovedTooFast);
-        return TRUE;
-    }
+    
+    //if (sDexNavSearchDataPtr->proximity <= CREEPING_PROXIMITY && !gPlayerAvatar.creeping && frameCount > 60)
+    //{ //should be creeping but player walks normally
+    //    if (sDexNavSearchDataPtr->hiddenSearch)
+    //    {
+    //        EndDexNavSearch();
+    //        return FALSE;
+    //    }
+    //    else
+    //    {
+    //        EndDexNavSearchSetupScript(EventScript_MovedTooFast);
+    //        return TRUE;
+    //    }
+    //}
+//
+    //if (sDexNavSearchDataPtr->proximity <= SNEAKING_PROXIMITY && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH | PLAYER_AVATAR_FLAG_BIKE))
+    //{ // running/biking too close
+    //    //always do event script, even if player hasn't revealed a hidden mon. It's assumed they would be creeping towards it
+    //    EndDexNavSearchSetupScript(EventScript_MovedTooFast);
+    //    return TRUE;
+    //}
 
     if (frameCount > DEXNAV_TIMEOUT * 60)
     { // player took too long
@@ -1492,6 +1493,8 @@ static u8 GetEncounterLevelFromMapData(u16 species, enum EncounterType environme
     u8 max = 0;
     u8 i;
     u16 speciesToCheck;
+    timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_WATER);
+    const struct WildPokemonInfo *waterMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].waterMonsInfo;
 
     switch (environment)
     {
@@ -1521,29 +1524,11 @@ static u8 GetEncounterLevelFromMapData(u16 species, enum EncounterType environme
         }
         break;
     case ENCOUNTER_TYPE_WATER:    //water
-        timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_WATER);
-        const struct WildPokemonInfo *waterMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].waterMonsInfo;
 
         if (waterMonsInfo == NULL)
             return MON_LEVEL_NONEXISTENT; //Hidden pokemon should only appear on walkable tiles or surf tiles
 
         for (i = 0; i < WATER_WILD_COUNT; i++)
-        {
-            if (waterMonsInfo->wildPokemon[i].species == species)
-            {
-                min = (min < waterMonsInfo->wildPokemon[i].minLevel) ? min : waterMonsInfo->wildPokemon[i].minLevel;
-                max = (max > waterMonsInfo->wildPokemon[i].maxLevel) ? max : waterMonsInfo->wildPokemon[i].maxLevel;
-            }
-        }
-        break;
-    case ENCOUNTER_TYPE_HIDDEN:
-        timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_HIDDEN);
-        const struct WildPokemonInfo *hiddenMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].hiddenMonsInfo;
-
-        if (hiddenMonsInfo == NULL)
-            return MON_LEVEL_NONEXISTENT;
-
-        for (i = 0; i < HIDDEN_WILD_COUNT; i++)
         {
             #if RANDOMIZER_AVAILABLE == TRUE
                 speciesToCheck = RandomizeWildEncounter(
@@ -1553,6 +1538,32 @@ static u8 GetEncounterLevelFromMapData(u16 species, enum EncounterType environme
                     WILD_AREA_WATER, i);
             #else
                 speciesToCheck = waterMonsInfo->wildPokemon[i].species;
+            #endif
+            if (species == speciesToCheck)
+            {
+                min = (min < waterMonsInfo->wildPokemon[i].minLevel) ? min : waterMonsInfo->wildPokemon[i].minLevel;
+                max = (max > waterMonsInfo->wildPokemon[i].maxLevel) ? max : waterMonsInfo->wildPokemon[i].maxLevel;
+            }
+        }
+        break;
+    case ENCOUNTER_TYPE_HIDDEN:
+        timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_HIDDEN);
+        const struct WildPokemonInfo *hiddenMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].hiddenMonsInfo;
+        //const struct WildPokemonInfo *waterMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].waterMonsInfo;
+
+        if (hiddenMonsInfo == NULL)
+            return MON_LEVEL_NONEXISTENT;
+
+        for (i = 0; i < HIDDEN_WILD_COUNT; i++)
+        {
+            #if RANDOMIZER_AVAILABLE == TRUE
+                speciesToCheck = RandomizeWildEncounter(
+                    hiddenMonsInfo->wildPokemon[i].species,
+                    gWildMonHeaders[headerId].mapNum,
+                    gWildMonHeaders[headerId].mapGroup,
+                    WILD_AREA_HIDDEN, i);
+            #else
+                speciesToCheck = hiddenMonsInfo->wildPokemon[i].species;
             #endif
             if (speciesToCheck == species)
             {
@@ -1975,10 +1986,12 @@ static void DexNavLoadEncounterData(void)
                     species,
                     gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup,
+                    //gSaveBlock1Ptr->location.mapNum,
+                    //gSaveBlock1Ptr->location.mapGroup,
                     WILD_AREA_LAND, i);
             #endif
             if (species != SPECIES_NONE && !SpeciesInArray(species, 0))
-                sDexNavUiDataPtr->landSpecies[grassIndex++] = landMonsInfo->wildPokemon[i].species;
+                sDexNavUiDataPtr->landSpecies[grassIndex++] = species;
         }
     }
 
@@ -1993,10 +2006,12 @@ static void DexNavLoadEncounterData(void)
                     species,
                     gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup,
+                    //gSaveBlock1Ptr->location.mapNum,
+                    //gSaveBlock1Ptr->location.mapGroup,
                     WILD_AREA_WATER, i);
             #endif
             if (species != SPECIES_NONE && !SpeciesInArray(species, 1))
-                sDexNavUiDataPtr->waterSpecies[waterIndex++] = waterMonsInfo->wildPokemon[i].species;
+                sDexNavUiDataPtr->waterSpecies[waterIndex++] = species;
         }
     }
 
@@ -2006,8 +2021,19 @@ static void DexNavLoadEncounterData(void)
         for (i = 0; i < HIDDEN_WILD_COUNT; i++)
         {
             species = hiddenMonsInfo->wildPokemon[i].species;
+            
+            #if RANDOMIZER_AVAILABLE == TRUE
+                species = RandomizeWildEncounter(
+                    species,
+                    gWildMonHeaders[headerId].mapNum,
+                    gWildMonHeaders[headerId].mapGroup,
+                    //gSaveBlock1Ptr->location.mapNum,
+                    //gSaveBlock1Ptr->location.mapGroup,
+                    WILD_AREA_HIDDEN, i);
+            #endif
+
             if (species != SPECIES_NONE && !SpeciesInArray(species, 2))
-                sDexNavUiDataPtr->hiddenSpecies[hiddenIndex++] = hiddenMonsInfo->wildPokemon[i].species;
+                sDexNavUiDataPtr->hiddenSpecies[hiddenIndex++] = species;
         }
     }
 }

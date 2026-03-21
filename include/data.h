@@ -338,17 +338,26 @@ static inline const u8 GetTrainerMugshotColorFromId(u16 trainerId)
 
 static inline const u16 *GetTrainerItemsFromId(u16 trainerId)
 {
-    return GetTrainerStructFromId(trainerId)->items;
+    u32 sanitizedTrainerId = SanitizeTrainerId(trainerId);
+    enum DifficultyLevel difficulty = GetTrainerDifficultyLevel(sanitizedTrainerId);
+
+    return gTrainers[difficulty][sanitizedTrainerId].items;
 }
 
 static inline const struct TrainerMon *GetTrainerPartyFromId(u16 trainerId)
 {
-    return GetTrainerStructFromId(trainerId)->party;
+    u32 sanitizedTrainerId = SanitizeTrainerId(trainerId);
+    enum DifficultyLevel difficulty = GetTrainerDifficultyLevel(sanitizedTrainerId);
+
+    return gTrainers[difficulty][sanitizedTrainerId].party;
 }
 
-static inline const u64 GetTrainerAIFlagsFromId(u16 trainerId)
+static inline const bool32 GetTrainerAIFlagsFromId(u16 trainerId)
 {
-    return GetTrainerStructFromId(trainerId)->aiFlags;
+    u32 sanitizedTrainerId = SanitizeTrainerId(trainerId);
+    enum DifficultyLevel difficulty = GetTrainerDifficultyLevel(sanitizedTrainerId);
+
+    return gTrainers[difficulty][sanitizedTrainerId].aiFlags;
 }
 
 static inline const bool32 IsBossTrainerBattle(u16 trainerId)

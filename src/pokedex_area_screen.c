@@ -122,8 +122,8 @@ static void BuildAreaGlowTilemap(void);
 static void SetAreaHasMon(u16, u16);
 static void SetSpecialMapHasMon(u16, u16);
 static mapsec_u16_t GetRegionMapSectionId(u8, u8);
-static bool8 MapHasSpecies(const struct WildPokemonHeader *, u16);
-static bool8 MonListHasSpecies(const struct WildPokemonHeader *, u16, enum WildArea);
+static bool8 MapHasSpecies(const struct WildEncounterTypes *, u16);
+static bool8 MonListHasSpecies(const struct WildPokemonInfo *, u16, u16);
 static void DoAreaGlow(void);
 static void Task_ShowPokedexAreaScreen(u8 taskId);
 static void Task_UpdatePokedexAreaScreen(u8 taskId);
@@ -451,55 +451,31 @@ static bool8 MapHasSpecies(const struct WildEncounterTypes *info, u16 species)
             return FALSE;
     }
 
-    if (MonListHasSpecies(info, species, WILD_AREA_LAND))
+    if (MonListHasSpecies(info->landMonsInfo, species, LAND_WILD_COUNT))
         return TRUE;
-    if (MonListHasSpecies(info, species, WILD_AREA_WATER))
+    if (MonListHasSpecies(info->waterMonsInfo, species, WATER_WILD_COUNT))
         return TRUE;
-    if (MonListHasSpecies(info, species, WILD_AREA_FISHING))
+// When searching the fishing encounters, this incorrectly uses the size of the land encounters.
+// As a result it's reading out of bounds of the fishing encounters tables.
+#ifdef BUGFIX
+    if (MonListHasSpecies(info->fishingMonsInfo, species, FISH_WILD_COUNT))
+#else
+    if (MonListHasSpecies(info->fishingMonsInfo, species, LAND_WILD_COUNT))
+#endif
         return TRUE;
-    if (MonListHasSpecies(info, species, WILD_AREA_ROCKS))
+    if (MonListHasSpecies(info->rockSmashMonsInfo, species, ROCK_WILD_COUNT))
         return TRUE;
     return FALSE;
 }
 
-static bool8 MonListHasSpecies(const struct WildPokemonHeader *header, u16 species, enum WildArea area)
+static bool8 MonListHasSpecies(const struct WildPokemonInfo *info, u16 species, u16 size)
 {
-    u16 i, size;
-    const struct WildPokemonInfo *info;
-
-    switch(area){
-        case WILD_AREA_WATER:
-            info = header->waterMonsInfo;
-            size = WATER_WILD_COUNT;
-            break;
-        case WILD_AREA_ROCKS:
-            info = header->rockSmashMonsInfo;
-            size = ROCK_WILD_COUNT;
-            break;
-        case WILD_AREA_FISHING:
-            info = header->fishingMonsInfo;
-            size = FISH_WILD_COUNT;
-            break;
-        case WILD_AREA_LAND:
-        default:
-            info = header->landMonsInfo;
-            size = LAND_WILD_COUNT;
-            break;
-    }
-
+    u16 i;
     if (info != NULL)
     {
         for (i = 0; i < size; i++)
         {
-            u16 curSpecies;
-            curSpecies = info->wildPokemon[i].species;
-            #if RANDOMIZER_AVAILABLE == TRUE
-                if (!IsRandomizationPossible(curSpecies, species))
-                    continue;
-                curSpecies = RandomizeWildEncounter(
-                    curSpecies, header->mapNum, header->mapGroup, area, i);
-            #endif
-            if (curSpecies == species)
+            if (info->wildPokemon[i].species == species)
                 return TRUE;
         }
     }

@@ -1818,12 +1818,12 @@ u32 AI_GetBattlerAbility(u32 battler)
     if (gAbilitiesInfo[abilityToUse].cantBeSuppressed)
         return abilityToUse;
 
-    if (gStatuses3[battler] & STATUS3_GASTRO_ACID)
+    if (gBattleMons[battler].volatiles.gastroAcid)
         return ABILITY_NONE;
 
     if (IsNeutralizingGasOnField()
      && abilityToUse != ABILITY_NEUTRALIZING_GAS
-     && GetBattlerHoldEffectIgnoreAbility(battler, TRUE) != HOLD_EFFECT_ABILITY_SHIELD)
+     && GetBattlerHoldEffectIgnoreAbility(battler) != HOLD_EFFECT_ABILITY_SHIELD)
         return ABILITY_NONE;
 
     return abilityToUse;

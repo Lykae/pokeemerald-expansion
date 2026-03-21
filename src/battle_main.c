@@ -1961,6 +1961,18 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
     const struct TrainerMon *partyData = trainer->party;
 
     u8 isTrainerBossTrainer = trainer->isBossTrainer;
+    u8 dynamicLevelRatio = trainer->dynamicLevelRatio;
+
+    if (FlagGet(FLAG_SCALING_ENABLED)) {
+        if (FlagGet(FLAG_SCALING_EASY)) {
+            dynamicLevelRatio = 85;
+        } else {
+            dynamicLevelRatio = 100;
+        }
+    } else {
+        dynamicLevelRatio = 0;
+    }
+
     if (battleTypeFlags & BATTLE_TYPE_TRAINER && !(battleTypeFlags & (BATTLE_TYPE_FRONTIER
                                                                         | BATTLE_TYPE_EREADER_TRAINER
                                                                         | BATTLE_TYPE_TRAINER_HILL)))
@@ -1983,7 +1995,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
         u32 monIndices[monsCount];
         DoTrainerPartyPool(trainer, monIndices, monsCount, battleTypeFlags);
 
-        if (trainer->dynamicLevelRatio > 0)
+        if (dynamicLevelRatio > 0)
         {
             for (i = 0; i < PARTY_SIZE; i++)
             {
@@ -1993,7 +2005,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 }
             }
 
-            partyMaxLevel = partyMaxLevel * trainer->dynamicLevelRatio / 100;
+            partyMaxLevel = partyMaxLevel * dynamicLevelRatio / 100;
 
             if (trainer->poolSize > 0)
             {
@@ -2023,12 +2035,12 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             u32 level = partyData[monIndex].lvl;
             u16 species = partyData[monIndex].species;
 
-            #if (RANDOMIZER_AVAILABLE)
+            #if (RANDOMIZER_AVAILABLE == TRUE)
                 if(!isTrainerBossTrainer)
                     species = RandomizeTrainerMon(seed, i, monsCount, species);
             #endif
 
-            if (trainer->dynamicLevelRatio > 0 && (partyMaxLevel - npcTrainerPartyMaxLevel) > 0)
+            if (dynamicLevelRatio > 0 && (partyMaxLevel - npcTrainerPartyMaxLevel) > 0)
             {
                 level += (partyMaxLevel - npcTrainerPartyMaxLevel);
             }
@@ -2056,7 +2068,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             // TODO implement flag for dynamic level scaling here
             //CreateMon(&party[i], partyData[monIndex].species, partyData[monIndex].lvl, personalityValue, otId);
             //temp: void CreateMon(struct Pokemon *mon, u16 species, u8 level, u32 personality, struct OriginalTrainerId trainerId)
-            CreateMon(&party[i], partyData[monIndex].species, level, personalityValue, otId);
+            CreateMon(&party[i], species, level, personalityValue, otId);
             SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[monIndex].heldItem);
 
             CustomTrainerPartyAssignMoves(&party[i], &partyData[monIndex]);
@@ -2155,11 +2167,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
         if (tempTrainer.partySize == 0)
             tempTrainer.partySize = origTrainer->partySize;
 
-        retVal = CreateNPCTrainerPartyFromTrainer(party, (const struct Trainer *)(&tempTrainer), firstTrainer, gBattleTypeFlags);
+        retVal = CreateNPCTrainerPartyFromTrainer(party, (const struct Trainer *)(&tempTrainer), firstTrainer, gBattleTypeFlags, trainerNum);
     }
     else
     {
-        retVal = CreateNPCTrainerPartyFromTrainer(party, GetTrainerStructFromId(trainerNum), firstTrainer, gBattleTypeFlags);
+        retVal = CreateNPCTrainerPartyFromTrainer(party, GetTrainerStructFromId(trainerNum), firstTrainer, gBattleTypeFlags, trainerNum);
     }
     return retVal;
 }

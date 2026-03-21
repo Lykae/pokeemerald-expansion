@@ -1205,6 +1205,9 @@ struct SaveBlock1
     u8 rivalName[PLAYER_NAME_LENGTH + 1];
     struct DaycareMon route5DayCareMon;
 #endif
+    u8 optionsRandomizer;
+    u8 optionsRandoMisc;
+    u8 optionsScaling;
     // sizeof: 0x3???
 };
 

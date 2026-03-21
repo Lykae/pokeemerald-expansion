@@ -2897,7 +2897,7 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
             }
             break;
         case MON_DATA_CANT_RANDOMIZE_ABILITY:
-            retVal = substruct3->cantRandomizeAbility;
+            retVal = GetSubstruct3(boxMon)->cantRandomizeAbility;
             break;
         default:
             break;
@@ -3332,7 +3332,7 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             break;
         }
         case MON_DATA_CANT_RANDOMIZE_ABILITY:
-            SET8(substruct3->cantRandomizeAbility);
+            SET8(GetSubstruct3(boxMon)->cantRandomizeAbility);
             break;
         default:
             break;
@@ -6608,7 +6608,7 @@ u32 GetFormChangeTargetSpeciesBoxMon(struct BoxPokemon *boxMon, enum FormChanges
         .method = method,
         .currentSpecies = species,
         .heldItem = GetBoxMonData(boxMon, MON_DATA_HELD_ITEM),
-        .ability = GetAbilityBySpecies(species, GetBoxMonData(boxMon, MON_DATA_ABILITY_NUM)),
+        .ability = GetAbilityBySpecies(species, GetBoxMonData(boxMon, MON_DATA_ABILITY_NUM), FALSE),
         .partyItemUsed = gSpecialVar_ItemId,
         .multichoiceSelection = gSpecialVar_Result,
         .status = GetBoxMonData(boxMon, MON_DATA_STATUS),
@@ -7080,12 +7080,16 @@ bool32 TryBoxMonFormChange(struct BoxPokemon *boxMon, enum FormChanges method)
 
 u16 SanitizeSpeciesId(u16 species)
 {
-    assertf(species <= NUM_SPECIES && (species == SPECIES_NONE || IsSpeciesEnabled(species)), "invalid species: %d", species)
-    {
+    //assertf(species <= NUM_SPECIES && (species == SPECIES_NONE || IsSpeciesEnabled(species)), "invalid species: %d", species)
+    //{
+    //    return SPECIES_NONE;
+    //}
+//
+    //return species;
+    if (species > NUM_SPECIES || !IsSpeciesEnabled(species))
         return SPECIES_NONE;
-    }
-
-    return species;
+    else
+        return species;
 }
 
 bool32 IsSpeciesEnabled(u16 species)
