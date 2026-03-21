@@ -276,7 +276,7 @@ static inline bool32 IsKeyItem(u16 itemId)
 // ITEM_NONE also should not be randomized as it is invalid.
 static inline bool32 ShouldRandomizeItem(u16 itemId)
 {
-    return !(IsItemHM(itemId) || IsKeyItem(itemId) || itemId == ITEM_NONE);
+    return !(IsItemHM(itemId) || IsKeyItem(itemId) || itemId == ITEM_NONE || FlagGet(FLAG_RANDOMIZER_ITEMS_ENABLED) == TRUE);
 }
 
 #include "data/randomizer/item_whitelist.h"

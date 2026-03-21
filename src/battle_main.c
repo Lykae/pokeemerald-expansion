@@ -1930,10 +1930,12 @@ void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon 
     bool32 noMoveSet = TRUE;
     u32 j;
 
+    if (FlagGet(FLAG_RANDOMIZER_FEATURES_ENABLED) == FALSE) {
     for (j = 0; j < MAX_MON_MOVES; ++j)
-    {
-        if (partyEntry->moves[j] != MOVE_NONE)
-            noMoveSet = FALSE;
+        {
+            if (partyEntry->moves[j] != MOVE_NONE)
+                noMoveSet = FALSE;
+        }
     }
     if (noMoveSet)
     {
