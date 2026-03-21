@@ -1920,28 +1920,28 @@ static void DexNavFadeAndExit(void)
 static bool8 SpeciesInArray(u16 species, u8 section)
 {
     u32 i;
-    enum NationalDexOrder dexNum = SpeciesToNationalPokedexNum(species);
+    //enum NationalDexOrder dexNum = SpeciesToNationalPokedexNum(species);
 
     switch (section)
     {
     case 0: //land
         for (i = 0; i < LAND_WILD_COUNT; i++)
         {
-            if (SpeciesToNationalPokedexNum(sDexNavUiDataPtr->landSpecies[i]) == dexNum)
+            if (sDexNavUiDataPtr->landSpecies[i] == species)
                 return TRUE;
         }
         break;
     case 1: //water
         for (i = 0; i < WATER_WILD_COUNT; i++)
         {
-            if (SpeciesToNationalPokedexNum(sDexNavUiDataPtr->waterSpecies[i]) == dexNum)
+            if (sDexNavUiDataPtr->waterSpecies[i] == species)
                 return TRUE;
         }
         break;
     case 2: //hidden
         for (i = 0; i < HIDDEN_WILD_COUNT; i++)
         {
-            if (SpeciesToNationalPokedexNum(sDexNavUiDataPtr->hiddenSpecies[i]) == dexNum)
+            if (sDexNavUiDataPtr->hiddenSpecies[i] == species)
                 return TRUE;
         }
         break;
@@ -1951,6 +1951,41 @@ static bool8 SpeciesInArray(u16 species, u8 section)
 
     return FALSE;
 }
+
+//static bool8 SpeciesInArray(u16 species, u8 section)
+//{
+//    u32 i;
+//    enum NationalDexOrder dexNum = SpeciesToNationalPokedexNum(species);
+//
+//    switch (section)
+//    {
+//    case 0: //land
+//        for (i = 0; i < LAND_WILD_COUNT; i++)
+//        {
+//            if (SpeciesToNationalPokedexNum(sDexNavUiDataPtr->landSpecies[i]) == dexNum)
+//                return TRUE;
+//        }
+//        break;
+//    case 1: //water
+//        for (i = 0; i < WATER_WILD_COUNT; i++)
+//        {
+//            if (SpeciesToNationalPokedexNum(sDexNavUiDataPtr->waterSpecies[i]) == dexNum)
+//                return TRUE;
+//        }
+//        break;
+//    case 2: //hidden
+//        for (i = 0; i < HIDDEN_WILD_COUNT; i++)
+//        {
+//            if (SpeciesToNationalPokedexNum(sDexNavUiDataPtr->hiddenSpecies[i]) == dexNum)
+//                return TRUE;
+//        }
+//        break;
+//    default:
+//        break;
+//    }
+//
+//    return FALSE;
+//}
 
 // get unique wild encounters on current map
 static void DexNavLoadEncounterData(void)
@@ -1982,13 +2017,15 @@ static void DexNavLoadEncounterData(void)
         {
             species = landMonsInfo->wildPokemon[i].species;
             #if RANDOMIZER_AVAILABLE == TRUE
-                species = RandomizeWildEncounter(
+                u16 randospecies = RandomizeWildEncounter(
                     species,
                     gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup,
                     //gSaveBlock1Ptr->location.mapNum,
                     //gSaveBlock1Ptr->location.mapGroup,
                     WILD_AREA_LAND, i);
+                MgbaPrintf(MGBA_LOG_INFO, "slot %d: %d -> %d", i, species, randospecies);
+                species = randospecies
             #endif
             if (species != SPECIES_NONE && !SpeciesInArray(species, 0))
                 sDexNavUiDataPtr->landSpecies[grassIndex++] = species;
