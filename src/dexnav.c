@@ -59,6 +59,7 @@
 #include "constants/rgb.h"
 #include "constants/region_map_sections.h"
 #include "gba/m4a_internal.h"
+#include "randomizer.h"
 
 #if DEXNAV_ENABLED
 STATIC_ASSERT(DN_FLAG_SEARCHING != 0, DNFlagSearching_Must_Not_Be_Zero);
@@ -2017,16 +2018,16 @@ static void DexNavLoadEncounterData(void)
         {
             species = landMonsInfo->wildPokemon[i].species;
             #if RANDOMIZER_AVAILABLE == TRUE
-                u16 randospecies = RandomizeWildEncounter(
+            MgbaPrintf(MGBA_LOG_INFO, "RANDOMIZER_AVAILABLE");
+                species = RandomizeWildEncounter(
                     species,
                     gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup,
                     //gSaveBlock1Ptr->location.mapNum,
                     //gSaveBlock1Ptr->location.mapGroup,
                     WILD_AREA_LAND, i);
-                MgbaPrintf(MGBA_LOG_INFO, "slot %d: %d -> %d", i, species, randospecies);
-                species = randospecies
             #endif
+            MgbaPrintf(MGBA_LOG_INFO, "slot %d: %d -> %d", i, landMonsInfo->wildPokemon[i].species, species);
             if (species != SPECIES_NONE && !SpeciesInArray(species, 0))
                 sDexNavUiDataPtr->landSpecies[grassIndex++] = species;
         }
