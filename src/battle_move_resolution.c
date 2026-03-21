@@ -183,52 +183,52 @@ static enum CancelerResult CancelerAsleepOrFrozen(struct BattleContext *ctx)
 
 static enum CancelerResult CancelerObedience(struct BattleContext *ctx)
 {
-    if (!gBattleMons[ctx->battlerAtk].volatiles.multipleTurns)
-    {
-        enum Obedience obedienceResult = GetAttackerObedienceForAction();
-        switch (obedienceResult)
-        {
-        case OBEYS:
-            return CANCELER_RESULT_SUCCESS;
-        case DISOBEYS_LOAFS:
-            // Randomly select, then print a disobedient string
-            // B_MSG_LOAFING, B_MSG_WONT_OBEY, B_MSG_TURNED_AWAY, or B_MSG_PRETEND_NOT_NOTICE
-            gBattleCommunication[MULTISTRING_CHOOSER] = MOD(Random(), NUM_LOAF_STRINGS);
-            gBattlescriptCurrInstr = BattleScript_MoveUsedLoafingAround;
-            gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_MISSED;
-            return CANCELER_RESULT_FAILURE;
-        case DISOBEYS_HITS_SELF:
-            gBattlerTarget = ctx->battlerAtk;
-            struct BattleContext dmgCtx = {0};
-            dmgCtx.battlerAtk = dmgCtx.battlerDef = ctx->battlerAtk;
-            dmgCtx.move = dmgCtx.chosenMove = MOVE_NONE;
-            dmgCtx.moveType = TYPE_MYSTERY;
-            dmgCtx.isCrit = FALSE;
-            dmgCtx.randomFactor = FALSE;
-            dmgCtx.updateFlags = TRUE;
-            dmgCtx.isSelfInflicted = TRUE;
-            dmgCtx.fixedBasePower = 40;
-            gBattleStruct->moveDamage[ctx->battlerAtk] = CalculateMoveDamage(&dmgCtx);
-            gBattlescriptCurrInstr = BattleScript_IgnoresAndHitsItself;
-            return CANCELER_RESULT_FAILURE; // Move doesn't fail but mon hits itself
-        case DISOBEYS_FALL_ASLEEP:
-            if (IsSleepClauseEnabled())
-                gBattleStruct->battlerState[ctx->battlerAtk].sleepClauseEffectExempt = TRUE;
-            gBattlescriptCurrInstr = BattleScript_IgnoresAndFallsAsleep;
-            gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_MISSED;
-            return CANCELER_RESULT_FAILURE;
-            break;
-        case DISOBEYS_WHILE_ASLEEP:
-            gBattlescriptCurrInstr = BattleScript_IgnoresWhileAsleep;
-            gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_MISSED;
-            return CANCELER_RESULT_FAILURE;
-        case DISOBEYS_RANDOM_MOVE:
-            gCurrentMove = gCalledMove = gBattleMons[ctx->battlerAtk].moves[gCurrMovePos];
-            BattleScriptCall(BattleScript_IgnoresAndUsesRandomMove);
-            gBattlerTarget = GetBattleMoveTarget(gCalledMove, TARGET_NONE);
-            return CANCELER_RESULT_BREAK;
-        }
-    }
+    //if (!gBattleMons[ctx->battlerAtk].volatiles.multipleTurns)
+    //{
+    //    enum Obedience obedienceResult = GetAttackerObedienceForAction();
+    //    switch (obedienceResult)
+    //    {
+    //    case OBEYS:
+    //        return CANCELER_RESULT_SUCCESS;
+    //    case DISOBEYS_LOAFS:
+    //        // Randomly select, then print a disobedient string
+    //        // B_MSG_LOAFING, B_MSG_WONT_OBEY, B_MSG_TURNED_AWAY, or B_MSG_PRETEND_NOT_NOTICE
+    //        gBattleCommunication[MULTISTRING_CHOOSER] = MOD(Random(), NUM_LOAF_STRINGS);
+    //        gBattlescriptCurrInstr = BattleScript_MoveUsedLoafingAround;
+    //        gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_MISSED;
+    //        return CANCELER_RESULT_FAILURE;
+    //    case DISOBEYS_HITS_SELF:
+    //        gBattlerTarget = ctx->battlerAtk;
+    //        struct BattleContext dmgCtx = {0};
+    //        dmgCtx.battlerAtk = dmgCtx.battlerDef = ctx->battlerAtk;
+    //        dmgCtx.move = dmgCtx.chosenMove = MOVE_NONE;
+    //        dmgCtx.moveType = TYPE_MYSTERY;
+    //        dmgCtx.isCrit = FALSE;
+    //        dmgCtx.randomFactor = FALSE;
+    //        dmgCtx.updateFlags = TRUE;
+    //        dmgCtx.isSelfInflicted = TRUE;
+    //        dmgCtx.fixedBasePower = 40;
+    //        gBattleStruct->moveDamage[ctx->battlerAtk] = CalculateMoveDamage(&dmgCtx);
+    //        gBattlescriptCurrInstr = BattleScript_IgnoresAndHitsItself;
+    //        return CANCELER_RESULT_FAILURE; // Move doesn't fail but mon hits itself
+    //    case DISOBEYS_FALL_ASLEEP:
+    //        if (IsSleepClauseEnabled())
+    //            gBattleStruct->battlerState[ctx->battlerAtk].sleepClauseEffectExempt = TRUE;
+    //        gBattlescriptCurrInstr = BattleScript_IgnoresAndFallsAsleep;
+    //        gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_MISSED;
+    //        return CANCELER_RESULT_FAILURE;
+    //        break;
+    //    case DISOBEYS_WHILE_ASLEEP:
+    //        gBattlescriptCurrInstr = BattleScript_IgnoresWhileAsleep;
+    //        gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_MISSED;
+    //        return CANCELER_RESULT_FAILURE;
+    //    case DISOBEYS_RANDOM_MOVE:
+    //        gCurrentMove = gCalledMove = gBattleMons[ctx->battlerAtk].moves[gCurrMovePos];
+    //        BattleScriptCall(BattleScript_IgnoresAndUsesRandomMove);
+    //        gBattlerTarget = GetBattleMoveTarget(gCalledMove, TARGET_NONE);
+    //        return CANCELER_RESULT_BREAK;
+    //    }
+    //}
     return CANCELER_RESULT_SUCCESS;
 }
 
