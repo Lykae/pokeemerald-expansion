@@ -7451,6 +7451,7 @@ static bool8 TrySwitchInPokemon(void)
 {
     u8 slot = GetCursorSelectionMonId();
     u8 newSlot;
+    u8 currBattler = gBattlerInMenuId;
 
     // In a multi battle, slots 1, 4, and 5 are the partner's Pokémon
     if (IsMultiBattle() == TRUE && (slot == 1 || slot == 4 || slot == 5))
@@ -7467,7 +7468,9 @@ static bool8 TrySwitchInPokemon(void)
     }
     for (enum BattlerId i = 0; i < gBattlersCount; i++)
     {
-        if (IS_ON_PLAYER_OR_ENEMY_SIDE(i) && GetPartyIdFromBattleSlot(slot) == gBattlerPartyIndexes[i])
+        if (IS_ON_PLAYER_OR_ENEMY_SIDE(i) && 
+            (GetPartyIdFromBattleSlot(slot) == gBattlerPartyIndexes[i] || 
+                GetPartyIdFromBattleSlot(slot) == gBattleStruct->monToSwitchIntoId[i]))
         {
             GetMonNickname(&PLAYER_OR_ENEMY_PARTY[slot], gStringVar1);
             StringExpandPlaceholders(gStringVar4, gText_PkmnAlreadyInBattle);
@@ -7492,7 +7495,7 @@ static bool8 TrySwitchInPokemon(void)
     }
     if (gPartyMenu.action == PARTY_ACTION_CANT_SWITCH)
     {
-        u8 currBattler = gBattlerInMenuId;
+        //u8 currBattler = gBattlerInMenuId;
         GetMonNickname(&PLAYER_OR_ENEMY_PARTY[GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[currBattler])], gStringVar1);
         StringExpandPlaceholders(gStringVar4, gText_PkmnCantSwitchOut);
         return FALSE;
