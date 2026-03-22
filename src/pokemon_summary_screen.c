@@ -3599,10 +3599,10 @@ static void PrintInfoPageText(void)
         PrintMonOTID();
         PrintMonAbilityName();
         PrintMonAbilityDescription();
-        if (usingEnemyParty == FALSE) {
-            BufferMonTrainerMemo();
-            PrintMonTrainerMemo();
-        }
+        //if (usingEnemyParty == FALSE) {
+        BufferMonTrainerMemo();
+        PrintMonTrainerMemo();
+        //}
     }
 }
 
@@ -3624,12 +3624,12 @@ static void Task_PrintInfoPage(u8 taskId)
         PrintMonAbilityDescription();
         break;
     case 5:
-        if (usingEnemyParty == FALSE)
+        //if (usingEnemyParty == FALSE)
         BufferMonTrainerMemo();
         break;
     case 6:
-        if (usingEnemyParty == FALSE)
-            PrintMonTrainerMemo();
+        //if (usingEnemyParty == FALSE)
+        PrintMonTrainerMemo();
         break;
     case 7:
         DestroyTask(taskId);
@@ -3686,8 +3686,10 @@ static void BufferMonTrainerMemo(void)
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(1, sMemoMiscTextColor);
     BufferNatureString();
 
-    if (usingEnemyParty == TRUE)
+    if (usingEnemyParty == TRUE) {
+        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, gText_XNature);
         return;
+    }
 
     if (InBattleFactory() == TRUE || InSlateportBattleTent() == TRUE || IsInGamePartnerMon() == TRUE)
     {
