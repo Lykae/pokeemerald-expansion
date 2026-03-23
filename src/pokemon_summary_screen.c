@@ -1197,7 +1197,6 @@ u32 GetAdjustedIvData(struct Pokemon *mon, u32 stat)
 void ShowPokemonSummaryScreen(bool8 isEnemyParty, u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void))
 {
     usingEnemyParty = isEnemyParty;
-    DebugPrintf("------------------------------------------------SHOW SUMMARY SCREEN");
     sMonSummaryScreen = AllocZeroed(sizeof(*sMonSummaryScreen));
     sMonSummaryScreen->mode = mode;
     if (monIndex == PC_MON_CHOSEN)
