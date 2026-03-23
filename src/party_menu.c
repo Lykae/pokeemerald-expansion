@@ -2911,8 +2911,7 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     u8 i, j;
 
     sPartyMenuInternal->numActions = 0;
-    if (!enemyPartyEnabled)
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
+    AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
 
     u16 species = GetMonData(&mons[slotId], MON_DATA_SPECIES);
 
@@ -3127,11 +3126,9 @@ static void Task_HandleSelectionMenuInput(u8 taskId)
 
 static void CursorCb_Summary(u8 taskId)
 {
-    if (!enemyPartyEnabled) {
-        PlaySE(SE_SELECT);
-        sPartyMenuInternal->exitCallback = CB2_ShowPokemonSummaryScreen;
-        Task_ClosePartyMenu(taskId);
-    }
+    PlaySE(SE_SELECT);
+    sPartyMenuInternal->exitCallback = CB2_ShowPokemonSummaryScreen;
+    Task_ClosePartyMenu(taskId);
 }
 
 static void CB2_ShowPokemonSummaryScreen(void)
@@ -3139,15 +3136,15 @@ static void CB2_ShowPokemonSummaryScreen(void)
     if (gPartyMenu.menuType == PARTY_MENU_TYPE_IN_BATTLE)
     {
         UpdatePartyToBattleOrder();
-        ShowPokemonSummaryScreen(SUMMARY_MODE_LOCK_MOVES, PLAYER_OR_ENEMY_PARTY, gPartyMenu.slotId, PLAYER_OR_ENEMY_PARTY_COUNT - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
+        ShowPokemonSummaryScreen(enemyPartyEnabled, SUMMARY_MODE_LOCK_MOVES, PLAYER_OR_ENEMY_PARTY, gPartyMenu.slotId, PLAYER_OR_ENEMY_PARTY_COUNT - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
     }
     else if (gPartyMenu.menuType == PARTY_MENU_TYPE_CHOOSE_HALF)
     {
-        ShowPokemonSummaryScreen(SUMMARY_MODE_LOCK_MOVES, PLAYER_OR_ENEMY_PARTY, gPartyMenu.slotId, PLAYER_OR_ENEMY_PARTY_COUNT - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
+        ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_LOCK_MOVES, PLAYER_OR_ENEMY_PARTY, gPartyMenu.slotId, PLAYER_OR_ENEMY_PARTY_COUNT - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
     }
     else
     {
-        ShowPokemonSummaryScreen(SUMMARY_MODE_NORMAL, PLAYER_OR_ENEMY_PARTY, gPartyMenu.slotId, PLAYER_OR_ENEMY_PARTY_COUNT - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
+        ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_NORMAL, PLAYER_OR_ENEMY_PARTY, gPartyMenu.slotId, PLAYER_OR_ENEMY_PARTY_COUNT - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
     }
 }
 
@@ -3155,7 +3152,11 @@ void CB2_ReturnToPartyMenuFromSummaryScreen(void)
 {
     gPaletteFade.bufferTransferDisabled = TRUE;
     gPartyMenu.slotId = gLastViewedMonIndex;
-    InitPartyMenu(6, gPartyMenu.menuType, KEEP_PARTY_LAYOUT, gPartyMenu.action, TRUE, PARTY_MSG_DO_WHAT_WITH_MON, Task_TryCreateSelectionWindow, gPartyMenu.exitCallback);
+
+    if (enemyPartyEnabled == TRUE)
+        InitPartyMenu(enemyBattler, gPartyMenu.menuType, KEEP_PARTY_LAYOUT, gPartyMenu.action, TRUE, PARTY_MSG_DO_WHAT_WITH_MON, Task_TryCreateSelectionWindow, gPartyMenu.exitCallback);
+    else
+        InitPartyMenu(6, gPartyMenu.menuType, KEEP_PARTY_LAYOUT, gPartyMenu.action, TRUE, PARTY_MSG_DO_WHAT_WITH_MON, Task_TryCreateSelectionWindow, gPartyMenu.exitCallback);
 }
 
 static void CursorCb_Switch(u8 taskId)
@@ -7549,6 +7550,7 @@ static bool8 TrySwitchInPokemon(void)
     }
     if (gPartyMenu.action == PARTY_ACTION_CANT_SWITCH)
     {
+        //u8 currBattler = gBattlerInMenuId;
         GetMonNickname(&PLAYER_OR_ENEMY_PARTY[GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[currBattler])], gStringVar1);
         StringExpandPlaceholders(gStringVar4, gText_PkmnCantSwitchOut);
         return FALSE;
@@ -8053,7 +8055,7 @@ static void Task_BattlePyramidChooseMonHeldItems(u8 taskId)
 
 void MoveDeleterChooseMoveToForget(void)
 {
-    ShowPokemonSummaryScreen(SUMMARY_MODE_SELECT_MOVE, PLAYER_OR_ENEMY_PARTY, gSpecialVar_0x8004, PLAYER_OR_ENEMY_PARTY_COUNT - 1, CB2_ReturnToField);
+    ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_SELECT_MOVE, PLAYER_OR_ENEMY_PARTY, gSpecialVar_0x8004, PLAYER_OR_ENEMY_PARTY_COUNT - 1, CB2_ReturnToField);
     gFieldCallback = FieldCB_ContinueScriptHandleMusic;
 }
 

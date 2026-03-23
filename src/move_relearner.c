@@ -777,19 +777,19 @@ static void DoMoveRelearnerMain(void)
                 switch (gRelearnMode)
                 {
                 case RELEARN_MODE_PSS_PAGE_BATTLE_MOVES:
-                    ShowPokemonSummaryScreen(SUMMARY_MODE_RELEARNER_BATTLE, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
+                    ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_RELEARNER_BATTLE, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
                     break;
                 case RELEARN_MODE_PSS_PAGE_CONTEST_MOVES:
-                    ShowPokemonSummaryScreen(SUMMARY_MODE_RELEARNER_CONTEST, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
+                    ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_RELEARNER_CONTEST, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
                     break;
                 case RELEARN_MODE_BOX_PSS_PAGE_BATTLE_MOVES:
-                    ShowPokemonSummaryScreen(SUMMARY_MODE_RELEARNER_BATTLE, GetBoxedMonPtr(gSpecialVar_MonBoxId, 0), gSpecialVar_MonBoxPos, IN_BOX_COUNT - 1, gInitialSummaryScreenCallback);
+                    ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_RELEARNER_BATTLE, GetBoxedMonPtr(gSpecialVar_MonBoxId, 0), gSpecialVar_MonBoxPos, IN_BOX_COUNT - 1, gInitialSummaryScreenCallback);
                     break;
                 case RELEARN_MODE_BOX_PSS_PAGE_CONTEST_MOVES:
-                    ShowPokemonSummaryScreen(SUMMARY_MODE_RELEARNER_CONTEST, GetBoxedMonPtr(gSpecialVar_MonBoxId, 0), gSpecialVar_MonBoxPos, IN_BOX_COUNT - 1, gInitialSummaryScreenCallback);
+                    ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_RELEARNER_CONTEST, GetBoxedMonPtr(gSpecialVar_MonBoxId, 0), gSpecialVar_MonBoxPos, IN_BOX_COUNT - 1, gInitialSummaryScreenCallback);
                     break;
                 default:
-                    ShowPokemonSummaryScreen(SUMMARY_MODE_NORMAL, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
+                    ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_NORMAL, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
                     break;
                 }
             }

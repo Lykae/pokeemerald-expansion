@@ -4521,7 +4521,11 @@ static void HandleTurnActionSelectionState(void)
                     break;
                 }
 
-                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
+                //OPPONENT SURRENDER
+                if (!IsOnPlayerSide(battler) && (gBattleTypeFlags & BATTLE_TYPE_TRAINER)) {
+                    gBattleCommunication[battler]++;
+                }
+                else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
                     && gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_TRAINER_HILL)
                     && gBattleResources->bufferB[battler][1] == B_ACTION_RUN)
                 {

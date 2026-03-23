@@ -1165,6 +1165,10 @@ static const struct SpriteTemplate sSpriteTemplate_StatusCondition =
 };
 static const u16 sMarkings_Pal[] = INCBIN_U16("graphics/summary_screen/markings.gbapal");
 
+bool8 usingEnemyParty = FALSE;
+
+static const u8 gText_Unknown[] = _("UNKNOWN");
+
 // code
 static u8 ShowCategoryIcon(enum DamageCategory category)
 {
@@ -1190,8 +1194,9 @@ u32 GetAdjustedIvData(struct Pokemon *mon, u32 stat)
     return GetMonData(mon, MON_DATA_HP_IV + stat);
 }
 
-void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void))
+void ShowPokemonSummaryScreen(bool8 isEnemyParty, u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void))
 {
+    usingEnemyParty = isEnemyParty;
     sMonSummaryScreen = AllocZeroed(sizeof(*sMonSummaryScreen));
     sMonSummaryScreen->mode = mode;
     if (monIndex == PC_MON_CHOSEN)
@@ -1258,7 +1263,7 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
 
 void ShowSelectMovePokemonSummaryScreen(struct Pokemon *mons, u8 monIndex, void (*callback)(void), u16 newMove)
 {
-    ShowPokemonSummaryScreen(SUMMARY_MODE_SELECT_MOVE, mons, monIndex, gPlayerPartyCount - 1, callback);
+    ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_SELECT_MOVE, mons, monIndex, gPlayerPartyCount - 1, callback);
     sMonSummaryScreen->newMove = newMove;
 }
 
@@ -1552,18 +1557,30 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
         ExtractMonSkillStatsData(mon, sum);
         break;
     case 3:
-        GetMonData(mon, MON_DATA_OT_NAME, sum->OTName);
-        ConvertInternationalString(sum->OTName, GetMonData(mon, MON_DATA_LANGUAGE));
-        sum->ailment = GetMonAilment(mon);
-        sum->OTGender = GetMonData(mon, MON_DATA_OT_GENDER);
-        sum->OTID = GetMonData(mon, MON_DATA_OT_ID);
-        sum->metLocation = GetMonData(mon, MON_DATA_MET_LOCATION);
-        sum->metLevel = GetMonData(mon, MON_DATA_MET_LEVEL);
-        sum->metGame = GetMonData(mon, MON_DATA_MET_GAME);
-        sum->friendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
+        if (usingEnemyParty == TRUE) {
+            StringCopy(sum->OTName, gText_Unknown);
+            sum->ailment = 0;
+            sum->OTGender = 0;
+            sum->OTID = 0;
+            sum->metLocation = 0;
+            sum->metLevel = 0;
+            sum->metGame = 0;
+            sum->friendship = 0;
+        } else {
+            GetMonData(mon, MON_DATA_OT_NAME, sum->OTName);
+            ConvertInternationalString(sum->OTName, GetMonData(mon, MON_DATA_LANGUAGE));
+            sum->ailment = GetMonAilment(mon);
+            sum->OTGender = GetMonData(mon, MON_DATA_OT_GENDER);
+            sum->OTID = GetMonData(mon, MON_DATA_OT_ID);
+            sum->metLocation = GetMonData(mon, MON_DATA_MET_LOCATION);
+            sum->metLevel = GetMonData(mon, MON_DATA_MET_LEVEL);
+            sum->metGame = GetMonData(mon, MON_DATA_MET_GAME);
+            sum->friendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
+        }
         break;
     default:
-        sum->ribbonCount = GetMonData(mon, MON_DATA_RIBBON_COUNT);
+        if (usingEnemyParty == FALSE)
+            sum->ribbonCount = GetMonData(mon, MON_DATA_RIBBON_COUNT);
         sum->teraType = GetMonData(mon, MON_DATA_TERA_TYPE);
         sum->isShiny = GetMonData(mon, MON_DATA_IS_SHINY);
         return TRUE;
@@ -3398,8 +3415,10 @@ static void PrintPageNamesAndStats(void)
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_RIGHT, gText_SpDef4, statsXPos, 17, 0, 1);
     statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Speed2, 36);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_RIGHT, gText_Speed2, statsXPos, 33, 0, 1);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_ExpPoints, 6, 1, 0, 1);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_NextLv, 6, 17, 0, 1);
+    if (usingEnemyParty == FALSE) {
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_ExpPoints, 6, 1, 0, 1);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_NextLv, 6, 17, 0, 1);
+    }
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATUS, gText_Status, 2, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_POWER_ACC, gText_Power, 0, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_POWER_ACC, gText_Accuracy2, 0, 17, 0, 1);
@@ -3579,8 +3598,10 @@ static void PrintInfoPageText(void)
         PrintMonOTID();
         PrintMonAbilityName();
         PrintMonAbilityDescription();
+        //if (usingEnemyParty == FALSE) {
         BufferMonTrainerMemo();
         PrintMonTrainerMemo();
+        //}
     }
 }
 
@@ -3602,9 +3623,11 @@ static void Task_PrintInfoPage(u8 taskId)
         PrintMonAbilityDescription();
         break;
     case 5:
+        //if (usingEnemyParty == FALSE)
         BufferMonTrainerMemo();
         break;
     case 6:
+        //if (usingEnemyParty == FALSE)
         PrintMonTrainerMemo();
         break;
     case 7:
@@ -3656,11 +3679,16 @@ static void BufferMonTrainerMemo(void)
 {
     struct PokeSummary *sum = &sMonSummaryScreen->summary;
     const u8 *text;
-
+    
     DynamicPlaceholderTextUtil_Reset();
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, sMemoNatureTextColor);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(1, sMemoMiscTextColor);
     BufferNatureString();
+
+    if (usingEnemyParty == TRUE) {
+        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, gText_XNature);
+        return;
+    }
 
     if (InBattleFactory() == TRUE || InSlateportBattleTent() == TRUE || IsInGamePartnerMon() == TRUE)
     {
@@ -3731,6 +3759,9 @@ static bool8 DoesMonOTMatchOwner(void)
     u32 trainerId;
     u8 gender;
 
+    if (usingEnemyParty == TRUE)
+        return FALSE;
+
     if (sMonSummaryScreen->monList.mons == gEnemyParty)
     {
         u8 multiID = GetMultiplayerId() ^ 1;
@@ -3753,6 +3784,9 @@ static bool8 DoesMonOTMatchOwner(void)
 
 static bool8 DidMonComeFromGBAGames(void)
 {
+    if (usingEnemyParty == TRUE)
+        return FALSE;
+
     struct PokeSummary *sum = &sMonSummaryScreen->summary;
     if (sum->metGame > 0 && sum->metGame <= VERSION_LEAF_GREEN)
         return TRUE;
@@ -3761,6 +3795,9 @@ static bool8 DidMonComeFromGBAGames(void)
 
 bool8 DidMonComeFromRSE(void)
 {
+    if (usingEnemyParty == TRUE)
+        return FALSE;
+    
     struct PokeSummary *sum = &sMonSummaryScreen->summary;
     if (sum->metGame > 0 && sum->metGame <= VERSION_EMERALD)
         return TRUE;
@@ -3769,6 +3806,9 @@ bool8 DidMonComeFromRSE(void)
 
 static bool8 IsInGamePartnerMon(void)
 {
+    if (usingEnemyParty == TRUE)
+        return FALSE;
+    
     if ((gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER) && gMain.inBattle)
     {
         if (sMonSummaryScreen->curMonIndex == 1 || sMonSummaryScreen->curMonIndex == 4 || sMonSummaryScreen->curMonIndex == 5)
@@ -3779,6 +3819,8 @@ static bool8 IsInGamePartnerMon(void)
 
 static void PrintEggOTName(void)
 {
+    if (usingEnemyParty == TRUE)
+        return;
     u32 windowId = AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ORIGINAL_TRAINER);
     u32 width = GetStringWidth(FONT_NORMAL, gText_OTSlash, 0);
     PrintTextOnWindow(windowId, gText_OTSlash, 0, 1, 0, 1);
@@ -3787,6 +3829,9 @@ static void PrintEggOTName(void)
 
 static void PrintEggOTID(void)
 {
+    if (usingEnemyParty == TRUE)
+        return;
+    
     int x;
     StringCopy(gStringVar1, gText_IDNumber2);
     StringAppend(gStringVar1, gText_FiveMarks);
@@ -4060,6 +4105,9 @@ static void PrintRightColumnStats(void)
 
 static void PrintExpPointsNextLevel(void)
 {
+
+    if (usingEnemyParty == TRUE)
+        return;
     struct PokeSummary *sum = &sMonSummaryScreen->summary;
     u8 windowId = AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_EXP);
     int x;
@@ -4862,6 +4910,8 @@ static inline bool32 ShouldShowIvEvPrompt(void)
 
 static inline void ShowUtilityPrompt(s16 mode)
 {
+    if (usingEnemyParty == TRUE)
+        return;
     const u8* promptText = NULL;
     const u8* gText_SkillPageIvs = COMPOUND_STRING("IVs");
     const u8* gText_SkillPageEvs = COMPOUND_STRING("EVs");
@@ -4980,7 +5030,7 @@ static void ShowRelearnPrompt(void)
 static void CB2_ReturnToSummaryScreenFromNamingScreen(void)
 {
     SetBoxMonData(GetSelectedBoxMonFromPcOrParty(), MON_DATA_NICKNAME, gStringVar2);
-    ShowPokemonSummaryScreen(SUMMARY_MODE_NORMAL, gPlayerParty, gSpecialVar_0x8004, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
+    ShowPokemonSummaryScreen(FALSE, SUMMARY_MODE_NORMAL, gPlayerParty, gSpecialVar_0x8004, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
 }
 
 static void CB2_PssChangePokemonNickname(void)
