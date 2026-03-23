@@ -662,6 +662,23 @@ void HandleAction_Run(void)
         gBattleOutcome |= B_OUTCOME_LINK_BATTLE_RAN;
         gSaveBlock2Ptr->frontier.disableRecordBattle = TRUE;
     }
+    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER) {
+        gCurrentTurnActionNumber = gBattlersCount;
+
+        for (enum BattlerId i = 0; i < gBattlersCount; i++)
+        {
+            if (IsOnPlayerSide(i))
+            {
+                if (gChosenActionByBattler[i] == B_ACTION_RUN)
+                    gBattleOutcome |= B_OUTCOME_LOST;
+            }
+            else
+            {
+                if (gChosenActionByBattler[i] == B_ACTION_RUN)
+                    gBattleOutcome |= B_OUTCOME_WON;
+            }
+        }
+    }
     else
     {
         if (IsOnPlayerSide(gBattlerAttacker))
