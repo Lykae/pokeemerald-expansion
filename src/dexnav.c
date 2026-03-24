@@ -1118,20 +1118,20 @@ bool32 OnStep_DexNavSearch(void)
     }
 
     //Caves and water the pokemon moves around
-    if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND)
-        && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 2
-        && !sDexNavSearchDataPtr->hiddenSearch)
-    {
-        FieldEffectStop(&gSprites[sDexNavSearchDataPtr->fldEffSpriteId], sDexNavSearchDataPtr->fldEffId);
-
-        if (!TryStartHiddenMonFieldEffect(sDexNavSearchDataPtr->environment, 10, 10, TRUE))
-        {
-            EndDexNavSearchSetupScript(EventScript_PokemonGotAway);
-            return TRUE;
-        }
-
-        sDexNavSearchDataPtr->movementCount++;
-    }
+    //if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND)
+    //    && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 2
+    //    && !sDexNavSearchDataPtr->hiddenSearch)
+    //{
+    //    FieldEffectStop(&gSprites[sDexNavSearchDataPtr->fldEffSpriteId], sDexNavSearchDataPtr->fldEffId);
+//
+    //    if (!TryStartHiddenMonFieldEffect(sDexNavSearchDataPtr->environment, 10, 10, TRUE))
+    //    {
+    //        EndDexNavSearchSetupScript(EventScript_PokemonGotAway);
+    //        return TRUE;
+    //    }
+//
+    //    sDexNavSearchDataPtr->movementCount++;
+    //}
     return FALSE;
 }
 
