@@ -13,6 +13,7 @@
 #include "constants/abilities.h"
 #include "data/randomizer/ability_whitelist.h"
 #include "constants/abilities.h"
+#include "caps.h"
 
 enum {
     RANDO_OFF,
@@ -701,6 +702,7 @@ void GetUniqueMonList(enum RandomizerReason reason, enum RandomizerSpeciesMode m
     u32 i, curMon;
     u32 seenMonBitVector[(RANDOMIZER_SPECIES_COUNT-1)/32+1] = {};
     struct Sfc32State state = RandomizerRandSeed(reason, seed1, seed2);
+    u32 levelCap = GetCurrentLevelCap();
 
     for (i = 0; i < count; i++)
     {
@@ -725,6 +727,9 @@ void GetUniqueMonList(enum RandomizerReason reason, enum RandomizerSpeciesMode m
             // until one that hasn't been seen is picked.
 
             curMon = RandomizeMonFromSeed(&state, mode, curOriginal);
+
+            if (mode == MON_RANDOM_LEGEND_AWARE)
+                curMon = UpdateRandomMonEvo(curMon, mode, &state, levelCap);
 
             // Compute the bit address of this mon.
             adjustedCurMon = curMon - 1;
@@ -812,7 +817,7 @@ static u16 ChooseFormSpecial(struct Sfc32State *state, const u16 baseSpecies)
 #undef RANDOM_FROM_ARRAY
 #undef RARE_FORM
 
-u16 RandomizeMon(enum RandomizerReason reason, enum RandomizerSpeciesMode mode, u32 seed, u16 species)
+u16 RandomizeMon(enum RandomizerReason reason, enum RandomizerSpeciesMode mode, u32 seed, u16 species, u32 level)
 {
     u32 speciesMode;
     u16 resultSpecies;
@@ -824,6 +829,8 @@ u16 RandomizeMon(enum RandomizerReason reason, enum RandomizerSpeciesMode mode, 
     state = RandomizerRandSeed(reason, seed, species);
 
     resultSpecies = RandomizeMonFromSeed(&state, mode, species);
+    if (mode == MON_RANDOM_LEGEND_AWARE)
+        resultSpecies = UpdateRandomMonEvo(resultSpecies, mode, &state, level);
     speciesMode = gSpeciesInfo[resultSpecies].randomizerMode;
 
     switch (speciesMode)
@@ -838,7 +845,7 @@ u16 RandomizeMon(enum RandomizerReason reason, enum RandomizerSpeciesMode mode, 
     }
 }
 
-u16 RandomizeWildEncounter(u16 species, u8 mapNum, u8 mapGroup, enum WildPokemonArea area, u8 slot)
+u16 RandomizeWildEncounter(u16 species, u8 mapNum, u8 mapGroup, enum WildPokemonArea area, u8 slot, u32 level)
 {
     if (RandomizerFeatureEnabled(RANDOMIZE_WILD_MON))
     {
@@ -850,7 +857,7 @@ u16 RandomizeWildEncounter(u16 species, u8 mapNum, u8 mapGroup, enum WildPokemon
         seed |= ((u32)area) << 8;
         seed |= slot;
 
-        return RandomizeMon(RANDOMIZER_REASON_WILD_ENCOUNTER, GetRandomizerOption(RANDOMIZER_OPTION_SPECIES_MODE), seed, species);
+        return RandomizeMon(RANDOMIZER_REASON_WILD_ENCOUNTER, GetRandomizerOption(RANDOMIZER_OPTION_SPECIES_MODE), seed, species, level);
     }
 
     return species;
@@ -886,7 +893,107 @@ bool32 IsRandomizationPossible(u16 originalSpecies, u16 targetSpecies)
     return TRUE;
 }
 
-u16 RandomizeTrainerMon(u16 trainerId, u8 slot, u8 totalMons, u16 species)
+u16 GetPreEvolution(u16 species, u32 level)
+{
+    for (u16 i = 1; i < NUM_SPECIES; i++)
+    {
+        const struct Evolution *evolutions = GetSpeciesEvolutions(i);
+
+        if (evolutions == NULL)
+            continue;
+
+        for (int j = 0; evolutions[j].method != EVOLUTIONS_END; j++)
+        {   
+            if (evolutions[j].targetSpecies == species) {
+                if (evolutions[j].method == EVO_LEVEL) {
+                    if (evolutions[j].param == 0) {
+                        u16 prevo = GetPreEvolution(i, level);
+                        if (prevo == i) {
+                            return species;
+                        } else {
+                            return prevo;
+                        }
+                    }
+                    else if (evolutions[j].param > level)
+                    {
+                        return i;
+                    }
+                    return species;
+                }
+                else {
+                    if (level < 33) 
+                    {
+                        return i;
+                    }
+                }
+                return species;
+            }
+        }
+    }
+
+    return species;
+}
+
+u16 GetMonEvo(u16 species, u32 level, struct Sfc32State *state)
+{
+    const struct Evolution *evos = GetSpeciesEvolutions(species);
+
+    if (evos == NULL)
+        return species;
+
+    u16 possible[8];
+    u32 count = 0;
+
+    for (int j = 0; evos[j].method != EVOLUTIONS_END; j++)
+    {
+        if (!IsSpeciesPermitted(evos[j].targetSpecies))
+            continue;
+        u16 method = evos[j].method;
+        u16 param  = evos[j].param;
+
+        if (method == EVO_LEVEL)
+        {
+            if (param <= level)
+            {
+                possible[count++] = evos[j].targetSpecies;
+            }
+        }
+        else
+        {
+            if (level >= 33) {
+                possible[count++] = evos[j].targetSpecies;
+            }
+        }
+    }
+
+    if (count == 0)
+        return species;
+
+    u32 minIndex = 0;
+    u32 maxIndex = count - 1;
+    u32 resultIndex = RandomizerNextRange(state, maxIndex - minIndex + 1) + minIndex;
+    return possible[resultIndex];
+}
+
+u16 UpdateRandomMonEvo(u16 species, enum RandomizerSpeciesMode mode, struct Sfc32State *state, u32 level) {
+    if (mode != MON_RANDOM_LEGEND_AWARE)
+        return species;
+
+    u16 prevo = GetPreEvolution(species, level);
+    
+    if (prevo == species) {
+        u16 evo = GetMonEvo(species, level, state);
+        if (evo == species) {
+            return species;
+        } else {
+            return GetMonEvo(evo, level, state);
+        }
+    } else {
+        return GetPreEvolution(prevo, level);
+    }
+}
+
+u16 RandomizeTrainerMon(u16 trainerId, u8 slot, u8 totalMons, u16 species, u32 level)
 {
     if (RandomizerFeatureEnabled(RANDOMIZE_TRAINER_MON))
     {
@@ -897,13 +1004,13 @@ u16 RandomizeTrainerMon(u16 trainerId, u8 slot, u8 totalMons, u16 species)
         seed |= (u32)totalMons << 8;
         seed |= slot;
 
-        return RandomizeMon(RANDOMIZER_REASON_TRAINER_PARTY, GetRandomizerOption(RANDOMIZER_OPTION_SPECIES_MODE), seed, species);
+        return RandomizeMon(RANDOMIZER_REASON_TRAINER_PARTY, GetRandomizerOption(RANDOMIZER_OPTION_SPECIES_MODE), seed, species, level);;
     }
 
     return species;
 }
 
-u16 RandomizeFixedEncounterMon(u16 species, u8 mapNum, u8 mapGroup, u8 localId)
+u16 RandomizeFixedEncounterMon(u16 species, u8 mapNum, u8 mapGroup, u8 localId, u32 level)
 {
     if (RandomizerFeatureEnabled(RANDOMIZE_FIXED_MON))
     {
@@ -913,7 +1020,7 @@ u16 RandomizeFixedEncounterMon(u16 species, u8 mapNum, u8 mapGroup, u8 localId)
         seed |= (u32)mapGroup << 8;
         seed |= localId;
 
-        return RandomizeMon(RANDOMIZER_REASON_FIXED_ENCOUNTER, GetRandomizerOption(RANDOMIZER_OPTION_SPECIES_MODE), seed, species);
+        return RandomizeMon(RANDOMIZER_REASON_FIXED_ENCOUNTER, GetRandomizerOption(RANDOMIZER_OPTION_SPECIES_MODE), seed, species, level);
     }
 
     return species;

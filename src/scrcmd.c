@@ -2593,7 +2593,7 @@ bool8 ScrCmd_setwildbattle(struct ScriptContext *ctx)
         u8 mapGroup = gSaveBlock1Ptr->location.mapGroup;
         u8 localId = gObjectEvents[gSelectedObjectEvent].localId;
 
-        species = RandomizeFixedEncounterMon(species, mapNum, mapGroup, localId);
+        species = RandomizeFixedEncounterMon(species, mapNum, mapGroup, localId, level);
     #endif
 
     if (species2 == SPECIES_NONE)
@@ -2604,7 +2604,7 @@ bool8 ScrCmd_setwildbattle(struct ScriptContext *ctx)
     else
     {
         #if RANDOMIZER_AVAILABLE == TRUE
-            species2 = RandomizeFixedEncounterMon(species2, mapNum, mapGroup, localId);
+            species2 = RandomizeFixedEncounterMon(species2, mapNum, mapGroup, localId, level2);
         #endif
 
         CreateScriptedDoubleWildMon(species, level, item, species2, level2, item2);

@@ -60,6 +60,7 @@
 #include "constants/region_map_sections.h"
 #include "gba/m4a_internal.h"
 #include "randomizer.h"
+#include "caps.h"
 
 #if DEXNAV_ENABLED
 STATIC_ASSERT(DN_FLAG_SEARCHING != 0, DNFlagSearching_Must_Not_Be_Zero);
@@ -1496,6 +1497,7 @@ static u8 GetEncounterLevelFromMapData(u16 species, enum EncounterType environme
     u16 speciesToCheck;
     timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_WATER);
     const struct WildPokemonInfo *waterMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].waterMonsInfo;
+    u32 levelCap = GetCurrentLevelCap();
 
     switch (environment)
     {
@@ -1513,7 +1515,7 @@ static u8 GetEncounterLevelFromMapData(u16 species, enum EncounterType environme
                     landMonsInfo->wildPokemon[i].species,
                     gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup,
-                    WILD_AREA_LAND, i);
+                    WILD_AREA_LAND, i, levelCap);
             #else
                 speciesToCheck = landMonsInfo->wildPokemon[i].species;
             #endif
@@ -1536,7 +1538,7 @@ static u8 GetEncounterLevelFromMapData(u16 species, enum EncounterType environme
                     waterMonsInfo->wildPokemon[i].species,
                     gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup,
-                    WILD_AREA_WATER, i);
+                    WILD_AREA_WATER, i, levelCap);
             #else
                 speciesToCheck = waterMonsInfo->wildPokemon[i].species;
             #endif
@@ -1562,7 +1564,7 @@ static u8 GetEncounterLevelFromMapData(u16 species, enum EncounterType environme
                     hiddenMonsInfo->wildPokemon[i].species,
                     gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup,
-                    WILD_AREA_HIDDEN, i);
+                    WILD_AREA_HIDDEN, i, levelCap);
             #else
                 speciesToCheck = hiddenMonsInfo->wildPokemon[i].species;
             #endif
@@ -1738,6 +1740,7 @@ static bool8 CapturedAllLandMons(u32 headerId)
     u16 i, species;
     int count = 0;
     enum TimeOfDay timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_LAND);
+    u32 levelCap = GetCurrentLevelCap();
 
     const struct WildPokemonInfo *landMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].landMonsInfo;
 
@@ -1751,7 +1754,7 @@ static bool8 CapturedAllLandMons(u32 headerId)
                     species,
                     gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup,
-                    WILD_AREA_LAND, i);
+                    WILD_AREA_LAND, i, levelCap);
             #endif
             if (species != SPECIES_NONE)
             {
@@ -1780,6 +1783,7 @@ static bool8 CapturedAllWaterMons(u32 headerId)
     u16 species;
     u8 count = 0;
     enum TimeOfDay timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_WATER);
+    u32 levelCap = GetCurrentLevelCap();
 
     const struct WildPokemonInfo *waterMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].waterMonsInfo;
 
@@ -1793,7 +1797,7 @@ static bool8 CapturedAllWaterMons(u32 headerId)
                     species,
                     gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup,
-                    WILD_AREA_WATER, i);
+                    WILD_AREA_WATER, i, levelCap);
             #endif
             if (species != SPECIES_NONE)
             {
@@ -1998,6 +2002,7 @@ static void DexNavLoadEncounterData(void)
     u32 i;
     u32 headerId = GetCurrentMapWildMonHeaderId();
     enum TimeOfDay timeOfDay;
+    u32 levelCap = GetCurrentLevelCap();
 
     timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_LAND);
     const struct WildPokemonInfo *landMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].landMonsInfo;
@@ -2025,7 +2030,7 @@ static void DexNavLoadEncounterData(void)
                     gWildMonHeaders[headerId].mapGroup,
                     //gSaveBlock1Ptr->location.mapNum,
                     //gSaveBlock1Ptr->location.mapGroup,
-                    WILD_AREA_LAND, i);
+                    WILD_AREA_LAND, i, levelCap);
             #endif
             MgbaPrintf(MGBA_LOG_INFO, "slot %d: %d -> %d", i, landMonsInfo->wildPokemon[i].species, species);
             if (species != SPECIES_NONE && !SpeciesInArray(species, 0))
@@ -2046,7 +2051,7 @@ static void DexNavLoadEncounterData(void)
                     gWildMonHeaders[headerId].mapGroup,
                     //gSaveBlock1Ptr->location.mapNum,
                     //gSaveBlock1Ptr->location.mapGroup,
-                    WILD_AREA_WATER, i);
+                    WILD_AREA_WATER, i, levelCap);
             #endif
             if (species != SPECIES_NONE && !SpeciesInArray(species, 1))
                 sDexNavUiDataPtr->waterSpecies[waterIndex++] = species;
@@ -2067,7 +2072,7 @@ static void DexNavLoadEncounterData(void)
                     gWildMonHeaders[headerId].mapGroup,
                     //gSaveBlock1Ptr->location.mapNum,
                     //gSaveBlock1Ptr->location.mapGroup,
-                    WILD_AREA_HIDDEN, i);
+                    WILD_AREA_HIDDEN, i, levelCap);
             #endif
 
             if (species != SPECIES_NONE && !SpeciesInArray(species, 2))

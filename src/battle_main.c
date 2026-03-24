@@ -2037,11 +2037,6 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             u32 level = partyData[monIndex].lvl;
             u16 species = partyData[monIndex].species;
 
-            #if (RANDOMIZER_AVAILABLE == TRUE)
-                if(!isTrainerBossTrainer)
-                    species = RandomizeTrainerMon(seed, i, monsCount, species);
-            #endif
-
             if (dynamicLevelRatio > 0 && (partyMaxLevel - npcTrainerPartyMaxLevel) > 0)
             {
                 level += (partyMaxLevel - npcTrainerPartyMaxLevel);
@@ -2069,7 +2064,11 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             }
             // TODO implement flag for dynamic level scaling here
             //CreateMon(&party[i], partyData[monIndex].species, partyData[monIndex].lvl, personalityValue, otId);
-            //temp: void CreateMon(struct Pokemon *mon, u16 species, u8 level, u32 personality, struct OriginalTrainerId trainerId)
+
+            #if (RANDOMIZER_AVAILABLE == TRUE)
+                if(!isTrainerBossTrainer)
+                    species = RandomizeTrainerMon(seed, i, monsCount, species, level);
+            #endif
             CreateMon(&party[i], species, level, personalityValue, otId);
             SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[monIndex].heldItem);
 

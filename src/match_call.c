@@ -35,6 +35,7 @@
 #include "constants/songs.h"
 #include "constants/trainers.h"
 #include "randomizer.h"
+#include "caps.h"
 
 // In this file only the values normally associated with Battle Pike and Factory are swapped.
 // Note that this is *not* a bug, because they are properly swapped consistently in this file.
@@ -1812,7 +1813,7 @@ static void PopulateSpeciesFromTrainerLocation(int matchCallId, u8 *destStr)
 
                 #if RANDOMIZER_AVAILABLE == TRUE
                     curSpecies = RandomizeWildEncounter(curSpecies, mapNum, mapGroup,
-                    WILD_AREA_LAND, slot);
+                    WILD_AREA_LAND, slot, GetCurrentLevelCap());
                 #endif
 
                 species[numSpecies] = curSpecies;
@@ -1827,7 +1828,7 @@ static void PopulateSpeciesFromTrainerLocation(int matchCallId, u8 *destStr)
 
                 #if RANDOMIZER_AVAILABLE == TRUE
                     curSpecies = RandomizeWildEncounter(curSpecies, mapNum, mapGroup,
-                    WILD_AREA_WATER, slot);
+                    WILD_AREA_WATER, slot, GetCurrentLevelCap());
                 #endif
 
                 species[numSpecies] = curSpecies;
@@ -1862,7 +1863,7 @@ static void PopulateSpeciesFromTrainerParty(int matchCallId, u8 *destStr)
         species = party[monId].species;
 
         #if RANDOMIZER_AVAILABLE == TRUE
-            species = RandomizeTrainerMon(trainerId, monId, partySize, species);
+            species = RandomizeTrainerMon(trainerId, monId, partySize, species, party[monId].lvl);
         #endif
 
         speciesName = GetSpeciesName(species);

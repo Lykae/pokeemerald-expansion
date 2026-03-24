@@ -30,6 +30,7 @@
 #include "constants/layouts.h"
 #include "constants/weather.h"
 #include "randomizer.h"
+#include "caps.h"
 
 extern const u8 EventScript_SprayWoreOff[];
 
@@ -581,7 +582,7 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, enum 
             species,
             gSaveBlock1Ptr->location.mapNum,
             gSaveBlock1Ptr->location.mapGroup,
-            area, wildMonIndex);
+            area, wildMonIndex, level);
     #endif
 
     CreateWildMon(species, level);
@@ -600,7 +601,7 @@ static u16 GenerateFishingWildMon(const struct WildPokemonInfo *wildMonInfo, u8 
             wildMonSpecies,
             gSaveBlock1Ptr->location.mapNum,
             gSaveBlock1Ptr->location.mapGroup,
-            WILD_AREA_FISHING, wildMonIndex);
+            WILD_AREA_FISHING, wildMonIndex, level);
     #endif
 
     CreateWildMon(wildMonSpecies, level);
@@ -1065,7 +1066,7 @@ u16 GetLocalWildMon(bool8 *isWaterMon)
             area = WILD_AREA_LAND;
         species = RandomizeWildEncounter(
             species, gWildMonHeaders[headerId].mapNum,
-            gWildMonHeaders[headerId].mapGroup, area, index);
+            gWildMonHeaders[headerId].mapGroup, area, index, GetCurrentLevelCap());
     }
     #endif
 
@@ -1093,7 +1094,7 @@ u16 GetLocalWaterMon(void)
                 species = RandomizeWildEncounter(
                     species, gWildMonHeaders[headerId].mapNum,
                     gWildMonHeaders[headerId].mapGroup, WILD_AREA_WATER,
-                    index);
+                    index, GetCurrentLevelCap());
             #endif
 
             return species;
