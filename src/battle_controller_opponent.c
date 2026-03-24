@@ -437,8 +437,8 @@ static void HandleInputChooseAction(enum BattlerId battler)
 {
     enum Item itemId = gBattleResources->bufferA[battler][2] | (gBattleResources->bufferA[battler][3] << 8);
 
-    DoBounceEffect(battler, BOUNCE_HEALTHBOX, 7, 1);
-    DoBounceEffect(battler, BOUNCE_MON, 7, 1);
+    //DoBounceEffect(battler, BOUNCE_HEALTHBOX, 7, 1);
+    //DoBounceEffect(battler, BOUNCE_MON, 7, 1);
 
     if (JOY_REPEAT(DPAD_ANY) && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)
         gPlayerDpadHoldFrames++;
