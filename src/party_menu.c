@@ -7495,6 +7495,11 @@ static u8 GetPartyMenuActionsTypeInBattle(struct Pokemon *mon)
 {
     if (GetMonData(&PLAYER_OR_ENEMY_PARTY[1], MON_DATA_SPECIES) != SPECIES_NONE && GetMonData(mon, MON_DATA_IS_EGG) == FALSE)
     {
+        u8 currBattler = gBattlerInMenuId;
+        bool8 isCurrBattlerPlayer = IsOnPlayerSide(currBattler);
+        if (enemyPartyEnabled == isCurrBattlerPlayer) {
+            return ACTIONS_SUMMARY_ONLY;
+        }
         if (gPartyMenu.action == PARTY_ACTION_SEND_OUT)
             return ACTIONS_SEND_OUT;
         if (!(gBattleTypeFlags & BATTLE_TYPE_ARENA))

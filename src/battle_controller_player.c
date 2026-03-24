@@ -96,6 +96,10 @@ static u32 CheckTypeEffectiveness(enum BattlerId battlerAtk, enum BattlerId batt
 static u32 CheckTargetTypeEffectiveness(enum BattlerId battler);
 static void MoveSelectionDisplayMoveEffectiveness(u32 foeEffectiveness, enum BattlerId battler);
 
+static void PlayerHandleViewEnemyParty(enum BattlerId battler);
+static void OpenPartyMenuToViewEnemy(enum BattlerId battler);
+static void WaitForPlayerViewingEnemy(enum BattlerId battler);
+
 static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(enum BattlerId battler) =
 {
     [CONTROLLER_GETMONDATA]               = BtlController_HandleGetMonData,
@@ -120,6 +124,7 @@ static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(enum BattlerId
     [CONTROLLER_CHOOSEMOVE]               = PlayerHandleChooseMove,
     [CONTROLLER_OPENBAG]                  = PlayerHandleChooseItem,
     [CONTROLLER_CHOOSEPOKEMON]            = PlayerHandleChoosePokemon,
+    [CONTROLLER_VIEWENEMY]                = PlayerHandleViewEnemyParty,
     [CONTROLLER_23]                       = PlayerHandleCmd23,
     [CONTROLLER_HEALTHBARUPDATE]          = BtlController_HandleHealthBarUpdate,
     [CONTROLLER_EXPUPDATE]                = PlayerHandleExpUpdate,
@@ -302,6 +307,10 @@ static void HandleInputChooseAction(enum BattlerId battler)
 
     if (JOY_NEW(A_BUTTON))
     {
+        if ((gActionSelectionCursor[battler] == 1) && (gBattleTypeFlags & BATTLE_TYPE_TRAINER)) {
+            PlayerHandleViewEnemyParty(battler);
+            return;
+        }
         PlaySE(SE_SELECT);
         TryHideLastUsedBall();
 
@@ -311,7 +320,10 @@ static void HandleInputChooseAction(enum BattlerId battler)
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_MOVE, 0);
             break;
         case 1: // Top right
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_ITEM, 0);
+            if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+                BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_VIEW_ENEMY, 0);
+            else
+                BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_ITEM, 0);
             break;
         case 2: // Bottom left
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SWITCH, 0);
@@ -1687,6 +1699,39 @@ static void WaitForMonSelection(enum BattlerId battler)
     }
 }
 
+static void PlayerHandleViewEnemyParty(enum BattlerId battler)
+{
+    gBattleControllerData[battler] = CreateTask(TaskDummy, 0xFF);
+    gTasks[gBattleControllerData[battler]].data[0] = gBattleResources->bufferA[battler][1];
+    //*(&gBattleStruct->battlerPreventingSwitchout) = gBattleResources->bufferA[battler][8];
+    //*(&gBattleStruct->prevSelectedPartySlot) = gBattleResources->bufferA[battler][2];
+    //*(&gBattleStruct->abilityPreventingSwitchout) = (gBattleResources->bufferA[battler][3] & 0xFF) | (gBattleResources->bufferA[battler][7] << 8);
+    BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
+    gBattlerControllerFuncs[battler] = OpenPartyMenuToViewEnemy;
+    gBattlerInMenuId = battler;
+}
+
+static void OpenPartyMenuToViewEnemy(enum BattlerId battler) {
+    if (!gPaletteFade.active)
+    {
+        u8 caseId;
+        //gBattlerInMenuId = battler;
+        gBattlerControllerFuncs[battler] = WaitForPlayerViewingEnemy;
+        caseId = gTasks[gBattleControllerData[battler]].data[0];
+        DestroyTask(gBattleControllerData[battler]);
+        FreeAllWindowBuffers();
+        OpenPartyMenuInBattle(1, caseId);
+    }
+}
+
+static void WaitForPlayerViewingEnemy(enum BattlerId battler) {
+    if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
+    {
+        BtlController_EmitChosenMonReturnValue(battler, B_COMM_TO_ENGINE, PARTY_SIZE, NULL);
+        BtlController_Complete(battler);
+    }
+}
+
 static void OpenBagAndChooseItem(enum BattlerId battler)
 {
     if (!gPaletteFade.active)
@@ -2107,7 +2152,12 @@ void PlayerHandleChooseAction(enum BattlerId battler)
 
     gBattlerControllerFuncs[battler] = HandleChooseActionAfterDma3;
     BattleTv_ClearExplosionFaintCause();
-    BattlePutTextOnWindow(gText_BattleMenu, B_WIN_ACTION_MENU);
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER) {
+        BattlePutTextOnWindow(gText_BattleMenuWithInfo, B_WIN_ACTION_MENU);
+    }
+    else {
+        BattlePutTextOnWindow(gText_BattleMenu, B_WIN_ACTION_MENU);
+    }
 
     for (i = 0; i < 4; i++)
         ActionSelectionDestroyCursorAt(i);
@@ -2242,6 +2292,12 @@ void InitMoveSelectionsVarsAndStrings(enum BattlerId battler)
 
 void PlayerHandleChooseItem(enum BattlerId battler)
 {
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    {
+        BtlController_EmitOneReturnValue(battler, B_COMM_TO_ENGINE, ITEM_NONE);
+        BtlController_Complete(battler);
+        return;
+    }
     s32 i;
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);

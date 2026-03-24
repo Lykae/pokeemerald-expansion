@@ -5521,7 +5521,7 @@ static void Cmd_openpartyscreen(void)
 {
     CMD_ARGS(u8 battler:7, u8 partyScreenOptional:1, const u8 *failInstr);
 
-    u32 flags = 0;
+    //u32 flags = 0;
     u8 hitmarkerFaintBits = 0;
     enum BattlerId battler = 0;
     const u8 *failInstr = cmd->failInstr;

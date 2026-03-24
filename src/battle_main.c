@@ -4519,6 +4519,11 @@ static void HandleTurnActionSelectionState(void)
                     BtlController_EmitDebugMenu(battler, B_COMM_TO_CONTROLLER);
                     MarkBattlerForControllerExec(battler);
                     break;
+                case B_ACTION_VIEW_ENEMY:
+                    gBattleStruct->battlerPartyIndexes[battler] = gBattlerPartyIndexes[battler];
+                    BtlController_EmitViewEnemy(battler, B_COMM_TO_CONTROLLER, PARTY_ACTION_CHOOSE_MON);
+                    MarkBattlerForControllerExec(battler);
+                    break;
                 }
 
                 //OPPONENT SURRENDER
@@ -4666,6 +4671,11 @@ static void HandleTurnActionSelectionState(void)
                         UpdateBattlerPartyOrdersOnSwitch(battler);
                         gBattleCommunication[battler]++;
                     }
+                    break;
+                case B_ACTION_VIEW_ENEMY:
+                    gChosenActionByBattler[battler] = B_ACTION_NONE;
+                    gBattleCommunication[battler] = STATE_BEFORE_ACTION_CHOSEN;
+                    RecordedBattle_ClearBattlerAction(battler, 1);
                     break;
                 case B_ACTION_RUN:
                     gHitMarker |= HITMARKER_RUN;

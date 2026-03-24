@@ -63,6 +63,10 @@ static void OpponentHandleOneReturnValue(enum BattlerId battler);
 static void OpponentHandleOneReturnValue_Duplicate(enum BattlerId battler);
 static void OpponentHandleDMA3Transfer(enum BattlerId battler);
 
+static void OpenPartyMenuToViewPlayer(enum BattlerId battler);
+static void WaitForEnemyViewingPlayer(enum BattlerId battler);
+static void OpponentHandleViewPlayerParty(enum BattlerId battler);
+
 static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(enum BattlerId battler) =
 {
     [CONTROLLER_GETMONDATA]               = BtlController_HandleGetMonData,
@@ -87,6 +91,7 @@ static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(enum Battler
     [CONTROLLER_CHOOSEMOVE]               = OpponentHandleChooseMove,
     [CONTROLLER_OPENBAG]                  = OpponentHandleChooseItem,
     [CONTROLLER_CHOOSEPOKEMON]            = OpponentHandleChoosePokemon,
+    [CONTROLLER_VIEWENEMY]                = OpponentHandleViewPlayerParty,
     [CONTROLLER_23]                       = BtlController_Empty,
     [CONTROLLER_HEALTHBARUPDATE]          = BtlController_HandleHealthBarUpdate,
     [CONTROLLER_EXPUPDATE]                = BtlController_Empty,
@@ -448,8 +453,10 @@ static void HandleInputChooseAction(enum BattlerId battler)
     if (JOY_NEW(A_BUTTON))
     {
         // remove bag for now
-        if (gActionSelectionCursor[battler] == 1)
-            return;
+        //if (gActionSelectionCursor[battler] == 1){
+        //    OpponentHandleViewPlayerParty(battler);
+        //    return;
+        //}
         PlaySE(SE_SELECT);
         TryHideLastUsedBall();
 
@@ -459,7 +466,7 @@ static void HandleInputChooseAction(enum BattlerId battler)
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_MOVE, 0);
             break;
         case 1: // Top right
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_ITEM, 0);
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_VIEW_ENEMY, 0);
             break;
         case 2: // Bottom left
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SWITCH, 0);
@@ -589,7 +596,7 @@ static void OpponentHandleChooseAction(enum BattlerId battler)
 
     gBattlerControllerFuncs[battler] = OpponentHandleChooseActionAfterDma3;
     BattleTv_ClearExplosionFaintCause();
-    BattlePutTextOnWindow(gText_BattleMenu, B_WIN_ACTION_MENU);
+    BattlePutTextOnWindow(gText_BattleMenuWithInfo, B_WIN_ACTION_MENU);
 
     for (i = 0; i < 4; i++)
         ActionSelectionDestroyCursorAt(i);
@@ -684,6 +691,40 @@ static void PrintLinkStandbyMsg(void)
         gBattle_BG0_X = 0;
         gBattle_BG0_Y = 0;
         BattlePutTextOnWindow(gText_LinkStandby, B_WIN_MSG);
+    }
+}
+
+static void OpponentHandleViewPlayerParty(enum BattlerId battler)
+{
+    gBattleControllerData[battler] = CreateTask(TaskDummy, 0xFF);
+    gTasks[gBattleControllerData[battler]].data[0] = gBattleResources->bufferA[battler][1];
+    //*(&gBattleStruct->battlerPreventingSwitchout) = gBattleResources->bufferA[battler][8];
+    //*(&gBattleStruct->prevSelectedPartySlot) = gBattleResources->bufferA[battler][2];
+    //*(&gBattleStruct->abilityPreventingSwitchout) = (gBattleResources->bufferA[battler][3] & 0xFF) | (gBattleResources->bufferA[battler][7] << 8);
+    BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
+    gBattlerControllerFuncs[battler] = OpenPartyMenuToViewPlayer;
+    gBattlerInMenuId = battler;
+}
+
+static void OpenPartyMenuToViewPlayer(enum BattlerId battler) {
+    if (!gPaletteFade.active)
+    {
+        u8 caseId;
+        //gBattlerInMenuId = battler;
+        gBattlerControllerFuncs[battler] = WaitForEnemyViewingPlayer;
+        caseId = gTasks[gBattleControllerData[battler]].data[0];
+        DestroyTask(gBattleControllerData[battler]);
+        FreeAllWindowBuffers();
+        OpenPartyMenuInBattle(6, caseId);
+    }
+}
+
+static void WaitForEnemyViewingPlayer(enum BattlerId battler) {
+    if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
+    {
+        //gBattleCommunication[battler] = STATE_BEFORE_ACTION_CHOSEN;
+        BtlController_EmitChosenMonReturnValue(battler, B_COMM_TO_ENGINE, PARTY_SIZE, NULL);
+        BtlController_Complete(battler);
     }
 }
 

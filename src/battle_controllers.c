@@ -1114,6 +1114,13 @@ void BtlController_EmitChoosePokemon(enum BattlerId battler, u32 bufferId, u8 ca
     PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 9);  // Only 7 bytes were written.
 }
 
+void BtlController_EmitViewEnemy(enum BattlerId battler, u32 bufferId, u8 caseId)
+{
+    gBattleResources->transferBuffer[0] = CONTROLLER_VIEWENEMY;
+    gBattleResources->transferBuffer[1] = caseId;
+    PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 2);
+}
+
 static void UNUSED BtlController_EmitCmd23(enum BattlerId battler, u32 bufferId)
 {
     gBattleResources->transferBuffer[0] = CONTROLLER_23;
