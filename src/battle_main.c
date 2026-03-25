@@ -4519,7 +4519,11 @@ static void HandleTurnActionSelectionState(void)
                     MarkBattlerForControllerExec(battler);
                     break;
                 case B_ACTION_VIEW_ENEMY:
-                    gBattleStruct->battlerPartyIndexes[battler] = gBattlerPartyIndexes[battler];
+                    if (IsOnPlayerSide(battler)) {
+                        gBattleStruct->battlerPartyIndexes[1] = gBattlerPartyIndexes[1];
+                    } else {
+                        gBattleStruct->battlerPartyIndexes[0] = gBattlerPartyIndexes[0];
+                    }
                     BtlController_EmitViewEnemy(battler, B_COMM_TO_CONTROLLER, PARTY_ACTION_CHOOSE_MON);
                     MarkBattlerForControllerExec(battler);
                     break;

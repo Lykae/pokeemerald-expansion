@@ -694,8 +694,36 @@ static void PrintLinkStandbyMsg(void)
     }
 }
 
+static void SetPartyOrder(u8 slot, u8 value)
+{
+    u8 index = slot / 2;
+
+    if (slot & 1)
+        gBattlePartyCurrentOrder[index] =
+            (gBattlePartyCurrentOrder[index] & 0x0F) | (value << 4);
+    else
+        gBattlePartyCurrentOrder[index] =
+            (gBattlePartyCurrentOrder[index] & 0xF0) | value;
+}
+
+static u8 GetPartyOrder(u8 slot)
+{
+    u8 index = slot / 2;
+
+    if (slot & 1)
+        return gBattlePartyCurrentOrder[index] >> 4;
+    else
+        return gBattlePartyCurrentOrder[index] & 0xF;
+}
+
 static void OpponentHandleViewPlayerParty(enum BattlerId battler)
 {
+    enum BattlerId enemyBattler = 0;
+    s32 i;
+    
+    for (i = 0; i < ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+        gBattlePartyCurrentOrder[i] = gBattleStruct->battlerPartyOrders[enemyBattler][i];
+
     gBattleControllerData[battler] = CreateTask(TaskDummy, 0xFF);
     gTasks[gBattleControllerData[battler]].data[0] = gBattleResources->bufferA[battler][1];
     //*(&gBattleStruct->battlerPreventingSwitchout) = gBattleResources->bufferA[battler][8];

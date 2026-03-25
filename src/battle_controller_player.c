@@ -1701,6 +1701,12 @@ static void WaitForMonSelection(enum BattlerId battler)
 
 static void PlayerHandleViewEnemyParty(enum BattlerId battler)
 {
+    enum BattlerId enemyBattler = 1;
+    s32 i;
+    
+    for (i = 0; i < ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+        gBattlePartyCurrentOrder[i] = gBattleStruct->battlerPartyOrders[enemyBattler][i];
+
     gBattleControllerData[battler] = CreateTask(TaskDummy, 0xFF);
     gTasks[gBattleControllerData[battler]].data[0] = gBattleResources->bufferA[battler][1];
     //*(&gBattleStruct->battlerPreventingSwitchout) = gBattleResources->bufferA[battler][8];
