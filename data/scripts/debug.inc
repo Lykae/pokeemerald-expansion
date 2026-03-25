@@ -203,24 +203,22 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	giveitem ITEM_RARE_CANDY
-	giveitem ITEM_EXP_CANDY_XL
-	giveitem ITEM_MAX_REPEL
+	giveitem ITEM_RARE_CANDY 999
+	giveitem ITEM_EXP_CANDY_XL 999
+	giveitem ITEM_MAX_REPEL 999
 	giveitem ITEM_ESCAPE_ROPE
-	giveitem ITEM_ABILITY_CAPSULE
-	giveitem ITEM_ABILITY_PATCH
-	giveitem ITEM_PROTEIN
-	giveitem ITEM_IRON
-	giveitem ITEM_CALCIUM
-	giveitem ITEM_ZINC
-	giveitem ITEM_CARBOS
+	giveitem ITEM_ABILITY_CAPSULE 999
+	giveitem ITEM_ABILITY_PATCH 999
+	giveitem ITEM_PROTEIN 999
+	giveitem ITEM_IRON 999
+	giveitem ITEM_CALCIUM 999
+	giveitem ITEM_ZINC 999
+	giveitem ITEM_CARBOS 999
 	giveitem ITEM_MASTER_BALL 999
 	release
 	end
 
 Debug_EventScript_Script_2::
-	setflag DN_FLAG_DEXNAV_GET
-	setflag DN_FLAG_DETECTOR_MODE
 	release
 	end
 
