@@ -537,7 +537,13 @@ static void ShowTimeWindow(void)
         suffix = gText_PM;
     }
 
-    StringExpandPlaceholders(gStringVar4, gDayNameStringsTable[(gLocalTime.days % 7)]);
+    if (FlagGet(OW_FLAG_NO_ENCOUNTER) == 1) {
+        StringExpandPlaceholders(gStringVar4, gText_RepelOn);
+    }
+    else {
+        StringExpandPlaceholders(gStringVar4, gText_RepelOff);
+    }
+    //StringExpandPlaceholders(gStringVar4, gDayNameStringsTable[(gLocalTime.days % 7)]); //PRINTS WEEKDAY
     // StringExpandPlaceholders(gStringVar4, gText_ContinueMenuTime); // prints "time" word, from version before weekday was added and leaving it here in case anyone would prefer to use it
     AddTextPrinterParameterized(sStartClockWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL); 
 
@@ -721,6 +727,12 @@ void ShowStartMenu(void)
 
 static bool8 HandleStartMenuInput(void)
 {
+    if (JOY_NEW(R_BUTTON) || JOY_NEW(L_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        FlagToggle(OW_FLAG_NO_ENCOUNTER);
+    }
+
     if (JOY_NEW(DPAD_UP))
     {
         PlaySE(SE_SELECT);
@@ -799,7 +811,7 @@ static bool8 StartMenuPokemonCallback(void)
         return TRUE;
     }
 
-    if (!GetSafariZoneFlag() && !InBattlePyramid() && gSaveBlock2Ptr->playTimeSeconds == 0) 
+    if (!GetSafariZoneFlag() && !CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE && gSaveBlock2Ptr->playTimeSeconds == 0) 
     {
         RemoveExtraStartMenuWindows();
         ShowTimeWindow();

@@ -234,6 +234,8 @@ extern const u8 gText_ContinueMenuPlayer[];
 extern const u8 gText_ContinueMenuTime[];
 extern const u8 gText_AM[];
 extern const u8 gText_PM[];
+extern const u8 gText_RepelOn[];
+extern const u8 gText_RepelOff[];
 extern const u8 gText_ContinueMenuPokedex[];
 extern const u8 gText_ContinueMenuBadges[];
 extern const u8 gText_BirchBoy[];
