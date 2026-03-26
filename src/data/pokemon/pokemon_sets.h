@@ -260,16 +260,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DOUBLE_EDGE, MOVE_THROAT_CHOP, MOVE_ZEN_HEADBUTT, MOVE_SWORDS_DANCE}
     },
 
-    [SPECIES_RATICATE_ALOLA] = // TODO: Set
+    [SPECIES_RATICATE_ALOLA] = // Wallbreaker
     {
-        .name = _("Raticate-A"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Raticate-Alola"),
+        .item = ITEM_BLACK_GLASSES,
+        .ability = ABILITY_HUSTLE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_KNOCK_OFF, MOVE_PURSUIT, MOVE_RETURN}
     },
 
     [SPECIES_SPEAROW] = // TODO: Set
@@ -284,16 +284,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_FEAROW] = // TODO: Set
+    [SPECIES_FEAROW] = // Setup Sweeper
     {
         .name = _("Fearow"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_SCOPE_LENS,
+        .ability = ABILITY_SNIPER,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DRILL_PECK, MOVE_DRILL_RUN, MOVE_FOCUS_ENERGY, MOVE_RETURN}
     },
 
     [SPECIES_EKANS] = // Intimidating Distruptor
@@ -308,16 +308,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_GUNK_SHOT, MOVE_KNOCK_OFF, MOVE_GLARE, MOVE_TOXIC_SPIKES}
     },
 
-    [SPECIES_ARBOK] = // TODO: Set
+    [SPECIES_ARBOK] = // Bulky Setup
     {
         .name = _("Arbok"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_INTIMIDATE,
+        .teraType = TYPE_GRASS,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_COIL, MOVE_EARTHQUAKE, MOVE_GUNK_SHOT, MOVE_TRAILBLAZE}
     },
 
     [SPECIES_PIKACHU] = // Glass Cannon (Atk)
@@ -406,7 +406,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_PIKACHU_ORIGINAL] = // TODO: Set
     {
-        .name = _("Pikachu-OC"),
+        .name = _("Pikachu-O-C"),
         .item = ITEM_NONE,
         .ability = ABILITY_NONE,
         .teraType = TYPE_NORMAL,
@@ -428,16 +428,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_THUNDERBOLT, MOVE_GRASS_KNOT, MOVE_DRAINING_KISS, MOVE_NASTY_PLOT}
     },
 
-    [SPECIES_RAICHU_ALOLA] = // Nasty Plot (SpA)
+    [SPECIES_RAICHU_ALOLA] = // Fast Attacker
     {
-        .name = _("Raichu-A"),
-        .item = ITEM_LIFE_ORB,
+        .name = _("Raichu-Alola"),
+        .item = ITEM_CHOICE_SPECS,
         .ability = ABILITY_SURGE_SURFER,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_MODEST,
-        .evs = {0, 0, 0, 252, 252, 4},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_THUNDERBOLT, MOVE_GRASS_KNOT, MOVE_DRAINING_KISS, MOVE_NASTY_PLOT}
+        .teraType = TYPE_FAIRY,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_ALLURING_VOICE, MOVE_FOCUS_BLAST, MOVE_GRASS_KNOT, MOVE_PSYCHIC}
     },
 
     [SPECIES_SANDSHREW] = // Sand Sweeper
@@ -476,16 +476,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_RAPID_SPIN, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF, MOVE_SPIKES}
     },
 
-    [SPECIES_SANDSLASH_ALOLA] = // Specially Defensive Spinner
+    [SPECIES_SANDSLASH_ALOLA] = // Bulky Support
     {
-        .name = _("Sandslash-A"),
-        .item = ITEM_LEFTOVERS,
+        .name = _("Sandslash-Alol"),
+        .item = ITEM_ASSAULT_VEST,
         .ability = ABILITY_SLUSH_RUSH,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_CAREFUL,
-        .evs = {252, 0, 0, 52, 0, 204},
+        .teraType = TYPE_FLYING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_RAPID_SPIN, MOVE_TRIPLE_AXEL, MOVE_KNOCK_OFF, MOVE_SPIKES}
+        .moves = {MOVE_EARTHQUAKE, MOVE_IRON_HEAD, MOVE_KNOCK_OFF, MOVE_RAPID_SPIN}
     },
 
     [SPECIES_NIDORAN_F] = // TODO: Set
@@ -526,7 +526,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_NIDORAN_M] = // TODO: Set
     {
-        .name = _("NidoranM"),
+        .name = _("Nidoran-M"),
         .item = ITEM_NONE,
         .ability = ABILITY_NONE,
         .teraType = TYPE_NORMAL,
@@ -620,16 +620,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_FLAMETHROWER, MOVE_HEALING_WISH, MOVE_ENCORE, MOVE_WILL_O_WISP}
     },
 
-    [SPECIES_NINETALES_ALOLA] = // Screens Setter
+    [SPECIES_NINETALES_ALOLA] = // Fast Attacker
     {
-        .name = _("Ninetales-A"),
+        .name = _("Ninetales-Alol"),
         .item = ITEM_LIGHT_CLAY,
         .ability = ABILITY_SNOW_WARNING,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 0, 252, 252, 4},
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_AURORA_VEIL, MOVE_FREEZE_DRY, MOVE_MOONBLAST, MOVE_NASTY_PLOT}
+        .moves = {MOVE_AURORA_VEIL, MOVE_BLIZZARD, MOVE_FREEZE_DRY, MOVE_MOONBLAST}
     },
 
     [SPECIES_JIGGLYPUFF] = // TODO: Set
@@ -644,16 +644,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_WIGGLYTUFF] = // TODO: Set
+    [SPECIES_WIGGLYTUFF] = // Bulky Support
     {
         .name = _("Wigglytuff"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_COMPETITIVE,
+        .teraType = TYPE_POISON,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ALLURING_VOICE, MOVE_DAZZLING_GLEAM, MOVE_FIRE_BLAST, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_ZUBAT] = // TODO: Set
@@ -728,16 +728,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_PARASECT] = // TODO: Set
+    [SPECIES_PARASECT] = // Bulky Attacker
     {
         .name = _("Parasect"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_DRY_SKIN,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AROMATHERAPY, MOVE_KNOCK_OFF, MOVE_LEECH_LIFE, MOVE_SEED_BOMB}
     },
 
     [SPECIES_VENONAT] = // TODO: Set
@@ -752,16 +752,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_VENOMOTH] = // TODO: Set
+    [SPECIES_VENOMOTH] = // Setup Sweeper
     {
         .name = _("Venomoth"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_TINTED_LENS,
+        .teraType = TYPE_BUG,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BUG_BUZZ, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER, MOVE_SLUDGE_WAVE}
     },
 
     [SPECIES_DIGLETT] = // TODO: Set
@@ -788,28 +788,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_EARTHQUAKE, MOVE_IRON_HEAD, MOVE_ROCK_BLAST, MOVE_SUBSTITUTE}
     },
 
-    [SPECIES_DUGTRIO] = // TODO: Set
+    [SPECIES_DUGTRIO] = // Fast Support
     {
         .name = _("Dugtrio"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_FOCUS_SASH,
+        .ability = ABILITY_ARENA_TRAP,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_STONE_EDGE, MOVE_SUCKER_PUNCH, MOVE_SWORDS_DANCE}
     },
 
     [SPECIES_DUGTRIO_ALOLA] = // Fast Attacker
     {
-        .name = _("Dugtrio-A"),
-        .item = ITEM_LIFE_ORB,
-        .ability = ABILITY_TANGLING_HAIR,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .name = _("Dugtrio-Alola"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_SAND_FORCE,
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_STEALTH_ROCK, MOVE_EARTHQUAKE, MOVE_IRON_HEAD, MOVE_STONE_EDGE}
+        .moves = {MOVE_EARTHQUAKE, MOVE_IRON_HEAD, MOVE_STEALTH_ROCK, MOVE_STONE_EDGE}
     },
 
     [SPECIES_MEOWTH] = // Revenge Killer
@@ -848,28 +848,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_PERSIAN] = // TODO: Set
+    [SPECIES_PERSIAN] = // Wallbreaker
     {
         .name = _("Persian"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_LIMBER,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_KNOCK_OFF, MOVE_SWITCHEROO, MOVE_U_TURN}
     },
 
-    [SPECIES_PERSIAN_ALOLA] = // Defensive Pivot
+    [SPECIES_PERSIAN_ALOLA] = // Fast Bulky Setup
     {
-        .name = _("Persian-A"),
-        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .name = _("Persian-Alola"),
+        .item = ITEM_LEFTOVERS,
         .ability = ABILITY_FUR_COAT,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {252, 0, 4, 252, 0, 0},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_PARTING_SHOT, MOVE_FOUL_PLAY, MOVE_KNOCK_OFF, MOVE_TAUNT}
+        .moves = {MOVE_DARK_PULSE, MOVE_HYPNOSIS, MOVE_NASTY_PLOT, MOVE_POWER_GEM}
     },
 
     [SPECIES_PSYDUCK] = // Rain Wallbreaker
@@ -884,16 +884,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_NASTY_PLOT, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TERA_BLAST}
     },
 
-    [SPECIES_GOLDUCK] = // TODO: Set
+    [SPECIES_GOLDUCK] = // Bulky Setup
     {
         .name = _("Golduck"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_CLOUD_NINE,
+        .teraType = TYPE_WATER,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ENCORE, MOVE_GRASS_KNOT, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM}
     },
 
     [SPECIES_MANKEY] = // Choice Scarf
@@ -956,16 +956,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_CURSE, MOVE_EXTREME_SPEED, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN}
     },
 
-    [SPECIES_ARCANINE_HISUI] = // Offensive
+    [SPECIES_ARCANINE_HISUI] = // Bulky Attacker
     {
-        .name = _("Arcanine-H"),
-        .item = ITEM_CHOICE_SCARF,
+        .name = _("Arcanine-Hisui"),
+        .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_ROCK_HEAD,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_ADAMANT,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .teraType = TYPE_FIRE,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_HEAD_SMASH, MOVE_FLARE_BLITZ, MOVE_EXTREME_SPEED, MOVE_WILD_CHARGE}
+        .moves = {MOVE_EXTREME_SPEED, MOVE_FLARE_BLITZ, MOVE_HEAD_SMASH, MOVE_MORNING_SUN}
     },
 
     [SPECIES_POLIWAG] = // TODO: Set
@@ -1064,16 +1064,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_MACHAMP] = // TODO: Set
+    [SPECIES_MACHAMP] = // Default Set
     {
         .name = _("Machamp"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_GUTS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BULLET_PUNCH, MOVE_CLOSE_COMBAT, MOVE_DYNAMIC_PUNCH, MOVE_FACADE}
     },
 
     [SPECIES_BELLSPROUT] = // Sun Sweeper
@@ -1184,28 +1184,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GOLEM] = // TODO: Set
+    [SPECIES_GOLEM] = // Bulky Attacker
     {
         .name = _("Golem"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CUSTAP_BERRY,
+        .ability = ABILITY_STURDY,
+        .teraType = TYPE_GRASS,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_ROCK_POLISH, MOVE_STEALTH_ROCK}
     },
 
-    [SPECIES_GOLEM_ALOLA] = // Choice Band (Rock)
+    [SPECIES_GOLEM_ALOLA] = // Wallbreaker
     {
-        .name = _("Golem-A"),
+        .name = _("Golem-Alola"),
         .item = ITEM_CHOICE_BAND,
-        .ability = ABILITY_STURDY,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_ADAMANT,
-        .evs = {0, 252, 4, 252, 0, 0},
+        .ability = ABILITY_GALVANIZE,
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_WILD_CHARGE, MOVE_BRICK_BREAK, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH}
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_STONE_EDGE}
     },
 
     [SPECIES_PONYTA] = // TODO: Set
@@ -1232,28 +1232,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_RAPIDASH] = // TODO: Set
+    [SPECIES_RAPIDASH] = // Default Set
     {
         .name = _("Rapidash"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_FLASH_FIRE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FLARE_BLITZ, MOVE_HIGH_HORSEPOWER, MOVE_MORNING_SUN, MOVE_SWORDS_DANCE}
     },
 
-    [SPECIES_RAPIDASH_GALAR] = // TODO: Set
+    [SPECIES_RAPIDASH_GALAR] = // Default Set
     {
         .name = _("Rapidash-G"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_PASTEL_VEIL,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HIGH_HORSEPOWER, MOVE_MORNING_SUN, MOVE_PLAY_ROUGH, MOVE_SWORDS_DANCE}
     },
 
     [SPECIES_SLOWPOKE] = // Defensive
@@ -1292,16 +1292,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_CALM_MIND, MOVE_SCALD, MOVE_PSYCHIC_NOISE, MOVE_SLACK_OFF}
     },
 
-    [SPECIES_SLOWBRO_GALAR] = // Calm Mind
+    [SPECIES_SLOWBRO_GALAR] = // Wallbreaker
     {
         .name = _("Slowbro-G"),
-        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .item = ITEM_LIFE_ORB,
         .ability = ABILITY_REGENERATOR,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_BOLD,
-        .evs = {252, 0, 252, 0, 0, 4},
+        .teraType = TYPE_POISON,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_CALM_MIND, MOVE_SLUDGE_BOMB, MOVE_FLAMETHROWER, MOVE_SLACK_OFF}
+        .moves = {MOVE_FIRE_BLAST, MOVE_PSYCHIC, MOVE_SHELL_SIDE_ARM, MOVE_TRICK_ROOM}
     },
 
     [SPECIES_MAGNEMITE] = // Trapper
@@ -1328,21 +1328,21 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_VOLT_SWITCH, MOVE_TERA_BLAST}
     },
 
-    [SPECIES_FARFETCHD] = // TODO: Set
+    [SPECIES_FARFETCHD] = // Default Set
     {
-        .name = _("Farfetch'd"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Farfetchd"),
+        .item = ITEM_LEEK,
+        .ability = ABILITY_DEFIANT,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_LEAF_BLADE}
     },
 
     [SPECIES_FARFETCHD_GALAR] = // TODO: Set
     {
-        .name = _("Farfetch'd-G"),
+        .name = _("Farfetch-d-G"),
         .item = ITEM_NONE,
         .ability = ABILITY_NONE,
         .teraType = TYPE_NORMAL,
@@ -1388,16 +1388,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_DEWGONG] = // TODO: Set
+    [SPECIES_DEWGONG] = // Bulky Attacker
     {
         .name = _("Dewgong"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_THICK_FAT,
+        .teraType = TYPE_DRAGON,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ENCORE, MOVE_FLIP_TURN, MOVE_KNOCK_OFF, MOVE_SURF}
     },
 
     [SPECIES_GRIMER] = // TODO: Set
@@ -1436,16 +1436,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POISON_JAB, MOVE_KNOCK_OFF, MOVE_ZEN_HEADBUTT, MOVE_TOXIC}
     },
 
-    [SPECIES_MUK_ALOLA] = // RestTalk
+    [SPECIES_MUK_ALOLA] = // AV Pivot
     {
-        .name = _("Muk-A"),
-        .item = ITEM_LEFTOVERS,
+        .name = _("Muk-Alola"),
+        .item = ITEM_ASSAULT_VEST,
         .ability = ABILITY_POISON_TOUCH,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_CAREFUL,
-        .evs = {252, 0, 4, 0, 0, 252},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POISON_JAB, MOVE_KNOCK_OFF, MOVE_REST, MOVE_SLEEP_TALK}
+        .moves = {MOVE_DRAIN_PUNCH, MOVE_GUNK_SHOT, MOVE_ICE_PUNCH, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_SHELLDER] = // Shell Smash
@@ -1532,16 +1532,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_HYPNO] = // TODO: Set
+    [SPECIES_HYPNO] = // Bulky Support
     {
         .name = _("Hypno"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_INSOMNIA,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ENCORE, MOVE_KNOCK_OFF, MOVE_PSYCHIC_NOISE, MOVE_THUNDER_WAVE}
     },
 
     [SPECIES_KRABBY] = // TODO: Set
@@ -1556,16 +1556,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_KINGLER] = // TODO: Set
+    [SPECIES_KINGLER] = // Default Set
     {
         .name = _("Kingler"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_SHEER_FORCE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AGILITY, MOVE_LIQUIDATION, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER}
     },
 
     [SPECIES_VOLTORB] = // TODO: Set
@@ -1592,28 +1592,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ELECTRODE] = // TODO: Set
+    [SPECIES_ELECTRODE] = // Fast Support
     {
         .name = _("Electrode"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_AFTERMATH,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EXPLOSION, MOVE_FOUL_PLAY, MOVE_TAUNT, MOVE_THUNDER_WAVE}
     },
 
-    [SPECIES_ELECTRODE_HISUI] = // Pivot
+    [SPECIES_ELECTRODE_HISUI] = // Fast Attacker
     {
-        .name = _("Electrode-H"),
-        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .name = _("Electrode-Hisu"),
+        .item = ITEM_LIFE_ORB,
         .ability = ABILITY_AFTERMATH,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 4, 252, 252, 0},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_VOLT_SWITCH, MOVE_THUNDERBOLT, MOVE_LEAF_STORM, MOVE_TAUNT}
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_GIGA_DRAIN, MOVE_LEAF_STORM, MOVE_TAUNT, MOVE_THUNDER_WAVE}
     },
 
     [SPECIES_EXEGGCUTE] = // TODO: Set
@@ -1628,28 +1628,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_EXEGGUTOR] = // TODO: Set
+    [SPECIES_EXEGGUTOR] = // Bulky Setup
     {
         .name = _("Exeggutor"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_SITRUS_BERRY,
+        .ability = ABILITY_HARVEST,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_GIGA_DRAIN, MOVE_PSYCHIC, MOVE_PSYSHOCK}
     },
 
-    [SPECIES_EXEGGUTOR_ALOLA] = // Choice Specs
+    [SPECIES_EXEGGUTOR_ALOLA] = // Bulky Setup
     {
-        .name = _("Exeggutor-A"),
-        .item = ITEM_CHOICE_SPECS,
+        .name = _("Exeggutor-Alol"),
+        .item = ITEM_SITRUS_BERRY,
         .ability = ABILITY_HARVEST,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_MODEST,
-        .evs = {0, 0, 0, 252, 252, 4},
+        .teraType = TYPE_FIRE,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_DRACO_METEOR, MOVE_LEAF_STORM, MOVE_FLAMETHROWER, MOVE_GIGA_DRAIN}
+        .moves = {MOVE_CALM_MIND, MOVE_DRAGON_PULSE, MOVE_FLAMETHROWER, MOVE_GIGA_DRAIN}
     },
 
     [SPECIES_CUBONE] = // TODO: Set
@@ -1664,28 +1664,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_MAROWAK] = // TODO: Set
+    [SPECIES_MAROWAK] = // Default Set
     {
         .name = _("Marowak"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_THICK_CLUB,
+        .ability = ABILITY_BATTLE_ARMOR,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF, MOVE_STEALTH_ROCK}
     },
 
-    [SPECIES_MAROWAK_ALOLA] = // TODO: Set
+    [SPECIES_MAROWAK_ALOLA] = // Default Set
     {
-        .name = _("Marowak-A"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Marowak-Alola"),
+        .item = ITEM_THICK_CLUB,
+        .ability = ABILITY_LIGHTNING_ROD,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_FLAME_CHARGE, MOVE_FLARE_BLITZ, MOVE_POLTERGEIST}
     },
 
     [SPECIES_HITMONLEE] = // Terrain Sweeper
@@ -1748,16 +1748,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SLUDGE_BOMB, MOVE_WILL_O_WISP, MOVE_PAIN_SPLIT, MOVE_HAZE}
     },
 
-    [SPECIES_WEEZING_GALAR] = // Defensive
+    [SPECIES_WEEZING_GALAR] = // Bulky Support
     {
         .name = _("Weezing-G"),
-        .item = ITEM_ROCKY_HELMET,
-        .ability = ABILITY_NEUTRALIZING_GAS,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_BOLD,
-        .evs = {252, 0, 252, 0, 0, 4},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_LEVITATE,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_STRANGE_STEAM, MOVE_WILL_O_WISP, MOVE_PAIN_SPLIT, MOVE_DEFOG}
+        .moves = {MOVE_DEFOG, MOVE_FIRE_BLAST, MOVE_GUNK_SHOT, MOVE_PAIN_SPLIT}
     },
 
     [SPECIES_RHYHORN] = // Setup Sweeper
@@ -1808,16 +1808,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_KANGASKHAN] = // TODO: Set
+    [SPECIES_KANGASKHAN] = // Default Set
     {
         .name = _("Kangaskhan"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_SCRAPPY,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_FAKE_OUT, MOVE_HAMMER_ARM}
     },
 
     [SPECIES_HORSEA] = // TODO: Set
@@ -1856,16 +1856,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SEAKING] = // TODO: Set
+    [SPECIES_SEAKING] = // Default Set
     {
         .name = _("Seaking"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_LIGHTNING_ROD,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DRILL_RUN, MOVE_KNOCK_OFF, MOVE_MEGAHORN, MOVE_SWORDS_DANCE}
     },
 
     [SPECIES_STARYU] = // TODO: Set
@@ -1892,21 +1892,21 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_THUNDERBOLT, MOVE_RAPID_SPIN}
     },
 
-    [SPECIES_MR_MIME] = // TODO: Set
+    [SPECIES_MR_MIME] = // Default Set
     {
-        .name = _("Mr. Mime"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Mr-Mime"),
+        .item = ITEM_CHOICE_SCARF,
+        .ability = ABILITY_FILTER,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DAZZLING_GLEAM, MOVE_FOCUS_BLAST, MOVE_HEALING_WISH, MOVE_NASTY_PLOT}
     },
 
     [SPECIES_MR_MIME_GALAR] = // TODO: Set
     {
-        .name = _("Mr. Mime-G"),
+        .name = _("Mr-Mime-G"),
         .item = ITEM_NONE,
         .ability = ABILITY_NONE,
         .teraType = TYPE_NORMAL,
@@ -1928,16 +1928,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_DUAL_WINGBEAT, MOVE_CLOSE_COMBAT, MOVE_TRAILBLAZE}
     },
 
-    [SPECIES_JYNX] = // TODO: Set
+    [SPECIES_JYNX] = // Default Set
     {
         .name = _("Jynx"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SCARF,
+        .ability = ABILITY_DRY_SKIN,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FOCUS_BLAST, MOVE_ICE_BEAM, MOVE_LOVELY_KISS, MOVE_NASTY_PLOT}
     },
 
     [SPECIES_ELECTABUZZ] = // Trick Room Support
@@ -1988,40 +1988,40 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_BODY_SLAM, MOVE_CLOSE_COMBAT, MOVE_THROAT_CHOP, MOVE_SUBSTITUTE}
     },
 
-    [SPECIES_TAUROS_PALDEA_COMBAT] = // TODO: Set
+    [SPECIES_TAUROS_PALDEA_COMBAT] = // Wallbreaker
     {
-        .name = _("Tauros-P"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
-        .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
-    },
-
-    [SPECIES_TAUROS_PALDEA_BLAZE] = // Bulk Up
-    {
-        .name = _("Tauros-PB"),
-        .item = ITEM_LEFTOVERS,
-        .ability = ABILITY_INTIMIDATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
-        .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_BULK_UP, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, MOVE_TRAILBLAZE}
-    },
-
-    [SPECIES_TAUROS_PALDEA_AQUA] = // Choice Item
-    {
-        .name = _("Tauros-PA"),
+        .name = _("Tauros-Combat"),
         .item = ITEM_CHOICE_BAND,
         .ability = ABILITY_INTIMIDATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_WAVE_CRASH, MOVE_CLOSE_COMBAT, MOVE_AQUA_JET, MOVE_ZEN_HEADBUTT}
+        .moves = {MOVE_BULK_UP, MOVE_CLOSE_COMBAT, MOVE_EARTHQUAKE, MOVE_IRON_HEAD}
+    },
+
+    [SPECIES_TAUROS_PALDEA_BLAZE] = // Wallbreaker
+    {
+        .name = _("Tauros-Blaze"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_INTIMIDATE,
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, MOVE_STONE_EDGE, MOVE_WILD_CHARGE}
+    },
+
+    [SPECIES_TAUROS_PALDEA_AQUA] = // Wallbreaker
+    {
+        .name = _("Tauros-Aqua"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_INTIMIDATE,
+        .teraType = TYPE_WATER,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_STONE_EDGE, MOVE_WAVE_CRASH}
     },
 
     [SPECIES_MAGIKARP] = // TODO: Set
@@ -2048,16 +2048,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DRAGON_DANCE, MOVE_WATERFALL, MOVE_EARTHQUAKE, MOVE_TERA_BLAST}
     },
 
-    [SPECIES_LAPRAS] = // TODO: Set
+    [SPECIES_LAPRAS] = // Wallbreaker
     {
         .name = _("Lapras"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_WATER_ABSORB,
+        .teraType = TYPE_ICE,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FREEZE_DRY, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_SPARKLING_ARIA}
     },
 
     [SPECIES_DITTO] = // Choice Scarf
@@ -2168,16 +2168,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_KABUTOPS] = // TODO: Set
+    [SPECIES_KABUTOPS] = // Default Set
     {
         .name = _("Kabutops"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_SWIFT_SWIM,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AQUA_JET, MOVE_KNOCK_OFF, MOVE_LIQUIDATION, MOVE_RAPID_SPIN}
     },
 
     [SPECIES_AERODACTYL] = // Mega Aerodactyl
@@ -2216,16 +2216,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_FREEZE_DRY, MOVE_ROOST, MOVE_SUBSTITUTE, MOVE_HAZE}
     },
 
-    [SPECIES_ARTICUNO_GALAR] = // Calm Mind
+    [SPECIES_ARTICUNO_GALAR] = // Fast Bulky Setup
     {
         .name = _("Articuno-G"),
         .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_COMPETITIVE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {248, 0, 8, 252, 0, 0},
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_CALM_MIND, MOVE_STORED_POWER, MOVE_HURRICANE, MOVE_RECOVER}
+        .moves = {MOVE_CALM_MIND, MOVE_FREEZING_GLARE, MOVE_HURRICANE, MOVE_RECOVER}
     },
 
     [SPECIES_ZAPDOS] = // Defensive
@@ -2240,16 +2240,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_HURRICANE, MOVE_VOLT_SWITCH, MOVE_THUNDER_WAVE, MOVE_ROOST}
     },
 
-    [SPECIES_ZAPDOS_GALAR] = // Choice Scarf
+    [SPECIES_ZAPDOS_GALAR] = // Fast Attacker
     {
         .name = _("Zapdos-G"),
-        .item = ITEM_CHOICE_SCARF,
+        .item = ITEM_CHOICE_BAND,
         .ability = ABILITY_DEFIANT,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {96, 252, 0, 160, 0, 0},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_CLOSE_COMBAT, MOVE_BRAVE_BIRD, MOVE_KNOCK_OFF, MOVE_U_TURN}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_BULK_UP, MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_MOLTRES] = // Physically Defensive
@@ -2264,16 +2264,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_FLAMETHROWER, MOVE_WILL_O_WISP, MOVE_U_TURN, MOVE_ROOST}
     },
 
-    [SPECIES_MOLTRES_GALAR] = // Nasty Plot
+    [SPECIES_MOLTRES_GALAR] = // Bulky Setup
     {
         .name = _("Moltres-G"),
-        .item = ITEM_SITRUS_BERRY,
+        .item = ITEM_CHESTO_BERRY,
         .ability = ABILITY_BERSERK,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_MODEST,
-        .evs = {252, 0, 4, 44, 164, 44},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_NASTY_PLOT, MOVE_FIERY_WRATH, MOVE_HURRICANE, MOVE_TAUNT}
+        .teraType = TYPE_DARK,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AGILITY, MOVE_FIERY_WRATH, MOVE_HURRICANE, MOVE_NASTY_PLOT}
     },
 
     [SPECIES_DRATINI] = // TODO: Set
@@ -2360,16 +2360,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_MEGANIUM] = // TODO: Set
+    [SPECIES_MEGANIUM] = // Bulky Setup
     {
         .name = _("Meganium"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_OVERGROW,
+        .teraType = TYPE_GROUND,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_KNOCK_OFF, MOVE_PETAL_BLIZZARD, MOVE_SWORDS_DANCE}
     },
 
     [SPECIES_CYNDAQUIL] = // TODO: Set
@@ -2408,16 +2408,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_ERUPTION, MOVE_FIRE_BLAST, MOVE_FOCUS_BLAST, MOVE_SCORCHING_SANDS}
     },
 
-    [SPECIES_TYPHLOSION_HISUI] = // Glass Cannon
+    [SPECIES_TYPHLOSION_HISUI] = // Fast Bulky Setup
     {
-        .name = _("Typhlosion-H"),
-        .item = ITEM_CHOICE_SPECS,
+        .name = _("Typhlosion-His"),
+        .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_BLAZE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_MODEST,
-        .evs = {4, 0, 0, 252, 252, 0},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_OVERHEAT, MOVE_SHADOW_BALL}
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_FIRE_BLAST, MOVE_FOCUS_BLAST, MOVE_SHADOW_BALL}
     },
 
     [SPECIES_TOTODILE] = // TODO: Set
@@ -2468,16 +2468,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_FURRET] = // TODO: Set
+    [SPECIES_FURRET] = // Wallbreaker
     {
         .name = _("Furret"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_FRISK,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_KNOCK_OFF, MOVE_TRICK, MOVE_U_TURN}
     },
 
     [SPECIES_HOOTHOOT] = // TODO: Set
@@ -2492,16 +2492,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_NOCTOWL] = // TODO: Set
+    [SPECIES_NOCTOWL] = // Bulky Attacker
     {
         .name = _("Noctowl"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_TINTED_LENS,
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_DEFOG, MOVE_HURRICANE, MOVE_HYPER_VOICE}
     },
 
     [SPECIES_LEDYBA] = // TODO: Set
@@ -2516,16 +2516,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_LEDIAN] = // TODO: Set
+    [SPECIES_LEDIAN] = // Staller
     {
         .name = _("Ledian"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_EARLY_BIRD,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AIR_SLASH, MOVE_DEFOG, MOVE_ENCORE, MOVE_FOCUS_BLAST}
     },
 
     [SPECIES_SPINARAK] = // TODO: Set
@@ -2540,16 +2540,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ARIADOS] = // TODO: Set
+    [SPECIES_ARIADOS] = // Fast Support
     {
         .name = _("Ariados"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_FOCUS_SASH,
+        .ability = ABILITY_INSOMNIA,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_KNOCK_OFF, MOVE_MEGAHORN, MOVE_POISON_JAB, MOVE_STICKY_WEB}
     },
 
     [SPECIES_CROBAT] = // Utility (Poison)
@@ -2660,16 +2660,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_XATU] = // TODO: Set
+    [SPECIES_XATU] = // Default Set
     {
         .name = _("Xatu"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_MAGIC_BOUNCE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HEAT_WAVE, MOVE_PSYCHIC, MOVE_ROOST, MOVE_TELEPORT}
     },
 
     [SPECIES_MAREEP] = // TODO: Set
@@ -2696,16 +2696,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_AMPHAROS] = // TODO: Set
+    [SPECIES_AMPHAROS] = // AV Pivot
     {
         .name = _("Ampharos"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_STATIC,
+        .teraType = TYPE_FAIRY,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DAZZLING_GLEAM, MOVE_DISCHARGE, MOVE_DRAGON_TAIL, MOVE_FOCUS_BLAST}
     },
 
     [SPECIES_BELLOSSOM] = // Bulky Quiver Dance
@@ -2744,16 +2744,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_LIQUIDATION, MOVE_PLAY_ROUGH, MOVE_AQUA_JET, MOVE_KNOCK_OFF}
     },
 
-    [SPECIES_SUDOWOODO] = // TODO: Set
+    [SPECIES_SUDOWOODO] = // Bulky Attacker
     {
         .name = _("Sudowoodo"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_ROCK_HEAD,
+        .teraType = TYPE_GRASS,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_HEAD_SMASH, MOVE_STEALTH_ROCK, MOVE_SUCKER_PUNCH}
     },
 
     [SPECIES_POLITOED] = // Perish Trapper
@@ -2792,16 +2792,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_JUMPLUFF] = // TODO: Set
+    [SPECIES_JUMPLUFF] = // Bulky Attacker
     {
         .name = _("Jumpluff"),
         .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .ability = ABILITY_INFILTRATOR,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ACROBATICS, MOVE_ENCORE, MOVE_SLEEP_POWDER, MOVE_STRENGTH_SAP}
     },
 
     [SPECIES_AIPOM] = // TODO: Set
@@ -2828,16 +2828,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SUNFLORA] = // TODO: Set
+    [SPECIES_SUNFLORA] = // Setup Sweeper
     {
         .name = _("Sunflora"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_CHLOROPHYLL,
+        .teraType = TYPE_FIRE,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTH_POWER, MOVE_SOLAR_BEAM, MOVE_SUNNY_DAY, MOVE_WEATHER_BALL}
     },
 
     [SPECIES_YANMA] = // TODO: Set
@@ -2936,16 +2936,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SCALD, MOVE_THUNDER_WAVE, MOVE_CHILLY_RECEPTION, MOVE_SLACK_OFF}
     },
 
-    [SPECIES_SLOWKING_GALAR] = // Specially Defensive Pivot
+    [SPECIES_SLOWKING_GALAR] = // Bulky Attacker
     {
         .name = _("Slowking-G"),
         .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_REGENERATOR,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_SASSY,
-        .evs = {252, 0, 0, 0, 4, 252},
-        .ivs = {31, 0, 31, 0, 31, 31},
-        .moves = {MOVE_SLUDGE_BOMB, MOVE_FUTURE_SIGHT, MOVE_TOXIC, MOVE_CHILLY_RECEPTION}
+        .teraType = TYPE_DARK,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CHILLY_RECEPTION, MOVE_FIRE_BLAST, MOVE_PSYCHIC_NOISE, MOVE_PSYSHOCK}
     },
 
     [SPECIES_MISDREAVUS] = // Utility
@@ -2960,28 +2960,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_WILL_O_WISP, MOVE_HEX, MOVE_PAIN_SPLIT, MOVE_POWER_GEM}
     },
 
-    [SPECIES_UNOWN] = // TODO: Set
+    [SPECIES_UNOWN] = // Wallbreaker
     {
         .name = _("Unown"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_LEVITATE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HIDDEN_POWER, MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE}
     },
 
-    [SPECIES_WOBBUFFET] = // TODO: Set
+    [SPECIES_WOBBUFFET] = // Default Set
     {
         .name = _("Wobbuffet"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_SITRUS_BERRY,
+        .ability = ABILITY_SHADOW_TAG,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CHARM, MOVE_COUNTER, MOVE_ENCORE, MOVE_MIRROR_COAT}
     },
 
     [SPECIES_GIRAFARIG] = // Nasty Plot
@@ -3092,16 +3092,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SPIKES, MOVE_BARB_BARRAGE, MOVE_FLIP_TURN, MOVE_PAIN_SPLIT}
     },
 
-    [SPECIES_QWILFISH_HISUI] = // Specially Defensive
+    [SPECIES_QWILFISH_HISUI] = // Bulky Support
     {
-        .name = _("Qwilfish-H"),
+        .name = _("Qwilfish-Hisui"),
         .item = ITEM_EVIOLITE,
         .ability = ABILITY_INTIMIDATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_CAREFUL,
-        .evs = {252, 0, 0, 16, 0, 240},
+        .teraType = TYPE_FLYING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_SPIKES, MOVE_BARB_BARRAGE, MOVE_CRUNCH, MOVE_PAIN_SPLIT}
+        .moves = {MOVE_CRUNCH, MOVE_GUNK_SHOT, MOVE_SPIKES, MOVE_TAUNT}
     },
 
     [SPECIES_SCIZOR] = // Pivot
@@ -3200,16 +3200,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_MAGCARGO] = // TODO: Set
+    [SPECIES_MAGCARGO] = // Setup Sweeper
     {
         .name = _("Magcargo"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_WEAK_ARMOR,
+        .teraType = TYPE_DRAGON,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTH_POWER, MOVE_FIRE_BLAST, MOVE_POWER_GEM, MOVE_SHELL_SMASH}
     },
 
     [SPECIES_SWINUB] = // TODO: Set
@@ -3236,28 +3236,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_STEALTH_ROCK, MOVE_HIGH_HORSEPOWER, MOVE_ICICLE_CRASH, MOVE_ICE_SHARD}
     },
 
-    [SPECIES_CORSOLA] = // TODO: Set
+    [SPECIES_CORSOLA] = // Default Set
     {
         .name = _("Corsola"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ROCKY_HELMET,
+        .ability = ABILITY_REGENERATOR,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_POWER_GEM, MOVE_RECOVER, MOVE_SCALD, MOVE_STEALTH_ROCK}
     },
 
-    [SPECIES_CORSOLA_GALAR] = // Defensive
+    [SPECIES_CORSOLA_GALAR] = // Default Set
     {
         .name = _("Corsola-G"),
         .item = ITEM_EVIOLITE,
         .ability = ABILITY_CURSED_BODY,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_CALM,
-        .evs = {252, 0, 4, 0, 0, 252},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_STEALTH_ROCK, MOVE_NIGHT_SHADE, MOVE_WHIRLPOOL, MOVE_STRENGTH_SAP}
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_HAZE, MOVE_NIGHT_SHADE, MOVE_STEALTH_ROCK, MOVE_STRENGTH_SAP}
     },
 
     [SPECIES_REMORAID] = // TODO: Set
@@ -3272,28 +3272,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_OCTILLERY] = // TODO: Set
+    [SPECIES_OCTILLERY] = // Default Set
     {
         .name = _("Octillery"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_SNIPER,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ENERGY_BALL, MOVE_FIRE_BLAST, MOVE_GUNK_SHOT, MOVE_HYDRO_PUMP}
     },
 
-    [SPECIES_DELIBIRD] = // TODO: Set
+    [SPECIES_DELIBIRD] = // Fast Attacker
     {
         .name = _("Delibird"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_HUSTLE,
+        .teraType = TYPE_FLYING,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_DRILL_RUN, MOVE_ICE_SHARD, MOVE_ICE_SPINNER}
     },
 
     [SPECIES_MANTINE] = // Water Absorb (Flying)
@@ -3728,16 +3728,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_MIGHTYENA] = // TODO: Set
+    [SPECIES_MIGHTYENA] = // AV Pivot
     {
         .name = _("Mightyena"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_INTIMIDATE,
+        .teraType = TYPE_FAIRY,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_POISON_FANG, MOVE_SUCKER_PUNCH}
     },
 
     [SPECIES_ZIGZAGOON] = // TODO: Set
@@ -3764,16 +3764,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_LINOONE] = // TODO: Set
+    [SPECIES_LINOONE] = // Default Set
     {
         .name = _("Linoone"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_AGUAV_BERRY,
+        .ability = ABILITY_GLUTTONY,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BELLY_DRUM, MOVE_EXTREME_SPEED, MOVE_STOMPING_TANTRUM, MOVE_THROAT_CHOP}
     },
 
     [SPECIES_LINOONE_GALAR] = // TODO: Set
@@ -3812,16 +3812,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_BEAUTIFLY] = // TODO: Set
+    [SPECIES_BEAUTIFLY] = // Z-Move user
     {
         .name = _("Beautifly"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_BUGINIUM_Z,
+        .ability = ABILITY_SWARM,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AIR_CUTTER, MOVE_BUG_BUZZ, MOVE_HIDDEN_POWER, MOVE_QUIVER_DANCE}
     },
 
     [SPECIES_CASCOON] = // TODO: Set
@@ -3836,16 +3836,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_DUSTOX] = // TODO: Set
+    [SPECIES_DUSTOX] = // Bulky Support
     {
         .name = _("Dustox"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_BLACK_SLUDGE,
+        .ability = ABILITY_SHIELD_DUST,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BUG_BUZZ, MOVE_DEFOG, MOVE_ROOST, MOVE_TOXIC}
     },
 
     [SPECIES_LOTAD] = // TODO: Set
@@ -3932,16 +3932,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SWELLOW] = // TODO: Set
+    [SPECIES_SWELLOW] = // Fast Attacker
     {
         .name = _("Swellow"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_FLAME_ORB,
+        .ability = ABILITY_GUTS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_FACADE, MOVE_PROTECT, MOVE_QUICK_ATTACK}
     },
 
     [SPECIES_WINGULL] = // Offensive
@@ -4016,16 +4016,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_MASQUERAIN] = // TODO: Set
+    [SPECIES_MASQUERAIN] = // Fast Support
     {
         .name = _("Masquerain"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_INTIMIDATE,
+        .teraType = TYPE_GROUND,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BUG_BUZZ, MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_STICKY_WEB}
     },
 
     [SPECIES_SHROOMISH] = // TODO: Set
@@ -4076,16 +4076,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_BULK_UP, MOVE_FACADE, MOVE_KNOCK_OFF, MOVE_SLACK_OFF}
     },
 
-    [SPECIES_SLAKING] = // TODO: Set
+    [SPECIES_SLAKING] = // Wallbreaker
     {
         .name = _("Slaking"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_TRUANT,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_GIGA_IMPACT, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_NINCADA] = // TODO: Set
@@ -4100,16 +4100,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_NINJASK] = // TODO: Set
+    [SPECIES_NINJASK] = // Default Set
     {
         .name = _("Ninjask"),
         .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .ability = ABILITY_SPEED_BOOST,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_SWORDS_DANCE, MOVE_U_TURN}
     },
 
     [SPECIES_SHEDINJA] = // Dual Status User (Ghost)
@@ -4148,16 +4148,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_EXPLOUD] = // TODO: Set
+    [SPECIES_EXPLOUD] = // Default Set
     {
         .name = _("Exploud"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_SCRAPPY,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BOOMBURST, MOVE_FIRE_BLAST, MOVE_FOCUS_BLAST, MOVE_SURF}
     },
 
     [SPECIES_MAKUHITA] = // TODO: Set
@@ -4220,16 +4220,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_DELCATTY] = // TODO: Set
+    [SPECIES_DELCATTY] = // Fast Support
     {
         .name = _("Delcatty"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_WONDER_SKIN,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_FAKE_OUT, MOVE_HEAL_BELL, MOVE_SHADOW_BALL}
     },
 
     [SPECIES_SABLEYE] = // Defensive
@@ -4340,28 +4340,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_VOLT_SWITCH, MOVE_THUNDERBOLT, MOVE_OVERHEAT, MOVE_HIDDEN_POWER}
     },
 
-    [SPECIES_PLUSLE] = // TODO: Set
+    [SPECIES_PLUSLE] = // Setup Sweeper
     {
         .name = _("Plusle"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_LIGHTNING_ROD,
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ALLURING_VOICE, MOVE_ENCORE, MOVE_GRASS_KNOT, MOVE_NASTY_PLOT}
     },
 
-    [SPECIES_MINUN] = // TODO: Set
+    [SPECIES_MINUN] = // Setup Sweeper
     {
         .name = _("Minun"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_VOLT_ABSORB,
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ALLURING_VOICE, MOVE_ENCORE, MOVE_GRASS_KNOT, MOVE_NASTY_PLOT}
     },
 
     [SPECIES_VOLBEAT] = // Weather Setter
@@ -4376,16 +4376,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SUNNY_DAY, MOVE_ENCORE, MOVE_MOONLIGHT, MOVE_U_TURN}
     },
 
-    [SPECIES_ILLUMISE] = // TODO: Set
+    [SPECIES_ILLUMISE] = // Bulky Support
     {
         .name = _("Illumise"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_PRANKSTER,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BUG_BUZZ, MOVE_ENCORE, MOVE_ROOST, MOVE_THUNDER_WAVE}
     },
 
     [SPECIES_ROSELIA] = // TODO: Set
@@ -4412,16 +4412,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SWALOT] = // TODO: Set
+    [SPECIES_SWALOT] = // Bulky Attacker
     {
         .name = _("Swalot"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_LIQUID_OOZE,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLEAR_SMOG, MOVE_EARTHQUAKE, MOVE_ENCORE, MOVE_ICE_BEAM}
     },
 
     [SPECIES_CARVANHA] = // TODO: Set
@@ -4460,16 +4460,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_WAILORD] = // TODO: Set
+    [SPECIES_WAILORD] = // Default Set
     {
         .name = _("Wailord"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_OBLIVIOUS,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HYDRO_PUMP, MOVE_HYPER_VOICE, MOVE_ICE_BEAM, MOVE_WATER_SPOUT}
     },
 
     [SPECIES_NUMEL] = // Special Attacker
@@ -4484,16 +4484,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_FLAME_CHARGE, MOVE_FIRE_BLAST, MOVE_EARTH_POWER, MOVE_WILL_O_WISP}
     },
 
-    [SPECIES_CAMERUPT] = // TODO: Set
+    [SPECIES_CAMERUPT] = // Bulky Support
     {
         .name = _("Camerupt"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_SOLID_ROCK,
+        .teraType = TYPE_GRASS,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_OVERHEAT, MOVE_ROAR, MOVE_STEALTH_ROCK}
     },
 
     [SPECIES_TORKOAL] = // Supportive Sun Setter
@@ -4520,28 +4520,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GRUMPIG] = // TODO: Set
+    [SPECIES_GRUMPIG] = // Bulky Setup
     {
         .name = _("Grumpig"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_THICK_FAT,
+        .teraType = TYPE_FAIRY,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DAZZLING_GLEAM, MOVE_EARTH_POWER, MOVE_FOCUS_BLAST, MOVE_NASTY_PLOT}
     },
 
-    [SPECIES_SPINDA] = // TODO: Set
+    [SPECIES_SPINDA] = // Staller
     {
         .name = _("Spinda"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_CONTRARY,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_REST, MOVE_RETURN, MOVE_SLEEP_TALK, MOVE_SUCKER_PUNCH}
     },
 
     [SPECIES_TRAPINCH] = // Trapper
@@ -4628,52 +4628,52 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DEFOG, MOVE_ROOST, MOVE_BRAVE_BIRD, MOVE_WILL_O_WISP}
     },
 
-    [SPECIES_ZANGOOSE] = // TODO: Set
+    [SPECIES_ZANGOOSE] = // Fast Attacker
     {
         .name = _("Zangoose"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_TOXIC_ORB,
+        .ability = ABILITY_TOXIC_BOOST,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_FACADE, MOVE_KNOCK_OFF, MOVE_QUICK_ATTACK}
     },
 
-    [SPECIES_SEVIPER] = // TODO: Set
+    [SPECIES_SEVIPER] = // Bulky Setup
     {
         .name = _("Seviper"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_INFILTRATOR,
+        .teraType = TYPE_GRASS,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_GUNK_SHOT, MOVE_SWORDS_DANCE, MOVE_TRAILBLAZE}
     },
 
-    [SPECIES_LUNATONE] = // TODO: Set
+    [SPECIES_LUNATONE] = // Default Set
     {
         .name = _("Lunatone"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_LEVITATE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTH_POWER, MOVE_MOONBLAST, MOVE_NASTY_PLOT, MOVE_POWER_GEM}
     },
 
-    [SPECIES_SOLROCK] = // TODO: Set
+    [SPECIES_SOLROCK] = // Default Set
     {
         .name = _("Solrock"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_LEVITATE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_MORNING_SUN, MOVE_ROCK_SLIDE}
     },
 
     [SPECIES_BARBOACH] = // TODO: Set
@@ -4736,16 +4736,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_CLAYDOL] = // TODO: Set
+    [SPECIES_CLAYDOL] = // Default Set
     {
         .name = _("Claydol"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_LEVITATE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_ICE_BEAM, MOVE_PSYCHIC, MOVE_RAPID_SPIN}
     },
 
     [SPECIES_LILEEP] = // TODO: Set
@@ -4760,16 +4760,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_CRADILY] = // TODO: Set
+    [SPECIES_CRADILY] = // Default Set
     {
         .name = _("Cradily"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_STORM_DRAIN,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_POWER_WHIP, MOVE_RECOVER, MOVE_STEALTH_ROCK, MOVE_STONE_EDGE}
     },
 
     [SPECIES_ANORITH] = // TODO: Set
@@ -4784,16 +4784,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ARMALDO] = // TODO: Set
+    [SPECIES_ARMALDO] = // Default Set
     {
         .name = _("Armaldo"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_SWIFT_SWIM,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_KNOCK_OFF, MOVE_LIQUIDATION, MOVE_RAPID_SPIN}
     },
 
     [SPECIES_FEEBAS] = // TODO: Set
@@ -4820,28 +4820,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SCALD, MOVE_DRAGON_TAIL, MOVE_FLIP_TURN, MOVE_RECOVER}
     },
 
-    [SPECIES_CASTFORM_NORMAL] = // TODO: Set
+    [SPECIES_CASTFORM] = // Bulky Attacker
     {
         .name = _("Castform"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_FORECAST,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DEFOG, MOVE_FIRE_BLAST, MOVE_ICE_BEAM, MOVE_RETURN}
     },
 
-    [SPECIES_KECLEON] = // TODO: Set
+    [SPECIES_KECLEON] = // Fast Support
     {
         .name = _("Kecleon"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_PROTEAN,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DRAIN_PUNCH, MOVE_FAKE_OUT, MOVE_KNOCK_OFF, MOVE_RECOVER}
     },
 
     [SPECIES_SHUPPET] = // TODO: Set
@@ -4856,16 +4856,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_BANETTE] = // TODO: Set
+    [SPECIES_BANETTE] = // Wallbreaker
     {
         .name = _("Banette"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_CURSED_BODY,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_GUNK_SHOT, MOVE_POLTERGEIST, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE}
     },
 
     [SPECIES_DUSKULL] = // TODO: Set
@@ -4892,28 +4892,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_NIGHT_SHADE, MOVE_WILL_O_WISP, MOVE_REST, MOVE_SLEEP_TALK}
     },
 
-    [SPECIES_TROPIUS] = // TODO: Set
+    [SPECIES_TROPIUS] = // Setup Sweeper
     {
         .name = _("Tropius"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_SITRUS_BERRY,
+        .ability = ABILITY_HARVEST,
+        .teraType = TYPE_GROUND,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DRAGON_DANCE, MOVE_DUAL_WINGBEAT, MOVE_EARTHQUAKE, MOVE_LEAF_BLADE}
     },
 
-    [SPECIES_CHIMECHO] = // TODO: Set
+    [SPECIES_CHIMECHO] = // Bulky Setup
     {
         .name = _("Chimecho"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_LEVITATE,
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_DAZZLING_GLEAM, MOVE_PSYCHIC_NOISE, MOVE_PSYSHOCK}
     },
 
     [SPECIES_ABSOL] = // Mega Absol
@@ -4952,16 +4952,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GLALIE] = // TODO: Set
+    [SPECIES_GLALIE] = // Fast Support
     {
         .name = _("Glalie"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_INNER_FOCUS,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_FREEZE_DRY, MOVE_SPIKES, MOVE_TAUNT}
     },
 
     [SPECIES_SPHEAL] = // TODO: Set
@@ -4988,16 +4988,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_WALREIN] = // TODO: Set
+    [SPECIES_WALREIN] = // Default Set
     {
         .name = _("Walrein"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_THICK_FAT,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ICE_BEAM, MOVE_PROTECT, MOVE_SURF, MOVE_TOXIC}
     },
 
     [SPECIES_CLAMPERL] = // TODO: Set
@@ -5012,52 +5012,52 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_HUNTAIL] = // TODO: Set
+    [SPECIES_HUNTAIL] = // Setup Sweeper
     {
         .name = _("Huntail"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_WHITE_HERB,
+        .ability = ABILITY_SWIFT_SWIM,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ICE_BEAM, MOVE_RETURN, MOVE_SHELL_SMASH, MOVE_SUCKER_PUNCH}
     },
 
-    [SPECIES_GOREBYSS] = // TODO: Set
+    [SPECIES_GOREBYSS] = // Setup Sweeper
     {
         .name = _("Gorebyss"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_WHITE_HERB,
+        .ability = ABILITY_SWIFT_SWIM,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HIDDEN_POWER, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_SHELL_SMASH}
     },
 
-    [SPECIES_RELICANTH] = // TODO: Set
+    [SPECIES_RELICANTH] = // Default Set
     {
         .name = _("Relicanth"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_ROCK_HEAD,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_EARTHQUAKE, MOVE_HEAD_SMASH, MOVE_LIQUIDATION}
     },
 
-    [SPECIES_LUVDISC] = // TODO: Set
+    [SPECIES_LUVDISC] = // Fast Support
     {
         .name = _("Luvdisc"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_SWIFT_SWIM,
+        .teraType = TYPE_GHOST,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ENDEAVOR, MOVE_FLIP_TURN, MOVE_SUBSTITUTE, MOVE_SURF}
     },
 
     [SPECIES_BAGON] = // TODO: Set
@@ -5144,16 +5144,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_STEALTH_ROCK, MOVE_STONE_EDGE, MOVE_BODY_PRESS, MOVE_THUNDER_WAVE}
     },
 
-    [SPECIES_REGICE] = // TODO: Set
+    [SPECIES_REGICE] = // Bulky Attacker
     {
         .name = _("Regice"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_CLEAR_BODY,
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_ICE_BEAM, MOVE_REST, MOVE_SLEEP_TALK}
     },
 
     [SPECIES_REGISTEEL] = // IronPress
@@ -5240,52 +5240,52 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_STEALTH_ROCK, MOVE_IRON_HEAD, MOVE_BODY_SLAM, MOVE_ENCORE}
     },
 
-    [SPECIES_DEOXYS_NORMAL] = // TODO: Set
+    [SPECIES_DEOXYS] = // Wallbreaker
     {
         .name = _("Deoxys"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
-        .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
-    },
-
-    [SPECIES_DEOXYS_ATTACK] = // Mixed Attacker
-    {
-        .name = _("Deoxys-A"),
         .item = ITEM_LIFE_ORB,
         .ability = ABILITY_PRESSURE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_NAIVE,
-        .evs = {0, 4, 0, 252, 252, 0},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_PSYCHO_BOOST, MOVE_SHADOW_BALL, MOVE_LOW_KICK, MOVE_ROCK_SLIDE}
+        .moves = {MOVE_ICE_BEAM, MOVE_KNOCK_OFF, MOVE_PSYCHO_BOOST, MOVE_SUPERPOWER}
     },
 
-    [SPECIES_DEOXYS_DEFENSE] = // Cosmic Power
+    [SPECIES_DEOXYS_ATTACK] = // Fast Attacker
     {
-        .name = _("Deoxys-D"),
-        .item = ITEM_COVERT_CLOAK,
+        .name = _("Deoxys-Attack"),
+        .item = ITEM_LIFE_ORB,
         .ability = ABILITY_PRESSURE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {248, 0, 0, 216, 0, 44},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_COSMIC_POWER, MOVE_STORED_POWER, MOVE_KNOCK_OFF, MOVE_RECOVER}
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EXTREME_SPEED, MOVE_KNOCK_OFF, MOVE_PSYCHO_BOOST, MOVE_SUPERPOWER}
     },
 
-    [SPECIES_DEOXYS_SPEED] = // Lead
+    [SPECIES_DEOXYS_DEFENSE] = // Bulky Setup
     {
-        .name = _("Deoxys-S"),
+        .name = _("Deoxys-Defense"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_PRESSURE,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_COSMIC_POWER, MOVE_NIGHT_SHADE, MOVE_RECOVER, MOVE_STORED_POWER}
+    },
+
+    [SPECIES_DEOXYS_SPEED] = // Fast Support
+    {
+        .name = _("Deoxys-Speed"),
         .item = ITEM_FOCUS_SASH,
         .ability = ABILITY_PRESSURE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {4, 252, 0, 252, 0, 0},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_STEALTH_ROCK, MOVE_SPIKES, MOVE_TAUNT, MOVE_SUPERPOWER}
+        .moves = {MOVE_KNOCK_OFF, MOVE_PSYCHO_BOOST, MOVE_SPIKES, MOVE_STEALTH_ROCK}
     },
 
     [SPECIES_TURTWIG] = // TODO: Set
@@ -5444,16 +5444,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_BIBAREL] = // TODO: Set
+    [SPECIES_BIBAREL] = // Setup Sweeper
     {
         .name = _("Bibarel"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_SIMPLE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AQUA_JET, MOVE_LIQUIDATION, MOVE_QUICK_ATTACK, MOVE_RETURN}
     },
 
     [SPECIES_KRICKETOT] = // TODO: Set
@@ -5468,16 +5468,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_KRICKETUNE] = // TODO: Set
+    [SPECIES_KRICKETUNE] = // Fast Support
     {
         .name = _("Kricketune"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_FOCUS_SASH,
+        .ability = ABILITY_TECHNICIAN,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_KNOCK_OFF, MOVE_POUNCE, MOVE_STICKY_WEB, MOVE_TAUNT}
     },
 
     [SPECIES_SHINX] = // TODO: Set
@@ -5504,16 +5504,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_LUXRAY] = // TODO: Set
+    [SPECIES_LUXRAY] = // Setup Sweeper
     {
         .name = _("Luxray"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_FLAME_ORB,
+        .ability = ABILITY_GUTS,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FACADE, MOVE_PLAY_ROUGH, MOVE_SUPERCELL_SLAM, MOVE_THROAT_CHOP}
     },
 
     [SPECIES_BUDEW] = // TODO: Set
@@ -5552,16 +5552,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_RAMPARDOS] = // TODO: Set
+    [SPECIES_RAMPARDOS] = // Wallbreaker
     {
         .name = _("Rampardos"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_SHEER_FORCE,
+        .teraType = TYPE_FIRE,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ROCK_SLIDE, MOVE_ZEN_HEADBUTT}
     },
 
     [SPECIES_SHIELDON] = // TODO: Set
@@ -5576,16 +5576,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_BASTIODON] = // TODO: Set
+    [SPECIES_BASTIODON] = // Bulky Setup
     {
         .name = _("Bastiodon"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_CHESTO_BERRY,
+        .ability = ABILITY_SOUNDPROOF,
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_FOUL_PLAY, MOVE_IRON_DEFENSE, MOVE_REST}
     },
 
     [SPECIES_BURMY_PLANT] = // TODO: Set
@@ -5624,52 +5624,52 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_WORMADAM_PLANT] = // TODO: Set
+    [SPECIES_WORMADAM] = // Setup Sweeper
     {
         .name = _("Wormadam"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_ANTICIPATION,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BUG_BUZZ, MOVE_ENERGY_BALL, MOVE_GIGA_DRAIN, MOVE_HIDDEN_POWER}
     },
 
-    [SPECIES_WORMADAM_SANDY] = // TODO: Set
+    [SPECIES_WORMADAM_SANDY] = // Staller
     {
-        .name = _("Wormadam-S"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Wormadam-Sandy"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_OVERCOAT,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_INFESTATION, MOVE_PROTECT, MOVE_STEALTH_ROCK}
     },
 
-    [SPECIES_WORMADAM_TRASH] = // TODO: Set
+    [SPECIES_WORMADAM_TRASH] = // Staller
     {
-        .name = _("Wormadam-T"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Wormadam-Trash"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_OVERCOAT,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FLASH_CANNON, MOVE_INFESTATION, MOVE_PROTECT, MOVE_STEALTH_ROCK}
     },
 
-    [SPECIES_MOTHIM] = // TODO: Set
+    [SPECIES_MOTHIM] = // Z-Move user
     {
         .name = _("Mothim"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_BUGINIUM_Z,
+        .ability = ABILITY_TINTED_LENS,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE}
     },
 
     [SPECIES_COMBEE] = // TODO: Set
@@ -5684,28 +5684,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_VESPIQUEN] = // TODO: Set
+    [SPECIES_VESPIQUEN] = // Bulky Support
     {
         .name = _("Vespiquen"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_PRESSURE,
+        .teraType = TYPE_STEEL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AIR_SLASH, MOVE_HURRICANE, MOVE_ROOST, MOVE_SPIKES}
     },
 
-    [SPECIES_PACHIRISU] = // TODO: Set
+    [SPECIES_PACHIRISU] = // AV Pivot
     {
         .name = _("Pachirisu"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_VOLT_ABSORB,
+        .teraType = TYPE_FLYING,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_NUZZLE, MOVE_SUPER_FANG, MOVE_THUNDERBOLT, MOVE_U_TURN}
     },
 
     [SPECIES_BUIZEL] = // Rain Wallbreaker
@@ -5744,16 +5744,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_CHERRIM_OVERCAST] = // TODO: Set
+    [SPECIES_CHERRIM] = // Default Set
     {
         .name = _("Cherrim"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SCARF,
+        .ability = ABILITY_FLOWER_GIFT,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DAZZLING_GLEAM, MOVE_ENERGY_BALL, MOVE_HEALING_WISH, MOVE_PETAL_DANCE}
     },
 
     [SPECIES_SHELLOS_WEST] = // TODO: Set
@@ -5780,16 +5780,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GASTRODON_WEST] = // TODO: Set
+    [SPECIES_GASTRODON] = // Bulky Support
     {
         .name = _("Gastrodon"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_STORM_DRAIN,
+        .teraType = TYPE_POISON,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_RECOVER, MOVE_SLUDGE_BOMB, MOVE_STEALTH_ROCK}
     },
 
     [SPECIES_GASTRODON_EAST] = // TODO: Set
@@ -5876,16 +5876,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_NASTY_PLOT, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SUBSTITUTE}
     },
 
-    [SPECIES_HONCHKROW] = // TODO: Set
+    [SPECIES_HONCHKROW] = // Wallbreaker
     {
         .name = _("Honchkrow"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_MOXIE,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_HEAT_WAVE, MOVE_LASH_OUT, MOVE_SUCKER_PUNCH}
     },
 
     [SPECIES_GLAMEOW] = // TODO: Set
@@ -5900,16 +5900,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_PURUGLY] = // TODO: Set
+    [SPECIES_PURUGLY] = // Fast Attacker
     {
         .name = _("Purugly"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_DEFIANT,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FAKE_OUT, MOVE_KNOCK_OFF, MOVE_RETURN, MOVE_STOMPING_TANTRUM}
     },
 
     [SPECIES_CHINGLING] = // TODO: Set
@@ -5986,7 +5986,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_MIME_JR] = // TODO: Set
     {
-        .name = _("Mime Jr."),
+        .name = _("Mime-Jr"),
         .item = ITEM_NONE,
         .ability = ABILITY_NONE,
         .teraType = TYPE_NORMAL,
@@ -6008,16 +6008,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_CHATOT] = // TODO: Set
+    [SPECIES_CHATOT] = // Setup Sweeper
     {
         .name = _("Chatot"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_TANGLED_FEET,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BOOMBURST, MOVE_CHATTER, MOVE_HEAT_WAVE, MOVE_NASTY_PLOT}
     },
 
     [SPECIES_SPIRITOMB] = // Offensive Trick Room
@@ -6140,16 +6140,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_DRAPION] = // TODO: Set
+    [SPECIES_DRAPION] = // Default Set
     {
         .name = _("Drapion"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_BLACK_SLUDGE,
+        .ability = ABILITY_SNIPER,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF, MOVE_POISON_JAB}
     },
 
     [SPECIES_CROAGUNK] = // Bulky Attacker
@@ -6176,16 +6176,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_GUNK_SHOT, MOVE_CLOSE_COMBAT, MOVE_SUCKER_PUNCH}
     },
 
-    [SPECIES_CARNIVINE] = // TODO: Set
+    [SPECIES_CARNIVINE] = // Bulky Support
     {
         .name = _("Carnivine"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_LEVITATE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DEFOG, MOVE_KNOCK_OFF, MOVE_POWER_WHIP, MOVE_SLEEP_POWDER}
     },
 
     [SPECIES_FINNEON] = // TODO: Set
@@ -6200,16 +6200,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_LUMINEON] = // TODO: Set
+    [SPECIES_LUMINEON] = // Fast Support
     {
         .name = _("Lumineon"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_STORM_DRAIN,
+        .teraType = TYPE_DRAGON,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ENCORE, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_U_TURN}
     },
 
     [SPECIES_MANTYKE] = // TODO: Set
@@ -6272,16 +6272,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_VOLT_SWITCH, MOVE_TERA_BLAST}
     },
 
-    [SPECIES_LICKILICKY] = // TODO: Set
+    [SPECIES_LICKILICKY] = // Default Set
     {
         .name = _("Lickilicky"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_OBLIVIOUS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_HEAL_BELL}
     },
 
     [SPECIES_RHYPERIOR] = // Stealth Rock
@@ -6308,16 +6308,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_GIGA_DRAIN, MOVE_KNOCK_OFF, MOVE_HIDDEN_POWER, MOVE_SLEEP_POWDER}
     },
 
-    [SPECIES_ELECTIVIRE] = // TODO: Set
+    [SPECIES_ELECTIVIRE] = // Fast Attacker
     {
         .name = _("Electivire"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_MOTOR_DRIVE,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_FLAMETHROWER, MOVE_ICE_PUNCH, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_MAGMORTAR] = // All-Out Attacker
@@ -6332,16 +6332,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_FIRE_BLAST, MOVE_SCORCHING_SANDS, MOVE_THUNDERBOLT, MOVE_KNOCK_OFF}
     },
 
-    [SPECIES_TOGEKISS] = // TODO: Set
+    [SPECIES_TOGEKISS] = // Default Set
     {
         .name = _("Togekiss"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SCARF,
+        .ability = ABILITY_SERENE_GRACE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_FIRE_BLAST, MOVE_NASTY_PLOT}
     },
 
     [SPECIES_YANMEGA] = // Choice Specs (Bug)
@@ -6368,16 +6368,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_SOLAR_BLADE, MOVE_DOUBLE_EDGE, MOVE_TERA_BLAST}
     },
 
-    [SPECIES_GLACEON] = // TODO: Set
+    [SPECIES_GLACEON] = // Bulky Setup
     {
         .name = _("Glaceon"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_ICE_BODY,
+        .teraType = TYPE_WATER,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_FREEZE_DRY, MOVE_PROTECT, MOVE_WISH}
     },
 
     [SPECIES_GLISCOR] = // Defensive
@@ -6428,28 +6428,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_SACRED_SWORD, MOVE_PSYCHO_CUT, MOVE_LEAF_BLADE}
     },
 
-    [SPECIES_PROBOPASS] = // TODO: Set
+    [SPECIES_PROBOPASS] = // Bulky Setup
     {
         .name = _("Probopass"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_CHESTO_BERRY,
+        .ability = ABILITY_MAGNET_PULL,
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_FLASH_CANNON, MOVE_IRON_DEFENSE, MOVE_POWER_GEM}
     },
 
-    [SPECIES_DUSKNOIR] = // TODO: Set
+    [SPECIES_DUSKNOIR] = // Bulky Support
     {
         .name = _("Dusknoir"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_FRISK,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_PAIN_SPLIT, MOVE_POLTERGEIST, MOVE_SHADOW_SNEAK}
     },
 
     [SPECIES_FROSLASS] = // Suicide Lead
@@ -6476,64 +6476,64 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_THUNDERBOLT, MOVE_SHADOW_BALL, MOVE_VOLT_SWITCH, MOVE_TRICK}
     },
 
-    [SPECIES_ROTOM_HEAT] = // Nasty Plot
+    [SPECIES_ROTOM_HEAT] = // Bulky Attacker
     {
-        .name = _("Rotom-H"),
+        .name = _("Rotom-Heat"),
         .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_LEVITATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {248, 0, 0, 252, 8, 0},
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_OVERHEAT, MOVE_VOLT_SWITCH, MOVE_NASTY_PLOT, MOVE_PAIN_SPLIT}
+        .moves = {MOVE_NASTY_PLOT, MOVE_OVERHEAT, MOVE_PAIN_SPLIT, MOVE_THUNDERBOLT}
     },
 
-    [SPECIES_ROTOM_FAN] = // TODO: Set
+    [SPECIES_ROTOM_FAN] = // Bulky Attacker
     {
-        .name = _("Rotom-F"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_LEVITATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
-        .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
-    },
-
-    [SPECIES_ROTOM_FROST] = // Nasty Plot
-    {
-        .name = _("Rotom-Fr"),
+        .name = _("Rotom-Fan"),
         .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_LEVITATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 4, 252, 252, 0},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_NASTY_PLOT, MOVE_BLIZZARD, MOVE_VOLT_SWITCH, MOVE_THUNDERBOLT}
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AIR_SLASH, MOVE_NASTY_PLOT, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT}
     },
 
-    [SPECIES_ROTOM_MOW] = // Choice Scarf
+    [SPECIES_ROTOM_FROST] = // Fast Attacker
     {
-        .name = _("Rotom-M"),
+        .name = _("Rotom-Frost"),
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_LEVITATE,
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BLIZZARD, MOVE_NASTY_PLOT, MOVE_THUNDERBOLT, MOVE_VOLT_SWITCH}
+    },
+
+    [SPECIES_ROTOM_MOW] = // Bulky Attacker
+    {
+        .name = _("Rotom-Mow"),
         .item = ITEM_CHOICE_SCARF,
         .ability = ABILITY_LEVITATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 0, 252, 252, 4},
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_THUNDERBOLT, MOVE_LEAF_STORM, MOVE_VOLT_SWITCH, MOVE_TRICK}
+        .moves = {MOVE_LEAF_STORM, MOVE_NASTY_PLOT, MOVE_THUNDERBOLT, MOVE_TRICK}
     },
 
-    [SPECIES_ROTOM_WASH] = // Utility Pivot
+    [SPECIES_ROTOM_WASH] = // Bulky Attacker
     {
-        .name = _("Rotom-W"),
-        .item = ITEM_LEFTOVERS,
+        .name = _("Rotom-Wash"),
+        .item = ITEM_CHOICE_SCARF,
         .ability = ABILITY_LEVITATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_BOLD,
-        .evs = {252, 0, 168, 88, 0, 0},
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_HYDRO_PUMP, MOVE_VOLT_SWITCH, MOVE_WILL_O_WISP, MOVE_PAIN_SPLIT}
+        .moves = {MOVE_HYDRO_PUMP, MOVE_NASTY_PLOT, MOVE_PAIN_SPLIT, MOVE_THUNDERBOLT}
     },
 
     [SPECIES_UXIE] = // Nasty Plot
@@ -6572,28 +6572,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_STEALTH_ROCK, MOVE_TAUNT, MOVE_EXPLOSION, MOVE_FLAMETHROWER}
     },
 
-    [SPECIES_DIALGA] = // Mixed Utility
+    [SPECIES_DIALGA_ORIGIN] = // Fast Attacker
     {
-        .name = _("Dialga"),
-        .item = ITEM_LEFTOVERS,
-        .ability = ABILITY_PRESSURE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_SASSY,
-        .evs = {252, 0, 0, 0, 4, 252},
-        .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_DRACO_METEOR, MOVE_HEAVY_SLAM, MOVE_STEALTH_ROCK, MOVE_DRAGON_TAIL}
-    },
-
-    [SPECIES_DIALGA_ORIGIN] = // Mixed Utility
-    {
-        .name = _("Dialga"),
+        .name = _("Dialga-Origin"),
         .item = ITEM_ADAMANT_CRYSTAL,
         .ability = ABILITY_PRESSURE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {252, 0, 0, 252, 4, 0},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_DRACO_METEOR, MOVE_STEEL_BEAM, MOVE_STEALTH_ROCK, MOVE_DRAGON_TAIL}
+        .teraType = TYPE_DRAGON,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRACO_METEOR, MOVE_FIRE_BLAST, MOVE_FLASH_CANNON, MOVE_HEAVY_SLAM}
     },
 
     [SPECIES_PALKIA] = // Choice Scarf
@@ -6608,16 +6596,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SPACIAL_REND, MOVE_HYDRO_PUMP, MOVE_FIRE_BLAST, MOVE_TRICK}
     },
 
-    [SPECIES_PALKIA_ORIGIN] = // Wallbreaker
+    [SPECIES_PALKIA_ORIGIN] = // Bulky Attacker
     {
-        .name = _("Palkia-O"),
+        .name = _("Palkia-Origin"),
         .item = ITEM_LUSTROUS_GLOBE,
         .ability = ABILITY_PRESSURE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 0, 252, 252, 4},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_HYDRO_PUMP, MOVE_FIRE_BLAST, MOVE_SPACIAL_REND, MOVE_EARTH_POWER}
+        .teraType = TYPE_DRAGON,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRACO_METEOR, MOVE_FIRE_BLAST, MOVE_HYDRO_PUMP, MOVE_SPACIAL_REND}
     },
 
     [SPECIES_HEATRAN] = // Offensive
@@ -6632,16 +6620,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_STEALTH_ROCK, MOVE_MAGMA_STORM, MOVE_EARTH_POWER, MOVE_TERA_BLAST}
     },
 
-    [SPECIES_REGIGIGAS] = // TODO: Set
+    [SPECIES_REGIGIGAS] = // Bulky Support
     {
         .name = _("Regigigas"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_SLOW_START,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_SLAM, MOVE_KNOCK_OFF, MOVE_REST, MOVE_SLEEP_TALK}
     },
 
     [SPECIES_GIRATINA_ALTERED] = // Defog
@@ -6656,16 +6644,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DEFOG, MOVE_ROAR, MOVE_WILL_O_WISP, MOVE_REST}
     },
 
-    [SPECIES_GIRATINA_ORIGIN] = // Special Utility
+    [SPECIES_GIRATINA_ORIGIN] = // Fast Attacker
     {
-        .name = _("Giratina-O"),
+        .name = _("Giratina-Origi"),
         .item = ITEM_GRISEOUS_CORE,
         .ability = ABILITY_LEVITATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_MODEST,
-        .evs = {248, 0, 112, 44, 104, 0},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_HEX, MOVE_DRACO_METEOR, MOVE_WILL_O_WISP, MOVE_DEFOG}
+        .teraType = TYPE_DRAGON,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DEFOG, MOVE_DRACO_METEOR, MOVE_DRAGON_TAIL, MOVE_POLTERGEIST}
     },
 
     [SPECIES_CRESSELIA] = // Trick Room Support
@@ -6680,16 +6668,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_MOONBLAST, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND}
     },
 
-    [SPECIES_PHIONE] = // TODO: Set
+    [SPECIES_PHIONE] = // Bulky Attacker
     {
         .name = _("Phione"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_HYDRATION,
+        .teraType = TYPE_GRASS,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_GRASS_KNOT, MOVE_ICE_BEAM, MOVE_SCALD, MOVE_TAKE_HEART}
     },
 
     [SPECIES_MANAPHY] = // Tail Glow
@@ -6728,16 +6716,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SEED_FLARE, MOVE_AIR_SLASH, MOVE_EARTH_POWER, MOVE_HEALING_WISH}
     },
 
-    [SPECIES_SHAYMIN_SKY] = // Serene
+    [SPECIES_SHAYMIN_SKY] = // Fast Attacker
     {
-        .name = _("Shaymin-S"),
-        .item = ITEM_CHOICE_SCARF,
+        .name = _("Shaymin-Sky"),
+        .item = ITEM_CHOICE_SPECS,
         .ability = ABILITY_SERENE_GRACE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 0, 252, 252, 4},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_SEED_FLARE, MOVE_AIR_SLASH, MOVE_EARTH_POWER, MOVE_HEALING_WISH}
+        .teraType = TYPE_FLYING,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AIR_SLASH, MOVE_DAZZLING_GLEAM, MOVE_EARTH_POWER, MOVE_SEED_FLARE}
     },
 
     [SPECIES_ARCEUS_NORMAL] = // Extreme Killer
@@ -6872,16 +6860,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_HYDRO_PUMP, MOVE_GRASS_KNOT, MOVE_ICE_BEAM, MOVE_AQUA_JET}
     },
 
-    [SPECIES_SAMUROTT_HISUI] = // Lead
+    [SPECIES_SAMUROTT_HISUI] = // Fast Attacker
     {
-        .name = _("Samurott-H"),
-        .item = ITEM_FOCUS_SASH,
+        .name = _("Samurott-Hisui"),
+        .item = ITEM_CHOICE_BAND,
         .ability = ABILITY_SHARPNESS,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_CEASELESS_EDGE, MOVE_RAZOR_SHELL, MOVE_AQUA_JET, MOVE_KNOCK_OFF}
+        .moves = {MOVE_CEASELESS_EDGE, MOVE_FLIP_TURN, MOVE_RAZOR_SHELL, MOVE_SACRED_SWORD}
     },
 
     [SPECIES_PATRAT] = // TODO: Set
@@ -6896,16 +6884,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_WATCHOG] = // TODO: Set
+    [SPECIES_WATCHOG] = // Bulky Attacker
     {
         .name = _("Watchog"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_ANALYTIC,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HYPNOSIS, MOVE_KNOCK_OFF, MOVE_RETURN, MOVE_SUPER_FANG}
     },
 
     [SPECIES_LILLIPUP] = // TODO: Set
@@ -6932,16 +6920,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_STOUTLAND] = // TODO: Set
+    [SPECIES_STOUTLAND] = // Default Set
     {
         .name = _("Stoutland"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_INTIMIDATE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CRUNCH, MOVE_FACADE, MOVE_PLAY_ROUGH, MOVE_SUPERPOWER}
     },
 
     [SPECIES_PURRLOIN] = // TODO: Set
@@ -6956,16 +6944,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_LIEPARD] = // TODO: Set
+    [SPECIES_LIEPARD] = // Default Set
     {
         .name = _("Liepard"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_PRANKSTER,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_COPYCAT, MOVE_ENCORE, MOVE_KNOCK_OFF, MOVE_PLAY_ROUGH}
     },
 
     [SPECIES_PANSAGE] = // TODO: Set
@@ -6980,16 +6968,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SIMISAGE] = // TODO: Set
+    [SPECIES_SIMISAGE] = // Setup Sweeper
     {
         .name = _("Simisage"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_OVERGROW,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FOCUS_BLAST, MOVE_GIGA_DRAIN, MOVE_HIDDEN_POWER, MOVE_NASTY_PLOT}
     },
 
     [SPECIES_PANSEAR] = // TODO: Set
@@ -7004,16 +6992,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SIMISEAR] = // TODO: Set
+    [SPECIES_SIMISEAR] = // Setup Sweeper
     {
         .name = _("Simisear"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_BLAZE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FIRE_BLAST, MOVE_FOCUS_BLAST, MOVE_GRASS_KNOT, MOVE_HIDDEN_POWER}
     },
 
     [SPECIES_PANPOUR] = // TODO: Set
@@ -7028,16 +7016,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SIMIPOUR] = // TODO: Set
+    [SPECIES_SIMIPOUR] = // Setup Sweeper
     {
         .name = _("Simipour"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_TORRENT,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_GRASS_KNOT, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_NASTY_PLOT}
     },
 
     [SPECIES_MUNNA] = // TODO: Set
@@ -7052,16 +7040,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_MUSHARNA] = // TODO: Set
+    [SPECIES_MUSHARNA] = // Default Set
     {
         .name = _("Musharna"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_SYNCHRONIZE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_MOONBLAST, MOVE_MOONLIGHT, MOVE_PSYCHIC}
     },
 
     [SPECIES_PIDOVE] = // TODO: Set
@@ -7088,16 +7076,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_UNFEZANT] = // TODO: Set
+    [SPECIES_UNFEZANT] = // Default Set
     {
         .name = _("Unfezant"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_SCOPE_LENS,
+        .ability = ABILITY_SUPER_LUCK,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_DEFOG, MOVE_NIGHT_SLASH, MOVE_ROOST}
     },
 
     [SPECIES_BLITZLE] = // TODO: Set
@@ -7112,16 +7100,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ZEBSTRIKA] = // TODO: Set
+    [SPECIES_ZEBSTRIKA] = // Fast Attacker
     {
         .name = _("Zebstrika"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_SAP_SIPPER,
+        .teraType = TYPE_GROUND,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HIGH_HORSEPOWER, MOVE_OVERHEAT, MOVE_SUPERCELL_SLAM, MOVE_VOLT_SWITCH}
     },
 
     [SPECIES_ROGGENROLA] = // TODO: Set
@@ -7148,16 +7136,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GIGALITH] = // TODO: Set
+    [SPECIES_GIGALITH] = // Default Set
     {
         .name = _("Gigalith"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_SAND_STREAM,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_STEALTH_ROCK, MOVE_STONE_EDGE}
     },
 
     [SPECIES_WOOBAT] = // TODO: Set
@@ -7172,16 +7160,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SWOOBAT] = // TODO: Set
+    [SPECIES_SWOOBAT] = // Default Set
     {
         .name = _("Swoobat"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_FOCUS_SASH,
+        .ability = ABILITY_SIMPLE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AIR_SLASH, MOVE_CALM_MIND, MOVE_HEAT_WAVE, MOVE_ROOST}
     },
 
     [SPECIES_DRILBUR] = // Utility
@@ -7208,16 +7196,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_EARTHQUAKE, MOVE_RAPID_SPIN, MOVE_IRON_HEAD, MOVE_STEALTH_ROCK}
     },
 
-    [SPECIES_AUDINO] = // TODO: Set
+    [SPECIES_AUDINO] = // Default Set
     {
         .name = _("Audino"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_REGENERATOR,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HEAL_BELL, MOVE_KNOCK_OFF, MOVE_PROTECT, MOVE_TOXIC}
     },
 
     [SPECIES_TIMBURR] = // Physical Attacker
@@ -7280,40 +7268,40 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SEISMITOAD] = // TODO: Set
+    [SPECIES_SEISMITOAD] = // Default Set
     {
         .name = _("Seismitoad"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_SWIFT_SWIM,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_LIQUIDATION, MOVE_RAIN_DANCE, MOVE_SLUDGE_BOMB}
     },
 
-    [SPECIES_THROH] = // TODO: Set
+    [SPECIES_THROH] = // Default Set
     {
         .name = _("Throh"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHESTO_BERRY,
+        .ability = ABILITY_GUTS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BULK_UP, MOVE_CIRCLE_THROW, MOVE_ICE_PUNCH, MOVE_KNOCK_OFF}
     },
 
-    [SPECIES_SAWK] = // TODO: Set
+    [SPECIES_SAWK] = // Default Set
     {
         .name = _("Sawk"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_MOLD_BREAKER,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BULK_UP, MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_POISON_JAB}
     },
 
     [SPECIES_SEWADDLE] = // TODO: Set
@@ -7376,16 +7364,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SCOLIPEDE] = // TODO: Set
+    [SPECIES_SCOLIPEDE] = // Default Set
     {
         .name = _("Scolipede"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_BLACK_SLUDGE,
+        .ability = ABILITY_SPEED_BOOST,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_MEGAHORN, MOVE_POISON_JAB, MOVE_PROTECT}
     },
 
     [SPECIES_COTTONEE] = // Memento
@@ -7436,28 +7424,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_GROWTH, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_ALLURING_VOICE}
     },
 
-    [SPECIES_LILLIGANT_HISUI] = // Victory Dance
+    [SPECIES_LILLIGANT_HISUI] = // Setup Sweeper
     {
-        .name = _("Lilligant-H"),
-        .item = ITEM_WIDE_LENS,
-        .ability = ABILITY_CHLOROPHYLL,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .name = _("Lilligant-Hisu"),
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_HUSTLE,
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_VICTORY_DANCE, MOVE_LEAF_BLADE, MOVE_CLOSE_COMBAT, MOVE_ICE_SPINNER}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_ICE_SPINNER, MOVE_LEAF_BLADE, MOVE_SLEEP_POWDER}
     },
 
-    [SPECIES_BASCULIN_RED_STRIPED] = // TODO: Set
+    [SPECIES_BASCULIN] = // Wallbreaker
     {
         .name = _("Basculin"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_ADAPTABILITY,
+        .teraType = TYPE_WATER,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AQUA_JET, MOVE_DOUBLE_EDGE, MOVE_FLIP_TURN, MOVE_WAVE_CRASH}
     },
 
     [SPECIES_BASCULIN_BLUE_STRIPED] = // TODO: Set
@@ -7544,40 +7532,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_DARMANITAN_STANDARD] = // TODO: Set
+    [SPECIES_DARMANITAN] = // Default Set
     {
         .name = _("Darmanitan"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_SHEER_FORCE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_FLARE_BLITZ, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER}
     },
 
-    [SPECIES_DARMANITAN_GALAR_STANDARD] = // TODO: Set
-    {
-        .name = _("Darmanitan-G"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
-        .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
-    },
-
-    [SPECIES_MARACTUS] = // TODO: Set
+    [SPECIES_MARACTUS] = // Default Set
     {
         .name = _("Maractus"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_FOCUS_SASH,
+        .ability = ABILITY_CHLOROPHYLL,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ENERGY_BALL, MOVE_KNOCK_OFF, MOVE_LEECH_SEED, MOVE_SPIKES}
     },
 
     [SPECIES_DWEBBLE] = // TODO: Set
@@ -7592,16 +7568,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_CRUSTLE] = // TODO: Set
+    [SPECIES_CRUSTLE] = // Default Set
     {
         .name = _("Crustle"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_STURDY,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_SHELL_SMASH, MOVE_STONE_EDGE, MOVE_X_SCISSOR}
     },
 
     [SPECIES_SCRAGGY] = // Bulk Up
@@ -7628,16 +7604,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DRAGON_DANCE, MOVE_KNOCK_OFF, MOVE_DRAIN_PUNCH, MOVE_POISON_JAB}
     },
 
-    [SPECIES_SIGILYPH] = // TODO: Set
+    [SPECIES_SIGILYPH] = // Default Set
     {
         .name = _("Sigilyph"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_MAGIC_GUARD,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AIR_SLASH, MOVE_DEFOG, MOVE_ENERGY_BALL, MOVE_HEAT_WAVE}
     },
 
     [SPECIES_YAMASK] = // TODO: Set
@@ -7664,16 +7640,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_COFAGRIGUS] = // TODO: Set
+    [SPECIES_COFAGRIGUS] = // Default Set
     {
         .name = _("Cofagrigus"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_MUMMY,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_MEMENTO, MOVE_SHADOW_BALL, MOVE_TOXIC_SPIKES}
     },
 
     [SPECIES_TIRTOUGA] = // TODO: Set
@@ -7688,16 +7664,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_CARRACOSTA] = // TODO: Set
+    [SPECIES_CARRACOSTA] = // Default Set
     {
         .name = _("Carracosta"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_WEAKNESS_POLICY,
+        .ability = ABILITY_SOLID_ROCK,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AQUA_JET, MOVE_HYDRO_PUMP, MOVE_SHELL_SMASH, MOVE_STONE_EDGE}
     },
 
     [SPECIES_ARCHEN] = // TODO: Set
@@ -7712,16 +7688,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ARCHEOPS] = // TODO: Set
+    [SPECIES_ARCHEOPS] = // Default Set
     {
         .name = _("Archeops"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_DEFEATIST,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DUAL_WINGBEAT, MOVE_EARTHQUAKE, MOVE_ROOST, MOVE_STONE_EDGE}
     },
 
     [SPECIES_TRUBBISH] = // TODO: Set
@@ -7736,16 +7712,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GARBODOR] = // TODO: Set
+    [SPECIES_GARBODOR] = // Bulky Attacker
     {
         .name = _("Garbodor"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_BLACK_SLUDGE,
+        .ability = ABILITY_AFTERMATH,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_GUNK_SHOT, MOVE_HAZE, MOVE_PAIN_SPLIT, MOVE_SPIKES}
     },
 
     [SPECIES_ZORUA] = // Choice Scarf
@@ -7784,16 +7760,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DARK_PULSE, MOVE_SLUDGE_BOMB, MOVE_TRICK, MOVE_FOCUS_BLAST}
     },
 
-    [SPECIES_ZOROARK_HISUI] = // Choice Specs
+    [SPECIES_ZOROARK_HISUI] = // Fast Attacker
     {
-        .name = _("Zoroark-H"),
-        .item = ITEM_CHOICE_SPECS,
+        .name = _("Zoroark-Hisui"),
+        .item = ITEM_LIFE_ORB,
         .ability = ABILITY_ILLUSION,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 0, 252, 252, 4},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_TRICK, MOVE_SHADOW_BALL, MOVE_FOCUS_BLAST, MOVE_HYPER_VOICE}
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FOCUS_BLAST, MOVE_HYPER_VOICE, MOVE_POLTERGEIST, MOVE_WILL_O_WISP}
     },
 
     [SPECIES_MINCCINO] = // Skill Link Attacker
@@ -7904,16 +7880,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SWANNA] = // TODO: Set
+    [SPECIES_SWANNA] = // Bulky Support
     {
         .name = _("Swanna"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_HYDRATION,
+        .teraType = TYPE_GROUND,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_DEFOG, MOVE_FLIP_TURN, MOVE_HYDRO_PUMP}
     },
 
     [SPECIES_VANILLITE] = // TODO: Set
@@ -7940,16 +7916,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_VANILLUXE] = // TODO: Set
+    [SPECIES_VANILLUXE] = // Default Set
     {
         .name = _("Vanilluxe"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_SNOW_WARNING,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AURORA_VEIL, MOVE_BLIZZARD, MOVE_EXPLOSION, MOVE_FLASH_CANNON}
     },
 
     [SPECIES_DEERLING_SPRING] = // TODO: Set
@@ -8000,16 +7976,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SAWSBUCK_SPRING] = // TODO: Set
+    [SPECIES_SAWSBUCK] = // Fast Attacker
     {
         .name = _("Sawsbuck"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_SERENE_GRACE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HEADBUTT, MOVE_HIGH_HORSEPOWER, MOVE_HORN_LEECH, MOVE_SWORDS_DANCE}
     },
 
     [SPECIES_SAWSBUCK_SUMMER] = // TODO: Set
@@ -8048,16 +8024,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_EMOLGA] = // TODO: Set
+    [SPECIES_EMOLGA] = // Default Set
     {
         .name = _("Emolga"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_MOTOR_DRIVE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AIR_SLASH, MOVE_DEFOG, MOVE_ENERGY_BALL, MOVE_ROOST}
     },
 
     [SPECIES_KARRABLAST] = // TODO: Set
@@ -8072,16 +8048,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ESCAVALIER] = // TODO: Set
+    [SPECIES_ESCAVALIER] = // Default Set
     {
         .name = _("Escavalier"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_OVERCOAT,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_DRILL_RUN, MOVE_IRON_HEAD, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_FOONGUS] = // Defensive
@@ -8120,16 +8096,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_JELLICENT] = // TODO: Set
+    [SPECIES_JELLICENT] = // Default Set
     {
         .name = _("Jellicent"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_WATER_ABSORB,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ICE_BEAM, MOVE_RECOVER, MOVE_SCALD, MOVE_SHADOW_BALL}
     },
 
     [SPECIES_ALOMOMOLA] = // Wish Passer
@@ -8216,16 +8192,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_KLINKLANG] = // TODO: Set
+    [SPECIES_KLINKLANG] = // Default Set
     {
         .name = _("Klinklang"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_CLEAR_BODY,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_GEAR_GRIND, MOVE_SHIFT_GEAR, MOVE_SUBSTITUTE, MOVE_WILD_CHARGE}
     },
 
     [SPECIES_TYNAMO] = // TODO: Set
@@ -8276,16 +8252,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_BEHEEYEM] = // TODO: Set
+    [SPECIES_BEHEEYEM] = // Default Set
     {
         .name = _("Beheeyem"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_ANALYTIC,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DARK_PULSE, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_TRICK}
     },
 
     [SPECIES_LITWICK] = // TODO: Set
@@ -8408,40 +8384,40 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ACCELGOR] = // TODO: Set
+    [SPECIES_ACCELGOR] = // Default Set
     {
         .name = _("Accelgor"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_STICKY_HOLD,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BUG_BUZZ, MOVE_ENERGY_BALL, MOVE_FOCUS_BLAST, MOVE_SLUDGE_BOMB}
     },
 
-    [SPECIES_STUNFISK] = // TODO: Set
+    [SPECIES_STUNFISK] = // Default Set
     {
         .name = _("Stunfisk"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_SAND_VEIL,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DISCHARGE, MOVE_EARTH_POWER, MOVE_FOUL_PLAY, MOVE_SLUDGE_BOMB}
     },
 
-    [SPECIES_STUNFISK_GALAR] = // TODO: Set
+    [SPECIES_STUNFISK_GALAR] = // Default Set
     {
         .name = _("Stunfisk-G"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_MIMICRY,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_PAIN_SPLIT, MOVE_STEALTH_ROCK, MOVE_STONE_EDGE}
     },
 
     [SPECIES_MIENFOO] = // Fast Pivot
@@ -8468,16 +8444,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_ICE_SPINNER, MOVE_U_TURN}
     },
 
-    [SPECIES_DRUDDIGON] = // TODO: Set
+    [SPECIES_DRUDDIGON] = // Default Set
     {
         .name = _("Druddigon"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_MOLD_BREAKER,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_GLARE, MOVE_GUNK_SHOT, MOVE_OUTRAGE}
     },
 
     [SPECIES_GOLETT] = // TODO: Set
@@ -8528,16 +8504,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_SUCKER_PUNCH, MOVE_IRON_HEAD, MOVE_THROAT_CHOP}
     },
 
-    [SPECIES_BOUFFALANT] = // TODO: Set
+    [SPECIES_BOUFFALANT] = // Default Set
     {
         .name = _("Bouffalant"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_RECKLESS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_EARTHQUAKE, MOVE_HEAD_CHARGE, MOVE_MEGAHORN}
     },
 
     [SPECIES_RUFFLET] = // Choice Band
@@ -8564,16 +8540,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_BRAVE_BIRD, MOVE_DEFOG, MOVE_ROOST, MOVE_U_TURN}
     },
 
-    [SPECIES_BRAVIARY_HISUI] = // Sheer Force
+    [SPECIES_BRAVIARY_HISUI] = // Wallbreaker
     {
-        .name = _("Braviary-H"),
-        .item = ITEM_LIFE_ORB,
-        .ability = ABILITY_SHEER_FORCE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 4, 252, 252, 0},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_PSYCHIC, MOVE_HURRICANE, MOVE_HEAT_WAVE, MOVE_AGILITY}
+        .name = _("Braviary-Hisui"),
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_TINTED_LENS,
+        .teraType = TYPE_FAIRY,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_ESPER_WING, MOVE_HURRICANE, MOVE_U_TURN, MOVE_VACUUM_WAVE}
     },
 
     [SPECIES_VULLABY] = // Physical Attacker
@@ -8600,28 +8576,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_FOUL_PLAY, MOVE_DEFOG, MOVE_TOXIC, MOVE_ROOST}
     },
 
-    [SPECIES_HEATMOR] = // TODO: Set
+    [SPECIES_HEATMOR] = // Default Set
     {
         .name = _("Heatmor"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_FLASH_FIRE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FIRE_LASH, MOVE_GIGA_DRAIN, MOVE_KNOCK_OFF, MOVE_SUBSTITUTE}
     },
 
-    [SPECIES_DURANT] = // TODO: Set
+    [SPECIES_DURANT] = // Default Set
     {
         .name = _("Durant"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_HUSTLE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FIRST_IMPRESSION, MOVE_HONE_CLAWS, MOVE_IRON_HEAD, MOVE_ROCK_SLIDE}
     },
 
     [SPECIES_DEINO] = // TODO: Set
@@ -8732,16 +8708,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_BLEAKWIND_STORM, MOVE_U_TURN, MOVE_KNOCK_OFF, MOVE_HEAT_WAVE}
     },
 
-    [SPECIES_TORNADUS_THERIAN] = // Pivot
+    [SPECIES_TORNADUS_THERIAN] = // AV Pivot
     {
         .name = _("Tornadus-T"),
         .item = ITEM_ASSAULT_VEST,
         .ability = ABILITY_REGENERATOR,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {252, 0, 0, 192, 0, 64},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_BLEAKWIND_STORM, MOVE_FOCUS_BLAST, MOVE_KNOCK_OFF, MOVE_U_TURN}
+        .moves = {MOVE_BLEAKWIND_STORM, MOVE_HEAT_WAVE, MOVE_KNOCK_OFF, MOVE_U_TURN}
     },
 
     [SPECIES_THUNDURUS_INCARNATE] = // Nasty Plot (Electric)
@@ -8756,16 +8732,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_THUNDERBOLT, MOVE_GRASS_KNOT, MOVE_NASTY_PLOT, MOVE_THUNDER_WAVE}
     },
 
-    [SPECIES_THUNDURUS_THERIAN] = // Pivot
+    [SPECIES_THUNDURUS_THERIAN] = // Fast Attacker
     {
         .name = _("Thundurus-T"),
-        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .item = ITEM_CHOICE_SCARF,
         .ability = ABILITY_VOLT_ABSORB,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 4, 252, 252, 0},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_VOLT_SWITCH, MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB, MOVE_FOCUS_BLAST}
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FOCUS_BLAST, MOVE_GRASS_KNOT, MOVE_NASTY_PLOT, MOVE_PSYCHIC}
     },
 
     [SPECIES_RESHIRAM] = // Choice Specs
@@ -8792,28 +8768,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DRAGON_DANCE, MOVE_BOLT_STRIKE, MOVE_OUTRAGE, MOVE_SUBSTITUTE}
     },
 
-    [SPECIES_LANDORUS_INCARNATE] = // TODO: Set
+    [SPECIES_LANDORUS] = // Fast Attacker
     {
         .name = _("Landorus"),
         .item = ITEM_LIFE_ORB,
         .ability = ABILITY_SHEER_FORCE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 0, 252, 252, 4},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_EARTH_POWER, MOVE_FOCUS_BLAST, MOVE_PSYCHIC, MOVE_NASTY_PLOT}
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTH_POWER, MOVE_FOCUS_BLAST, MOVE_NASTY_PLOT, MOVE_PSYCHIC}
     },
 
-    [SPECIES_LANDORUS_THERIAN] = // Assault Vest
+    [SPECIES_LANDORUS_THERIAN] = // Bulky Support
     {
         .name = _("Landorus-T"),
-        .item = ITEM_ASSAULT_VEST,
+        .item = ITEM_LEFTOVERS,
         .ability = ABILITY_INTIMIDATE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_ADAMANT,
-        .evs = {196, 252, 4, 44, 0, 12},
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_TERA_BLAST, MOVE_U_TURN, MOVE_STOMPING_TANTRUM, MOVE_ROCK_SLIDE}
+        .moves = {MOVE_EARTHQUAKE, MOVE_STEALTH_ROCK, MOVE_STONE_EDGE, MOVE_TAUNT}
     },
 
     [SPECIES_KYUREM] = // Choice Specs
@@ -8828,64 +8804,64 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_ICE_BEAM, MOVE_FREEZE_DRY, MOVE_DRACO_METEOR, MOVE_EARTH_POWER}
     },
 
-    [SPECIES_KYUREM_BLACK] = // Dragon Dance
+    [SPECIES_KYUREM_BLACK] = // Setup Sweeper
     {
-        .name = _("Kyurem-B"),
+        .name = _("Kyurem-Black"),
         .item = ITEM_LOADED_DICE,
         .ability = ABILITY_TERAVOLT,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {4, 252, 0, 252, 0, 0},
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_DRAGON_DANCE, MOVE_ICICLE_SPEAR, MOVE_SCALE_SHOT, MOVE_FUSION_BOLT}
+        .moves = {MOVE_DRAGON_DANCE, MOVE_FUSION_BOLT, MOVE_ICICLE_SPEAR, MOVE_SCALE_SHOT}
     },
 
-    [SPECIES_KYUREM_WHITE] = // Choice Scarf
+    [SPECIES_KYUREM_WHITE] = // Bulky Attacker
     {
-        .name = _("Kyurem-W"),
+        .name = _("Kyurem-White"),
         .item = ITEM_CHOICE_SCARF,
         .ability = ABILITY_TURBOBLAZE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 0, 252, 252, 4},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_DRACO_METEOR, MOVE_ICE_BEAM, MOVE_FREEZE_DRY, MOVE_FUSION_FLARE}
+        .teraType = TYPE_DRAGON,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRACO_METEOR, MOVE_FREEZE_DRY, MOVE_FUSION_FLARE, MOVE_ICE_BEAM}
     },
 
-    [SPECIES_KELDEO_ORDINARY] = // TODO: Set
+    [SPECIES_KELDEO] = // Bulky Setup
     {
         .name = _("Keldeo"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_JUSTIFIED,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_SCALD, MOVE_SECRET_SWORD, MOVE_SUBSTITUTE}
     },
 
-    [SPECIES_MELOETTA_ARIA] = // TODO: Set
+    [SPECIES_MELOETTA] = // Wallbreaker
     {
         .name = _("Meloetta"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_SERENE_GRACE,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_RELIC_SONG, MOVE_TRIPLE_AXEL}
     },
 
-    [SPECIES_GENESECT] = // TODO: Set
+    [SPECIES_GENESECT] = // Default Set
     {
         .name = _("Genesect"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_DOWNLOAD,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BLAZE_KICK, MOVE_EXTREME_SPEED, MOVE_IRON_HEAD, MOVE_LEECH_LIFE}
     },
 
     [SPECIES_CHESPIN] = // Spikes
@@ -8996,18 +8972,6 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SURF, MOVE_DARK_PULSE, MOVE_ICE_BEAM, MOVE_SLUDGE_WAVE}
     },
 
-    [SPECIES_GRENINJA_BATTLE_BOND] = // TODO: Set
-    {
-        .name = _("Greninja-B"),
-        .item = ITEM_CHOICE_SPECS,
-        .ability = ABILITY_BATTLE_BOND,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {0, 0, 4, 252, 252, 0},
-        .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_SURF, MOVE_DARK_PULSE, MOVE_WATER_SHURIKEN, MOVE_SPIKES}
-    },
-
     [SPECIES_BUNNELBY] = // TODO: Set
     {
         .name = _("Bunnelby"),
@@ -9092,16 +9056,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_VIVILLON_ICY_SNOW] = // TODO: Set
+    [SPECIES_VIVILLON] = // Fast Bulky Setup
     {
         .name = _("Vivillon"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_COMPOUND_EYES,
+        .teraType = TYPE_FLYING,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BUG_BUZZ, MOVE_HURRICANE, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER}
     },
 
     [SPECIES_LITLEO] = // TODO: Set
@@ -9248,28 +9212,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_FLOETTE_ETERNAL] = // TODO: Set
+    [SPECIES_FLOETTE_ETERNAL] = // Fast Attacker
     {
-        .name = _("Floette-E"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Floette-Eterna"),
+        .item = ITEM_CHOICE_SCARF,
+        .ability = ABILITY_FLOWER_VEIL,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_HIDDEN_POWER, MOVE_HIDDEN_POWER, MOVE_LIGHT_OF_RUIN, MOVE_MOONBLAST}
     },
 
-    [SPECIES_FLORGES_RED] = // TODO: Set
+    [SPECIES_FLORGES] = // Bulky Setup
     {
         .name = _("Florges"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_FLOWER_VEIL,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_MOONBLAST, MOVE_PROTECT, MOVE_WISH}
     },
 
     [SPECIES_FLORGES_YELLOW] = // TODO: Set
@@ -9332,16 +9296,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GOGOAT] = // TODO: Set
+    [SPECIES_GOGOAT] = // Bulky Setup
     {
         .name = _("Gogoat"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_SAP_SIPPER,
+        .teraType = TYPE_GROUND,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BULK_UP, MOVE_EARTHQUAKE, MOVE_HORN_LEECH, MOVE_MILK_DRINK}
     },
 
     [SPECIES_PANCHAM] = // TODO: Set
@@ -9356,28 +9320,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_PANGORO] = // TODO: Set
+    [SPECIES_PANGORO] = // Default Set
     {
         .name = _("Pangoro"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_SCRAPPY,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_GUNK_SHOT, MOVE_ICE_PUNCH, MOVE_KNOCK_OFF}
     },
 
-    [SPECIES_FURFROU_NATURAL] = // TODO: Set
+    [SPECIES_FURFROU] = // Bulky Support
     {
         .name = _("Furfrou"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHESTO_BERRY,
+        .ability = ABILITY_FUR_COAT,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_REST, MOVE_RETURN, MOVE_THUNDER_WAVE, MOVE_TOXIC}
     },
 
     [SPECIES_ESPURR] = // TODO: Set
@@ -9392,28 +9356,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_MEOWSTIC_M] = // TODO: Set
+    [SPECIES_MEOWSTIC] = // Bulky Support
     {
         .name = _("Meowstic"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_PRANKSTER,
+        .teraType = TYPE_FAIRY,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ALLURING_VOICE, MOVE_LIGHT_SCREEN, MOVE_PSYCHIC_NOISE, MOVE_REFLECT}
     },
 
-    [SPECIES_MEOWSTIC_F] = // TODO: Set
+    [SPECIES_MEOWSTIC_F] = // Setup Sweeper
     {
         .name = _("Meowstic-F"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_COMPETITIVE,
+        .teraType = TYPE_DARK,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ALLURING_VOICE, MOVE_DARK_PULSE, MOVE_NASTY_PLOT, MOVE_PSYCHIC}
     },
 
     [SPECIES_HONEDGE] = // TODO: Set
@@ -9428,28 +9392,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_DOUBLADE] = // TODO: Set
+    [SPECIES_DOUBLADE] = // Default Set
     {
         .name = _("Doublade"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_EVIOLITE,
+        .ability = ABILITY_NO_GUARD,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_IRON_HEAD, MOVE_SHADOW_CLAW, MOVE_SHADOW_SNEAK}
     },
 
-    [SPECIES_AEGISLASH_SHIELD] = // TODO: Set
+    [SPECIES_AEGISLASH] = // Default Set
     {
         .name = _("Aegislash"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_STANCE_CHANGE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_FLASH_CANNON, MOVE_KINGS_SHIELD, MOVE_SHADOW_BALL}
     },
 
     [SPECIES_SPRITZEE] = // TODO: Set
@@ -9464,16 +9428,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_AROMATISSE] = // TODO: Set
+    [SPECIES_AROMATISSE] = // Default Set
     {
         .name = _("Aromatisse"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_AROMA_VEIL,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_MOONBLAST, MOVE_PROTECT, MOVE_TOXIC}
     },
 
     [SPECIES_SWIRLIX] = // TODO: Set
@@ -9488,16 +9452,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SLURPUFF] = // TODO: Set
+    [SPECIES_SLURPUFF] = // Default Set
     {
         .name = _("Slurpuff"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_SITRUS_BERRY,
+        .ability = ABILITY_UNBURDEN,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BELLY_DRUM, MOVE_DRAIN_PUNCH, MOVE_FACADE, MOVE_PLAY_ROUGH}
     },
 
     [SPECIES_INKAY] = // TODO: Set
@@ -9536,16 +9500,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_BARBARACLE] = // TODO: Set
+    [SPECIES_BARBARACLE] = // Default Set
     {
         .name = _("Barbaracle"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_TOUGH_CLAWS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CROSS_CHOP, MOVE_EARTHQUAKE, MOVE_LIQUIDATION, MOVE_SHELL_SMASH}
     },
 
     [SPECIES_SKRELP] = // TODO: Set
@@ -9608,16 +9572,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_HELIOLISK] = // TODO: Set
+    [SPECIES_HELIOLISK] = // Default Set
     {
         .name = _("Heliolisk"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_DRY_SKIN,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_GLARE, MOVE_GRASS_KNOT, MOVE_HYPER_VOICE, MOVE_SURF}
     },
 
     [SPECIES_TYRUNT] = // TODO: Set
@@ -9632,16 +9596,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_TYRANTRUM] = // TODO: Set
+    [SPECIES_TYRANTRUM] = // Default Set
     {
         .name = _("Tyrantrum"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_ROCK_HEAD,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HEAD_SMASH}
     },
 
     [SPECIES_AMAURA] = // TODO: Set
@@ -9656,16 +9620,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_AURORUS] = // TODO: Set
+    [SPECIES_AURORUS] = // Default Set
     {
         .name = _("Aurorus"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_SNOW_WARNING,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ANCIENT_POWER, MOVE_BLIZZARD, MOVE_EARTH_POWER, MOVE_FREEZE_DRY}
     },
 
     [SPECIES_SYLVEON] = // Life Orb
@@ -9692,28 +9656,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_CLOSE_COMBAT, MOVE_ACROBATICS, MOVE_ENCORE}
     },
 
-    [SPECIES_DEDENNE] = // TODO: Set
+    [SPECIES_DEDENNE] = // Fast Support
     {
         .name = _("Dedenne"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_SITRUS_BERRY,
+        .ability = ABILITY_CHEEK_POUCH,
+        .teraType = TYPE_FLYING,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DAZZLING_GLEAM, MOVE_NUZZLE, MOVE_SUPER_FANG, MOVE_THUNDERBOLT}
     },
 
-    [SPECIES_CARBINK] = // TODO: Set
+    [SPECIES_CARBINK] = // Fast Bulky Setup
     {
         .name = _("Carbink"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_CHESTO_BERRY,
+        .ability = ABILITY_CLEAR_BODY,
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_IRON_DEFENSE, MOVE_MOONBLAST, MOVE_REST}
     },
 
     [SPECIES_GOOMY] = // TODO: Set
@@ -9764,16 +9728,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DRACO_METEOR, MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_KNOCK_OFF}
     },
 
-    [SPECIES_GOODRA_HISUI] = // Bulky Attacker
+    [SPECIES_GOODRA_HISUI] = // AV Pivot
     {
-        .name = _("Goodra-H"),
-        .item = ITEM_LEFTOVERS,
+        .name = _("Goodra-Hisui"),
+        .item = ITEM_ASSAULT_VEST,
         .ability = ABILITY_SAP_SIPPER,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_QUIET,
-        .evs = {252, 0, 64, 0, 192, 0},
+        .teraType = TYPE_DRAGON,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_DRACO_METEOR, MOVE_HEAVY_SLAM, MOVE_KNOCK_OFF, MOVE_PROTECT}
+        .moves = {MOVE_DRACO_METEOR, MOVE_DRAGON_TAIL, MOVE_EARTHQUAKE, MOVE_FIRE_BLAST}
     },
 
     [SPECIES_KLEFKI] = // Spikes
@@ -9800,16 +9764,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_TREVENANT] = // TODO: Set
+    [SPECIES_TREVENANT] = // Bulky Support
     {
         .name = _("Trevenant"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_SITRUS_BERRY,
+        .ability = ABILITY_HARVEST,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DRAIN_PUNCH, MOVE_POLTERGEIST, MOVE_PROTECT, MOVE_TOXIC}
     },
 
     [SPECIES_PUMPKABOO_AVERAGE] = // TODO: Set
@@ -9850,7 +9814,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_PUMPKABOO_SUPER] = // TODO: Set
     {
-        .name = _("Pumpkaboo-SP"),
+        .name = _("Pumpkaboo-S-P"),
         .item = ITEM_NONE,
         .ability = ABILITY_NONE,
         .teraType = TYPE_NORMAL,
@@ -9860,52 +9824,52 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GOURGEIST_AVERAGE] = // TODO: Set
+    [SPECIES_GOURGEIST] = // Default Set
     {
         .name = _("Gourgeist"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_FRISK,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_POLTERGEIST, MOVE_POWER_WHIP, MOVE_SHADOW_SNEAK, MOVE_SYNTHESIS}
     },
 
-    [SPECIES_GOURGEIST_SMALL] = // TODO: Set
+    [SPECIES_GOURGEIST_SMALL] = // Default Set
     {
-        .name = _("Gourgeist-S"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Gourgeist-Smal"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_FRISK,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_LEECH_SEED, MOVE_POLTERGEIST, MOVE_POWER_WHIP, MOVE_SUBSTITUTE}
     },
 
-    [SPECIES_GOURGEIST_LARGE] = // TODO: Set
+    [SPECIES_GOURGEIST_LARGE] = // Default Set
     {
-        .name = _("Gourgeist-L"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Gourgeist-Larg"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_FRISK,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_POLTERGEIST, MOVE_POWER_WHIP, MOVE_SHADOW_SNEAK, MOVE_SYNTHESIS}
     },
 
-    [SPECIES_GOURGEIST_SUPER] = // TODO: Set
+    [SPECIES_GOURGEIST_SUPER] = // Default Set
     {
-        .name = _("Gourgeist-SP"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Gourgeist-Supe"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_FRISK,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_POLTERGEIST, MOVE_POWER_WHIP, MOVE_ROCK_SLIDE, MOVE_SHADOW_SNEAK}
     },
 
     [SPECIES_BERGMITE] = // TODO: Set
@@ -9932,16 +9896,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_IRON_DEFENSE, MOVE_BODY_PRESS, MOVE_RAPID_SPIN, MOVE_RECOVER}
     },
 
-    [SPECIES_AVALUGG_HISUI] = // Lead
+    [SPECIES_AVALUGG_HISUI] = // Bulky Attacker
     {
-        .name = _("Avalugg-H"),
-        .item = ITEM_CUSTAP_BERRY,
+        .name = _("Avalugg-Hisui"),
+        .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_STURDY,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_ADAMANT,
-        .evs = {0, 252, 4, 252, 0, 0},
+        .teraType = TYPE_FLYING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_STEALTH_ROCK, MOVE_MOUNTAIN_GALE, MOVE_BODY_PRESS, MOVE_RAPID_SPIN}
+        .moves = {MOVE_AVALANCHE, MOVE_BODY_PRESS, MOVE_RAPID_SPIN, MOVE_RECOVER}
     },
 
     [SPECIES_NOIBAT] = // TODO: Set
@@ -9992,16 +9956,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DARK_PULSE, MOVE_OBLIVION_WING, MOVE_TAUNT, MOVE_SUCKER_PUNCH}
     },
 
-    [SPECIES_ZYGARDE_50] = // TODO: Set
+    [SPECIES_ZYGARDE] = // Default Set
     {
         .name = _("Zygarde"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_POWER_CONSTRUCT,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DRAGON_DANCE, MOVE_OUTRAGE, MOVE_SUBSTITUTE, MOVE_THOUSAND_ARROWS}
     },
 
     [SPECIES_DIANCIE] = // Stealth Rock
@@ -10028,16 +9992,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_PSYSHOCK, MOVE_SHADOW_BALL, MOVE_FOCUS_BLAST, MOVE_TRICK}
     },
 
-    [SPECIES_HOOPA_UNBOUND] = // Choice Scarf
+    [SPECIES_HOOPA_UNBOUND] = // Wallbreaker
     {
-        .name = _("Hoopa-U"),
-        .item = ITEM_CHOICE_SCARF,
+        .name = _("Hoopa-Unbound"),
+        .item = ITEM_CHOICE_BAND,
         .ability = ABILITY_MAGICIAN,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {252, 0, 180, 0, 76, 0},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_KNOCK_OFF, MOVE_PSYCHIC_NOISE, MOVE_DRAIN_PUNCH, MOVE_THUNDERBOLT}
+        .moves = {MOVE_DRAIN_PUNCH, MOVE_GUNK_SHOT, MOVE_HYPERSPACE_FURY, MOVE_TRICK}
     },
 
     [SPECIES_VOLCANION] = // Offensive
@@ -10088,16 +10052,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_SPIRIT_SHACKLE, MOVE_LEAF_BLADE, MOVE_SHADOW_SNEAK}
     },
 
-    [SPECIES_DECIDUEYE_HISUI] = // Choice Scarf
+    [SPECIES_DECIDUEYE_HISUI] = // Bulky Attacker
     {
-        .name = _("Decidueye-H"),
-        .item = ITEM_CHOICE_SCARF,
+        .name = _("Decidueye-Hisu"),
+        .item = ITEM_LEFTOVERS,
         .ability = ABILITY_SCRAPPY,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 4, 252, 0, 0},
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_TRIPLE_ARROWS, MOVE_U_TURN, MOVE_LEAF_BLADE, MOVE_BRAVE_BIRD}
+        .moves = {MOVE_DEFOG, MOVE_KNOCK_OFF, MOVE_LEAF_BLADE, MOVE_ROOST}
     },
 
     [SPECIES_LITTEN] = // TODO: Set
@@ -10196,16 +10160,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_TOUCANNON] = // TODO: Set
+    [SPECIES_TOUCANNON] = // Bulky Support
     {
         .name = _("Toucannon"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_KEEN_EYE,
+        .teraType = TYPE_STEEL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BEAK_BLAST, MOVE_BOOMBURST, MOVE_BULLET_SEED, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_YUNGOOS] = // TODO: Set
@@ -10220,16 +10184,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GUMSHOOS] = // TODO: Set
+    [SPECIES_GUMSHOOS] = // Fast Attacker
     {
         .name = _("Gumshoos"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_ADAPTABILITY,
+        .teraType = TYPE_GROUND,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF, MOVE_U_TURN}
     },
 
     [SPECIES_GRUBBIN] = // TODO: Set
@@ -10292,28 +10256,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_ICE_HAMMER, MOVE_CLOSE_COMBAT, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF}
     },
 
-    [SPECIES_ORICORIO_BAILE] = // TODO: Set
+    [SPECIES_ORICORIO] = // Setup Sweeper
     {
         .name = _("Oricorio"),
         .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_DANCER,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {252, 0, 0, 252, 4, 0},
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_HURRICANE, MOVE_ROOST}
+        .moves = {MOVE_HURRICANE, MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_ROOST}
     },
 
-    [SPECIES_ORICORIO_POM_POM] = // Quiver Dance
+    [SPECIES_ORICORIO_POM_POM] = // Setup Sweeper
     {
-        .name = _("Oricorio-PP"),
+        .name = _("Oricorio-Pom"),
         .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_DANCER,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {252, 0, 0, 252, 4, 0},
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_HURRICANE, MOVE_ROOST}
+        .moves = {MOVE_HURRICANE, MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_ROOST}
     },
 
     [SPECIES_ORICORIO_PAU] = // TODO: Set
@@ -10328,16 +10292,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_HURRICANE, MOVE_ROOST}
     },
 
-    [SPECIES_ORICORIO_SENSU] = // TODO: Set
+    [SPECIES_ORICORIO_SENSU] = // Setup Sweeper
     {
-        .name = _("Oricorio-S"),
+        .name = _("Oricorio-Sensu"),
         .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_DANCER,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {252, 0, 0, 252, 4, 0},
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_HURRICANE, MOVE_ROOST}
+        .moves = {MOVE_HURRICANE, MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_ROOST}
     },
 
     [SPECIES_CUTIEFLY] = // Sticky Web Lead
@@ -10388,40 +10352,40 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_STONE_EDGE, MOVE_CLOSE_COMBAT, MOVE_ACCELEROCK}
     },
 
-    [SPECIES_LYCANROC_MIDNIGHT] = // Swords Dance
+    [SPECIES_LYCANROC_MIDNIGHT] = // Fast Attacker
     {
-        .name = _("Lycanroc-M"),
-        .item = ITEM_LIFE_ORB,
+        .name = _("Lycanroc-Midni"),
+        .item = ITEM_CHOICE_BAND,
         .ability = ABILITY_NO_GUARD,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_SWORDS_DANCE, MOVE_STONE_EDGE, MOVE_CRUNCH, MOVE_ROCK_POLISH}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_PLAY_ROUGH, MOVE_STEALTH_ROCK}
     },
 
-    [SPECIES_LYCANROC_DUSK] = // All-Out Attacker
+    [SPECIES_LYCANROC_DUSK] = // Wallbreaker
     {
-        .name = _("Lycanroc-D"),
+        .name = _("Lycanroc-Dusk"),
         .item = ITEM_CHOICE_BAND,
         .ability = ABILITY_TOUGH_CLAWS,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_ACCELEROCK, MOVE_CLOSE_COMBAT, MOVE_CRUNCH, MOVE_PSYCHIC_FANGS}
+        .moves = {MOVE_ACCELEROCK, MOVE_CLOSE_COMBAT, MOVE_PSYCHIC_FANGS, MOVE_STONE_EDGE}
     },
 
-    [SPECIES_WISHIWASHI_SOLO] = // TODO: Set
+    [SPECIES_WISHIWASHI] = // Default Set
     {
         .name = _("Wishiwashi"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_SCHOOLING,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_SCALD}
     },
 
     [SPECIES_MAREANIE] = // Physically Defensive
@@ -10532,16 +10496,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SHIINOTIC] = // TODO: Set
+    [SPECIES_SHIINOTIC] = // Default Set
     {
         .name = _("Shiinotic"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_EFFECT_SPORE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ENERGY_BALL, MOVE_LEECH_SEED, MOVE_MOONBLAST, MOVE_SPORE}
     },
 
     [SPECIES_SALANDIT] = // TODO: Set
@@ -10580,16 +10544,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_BEWEAR] = // TODO: Set
+    [SPECIES_BEWEAR] = // Default Set
     {
         .name = _("Bewear"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_FLUFFY,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_DARKEST_LARIAT, MOVE_DOUBLE_EDGE, MOVE_ICE_PUNCH}
     },
 
     [SPECIES_BOUNSWEET] = // TODO: Set
@@ -10640,16 +10604,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_CALM_MIND, MOVE_DRAINING_KISS, MOVE_TERA_BLAST, MOVE_TAUNT}
     },
 
-    [SPECIES_ORANGURU] = // TODO: Set
+    [SPECIES_ORANGURU] = // Bulky Attacker
     {
         .name = _("Oranguru"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_INNER_FOCUS,
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FOCUS_BLAST, MOVE_NASTY_PLOT, MOVE_PSYCHIC, MOVE_PSYSHOCK}
     },
 
     [SPECIES_PASSIMIAN] = // Choice Scarf
@@ -10676,16 +10640,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GOLISOPOD] = // TODO: Set
+    [SPECIES_GOLISOPOD] = // Default Set
     {
         .name = _("Golisopod"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_EMERGENCY_EXIT,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FIRST_IMPRESSION, MOVE_KNOCK_OFF, MOVE_LEECH_LIFE, MOVE_LIQUIDATION}
     },
 
     [SPECIES_SANDYGAST] = // Defensive
@@ -10712,52 +10676,52 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_STEALTH_ROCK, MOVE_SCORCHING_SANDS, MOVE_SHADOW_BALL, MOVE_SHORE_UP}
     },
 
-    [SPECIES_PYUKUMUKU] = // TODO: Set
+    [SPECIES_PYUKUMUKU] = // Default Set
     {
         .name = _("Pyukumuku"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_UNAWARE,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_COUNTER, MOVE_MIRROR_COAT, MOVE_RECOVER, MOVE_TOXIC}
     },
 
-    [SPECIES_TYPE_NULL] = // TODO: Set
+    [SPECIES_TYPE_NULL] = // Default Set
     {
-        .name = _("Type Null"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Type-Null"),
+        .item = ITEM_EVIOLITE,
+        .ability = ABILITY_BATTLE_ARMOR,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CRUSH_CLAW, MOVE_PAYBACK, MOVE_REST, MOVE_SLEEP_TALK}
     },
 
-    [SPECIES_SILVALLY_NORMAL] = // TODO: Set
+    [SPECIES_SILVALLY] = // Default Set
     {
         .name = _("Silvally"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_RKS_SYSTEM,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CRUNCH, MOVE_EXPLOSION, MOVE_FLAME_CHARGE, MOVE_FLAMETHROWER}
     },
 
-    [SPECIES_MINIOR_METEOR_RED] = // TODO: Set
+    [SPECIES_MINIOR] = // Setup Sweeper
     {
         .name = _("Minior"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_WHITE_HERB,
+        .ability = ABILITY_SHIELDS_DOWN,
+        .teraType = TYPE_FLYING,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ACROBATICS, MOVE_EARTHQUAKE, MOVE_POWER_GEM, MOVE_SHELL_SMASH}
     },
 
     [SPECIES_MINIOR_METEOR_ORANGE] = // TODO: Set
@@ -10832,52 +10796,52 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_KOMALA] = // TODO: Set
+    [SPECIES_KOMALA] = // Bulky Support
     {
         .name = _("Komala"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_COMATOSE,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF, MOVE_RAPID_SPIN}
     },
 
-    [SPECIES_TURTONATOR] = // TODO: Set
+    [SPECIES_TURTONATOR] = // Default Set
     {
         .name = _("Turtonator"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_SHELL_ARMOR,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_DRACO_METEOR, MOVE_EARTHQUAKE, MOVE_FIRE_BLAST}
     },
 
-    [SPECIES_TOGEDEMARU] = // TODO: Set
+    [SPECIES_TOGEDEMARU] = // Default Set
     {
         .name = _("Togedemaru"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_IRON_BARBS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_IRON_HEAD, MOVE_NUZZLE, MOVE_SPIKY_SHIELD, MOVE_U_TURN}
     },
 
-    [SPECIES_MIMIKYU_DISGUISED] = // TODO: Set
+    [SPECIES_MIMIKYU] = // Fast Bulky Setup
     {
         .name = _("Mimikyu"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_DISGUISE,
+        .teraType = TYPE_FAIRY,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_PLAY_ROUGH, MOVE_SHADOW_CLAW, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE}
     },
 
     [SPECIES_BRUXISH] = // Choice Scarf
@@ -10892,16 +10856,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_PSYCHIC_FANGS, MOVE_ICE_FANG, MOVE_FLIP_TURN, MOVE_CRUNCH}
     },
 
-    [SPECIES_DRAMPA] = // TODO: Set
+    [SPECIES_DRAMPA] = // Default Set
     {
         .name = _("Drampa"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_BERSERK,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DRACO_METEOR, MOVE_FIRE_BLAST, MOVE_GLARE, MOVE_HYPER_VOICE}
     },
 
     [SPECIES_DHELMISE] = // Rapid Spin
@@ -10954,7 +10918,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_TAPU_KOKO] = // Choice Specs (Electric)
     {
-        .name = _("Tapu Koko"),
+        .name = _("Tapu-Koko"),
         .item = ITEM_CHOICE_SPECS,
         .ability = ABILITY_ELECTRIC_SURGE,
         .teraType = TYPE_NORMAL,
@@ -10966,7 +10930,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_TAPU_LELE] = // Choice Scarf
     {
-        .name = _("Tapu Lele"),
+        .name = _("Tapu-Lele"),
         .item = ITEM_CHOICE_SCARF,
         .ability = ABILITY_PSYCHIC_SURGE,
         .teraType = TYPE_NORMAL,
@@ -10978,7 +10942,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_TAPU_BULU] = // Swords Dance
     {
-        .name = _("Tapu Bulu"),
+        .name = _("Tapu-Bulu"),
         .item = ITEM_ROCKIUM_Z,
         .ability = ABILITY_GRASSY_SURGE,
         .teraType = TYPE_NORMAL,
@@ -10990,7 +10954,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_TAPU_FINI] = // Choice Scarf
     {
-        .name = _("Tapu Fini"),
+        .name = _("Tapu-Fini"),
         .item = ITEM_CHOICE_SCARF,
         .ability = ABILITY_MISTY_SURGE,
         .teraType = TYPE_NORMAL,
@@ -11084,16 +11048,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_CLOSE_COMBAT, MOVE_TRIPLE_AXEL, MOVE_U_TURN, MOVE_RAPID_SPIN}
     },
 
-    [SPECIES_XURKITREE] = // TODO: Set
+    [SPECIES_XURKITREE] = // Default Set
     {
         .name = _("Xurkitree"),
-        .item = ITEM_NONE,
+        .item = ITEM_BLUNDER_POLICY,
         .ability = ABILITY_BEAST_BOOST,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DAZZLING_GLEAM, MOVE_ENERGY_BALL, MOVE_HYPNOSIS, MOVE_THUNDERBOLT}
     },
 
     [SPECIES_CELESTEELA] = // Defensive
@@ -11120,16 +11084,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_LEAF_BLADE, MOVE_SACRED_SWORD, MOVE_GIGA_IMPACT}
     },
 
-    [SPECIES_GUZZLORD] = // TODO: Set
+    [SPECIES_GUZZLORD] = // Default Set
     {
         .name = _("Guzzlord"),
-        .item = ITEM_NONE,
+        .item = ITEM_ASSAULT_VEST,
         .ability = ABILITY_BEAST_BOOST,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DARK_PULSE, MOVE_DRACO_METEOR, MOVE_FIRE_BLAST, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_NECROZMA] = // Psychic Terrain Sweeper
@@ -11144,28 +11108,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_EXPANDING_FORCE, MOVE_HEAT_WAVE, MOVE_METEOR_BEAM, MOVE_TRICK_ROOM}
     },
 
-    [SPECIES_NECROZMA_DUSK_MANE] = // Weakness Policy Flame Charge
+    [SPECIES_NECROZMA_DUSK_MANE] = // Bulky Setup
     {
-        .name = _("Necrozma-DM"),
+        .name = _("Necrozma-Mane"),
         .item = ITEM_WEAKNESS_POLICY,
         .ability = ABILITY_PRISM_ARMOR,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_BRAVE,
-        .evs = {244, 228, 36, 0, 0, 0},
-        .ivs = {31, 31, 31, 0, 31, 31},
-        .moves = {MOVE_PHOTON_GEYSER, MOVE_SUNSTEEL_STRIKE, MOVE_SWORDS_DANCE, MOVE_FLAME_CHARGE}
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_MORNING_SUN, MOVE_PHOTON_GEYSER}
     },
 
-    [SPECIES_NECROZMA_DAWN_WINGS] = // Offensive Trick Room
+    [SPECIES_NECROZMA_DAWN_WINGS] = // Bulky Setup
     {
-        .name = _("Necrozma-DW"),
-        .item = ITEM_POWER_HERB,
+        .name = _("Necrozma-Wings"),
+        .item = ITEM_LEFTOVERS,
         .ability = ABILITY_PRISM_ARMOR,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_QUIET,
-        .evs = {252, 0, 0, 0, 252, 4},
-        .ivs = {31, 31, 31, 0, 31, 31},
-        .moves = {MOVE_MOONGEIST_BEAM, MOVE_METEOR_BEAM, MOVE_TERA_BLAST, MOVE_TRICK_ROOM}
+        .teraType = TYPE_DARK,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_MOONGEIST_BEAM, MOVE_MOONLIGHT, MOVE_PHOTON_GEYSER}
     },
 
     [SPECIES_MAGEARNA] = // Physically Defensive
@@ -11216,28 +11180,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_NAGANADEL] = // TODO: Set
+    [SPECIES_NAGANADEL] = // Default Set
     {
         .name = _("Naganadel"),
-        .item = ITEM_NONE,
+        .item = ITEM_CHOICE_SPECS,
         .ability = ABILITY_BEAST_BOOST,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AIR_SLASH, MOVE_DRACO_METEOR, MOVE_FIRE_BLAST, MOVE_NASTY_PLOT}
     },
 
-    [SPECIES_STAKATAKA] = // TODO: Set
+    [SPECIES_STAKATAKA] = // Default Set
     {
         .name = _("Stakataka"),
-        .item = ITEM_NONE,
+        .item = ITEM_AIR_BALLOON,
         .ability = ABILITY_BEAST_BOOST,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_EARTHQUAKE, MOVE_GYRO_BALL, MOVE_STEALTH_ROCK}
     },
 
     [SPECIES_BLACEPHALON] = // Choice Scarf
@@ -11408,16 +11372,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GREEDENT] = // TODO: Set
+    [SPECIES_GREEDENT] = // Bulky Setup
     {
         .name = _("Greedent"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_SITRUS_BERRY,
+        .ability = ABILITY_CHEEK_POUCH,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_SLAM, MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_ROOKIDEE] = // TODO: Set
@@ -11480,16 +11444,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ORBEETLE] = // TODO: Set
+    [SPECIES_ORBEETLE] = // Default Set
     {
         .name = _("Orbeetle"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_FRISK,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_BUG_BUZZ, MOVE_CALM_MIND, MOVE_PSYCHIC}
     },
 
     [SPECIES_NICKIT] = // TODO: Set
@@ -11504,16 +11468,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_THIEVUL] = // TODO: Set
+    [SPECIES_THIEVUL] = // Default Set
     {
         .name = _("Thievul"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_STAKEOUT,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DARK_PULSE, MOVE_FOUL_PLAY, MOVE_GRASS_KNOT, MOVE_NASTY_PLOT}
     },
 
     [SPECIES_GOSSIFLEUR] = // TODO: Set
@@ -11528,16 +11492,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ELDEGOSS] = // TODO: Set
+    [SPECIES_ELDEGOSS] = // Default Set
     {
         .name = _("Eldegoss"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_REGENERATOR,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ENERGY_BALL, MOVE_LEECH_SEED, MOVE_POLLEN_PUFF, MOVE_RAPID_SPIN}
     },
 
     [SPECIES_WOOLOO] = // TODO: Set
@@ -11552,16 +11516,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_DUBWOOL] = // TODO: Set
+    [SPECIES_DUBWOOL] = // Default Set
     {
         .name = _("Dubwool"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_BULLETPROOF,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_PRESS, MOVE_COTTON_GUARD, MOVE_REST, MOVE_SLEEP_TALK}
     },
 
     [SPECIES_CHEWTLE] = // Shell Smash
@@ -11600,16 +11564,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_BOLTUND] = // TODO: Set
+    [SPECIES_BOLTUND] = // Default Set
     {
         .name = _("Boltund"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_STRONG_JAW,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BULK_UP, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_PLAY_ROUGH}
     },
 
     [SPECIES_ROLYCOLY] = // TODO: Set
@@ -11660,16 +11624,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_FLAPPLE] = // TODO: Set
+    [SPECIES_FLAPPLE] = // Fast Attacker
     {
         .name = _("Flapple"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_HUSTLE,
+        .teraType = TYPE_DRAGON,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_DRAGON_DANCE, MOVE_GRAV_APPLE, MOVE_OUTRAGE, MOVE_SUCKER_PUNCH}
     },
 
     [SPECIES_APPLETUN] = // Special Wall
@@ -11756,28 +11720,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_TOXTRICITY_AMPED] = // TODO: Set
+    [SPECIES_TOXTRICITY] = // Fast Attacker
     {
         .name = _("Toxtricity"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
-        .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
-    },
-
-    [SPECIES_TOXTRICITY_LOW_KEY] = // Choice Specs
-    {
-        .name = _("Toxtricity-L"),
-        .item = ITEM_CHOICE_SPECS,
+        .item = ITEM_CHOICE_SCARF,
         .ability = ABILITY_PUNK_ROCK,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_MODEST,
-        .evs = {0, 0, 0, 252, 252, 4},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_BOOMBURST, MOVE_OVERDRIVE, MOVE_SNARL, MOVE_VOLT_SWITCH}
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BOOMBURST, MOVE_OVERDRIVE, MOVE_SLUDGE_WAVE, MOVE_VOLT_SWITCH}
+    },
+
+    [SPECIES_TOXTRICITY_LOW_KEY] = // Default Set
+    {
+        .name = _("Toxtricity-Key"),
+        .item = ITEM_CHOICE_SCARF,
+        .ability = ABILITY_PUNK_ROCK,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BOOMBURST, MOVE_OVERDRIVE, MOVE_SLUDGE_WAVE, MOVE_VOLT_SWITCH}
     },
 
     [SPECIES_SIZZLIPEDE] = // TODO: Set
@@ -11792,16 +11756,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_CENTISKORCH] = // TODO: Set
+    [SPECIES_CENTISKORCH] = // Default Set
     {
         .name = _("Centiskorch"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_FLASH_FIRE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_COIL, MOVE_FIRE_LASH, MOVE_KNOCK_OFF, MOVE_LEECH_LIFE}
     },
 
     [SPECIES_CLOBBOPUS] = // TODO: Set
@@ -11816,16 +11780,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_GRAPPLOCT] = // TODO: Set
+    [SPECIES_GRAPPLOCT] = // Default Set
     {
         .name = _("Grapploct"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_LIMBER,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRUTAL_SWING, MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_ICE_PUNCH}
     },
 
     [SPECIES_SINISTEA_PHONY] = // TODO: Set
@@ -11840,16 +11804,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_POLTEAGEIST_PHONY] = // TODO: Set
+    [SPECIES_POLTEAGEIST] = // Setup Sweeper
     {
         .name = _("Polteageist"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_WHITE_HERB,
+        .ability = ABILITY_CURSED_BODY,
+        .teraType = TYPE_PSYCHIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_GIGA_DRAIN, MOVE_SHADOW_BALL, MOVE_SHELL_SMASH, MOVE_STORED_POWER}
     },
 
     [SPECIES_HATENNA] = // TODO: Set
@@ -11924,16 +11888,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_PARTING_SHOT, MOVE_THUNDER_WAVE, MOVE_SPIRIT_BREAK, MOVE_SUCKER_PUNCH}
     },
 
-    [SPECIES_OBSTAGOON] = // TODO: Set
+    [SPECIES_OBSTAGOON] = // Default Set
     {
         .name = _("Obstagoon"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_FLAME_ORB,
+        .ability = ABILITY_GUTS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BULK_UP, MOVE_CLOSE_COMBAT, MOVE_FACADE, MOVE_KNOCK_OFF}
     },
 
     [SPECIES_PERRSERKER] = // Hazard Setter
@@ -11948,52 +11912,52 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_STEALTH_ROCK, MOVE_IRON_HEAD, MOVE_KNOCK_OFF, MOVE_U_TURN}
     },
 
-    [SPECIES_CURSOLA] = // TODO: Set
+    [SPECIES_CURSOLA] = // Default Set
     {
         .name = _("Cursola"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_WEAK_ARMOR,
         .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTH_POWER, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_SHADOW_BALL}
     },
 
-    [SPECIES_SIRFETCHD] = // TODO: Set
+    [SPECIES_SIRFETCHD] = // Default Set
     {
-        .name = _("Sirfetch'd"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Sirfetchd"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_SCRAPPY,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_CLOSE_COMBAT, MOVE_FIRST_IMPRESSION, MOVE_KNOCK_OFF}
     },
 
-    [SPECIES_MR_RIME] = // TODO: Set
+    [SPECIES_MR_RIME] = // Default Set
     {
-        .name = _("Mr. Rime"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .name = _("Mr-Rime"),
+        .item = ITEM_CHOICE_SCARF,
+        .ability = ABILITY_SCREEN_CLEANER,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_FOCUS_BLAST, MOVE_FREEZE_DRY, MOVE_PSYCHIC, MOVE_RAPID_SPIN}
     },
 
-    [SPECIES_RUNERIGUS] = // TODO: Set
+    [SPECIES_RUNERIGUS] = // Default Set
     {
         .name = _("Runerigus"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_WANDERING_SPIRIT,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_HAZE, MOVE_POLTERGEIST, MOVE_STEALTH_ROCK}
     },
 
     [SPECIES_MILCERY] = // TODO: Set
@@ -12008,28 +11972,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_ALCREMIE_STRAWBERRY_VANILLA_CREAM] = // TODO: Set
+    [SPECIES_ALCREMIE] = // Bulky Setup
     {
         .name = _("Alcremie"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_AROMA_VEIL,
+        .teraType = TYPE_POISON,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_ALLURING_VOICE, MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_PSYSHOCK}
     },
 
-    [SPECIES_FALINKS] = // TODO: Set
+    [SPECIES_FALINKS] = // Setup Sweeper
     {
         .name = _("Falinks"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_DEFIANT,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_IRON_HEAD, MOVE_KNOCK_OFF, MOVE_NO_RETREAT}
     },
 
     [SPECIES_PINCURCHIN] = // Terrain Setter
@@ -12068,40 +12032,40 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DEFOG, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_STUN_SPORE}
     },
 
-    [SPECIES_STONJOURNER] = // TODO: Set
+    [SPECIES_STONJOURNER] = // Fast Attacker
     {
         .name = _("Stonjourner"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_POWER_SPOT,
+        .teraType = TYPE_FIRE,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_EARTHQUAKE, MOVE_HEAT_CRASH, MOVE_ROCK_POLISH, MOVE_STEALTH_ROCK}
     },
 
-    [SPECIES_EISCUE_ICE] = // TODO: Set
+    [SPECIES_EISCUE] = // Setup Sweeper
     {
         .name = _("Eiscue"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_SITRUS_BERRY,
+        .ability = ABILITY_ICE_FACE,
+        .teraType = TYPE_WATER,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BELLY_DRUM, MOVE_ICE_SPINNER, MOVE_IRON_HEAD, MOVE_LIQUIDATION}
     },
 
-    [SPECIES_INDEEDEE_M] = // TODO: Set
+    [SPECIES_INDEEDEE] = // Fast Attacker
     {
         .name = _("Indeedee"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_CHOICE_SCARF,
+        .ability = ABILITY_PSYCHIC_SURGE,
+        .teraType = TYPE_PSYCHIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_DAZZLING_GLEAM, MOVE_EXPANDING_FORCE, MOVE_HEALING_WISH}
     },
 
     [SPECIES_INDEEDEE_F] = // Terrain Setter
@@ -12116,16 +12080,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_HEALING_WISH}
     },
 
-    [SPECIES_MORPEKO_FULL_BELLY] = // TODO: Set
+    [SPECIES_MORPEKO] = // Bulky Attacker
     {
         .name = _("Morpeko"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_HUNGER_SWITCH,
+        .teraType = TYPE_ELECTRIC,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AURA_WHEEL, MOVE_KNOCK_OFF, MOVE_PROTECT, MOVE_RAPID_SPIN}
     },
 
     [SPECIES_CUFANT] = // TODO: Set
@@ -12152,16 +12116,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_HEAVY_SLAM, MOVE_HEAT_CRASH, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF}
     },
 
-    [SPECIES_DRACOZOLT] = // TODO: Set
+    [SPECIES_DRACOZOLT] = // Default Set
     {
         .name = _("Dracozolt"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_HUSTLE,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AERIAL_ACE, MOVE_BOLT_BEAK, MOVE_EARTHQUAKE, MOVE_LOW_KICK}
     },
 
     [SPECIES_ARCTOZOLT] = // Slush Rush (Ice)
@@ -12176,28 +12140,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_BOLT_BEAK, MOVE_BLIZZARD, MOVE_FREEZE_DRY, MOVE_SUBSTITUTE}
     },
 
-    [SPECIES_DRACOVISH] = // TODO: Set
+    [SPECIES_DRACOVISH] = // Default Set
     {
         .name = _("Dracovish"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_SAND_RUSH,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CRUNCH, MOVE_FISHIOUS_REND, MOVE_ICE_FANG, MOVE_LOW_KICK}
     },
 
-    [SPECIES_ARCTOVISH] = // TODO: Set
+    [SPECIES_ARCTOVISH] = // Default Set
     {
         .name = _("Arctovish"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_SLUSH_RUSH,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_SLAM, MOVE_FISHIOUS_REND, MOVE_FREEZE_DRY, MOVE_ICICLE_CRASH}
     },
 
     [SPECIES_DURALUDON] = // Eviolite
@@ -12248,28 +12212,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_DRAGON_DARTS, MOVE_HEX, MOVE_WILL_O_WISP, MOVE_U_TURN}
     },
 
-    [SPECIES_ZACIAN_HERO] = // TODO: Set
+    [SPECIES_ZACIAN] = // Fast Attacker
     {
         .name = _("Zacian"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_INTREPID_SWORD,
+        .teraType = TYPE_FIGHTING,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_PSYCHIC_FANGS}
     },
 
-    [SPECIES_ZAMAZENTA_HERO] = // TODO: Set
+    [SPECIES_ZAMAZENTA] = // Bulky Attacker
     {
         .name = _("Zamazenta"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_DAUNTLESS_SHIELD,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_CRUNCH, MOVE_IRON_HEAD, MOVE_PSYCHIC_FANGS}
     },
 
     [SPECIES_ETERNATUS] = // Cosmic Power
@@ -12296,28 +12260,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_URSHIFU_SINGLE_STRIKE] = // TODO: Set
+    [SPECIES_URSHIFU] = // Fast Attacker
     {
         .name = _("Urshifu"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
-        .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
-    },
-
-    [SPECIES_URSHIFU_RAPID_STRIKE] = // Choice Band
-    {
-        .name = _("Urshifu-R"),
         .item = ITEM_CHOICE_BAND,
         .ability = ABILITY_UNSEEN_FIST,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 4, 252, 0, 0},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_SURGING_STRIKES, MOVE_CLOSE_COMBAT, MOVE_IRON_HEAD, MOVE_POISON_JAB}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_POISON_JAB, MOVE_SUCKER_PUNCH, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_URSHIFU_RAPID_STRIKE] = // Fast Attacker
+    {
+        .name = _("Urshifu-R-S"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_UNSEEN_FIST,
+        .teraType = TYPE_WATER,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_ICE_SPINNER, MOVE_SURGING_STRIKES}
     },
 
     [SPECIES_ZARUDE] = // Swords Dance
@@ -12404,40 +12368,40 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_CALM_MIND, MOVE_AGILITY, MOVE_STORED_POWER, MOVE_GIGA_DRAIN}
     },
 
-    [SPECIES_CALYREX_ICE] = // Bulky Trick Room Sweeper
+    [SPECIES_CALYREX_ICE] = // Bulky Setup
     {
-        .name = _("Calyrex-I"),
-        .item = ITEM_CLEAR_AMULET,
+        .name = _("Calyrex-Ice"),
+        .item = ITEM_WEAKNESS_POLICY,
         .ability = ABILITY_AS_ONE_ICE_RIDER,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_ADAMANT,
-        .evs = {212, 252, 4, 36, 0, 4},
-        .ivs = {31, 31, 31, 0, 31, 31},
-        .moves = {MOVE_GLACIAL_LANCE, MOVE_HIGH_HORSEPOWER, MOVE_TRICK_ROOM, MOVE_PROTECT}
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AGILITY, MOVE_CLOSE_COMBAT, MOVE_GLACIAL_LANCE, MOVE_HIGH_HORSEPOWER}
     },
 
-    [SPECIES_CALYREX_SHADOW] = // Setup Sweeper
+    [SPECIES_CALYREX_SHADOW] = // Fast Attacker
     {
-        .name = _("Calyrex-S"),
-        .item = ITEM_LIFE_ORB,
+        .name = _("Calyrex-Shadow"),
+        .item = ITEM_CHOICE_SPECS,
         .ability = ABILITY_AS_ONE_SHADOW_RIDER,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {140, 0, 4, 252, 100, 12},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_ASTRAL_BARRAGE, MOVE_PSYCHIC, MOVE_NASTY_PLOT, MOVE_PROTECT}
+        .teraType = TYPE_DARK,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_ASTRAL_BARRAGE, MOVE_NASTY_PLOT, MOVE_POLLEN_PUFF, MOVE_PSYSHOCK}
     },
 
-    [SPECIES_WYRDEER] = // TODO: Set
+    [SPECIES_WYRDEER] = // Bulky Attacker
     {
         .name = _("Wyrdeer"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_INTIMIDATE,
+        .teraType = TYPE_GROUND,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_MEGAHORN, MOVE_PSYCHIC_NOISE}
     },
 
     [SPECIES_KLEAVOR] = // Lead
@@ -12464,28 +12428,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_FACADE, MOVE_HEADLONG_RUSH, MOVE_FIRE_PUNCH}
     },
 
-    [SPECIES_URSALUNA_BLOODMOON] = // Chople Berry
+    [SPECIES_URSALUNA_BLOODMOON] = // Bulky Attacker
     {
-        .name = _("Ursaluna-B"),
-        .item = ITEM_CHOPLE_BERRY,
+        .name = _("Ursaluna-Blood"),
+        .item = ITEM_LEFTOVERS,
         .ability = ABILITY_MINDS_EYE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_MODEST,
-        .evs = {252, 0, 108, 0, 100, 48},
+        .teraType = TYPE_GHOST,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_BLOOD_MOON, MOVE_EARTH_POWER, MOVE_VACUUM_WAVE, MOVE_HYPER_VOICE}
+        .moves = {MOVE_BLOOD_MOON, MOVE_CALM_MIND, MOVE_EARTH_POWER, MOVE_MOONLIGHT}
     },
 
-    [SPECIES_BASCULEGION_M] = // TODO: Set
+    [SPECIES_BASCULEGION] = // AV Pivot
     {
         .name = _("Basculegion"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_ASSAULT_VEST,
+        .ability = ABILITY_ADAPTABILITY,
+        .teraType = TYPE_WATER,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AQUA_JET, MOVE_FLIP_TURN, MOVE_SHADOW_BALL, MOVE_WAVE_CRASH}
     },
 
     [SPECIES_BASCULEGION_F] = // Choice Scarf
@@ -12524,28 +12488,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SWORDS_DANCE, MOVE_GUNK_SHOT, MOVE_CRUNCH, MOVE_LIQUIDATION}
     },
 
-    [SPECIES_ENAMORUS_INCARNATE] = // TODO: Set
+    [SPECIES_ENAMORUS] = // Setup Sweeper
     {
         .name = _("Enamorus"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_CONTRARY,
+        .teraType = TYPE_FIGHTING,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_PLAY_ROUGH, MOVE_SUBSTITUTE, MOVE_SUPERPOWER, MOVE_TAUNT}
     },
 
-    [SPECIES_ENAMORUS_THERIAN] = // Offensive
+    [SPECIES_ENAMORUS_THERIAN] = // Bulky Attacker
     {
         .name = _("Enamorus-T"),
-        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .item = ITEM_ASSAULT_VEST,
         .ability = ABILITY_OVERCOAT,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_MODEST,
-        .evs = {128, 0, 0, 128, 252, 0},
-        .ivs = {31, 0, 31, 31, 31, 31},
-        .moves = {MOVE_MOONBLAST, MOVE_EARTH_POWER, MOVE_DRAINING_KISS, MOVE_CALM_MIND}
+        .teraType = TYPE_FAIRY,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTH_POWER, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_PSYCHIC}
     },
 
     [SPECIES_SPRIGATITO] = // TODO: Set
@@ -12668,28 +12632,28 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_OINKOLOGNE_M] = // TODO: Set
+    [SPECIES_OINKOLOGNE] = // Bulky Setup
     {
         .name = _("Oinkologne"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_THICK_FAT,
+        .teraType = TYPE_GROUND,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_SLAM, MOVE_CURSE, MOVE_DOUBLE_EDGE, MOVE_HIGH_HORSEPOWER}
     },
 
-    [SPECIES_OINKOLOGNE_F] = // TODO: Set
+    [SPECIES_OINKOLOGNE_F] = // Bulky Support
     {
         .name = _("Oinkologne-F"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_AROMA_VEIL,
+        .teraType = TYPE_FAIRY,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BODY_SLAM, MOVE_CURSE, MOVE_REST, MOVE_SLEEP_TALK}
     },
 
     [SPECIES_TAROUNTULA] = // TODO: Set
@@ -12704,16 +12668,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SPIDOPS] = // TODO: Set
+    [SPECIES_SPIDOPS] = // Bulky Support
     {
         .name = _("Spidops"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_STAKEOUT,
+        .teraType = TYPE_GHOST,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CIRCLE_THROW, MOVE_KNOCK_OFF, MOVE_SPIKES, MOVE_STICKY_WEB}
     },
 
     [SPECIES_NYMBLE] = // Revenge Killer
@@ -12872,52 +12836,52 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_GIGA_DRAIN, MOVE_EARTH_POWER, MOVE_STRENGTH_SAP, MOVE_LEECH_SEED}
     },
 
-    [SPECIES_SQUAWKABILLY_GREEN] = // TODO: Set
+    [SPECIES_SQUAWKABILLY] = // Wallbreaker
     {
         .name = _("Squawkabilly"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_FLAME_ORB,
+        .ability = ABILITY_GUTS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_FACADE, MOVE_PROTECT, MOVE_QUICK_ATTACK}
     },
 
-    [SPECIES_SQUAWKABILLY_BLUE] = // TODO: Set
+    [SPECIES_SQUAWKABILLY_BLUE] = // Wallbreaker
     {
         .name = _("Squawkabilly-B"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
+        .item = ITEM_FLAME_ORB,
+        .ability = ABILITY_GUTS,
         .teraType = TYPE_NORMAL,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_FACADE, MOVE_PROTECT, MOVE_QUICK_ATTACK}
     },
 
-    [SPECIES_SQUAWKABILLY_YELLOW] = // TODO: Set
+    [SPECIES_SQUAWKABILLY_YELLOW] = // Wallbreaker
     {
         .name = _("Squawkabilly-Y"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_HUSTLE,
+        .teraType = TYPE_FLYING,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_DOUBLE_EDGE, MOVE_FOUL_PLAY, MOVE_PARTING_SHOT}
     },
 
-    [SPECIES_SQUAWKABILLY_WHITE] = // TODO: Set
+    [SPECIES_SQUAWKABILLY_WHITE] = // Wallbreaker
     {
         .name = _("Squawkabilly-W"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_HUSTLE,
+        .teraType = TYPE_FLYING,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BRAVE_BIRD, MOVE_DOUBLE_EDGE, MOVE_FOUL_PLAY, MOVE_PARTING_SHOT}
     },
 
     [SPECIES_NACLI] = // TODO: Set
@@ -13136,16 +13100,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SPORE, MOVE_SPIKES, MOVE_RAPID_SPIN, MOVE_EARTH_POWER}
     },
 
-    [SPECIES_KLAWF] = // TODO: Set
+    [SPECIES_KLAWF] = // Setup Sweeper
     {
         .name = _("Klawf"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_EXPERT_BELT,
+        .ability = ABILITY_ANGER_SHELL,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CRABHAMMER, MOVE_HIGH_HORSEPOWER, MOVE_KNOCK_OFF, MOVE_STONE_EDGE}
     },
 
     [SPECIES_CAPSAKID] = // TODO: Set
@@ -13268,16 +13232,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_WUGTRIO] = // TODO: Set
+    [SPECIES_WUGTRIO] = // Fast Attacker
     {
         .name = _("Wugtrio"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_GOOEY,
+        .teraType = TYPE_DARK,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_AQUA_JET, MOVE_LIQUIDATION, MOVE_STOMPING_TANTRUM, MOVE_THROAT_CHOP}
     },
 
     [SPECIES_BOMBIRDIER] = // Offensive
@@ -13304,16 +13268,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SURF, MOVE_BOOMBURST, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
 
-    [SPECIES_PALAFIN_ZERO] = // TODO: Set
+    [SPECIES_PALAFIN] = // Wallbreaker
     {
         .name = _("Palafin"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_ZERO_TO_HERO,
+        .teraType = TYPE_FIGHTING,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_FLIP_TURN, MOVE_JET_PUNCH, MOVE_WAVE_CRASH}
     },
 
     [SPECIES_VAROOM] = // Defensive Pivot
@@ -13544,16 +13508,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_TRICK_ROOM, MOVE_NASTY_PLOT, MOVE_PSYSHOCK, MOVE_TERA_BLAST}
     },
 
-    [SPECIES_DUDUNSPARCE_TWO_SEGMENT] = // TODO: Set
+    [SPECIES_DUDUNSPARCE] = // Bulky Attacker
     {
         .name = _("Dudunsparce"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_RATTLED,
+        .teraType = TYPE_FAIRY,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_BOOMBURST, MOVE_CALM_MIND, MOVE_EARTH_POWER, MOVE_ROOST}
     },
 
     [SPECIES_DUDUNSPARCE_THREE_SEGMENT] = // TODO: Set
@@ -13582,7 +13546,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_GREAT_TUSK] = // Offensive Utility
     {
-        .name = _("Great Tusk"),
+        .name = _("Great-Tusk"),
         .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -13594,7 +13558,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_SCREAM_TAIL] = // Bulky Disruption
     {
-        .name = _("Scream Tail"),
+        .name = _("Scream-Tail"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -13606,7 +13570,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_BRUTE_BONNET] = // Speedy Spore
     {
-        .name = _("Brute Bonnet"),
+        .name = _("Brute-Bonnet"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -13618,7 +13582,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_FLUTTER_MANE] = // Choice Specs (Ghost)
     {
-        .name = _("Flutter Mane"),
+        .name = _("Flutter-Mane"),
         .item = ITEM_CHOICE_SPECS,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -13630,7 +13594,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_SLITHER_WING] = // Bulk Up Sweeper
     {
-        .name = _("Slither Wing"),
+        .name = _("Slither-Wing"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -13642,7 +13606,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_SANDY_SHOCKS] = // Pivot
     {
-        .name = _("Sandy Shocks"),
+        .name = _("Sandy-Shocks"),
         .item = ITEM_HEAVY_DUTY_BOOTS,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -13654,7 +13618,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_TREADS] = // Utility
     {
-        .name = _("Iron Treads"),
+        .name = _("Iron-Treads"),
         .item = ITEM_LEFTOVERS,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -13666,7 +13630,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_BUNDLE] = // Fast Support
     {
-        .name = _("Iron Bundle"),
+        .name = _("Iron-Bundle"),
         .item = ITEM_FOCUS_SASH,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -13678,7 +13642,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_HANDS] = // Swords Dance
     {
-        .name = _("Iron Hands"),
+        .name = _("Iron-Hands"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -13690,7 +13654,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_JUGULIS] = // Booster Energy
     {
-        .name = _("Iron Jugulis"),
+        .name = _("Iron-Jugulis"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -13702,7 +13666,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_MOTH] = // Booster Energy
     {
-        .name = _("Iron Moth"),
+        .name = _("Iron-Moth"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -13714,7 +13678,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_THORNS] = // Dragon Dance (Electric)
     {
-        .name = _("Iron Thorns"),
+        .name = _("Iron-Thorns"),
         .item = ITEM_LOADED_DICE,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -13846,7 +13810,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_ROARING_MOON] = // Choice Scarf (Dragon)
     {
-        .name = _("Roaring Moon"),
+        .name = _("Roaring-Moon"),
         .item = ITEM_CHOICE_SCARF,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -13858,7 +13822,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_VALIANT] = // Mixed
     {
-        .name = _("Iron Valiant"),
+        .name = _("Iron-Valiant"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -13894,7 +13858,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_WALKING_WAKE] = // Choice Specs (Dragon)
     {
-        .name = _("Walking Wake"),
+        .name = _("Walking-Wake"),
         .item = ITEM_CHOICE_SPECS,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -13906,7 +13870,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_LEAVES] = // Swords Dance
     {
-        .name = _("Iron Leaves"),
+        .name = _("Iron-Leaves"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -13940,16 +13904,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
     },
 
-    [SPECIES_SINISTCHA_UNREMARKABLE] = // TODO: Set
+    [SPECIES_SINISTCHA] = // Bulky Setup
     {
         .name = _("Sinistcha"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_HEATPROOF,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_MATCHA_GOTCHA, MOVE_SHADOW_BALL, MOVE_STRENGTH_SAP}
     },
 
     [SPECIES_OKIDOGI] = // Assault Vest
@@ -13976,16 +13940,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_SLUDGE_WAVE, MOVE_PSYSHOCK, MOVE_GRASS_KNOT, MOVE_U_TURN}
     },
 
-    [SPECIES_FEZANDIPITI] = // Fast Calm Mind
+    [SPECIES_FEZANDIPITI] = // Bulky Attacker
     {
-        .name = _("Fezandpiti"),
-        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .name = _("Fezandipiti"),
+        .item = ITEM_LEFTOVERS,
         .ability = ABILITY_TOXIC_CHAIN,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_TIMID,
-        .evs = {252, 0, 56, 200, 0, 0},
+        .teraType = TYPE_DARK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_CALM_MIND, MOVE_MOONBLAST, MOVE_ROOST, MOVE_U_TURN}
+        .moves = {MOVE_BEAT_UP, MOVE_GUNK_SHOT, MOVE_MOONBLAST, MOVE_ROOST}
     },
 
     [SPECIES_OGERPON_TEAL] = // Pivot
@@ -14000,40 +13964,40 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_IVY_CUDGEL, MOVE_KNOCK_OFF, MOVE_U_TURN, MOVE_STOMPING_TANTRUM}
     },
 
-    [SPECIES_OGERPON_CORNERSTONE] = // Swords Dance
+    [SPECIES_OGERPON_CORNERSTONE] = // Setup Sweeper
     {
-        .name = _("Ogerpon-C"),
+        .name = _("Ogerpon-Corner"),
         .item = ITEM_CORNERSTONE_MASK,
         .ability = ABILITY_STURDY,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .teraType = TYPE_ROCK,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_SWORDS_DANCE, MOVE_IVY_CUDGEL, MOVE_POWER_WHIP, MOVE_STOMPING_TANTRUM}
+        .moves = {MOVE_HORN_LEECH, MOVE_IVY_CUDGEL, MOVE_POWER_WHIP, MOVE_SUPERPOWER}
     },
 
-    [SPECIES_OGERPON_HEARTHFLAME] = // Swords Dance
+    [SPECIES_OGERPON_HEARTHFLAME] = // Setup Sweeper
     {
-        .name = _("Ogerpon-H"),
+        .name = _("Ogerpon-Hearth"),
         .item = ITEM_HEARTHFLAME_MASK,
         .ability = ABILITY_MOLD_BREAKER,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .teraType = TYPE_FIRE,
+        .nature = NATURE_ADAMANT,
+        .evs = {77, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_SWORDS_DANCE, MOVE_IVY_CUDGEL, MOVE_POWER_WHIP, MOVE_TRAILBLAZE}
+        .moves = {MOVE_HORN_LEECH, MOVE_IVY_CUDGEL, MOVE_KNOCK_OFF, MOVE_POWER_WHIP}
     },
 
-    [SPECIES_OGERPON_WELLSPRING] = // Swords Dance
+    [SPECIES_OGERPON_WELLSPRING] = // Setup Sweeper
     {
-        .name = _("Ogerpon-W"),
+        .name = _("Ogerpon-Wellsp"),
         .item = ITEM_WELLSPRING_MASK,
         .ability = ABILITY_WATER_ABSORB,
-        .teraType = TYPE_NORMAL,
-        .nature = NATURE_JOLLY,
-        .evs = {0, 252, 0, 252, 0, 4},
+        .teraType = TYPE_WATER,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_SWORDS_DANCE, MOVE_IVY_CUDGEL, MOVE_POWER_WHIP, MOVE_PLAY_ROUGH}
+        .moves = {MOVE_HORN_LEECH, MOVE_IVY_CUDGEL, MOVE_KNOCK_OFF, MOVE_PLAY_ROUGH}
     },
 
     [SPECIES_ARCHALUDON] = // Bulky Setup Sweeper
@@ -14062,7 +14026,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_GOUGING_FIRE] = // Offensive Support
     {
-        .name = _("Gouging Fire"),
+        .name = _("Gouging-Fire"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -14074,7 +14038,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_RAGING_BOLT] = // Calm Mind
     {
-        .name = _("Raging Bolt"),
+        .name = _("Raging-Bolt"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_PROTOSYNTHESIS,
         .teraType = TYPE_NORMAL,
@@ -14086,7 +14050,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_BOULDER] = // Swords Dance
     {
-        .name = _("Iron Boulder"),
+        .name = _("Iron-Boulder"),
         .item = ITEM_BOOSTER_ENERGY,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -14098,7 +14062,7 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
 
     [SPECIES_IRON_CROWN] = // Assault Vest
     {
-        .name = _("Iron Crown"),
+        .name = _("Iron-Crown"),
         .item = ITEM_ASSAULT_VEST,
         .ability = ABILITY_QUARK_DRIVE,
         .teraType = TYPE_NORMAL,
@@ -14108,16 +14072,16 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .moves = {MOVE_TACHYON_CUTTER, MOVE_FUTURE_SIGHT, MOVE_FOCUS_BLAST, MOVE_VOLT_SWITCH}
     },
 
-    [SPECIES_TERAPAGOS_NORMAL] = // TODO: Set
+    [SPECIES_TERAPAGOS] = // Setup Sweeper
     {
         .name = _("Terapagos"),
-        .item = ITEM_NONE,
-        .ability = ABILITY_NONE,
-        .teraType = TYPE_NORMAL,
+        .item = ITEM_CHESTO_BERRY,
+        .ability = ABILITY_TERA_SHIFT,
+        .teraType = TYPE_STELLAR,
         .nature = NATURE_HARDY,
-        .evs = {252, 252, 4, 0, 0, 0},
+        .evs = {0, 0, 0, 0, 0, 0},
         .ivs = {31, 31, 31, 31, 31, 31},
-        .moves = {MOVE_POUND, MOVE_POUND, MOVE_POUND, MOVE_POUND}
+        .moves = {MOVE_CALM_MIND, MOVE_DARK_PULSE, MOVE_RAPID_SPIN, MOVE_REST}
     },
 
     [SPECIES_PECHARUNT] = // Pivot
@@ -14130,5 +14094,1325 @@ const struct PokemonSets gPokemonSets[NUM_SPECIES] =
         .evs = {252, 0, 4, 252, 0, 0},
         .ivs = {31, 0, 31, 31, 31, 31},
         .moves = {MOVE_MALIGNANT_CHAIN, MOVE_HEX, MOVE_PARTING_SHOT, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_BUG] = // Bulky Setup
+    {
+        .name = _("Arceus-Bug"),
+        .item = ITEM_INSECT_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_FIRE,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_EARTH_POWER, MOVE_FIRE_BLAST, MOVE_JUDGMENT}
+    },
+
+    [SPECIES_ARCEUS_DARK] = // Bulky Setup
+    {
+        .name = _("Arceus-Dark"),
+        .item = ITEM_DREAD_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_FAIRY,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_DAZZLING_GLEAM, MOVE_JUDGMENT, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_DRAGON] = // Fast Bulky Setup
+    {
+        .name = _("Arceus-Dragon"),
+        .item = ITEM_DRACO_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_FIRE,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_FIRE_BLAST, MOVE_JUDGMENT, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_ELECTRIC] = // Bulky Setup
+    {
+        .name = _("Arceus-Electri"),
+        .item = ITEM_ZAP_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_ICE_BEAM, MOVE_JUDGMENT, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_FAIRY] = // Bulky Setup
+    {
+        .name = _("Arceus-Fairy"),
+        .item = ITEM_PIXIE_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_EARTH_POWER, MOVE_JUDGMENT, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_FIGHTING] = // Bulky Setup
+    {
+        .name = _("Arceus-Fightin"),
+        .item = ITEM_FIST_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BODY_PRESS, MOVE_IRON_DEFENSE, MOVE_RECOVER, MOVE_SHADOW_BALL}
+    },
+
+    [SPECIES_ARCEUS_FIRE] = // Fast Bulky Setup
+    {
+        .name = _("Arceus-Fire"),
+        .item = ITEM_FLAME_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_FIRE,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_FLARE_BLITZ, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_FLYING] = // Bulky Setup
+    {
+        .name = _("Arceus-Flying"),
+        .item = ITEM_SKY_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_EARTH_POWER, MOVE_JUDGMENT, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_GHOST] = // Bulky Attacker
+    {
+        .name = _("Arceus-Ghost"),
+        .item = ITEM_SPOOKY_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_DARK,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_FOCUS_BLAST, MOVE_JUDGMENT, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_GRASS] = // Bulky Setup
+    {
+        .name = _("Arceus-Grass"),
+        .item = ITEM_MEADOW_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_FIRE,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_FIRE_BLAST, MOVE_JUDGMENT, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_GROUND] = // Bulky Setup
+    {
+        .name = _("Arceus-Ground"),
+        .item = ITEM_EARTH_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_DRAGON,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_FIRE_BLAST, MOVE_ICE_BEAM, MOVE_JUDGMENT}
+    },
+
+    [SPECIES_ARCEUS_ICE] = // Bulky Setup
+    {
+        .name = _("Arceus-Ice"),
+        .item = ITEM_ICICLE_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_ELECTRIC,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_EARTH_POWER, MOVE_JUDGMENT, MOVE_RECOVER}
+    },
+
+    [SPECIES_ARCEUS_POISON] = // Fast Bulky Setup
+    {
+        .name = _("Arceus-Poison"),
+        .item = ITEM_TOXIC_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTHQUAKE, MOVE_EXTREME_SPEED, MOVE_GUNK_SHOT, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_ARCEUS_PSYCHIC] = // Bulky Setup
+    {
+        .name = _("Arceus-Psychic"),
+        .item = ITEM_MIND_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BODY_PRESS, MOVE_COSMIC_POWER, MOVE_RECOVER, MOVE_STORED_POWER}
+    },
+
+    [SPECIES_ARCEUS_ROCK] = // Setup Sweeper
+    {
+        .name = _("Arceus-Rock"),
+        .item = ITEM_STONE_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_GROUND,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_RECOVER, MOVE_STONE_EDGE}
+    },
+
+    [SPECIES_ARCEUS_STEEL] = // Bulky Support
+    {
+        .name = _("Arceus-Steel"),
+        .item = ITEM_IRON_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_GHOST,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTHQUAKE, MOVE_JUDGMENT, MOVE_RECOVER, MOVE_WILL_O_WISP}
+    },
+
+    [SPECIES_ARCEUS_WATER] = // Bulky Support
+    {
+        .name = _("Arceus-Water"),
+        .item = ITEM_SPLASH_PLATE,
+        .ability = ABILITY_MULTITYPE,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_ICE_BEAM, MOVE_JUDGMENT, MOVE_RECOVER}
+    },
+
+    [SPECIES_GRENINJA_BOND] = // Fast Attacker
+    {
+        .name = _("Greninja-Bond"),
+        .item = ITEM_LIFE_ORB,
+        .ability = ABILITY_BATTLE_BOND,
+        .teraType = TYPE_POISON,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DARK_PULSE, MOVE_GUNK_SHOT, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM}
+    },
+
+    [SPECIES_KELDEO_RESOLUTE] = // Bulky Setup
+    {
+        .name = _("Keldeo-Resolut"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_JUSTIFIED,
+        .teraType = TYPE_STEEL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_HYDRO_PUMP, MOVE_SECRET_SWORD, MOVE_SUBSTITUTE}
+    },
+
+    [SPECIES_ZACIAN_CROWNED] = // Setup Sweeper
+    {
+        .name = _("Zacian-C"),
+        .item = ITEM_RUSTED_SWORD,
+        .ability = ABILITY_INTREPID_SWORD,
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BEHEMOTH_BLADE, MOVE_CLOSE_COMBAT, MOVE_PLAY_ROUGH, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_ZAMAZENTA_CROWNED] = // Bulky Setup
+    {
+        .name = _("Zamazenta-C"),
+        .item = ITEM_RUSTED_SHIELD,
+        .ability = ABILITY_DAUNTLESS_SHIELD,
+        .teraType = TYPE_FIGHTING,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BODY_PRESS, MOVE_HEAVY_SLAM, MOVE_IRON_DEFENSE, MOVE_STONE_EDGE}
+    },
+
+    [SPECIES_AEGISLASH_BLADE] = // Default Set
+    {
+        .name = _("Aegislash-Blad"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_STANCE_CHANGE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_IRON_HEAD, MOVE_SHADOW_CLAW, MOVE_SHADOW_SNEAK}
+    },
+
+    [SPECIES_ALCREMIE_GMAX] = // Default Set
+    {
+        .name = _("Alcremie-G"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_AROMA_VEIL,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_PSYCHIC}
+    },
+
+    [SPECIES_APPLETUN_GMAX] = // Default Set
+    {
+        .name = _("Appletun-G"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_THICK_FAT,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_APPLE_ACID, MOVE_DRACO_METEOR, MOVE_LEECH_SEED, MOVE_RECOVER}
+    },
+
+    [SPECIES_BLASTOISE_GMAX] = // Default Set
+    {
+        .name = _("Blastoise-G"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_TORRENT,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_ICE_BEAM, MOVE_PROTECT, MOVE_RAPID_SPIN, MOVE_SCALD}
+    },
+
+    [SPECIES_BUTTERFREE_GMAX] = // Default Set
+    {
+        .name = _("Butterfree-G"),
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_TINTED_LENS,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER}
+    },
+
+    [SPECIES_CINDERACE_GMAX] = // Default Set
+    {
+        .name = _("Cinderace-G"),
+        .item = ITEM_HEAVY_DUTY_BOOTS,
+        .ability = ABILITY_LIBERO,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_PYRO_BALL, MOVE_SUCKER_PUNCH}
+    },
+
+    [SPECIES_COALOSSAL_GMAX] = // Default Set
+    {
+        .name = _("Coalossal-G"),
+        .item = ITEM_AIR_BALLOON,
+        .ability = ABILITY_FLAME_BODY,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_OVERHEAT, MOVE_RAPID_SPIN, MOVE_SPIKES, MOVE_STEALTH_ROCK}
+    },
+
+    [SPECIES_COPPERAJAH_GMAX] = // Default Set
+    {
+        .name = _("Copperajah-G"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_HEAVY_METAL,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTHQUAKE, MOVE_HEAT_CRASH, MOVE_HEAVY_SLAM, MOVE_POWER_WHIP}
+    },
+
+    [SPECIES_DARMANITAN_GALAR] = // Default Set
+    {
+        .name = _("Darmanitan-G"),
+        .item = ITEM_CHOICE_SCARF,
+        .ability = ABILITY_GORILLA_TACTICS,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTHQUAKE, MOVE_FLARE_BLITZ, MOVE_ICICLE_CRASH, MOVE_SUPERPOWER}
+    },
+
+    [SPECIES_DARMANITAN_GALAR_ZEN] = // Default Set
+    {
+        .name = _("Darmanitan-Zen"),
+        .item = ITEM_SALAC_BERRY,
+        .ability = ABILITY_ZEN_MODE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BELLY_DRUM, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICICLE_CRASH}
+    },
+
+    [SPECIES_GARBODOR_GMAX] = // Default Set
+    {
+        .name = _("Garbodor-G"),
+        .item = ITEM_BLACK_SLUDGE,
+        .ability = ABILITY_AFTERMATH,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EXPLOSION, MOVE_GUNK_SHOT, MOVE_PAIN_SPLIT, MOVE_SPIKES}
+    },
+
+    [SPECIES_GENESECT_DOUSE] = // Default Set
+    {
+        .name = _("Genesect-Douse"),
+        .item = ITEM_DOUSE_DRIVE,
+        .ability = ABILITY_DOWNLOAD,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BUG_BUZZ, MOVE_EXTREME_SPEED, MOVE_FLAMETHROWER, MOVE_ICE_BEAM}
+    },
+
+    [SPECIES_GENGAR_GMAX] = // Default Set
+    {
+        .name = _("Gengar-G"),
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_CURSED_BODY,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FOCUS_BLAST, MOVE_NASTY_PLOT, MOVE_SHADOW_BALL, MOVE_SLUDGE_WAVE}
+    },
+
+    [SPECIES_GRIMMSNARL_GMAX] = // Default Set
+    {
+        .name = _("Grimmsnarl-G"),
+        .item = ITEM_CHESTO_BERRY,
+        .ability = ABILITY_PRANKSTER,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BULK_UP, MOVE_DARKEST_LARIAT, MOVE_PLAY_ROUGH, MOVE_REST}
+    },
+
+    [SPECIES_HATTERENE_GMAX] = // Default Set
+    {
+        .name = _("Hatterene-G"),
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_MAGIC_BOUNCE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_PSYCHIC}
+    },
+
+    [SPECIES_INTELEON_GMAX] = // Default Set
+    {
+        .name = _("Inteleon-G"),
+        .item = ITEM_SCOPE_LENS,
+        .ability = ABILITY_SNIPER,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AIR_SLASH, MOVE_FOCUS_ENERGY, MOVE_ICE_BEAM, MOVE_SURF}
+    },
+
+    [SPECIES_LAPRAS_GMAX] = // Default Set
+    {
+        .name = _("Lapras-G"),
+        .item = ITEM_CHOICE_SPECS,
+        .ability = ABILITY_WATER_ABSORB,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FREEZE_DRY, MOVE_ICE_BEAM, MOVE_PROTECT, MOVE_SPARKLING_ARIA}
+    },
+
+    [SPECIES_RILLABOOM_GMAX] = // Default Set
+    {
+        .name = _("Rillaboom-G"),
+        .item = ITEM_GRASSY_SEED,
+        .ability = ABILITY_GRASSY_SURGE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_ACROBATICS, MOVE_GRASSY_GLIDE, MOVE_HIGH_HORSEPOWER, MOVE_KNOCK_OFF}
+    },
+
+    [SPECIES_SILVALLY_BUG] = // Default Set
+    {
+        .name = _("Silvally-Bug"),
+        .item = ITEM_BUG_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLAMETHROWER, MOVE_MULTI_ATTACK, MOVE_PARTING_SHOT, MOVE_PSYCHIC_FANGS}
+    },
+
+    [SPECIES_SILVALLY_DARK] = // Default Set
+    {
+        .name = _("Silvally-Dark"),
+        .item = ITEM_DARK_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_IRON_HEAD, MOVE_MULTI_ATTACK, MOVE_PARTING_SHOT, MOVE_PSYCHIC_FANGS}
+    },
+
+    [SPECIES_SILVALLY_DRAGON] = // Default Set
+    {
+        .name = _("Silvally-Drago"),
+        .item = ITEM_DRAGON_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLAME_CHARGE, MOVE_IRON_HEAD, MOVE_MULTI_ATTACK, MOVE_PARTING_SHOT}
+    },
+
+    [SPECIES_SILVALLY_ELECTRIC] = // Default Set
+    {
+        .name = _("Silvally-Elect"),
+        .item = ITEM_ELECTRIC_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLAMETHROWER, MOVE_ICE_BEAM, MOVE_MULTI_ATTACK, MOVE_PARTING_SHOT}
+    },
+
+    [SPECIES_SILVALLY_FAIRY] = // Default Set
+    {
+        .name = _("Silvally-Fairy"),
+        .item = ITEM_FAIRY_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLAME_CHARGE, MOVE_MULTI_ATTACK, MOVE_PSYCHIC_FANGS, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_SILVALLY_FIGHTING] = // Default Set
+    {
+        .name = _("Silvally-Fight"),
+        .item = ITEM_FIGHTING_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CRUNCH, MOVE_IRON_HEAD, MOVE_MULTI_ATTACK, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_SILVALLY_FIRE] = // Default Set
+    {
+        .name = _("Silvally-Fire"),
+        .item = ITEM_FIRE_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CRUNCH, MOVE_IRON_HEAD, MOVE_MULTI_ATTACK, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_SILVALLY_FLYING] = // Default Set
+    {
+        .name = _("Silvally-Flyin"),
+        .item = ITEM_FLYING_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLAME_CHARGE, MOVE_IRON_HEAD, MOVE_MULTI_ATTACK, MOVE_ROCK_SLIDE}
+    },
+
+    [SPECIES_SILVALLY_GHOST] = // Default Set
+    {
+        .name = _("Silvally-Ghost"),
+        .item = ITEM_GHOST_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLAME_CHARGE, MOVE_MULTI_ATTACK, MOVE_PARTING_SHOT, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_SILVALLY_GRASS] = // Default Set
+    {
+        .name = _("Silvally-Grass"),
+        .item = ITEM_GRASS_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DEFOG, MOVE_FLAMETHROWER, MOVE_ICE_BEAM, MOVE_MULTI_ATTACK}
+    },
+
+    [SPECIES_SILVALLY_GROUND] = // Default Set
+    {
+        .name = _("Silvally-Groun"),
+        .item = ITEM_GROUND_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DEFOG, MOVE_FLAMETHROWER, MOVE_ICE_BEAM, MOVE_MULTI_ATTACK}
+    },
+
+    [SPECIES_SILVALLY_ICE] = // Default Set
+    {
+        .name = _("Silvally-Ice"),
+        .item = ITEM_ICE_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLAME_CHARGE, MOVE_MULTI_ATTACK, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_SILVALLY_POISON] = // Default Set
+    {
+        .name = _("Silvally-Poiso"),
+        .item = ITEM_POISON_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DEFOG, MOVE_FLAMETHROWER, MOVE_MULTI_ATTACK, MOVE_PARTING_SHOT}
+    },
+
+    [SPECIES_SILVALLY_PSYCHIC] = // Default Set
+    {
+        .name = _("Silvally-Psych"),
+        .item = ITEM_PSYCHIC_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLAME_CHARGE, MOVE_MULTI_ATTACK, MOVE_SWORDS_DANCE, MOVE_X_SCISSOR}
+    },
+
+    [SPECIES_SILVALLY_ROCK] = // Default Set
+    {
+        .name = _("Silvally-Rock"),
+        .item = ITEM_ROCK_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLAME_CHARGE, MOVE_MULTI_ATTACK, MOVE_PARTING_SHOT, MOVE_PSYCHIC_FANGS}
+    },
+
+    [SPECIES_SILVALLY_STEEL] = // Default Set
+    {
+        .name = _("Silvally-Steel"),
+        .item = ITEM_STEEL_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DEFOG, MOVE_FLAMETHROWER, MOVE_MULTI_ATTACK, MOVE_PARTING_SHOT}
+    },
+
+    [SPECIES_SILVALLY_WATER] = // Default Set
+    {
+        .name = _("Silvally-Water"),
+        .item = ITEM_WATER_MEMORY,
+        .ability = ABILITY_RKS_SYSTEM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DEFOG, MOVE_ICE_BEAM, MOVE_MULTI_ATTACK, MOVE_PARTING_SHOT}
+    },
+
+    [SPECIES_SNORLAX_GMAX] = // Default Set
+    {
+        .name = _("Snorlax-G"),
+        .item = ITEM_CHESTO_BERRY,
+        .ability = ABILITY_THICK_FAT,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BODY_SLAM, MOVE_CURSE, MOVE_DARKEST_LARIAT, MOVE_EARTHQUAKE}
+    },
+
+    [SPECIES_URSHIFU_GMAX] = // Default Set
+    {
+        .name = _("Urshifu-G"),
+        .item = ITEM_LEFTOVERS,
+        .ability = ABILITY_UNSEEN_FIST,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SUBSTITUTE, MOVE_WICKED_BLOW}
+    },
+
+    [SPECIES_URSHIFU_RAPID_STRIKE_GMAX] = // Default Set
+    {
+        .name = _("Urshifu-R-S-G"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_UNSEEN_FIST,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BULK_UP, MOVE_CLOSE_COMBAT, MOVE_ICE_PUNCH, MOVE_SURGING_STRIKES}
+    },
+
+    [SPECIES_ZYGARDE_10] = // Default Set
+    {
+        .name = _("Zygarde-10%"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_AURA_BREAK,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_COIL, MOVE_EXTREME_SPEED, MOVE_IRON_TAIL, MOVE_OUTRAGE}
+    },
+
+    [SPECIES_ABOMASNOW_MEGA] = // Bulky Attacker
+    {
+        .name = _("Abomasnow-M"),
+        .item = ITEM_ABOMASITE,
+        .ability = ABILITY_SNOW_WARNING,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BLIZZARD, MOVE_EARTHQUAKE, MOVE_GIGA_DRAIN, MOVE_ICE_SHARD}
+    },
+
+    [SPECIES_ABSOL_MEGA] = // Fast Attacker
+    {
+        .name = _("Absol-M"),
+        .item = ITEM_ABSOLITE,
+        .ability = ABILITY_JUSTIFIED,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_IRON_TAIL, MOVE_KNOCK_OFF, MOVE_PLAY_ROUGH, MOVE_PURSUIT}
+    },
+
+    [SPECIES_AERODACTYL_MEGA] = // Fast Attacker
+    {
+        .name = _("Aerodactyl-M"),
+        .item = ITEM_AERODACTYLITE,
+        .ability = ABILITY_UNNERVE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AERIAL_ACE, MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_HONE_CLAWS}
+    },
+
+    [SPECIES_AGGRON_MEGA] = // Bulky Attacker
+    {
+        .name = _("Aggron-M"),
+        .item = ITEM_AGGRONITE,
+        .ability = ABILITY_STURDY,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTHQUAKE, MOVE_HEAVY_SLAM, MOVE_ROAR, MOVE_STEALTH_ROCK}
+    },
+
+    [SPECIES_ALAKAZAM_MEGA] = // Setup Sweeper
+    {
+        .name = _("Alakazam-M"),
+        .item = ITEM_ALAKAZITE,
+        .ability = ABILITY_MAGIC_GUARD,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_ENCORE, MOVE_FOCUS_BLAST, MOVE_PSYCHIC}
+    },
+
+    [SPECIES_ALTARIA_MEGA] = // Setup Sweeper
+    {
+        .name = _("Altaria-M"),
+        .item = ITEM_ALTARIANITE,
+        .ability = ABILITY_NATURAL_CURE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_RETURN, MOVE_ROOST}
+    },
+
+    [SPECIES_AMPHAROS_MEGA] = // Bulky Support
+    {
+        .name = _("Ampharos-M"),
+        .item = ITEM_AMPHAROSITE,
+        .ability = ABILITY_STATIC,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DISCHARGE, MOVE_DRAGON_PULSE, MOVE_FOCUS_BLAST, MOVE_REST}
+    },
+
+    [SPECIES_AUDINO_MEGA] = // Staller
+    {
+        .name = _("Audino-M"),
+        .item = ITEM_AUDINITE,
+        .ability = ABILITY_REGENERATOR,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DAZZLING_GLEAM, MOVE_PROTECT, MOVE_TOXIC, MOVE_WISH}
+    },
+
+    [SPECIES_BANETTE_MEGA] = // Fast Support
+    {
+        .name = _("Banette-M"),
+        .item = ITEM_BANETTITE,
+        .ability = ABILITY_FRISK,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DESTINY_BOND, MOVE_GUNK_SHOT, MOVE_KNOCK_OFF, MOVE_SHADOW_CLAW}
+    },
+
+    [SPECIES_BEEDRILL_MEGA] = // Setup Sweeper
+    {
+        .name = _("Beedrill-M"),
+        .item = ITEM_BEEDRILLITE,
+        .ability = ABILITY_SWARM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRILL_RUN, MOVE_KNOCK_OFF, MOVE_POISON_JAB, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_BLASTOISE_MEGA] = // Bulky Support
+    {
+        .name = _("Blastoise-M"),
+        .item = ITEM_BLASTOISINITE,
+        .ability = ABILITY_RAIN_DISH,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AURA_SPHERE, MOVE_DARK_PULSE, MOVE_ICE_BEAM, MOVE_RAPID_SPIN}
+    },
+
+    [SPECIES_BLAZIKEN_MEGA] = // Setup Sweeper
+    {
+        .name = _("Blaziken-M"),
+        .item = ITEM_BLAZIKENITE,
+        .ability = ABILITY_SPEED_BOOST,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FLARE_BLITZ, MOVE_HIGH_JUMP_KICK, MOVE_KNOCK_OFF, MOVE_PROTECT}
+    },
+
+    [SPECIES_CAMERUPT_MEGA] = // Bulky Attacker
+    {
+        .name = _("Camerupt-M"),
+        .item = ITEM_CAMERUPTITE,
+        .ability = ABILITY_SOLID_ROCK,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_ANCIENT_POWER, MOVE_EARTH_POWER, MOVE_FIRE_BLAST, MOVE_STEALTH_ROCK}
+    },
+
+    [SPECIES_CHARIZARD_MEGA_X] = // Setup Sweeper
+    {
+        .name = _("Charizard-M-X"),
+        .item = ITEM_CHARIZARDITE_X,
+        .ability = ABILITY_BLAZE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRAGON_CLAW, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_FLARE_BLITZ}
+    },
+
+    [SPECIES_CHARIZARD_MEGA_Y] = // Fast Attacker
+    {
+        .name = _("Charizard-M-Y"),
+        .item = ITEM_CHARIZARDITE_Y,
+        .ability = ABILITY_BLAZE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AIR_SLASH, MOVE_FIRE_BLAST, MOVE_ROOST, MOVE_SOLAR_BEAM}
+    },
+
+    [SPECIES_DIANCIE_MEGA] = // Fast Attacker
+    {
+        .name = _("Diancie-M"),
+        .item = ITEM_DIANCITE,
+        .ability = ABILITY_CLEAR_BODY,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_DIAMOND_STORM, MOVE_EARTH_POWER, MOVE_MOONBLAST}
+    },
+
+    [SPECIES_GALLADE_MEGA] = // Setup Sweeper
+    {
+        .name = _("Gallade-M"),
+        .item = ITEM_GALLADITE,
+        .ability = ABILITY_JUSTIFIED,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE, MOVE_ZEN_HEADBUTT}
+    },
+
+    [SPECIES_GARCHOMP_MEGA] = // Bulky Support
+    {
+        .name = _("Garchomp-M"),
+        .item = ITEM_GARCHOMPITE,
+        .ability = ABILITY_ROUGH_SKIN,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRACO_METEOR, MOVE_EARTHQUAKE, MOVE_FIRE_BLAST, MOVE_STEALTH_ROCK}
+    },
+
+    [SPECIES_GARDEVOIR_MEGA] = // Setup Sweeper
+    {
+        .name = _("Gardevoir-M"),
+        .item = ITEM_GARDEVOIRITE,
+        .ability = ABILITY_TRACE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_ENCORE, MOVE_FOCUS_BLAST, MOVE_HYPER_VOICE}
+    },
+
+    [SPECIES_GENGAR_MEGA] = // Fast Attacker
+    {
+        .name = _("Gengar-M"),
+        .item = ITEM_GENGARITE,
+        .ability = ABILITY_CURSED_BODY,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DESTINY_BOND, MOVE_DISABLE, MOVE_FOCUS_BLAST, MOVE_SHADOW_BALL}
+    },
+
+    [SPECIES_GLALIE_MEGA] = // Fast Attacker
+    {
+        .name = _("Glalie-M"),
+        .item = ITEM_GLALITITE,
+        .ability = ABILITY_INNER_FOCUS,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {77, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_FREEZE_DRY, MOVE_ICE_SHARD}
+    },
+
+    [SPECIES_GROUDON_PRIMAL] = // Bulky Setup
+    {
+        .name = _("Groudon-Primal"),
+        .item = ITEM_RED_ORB,
+        .ability = ABILITY_DROUGHT,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FIRE_PUNCH, MOVE_PRECIPICE_BLADES, MOVE_ROCK_POLISH, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_GYARADOS_MEGA] = // Setup Sweeper
+    {
+        .name = _("Gyarados-M"),
+        .item = ITEM_GYARADOSITE,
+        .ability = ABILITY_INTIMIDATE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CRUNCH, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_SUBSTITUTE}
+    },
+
+    [SPECIES_HERACROSS_MEGA] = // Wallbreaker
+    {
+        .name = _("Heracross-M"),
+        .item = ITEM_HERACRONITE,
+        .ability = ABILITY_MOXIE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF, MOVE_PIN_MISSILE}
+    },
+
+    [SPECIES_HOUNDOOM_MEGA] = // Setup Sweeper
+    {
+        .name = _("Houndoom-M"),
+        .item = ITEM_HOUNDOOMINITE,
+        .ability = ABILITY_FLASH_FIRE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DARK_PULSE, MOVE_FIRE_BLAST, MOVE_NASTY_PLOT, MOVE_SLUDGE_BOMB}
+    },
+
+    [SPECIES_KANGASKHAN_MEGA] = // Fast Support
+    {
+        .name = _("Kangaskhan-M"),
+        .item = ITEM_KANGASKHANITE,
+        .ability = ABILITY_SCRAPPY,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BODY_SLAM, MOVE_CRUNCH, MOVE_FAKE_OUT, MOVE_SEISMIC_TOSS}
+    },
+
+    [SPECIES_KYOGRE_PRIMAL] = // Setup Sweeper
+    {
+        .name = _("Kyogre-Primal"),
+        .item = ITEM_BLUE_ORB,
+        .ability = ABILITY_DRIZZLE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_ICE_BEAM, MOVE_ORIGIN_PULSE, MOVE_THUNDER}
+    },
+
+    [SPECIES_LATIAS_MEGA] = // Bulky Attacker
+    {
+        .name = _("Latias-M"),
+        .item = ITEM_LATIASITE,
+        .ability = ABILITY_LEVITATE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_DRACO_METEOR, MOVE_PSYSHOCK, MOVE_ROOST}
+    },
+
+    [SPECIES_LATIOS_MEGA] = // Bulky Attacker
+    {
+        .name = _("Latios-M"),
+        .item = ITEM_LATIOSITE,
+        .ability = ABILITY_LEVITATE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_DRACO_METEOR, MOVE_PSYSHOCK, MOVE_ROOST}
+    },
+
+    [SPECIES_LOPUNNY_MEGA] = // Fast Attacker
+    {
+        .name = _("Lopunny-M"),
+        .item = ITEM_LOPUNNITE,
+        .ability = ABILITY_LIMBER,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_ENCORE, MOVE_FAKE_OUT, MOVE_HIGH_JUMP_KICK, MOVE_POWER_UP_PUNCH}
+    },
+
+    [SPECIES_LUCARIO_MEGA] = // Bulky Setup
+    {
+        .name = _("Lucario-M"),
+        .item = ITEM_LUCARIONITE,
+        .ability = ABILITY_JUSTIFIED,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_EXTREME_SPEED, MOVE_METEOR_MASH, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_MANECTRIC_MEGA] = // Fast Attacker
+    {
+        .name = _("Manectric-M"),
+        .item = ITEM_MANECTITE,
+        .ability = ABILITY_LIGHTNING_ROD,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_HIDDEN_POWER, MOVE_OVERHEAT, MOVE_THUNDERBOLT, MOVE_VOLT_SWITCH}
+    },
+
+    [SPECIES_MAWILE_MEGA] = // Wallbreaker
+    {
+        .name = _("Mawile-M"),
+        .item = ITEM_MAWILITE,
+        .ability = ABILITY_INTIMIDATE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_IRON_HEAD, MOVE_KNOCK_OFF, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH}
+    },
+
+    [SPECIES_MEDICHAM_MEGA] = // Fast Attacker
+    {
+        .name = _("Medicham-M"),
+        .item = ITEM_MEDICHAMITE,
+        .ability = ABILITY_PURE_POWER,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_FAKE_OUT, MOVE_HIGH_JUMP_KICK, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH}
+    },
+
+    [SPECIES_METAGROSS_MEGA] = // Bulky Attacker
+    {
+        .name = _("Metagross-M"),
+        .item = ITEM_METAGROSSITE,
+        .ability = ABILITY_CLEAR_BODY,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AGILITY, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_METEOR_MASH}
+    },
+
+    [SPECIES_MEWTWO_MEGA_X] = // Setup Sweeper
+    {
+        .name = _("Mewtwo-M-X"),
+        .item = ITEM_MEWTWONITE_X,
+        .ability = ABILITY_UNNERVE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_STONE_EDGE, MOVE_TAUNT}
+    },
+
+    [SPECIES_MEWTWO_MEGA_Y] = // Setup Sweeper
+    {
+        .name = _("Mewtwo-M-Y"),
+        .item = ITEM_MEWTWONITE_Y,
+        .ability = ABILITY_UNNERVE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_AURA_SPHERE, MOVE_CALM_MIND, MOVE_FIRE_BLAST, MOVE_PSYSTRIKE}
+    },
+
+    [SPECIES_PIDGEOT_MEGA] = // Bulky Attacker
+    {
+        .name = _("Pidgeot-M"),
+        .item = ITEM_PIDGEOTITE,
+        .ability = ABILITY_BIG_PECKS,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DEFOG, MOVE_HEAT_WAVE, MOVE_HURRICANE, MOVE_ROOST}
+    },
+
+    [SPECIES_PINSIR_MEGA] = // Bulky Setup
+    {
+        .name = _("Pinsir-M"),
+        .item = ITEM_PINSIRITE,
+        .ability = ABILITY_MOXIE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {81, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CLOSE_COMBAT, MOVE_EARTHQUAKE, MOVE_QUICK_ATTACK, MOVE_RETURN}
+    },
+
+    [SPECIES_RAYQUAZA_MEGA] = // Fast Attacker
+    {
+        .name = _("Rayquaza-M"),
+        .item = ITEM_CHOICE_BAND,
+        .ability = ABILITY_AIR_LOCK,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRAGON_ASCENT, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_EXTREME_SPEED}
+    },
+
+    [SPECIES_SABLEYE_MEGA] = // Bulky Setup
+    {
+        .name = _("Sableye-M"),
+        .item = ITEM_SABLENITE,
+        .ability = ABILITY_PRANKSTER,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_DARK_PULSE, MOVE_RECOVER, MOVE_WILL_O_WISP}
+    },
+
+    [SPECIES_SALAMENCE_MEGA] = // Setup Sweeper
+    {
+        .name = _("Salamence-M"),
+        .item = ITEM_SALAMENCITE,
+        .ability = ABILITY_INTIMIDATE,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_RETURN}
+    },
+
+    [SPECIES_SCEPTILE_MEGA] = // Setup Sweeper
+    {
+        .name = _("Sceptile-M"),
+        .item = ITEM_SCEPTILITE,
+        .ability = ABILITY_OVERGROW,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTHQUAKE, MOVE_LEAF_BLADE, MOVE_OUTRAGE, MOVE_SWORDS_DANCE}
+    },
+
+    [SPECIES_SCIZOR_MEGA] = // Bulky Setup
+    {
+        .name = _("Scizor-M"),
+        .item = ITEM_SCIZORITE,
+        .ability = ABILITY_LIGHT_METAL,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_BUG_BITE, MOVE_BULLET_PUNCH, MOVE_KNOCK_OFF, MOVE_ROOST}
+    },
+
+    [SPECIES_SHARPEDO_MEGA] = // Wallbreaker
+    {
+        .name = _("Sharpedo-M"),
+        .item = ITEM_SHARPEDONITE,
+        .ability = ABILITY_SPEED_BOOST,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_PROTECT, MOVE_PSYCHIC_FANGS}
+    },
+
+    [SPECIES_SLOWBRO_MEGA] = // Bulky Setup
+    {
+        .name = _("Slowbro-M"),
+        .item = ITEM_SLOWBRONITE,
+        .ability = ABILITY_REGENERATOR,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CALM_MIND, MOVE_PSYSHOCK, MOVE_SCALD, MOVE_SLACK_OFF}
+    },
+
+    [SPECIES_STEELIX_MEGA] = // Bulky Support
+    {
+        .name = _("Steelix-M"),
+        .item = ITEM_STEELIXITE,
+        .ability = ABILITY_STURDY,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_DRAGON_TAIL, MOVE_EARTHQUAKE, MOVE_HEAVY_SLAM, MOVE_STEALTH_ROCK}
+    },
+
+    [SPECIES_SWAMPERT_MEGA] = // Setup Sweeper
+    {
+        .name = _("Swampert-M"),
+        .item = ITEM_SWAMPERTITE,
+        .ability = ABILITY_DAMP,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTHQUAKE, MOVE_ICE_PUNCH, MOVE_RAIN_DANCE, MOVE_SUPERPOWER}
+    },
+
+    [SPECIES_TYRANITAR_MEGA] = // Setup Sweeper
+    {
+        .name = _("Tyranitar-M"),
+        .item = ITEM_TYRANITARITE,
+        .ability = ABILITY_SAND_STREAM,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_CRUNCH, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH}
+    },
+
+    [SPECIES_VENUSAUR_MEGA] = // Bulky Attacker
+    {
+        .name = _("Venusaur-M"),
+        .item = ITEM_VENUSAURITE,
+        .ability = ABILITY_CHLOROPHYLL,
+        .teraType = TYPE_NORMAL,
+        .nature = NATURE_HARDY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .moves = {MOVE_EARTHQUAKE, MOVE_GIGA_DRAIN, MOVE_KNOCK_OFF, MOVE_SLEEP_POWDER}
     }
 };

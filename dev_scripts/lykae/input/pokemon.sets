@@ -221,7 +221,7 @@ Adamant Nature
 - Endeavor
 - Quick Attack
 
-=== Rattata A ===
+=== Rattata-A ===
 === TODO: Set ===
 Rattata-Alola @ None
 Ability: None
@@ -245,7 +245,7 @@ Jolly Nature
 - Zen Headbutt
 - Swords Dance
 
-=== Raticate A ===
+=== Raticate-A ===
 === TODO: Set ===
 Raticate-Alola @ None
 Ability: None
@@ -270,14 +270,16 @@ Hardy Nature
 - Pound
 
 === Fearow ===
-=== Setup Sweeper ===
-Fearow @ Scope Lens
-Ability: Sniper
+=== TODO: Set ===
+Fearow @ None
+Ability: None
 Tera Type: Normal
-- Drill Peck
-- Drill Run
-- Focus Energy
-- Return
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Ekans ===
 === Intimidating Distruptor ===
@@ -292,14 +294,16 @@ Jolly Nature
 - Toxic Spikes
 
 === Arbok ===
-=== Bulky Setup ===
-Arbok @ Leftovers
-Ability: Intimidate
-Tera Type: Grass
-- Coil
-- Earthquake
-- Gunk Shot
-- Trailblaze
+=== TODO: Set ===
+Arbok @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Pikachu ===
 === Glass Cannon (Atk) ===
@@ -313,7 +317,7 @@ Adamant Nature
 - Knock Off
 - Quick Attack
 
-=== Pikachu C ===
+=== Pikachu-C ===
 === TODO: Set ===
 Pikachu-Cosplay @ None
 Ability: None
@@ -325,7 +329,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Pikachu R ===
+=== Pikachu-R ===
 === TODO: Set ===
 Pikachu-Rock-Star @ None
 Ability: None
@@ -337,7 +341,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Pikachu B ===
+=== Pikachu-B ===
 === TODO: Set ===
 Pikachu-Belle @ None
 Ability: None
@@ -349,7 +353,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Pikachu P ===
+=== Pikachu-P ===
 === TODO: Set ===
 Pikachu-Pop-Star @ None
 Ability: None
@@ -361,7 +365,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Pikachu Ph ===
+=== Pikachu-Ph ===
 === TODO: Set ===
 Pikachu-Phd @ None
 Ability: None
@@ -373,7 +377,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Pikachu L ===
+=== Pikachu-L ===
 === TODO: Set ===
 Pikachu-Libre @ None
 Ability: None
@@ -385,7 +389,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Pikachu O C ===
+=== Pikachu-OC ===
 === TODO: Set ===
 Pikachu-Original @ None
 Ability: None
@@ -410,7 +414,7 @@ Modest Nature
 - Draining Kiss
 - Nasty Plot
 
-=== Raichu A ===
+=== Raichu-A ===
 === Nasty Plot (SpA) ===
 Raichu-Alola @ Life Orb
 Ability: Surge Surfer
@@ -435,7 +439,7 @@ Adamant Nature
 - Leech Life
 - Rapid Spin
 
-=== Sandshrew A ===
+=== Sandshrew-A ===
 === Snow Sweeper ===
 Sandshrew-Alola @ Eviolite
 Ability: Slush Rush
@@ -459,7 +463,7 @@ Impish Nature
 - Knock Off
 - Spikes
 
-=== Sandslash A ===
+=== Sandslash-A ===
 === Specially Defensive Spinner ===
 Sandslash-Alola @ Leftovers
 Ability: Slush Rush
@@ -471,7 +475,7 @@ Careful Nature
 - Knock Off
 - Spikes
 
-=== Nidoran F ===
+=== Nidoran-F ===
 === TODO: Set ===
 Nidoran-F @ None
 Ability: None
@@ -508,7 +512,7 @@ Timid Nature
 - Ice Beam
 - Thunderbolt
 
-=== Nidoran M ===
+=== NidoranM ===
 === TODO: Set ===
 Nidoran-M @ None
 Ability: None
@@ -583,7 +587,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Vulpix A ===
+=== Vulpix-A ===
 === TODO: Set ===
 Vulpix-Alola @ None
 Ability: None
@@ -607,7 +611,7 @@ Timid Nature
 - Encore
 - Will-O-Wisp
 
-=== Ninetales A ===
+=== Ninetales-A ===
 === Screens Setter ===
 Ninetales-Alola @ Light Clay
 Ability: Snow Warning
@@ -632,14 +636,16 @@ Hardy Nature
 - Pound
 
 === Wigglytuff ===
-=== Bulky Support ===
-Wigglytuff @ Leftovers
-Ability: Competitive
-Tera Type: Poison
-- Alluring Voice
-- Dazzling Gleam
-- Fire Blast
-- Knock Off
+=== TODO: Set ===
+Wigglytuff @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Zubat ===
 === TODO: Set ===
@@ -716,14 +722,16 @@ Hardy Nature
 - Pound
 
 === Parasect ===
-=== Bulky Attacker ===
-Parasect @ Leftovers
-Ability: Dry Skin
+=== TODO: Set ===
+Parasect @ None
+Ability: None
 Tera Type: Normal
-- Aromatherapy
-- Knock Off
-- Leech Life
-- Seed Bomb
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Venonat ===
 === TODO: Set ===
@@ -738,16 +746,16 @@ Hardy Nature
 - Pound
 
 === Venomoth ===
-=== Setup Sweeper ===
-Venomoth @ Heavy-Duty Boots
-Ability: Tinted Lens
-Tera Type: Bug
-EVs: 0 ATK
-Adamant Nature
-- Bug Buzz
-- Quiver Dance
-- Sleep Powder
-- Sludge Wave
+=== TODO: Set ===
+Venomoth @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Diglett ===
 === TODO: Set ===
@@ -761,7 +769,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Diglett A ===
+=== Diglett-A ===
 === Life Orb ===
 Diglett-Alola @ Life Orb
 Ability: Tangling Hair
@@ -774,16 +782,18 @@ Jolly Nature
 - Substitute
 
 === Dugtrio ===
-=== Fast Support ===
-Dugtrio @ Focus Sash
-Ability: Arena Trap
-Tera Type: Dark
-- Earthquake
-- Stone Edge
-- Sucker Punch
-- Swords Dance
+=== TODO: Set ===
+Dugtrio @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Dugtrio A ===
+=== Dugtrio-A ===
 === Fast Attacker ===
 Dugtrio-Alola @ Life Orb
 Ability: Tangling Hair
@@ -808,7 +818,7 @@ Adamant Nature
 - U-turn
 - Play Rough
 
-=== Meowth A ===
+=== Meowth-A ===
 === TODO: Set ===
 Meowth-Alola @ None
 Ability: None
@@ -820,7 +830,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Meowth G ===
+=== Meowth-G ===
 === TODO: Set ===
 Meowth-Galar @ None
 Ability: None
@@ -833,16 +843,18 @@ Hardy Nature
 - Pound
 
 === Persian ===
-=== Wallbreaker ===
-Persian @ Choice Band
-Ability: Limber
-Tera Type: Ghost
-- Double-Edge
-- Knock Off
-- Switcheroo
-- U-turn
+=== TODO: Set ===
+Persian @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Persian A ===
+=== Persian-A ===
 === Defensive Pivot ===
 Persian-Alola @ Heavy-Duty Boots
 Ability: Fur Coat
@@ -867,16 +879,16 @@ Modest Nature
 - Tera Blast
 
 === Golduck ===
-=== Bulky Setup ===
-Golduck @ Leftovers
-Ability: Cloud Nine
-Tera Type: Water
-EVs: 0 ATK
-Adamant Nature
-- Encore
-- Grass Knot
-- Hydro Pump
-- Ice Beam
+=== TODO: Set ===
+Golduck @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Mankey ===
 === Choice Scarf ===
@@ -914,7 +926,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Growlithe H ===
+=== Growlithe-H ===
 === Choice Scarf ===
 Growlithe-Hisui @ Choice Scarf
 Ability: Rock Head
@@ -938,7 +950,7 @@ Adamant Nature
 - Flare Blitz
 - Morning Sun
 
-=== Arcanine H ===
+=== Arcanine-H ===
 === Offensive ===
 Arcanine-Hisui @ Choice Scarf
 Ability: Rock Head
@@ -1048,14 +1060,16 @@ Hardy Nature
 - Pound
 
 === Machamp ===
-=== Default Set ===
-Machamp @ Choice Band
-Ability: Guts
+=== TODO: Set ===
+Machamp @ None
+Ability: None
 Tera Type: Normal
-- Bullet Punch
-- Close Combat
-- Dynamic Punch
-- Facade
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Bellsprout ===
 === Sun Sweeper ===
@@ -1131,7 +1145,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Geodude A ===
+=== Geodude-A ===
 === TODO: Set ===
 Geodude-Alola @ None
 Ability: None
@@ -1155,7 +1169,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Graveler A ===
+=== Graveler-A ===
 === TODO: Set ===
 Graveler-Alola @ None
 Ability: None
@@ -1168,16 +1182,18 @@ Hardy Nature
 - Pound
 
 === Golem ===
-=== Bulky Attacker ===
-Golem @ Custap Berry
-Ability: Sturdy
-Tera Type: Grass
-- Earthquake
-- Explosion
-- Rock Polish
-- Stealth Rock
+=== TODO: Set ===
+Golem @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Golem A ===
+=== Golem-A ===
 === Choice Band (Rock) ===
 Golem-Alola @ Choice Band
 Ability: Sturdy
@@ -1201,7 +1217,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Ponyta G ===
+=== Ponyta-G ===
 === TODO: Set ===
 Ponyta-Galar @ None
 Ability: None
@@ -1214,16 +1230,18 @@ Hardy Nature
 - Pound
 
 === Rapidash ===
-=== Default Set ===
-Rapidash @ Heavy-Duty Boots
-Ability: Flash Fire
+=== TODO: Set ===
+Rapidash @ None
+Ability: None
 Tera Type: Normal
-- Flare Blitz
-- High Horsepower
-- Morning Sun
-- Swords Dance
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Rapidash G ===
+=== Rapidash-G ===
 === TODO: Set ===
 Rapidash-Galar @ None
 Ability: None
@@ -1248,7 +1266,7 @@ Modest Nature
 - Psychic
 - Fire Blast
 
-=== Slowpoke G ===
+=== Slowpoke-G ===
 === TODO: Set ===
 Slowpoke-Galar @ None
 Ability: None
@@ -1273,7 +1291,7 @@ Bold Nature
 - Psychic Noise
 - Slack Off
 
-=== Slowbro G ===
+=== Slowbro-G ===
 === Calm Mind ===
 Slowbro-Galar @ Heavy-Duty Boots
 Ability: Regenerator
@@ -1310,17 +1328,19 @@ Modest Nature
 - Volt Switch
 - Tera Blast
 
-=== Farfetchd ===
-=== Default Set ===
-Farfetch’d @ Leek
-Ability: Defiant
+=== Farfetch'd ===
+=== TODO: Set ===
+Farfetchd @ None
+Ability: None
 Tera Type: Normal
-- Brave Bird
-- Close Combat
-- Knock Off
-- Leaf Blade
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Farfetch d G ===
+=== Farfetch'd-G ===
 === TODO: Set ===
 Farfetchd-Galar @ None
 Ability: None
@@ -1369,14 +1389,16 @@ Hardy Nature
 - Pound
 
 === Dewgong ===
-=== Bulky Attacker ===
-Dewgong @ Assault Vest
-Ability: Thick Fat
-Tera Type: Dragon
-- Encore
-- Flip Turn
-- Knock Off
-- Surf
+=== TODO: Set ===
+Dewgong @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Grimer ===
 === TODO: Set ===
@@ -1390,7 +1412,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Grimer A ===
+=== Grimer-A ===
 === Wallbreaker ===
 Grimer-Alola @ Eviolite
 Ability: Poison Touch
@@ -1414,7 +1436,7 @@ Careful Nature
 - Zen Headbutt
 - Toxic
 
-=== Muk A ===
+=== Muk-A ===
 === RestTalk ===
 Muk-Alola @ Leftovers
 Ability: Poison Touch
@@ -1512,14 +1534,16 @@ Hardy Nature
 - Pound
 
 === Hypno ===
-=== Bulky Support ===
-Hypno @ Leftovers
-Ability: Insomnia
-Tera Type: Dark
-- Encore
-- Knock Off
-- Psychic Noise
-- Thunder Wave
+=== TODO: Set ===
+Hypno @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Krabby ===
 === TODO: Set ===
@@ -1534,14 +1558,16 @@ Hardy Nature
 - Pound
 
 === Kingler ===
-=== Default Set ===
-Kingler @ Life Orb
-Ability: Sheer Force
+=== TODO: Set ===
+Kingler @ None
+Ability: None
 Tera Type: Normal
-- Agility
-- Liquidation
-- Rock Slide
-- Superpower
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Voltorb ===
 === TODO: Set ===
@@ -1555,7 +1581,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Voltorb H ===
+=== Voltorb-H ===
 === TODO: Set ===
 Voltorb-Hisui @ None
 Ability: None
@@ -1568,16 +1594,18 @@ Hardy Nature
 - Pound
 
 === Electrode ===
-=== Fast Support ===
-Electrode @ Assault Vest
-Ability: Aftermath
-Tera Type: Dark
-- Explosion
-- Foul Play
-- Taunt
-- Thunder Wave
+=== TODO: Set ===
+Electrode @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Electrode H ===
+=== Electrode-H ===
 === Pivot ===
 Electrode-Hisui @ Heavy-Duty Boots
 Ability: Aftermath
@@ -1603,18 +1631,18 @@ Hardy Nature
 - Pound
 
 === Exeggutor ===
-=== Bulky Setup ===
-Exeggutor @ Sitrus Berry
-Ability: Harvest
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Giga Drain
-- Psychic
-- Psyshock
+=== TODO: Set ===
+Exeggutor @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Exeggutor A ===
+=== Exeggutor-A ===
 === Choice Specs ===
 Exeggutor-Alola @ Choice Specs
 Ability: Harvest
@@ -1639,16 +1667,18 @@ Hardy Nature
 - Pound
 
 === Marowak ===
-=== Default Set ===
-Marowak @ Thick Club
-Ability: Battle Armor
+=== TODO: Set ===
+Marowak @ None
+Ability: None
 Tera Type: Normal
-- Double-Edge
-- Earthquake
-- Knock Off
-- Stealth Rock
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Marowak A ===
+=== Marowak-A ===
 === TODO: Set ===
 Marowak-Alola @ None
 Ability: None
@@ -1722,7 +1752,7 @@ Bold Nature
 - Pain Split
 - Haze
 
-=== Weezing G ===
+=== Weezing-G ===
 === Defensive ===
 Weezing-Galar @ Rocky Helmet
 Ability: Neutralizing Gas
@@ -1783,14 +1813,16 @@ Hardy Nature
 - Pound
 
 === Kangaskhan ===
-=== Default Set ===
-Kangaskhan @ Assault Vest
-Ability: Scrappy
+=== TODO: Set ===
+Kangaskhan @ None
+Ability: None
 Tera Type: Normal
-- Double-Edge
-- Earthquake
-- Fake Out
-- Hammer Arm
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Horsea ===
 === TODO: Set ===
@@ -1830,14 +1862,16 @@ Hardy Nature
 - Pound
 
 === Seaking ===
-=== Default Set ===
-Seaking @ Choice Band
-Ability: Lightning Rod
+=== TODO: Set ===
+Seaking @ None
+Ability: None
 Tera Type: Normal
-- Drill Run
-- Knock Off
-- Megahorn
-- Swords Dance
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Staryu ===
 === TODO: Set ===
@@ -1863,19 +1897,19 @@ Timid Nature
 - Thunderbolt
 - Rapid Spin
 
-=== Mr Mime ===
-=== Default Set ===
-Mr.Mime @ Choice Scarf
-Ability: Filter
+=== Mr. Mime ===
+=== TODO: Set ===
+Mr-Mime @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Dazzling Gleam
-- Focus Blast
-- Healing Wish
-- Nasty Plot
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Mr Mime G ===
+=== Mr. Mime-G ===
 === TODO: Set ===
 Mr-Mime-Galar @ None
 Ability: None
@@ -1900,16 +1934,16 @@ Jolly Nature
 - Trailblaze
 
 === Jynx ===
-=== Default Set ===
-Jynx @ Choice Scarf
-Ability: Dry Skin
+=== TODO: Set ===
+Jynx @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Focus Blast
-- Ice Beam
-- Lovely Kiss
-- Nasty Plot
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Electabuzz ===
 === Trick Room Support ===
@@ -1960,7 +1994,7 @@ Jolly Nature
 - Throat Chop
 - Substitute
 
-=== Tauros P ===
+=== Tauros-P ===
 === TODO: Set ===
 Tauros-Paldea-Combat @ None
 Ability: None
@@ -1972,7 +2006,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Tauros P B ===
+=== Tauros-PB ===
 === Bulk Up ===
 Tauros-Paldea-Blaze @ Leftovers
 Ability: Intimidate
@@ -1984,7 +2018,7 @@ Jolly Nature
 - Flare Blitz
 - Trailblaze
 
-=== Tauros P A ===
+=== Tauros-PA ===
 === Choice Item ===
 Tauros-Paldea-Aqua @ Choice Band
 Ability: Intimidate
@@ -2021,16 +2055,16 @@ Jolly Nature
 - Tera Blast
 
 === Lapras ===
-=== Wallbreaker ===
-Lapras @ Choice Specs
-Ability: Water Absorb
-Tera Type: Ice
-EVs: 81 HP / 0 ATK
-Adamant Nature
-- Freeze-Dry
-- Hydro Pump
-- Ice Beam
-- Sparkling Aria
+=== TODO: Set ===
+Lapras @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Ditto ===
 === Choice Scarf ===
@@ -2141,14 +2175,16 @@ Hardy Nature
 - Pound
 
 === Kabutops ===
-=== Default Set ===
-Kabutops @ Assault Vest
-Ability: Swift Swim
+=== TODO: Set ===
+Kabutops @ None
+Ability: None
 Tera Type: Normal
-- Aqua Jet
-- Knock Off
-- Liquidation
-- Rapid Spin
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Aerodactyl ===
 === Mega Aerodactyl ===
@@ -2187,7 +2223,7 @@ Calm Nature
 - Substitute
 - Haze
 
-=== Articuno G ===
+=== Articuno-G ===
 === Calm Mind ===
 Articuno-Galar @ Heavy-Duty Boots
 Ability: Competitive
@@ -2212,7 +2248,7 @@ Bold Nature
 - Thunder Wave
 - Roost
 
-=== Zapdos G ===
+=== Zapdos-G ===
 === Choice Scarf ===
 Zapdos-Galar @ Choice Scarf
 Ability: Defiant
@@ -2236,7 +2272,7 @@ Bold Nature
 - U-turn
 - Roost
 
-=== Moltres G ===
+=== Moltres-G ===
 === Nasty Plot ===
 Moltres-Galar @ Sitrus Berry
 Ability: Berserk
@@ -2336,14 +2372,16 @@ Hardy Nature
 - Pound
 
 === Meganium ===
-=== Bulky Setup ===
-Meganium @ Leftovers
-Ability: Overgrow
-Tera Type: Ground
-- Earthquake
-- Knock Off
-- Petal Blizzard
-- Swords Dance
+=== TODO: Set ===
+Meganium @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Cyndaquil ===
 === TODO: Set ===
@@ -2382,7 +2420,7 @@ Timid Nature
 - Focus Blast
 - Scorching Sands
 
-=== Typhlosion H ===
+=== Typhlosion-H ===
 === Glass Cannon ===
 Typhlosion-Hisui @ Choice Specs
 Ability: Blaze
@@ -2444,14 +2482,16 @@ Hardy Nature
 - Pound
 
 === Furret ===
-=== Wallbreaker ===
-Furret @ Choice Band
-Ability: Frisk
-Tera Type: Ghost
-- Double-Edge
-- Knock Off
-- Trick
-- U-turn
+=== TODO: Set ===
+Furret @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Hoothoot ===
 === TODO: Set ===
@@ -2466,16 +2506,16 @@ Hardy Nature
 - Pound
 
 === Noctowl ===
-=== Bulky Attacker ===
-Noctowl @ Heavy-Duty Boots
-Ability: Tinted Lens
-Tera Type: Ground
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Defog
-- Hurricane
-- Hyper Voice
+=== TODO: Set ===
+Noctowl @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Ledyba ===
 === TODO: Set ===
@@ -2490,16 +2530,16 @@ Hardy Nature
 - Pound
 
 === Ledian ===
-=== Staller ===
-Ledian @ Leftovers
-Ability: Early Bird
+=== TODO: Set ===
+Ledian @ None
+Ability: None
 Tera Type: Normal
-EVs: 81 HP
-Adamant Nature
-- Air Slash
-- Defog
-- Encore
-- Focus Blast
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Spinarak ===
 === TODO: Set ===
@@ -2514,14 +2554,16 @@ Hardy Nature
 - Pound
 
 === Ariados ===
-=== Fast Support ===
-Ariados @ Focus Sash
-Ability: Insomnia
-Tera Type: Ghost
-- Knock Off
-- Megahorn
-- Poison Jab
-- Sticky Web
+=== TODO: Set ===
+Ariados @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Crobat ===
 === Utility (Poison) ===
@@ -2633,16 +2675,16 @@ Hardy Nature
 - Pound
 
 === Xatu ===
-=== Default Set ===
-Xatu @ Heavy-Duty Boots
-Ability: Magic Bounce
+=== TODO: Set ===
+Xatu @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Heat Wave
-- Psychic
-- Roost
-- Teleport
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Mareep ===
 === TODO: Set ===
@@ -2669,14 +2711,16 @@ Hardy Nature
 - Pound
 
 === Ampharos ===
-=== AV Pivot ===
-Ampharos @ Assault Vest
-Ability: Static
-Tera Type: Fairy
-- Dazzling Gleam
-- Discharge
-- Dragon Tail
-- Focus Blast
+=== TODO: Set ===
+Ampharos @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Bellossom ===
 === Bulky Quiver Dance ===
@@ -2716,14 +2760,16 @@ Adamant Nature
 - Knock Off
 
 === Sudowoodo ===
-=== Bulky Attacker ===
-Sudowoodo @ Choice Band
-Ability: Rock Head
-Tera Type: Grass
-- Earthquake
-- Head Smash
-- Stealth Rock
-- Sucker Punch
+=== TODO: Set ===
+Sudowoodo @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Politoed ===
 === Perish Trapper ===
@@ -2762,16 +2808,16 @@ Hardy Nature
 - Pound
 
 === Jumpluff ===
-=== Bulky Attacker ===
+=== TODO: Set ===
 Jumpluff @ None
-Ability: Infiltrator
-Tera Type: Steel
-EVs: 81 HP
-Adamant Nature
-- Acrobatics
-- Encore
-- Sleep Powder
-- Strength Sap
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Aipom ===
 === TODO: Set ===
@@ -2798,16 +2844,16 @@ Hardy Nature
 - Pound
 
 === Sunflora ===
-=== Setup Sweeper ===
-Sunflora @ Life Orb
-Ability: Chlorophyll
-Tera Type: Fire
-EVs: 0 ATK
-Adamant Nature
-- Earth Power
-- Solar Beam
-- Sunny Day
-- Weather Ball
+=== TODO: Set ===
+Sunflora @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Yanma ===
 === TODO: Set ===
@@ -2833,7 +2879,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Wooper P ===
+=== Wooper-P ===
 === TODO: Set ===
 Wooper-Paldea @ None
 Ability: None
@@ -2907,7 +2953,7 @@ Relaxed Nature
 - Chilly Reception
 - Slack Off
 
-=== Slowking G ===
+=== Slowking-G ===
 === Specially Defensive Pivot ===
 Slowking-Galar @ Heavy-Duty Boots
 Ability: Regenerator
@@ -2933,26 +2979,28 @@ Timid Nature
 - Power Gem
 
 === Unown ===
-=== Wallbreaker ===
-Unown @ Choice Specs
-Ability: Levitate
+=== TODO: Set ===
+Unown @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Hidden Power Fighting
-- Hidden Power Psychic
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Wobbuffet ===
-=== Default Set ===
-Wobbuffet @ Sitrus Berry
-Ability: Shadow Tag
+=== TODO: Set ===
+Wobbuffet @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Charm
-- Counter
-- Encore
-- Mirror Coat
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Girafarig ===
 === Nasty Plot ===
@@ -3062,7 +3110,7 @@ Impish Nature
 - Flip Turn
 - Pain Split
 
-=== Qwilfish H ===
+=== Qwilfish-H ===
 === Specially Defensive ===
 Qwilfish-Hisui @ Eviolite
 Ability: Intimidate
@@ -3123,7 +3171,7 @@ Jolly Nature
 - Knock Off
 - Ice Shard
 
-=== Sneasel H ===
+=== Sneasel-H ===
 === Swords Dance ===
 Sneasel-Hisui @ Eviolite
 Ability: Inner Focus
@@ -3172,16 +3220,16 @@ Hardy Nature
 - Pound
 
 === Magcargo ===
-=== Setup Sweeper ===
-Magcargo @ Heavy-Duty Boots
-Ability: Weak Armor
-Tera Type: Dragon
-EVs: 0 ATK
-Adamant Nature
-- Earth Power
-- Fire Blast
-- Power Gem
-- Shell Smash
+=== TODO: Set ===
+Magcargo @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Swinub ===
 === TODO: Set ===
@@ -3208,18 +3256,18 @@ Adamant Nature
 - Ice Shard
 
 === Corsola ===
-=== Default Set ===
-Corsola @ Rocky Helmet
-Ability: Regenerator
+=== TODO: Set ===
+Corsola @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Power Gem
-- Recover
-- Scald
-- Stealth Rock
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Corsola G ===
+=== Corsola-G ===
 === Defensive ===
 Corsola-Galar @ Eviolite
 Ability: Cursed Body
@@ -3245,24 +3293,28 @@ Hardy Nature
 - Pound
 
 === Octillery ===
-=== Default Set ===
-Octillery @ Choice Specs
-Ability: Sniper
+=== TODO: Set ===
+Octillery @ None
+Ability: None
 Tera Type: Normal
-- Energy Ball
-- Fire Blast
-- Gunk Shot
-- Hydro Pump
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Delibird ===
-=== Fast Attacker ===
-Delibird @ Heavy-Duty Boots
-Ability: Hustle
-Tera Type: Flying
-- Brave Bird
-- Drill Run
-- Ice Shard
-- Ice Spinner
+=== TODO: Set ===
+Delibird @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Mantine ===
 === Water Absorb (Flying) ===
@@ -3557,7 +3609,7 @@ Calm Nature
 - Aeroblast
 - Whirlpool
 
-=== Ho Oh ===
+=== Ho-Oh ===
 === Bulky Offense ===
 Ho-Oh @ Heavy-Duty Boots
 Ability: Regenerator
@@ -3704,14 +3756,16 @@ Hardy Nature
 - Pound
 
 === Mightyena ===
-=== AV Pivot ===
-Mightyena @ Assault Vest
-Ability: Intimidate
-Tera Type: Fairy
-- Crunch
-- Play Rough
-- Poison Fang
-- Sucker Punch
+=== TODO: Set ===
+Mightyena @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Zigzagoon ===
 === TODO: Set ===
@@ -3725,7 +3779,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Zigzagoon G ===
+=== Zigzagoon-G ===
 === TODO: Set ===
 Zigzagoon-Galar @ None
 Ability: None
@@ -3738,18 +3792,18 @@ Hardy Nature
 - Pound
 
 === Linoone ===
-=== Default Set ===
-Linoone @ Aguav Berry
-Ability: Gluttony
+=== TODO: Set ===
+Linoone @ None
+Ability: None
 Tera Type: Normal
-EVs: 81 HP
-Adamant Nature
-- Belly Drum
-- Extreme Speed
-- Stomping Tantrum
-- Throat Chop
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Linoone G ===
+=== Linoone-G ===
 === TODO: Set ===
 Linoone-Galar @ None
 Ability: None
@@ -3786,16 +3840,16 @@ Hardy Nature
 - Pound
 
 === Beautifly ===
-=== Z-Move user ===
-Beautifly @ Buginium Z
-Ability: Swarm
+=== TODO: Set ===
+Beautifly @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Air Cutter
-- Bug Buzz
-- Hidden Power Ground
-- Quiver Dance
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Cascoon ===
 === TODO: Set ===
@@ -3810,14 +3864,16 @@ Hardy Nature
 - Pound
 
 === Dustox ===
-=== Bulky Support ===
-Dustox @ Black Sludge
-Ability: Shield Dust
+=== TODO: Set ===
+Dustox @ None
+Ability: None
 Tera Type: Normal
-- Bug Buzz
-- Defog
-- Roost
-- Toxic
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Lotad ===
 === TODO: Set ===
@@ -3905,14 +3961,16 @@ Hardy Nature
 - Pound
 
 === Swellow ===
-=== Fast Attacker ===
-Swellow @ Flame Orb
-Ability: Guts
+=== TODO: Set ===
+Swellow @ None
+Ability: None
 Tera Type: Normal
-- Brave Bird
-- Facade
-- Protect
-- Quick Attack
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Wingull ===
 === Offensive ===
@@ -3990,14 +4048,16 @@ Hardy Nature
 - Pound
 
 === Masquerain ===
-=== Fast Support ===
-Masquerain @ Heavy-Duty Boots
-Ability: Intimidate
-Tera Type: Ground
-- Bug Buzz
-- Hurricane
-- Hydro Pump
-- Sticky Web
+=== TODO: Set ===
+Masquerain @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Shroomish ===
 === TODO: Set ===
@@ -4048,14 +4108,16 @@ Jolly Nature
 - Slack Off
 
 === Slaking ===
-=== Wallbreaker ===
-Slaking @ Choice Band
-Ability: Truant
-Tera Type: Ghost
-- Double-Edge
-- Earthquake
-- Giga Impact
-- Knock Off
+=== TODO: Set ===
+Slaking @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Nincada ===
 === TODO: Set ===
@@ -4070,16 +4132,16 @@ Hardy Nature
 - Pound
 
 === Ninjask ===
-=== Default Set ===
+=== TODO: Set ===
 Ninjask @ None
-Ability: Speed Boost
+Ability: None
 Tera Type: Normal
-EVs: 81 HP
-Adamant Nature
-- Acrobatics
-- Leech Life
-- Swords Dance
-- U-turn
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Shedinja ===
 === Dual Status User (Ghost) ===
@@ -4118,16 +4180,16 @@ Hardy Nature
 - Pound
 
 === Exploud ===
-=== Default Set ===
-Exploud @ Choice Specs
-Ability: Scrappy
+=== TODO: Set ===
+Exploud @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Boomburst
-- Fire Blast
-- Focus Blast
-- Surf
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Makuhita ===
 === TODO: Set ===
@@ -4190,14 +4252,16 @@ Hardy Nature
 - Pound
 
 === Delcatty ===
-=== Fast Support ===
-Delcatty @ Leftovers
-Ability: Wonder Skin
+=== TODO: Set ===
+Delcatty @ None
+Ability: None
 Tera Type: Normal
-- Double-Edge
-- Fake Out
-- Heal Bell
-- Shadow Ball
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Sableye ===
 === Defensive ===
@@ -4309,28 +4373,28 @@ Timid Nature
 - Hidden Power Ice
 
 === Plusle ===
-=== Setup Sweeper ===
-Plusle @ Life Orb
-Ability: Lightning Rod
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Alluring Voice
-- Encore
-- Grass Knot
-- Nasty Plot
+=== TODO: Set ===
+Plusle @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Minun ===
-=== Setup Sweeper ===
-Minun @ Life Orb
-Ability: Volt Absorb
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Alluring Voice
-- Encore
-- Grass Knot
-- Nasty Plot
+=== TODO: Set ===
+Minun @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Volbeat ===
 === Weather Setter ===
@@ -4346,16 +4410,16 @@ Sassy Nature
 - U-turn
 
 === Illumise ===
-=== Bulky Support ===
-Illumise @ Heavy-Duty Boots
-Ability: Prankster
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Bug Buzz
-- Encore
-- Roost
-- Thunder Wave
+=== TODO: Set ===
+Illumise @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Roselia ===
 === TODO: Set ===
@@ -4382,14 +4446,16 @@ Hardy Nature
 - Pound
 
 === Swalot ===
-=== Bulky Attacker ===
-Swalot @ Assault Vest
-Ability: Liquid Ooze
-Tera Type: Dark
-- Clear Smog
-- Earthquake
-- Encore
-- Ice Beam
+=== TODO: Set ===
+Swalot @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Carvanha ===
 === TODO: Set ===
@@ -4428,16 +4494,16 @@ Hardy Nature
 - Pound
 
 === Wailord ===
-=== Default Set ===
-Wailord @ Choice Specs
-Ability: Oblivious
+=== TODO: Set ===
+Wailord @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Hydro Pump
-- Hyper Voice
-- Ice Beam
-- Water Spout
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Numel ===
 === Special Attacker ===
@@ -4452,14 +4518,16 @@ Modest Nature
 - Will-O-Wisp
 
 === Camerupt ===
-=== Bulky Support ===
-Camerupt @ Leftovers
-Ability: Solid Rock
-Tera Type: Grass
-- Earthquake
-- Overheat
-- Roar
-- Stealth Rock
+=== TODO: Set ===
+Camerupt @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Torkoal ===
 === Supportive Sun Setter ===
@@ -4487,26 +4555,28 @@ Hardy Nature
 - Pound
 
 === Grumpig ===
-=== Bulky Setup ===
-Grumpig @ Leftovers
-Ability: Thick Fat
-Tera Type: Fairy
-EVs: 0 ATK
-Adamant Nature
-- Dazzling Gleam
-- Earth Power
-- Focus Blast
-- Nasty Plot
+=== TODO: Set ===
+Grumpig @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Spinda ===
-=== Staller ===
-Spinda @ Leftovers
-Ability: Contrary
+=== TODO: Set ===
+Spinda @ None
+Ability: None
 Tera Type: Normal
-- Rest
-- Return
-- Sleep Talk
-- Sucker Punch
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Trapinch ===
 === Trapper ===
@@ -4593,46 +4663,52 @@ Impish Nature
 - Will-O-Wisp
 
 === Zangoose ===
-=== Fast Attacker ===
-Zangoose @ Toxic Orb
-Ability: Toxic Boost
+=== TODO: Set ===
+Zangoose @ None
+Ability: None
 Tera Type: Normal
-- Close Combat
-- Facade
-- Knock Off
-- Quick Attack
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Seviper ===
-=== Bulky Setup ===
-Seviper @ Leftovers
-Ability: Infiltrator
-Tera Type: Grass
-- Earthquake
-- Gunk Shot
-- Swords Dance
-- Trailblaze
+=== TODO: Set ===
+Seviper @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Lunatone ===
-=== Default Set ===
-Lunatone @ Choice Specs
-Ability: Levitate
+=== TODO: Set ===
+Lunatone @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Earth Power
-- Moonblast
-- Nasty Plot
-- Power Gem
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Solrock ===
-=== Default Set ===
-Solrock @ Leftovers
-Ability: Levitate
+=== TODO: Set ===
+Solrock @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Explosion
-- Morning Sun
-- Rock Slide
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Barboach ===
 === TODO: Set ===
@@ -4695,14 +4771,16 @@ Hardy Nature
 - Pound
 
 === Claydol ===
-=== Default Set ===
-Claydol @ Assault Vest
-Ability: Levitate
+=== TODO: Set ===
+Claydol @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Ice Beam
-- Psychic
-- Rapid Spin
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Lileep ===
 === TODO: Set ===
@@ -4717,14 +4795,16 @@ Hardy Nature
 - Pound
 
 === Cradily ===
-=== Default Set ===
-Cradily @ Leftovers
-Ability: Storm Drain
+=== TODO: Set ===
+Cradily @ None
+Ability: None
 Tera Type: Normal
-- Power Whip
-- Recover
-- Stealth Rock
-- Stone Edge
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Anorith ===
 === TODO: Set ===
@@ -4739,14 +4819,16 @@ Hardy Nature
 - Pound
 
 === Armaldo ===
-=== Default Set ===
-Armaldo @ Choice Band
-Ability: Swift Swim
+=== TODO: Set ===
+Armaldo @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Knock Off
-- Liquidation
-- Rapid Spin
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Feebas ===
 === TODO: Set ===
@@ -4773,24 +4855,28 @@ Calm Nature
 - Recover
 
 === Castform ===
-=== Bulky Attacker ===
-Castform @ Assault Vest
-Ability: Forecast
+=== TODO: Set ===
+Castform-Normal @ None
+Ability: None
 Tera Type: Normal
-- Defog
-- Fire Blast
-- Ice Beam
-- Return
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Kecleon ===
-=== Fast Support ===
-Kecleon @ Assault Vest
-Ability: Protean
+=== TODO: Set ===
+Kecleon @ None
+Ability: None
 Tera Type: Normal
-- Drain Punch
-- Fake Out
-- Knock Off
-- Recover
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Shuppet ===
 === TODO: Set ===
@@ -4805,14 +4891,16 @@ Hardy Nature
 - Pound
 
 === Banette ===
-=== Wallbreaker ===
-Banette @ Life Orb
-Ability: Cursed Body
-Tera Type: Ghost
-- Gunk Shot
-- Poltergeist
-- Shadow Sneak
-- Swords Dance
+=== TODO: Set ===
+Banette @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Duskull ===
 === TODO: Set ===
@@ -4839,26 +4927,28 @@ Calm Nature
 - Sleep Talk
 
 === Tropius ===
-=== Setup Sweeper ===
-Tropius @ Sitrus Berry
-Ability: Harvest
-Tera Type: Ground
-- Dragon Dance
-- Dual Wingbeat
-- Earthquake
-- Leaf Blade
+=== TODO: Set ===
+Tropius @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Chimecho ===
-=== Bulky Setup ===
-Chimecho @ Leftovers
-Ability: Levitate
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Dazzling Gleam
-- Psychic Noise
-- Psyshock
+=== TODO: Set ===
+Chimecho @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Absol ===
 === Mega Absol ===
@@ -4897,14 +4987,16 @@ Hardy Nature
 - Pound
 
 === Glalie ===
-=== Fast Support ===
-Glalie @ Heavy-Duty Boots
-Ability: Inner Focus
-Tera Type: Ghost
-- Earthquake
-- Freeze-Dry
-- Spikes
-- Taunt
+=== TODO: Set ===
+Glalie @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Spheal ===
 === TODO: Set ===
@@ -4931,16 +5023,16 @@ Hardy Nature
 - Pound
 
 === Walrein ===
-=== Default Set ===
-Walrein @ Leftovers
-Ability: Thick Fat
+=== TODO: Set ===
+Walrein @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Ice Beam
-- Protect
-- Surf
-- Toxic
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Clamperl ===
 === TODO: Set ===
@@ -4955,48 +5047,52 @@ Hardy Nature
 - Pound
 
 === Huntail ===
-=== Setup Sweeper ===
-Huntail @ White Herb
-Ability: Swift Swim
+=== TODO: Set ===
+Huntail @ None
+Ability: None
 Tera Type: Normal
-- Ice Beam
-- Return
-- Shell Smash
-- Sucker Punch
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Gorebyss ===
-=== Setup Sweeper ===
-Gorebyss @ White Herb
-Ability: Swift Swim
+=== TODO: Set ===
+Gorebyss @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Hidden Power Grass
-- Hydro Pump
-- Ice Beam
-- Shell Smash
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Relicanth ===
-=== Default Set ===
-Relicanth @ Choice Band
-Ability: Rock Head
+=== TODO: Set ===
+Relicanth @ None
+Ability: None
 Tera Type: Normal
-- Body Press
-- Earthquake
-- Head Smash
-- Liquidation
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Luvdisc ===
-=== Fast Support ===
-Luvdisc @ Heavy-Duty Boots
-Ability: Swift Swim
-Tera Type: Ghost
-EVs: 81 HP
-Adamant Nature
-- Endeavor
-- Flip Turn
-- Substitute
-- Surf
+=== TODO: Set ===
+Luvdisc @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Bagon ===
 === TODO: Set ===
@@ -5084,16 +5180,16 @@ Impish Nature
 - Thunder Wave
 
 === Regice ===
-=== Bulky Attacker ===
-Regice @ Heavy-Duty Boots
-Ability: Clear Body
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Body Press
-- Ice Beam
-- Rest
-- Sleep Talk
+=== TODO: Set ===
+Regice @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Registeel ===
 === IronPress ===
@@ -5180,16 +5276,18 @@ Jolly Nature
 - Encore
 
 === Deoxys ===
-=== Wallbreaker ===
-Deoxys @ Life Orb
-Ability: Pressure
-Tera Type: Dark
-- Ice Beam
-- Knock Off
-- Psycho Boost
-- Superpower
+=== TODO: Set ===
+Deoxys-Normal @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Deoxys A ===
+=== Deoxys-A ===
 === Mixed Attacker ===
 Deoxys-Attack @ Life Orb
 Ability: Pressure
@@ -5201,7 +5299,7 @@ Naive Nature
 - Low Kick
 - Rock Slide
 
-=== Deoxys D ===
+=== Deoxys-D ===
 === Cosmic Power ===
 Deoxys-Defense @ Covert Cloak
 Ability: Pressure
@@ -5214,7 +5312,7 @@ Timid Nature
 - Knock Off
 - Recover
 
-=== Deoxys S ===
+=== Deoxys-S ===
 === Lead ===
 Deoxys-Speed @ Focus Sash
 Ability: Pressure
@@ -5383,14 +5481,16 @@ Hardy Nature
 - Pound
 
 === Bibarel ===
-=== Setup Sweeper ===
-Bibarel @ Life Orb
-Ability: Simple
+=== TODO: Set ===
+Bibarel @ None
+Ability: None
 Tera Type: Normal
-- Aqua Jet
-- Liquidation
-- Quick Attack
-- Return
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Kricketot ===
 === TODO: Set ===
@@ -5405,14 +5505,16 @@ Hardy Nature
 - Pound
 
 === Kricketune ===
-=== Fast Support ===
-Kricketune @ Focus Sash
-Ability: Technician
-Tera Type: Ghost
-- Knock Off
-- Pounce
-- Sticky Web
-- Taunt
+=== TODO: Set ===
+Kricketune @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Shinx ===
 === TODO: Set ===
@@ -5439,16 +5541,16 @@ Hardy Nature
 - Pound
 
 === Luxray ===
-=== Setup Sweeper ===
-Luxray @ Flame Orb
-Ability: Guts
+=== TODO: Set ===
+Luxray @ None
+Ability: None
 Tera Type: Normal
-EVs: 81 HP
-Adamant Nature
-- Facade
-- Play Rough
-- Supercell Slam
-- Throat Chop
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Budew ===
 === TODO: Set ===
@@ -5487,14 +5589,16 @@ Hardy Nature
 - Pound
 
 === Rampardos ===
-=== Wallbreaker ===
-Rampardos @ Life Orb
-Ability: Sheer Force
-Tera Type: Fire
-- Earthquake
-- Fire Punch
-- Rock Slide
-- Zen Headbutt
+=== TODO: Set ===
+Rampardos @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Shieldon ===
 === TODO: Set ===
@@ -5509,16 +5613,16 @@ Hardy Nature
 - Pound
 
 === Bastiodon ===
-=== Bulky Setup ===
-Bastiodon @ Chesto Berry
-Ability: Soundproof
-Tera Type: Fighting
-EVs: 0 ATK
-Adamant Nature
-- Body Press
-- Foul Play
-- Iron Defense
-- Rest
+=== TODO: Set ===
+Bastiodon @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Burmy ===
 === TODO: Set ===
@@ -5532,7 +5636,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Burmy S ===
+=== Burmy-S ===
 === TODO: Set ===
 Burmy-Sandy @ None
 Ability: None
@@ -5544,7 +5648,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Burmy T ===
+=== Burmy-T ===
 === TODO: Set ===
 Burmy-Trash @ None
 Ability: None
@@ -5557,18 +5661,18 @@ Hardy Nature
 - Pound
 
 === Wormadam ===
-=== Setup Sweeper ===
-Wormadam @ Life Orb
-Ability: Anticipation
+=== TODO: Set ===
+Wormadam-Plant @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Bug Buzz
-- Energy Ball
-- Giga Drain
-- Hidden Power Ground
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Wormadam S ===
+=== Wormadam-S ===
 === TODO: Set ===
 Wormadam-Sandy @ None
 Ability: None
@@ -5580,7 +5684,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Wormadam T ===
+=== Wormadam-T ===
 === TODO: Set ===
 Wormadam-Trash @ None
 Ability: None
@@ -5593,16 +5697,16 @@ Hardy Nature
 - Pound
 
 === Mothim ===
-=== Z-Move user ===
-Mothim @ Buginium Z
-Ability: Tinted Lens
+=== TODO: Set ===
+Mothim @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Air Slash
-- Bug Buzz
-- Energy Ball
-- Quiver Dance
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Combee ===
 === TODO: Set ===
@@ -5617,24 +5721,28 @@ Hardy Nature
 - Pound
 
 === Vespiquen ===
-=== Bulky Support ===
-Vespiquen @ Heavy-Duty Boots
-Ability: Pressure
-Tera Type: Steel
-- Air Slash
-- Hurricane
-- Roost
-- Spikes
+=== TODO: Set ===
+Vespiquen @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Pachirisu ===
-=== AV Pivot ===
-Pachirisu @ Assault Vest
-Ability: Volt Absorb
-Tera Type: Flying
-- Nuzzle
-- Super Fang
-- Thunderbolt
-- U-turn
+=== TODO: Set ===
+Pachirisu @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Buizel ===
 === Rain Wallbreaker ===
@@ -5673,16 +5781,16 @@ Hardy Nature
 - Pound
 
 === Cherrim ===
-=== Default Set ===
-Cherrim @ Choice Scarf
-Ability: Flower Gift
+=== TODO: Set ===
+Cherrim-Overcast @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Dazzling Gleam
-- Energy Ball
-- Healing Wish
-- Petal Dance
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Shellos ===
 === TODO: Set ===
@@ -5696,7 +5804,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Shellos E ===
+=== Shellos-E ===
 === TODO: Set ===
 Shellos-East @ None
 Ability: None
@@ -5709,16 +5817,18 @@ Hardy Nature
 - Pound
 
 === Gastrodon ===
-=== Bulky Support ===
-Gastrodon @ Leftovers
-Ability: Storm Drain
-Tera Type: Poison
-- Earthquake
-- Recover
-- Sludge Bomb
-- Stealth Rock
+=== TODO: Set ===
+Gastrodon-West @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Gastrodon E ===
+=== Gastrodon-E ===
 === TODO: Set ===
 Gastrodon-East @ None
 Ability: None
@@ -5806,14 +5916,16 @@ Timid Nature
 - Substitute
 
 === Honchkrow ===
-=== Wallbreaker ===
-Honchkrow @ Heavy-Duty Boots
-Ability: Moxie
-Tera Type: Dark
-- Brave Bird
-- Heat Wave
-- Lash Out
-- Sucker Punch
+=== TODO: Set ===
+Honchkrow @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Glameow ===
 === TODO: Set ===
@@ -5828,14 +5940,16 @@ Hardy Nature
 - Pound
 
 === Purugly ===
-=== Fast Attacker ===
-Purugly @ Choice Band
-Ability: Defiant
+=== TODO: Set ===
+Purugly @ None
+Ability: None
 Tera Type: Normal
-- Fake Out
-- Knock Off
-- Return
-- Stomping Tantrum
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Chingling ===
 === TODO: Set ===
@@ -5910,7 +6024,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Mime Jr ===
+=== Mime Jr. ===
 === TODO: Set ===
 Mime-Jr @ None
 Ability: None
@@ -5935,16 +6049,16 @@ Hardy Nature
 - Pound
 
 === Chatot ===
-=== Setup Sweeper ===
-Chatot @ Life Orb
-Ability: Tangled Feet
+=== TODO: Set ===
+Chatot @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Boomburst
-- Chatter
-- Heat Wave
-- Nasty Plot
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Spiritomb ===
 === Offensive Trick Room ===
@@ -6068,14 +6182,16 @@ Hardy Nature
 - Pound
 
 === Drapion ===
-=== Default Set ===
-Drapion @ Black Sludge
-Ability: Sniper
+=== TODO: Set ===
+Drapion @ None
+Ability: None
 Tera Type: Normal
-- Aqua Tail
-- Earthquake
-- Knock Off
-- Poison Jab
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Croagunk ===
 === Bulky Attacker ===
@@ -6102,14 +6218,16 @@ Jolly Nature
 - Sucker Punch
 
 === Carnivine ===
-=== Bulky Support ===
-Carnivine @ Leftovers
-Ability: Levitate
+=== TODO: Set ===
+Carnivine @ None
+Ability: None
 Tera Type: Normal
-- Defog
-- Knock Off
-- Power Whip
-- Sleep Powder
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Finneon ===
 === TODO: Set ===
@@ -6124,14 +6242,16 @@ Hardy Nature
 - Pound
 
 === Lumineon ===
-=== Fast Support ===
-Lumineon @ Heavy-Duty Boots
-Ability: Storm Drain
-Tera Type: Dragon
-- Encore
-- Hydro Pump
-- Ice Beam
-- U-turn
+=== TODO: Set ===
+Lumineon @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Mantyke ===
 === TODO: Set ===
@@ -6195,14 +6315,16 @@ Modest Nature
 - Tera Blast
 
 === Lickilicky ===
-=== Default Set ===
-Lickilicky @ Choice Band
-Ability: Oblivious
+=== TODO: Set ===
+Lickilicky @ None
+Ability: None
 Tera Type: Normal
-- Body Slam
-- Earthquake
-- Explosion
-- Heal Bell
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Rhyperior ===
 === Stealth Rock ===
@@ -6229,14 +6351,16 @@ Relaxed Nature
 - Sleep Powder
 
 === Electivire ===
-=== Fast Attacker ===
-Electivire @ Choice Band
-Ability: Motor Drive
-Tera Type: Dark
-- Earthquake
-- Flamethrower
-- Ice Punch
-- Knock Off
+=== TODO: Set ===
+Electivire @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Magmortar ===
 === All-Out Attacker ===
@@ -6251,16 +6375,16 @@ Timid Nature
 - Knock Off
 
 === Togekiss ===
-=== Default Set ===
-Togekiss @ Choice Scarf
-Ability: Serene Grace
+=== TODO: Set ===
+Togekiss @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Air Slash
-- Aura Sphere
-- Fire Blast
-- Nasty Plot
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Yanmega ===
 === Choice Specs (Bug) ===
@@ -6287,16 +6411,16 @@ Adamant Nature
 - Tera Blast
 
 === Glaceon ===
-=== Bulky Setup ===
-Glaceon @ Heavy-Duty Boots
-Ability: Ice Body
-Tera Type: Water
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Freeze-Dry
-- Protect
-- Wish
+=== TODO: Set ===
+Glaceon @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Gliscor ===
 === Defensive ===
@@ -6322,7 +6446,7 @@ Adamant Nature
 - Ice Shard
 - Trailblaze
 
-=== Porygon Z ===
+=== Porygon-Z ===
 === Agility ===
 Porygon-Z @ Heavy-Duty Boots
 Ability: Download
@@ -6348,26 +6472,28 @@ Jolly Nature
 - Leaf Blade
 
 === Probopass ===
-=== Bulky Setup ===
-Probopass @ Chesto Berry
-Ability: Magnet Pull
-Tera Type: Fighting
-EVs: 0 ATK
-Adamant Nature
-- Body Press
-- Flash Cannon
-- Iron Defense
-- Power Gem
+=== TODO: Set ===
+Probopass @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Dusknoir ===
-=== Bulky Support ===
-Dusknoir @ Leftovers
-Ability: Frisk
-Tera Type: Dark
-- Earthquake
-- Pain Split
-- Poltergeist
-- Shadow Sneak
+=== TODO: Set ===
+Dusknoir @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Froslass ===
 === Suicide Lead ===
@@ -6395,7 +6521,7 @@ Timid Nature
 - Volt Switch
 - Trick
 
-=== Rotom H ===
+=== Rotom-H ===
 === Nasty Plot ===
 Rotom-Heat @ Heavy-Duty Boots
 Ability: Levitate
@@ -6407,7 +6533,7 @@ Timid Nature
 - Nasty Plot
 - Pain Split
 
-=== Rotom F ===
+=== Rotom-F ===
 === TODO: Set ===
 Rotom-Fan @ None
 Ability: Levitate
@@ -6419,7 +6545,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Rotom Fr ===
+=== Rotom-Fr ===
 === Nasty Plot ===
 Rotom-Frost @ Heavy-Duty Boots
 Ability: Levitate
@@ -6432,7 +6558,7 @@ Timid Nature
 - Volt Switch
 - Thunderbolt
 
-=== Rotom M ===
+=== Rotom-M ===
 === Choice Scarf ===
 Rotom-Mow @ Choice Scarf
 Ability: Levitate
@@ -6444,7 +6570,7 @@ Timid Nature
 - Volt Switch
 - Trick
 
-=== Rotom W ===
+=== Rotom-W ===
 === Utility Pivot ===
 Rotom-Wash @ Leftovers
 Ability: Levitate
@@ -6494,6 +6620,18 @@ Naive Nature
 
 === Dialga ===
 === Mixed Utility ===
+Dialga @ Leftovers
+Ability: Pressure
+Tera Type: Normal
+EVs: 252 HP / 4 SpA / 252 SpD
+Sassy Nature
+- Draco Meteor
+- Heavy Slam
+- Stealth Rock
+- Dragon Tail
+
+=== Dialga ===
+=== Mixed Utility ===
 Dialga-Origin @ Adamant Crystal
 Ability: Pressure
 Tera Type: Normal
@@ -6518,7 +6656,7 @@ Modest Nature
 - Fire Blast
 - Trick
 
-=== Palkia O ===
+=== Palkia-O ===
 === Wallbreaker ===
 Palkia-Origin @ Lustrous Globe
 Ability: Pressure
@@ -6544,14 +6682,16 @@ Modest Nature
 - Tera Blast
 
 === Regigigas ===
-=== Bulky Support ===
-Regigigas @ Leftovers
-Ability: Slow Start
-Tera Type: Ghost
-- Body Slam
-- Knock Off
-- Rest
-- Sleep Talk
+=== TODO: Set ===
+Regigigas @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Giratina ===
 === Defog ===
@@ -6566,7 +6706,7 @@ Bold Nature
 - Will-O-Wisp
 - Rest
 
-=== Giratina O ===
+=== Giratina-O ===
 === Special Utility ===
 Giratina-Origin @ Griseous Core
 Ability: Levitate
@@ -6593,16 +6733,16 @@ Sassy Nature
 - Helping Hand
 
 === Phione ===
-=== Bulky Attacker ===
-Phione @ Leftovers
-Ability: Hydration
-Tera Type: Grass
-EVs: 0 ATK
-Adamant Nature
-- Grass Knot
-- Ice Beam
-- Scald
-- Take Heart
+=== TODO: Set ===
+Phione @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Manaphy ===
 === Tail Glow ===
@@ -6643,7 +6783,7 @@ Timid Nature
 - Earth Power
 - Healing Wish
 
-=== Shaymin S ===
+=== Shaymin-S ===
 === Serene ===
 Shaymin-Sky @ Choice Scarf
 Ability: Serene Grace
@@ -6788,7 +6928,7 @@ Modest Nature
 - Ice Beam
 - Aqua Jet
 
-=== Samurott H ===
+=== Samurott-H ===
 === Lead ===
 Samurott-Hisui @ Focus Sash
 Ability: Sharpness
@@ -6813,14 +6953,16 @@ Hardy Nature
 - Pound
 
 === Watchog ===
-=== Bulky Attacker ===
-Watchog @ Leftovers
-Ability: Analytic
+=== TODO: Set ===
+Watchog @ None
+Ability: None
 Tera Type: Normal
-- Hypnosis
-- Knock Off
-- Return
-- Super Fang
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Lillipup ===
 === TODO: Set ===
@@ -6847,14 +6989,16 @@ Hardy Nature
 - Pound
 
 === Stoutland ===
-=== Default Set ===
-Stoutland @ Choice Band
-Ability: Intimidate
+=== TODO: Set ===
+Stoutland @ None
+Ability: None
 Tera Type: Normal
-- Crunch
-- Facade
-- Play Rough
-- Superpower
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Purrloin ===
 === TODO: Set ===
@@ -6869,14 +7013,16 @@ Hardy Nature
 - Pound
 
 === Liepard ===
-=== Default Set ===
-Liepard @ Choice Band
-Ability: Prankster
+=== TODO: Set ===
+Liepard @ None
+Ability: None
 Tera Type: Normal
-- Copycat
-- Encore
-- Knock Off
-- Play Rough
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Pansage ===
 === TODO: Set ===
@@ -6891,16 +7037,16 @@ Hardy Nature
 - Pound
 
 === Simisage ===
-=== Setup Sweeper ===
-Simisage @ Leftovers
-Ability: Overgrow
+=== TODO: Set ===
+Simisage @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Focus Blast
-- Giga Drain
-- Hidden Power Ice
-- Nasty Plot
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Pansear ===
 === TODO: Set ===
@@ -6915,16 +7061,16 @@ Hardy Nature
 - Pound
 
 === Simisear ===
-=== Setup Sweeper ===
-Simisear @ Leftovers
-Ability: Blaze
+=== TODO: Set ===
+Simisear @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Fire Blast
-- Focus Blast
-- Grass Knot
-- Hidden Power Rock
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Panpour ===
 === TODO: Set ===
@@ -6939,16 +7085,16 @@ Hardy Nature
 - Pound
 
 === Simipour ===
-=== Setup Sweeper ===
-Simipour @ Leftovers
-Ability: Torrent
+=== TODO: Set ===
+Simipour @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Grass Knot
-- Hydro Pump
-- Ice Beam
-- Nasty Plot
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Munna ===
 === TODO: Set ===
@@ -6963,16 +7109,16 @@ Hardy Nature
 - Pound
 
 === Musharna ===
-=== Default Set ===
-Musharna @ Leftovers
-Ability: Synchronize
+=== TODO: Set ===
+Musharna @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Moonblast
-- Moonlight
-- Psychic
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Pidove ===
 === TODO: Set ===
@@ -6999,14 +7145,16 @@ Hardy Nature
 - Pound
 
 === Unfezant ===
-=== Default Set ===
-Unfezant @ Scope Lens
-Ability: Super Luck
+=== TODO: Set ===
+Unfezant @ None
+Ability: None
 Tera Type: Normal
-- Brave Bird
-- Defog
-- Night Slash
-- Roost
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Blitzle ===
 === TODO: Set ===
@@ -7021,14 +7169,16 @@ Hardy Nature
 - Pound
 
 === Zebstrika ===
-=== Fast Attacker ===
-Zebstrika @ Life Orb
-Ability: Sap Sipper
-Tera Type: Ground
-- High Horsepower
-- Overheat
-- Supercell Slam
-- Volt Switch
+=== TODO: Set ===
+Zebstrika @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Roggenrola ===
 === TODO: Set ===
@@ -7055,14 +7205,16 @@ Hardy Nature
 - Pound
 
 === Gigalith ===
-=== Default Set ===
-Gigalith @ Choice Band
-Ability: Sand Stream
+=== TODO: Set ===
+Gigalith @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Explosion
-- Stealth Rock
-- Stone Edge
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Woobat ===
 === TODO: Set ===
@@ -7077,16 +7229,16 @@ Hardy Nature
 - Pound
 
 === Swoobat ===
-=== Default Set ===
-Swoobat @ Focus Sash
-Ability: Simple
+=== TODO: Set ===
+Swoobat @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Air Slash
-- Calm Mind
-- Heat Wave
-- Roost
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Drilbur ===
 === Utility ===
@@ -7113,14 +7265,16 @@ Jolly Nature
 - Stealth Rock
 
 === Audino ===
-=== Default Set ===
-Audino @ Leftovers
-Ability: Regenerator
+=== TODO: Set ===
+Audino @ None
+Ability: None
 Tera Type: Normal
-- Heal Bell
-- Knock Off
-- Protect
-- Toxic
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Timburr ===
 === Physical Attacker ===
@@ -7183,34 +7337,40 @@ Hardy Nature
 - Pound
 
 === Seismitoad ===
-=== Default Set ===
-Seismitoad @ Life Orb
-Ability: Swift Swim
+=== TODO: Set ===
+Seismitoad @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Liquidation
-- Rain Dance
-- Sludge Bomb
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Throh ===
-=== Default Set ===
-Throh @ Chesto Berry
-Ability: Guts
+=== TODO: Set ===
+Throh @ None
+Ability: None
 Tera Type: Normal
-- Bulk Up
-- Circle Throw
-- Ice Punch
-- Knock Off
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Sawk ===
-=== Default Set ===
-Sawk @ Choice Band
-Ability: Mold Breaker
+=== TODO: Set ===
+Sawk @ None
+Ability: None
 Tera Type: Normal
-- Bulk Up
-- Close Combat
-- Knock Off
-- Poison Jab
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Sewaddle ===
 === TODO: Set ===
@@ -7273,14 +7433,16 @@ Hardy Nature
 - Pound
 
 === Scolipede ===
-=== Default Set ===
-Scolipede @ Black Sludge
-Ability: Speed Boost
+=== TODO: Set ===
+Scolipede @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Megahorn
-- Poison Jab
-- Protect
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Cottonee ===
 === Memento ===
@@ -7332,7 +7494,7 @@ Modest Nature
 - Weather Ball
 - Alluring Voice
 
-=== Lilligant H ===
+=== Lilligant-H ===
 === Victory Dance ===
 Lilligant-Hisui @ Wide Lens
 Ability: Chlorophyll
@@ -7345,16 +7507,18 @@ Jolly Nature
 - Ice Spinner
 
 === Basculin ===
-=== Wallbreaker ===
-Basculin @ Choice Band
-Ability: Adaptability
-Tera Type: Water
-- Aqua Jet
-- Double-Edge
-- Flip Turn
-- Wave Crash
+=== TODO: Set ===
+Basculin-Red-Striped @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Basculin B ===
+=== Basculin-B ===
 === TODO: Set ===
 Basculin-Blue-Striped @ None
 Ability: None
@@ -7366,7 +7530,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Basculin W ===
+=== Basculin-W ===
 === TODO: Set ===
 Basculin-White-Striped @ None
 Ability: None
@@ -7426,7 +7590,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Darumaka G ===
+=== Darumaka-G ===
 === TODO: Set ===
 Darumaka-Galar @ None
 Ability: None
@@ -7439,18 +7603,18 @@ Hardy Nature
 - Pound
 
 === Darmanitan ===
-=== Default Set ===
-Darmanitan @ Life Orb
-Ability: Sheer Force
+=== TODO: Set ===
+Darmanitan-Standard @ None
+Ability: None
 Tera Type: Normal
-EVs: 81 HP
-Adamant Nature
-- Earthquake
-- Flare Blitz
-- Rock Slide
-- Superpower
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Darmanitan G ===
+=== Darmanitan-G ===
 === TODO: Set ===
 Darmanitan-Galar-Standard @ None
 Ability: None
@@ -7463,14 +7627,16 @@ Hardy Nature
 - Pound
 
 === Maractus ===
-=== Default Set ===
-Maractus @ Focus Sash
-Ability: Chlorophyll
+=== TODO: Set ===
+Maractus @ None
+Ability: None
 Tera Type: Normal
-- Energy Ball
-- Knock Off
-- Leech Seed
-- Spikes
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Dwebble ===
 === TODO: Set ===
@@ -7485,14 +7651,16 @@ Hardy Nature
 - Pound
 
 === Crustle ===
-=== Default Set ===
-Crustle @ Heavy-Duty Boots
-Ability: Sturdy
+=== TODO: Set ===
+Crustle @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Shell Smash
-- Stone Edge
-- X-Scissor
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Scraggy ===
 === Bulk Up ===
@@ -7519,16 +7687,16 @@ Adamant Nature
 - Poison Jab
 
 === Sigilyph ===
-=== Default Set ===
-Sigilyph @ Choice Specs
-Ability: Magic Guard
+=== TODO: Set ===
+Sigilyph @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Air Slash
-- Defog
-- Energy Ball
-- Heat Wave
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Yamask ===
 === TODO: Set ===
@@ -7542,7 +7710,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Yamask G ===
+=== Yamask-G ===
 === TODO: Set ===
 Yamask-Galar @ None
 Ability: None
@@ -7555,16 +7723,16 @@ Hardy Nature
 - Pound
 
 === Cofagrigus ===
-=== Default Set ===
-Cofagrigus @ Leftovers
-Ability: Mummy
+=== TODO: Set ===
+Cofagrigus @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Body Press
-- Memento
-- Shadow Ball
-- Toxic Spikes
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Tirtouga ===
 === TODO: Set ===
@@ -7579,14 +7747,16 @@ Hardy Nature
 - Pound
 
 === Carracosta ===
-=== Default Set ===
-Carracosta @ Weakness Policy
-Ability: Solid Rock
+=== TODO: Set ===
+Carracosta @ None
+Ability: None
 Tera Type: Normal
-- Aqua Jet
-- Hydro Pump
-- Shell Smash
-- Stone Edge
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Archen ===
 === TODO: Set ===
@@ -7601,14 +7771,16 @@ Hardy Nature
 - Pound
 
 === Archeops ===
-=== Default Set ===
-Archeops @ Choice Band
-Ability: Defeatist
+=== TODO: Set ===
+Archeops @ None
+Ability: None
 Tera Type: Normal
-- Dual Wingbeat
-- Earthquake
-- Roost
-- Stone Edge
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Trubbish ===
 === TODO: Set ===
@@ -7623,14 +7795,16 @@ Hardy Nature
 - Pound
 
 === Garbodor ===
-=== Bulky Attacker ===
-Garbodor @ Black Sludge
-Ability: Aftermath
+=== TODO: Set ===
+Garbodor @ None
+Ability: None
 Tera Type: Normal
-- Gunk Shot
-- Haze
-- Pain Split
-- Spikes
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Zorua ===
 === Choice Scarf ===
@@ -7644,7 +7818,7 @@ Naive Nature
 - Tera Blast
 - Sucker Punch
 
-=== Zorua H ===
+=== Zorua-H ===
 === Wallbreaker ===
 Zorua-Hisui @ Eviolite
 Ability: Illusion
@@ -7669,7 +7843,7 @@ Timid Nature
 - Trick
 - Focus Blast
 
-=== Zoroark H ===
+=== Zoroark-H ===
 === Choice Specs ===
 Zoroark-Hisui @ Choice Specs
 Ability: Illusion
@@ -7794,14 +7968,16 @@ Hardy Nature
 - Pound
 
 === Swanna ===
-=== Bulky Support ===
-Swanna @ Heavy-Duty Boots
-Ability: Hydration
-Tera Type: Ground
-- Brave Bird
-- Defog
-- Flip Turn
-- Hydro Pump
+=== TODO: Set ===
+Swanna @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Vanillite ===
 === TODO: Set ===
@@ -7828,14 +8004,16 @@ Hardy Nature
 - Pound
 
 === Vanilluxe ===
-=== Default Set ===
-Vanilluxe @ Assault Vest
-Ability: Snow Warning
+=== TODO: Set ===
+Vanilluxe @ None
+Ability: None
 Tera Type: Normal
-- Aurora Veil
-- Blizzard
-- Explosion
-- Flash Cannon
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Deerling ===
 === TODO: Set ===
@@ -7849,7 +8027,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Deerling S ===
+=== Deerling-S ===
 === TODO: Set ===
 Deerling-Summer @ None
 Ability: None
@@ -7861,7 +8039,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Deerling A ===
+=== Deerling-A ===
 === TODO: Set ===
 Deerling-Autumn @ None
 Ability: None
@@ -7873,7 +8051,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Deerling W ===
+=== Deerling-W ===
 === TODO: Set ===
 Deerling-Winter @ None
 Ability: None
@@ -7886,16 +8064,18 @@ Hardy Nature
 - Pound
 
 === Sawsbuck ===
-=== Fast Attacker ===
-Sawsbuck @ Life Orb
-Ability: Serene Grace
+=== TODO: Set ===
+Sawsbuck-Spring @ None
+Ability: None
 Tera Type: Normal
-- Headbutt
-- High Horsepower
-- Horn Leech
-- Swords Dance
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Sawsbuck S ===
+=== Sawsbuck-S ===
 === TODO: Set ===
 Sawsbuck-Summer @ None
 Ability: None
@@ -7907,7 +8087,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Sawsbuck A ===
+=== Sawsbuck-A ===
 === TODO: Set ===
 Sawsbuck-Autumn @ None
 Ability: None
@@ -7919,7 +8099,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Sawsbuck W ===
+=== Sawsbuck-W ===
 === TODO: Set ===
 Sawsbuck-Winter @ None
 Ability: None
@@ -7932,14 +8112,16 @@ Hardy Nature
 - Pound
 
 === Emolga ===
-=== Default Set ===
-Emolga @ Choice Specs
-Ability: Motor Drive
+=== TODO: Set ===
+Emolga @ None
+Ability: None
 Tera Type: Normal
-- Air Slash
-- Defog
-- Energy Ball
-- Roost
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Karrablast ===
 === TODO: Set ===
@@ -7954,14 +8136,16 @@ Hardy Nature
 - Pound
 
 === Escavalier ===
-=== Default Set ===
-Escavalier @ Choice Band
-Ability: Overcoat
+=== TODO: Set ===
+Escavalier @ None
+Ability: None
 Tera Type: Normal
-- Close Combat
-- Drill Run
-- Iron Head
-- Knock Off
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Foongus ===
 === Defensive ===
@@ -8002,16 +8186,16 @@ Hardy Nature
 - Pound
 
 === Jellicent ===
-=== Default Set ===
-Jellicent @ Leftovers
-Ability: Water Absorb
+=== TODO: Set ===
+Jellicent @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Ice Beam
-- Recover
-- Scald
-- Shadow Ball
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Alomomola ===
 === Wish Passer ===
@@ -8100,14 +8284,16 @@ Hardy Nature
 - Pound
 
 === Klinklang ===
-=== Default Set ===
-Klinklang @ Leftovers
-Ability: Clear Body
+=== TODO: Set ===
+Klinklang @ None
+Ability: None
 Tera Type: Normal
-- Gear Grind
-- Shift Gear
-- Substitute
-- Wild Charge
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Tynamo ===
 === TODO: Set ===
@@ -8160,16 +8346,16 @@ Hardy Nature
 - Pound
 
 === Beheeyem ===
-=== Default Set ===
-Beheeyem @ Choice Specs
-Ability: Analytic
+=== TODO: Set ===
+Beheeyem @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Dark Pulse
-- Psychic
-- Thunderbolt
-- Trick
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Litwick ===
 === TODO: Set ===
@@ -8292,28 +8478,30 @@ Hardy Nature
 - Pound
 
 === Accelgor ===
-=== Default Set ===
-Accelgor @ Choice Specs
-Ability: Sticky Hold
+=== TODO: Set ===
+Accelgor @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Bug Buzz
-- Energy Ball
-- Focus Blast
-- Sludge Bomb
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Stunfisk ===
-=== Default Set ===
-Stunfisk @ Assault Vest
-Ability: Sand Veil
+=== TODO: Set ===
+Stunfisk @ None
+Ability: None
 Tera Type: Normal
-- Discharge
-- Earth Power
-- Foul Play
-- Sludge Bomb
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Stunfisk G ===
+=== Stunfisk-G ===
 === TODO: Set ===
 Stunfisk-Galar @ None
 Ability: None
@@ -8350,14 +8538,16 @@ Jolly Nature
 - U-Turn
 
 === Druddigon ===
-=== Default Set ===
-Druddigon @ Choice Band
-Ability: Mold Breaker
+=== TODO: Set ===
+Druddigon @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Glare
-- Gunk Shot
-- Outrage
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Golett ===
 === TODO: Set ===
@@ -8408,14 +8598,16 @@ Adamant Nature
 - Throat Chop
 
 === Bouffalant ===
-=== Default Set ===
-Bouffalant @ Choice Band
-Ability: Reckless
+=== TODO: Set ===
+Bouffalant @ None
+Ability: None
 Tera Type: Normal
-- Close Combat
-- Earthquake
-- Head Charge
-- Megahorn
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Rufflet ===
 === Choice Band ===
@@ -8441,7 +8633,7 @@ Impish Nature
 - Roost
 - U-turn
 
-=== Braviary H ===
+=== Braviary-H ===
 === Sheer Force ===
 Braviary-Hisui @ Life Orb
 Ability: Sheer Force
@@ -8479,24 +8671,28 @@ Impish Nature
 - Roost
 
 === Heatmor ===
-=== Default Set ===
-Heatmor @ Heavy-Duty Boots
-Ability: Flash Fire
+=== TODO: Set ===
+Heatmor @ None
+Ability: None
 Tera Type: Normal
-- Fire Lash
-- Giga Drain
-- Knock Off
-- Substitute
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Durant ===
-=== Default Set ===
-Durant @ Choice Band
-Ability: Hustle
+=== TODO: Set ===
+Durant @ None
+Ability: None
 Tera Type: Normal
-- First Impression
-- Hone Claws
-- Iron Head
-- Rock Slide
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Deino ===
 === TODO: Set ===
@@ -8608,7 +8804,7 @@ Timid Nature
 - Knock Off
 - Heat Wave
 
-=== Tornadus T ===
+=== Tornadus-T ===
 === Pivot ===
 Tornadus-Therian @ Assault Vest
 Ability: Regenerator
@@ -8633,7 +8829,7 @@ Timid Nature
 - Nasty Plot
 - Thunder Wave
 
-=== Thundurus T ===
+=== Thundurus-T ===
 === Pivot ===
 Thundurus-Therian @ Heavy-Duty Boots
 Ability: Volt Absorb
@@ -8672,16 +8868,19 @@ Jolly Nature
 - Substitute
 
 === Landorus ===
-=== Fast Attacker ===
-Landorus @ Life Orb
+=== TODO: Set ===
+Landorus-Incarnate @ Life Orb
 Ability: Sheer Force
-Tera Type: Ground
+Tera Type: Normal
+EVs: 252 Spe / 252 SpA / 4 SpD
+IVs: 0 Atk
+Timid Nature
 - Earth Power
 - Focus Blast
-- Nasty Plot
 - Psychic
+- Nasty Plot
 
-=== Landorus T ===
+=== Landorus-T ===
 === Assault Vest ===
 Landorus-Therian @ Assault Vest
 Ability: Intimidate
@@ -8705,7 +8904,7 @@ Timid Nature
 - Draco Meteor
 - Earth Power
 
-=== Kyurem B ===
+=== Kyurem-B ===
 === Dragon Dance ===
 Kyurem-Black @ Loaded Dice
 Ability: Teravolt
@@ -8717,7 +8916,7 @@ Jolly Nature
 - Scale Shot
 - Fusion Bolt
 
-=== Kyurem W ===
+=== Kyurem-W ===
 === Choice Scarf ===
 Kyurem-White @ Choice Scarf
 Ability: Turboblaze
@@ -8731,36 +8930,40 @@ Timid Nature
 - Fusion Flare
 
 === Keldeo ===
-=== Bulky Setup ===
-Keldeo @ Leftovers
-Ability: Justified
+=== TODO: Set ===
+Keldeo-Ordinary @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Scald
-- Secret Sword
-- Substitute
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Meloetta ===
-=== Wallbreaker ===
-Meloetta @ Life Orb
-Ability: Serene Grace
-Tera Type: Dark
-- Close Combat
-- Knock Off
-- Relic Song
-- Triple Axel
+=== TODO: Set ===
+Meloetta-Aria @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Genesect ===
-=== Default Set ===
-Genesect @ Assault Vest
-Ability: Download
+=== TODO: Set ===
+Genesect @ None
+Ability: None
 Tera Type: Normal
-- Blaze Kick
-- Extreme Speed
-- Iron Head
-- Leech Life
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Chespin ===
 === Spikes ===
@@ -8870,7 +9073,7 @@ Timid Nature
 - Ice Beam
 - Sludge Wave
 
-=== Greninja B ===
+=== Greninja-B ===
 === TODO: Set ===
 Greninja-Battle-Bond @ Choice Specs
 Ability: Battle Bond
@@ -8967,16 +9170,16 @@ Hardy Nature
 - Pound
 
 === Vivillon ===
-=== Fast Bulky Setup ===
-Vivillon @ Heavy-Duty Boots
-Ability: Compound Eyes
-Tera Type: Flying
-EVs: 0 ATK
-Adamant Nature
-- Bug Buzz
-- Hurricane
-- Quiver Dance
-- Sleep Powder
+=== TODO: Set ===
+Vivillon-Icy-Snow @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Litleo ===
 === TODO: Set ===
@@ -9015,7 +9218,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Flabebe Y ===
+=== Flabebe-Y ===
 === TODO: Set ===
 Flabebe-Yellow @ None
 Ability: None
@@ -9027,7 +9230,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Flabebe O ===
+=== Flabebe-O ===
 === TODO: Set ===
 Flabebe-Orange @ None
 Ability: None
@@ -9039,7 +9242,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Flabebe B ===
+=== Flabebe-B ===
 === TODO: Set ===
 Flabebe-Blue @ None
 Ability: None
@@ -9051,7 +9254,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Flabebe W ===
+=== Flabebe-W ===
 === TODO: Set ===
 Flabebe-White @ None
 Ability: None
@@ -9075,7 +9278,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Floette Y ===
+=== Floette-Y ===
 === TODO: Set ===
 Floette-Yellow @ None
 Ability: None
@@ -9087,7 +9290,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Floette O ===
+=== Floette-O ===
 === TODO: Set ===
 Floette-Orange @ None
 Ability: None
@@ -9099,7 +9302,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Floette B ===
+=== Floette-B ===
 === TODO: Set ===
 Floette-Blue @ None
 Ability: None
@@ -9111,7 +9314,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Floette W ===
+=== Floette-W ===
 === TODO: Set ===
 Floette-White @ None
 Ability: None
@@ -9123,7 +9326,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Floette E ===
+=== Floette-E ===
 === TODO: Set ===
 Floette-Eternal @ None
 Ability: None
@@ -9136,18 +9339,18 @@ Hardy Nature
 - Pound
 
 === Florges ===
-=== Bulky Setup ===
-Florges @ Leftovers
-Ability: Flower Veil
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Moonblast
-- Protect
-- Wish
+=== TODO: Set ===
+Florges-Red @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Florges Y ===
+=== Florges-Y ===
 === TODO: Set ===
 Florges-Yellow @ None
 Ability: None
@@ -9159,7 +9362,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Florges O ===
+=== Florges-O ===
 === TODO: Set ===
 Florges-Orange @ None
 Ability: None
@@ -9171,7 +9374,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Florges B ===
+=== Florges-B ===
 === TODO: Set ===
 Florges-Blue @ None
 Ability: None
@@ -9183,7 +9386,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Florges W ===
+=== Florges-W ===
 === TODO: Set ===
 Florges-White @ None
 Ability: None
@@ -9208,14 +9411,16 @@ Hardy Nature
 - Pound
 
 === Gogoat ===
-=== Bulky Setup ===
-Gogoat @ Leftovers
-Ability: Sap Sipper
-Tera Type: Ground
-- Bulk Up
-- Earthquake
-- Horn Leech
-- Milk Drink
+=== TODO: Set ===
+Gogoat @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Pancham ===
 === TODO: Set ===
@@ -9230,24 +9435,28 @@ Hardy Nature
 - Pound
 
 === Pangoro ===
-=== Default Set ===
-Pangoro @ Choice Band
-Ability: Scrappy
+=== TODO: Set ===
+Pangoro @ None
+Ability: None
 Tera Type: Normal
-- Close Combat
-- Gunk Shot
-- Ice Punch
-- Knock Off
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Furfrou ===
-=== Bulky Support ===
-Furfrou @ Chesto Berry
-Ability: Fur Coat
+=== TODO: Set ===
+Furfrou-Natural @ None
+Ability: None
 Tera Type: Normal
-- Rest
-- Return
-- Thunder Wave
-- Toxic
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Espurr ===
 === TODO: Set ===
@@ -9262,28 +9471,28 @@ Hardy Nature
 - Pound
 
 === Meowstic ===
-=== Bulky Support ===
-Meowstic @ Leftovers
-Ability: Prankster
-Tera Type: Fairy
-EVs: 0 ATK
-Adamant Nature
-- Alluring Voice
-- Light Screen
-- Psychic Noise
-- Reflect
+=== TODO: Set ===
+Meowstic-M @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Meowstic F ===
-=== Setup Sweeper ===
-Meowstic-F @ Life Orb
-Ability: Competitive
-Tera Type: Dark
-EVs: 0 ATK
-Adamant Nature
-- Alluring Voice
-- Dark Pulse
-- Nasty Plot
-- Psychic
+=== Meowstic-F ===
+=== TODO: Set ===
+Meowstic-F @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Honedge ===
 === TODO: Set ===
@@ -9298,24 +9507,28 @@ Hardy Nature
 - Pound
 
 === Doublade ===
-=== Default Set ===
-Doublade @ Eviolite
-Ability: No Guard
+=== TODO: Set ===
+Doublade @ None
+Ability: None
 Tera Type: Normal
-- Close Combat
-- Iron Head
-- Shadow Claw
-- Shadow Sneak
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Aegislash ===
-=== Default Set ===
-Aegislash @ Leftovers
-Ability: Stance Change
+=== TODO: Set ===
+Aegislash-Shield @ None
+Ability: None
 Tera Type: Normal
-- Close Combat
-- Flash Cannon
-- King's Shield
-- Shadow Ball
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Spritzee ===
 === TODO: Set ===
@@ -9330,16 +9543,16 @@ Hardy Nature
 - Pound
 
 === Aromatisse ===
-=== Default Set ===
-Aromatisse @ Leftovers
-Ability: Aroma Veil
+=== TODO: Set ===
+Aromatisse @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Moonblast
-- Protect
-- Toxic
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Swirlix ===
 === TODO: Set ===
@@ -9354,14 +9567,16 @@ Hardy Nature
 - Pound
 
 === Slurpuff ===
-=== Default Set ===
-Slurpuff @ Sitrus Berry
-Ability: Unburden
+=== TODO: Set ===
+Slurpuff @ None
+Ability: None
 Tera Type: Normal
-- Belly Drum
-- Drain Punch
-- Facade
-- Play Rough
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Inkay ===
 === TODO: Set ===
@@ -9400,14 +9615,16 @@ Hardy Nature
 - Pound
 
 === Barbaracle ===
-=== Default Set ===
-Barbaracle @ Choice Band
-Ability: Tough Claws
+=== TODO: Set ===
+Barbaracle @ None
+Ability: None
 Tera Type: Normal
-- Cross Chop
-- Earthquake
-- Liquidation
-- Shell Smash
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Skrelp ===
 === TODO: Set ===
@@ -9471,16 +9688,16 @@ Hardy Nature
 - Pound
 
 === Heliolisk ===
-=== Default Set ===
-Heliolisk @ Choice Specs
-Ability: Dry Skin
+=== TODO: Set ===
+Heliolisk @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Glare
-- Grass Knot
-- Hyper Voice
-- Surf
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Tyrunt ===
 === TODO: Set ===
@@ -9495,14 +9712,16 @@ Hardy Nature
 - Pound
 
 === Tyrantrum ===
-=== Default Set ===
-Tyrantrum @ Choice Band
-Ability: Rock Head
+=== TODO: Set ===
+Tyrantrum @ None
+Ability: None
 Tera Type: Normal
-- Close Combat
-- Dragon Dance
-- Earthquake
-- Head Smash
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Amaura ===
 === TODO: Set ===
@@ -9517,16 +9736,16 @@ Hardy Nature
 - Pound
 
 === Aurorus ===
-=== Default Set ===
-Aurorus @ Choice Specs
-Ability: Snow Warning
+=== TODO: Set ===
+Aurorus @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Ancient Power
-- Blizzard
-- Earth Power
-- Freeze-Dry
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Sylveon ===
 === Life Orb ===
@@ -9553,26 +9772,28 @@ Adamant Nature
 - Encore
 
 === Dedenne ===
-=== Fast Support ===
-Dedenne @ Sitrus Berry
-Ability: Cheek Pouch
-Tera Type: Flying
-- Dazzling Gleam
-- Nuzzle
-- Super Fang
-- Thunderbolt
+=== TODO: Set ===
+Dedenne @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Carbink ===
-=== Fast Bulky Setup ===
-Carbink @ Chesto Berry
-Ability: Clear Body
-Tera Type: Fighting
-EVs: 0 ATK
-Adamant Nature
-- Body Press
-- Iron Defense
-- Moonblast
-- Rest
+=== TODO: Set ===
+Carbink @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Goomy ===
 === TODO: Set ===
@@ -9598,7 +9819,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Sliggoo H ===
+=== Sliggoo-H ===
 === Choice Specs ===
 Sliggoo-Hisui @ Choice Specs
 Ability: Shell Armor
@@ -9623,7 +9844,7 @@ Timid Nature
 - Sludge Bomb
 - Knock Off
 
-=== Goodra H ===
+=== Goodra-H ===
 === Bulky Attacker ===
 Goodra-Hisui @ Leftovers
 Ability: Sap Sipper
@@ -9660,14 +9881,16 @@ Hardy Nature
 - Pound
 
 === Trevenant ===
-=== Bulky Support ===
-Trevenant @ Sitrus Berry
-Ability: Harvest
-Tera Type: Dark
-- Drain Punch
-- Poltergeist
-- Protect
-- Toxic
+=== TODO: Set ===
+Trevenant @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Pumpkaboo ===
 === TODO: Set ===
@@ -9681,7 +9904,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Pumpkaboo S ===
+=== Pumpkaboo-S ===
 === TODO: Set ===
 Pumpkaboo-Small @ None
 Ability: None
@@ -9693,7 +9916,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Pumpkaboo L ===
+=== Pumpkaboo-L ===
 === TODO: Set ===
 Pumpkaboo-Large @ None
 Ability: None
@@ -9705,7 +9928,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Pumpkaboo S P ===
+=== Pumpkaboo-SP ===
 === TODO: Set ===
 Pumpkaboo-Super @ None
 Ability: None
@@ -9718,16 +9941,18 @@ Hardy Nature
 - Pound
 
 === Gourgeist ===
-=== Default Set ===
-Gourgeist @ Leftovers
-Ability: Frisk
+=== TODO: Set ===
+Gourgeist-Average @ None
+Ability: None
 Tera Type: Normal
-- Poltergeist
-- Power Whip
-- Shadow Sneak
-- Synthesis
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Gourgeist S ===
+=== Gourgeist-S ===
 === TODO: Set ===
 Gourgeist-Small @ None
 Ability: None
@@ -9739,7 +9964,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Gourgeist L ===
+=== Gourgeist-L ===
 === TODO: Set ===
 Gourgeist-Large @ None
 Ability: None
@@ -9751,7 +9976,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Gourgeist S P ===
+=== Gourgeist-SP ===
 === TODO: Set ===
 Gourgeist-Super @ None
 Ability: None
@@ -9787,7 +10012,7 @@ Impish Nature
 - Rapid Spin
 - Recover
 
-=== Avalugg H ===
+=== Avalugg-H ===
 === Lead ===
 Avalugg-Hisui @ Custap Berry
 Ability: Sturdy
@@ -9848,14 +10073,16 @@ Naive Nature
 - Sucker Punch
 
 === Zygarde ===
-=== Default Set ===
-Zygarde @ Leftovers
-Ability: Power Construct
+=== TODO: Set ===
+Zygarde-50 @ None
+Ability: None
 Tera Type: Normal
-- Dragon Dance
-- Outrage
-- Substitute
-- Thousand Arrows
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Diancie ===
 === Stealth Rock ===
@@ -9882,7 +10109,7 @@ Timid Nature
 - Focus Blast
 - Trick
 
-=== Hoopa U ===
+=== Hoopa-U ===
 === Choice Scarf ===
 Hoopa-Unbound @ Choice Scarf
 Ability: Magician
@@ -9943,7 +10170,7 @@ Adamant Nature
 - Leaf Blade
 - Shadow Sneak
 
-=== Decidueye H ===
+=== Decidueye-H ===
 === Choice Scarf ===
 Decidueye-Hisui @ Choice Scarf
 Ability: Scrappy
@@ -10052,14 +10279,16 @@ Hardy Nature
 - Pound
 
 === Toucannon ===
-=== Bulky Support ===
-Toucannon @ Heavy-Duty Boots
-Ability: Keen Eye
-Tera Type: Steel
-- Beak Blast
-- Boomburst
-- Bullet Seed
-- Knock Off
+=== TODO: Set ===
+Toucannon @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Yungoos ===
 === TODO: Set ===
@@ -10074,14 +10303,16 @@ Hardy Nature
 - Pound
 
 === Gumshoos ===
-=== Fast Attacker ===
-Gumshoos @ Choice Band
-Ability: Adaptability
-Tera Type: Ground
-- Double-Edge
-- Earthquake
-- Knock Off
-- U-turn
+=== TODO: Set ===
+Gumshoos @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Grubbin ===
 === TODO: Set ===
@@ -10145,18 +10376,18 @@ Adamant Nature
 - Knock Off
 
 === Oricorio ===
-=== Setup Sweeper ===
-Oricorio @ Heavy-Duty Boots
+=== TODO: Set ===
+Oricorio-Baile @ Heavy-Duty Boots
 Ability: Dancer
-Tera Type: Ground
-EVs: 0 ATK
-Adamant Nature
-- Hurricane
+Tera Type: Normal
+EVs: 252 HP / 4 SpA / 252 Spe
+Timid Nature
 - Quiver Dance
 - Revelation Dance
+- Hurricane
 - Roost
 
-=== Oricorio P P ===
+=== Oricorio-PP ===
 === Quiver Dance ===
 Oricorio-Pom-Pom @ Heavy-Duty Boots
 Ability: Dancer
@@ -10168,7 +10399,7 @@ Timid Nature
 - Hurricane
 - Roost
 
-=== Oricorio P ===
+=== Oricorio-P ===
 === TODO: Set ===
 Oricorio-Pau @ Heavy-Duty Boots
 Ability: Dancer
@@ -10180,7 +10411,7 @@ Timid Nature
 - Hurricane
 - Roost
 
-=== Oricorio S ===
+=== Oricorio-S ===
 === TODO: Set ===
 Oricorio-Sensu @ Heavy-Duty Boots
 Ability: Dancer
@@ -10240,7 +10471,7 @@ Adamant Nature
 - Close Combat
 - Accelerock
 
-=== Lycanroc M ===
+=== Lycanroc-M ===
 === Swords Dance ===
 Lycanroc-Midnight @ Life Orb
 Ability: No Guard
@@ -10252,7 +10483,7 @@ Jolly Nature
 - Crunch
 - Rock Polish
 
-=== Lycanroc D ===
+=== Lycanroc-D ===
 === All-Out Attacker ===
 Lycanroc-Dusk @ Choice Band
 Ability: Tough Claws
@@ -10265,14 +10496,16 @@ Jolly Nature
 - Psychic Fangs
 
 === Wishiwashi ===
-=== Default Set ===
-Wishiwashi @ Choice Specs
-Ability: Schooling
+=== TODO: Set ===
+Wishiwashi-Solo @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Hydro Pump
-- Ice Beam
-- Scald
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Mareanie ===
 === Physically Defensive ===
@@ -10384,16 +10617,16 @@ Hardy Nature
 - Pound
 
 === Shiinotic ===
-=== Default Set ===
-Shiinotic @ Leftovers
-Ability: Effect Spore
+=== TODO: Set ===
+Shiinotic @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Energy Ball
-- Leech Seed
-- Moonblast
-- Spore
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Salandit ===
 === TODO: Set ===
@@ -10433,14 +10666,16 @@ Hardy Nature
 - Pound
 
 === Bewear ===
-=== Default Set ===
-Bewear @ Choice Band
-Ability: Fluffy
+=== TODO: Set ===
+Bewear @ None
+Ability: None
 Tera Type: Normal
-- Close Combat
-- Darkest Lariat
-- Double-Edge
-- Ice Punch
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Bounsweet ===
 === TODO: Set ===
@@ -10487,16 +10722,16 @@ Modest Nature
 - Taunt
 
 === Oranguru ===
-=== Bulky Attacker ===
-Oranguru @ Leftovers
-Ability: Inner Focus
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Focus Blast
-- Nasty Plot
-- Psychic
-- Psyshock
+=== TODO: Set ===
+Oranguru @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Passimian ===
 === Choice Scarf ===
@@ -10523,14 +10758,16 @@ Hardy Nature
 - Pound
 
 === Golisopod ===
-=== Default Set ===
-Golisopod @ Choice Band
-Ability: Emergency Exit
+=== TODO: Set ===
+Golisopod @ None
+Ability: None
 Tera Type: Normal
-- First Impression
-- Knock Off
-- Leech Life
-- Liquidation
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Sandygast ===
 === Defensive ===
@@ -10559,48 +10796,54 @@ Bold Nature
 - Shore Up
 
 === Pyukumuku ===
-=== Default Set ===
-Pyukumuku @ Leftovers
-Ability: Unaware
+=== TODO: Set ===
+Pyukumuku @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Counter
-- Mirror Coat
-- Recover
-- Toxic
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Type Null ===
-=== Default Set ===
-Type:Null @ Eviolite
-Ability: Battle Armor
+=== TODO: Set ===
+Type-Null @ None
+Ability: None
 Tera Type: Normal
-- Crush Claw
-- Payback
-- Rest
-- Sleep Talk
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Silvally ===
-=== Default Set ===
-Silvally @ Assault Vest
-Ability: RKS System
+=== TODO: Set ===
+Silvally-Normal @ None
+Ability: None
 Tera Type: Normal
-- Crunch
-- Explosion
-- Flame Charge
-- Flamethrower
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Minior ===
-=== Setup Sweeper ===
-Minior @ White Herb
-Ability: Shields Down
-Tera Type: Flying
-- Acrobatics
-- Earthquake
-- Power Gem
-- Shell Smash
+=== TODO: Set ===
+Minior-Meteor-Red @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Minior O ===
+=== Minior-O ===
 === TODO: Set ===
 Minior-Meteor-Orange @ None
 Ability: None
@@ -10612,7 +10855,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Minior Y ===
+=== Minior-Y ===
 === TODO: Set ===
 Minior-Meteor-Yellow @ None
 Ability: None
@@ -10624,7 +10867,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Minior G ===
+=== Minior-G ===
 === TODO: Set ===
 Minior-Meteor-Green @ None
 Ability: None
@@ -10636,7 +10879,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Minior B ===
+=== Minior-B ===
 === TODO: Set ===
 Minior-Meteor-Blue @ None
 Ability: None
@@ -10648,7 +10891,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Minior I ===
+=== Minior-I ===
 === TODO: Set ===
 Minior-Meteor-Indigo @ None
 Ability: None
@@ -10660,7 +10903,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Minior V ===
+=== Minior-V ===
 === TODO: Set ===
 Minior-Meteor-Violet @ None
 Ability: None
@@ -10673,44 +10916,52 @@ Hardy Nature
 - Pound
 
 === Komala ===
-=== Bulky Support ===
-Komala @ Assault Vest
-Ability: Comatose
-Tera Type: Ghost
-- Body Slam
-- Earthquake
-- Knock Off
-- Rapid Spin
+=== TODO: Set ===
+Komala @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Turtonator ===
-=== Default Set ===
-Turtonator @ Heavy-Duty Boots
-Ability: Shell Armor
+=== TODO: Set ===
+Turtonator @ None
+Ability: None
 Tera Type: Normal
-- Body Press
-- Draco Meteor
-- Earthquake
-- Fire Blast
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Togedemaru ===
-=== Default Set ===
-Togedemaru @ Choice Band
-Ability: Iron Barbs
+=== TODO: Set ===
+Togedemaru @ None
+Ability: None
 Tera Type: Normal
-- Iron Head
-- Nuzzle
-- Spiky Shield
-- U-turn
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Mimikyu ===
-=== Fast Bulky Setup ===
-Mimikyu @ Life Orb
-Ability: Disguise
-Tera Type: Fairy
-- Play Rough
-- Shadow Claw
-- Shadow Sneak
-- Swords Dance
+=== TODO: Set ===
+Mimikyu-Disguised @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Bruxish ===
 === Choice Scarf ===
@@ -10725,16 +10976,16 @@ Jolly Nature
 - Crunch
 
 === Drampa ===
-=== Default Set ===
-Drampa @ Choice Specs
-Ability: Berserk
+=== TODO: Set ===
+Drampa @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Draco Meteor
-- Fire Blast
-- Glare
-- Hyper Voice
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Dhelmise ===
 === Rapid Spin ===
@@ -10748,7 +10999,7 @@ Adamant Nature
 - Poltergeist
 - Synthesis
 
-=== Jangmo o ===
+=== Jangmo-o ===
 === TODO: Set ===
 Jangmo-O @ None
 Ability: None
@@ -10760,7 +11011,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Hakamo o ===
+=== Hakamo-o ===
 === Double Dance ===
 Hakamo-o @ Eviolite
 Ability: Soundproof
@@ -10772,7 +11023,7 @@ Jolly Nature
 - Drain Punch
 - Substitute
 
-=== Kommo o ===
+=== Kommo-o ===
 === Clangorous Soul ===
 Kommo-o @ Throat Spray
 Ability: Soundproof
@@ -10921,16 +11172,16 @@ Jolly Nature
 - Rapid Spin
 
 === Xurkitree ===
-=== Default Set ===
-Xurkitree @ Blunder Policy
+=== TODO: Set ===
+Xurkitree @ None
 Ability: Beast Boost
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Dazzling Gleam
-- Energy Ball
-- Hypnosis
-- Thunderbolt
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Celesteela ===
 === Defensive ===
@@ -10957,14 +11208,16 @@ Jolly Nature
 - Giga Impact
 
 === Guzzlord ===
-=== Default Set ===
-Guzzlord @ Assault Vest
+=== TODO: Set ===
+Guzzlord @ None
 Ability: Beast Boost
 Tera Type: Normal
-- Dark Pulse
-- Draco Meteor
-- Fire Blast
-- Knock Off
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Necrozma ===
 === Psychic Terrain Sweeper ===
@@ -10979,7 +11232,7 @@ Quiet Nature
 - Meteor Beam
 - Trick Room
 
-=== Necrozma D M ===
+=== Necrozma-DM ===
 === Weakness Policy Flame Charge ===
 Necrozma-Dusk-Mane @ Weakness Policy
 Ability: Prism Armor
@@ -10992,7 +11245,7 @@ Brave Nature
 - Swords Dance
 - Flame Charge
 
-=== Necrozma D W ===
+=== Necrozma-DW ===
 === Offensive Trick Room ===
 Necrozma-Dawn-Wings @ Power Herb
 Ability: Prism Armor
@@ -11017,7 +11270,7 @@ Bold Nature
 - Encore
 - Volt Switch
 
-=== Magearna O ===
+=== Magearna-O ===
 === TODO: Set ===
 Magearna-Original @ None
 Ability: Soul Heart
@@ -11054,28 +11307,28 @@ Hardy Nature
 - Pound
 
 === Naganadel ===
-=== Default Set ===
-Naganadel @ Choice Specs
+=== TODO: Set ===
+Naganadel @ None
 Ability: Beast Boost
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Air Slash
-- Draco Meteor
-- Fire Blast
-- Nasty Plot
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Stakataka ===
-=== Default Set ===
-Stakataka @ Air Balloon
+=== TODO: Set ===
+Stakataka @ None
 Ability: Beast Boost
 Tera Type: Normal
-EVs: 0 SPE
-Adamant Nature
-- Body Press
-- Earthquake
-- Gyro Ball
-- Stealth Rock
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Blacephalon ===
 === Choice Scarf ===
@@ -11247,14 +11500,16 @@ Hardy Nature
 - Pound
 
 === Greedent ===
-=== Bulky Setup ===
-Greedent @ Sitrus Berry
-Ability: Cheek Pouch
-Tera Type: Ghost
-- Body Slam
-- Double-Edge
-- Earthquake
-- Knock Off
+=== TODO: Set ===
+Greedent @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Rookidee ===
 === TODO: Set ===
@@ -11317,14 +11572,16 @@ Hardy Nature
 - Pound
 
 === Orbeetle ===
-=== Default Set ===
-Orbeetle @ Heavy-Duty Boots
-Ability: Frisk
+=== TODO: Set ===
+Orbeetle @ None
+Ability: None
 Tera Type: Normal
-- Body Press
-- Bug Buzz
-- Calm Mind
-- Psychic
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Nickit ===
 === TODO: Set ===
@@ -11339,14 +11596,16 @@ Hardy Nature
 - Pound
 
 === Thievul ===
-=== Default Set ===
-Thievul @ Choice Specs
-Ability: Stakeout
+=== TODO: Set ===
+Thievul @ None
+Ability: None
 Tera Type: Normal
-- Dark Pulse
-- Foul Play
-- Grass Knot
-- Nasty Plot
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Gossifleur ===
 === TODO: Set ===
@@ -11361,14 +11620,16 @@ Hardy Nature
 - Pound
 
 === Eldegoss ===
-=== Default Set ===
-Eldegoss @ Heavy-Duty Boots
-Ability: Regenerator
+=== TODO: Set ===
+Eldegoss @ None
+Ability: None
 Tera Type: Normal
-- Energy Ball
-- Leech Seed
-- Pollen Puff
-- Rapid Spin
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Wooloo ===
 === TODO: Set ===
@@ -11383,16 +11644,16 @@ Hardy Nature
 - Pound
 
 === Dubwool ===
-=== Default Set ===
-Dubwool @ Leftovers
-Ability: Bulletproof
+=== TODO: Set ===
+Dubwool @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Body Press
-- Cotton Guard
-- Rest
-- Sleep Talk
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Chewtle ===
 === Shell Smash ===
@@ -11431,14 +11692,16 @@ Hardy Nature
 - Pound
 
 === Boltund ===
-=== Default Set ===
-Boltund @ Choice Band
-Ability: Strong Jaw
+=== TODO: Set ===
+Boltund @ None
+Ability: None
 Tera Type: Normal
-- Bulk Up
-- Crunch
-- Fire Fang
-- Play Rough
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Rolycoly ===
 === TODO: Set ===
@@ -11490,14 +11753,16 @@ Hardy Nature
 - Pound
 
 === Flapple ===
-=== Fast Attacker ===
-Flapple @ Choice Band
-Ability: Hustle
-Tera Type: Dragon
-- Dragon Dance
-- Grav Apple
-- Outrage
-- Sucker Punch
+=== TODO: Set ===
+Flapple @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Appletun ===
 === Special Wall ===
@@ -11584,18 +11849,18 @@ Hardy Nature
 - Pound
 
 === Toxtricity ===
-=== Fast Attacker ===
-Toxtricity @ Choice Scarf
-Ability: Punk Rock
+=== TODO: Set ===
+Toxtricity-Amped @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Boomburst
-- Overdrive
-- Sludge Wave
-- Volt Switch
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Toxtricity L ===
+=== Toxtricity-L ===
 === Choice Specs ===
 Toxtricity-Low-Key @ Choice Specs
 Ability: Punk Rock
@@ -11621,14 +11886,16 @@ Hardy Nature
 - Pound
 
 === Centiskorch ===
-=== Default Set ===
-Centiskorch @ Heavy-Duty Boots
-Ability: Flash Fire
+=== TODO: Set ===
+Centiskorch @ None
+Ability: None
 Tera Type: Normal
-- Coil
-- Fire Lash
-- Knock Off
-- Leech Life
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Clobbopus ===
 === TODO: Set ===
@@ -11643,14 +11910,16 @@ Hardy Nature
 - Pound
 
 === Grapploct ===
-=== Default Set ===
-Grapploct @ Life Orb
-Ability: Limber
+=== TODO: Set ===
+Grapploct @ None
+Ability: None
 Tera Type: Normal
-- Brutal Swing
-- Bulk Up
-- Drain Punch
-- Ice Punch
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Sinistea ===
 === TODO: Set ===
@@ -11665,16 +11934,16 @@ Hardy Nature
 - Pound
 
 === Polteageist ===
-=== Setup Sweeper ===
-Polteageist @ White Herb
-Ability: Cursed Body
-Tera Type: Psychic
-EVs: 0 ATK
-Adamant Nature
-- Giga Drain
-- Shadow Ball
-- Shell Smash
-- Stored Power
+=== TODO: Set ===
+Polteageist-Phony @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Hatenna ===
 === TODO: Set ===
@@ -11749,14 +12018,16 @@ Careful Nature
 - Sucker Punch
 
 === Obstagoon ===
-=== Default Set ===
-Obstagoon @ Flame Orb
-Ability: Guts
+=== TODO: Set ===
+Obstagoon @ None
+Ability: None
 Tera Type: Normal
-- Bulk Up
-- Close Combat
-- Facade
-- Knock Off
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Perrserker ===
 === Hazard Setter ===
@@ -11771,46 +12042,52 @@ Adamant Nature
 - U-turn
 
 === Cursola ===
-=== Default Set ===
-Cursola @ Choice Specs
-Ability: Weak Armor
+=== TODO: Set ===
+Cursola @ None
+Ability: None
 Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Earth Power
-- Hydro Pump
-- Ice Beam
-- Shadow Ball
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Sirfetchd ===
-=== Default Set ===
-Sirfetch’d @ Choice Band
-Ability: Scrappy
+=== Sirfetch'd ===
+=== TODO: Set ===
+Sirfetchd @ None
+Ability: None
 Tera Type: Normal
-- Brave Bird
-- Close Combat
-- First Impression
-- Knock Off
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Mr Rime ===
-=== Default Set ===
-Mr.Rime @ Choice Scarf
-Ability: Screen Cleaner
+=== Mr. Rime ===
+=== TODO: Set ===
+Mr-Rime @ None
+Ability: None
 Tera Type: Normal
-- Focus Blast
-- Freeze-Dry
-- Psychic
-- Rapid Spin
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Runerigus ===
-=== Default Set ===
-Runerigus @ Leftovers
-Ability: Wandering Spirit
+=== TODO: Set ===
+Runerigus @ None
+Ability: None
 Tera Type: Normal
-- Earthquake
-- Haze
-- Poltergeist
-- Stealth Rock
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Milcery ===
 === TODO: Set ===
@@ -11825,26 +12102,28 @@ Hardy Nature
 - Pound
 
 === Alcremie ===
-=== Bulky Setup ===
-Alcremie @ Leftovers
-Ability: Aroma Veil
-Tera Type: Poison
-EVs: 0 ATK
-Adamant Nature
-- Alluring Voice
-- Calm Mind
-- Psychic
-- Psyshock
+=== TODO: Set ===
+Alcremie-Strawberry-Vanilla-Cream @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Falinks ===
-=== Setup Sweeper ===
-Falinks @ Life Orb
-Ability: Defiant
-Tera Type: Dark
-- Close Combat
-- Iron Head
-- Knock Off
-- No Retreat
+=== TODO: Set ===
+Falinks @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Pincurchin ===
 === Terrain Setter ===
@@ -11884,40 +12163,42 @@ Modest Nature
 - Stun Spore
 
 === Stonjourner ===
-=== Fast Attacker ===
-Stonjourner @ Life Orb
-Ability: Power Spot
-Tera Type: Fire
-- Earthquake
-- Heat Crash
-- Rock Polish
-- Stealth Rock
+=== TODO: Set ===
+Stonjourner @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Eiscue ===
-=== Setup Sweeper ===
-Eiscue @ Sitrus Berry
-Ability: Ice Face
-Tera Type: Water
-EVs: 81 HP
-Adamant Nature
-- Belly Drum
-- Ice Spinner
-- Iron Head
-- Liquidation
+=== TODO: Set ===
+Eiscue-Ice @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Indeedee ===
-=== Fast Attacker ===
-Indeedee @ Choice Scarf
-Ability: Psychic Surge
-Tera Type: Psychic
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Dazzling Gleam
-- Expanding Force
-- Healing Wish
+=== TODO: Set ===
+Indeedee-M @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Indeedee F ===
+=== Indeedee-F ===
 === Terrain Setter ===
 Indeedee-F @ Terrain Extender
 Ability: Psychic Surge
@@ -11930,14 +12211,16 @@ Timid Nature
 - Healing Wish
 
 === Morpeko ===
-=== Bulky Attacker ===
-Morpeko @ Leftovers
-Ability: Hunger Switch
-Tera Type: Electric
-- Aura Wheel
-- Knock Off
-- Protect
-- Rapid Spin
+=== TODO: Set ===
+Morpeko-Full-Belly @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Cufant ===
 === TODO: Set ===
@@ -11964,14 +12247,16 @@ Adamant Nature
 - Knock Off
 
 === Dracozolt ===
-=== Default Set ===
-Dracozolt @ Choice Band
-Ability: Hustle
+=== TODO: Set ===
+Dracozolt @ None
+Ability: None
 Tera Type: Normal
-- Aerial Ace
-- Bolt Beak
-- Earthquake
-- Low Kick
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Arctozolt ===
 === Slush Rush (Ice) ===
@@ -11986,24 +12271,28 @@ Naughty Nature
 - Substitute
 
 === Dracovish ===
-=== Default Set ===
-Dracovish @ Choice Band
-Ability: Sand Rush
+=== TODO: Set ===
+Dracovish @ None
+Ability: None
 Tera Type: Normal
-- Crunch
-- Fishious Rend
-- Ice Fang
-- Low Kick
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Arctovish ===
-=== Default Set ===
-Arctovish @ Assault Vest
-Ability: Slush Rush
+=== TODO: Set ===
+Arctovish @ None
+Ability: None
 Tera Type: Normal
-- Body Slam
-- Fishious Rend
-- Freeze-Dry
-- Icicle Crash
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Duraludon ===
 === Eviolite ===
@@ -12054,24 +12343,28 @@ Naive Nature
 - U-turn
 
 === Zacian ===
-=== Fast Attacker ===
-Zacian @ Choice Band
-Ability: Intrepid Sword
-Tera Type: Fighting
-- Close Combat
-- Crunch
-- Play Rough
-- Psychic Fangs
+=== TODO: Set ===
+Zacian-Hero @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Zamazenta ===
-=== Bulky Attacker ===
-Zamazenta @ Choice Band
-Ability: Dauntless Shield
-Tera Type: Dark
-- Close Combat
-- Crunch
-- Iron Head
-- Psychic Fangs
+=== TODO: Set ===
+Zamazenta-Hero @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Eternatus ===
 === Cosmic Power ===
@@ -12099,16 +12392,18 @@ Hardy Nature
 - Pound
 
 === Urshifu ===
-=== Fast Attacker ===
-Urshifu @ Choice Band
-Ability: Unseen Fist
-Tera Type: Dark
-- Close Combat
-- Poison Jab
-- Sucker Punch
-- Swords Dance
+=== TODO: Set ===
+Urshifu-Single-Strike @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Urshifu R ===
+=== Urshifu-R ===
 === Choice Band ===
 Urshifu-Rapid-Strike @ Choice Band
 Ability: Unseen Fist
@@ -12132,7 +12427,7 @@ Jolly Nature
 - Power Whip
 - Jungle Healing
 
-=== Zarude D ===
+=== Zarude-D ===
 === Swords Dance ===
 Zarude-Dada @ Leftovers
 Ability: Leaf Guard
@@ -12207,7 +12502,7 @@ Timid Nature
 - Stored Power
 - Giga Drain
 
-=== Calyrex I ===
+=== Calyrex-I ===
 === Bulky Trick Room Sweeper ===
 Calyrex-Ice @ Clear Amulet
 Ability: As One Ice Rider
@@ -12220,7 +12515,7 @@ Adamant Nature
 - Trick Room
 - Protect
 
-=== Calyrex S ===
+=== Calyrex-S ===
 === Setup Sweeper ===
 Calyrex-Shadow @ Life Orb
 Ability: As One Shadow Rider
@@ -12234,14 +12529,16 @@ Timid Nature
 - Protect
 
 === Wyrdeer ===
-=== Bulky Attacker ===
-Wyrdeer @ Assault Vest
-Ability: Intimidate
-Tera Type: Ground
-- Body Slam
-- Earthquake
-- Megahorn
-- Psychic Noise
+=== TODO: Set ===
+Wyrdeer @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Kleavor ===
 === Lead ===
@@ -12267,7 +12564,7 @@ Adamant Nature
 - Headlong Rush
 - Fire Punch
 
-=== Ursaluna B ===
+=== Ursaluna-B ===
 === Chople Berry ===
 Ursaluna-Bloodmoon @ Chople Berry
 Ability: Mind's Eye
@@ -12280,16 +12577,18 @@ Modest Nature
 - Hyper Voice
 
 === Basculegion ===
-=== AV Pivot ===
-Basculegion @ Assault Vest
-Ability: Adaptability
-Tera Type: Water
-- Aqua Jet
-- Flip Turn
-- Shadow Ball
-- Wave Crash
+=== TODO: Set ===
+Basculegion-M @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Basculegion F ===
+=== Basculegion-F ===
 === Choice Scarf ===
 Basculegion-F @ Choice Scarf
 Ability: Adaptability
@@ -12326,16 +12625,18 @@ Adamant Nature
 - Liquidation
 
 === Enamorus ===
-=== Setup Sweeper ===
-Enamorus @ Heavy-Duty Boots
-Ability: Contrary
-Tera Type: Fighting
-- Play Rough
-- Substitute
-- Superpower
-- Taunt
+=== TODO: Set ===
+Enamorus-Incarnate @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Enamorus T ===
+=== Enamorus-T ===
 === Offensive ===
 Enamorus-Therian @ Heavy-Duty Boots
 Ability: Overcoat
@@ -12469,24 +12770,28 @@ Hardy Nature
 - Pound
 
 === Oinkologne ===
-=== Bulky Setup ===
-Oinkologne @ Leftovers
-Ability: Thick Fat
-Tera Type: Ground
-- Body Slam
-- Curse
-- Double-Edge
-- High Horsepower
+=== TODO: Set ===
+Oinkologne-M @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Oinkologne F ===
-=== Bulky Support ===
-Oinkologne-F @ Leftovers
-Ability: Aroma Veil
-Tera Type: Fairy
-- Body Slam
-- Curse
-- Rest
-- Sleep Talk
+=== Oinkologne-F ===
+=== TODO: Set ===
+Oinkologne-F @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Tarountula ===
 === TODO: Set ===
@@ -12501,14 +12806,16 @@ Hardy Nature
 - Pound
 
 === Spidops ===
-=== Bulky Support ===
-Spidops @ Heavy-Duty Boots
-Ability: Stakeout
-Tera Type: Ghost
-- Circle Throw
-- Knock Off
-- Spikes
-- Sticky Web
+=== TODO: Set ===
+Spidops @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Nymble ===
 === Revenge Killer ===
@@ -12594,7 +12901,7 @@ Jolly Nature
 - Bite
 - Encore
 
-=== Maushold 3 ===
+=== Maushold-3 ===
 === TODO: Set ===
 Maushold-Three @ None
 Ability: None
@@ -12668,16 +12975,18 @@ Bold Nature
 - Leech Seed
 
 === Squawkabilly ===
-=== Wallbreaker ===
-Squawkabilly @ Flame Orb
-Ability: Guts
+=== TODO: Set ===
+Squawkabilly-Green @ None
+Ability: None
 Tera Type: Normal
-- Brave Bird
-- Facade
-- Protect
-- Quick Attack
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Squawkabilly B ===
+=== Squawkabilly-B ===
 === TODO: Set ===
 Squawkabilly-Blue @ None
 Ability: None
@@ -12689,7 +12998,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Squawkabilly Y ===
+=== Squawkabilly-Y ===
 === TODO: Set ===
 Squawkabilly-Yellow @ None
 Ability: None
@@ -12701,7 +13010,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Squawkabilly W ===
+=== Squawkabilly-W ===
 === TODO: Set ===
 Squawkabilly-White @ None
 Ability: None
@@ -12933,14 +13242,16 @@ Timid Nature
 - Earth Power
 
 === Klawf ===
-=== Setup Sweeper ===
-Klawf @ Expert Belt
-Ability: Anger Shell
-Tera Type: Dark
-- Crabhammer
-- High Horsepower
-- Knock Off
-- Stone Edge
+=== TODO: Set ===
+Klawf @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Capsakid ===
 === TODO: Set ===
@@ -13065,14 +13376,16 @@ Hardy Nature
 - Pound
 
 === Wugtrio ===
-=== Fast Attacker ===
-Wugtrio @ Choice Band
-Ability: Gooey
-Tera Type: Dark
-- Aqua Jet
-- Liquidation
-- Stomping Tantrum
-- Throat Chop
+=== TODO: Set ===
+Wugtrio @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Bombirdier ===
 === Offensive ===
@@ -13100,14 +13413,16 @@ Timid Nature
 - Protect
 
 === Palafin ===
-=== Wallbreaker ===
-Palafin @ Choice Band
-Ability: Zero to Hero
-Tera Type: Fighting
-- Close Combat
-- Flip Turn
-- Jet Punch
-- Wave Crash
+=== TODO: Set ===
+Palafin-Zero @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Varoom ===
 === Defensive Pivot ===
@@ -13281,7 +13596,7 @@ Timid Nature
 - Surf
 - Rapid Spin
 
-=== Tatsugiri D ===
+=== Tatsugiri-D ===
 === TODO: Set ===
 Tatsugiri-Droopy @ None
 Ability: None
@@ -13293,7 +13608,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Tatsugiri S ===
+=== Tatsugiri-S ===
 === TODO: Set ===
 Tatsugiri-Stretchy @ None
 Ability: None
@@ -13343,18 +13658,18 @@ Quiet Nature
 - Tera Blast
 
 === Dudunsparce ===
-=== Bulky Attacker ===
-Dudunsparce @ Leftovers
-Ability: Rattled
-Tera Type: Fairy
-EVs: 0 ATK
-Adamant Nature
-- Boomburst
-- Calm Mind
-- Earth Power
-- Roost
+=== TODO: Set ===
+Dudunsparce-Two-Segment @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
-=== Dudunsparce 3 ===
+=== Dudunsparce-3 ===
 === TODO: Set ===
 Dudunsparce-Three-Segment @ None
 Ability: None
@@ -13574,7 +13889,7 @@ Hardy Nature
 - Pound
 - Pound
 
-=== Gimmighoul R ===
+=== Gimmighoul-R ===
 === TODO: Set ===
 Gimmighoul-Roaming @ None
 Ability: None
@@ -13599,7 +13914,7 @@ Modest Nature
 - Make It Rain
 - Recover
 
-=== Wo Chien ===
+=== Wo-Chien ===
 === Specially Defensive ===
 Wo-Chien @ Leftovers
 Ability: Tablets of Ruin
@@ -13611,7 +13926,7 @@ Careful Nature
 - Leech Seed
 - Protect
 
-=== Chien Pao ===
+=== Chien-Pao ===
 === Choice Band ===
 Chien-Pao @ Choice Band
 Ability: Sword of Ruin
@@ -13623,7 +13938,7 @@ Jolly Nature
 - Throat Chop
 - Giga Impact
 
-=== Ting Lu ===
+=== Ting-Lu ===
 === Special Wall ===
 Ting-Lu @ Leftovers
 Ability: Vessel of Ruin
@@ -13635,7 +13950,7 @@ Careful Nature
 - Spikes
 - Whirlwind
 
-=== Chi Yu ===
+=== Chi-Yu ===
 === Choice Item Attacker ===
 Chi-Yu @ Choice Scarf
 Ability: Beads of Ruin
@@ -13745,16 +14060,16 @@ Hardy Nature
 - Pound
 
 === Sinistcha ===
-=== Bulky Setup ===
-Sinistcha @ Leftovers
-Ability: Heatproof
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Matcha Gotcha
-- Shadow Ball
-- Strength Sap
+=== TODO: Set ===
+Sinistcha-Unremarkable @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Okidogi ===
 === Assault Vest ===
@@ -13804,7 +14119,7 @@ Jolly Nature
 - U-turn
 - Stomping Tantrum
 
-=== Ogerpon C ===
+=== Ogerpon-C ===
 === Swords Dance ===
 Ogerpon-Cornerstone @ Cornerstone Mask
 Ability: Sturdy
@@ -13816,7 +14131,7 @@ Jolly Nature
 - Power Whip
 - Stomping Tantrum
 
-=== Ogerpon H ===
+=== Ogerpon-H ===
 === Swords Dance ===
 Ogerpon-Hearthflame @ Hearthflame Mask
 Ability: Mold Breaker
@@ -13828,7 +14143,7 @@ Jolly Nature
 - Power Whip
 - Trailblaze
 
-=== Ogerpon W ===
+=== Ogerpon-W ===
 === Swords Dance ===
 Ogerpon-Wellspring @ Wellspring Mask
 Ability: Water Absorb
@@ -13916,14 +14231,16 @@ Timid Nature
 - Volt Switch
 
 === Terapagos ===
-=== Setup Sweeper ===
-Terapagos @ Chesto Berry
-Ability: Tera Shift
-Tera Type: Stellar
-- Calm Mind
-- Dark Pulse
-- Rapid Spin
-- Rest
+=== TODO: Set ===
+Terapagos-Normal @ None
+Ability: None
+Tera Type: Normal
+EVs: 252 HP / 252 Atk / 4 Def
+Hardy Nature
+- Pound
+- Pound
+- Pound
+- Pound
 
 === Pecharunt ===
 === Pivot ===
@@ -13937,2032 +14254,3 @@ Timid Nature
 - Hex
 - Parting Shot
 - Recover
-
-=== Arcanine Hisui ===
-=== Bulky Attacker ===
-Arcanine-Hisui @ Heavy-Duty Boots
-Ability: Rock Head
-Tera Type: Fire
-- Extreme Speed
-- Flare Blitz
-- Head Smash
-- Morning Sun
-
-=== Arceus Bug ===
-=== Bulky Setup ===
-Arceus-Bug @ Insect Plate
-Ability: Multitype
-Tera Type: Fire
-EVs: 81 HP / 0 ATK
-Adamant Nature
-- Calm Mind
-- Earth Power
-- Fire Blast
-- Judgment
-
-=== Arceus Dark ===
-=== Bulky Setup ===
-Arceus-Dark @ Dread Plate
-Ability: Multitype
-Tera Type: Fairy
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Dazzling Gleam
-- Judgment
-- Recover
-
-=== Arceus Dragon ===
-=== Fast Bulky Setup ===
-Arceus-Dragon @ Draco Plate
-Ability: Multitype
-Tera Type: Fire
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Fire Blast
-- Judgment
-- Recover
-
-=== Arceus Electric ===
-=== Bulky Setup ===
-Arceus-Electric @ Zap Plate
-Ability: Multitype
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Ice Beam
-- Judgment
-- Recover
-
-=== Arceus Fairy ===
-=== Bulky Setup ===
-Arceus-Fairy @ Pixie Plate
-Ability: Multitype
-Tera Type: Ground
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Earth Power
-- Judgment
-- Recover
-
-=== Arceus Fighting ===
-=== Bulky Setup ===
-Arceus-Fighting @ Fist Plate
-Ability: Multitype
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Body Press
-- Iron Defense
-- Recover
-- Shadow Ball
-
-=== Arceus Fire ===
-=== Fast Bulky Setup ===
-Arceus-Fire @ Flame Plate
-Ability: Multitype
-Tera Type: Fire
-EVs: 81 HP
-Adamant Nature
-- Dragon Dance
-- Earthquake
-- Flare Blitz
-- Recover
-
-=== Arceus Flying ===
-=== Bulky Setup ===
-Arceus-Flying @ Sky Plate
-Ability: Multitype
-Tera Type: Ground
-EVs: 81 HP / 0 ATK
-Adamant Nature
-- Calm Mind
-- Earth Power
-- Judgment
-- Recover
-
-=== Arceus Ghost ===
-=== Bulky Attacker ===
-Arceus-Ghost @ Spooky Plate
-Ability: Multitype
-Tera Type: Dark
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Focus Blast
-- Judgment
-- Recover
-
-=== Arceus Grass ===
-=== Bulky Setup ===
-Arceus-Grass @ Meadow Plate
-Ability: Multitype
-Tera Type: Fire
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Fire Blast
-- Judgment
-- Recover
-
-=== Arceus Ground ===
-=== Bulky Setup ===
-Arceus-Ground @ Earth Plate
-Ability: Multitype
-Tera Type: Dragon
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Fire Blast
-- Ice Beam
-- Judgment
-
-=== Arceus Ice ===
-=== Bulky Setup ===
-Arceus-Ice @ Icicle Plate
-Ability: Multitype
-Tera Type: Electric
-EVs: 81 HP / 0 ATK
-Adamant Nature
-- Calm Mind
-- Earth Power
-- Judgment
-- Recover
-
-=== Arceus Poison ===
-=== Fast Bulky Setup ===
-Arceus-Poison @ Toxic Plate
-Ability: Multitype
-Tera Type: Ground
-- Earthquake
-- Extreme Speed
-- Gunk Shot
-- Swords Dance
-
-=== Arceus Psychic ===
-=== Bulky Setup ===
-Arceus-Psychic @ Mind Plate
-Ability: Multitype
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Body Press
-- Cosmic Power
-- Recover
-- Stored Power
-
-=== Arceus Rock ===
-=== Setup Sweeper ===
-Arceus-Rock @ Stone Plate
-Ability: Multitype
-Tera Type: Ground
-- Dragon Dance
-- Earthquake
-- Recover
-- Stone Edge
-
-=== Arceus Steel ===
-=== Bulky Support ===
-Arceus-Steel @ Iron Plate
-Ability: Multitype
-Tera Type: Ghost
-- Earthquake
-- Judgment
-- Recover
-- Will-O-Wisp
-
-=== Arceus Water ===
-=== Bulky Support ===
-Arceus-Water @ Splash Plate
-Ability: Multitype
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Ice Beam
-- Judgment
-- Recover
-
-=== Articuno Galar ===
-=== Fast Bulky Setup ===
-Articuno-Galar @ Heavy-Duty Boots
-Ability: Competitive
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Freezing Glare
-- Hurricane
-- Recover
-
-=== Avalugg Hisui ===
-=== Bulky Attacker ===
-Avalugg-Hisui @ Heavy-Duty Boots
-Ability: Sturdy
-Tera Type: Flying
-- Avalanche
-- Body Press
-- Rapid Spin
-- Recover
-
-=== Braviary Hisui ===
-=== Wallbreaker ===
-Braviary-Hisui @ Choice Specs
-Ability: Tinted Lens
-Tera Type: Fairy
-- Esper Wing
-- Hurricane
-- U-turn
-- Vacuum Wave
-
-=== Calyrex Ice ===
-=== Bulky Setup ===
-Calyrex-Ice @ Weakness Policy
-Ability: As One (Glastrier)
-Tera Type: Fighting
-- Agility
-- Close Combat
-- Glacial Lance
-- High Horsepower
-
-=== Calyrex Shadow ===
-=== Fast Attacker ===
-Calyrex-Shadow @ Choice Specs
-Ability: As One (Spectrier)
-Tera Type: Dark
-EVs: 0 ATK
-Adamant Nature
-- Astral Barrage
-- Nasty Plot
-- Pollen Puff
-- Psyshock
-
-=== Decidueye Hisui ===
-=== Bulky Attacker ===
-Decidueye-Hisui @ Leftovers
-Ability: Scrappy
-Tera Type: Steel
-- Defog
-- Knock Off
-- Leaf Blade
-- Roost
-
-=== Deoxys Attack ===
-=== Fast Attacker ===
-Deoxys-Attack @ Life Orb
-Ability: Pressure
-Tera Type: Dark
-- Extreme Speed
-- Knock Off
-- Psycho Boost
-- Superpower
-
-=== Deoxys Defense ===
-=== Bulky Setup ===
-Deoxys-Defense @ Leftovers
-Ability: Pressure
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Cosmic Power
-- Night Shade
-- Recover
-- Stored Power
-
-=== Deoxys Speed ===
-=== Fast Support ===
-Deoxys-Speed @ Focus Sash
-Ability: Pressure
-Tera Type: Dark
-- Knock Off
-- Psycho Boost
-- Spikes
-- Stealth Rock
-
-=== Dialga Origin ===
-=== Fast Attacker ===
-Dialga-Origin @ Adamant Crystal
-Ability: Pressure
-Tera Type: Dragon
-- Draco Meteor
-- Fire Blast
-- Flash Cannon
-- Heavy Slam
-
-=== Dugtrio Alola ===
-=== Fast Attacker ===
-Dugtrio-Alola @ Choice Band
-Ability: Sand Force
-Tera Type: Ground
-- Earthquake
-- Iron Head
-- Stealth Rock
-- Stone Edge
-
-=== Electrode Hisui ===
-=== Fast Attacker ===
-Electrode-Hisui @ Life Orb
-Ability: Aftermath
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Giga Drain
-- Leaf Storm
-- Taunt
-- Thunder Wave
-
-=== Enamorus Therian ===
-=== Bulky Attacker ===
-Enamorus-Therian @ Assault Vest
-Ability: Overcoat
-Tera Type: Fairy
-- Earth Power
-- Moonblast
-- Mystical Fire
-- Psychic
-
-=== Exeggutor Alola ===
-=== Bulky Setup ===
-Exeggutor-Alola @ Sitrus Berry
-Ability: Harvest
-Tera Type: Fire
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Dragon Pulse
-- Flamethrower
-- Giga Drain
-
-=== Fezandipiti ===
-=== Bulky Attacker ===
-Fezandipiti @ Leftovers
-Ability: Toxic Chain
-Tera Type: Dark
-- Beat Up
-- Gunk Shot
-- Moonblast
-- Roost
-
-=== Giratina Origin ===
-=== Fast Attacker ===
-Giratina-Origin @ Griseous Core
-Ability: Levitate
-Tera Type: Dragon
-- Defog
-- Draco Meteor
-- Dragon Tail
-- Poltergeist
-
-=== Golem Alola ===
-=== Wallbreaker ===
-Golem-Alola @ Choice Band
-Ability: Galvanize
-Tera Type: Electric
-- Double-Edge
-- Earthquake
-- Explosion
-- Stone Edge
-
-=== Goodra Hisui ===
-=== AV Pivot ===
-Goodra-Hisui @ Assault Vest
-Ability: Sap Sipper
-Tera Type: Dragon
-- Draco Meteor
-- Dragon Tail
-- Earthquake
-- Fire Blast
-
-=== Greninja Bond ===
-=== Fast Attacker ===
-Greninja-Bond @ Life Orb
-Ability: Battle Bond
-Tera Type: Poison
-- Dark Pulse
-- Gunk Shot
-- Hydro Pump
-- Ice Beam
-
-=== Hoopa Unbound ===
-=== Wallbreaker ===
-Hoopa-Unbound @ Choice Band
-Ability: Magician
-Tera Type: Dark
-- Drain Punch
-- Gunk Shot
-- Hyperspace Fury
-- Trick
-
-=== Keldeo Resolute ===
-=== Bulky Setup ===
-Keldeo-Resolute @ Leftovers
-Ability: Justified
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Hydro Pump
-- Secret Sword
-- Substitute
-
-=== Kyurem Black ===
-=== Setup Sweeper ===
-Kyurem-Black @ Loaded Dice
-Ability: Teravolt
-Tera Type: Electric
-- Dragon Dance
-- Fusion Bolt
-- Icicle Spear
-- Scale Shot
-
-=== Kyurem White ===
-=== Bulky Attacker ===
-Kyurem-White @ Choice Scarf
-Ability: Turboblaze
-Tera Type: Dragon
-EVs: 0 ATK
-Adamant Nature
-- Draco Meteor
-- Freeze-Dry
-- Fusion Flare
-- Ice Beam
-
-=== Landorus Therian ===
-=== Bulky Support ===
-Landorus-Therian @ Leftovers
-Ability: Intimidate
-Tera Type: Ground
-- Earthquake
-- Stealth Rock
-- Stone Edge
-- Taunt
-
-=== Lilligant Hisui ===
-=== Setup Sweeper ===
-Lilligant-Hisui @ Life Orb
-Ability: Hustle
-Tera Type: Fighting
-- Close Combat
-- Ice Spinner
-- Leaf Blade
-- Sleep Powder
-
-=== Lycanroc Dusk ===
-=== Wallbreaker ===
-Lycanroc-Dusk @ Choice Band
-Ability: Tough Claws
-Tera Type: Fighting
-- Accelerock
-- Close Combat
-- Psychic Fangs
-- Stone Edge
-
-=== Lycanroc Midnight ===
-=== Fast Attacker ===
-Lycanroc-Midnight @ Choice Band
-Ability: No Guard
-Tera Type: Fighting
-- Close Combat
-- Knock Off
-- Play Rough
-- Stealth Rock
-
-=== Moltres Galar ===
-=== Bulky Setup ===
-Moltres-Galar @ Chesto Berry
-Ability: Berserk
-Tera Type: Dark
-EVs: 81 HP / 0 ATK
-Adamant Nature
-- Agility
-- Fiery Wrath
-- Hurricane
-- Nasty Plot
-
-=== Muk Alola ===
-=== AV Pivot ===
-Muk-Alola @ Assault Vest
-Ability: Poison Touch
-Tera Type: Dark
-- Drain Punch
-- Gunk Shot
-- Ice Punch
-- Knock Off
-
-=== Necrozma Dawn Wings ===
-=== Bulky Setup ===
-Necrozma-Dawn-Wings @ Leftovers
-Ability: Prism Armor
-Tera Type: Dark
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Moongeist Beam
-- Moonlight
-- Photon Geyser
-
-=== Necrozma Dusk Mane ===
-=== Bulky Setup ===
-Necrozma-Dusk-Mane @ Weakness Policy
-Ability: Prism Armor
-Tera Type: Ground
-- Dragon Dance
-- Earthquake
-- Morning Sun
-- Photon Geyser
-
-=== Ninetales Alola ===
-=== Fast Attacker ===
-Ninetales-Alola @ Light Clay
-Ability: Snow Warning
-Tera Type: Steel
-EVs: 0 ATK
-Adamant Nature
-- Aurora Veil
-- Blizzard
-- Freeze-Dry
-- Moonblast
-
-=== Ogerpon Cornerstone ===
-=== Setup Sweeper ===
-Ogerpon-Cornerstone @ Cornerstone Mask
-Ability: Sturdy
-Tera Type: Rock
-- Horn Leech
-- Ivy Cudgel
-- Power Whip
-- Superpower
-
-=== Ogerpon Hearthflame ===
-=== Setup Sweeper ===
-Ogerpon-Hearthflame @ Hearthflame Mask
-Ability: Mold Breaker
-Tera Type: Fire
-EVs: 77 HP
-Adamant Nature
-- Horn Leech
-- Ivy Cudgel
-- Knock Off
-- Power Whip
-
-=== Ogerpon Wellspring ===
-=== Setup Sweeper ===
-Ogerpon-Wellspring @ Wellspring Mask
-Ability: Water Absorb
-Tera Type: Water
-- Horn Leech
-- Ivy Cudgel
-- Knock Off
-- Play Rough
-
-=== Oricorio Pa u ===
-=== Setup Sweeper ===
-Oricorio-Pa'u @ Heavy-Duty Boots
-Ability: Dancer
-Tera Type: Fighting
-EVs: 0 ATK
-Adamant Nature
-- Hurricane
-- Quiver Dance
-- Revelation Dance
-- Roost
-
-=== Oricorio Pom Pom ===
-=== Setup Sweeper ===
-Oricorio-Pom-Pom @ Heavy-Duty Boots
-Ability: Dancer
-Tera Type: Ground
-EVs: 0 ATK
-Adamant Nature
-- Hurricane
-- Quiver Dance
-- Revelation Dance
-- Roost
-
-=== Oricorio Sensu ===
-=== Setup Sweeper ===
-Oricorio-Sensu @ Heavy-Duty Boots
-Ability: Dancer
-Tera Type: Fighting
-EVs: 0 ATK
-Adamant Nature
-- Hurricane
-- Quiver Dance
-- Revelation Dance
-- Roost
-
-=== Palkia Origin ===
-=== Bulky Attacker ===
-Palkia-Origin @ Lustrous Globe
-Ability: Pressure
-Tera Type: Dragon
-EVs: 0 ATK
-Adamant Nature
-- Draco Meteor
-- Fire Blast
-- Hydro Pump
-- Spacial Rend
-
-=== Persian Alola ===
-=== Fast Bulky Setup ===
-Persian-Alola @ Leftovers
-Ability: Fur Coat
-Tera Type: Dark
-EVs: 0 ATK
-Adamant Nature
-- Dark Pulse
-- Hypnosis
-- Nasty Plot
-- Power Gem
-
-=== Qwilfish Hisui ===
-=== Bulky Support ===
-Qwilfish-Hisui @ Eviolite
-Ability: Intimidate
-Tera Type: Flying
-- Crunch
-- Gunk Shot
-- Spikes
-- Taunt
-
-=== Raichu Alola ===
-=== Fast Attacker ===
-Raichu-Alola @ Choice Specs
-Ability: Surge Surfer
-Tera Type: Fairy
-EVs: 0 ATK
-Adamant Nature
-- Alluring Voice
-- Focus Blast
-- Grass Knot
-- Psychic
-
-=== Rotom Fan ===
-=== Bulky Attacker ===
-Rotom-Fan @ Heavy-Duty Boots
-Ability: Levitate
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Air Slash
-- Nasty Plot
-- Thunder Wave
-- Thunderbolt
-
-=== Rotom Frost ===
-=== Fast Attacker ===
-Rotom-Frost @ Heavy-Duty Boots
-Ability: Levitate
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Blizzard
-- Nasty Plot
-- Thunderbolt
-- Volt Switch
-
-=== Rotom Heat ===
-=== Bulky Attacker ===
-Rotom-Heat @ Heavy-Duty Boots
-Ability: Levitate
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Nasty Plot
-- Overheat
-- Pain Split
-- Thunderbolt
-
-=== Rotom Mow ===
-=== Bulky Attacker ===
-Rotom-Mow @ Choice Scarf
-Ability: Levitate
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Leaf Storm
-- Nasty Plot
-- Thunderbolt
-- Trick
-
-=== Rotom Wash ===
-=== Bulky Attacker ===
-Rotom-Wash @ Choice Scarf
-Ability: Levitate
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Hydro Pump
-- Nasty Plot
-- Pain Split
-- Thunderbolt
-
-=== Samurott Hisui ===
-=== Fast Attacker ===
-Samurott-Hisui @ Choice Band
-Ability: Sharpness
-Tera Type: Dark
-- Ceaseless Edge
-- Flip Turn
-- Razor Shell
-- Sacred Sword
-
-=== Sandslash Alola ===
-=== Bulky Support ===
-Sandslash-Alola @ Assault Vest
-Ability: Slush Rush
-Tera Type: Flying
-- Earthquake
-- Iron Head
-- Knock Off
-- Rapid Spin
-
-=== Shaymin Sky ===
-=== Fast Attacker ===
-Shaymin-Sky @ Choice Specs
-Ability: Serene Grace
-Tera Type: Flying
-EVs: 0 ATK
-Adamant Nature
-- Air Slash
-- Dazzling Gleam
-- Earth Power
-- Seed Flare
-
-=== Slowbro Galar ===
-=== Wallbreaker ===
-Slowbro-Galar @ Life Orb
-Ability: Regenerator
-Tera Type: Poison
-EVs: 0 SPE
-Adamant Nature
-- Fire Blast
-- Psychic
-- Shell Side Arm
-- Trick Room
-
-=== Slowking Galar ===
-=== Bulky Attacker ===
-Slowking-Galar @ Heavy-Duty Boots
-Ability: Regenerator
-Tera Type: Dark
-EVs: 0 ATK
-Adamant Nature
-- Chilly Reception
-- Fire Blast
-- Psychic Noise
-- Psyshock
-
-=== Squawkabilly Blue ===
-=== Wallbreaker ===
-Squawkabilly-Blue @ Flame Orb
-Ability: Guts
-Tera Type: Normal
-- Brave Bird
-- Facade
-- Protect
-- Quick Attack
-
-=== Squawkabilly White ===
-=== Wallbreaker ===
-Squawkabilly-White @ Choice Band
-Ability: Hustle
-Tera Type: Flying
-- Brave Bird
-- Double-Edge
-- Foul Play
-- Parting Shot
-
-=== Squawkabilly Yellow ===
-=== Wallbreaker ===
-Squawkabilly-Yellow @ Choice Band
-Ability: Hustle
-Tera Type: Flying
-- Brave Bird
-- Double-Edge
-- Foul Play
-- Parting Shot
-
-=== Tauros Paldea Aqua ===
-=== Wallbreaker ===
-Tauros-Paldea-Aqua @ Choice Band
-Ability: Intimidate
-Tera Type: Water
-- Aqua Jet
-- Close Combat
-- Stone Edge
-- Wave Crash
-
-=== Tauros Paldea Blaze ===
-=== Wallbreaker ===
-Tauros-Paldea-Blaze @ Choice Band
-Ability: Intimidate
-Tera Type: Fighting
-- Close Combat
-- Flare Blitz
-- Stone Edge
-- Wild Charge
-
-=== Tauros Paldea Combat ===
-=== Wallbreaker ===
-Tauros-Paldea-Combat @ Choice Band
-Ability: Intimidate
-Tera Type: Dark
-- Bulk Up
-- Close Combat
-- Earthquake
-- Iron Head
-
-=== Thundurus Therian ===
-=== Fast Attacker ===
-Thundurus-Therian @ Choice Scarf
-Ability: Volt Absorb
-Tera Type: Electric
-EVs: 0 ATK
-Adamant Nature
-- Focus Blast
-- Grass Knot
-- Nasty Plot
-- Psychic
-
-=== Tornadus Therian ===
-=== AV Pivot ===
-Tornadus-Therian @ Assault Vest
-Ability: Regenerator
-Tera Type: Dark
-- Bleakwind Storm
-- Heat Wave
-- Knock Off
-- U-turn
-
-=== Typhlosion Hisui ===
-=== Fast Bulky Setup ===
-Typhlosion-Hisui @ Heavy-Duty Boots
-Ability: Blaze
-Tera Type: Fighting
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Fire Blast
-- Focus Blast
-- Shadow Ball
-
-=== Ursaluna Bloodmoon ===
-=== Bulky Attacker ===
-Ursaluna-Bloodmoon @ Leftovers
-Ability: Mind's Eye
-Tera Type: Ghost
-EVs: 0 ATK
-Adamant Nature
-- Blood Moon
-- Calm Mind
-- Earth Power
-- Moonlight
-
-=== Urshifu Rapid Strike ===
-=== Fast Attacker ===
-Urshifu-Rapid-Strike @ Choice Band
-Ability: Unseen Fist
-Tera Type: Water
-- Aqua Jet
-- Close Combat
-- Ice Spinner
-- Surging Strikes
-
-=== Weezing Galar ===
-=== Bulky Support ===
-Weezing-Galar @ Leftovers
-Ability: Levitate
-Tera Type: Steel
-- Defog
-- Fire Blast
-- Gunk Shot
-- Pain Split
-
-=== Zacian Crowned ===
-=== Setup Sweeper ===
-Zacian-Crowned @ Rusted Sword
-Ability: Intrepid Sword
-Tera Type: Fighting
-- Behemoth Blade
-- Close Combat
-- Play Rough
-- Swords Dance
-
-=== Zamazenta Crowned ===
-=== Bulky Setup ===
-Zamazenta-Crowned @ Rusted Shield
-Ability: Dauntless Shield
-Tera Type: Fighting
-- Body Press
-- Heavy Slam
-- Iron Defense
-- Stone Edge
-
-=== Zapdos Galar ===
-=== Fast Attacker ===
-Zapdos-Galar @ Choice Band
-Ability: Defiant
-Tera Type: Dark
-- Brave Bird
-- Bulk Up
-- Close Combat
-- Knock Off
-
-=== Zoroark Hisui ===
-=== Fast Attacker ===
-Zoroark-Hisui @ Life Orb
-Ability: Illusion
-Tera Type: Fighting
-- Focus Blast
-- Hyper Voice
-- Poltergeist
-- Will-O-Wisp
-
-=== Aegislash Blade ===
-=== Default Set ===
-Aegislash-Blade @ Choice Band
-Ability: Stance Change
-Tera Type: Normal
-- Close Combat
-- Iron Head
-- Shadow Claw
-- Shadow Sneak
-
-=== Alcremie Gmax ===
-=== Default Set ===
-Alcremie-Gmax @ Leftovers
-Ability: Aroma Veil
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Dazzling Gleam
-- Mystical Fire
-- Psychic
-
-=== Appletun Gmax ===
-=== Default Set ===
-Appletun-Gmax @ Leftovers
-Ability: Thick Fat
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Apple Acid
-- Draco Meteor
-- Leech Seed
-- Recover
-
-=== Blastoise Gmax ===
-=== Default Set ===
-Blastoise-Gmax @ Leftovers
-Ability: Torrent
-Tera Type: Normal
-- Ice Beam
-- Protect
-- Rapid Spin
-- Scald
-
-=== Butterfree Gmax ===
-=== Default Set ===
-Butterfree-Gmax @ Heavy-Duty Boots
-Ability: Tinted Lens
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Air Slash
-- Bug Buzz
-- Quiver Dance
-- Sleep Powder
-
-=== Cinderace Gmax ===
-=== Default Set ===
-Cinderace-Gmax @ Heavy-Duty Boots
-Ability: Libero
-Tera Type: Normal
-- Bulk Up
-- High Jump Kick
-- Pyro Ball
-- Sucker Punch
-
-=== Coalossal Gmax ===
-=== Default Set ===
-Coalossal-Gmax @ Air Balloon
-Ability: Flame Body
-Tera Type: Normal
-- Overheat
-- Rapid Spin
-- Spikes
-- Stealth Rock
-
-=== Copperajah Gmax ===
-=== Default Set ===
-Copperajah-Gmax @ Choice Band
-Ability: Heavy Metal
-Tera Type: Normal
-- Earthquake
-- Heat Crash
-- Heavy Slam
-- Power Whip
-
-=== Corsola Galar ===
-=== Default Set ===
-Corsola-Galar @ Eviolite
-Ability: Cursed Body
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Haze
-- Night Shade
-- Stealth Rock
-- Strength Sap
-
-=== Darmanitan Galar ===
-=== Default Set ===
-Darmanitan-Galar @ Choice Scarf
-Ability: Gorilla Tactics
-Tera Type: Normal
-EVs: 81 HP
-Adamant Nature
-- Earthquake
-- Flare Blitz
-- Icicle Crash
-- Superpower
-
-=== Darmanitan Galar Zen ===
-=== Default Set ===
-Darmanitan-Galar-Zen @ Salac Berry
-Ability: Zen Mode
-Tera Type: Normal
-- Belly Drum
-- Earthquake
-- Fire Punch
-- Icicle Crash
-
-=== Garbodor Gmax ===
-=== Default Set ===
-Garbodor-Gmax @ Black Sludge
-Ability: Aftermath
-Tera Type: Normal
-- Explosion
-- Gunk Shot
-- Pain Split
-- Spikes
-
-=== Genesect Douse ===
-=== Default Set ===
-Genesect-Douse @ Douse Drive
-Ability: Download
-Tera Type: Normal
-- Bug Buzz
-- Extreme Speed
-- Flamethrower
-- Ice Beam
-
-=== Gengar Gmax ===
-=== Default Set ===
-Gengar-Gmax @ Choice Specs
-Ability: Cursed Body
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Focus Blast
-- Nasty Plot
-- Shadow Ball
-- Sludge Wave
-
-=== Gourgeist Large ===
-=== Default Set ===
-Gourgeist-Large @ Leftovers
-Ability: Frisk
-Tera Type: Normal
-- Poltergeist
-- Power Whip
-- Shadow Sneak
-- Synthesis
-
-=== Gourgeist Small ===
-=== Default Set ===
-Gourgeist-Small @ Leftovers
-Ability: Frisk
-Tera Type: Normal
-- Leech Seed
-- Poltergeist
-- Power Whip
-- Substitute
-
-=== Gourgeist Super ===
-=== Default Set ===
-Gourgeist-Super @ Choice Band
-Ability: Frisk
-Tera Type: Normal
-- Poltergeist
-- Power Whip
-- Rock Slide
-- Shadow Sneak
-
-=== Grimmsnarl Gmax ===
-=== Default Set ===
-Grimmsnarl-Gmax @ Chesto Berry
-Ability: Prankster
-Tera Type: Normal
-- Bulk Up
-- Darkest Lariat
-- Play Rough
-- Rest
-
-=== Hatterene Gmax ===
-=== Default Set ===
-Hatterene-Gmax @ Choice Specs
-Ability: Magic Bounce
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Dazzling Gleam
-- Mystical Fire
-- Psychic
-
-=== Inteleon Gmax ===
-=== Default Set ===
-Inteleon-Gmax @ Scope Lens
-Ability: Sniper
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Air Slash
-- Focus Energy
-- Ice Beam
-- Surf
-
-=== Lapras Gmax ===
-=== Default Set ===
-Lapras-Gmax @ Choice Specs
-Ability: Water Absorb
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Freeze-Dry
-- Ice Beam
-- Protect
-- Sparkling Aria
-
-=== Marowak Alola ===
-=== Default Set ===
-Marowak-Alola @ Thick Club
-Ability: Lightning Rod
-Tera Type: Normal
-- Earthquake
-- Flame Charge
-- Flare Blitz
-- Poltergeist
-
-=== Mr Mime Galar ===
-=== Default Set ===
-Mr.Mime-Galar @ Eviolite
-Ability: Screen Cleaner
-Tera Type: Normal
-- Focus Blast
-- Freeze-Dry
-- Nasty Plot
-- Psychic
-
-=== Rapidash Galar ===
-=== Default Set ===
-Rapidash-Galar @ Leftovers
-Ability: Pastel Veil
-Tera Type: Normal
-- High Horsepower
-- Morning Sun
-- Play Rough
-- Swords Dance
-
-=== Rillaboom Gmax ===
-=== Default Set ===
-Rillaboom-Gmax @ Grassy Seed
-Ability: Grassy Surge
-Tera Type: Normal
-- Acrobatics
-- Grassy Glide
-- High Horsepower
-- Knock Off
-
-=== Silvally Bug ===
-=== Default Set ===
-Silvally-Bug @ Bug Memory
-Ability: RKS System
-Tera Type: Normal
-- Flamethrower
-- Multi-Attack
-- Parting Shot
-- Psychic Fangs
-
-=== Silvally Dark ===
-=== Default Set ===
-Silvally-Dark @ Dark Memory
-Ability: RKS System
-Tera Type: Normal
-- Iron Head
-- Multi-Attack
-- Parting Shot
-- Psychic Fangs
-
-=== Silvally Dragon ===
-=== Default Set ===
-Silvally-Dragon @ Dragon Memory
-Ability: RKS System
-Tera Type: Normal
-- Flame Charge
-- Iron Head
-- Multi-Attack
-- Parting Shot
-
-=== Silvally Electric ===
-=== Default Set ===
-Silvally-Electric @ Electric Memory
-Ability: RKS System
-Tera Type: Normal
-- Flamethrower
-- Ice Beam
-- Multi-Attack
-- Parting Shot
-
-=== Silvally Fairy ===
-=== Default Set ===
-Silvally-Fairy @ Fairy Memory
-Ability: RKS System
-Tera Type: Normal
-- Flame Charge
-- Multi-Attack
-- Psychic Fangs
-- Swords Dance
-
-=== Silvally Fighting ===
-=== Default Set ===
-Silvally-Fighting @ Fighting Memory
-Ability: RKS System
-Tera Type: Normal
-- Crunch
-- Iron Head
-- Multi-Attack
-- Swords Dance
-
-=== Silvally Fire ===
-=== Default Set ===
-Silvally-Fire @ Fire Memory
-Ability: RKS System
-Tera Type: Normal
-- Crunch
-- Iron Head
-- Multi-Attack
-- Swords Dance
-
-=== Silvally Flying ===
-=== Default Set ===
-Silvally-Flying @ Flying Memory
-Ability: RKS System
-Tera Type: Normal
-- Flame Charge
-- Iron Head
-- Multi-Attack
-- Rock Slide
-
-=== Silvally Ghost ===
-=== Default Set ===
-Silvally-Ghost @ Ghost Memory
-Ability: RKS System
-Tera Type: Normal
-- Flame Charge
-- Multi-Attack
-- Parting Shot
-- Swords Dance
-
-=== Silvally Grass ===
-=== Default Set ===
-Silvally-Grass @ Grass Memory
-Ability: RKS System
-Tera Type: Normal
-- Defog
-- Flamethrower
-- Ice Beam
-- Multi-Attack
-
-=== Silvally Ground ===
-=== Default Set ===
-Silvally-Ground @ Ground Memory
-Ability: RKS System
-Tera Type: Normal
-- Defog
-- Flamethrower
-- Ice Beam
-- Multi-Attack
-
-=== Silvally Ice ===
-=== Default Set ===
-Silvally-Ice @ Ice Memory
-Ability: RKS System
-Tera Type: Normal
-- Flame Charge
-- Multi-Attack
-- Rock Slide
-- Swords Dance
-
-=== Silvally Poison ===
-=== Default Set ===
-Silvally-Poison @ Poison Memory
-Ability: RKS System
-Tera Type: Normal
-- Defog
-- Flamethrower
-- Multi-Attack
-- Parting Shot
-
-=== Silvally Psychic ===
-=== Default Set ===
-Silvally-Psychic @ Psychic Memory
-Ability: RKS System
-Tera Type: Normal
-- Flame Charge
-- Multi-Attack
-- Swords Dance
-- X-Scissor
-
-=== Silvally Rock ===
-=== Default Set ===
-Silvally-Rock @ Rock Memory
-Ability: RKS System
-Tera Type: Normal
-- Flame Charge
-- Multi-Attack
-- Parting Shot
-- Psychic Fangs
-
-=== Silvally Steel ===
-=== Default Set ===
-Silvally-Steel @ Steel Memory
-Ability: RKS System
-Tera Type: Normal
-- Defog
-- Flamethrower
-- Multi-Attack
-- Parting Shot
-
-=== Silvally Water ===
-=== Default Set ===
-Silvally-Water @ Water Memory
-Ability: RKS System
-Tera Type: Normal
-- Defog
-- Ice Beam
-- Multi-Attack
-- Parting Shot
-
-=== Snorlax Gmax ===
-=== Default Set ===
-Snorlax-Gmax @ Chesto Berry
-Ability: Thick Fat
-Tera Type: Normal
-- Body Slam
-- Curse
-- Darkest Lariat
-- Earthquake
-
-=== Stunfisk Galar ===
-=== Default Set ===
-Stunfisk-Galar @ Leftovers
-Ability: Mimicry
-Tera Type: Normal
-- Earthquake
-- Pain Split
-- Stealth Rock
-- Stone Edge
-
-=== Toxtricity Low Key ===
-=== Default Set ===
-Toxtricity-Low-Key @ Choice Scarf
-Ability: Punk Rock
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Boomburst
-- Overdrive
-- Sludge Wave
-- Volt Switch
-
-=== Urshifu Gmax ===
-=== Default Set ===
-Urshifu-Gmax @ Leftovers
-Ability: Unseen Fist
-Tera Type: Normal
-- Bulk Up
-- Drain Punch
-- Substitute
-- Wicked Blow
-
-=== Urshifu Rapid Strike Gmax ===
-=== Default Set ===
-Urshifu-Rapid-Strike-Gmax @ Choice Band
-Ability: Unseen Fist
-Tera Type: Normal
-- Bulk Up
-- Close Combat
-- Ice Punch
-- Surging Strikes
-
-=== Zygarde 10% ===
-=== Default Set ===
-Zygarde-10% @ Choice Band
-Ability: Aura Break
-Tera Type: Normal
-- Coil
-- Extreme Speed
-- Iron Tail
-- Outrage
-
-=== Abomasnow Mega ===
-=== Bulky Attacker ===
-Abomasnow-Mega @ Abomasite
-Ability: Snow Warning
-Tera Type: Normal
-- Blizzard
-- Earthquake
-- Giga Drain
-- Ice Shard
-
-=== Absol Mega ===
-=== Fast Attacker ===
-Absol-Mega @ Absolite
-Ability: Justified
-Tera Type: Normal
-- Iron Tail
-- Knock Off
-- Play Rough
-- Pursuit
-
-=== Aerodactyl Mega ===
-=== Fast Attacker ===
-Aerodactyl-Mega @ Aerodactylite
-Ability: Unnerve
-Tera Type: Normal
-- Aerial Ace
-- Aqua Tail
-- Earthquake
-- Hone Claws
-
-=== Aggron Mega ===
-=== Bulky Attacker ===
-Aggron-Mega @ Aggronite
-Ability: Sturdy
-Tera Type: Normal
-- Earthquake
-- Heavy Slam
-- Roar
-- Stealth Rock
-
-=== Alakazam Mega ===
-=== Setup Sweeper ===
-Alakazam-Mega @ Alakazite
-Ability: Magic Guard
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Encore
-- Focus Blast
-- Psychic
-
-=== Altaria Mega ===
-=== Setup Sweeper ===
-Altaria-Mega @ Altarianite
-Ability: Natural Cure
-Tera Type: Normal
-- Dragon Dance
-- Earthquake
-- Return
-- Roost
-
-=== Ampharos Mega ===
-=== Bulky Support ===
-Ampharos-Mega @ Ampharosite
-Ability: Static
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Discharge
-- Dragon Pulse
-- Focus Blast
-- Rest
-
-=== Audino Mega ===
-=== Staller ===
-Audino-Mega @ Audinite
-Ability: Regenerator
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Dazzling Gleam
-- Protect
-- Toxic
-- Wish
-
-=== Banette Mega ===
-=== Fast Support ===
-Banette-Mega @ Banettite
-Ability: Frisk
-Tera Type: Normal
-- Destiny Bond
-- Gunk Shot
-- Knock Off
-- Shadow Claw
-
-=== Beedrill Mega ===
-=== Setup Sweeper ===
-Beedrill-Mega @ Beedrillite
-Ability: Swarm
-Tera Type: Normal
-- Drill Run
-- Knock Off
-- Poison Jab
-- Swords Dance
-
-=== Blastoise Mega ===
-=== Bulky Support ===
-Blastoise-Mega @ Blastoisinite
-Ability: Rain Dish
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Aura Sphere
-- Dark Pulse
-- Ice Beam
-- Rapid Spin
-
-=== Blaziken Mega ===
-=== Setup Sweeper ===
-Blaziken-Mega @ Blazikenite
-Ability: Speed Boost
-Tera Type: Normal
-- Flare Blitz
-- High Jump Kick
-- Knock Off
-- Protect
-
-=== Camerupt Mega ===
-=== Bulky Attacker ===
-Camerupt-Mega @ Cameruptite
-Ability: Solid Rock
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Ancient Power
-- Earth Power
-- Fire Blast
-- Stealth Rock
-
-=== Charizard Mega X ===
-=== Setup Sweeper ===
-Charizard-Mega-X @ Charizardite X
-Ability: Blaze
-Tera Type: Normal
-EVs: 81 HP
-Adamant Nature
-- Dragon Claw
-- Dragon Dance
-- Earthquake
-- Flare Blitz
-
-=== Charizard Mega Y ===
-=== Fast Attacker ===
-Charizard-Mega-Y @ Charizardite Y
-Ability: Blaze
-Tera Type: Normal
-EVs: 81 HP / 0 ATK
-Adamant Nature
-- Air Slash
-- Fire Blast
-- Roost
-- Solar Beam
-
-=== Diancie Mega ===
-=== Fast Attacker ===
-Diancie-Mega @ Diancite
-Ability: Clear Body
-Tera Type: Normal
-- Calm Mind
-- Diamond Storm
-- Earth Power
-- Moonblast
-
-=== Floette Eternal ===
-=== Fast Attacker ===
-Floette-Eternal @ Choice Scarf
-Ability: Flower Veil
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Hidden Power Fire
-- Hidden Power Ground
-- Light of Ruin
-- Moonblast
-
-=== Gallade Mega ===
-=== Setup Sweeper ===
-Gallade-Mega @ Galladite
-Ability: Justified
-Tera Type: Normal
-- Close Combat
-- Knock Off
-- Swords Dance
-- Zen Headbutt
-
-=== Garchomp Mega ===
-=== Bulky Support ===
-Garchomp-Mega @ Garchompite
-Ability: Rough Skin
-Tera Type: Normal
-- Draco Meteor
-- Earthquake
-- Fire Blast
-- Stealth Rock
-
-=== Gardevoir Mega ===
-=== Setup Sweeper ===
-Gardevoir-Mega @ Gardevoirite
-Ability: Trace
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Encore
-- Focus Blast
-- Hyper Voice
-
-=== Gengar Mega ===
-=== Fast Attacker ===
-Gengar-Mega @ Gengarite
-Ability: Cursed Body
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Destiny Bond
-- Disable
-- Focus Blast
-- Shadow Ball
-
-=== Glalie Mega ===
-=== Fast Attacker ===
-Glalie-Mega @ Glalitite
-Ability: Inner Focus
-Tera Type: Normal
-EVs: 77 HP
-Adamant Nature
-- Earthquake
-- Explosion
-- Freeze-Dry
-- Ice Shard
-
-=== Groudon Primal ===
-=== Bulky Setup ===
-Groudon-Primal @ Red Orb
-Ability: Drought
-Tera Type: Normal
-- Fire Punch
-- Precipice Blades
-- Rock Polish
-- Swords Dance
-
-=== Gyarados Mega ===
-=== Setup Sweeper ===
-Gyarados-Mega @ Gyaradosite
-Ability: Intimidate
-Tera Type: Normal
-- Crunch
-- Dragon Dance
-- Earthquake
-- Substitute
-
-=== Heracross Mega ===
-=== Wallbreaker ===
-Heracross-Mega @ Heracronite
-Ability: Moxie
-Tera Type: Normal
-- Close Combat
-- Earthquake
-- Knock Off
-- Pin Missile
-
-=== Houndoom Mega ===
-=== Setup Sweeper ===
-Houndoom-Mega @ Houndoominite
-Ability: Flash Fire
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Dark Pulse
-- Fire Blast
-- Nasty Plot
-- Sludge Bomb
-
-=== Kangaskhan Mega ===
-=== Fast Support ===
-Kangaskhan-Mega @ Kangaskhanite
-Ability: Scrappy
-Tera Type: Normal
-- Body Slam
-- Crunch
-- Fake Out
-- Seismic Toss
-
-=== Kyogre Primal ===
-=== Setup Sweeper ===
-Kyogre-Primal @ Blue Orb
-Ability: Drizzle
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Ice Beam
-- Origin Pulse
-- Thunder
-
-=== Latias Mega ===
-=== Bulky Attacker ===
-Latias-Mega @ Latiasite
-Ability: Levitate
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Draco Meteor
-- Psyshock
-- Roost
-
-=== Latios Mega ===
-=== Bulky Attacker ===
-Latios-Mega @ Latiosite
-Ability: Levitate
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Draco Meteor
-- Psyshock
-- Roost
-
-=== Lopunny Mega ===
-=== Fast Attacker ===
-Lopunny-Mega @ Lopunnite
-Ability: Limber
-Tera Type: Normal
-- Encore
-- Fake Out
-- High Jump Kick
-- Power-Up Punch
-
-=== Lucario Mega ===
-=== Bulky Setup ===
-Lucario-Mega @ Lucarionite
-Ability: Justified
-Tera Type: Normal
-- Close Combat
-- Extreme Speed
-- Meteor Mash
-- Swords Dance
-
-=== Manectric Mega ===
-=== Fast Attacker ===
-Manectric-Mega @ Manectite
-Ability: Lightning Rod
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Hidden Power Ice
-- Overheat
-- Thunderbolt
-- Volt Switch
-
-=== Mawile Mega ===
-=== Wallbreaker ===
-Mawile-Mega @ Mawilite
-Ability: Intimidate
-Tera Type: Normal
-- Iron Head
-- Knock Off
-- Play Rough
-- Sucker Punch
-
-=== Medicham Mega ===
-=== Fast Attacker ===
-Medicham-Mega @ Medichamite
-Ability: Pure Power
-Tera Type: Normal
-EVs: 81 HP
-Adamant Nature
-- Fake Out
-- High Jump Kick
-- Ice Punch
-- Thunder Punch
-
-=== Metagross Mega ===
-=== Bulky Attacker ===
-Metagross-Mega @ Metagrossite
-Ability: Clear Body
-Tera Type: Normal
-- Agility
-- Earthquake
-- Hammer Arm
-- Meteor Mash
-
-=== Mewtwo Mega X ===
-=== Setup Sweeper ===
-Mewtwo-Mega-X @ Mewtwonite X
-Ability: Unnerve
-Tera Type: Normal
-- Bulk Up
-- Drain Punch
-- Stone Edge
-- Taunt
-
-=== Mewtwo Mega Y ===
-=== Setup Sweeper ===
-Mewtwo-Mega-Y @ Mewtwonite Y
-Ability: Unnerve
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Aura Sphere
-- Calm Mind
-- Fire Blast
-- Psystrike
-
-=== Pidgeot Mega ===
-=== Bulky Attacker ===
-Pidgeot-Mega @ Pidgeotite
-Ability: Big Pecks
-Tera Type: Normal
-- Defog
-- Heat Wave
-- Hurricane
-- Roost
-
-=== Pinsir Mega ===
-=== Bulky Setup ===
-Pinsir-Mega @ Pinsirite
-Ability: Moxie
-Tera Type: Normal
-EVs: 81 HP
-Adamant Nature
-- Close Combat
-- Earthquake
-- Quick Attack
-- Return
-
-=== Raticate Alola ===
-=== Wallbreaker ===
-Raticate-Alola @ Black Glasses
-Ability: Hustle
-Tera Type: Normal
-- Double-Edge
-- Knock Off
-- Pursuit
-- Return
-
-=== Rayquaza Mega ===
-=== Fast Attacker ===
-Rayquaza-Mega @ Choice Band
-Ability: Air Lock
-Tera Type: Normal
-- Dragon Ascent
-- Dragon Dance
-- Earthquake
-- Extreme Speed
-
-=== Sableye Mega ===
-=== Bulky Setup ===
-Sableye-Mega @ Sablenite
-Ability: Prankster
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Dark Pulse
-- Recover
-- Will-O-Wisp
-
-=== Salamence Mega ===
-=== Setup Sweeper ===
-Salamence-Mega @ Salamencite
-Ability: Intimidate
-Tera Type: Normal
-- Double-Edge
-- Dragon Dance
-- Earthquake
-- Return
-
-=== Sceptile Mega ===
-=== Setup Sweeper ===
-Sceptile-Mega @ Sceptilite
-Ability: Overgrow
-Tera Type: Normal
-- Earthquake
-- Leaf Blade
-- Outrage
-- Swords Dance
-
-=== Scizor Mega ===
-=== Bulky Setup ===
-Scizor-Mega @ Scizorite
-Ability: Light Metal
-Tera Type: Normal
-- Bug Bite
-- Bullet Punch
-- Knock Off
-- Roost
-
-=== Sharpedo Mega ===
-=== Wallbreaker ===
-Sharpedo-Mega @ Sharpedonite
-Ability: Speed Boost
-Tera Type: Normal
-- Crunch
-- Ice Fang
-- Protect
-- Psychic Fangs
-
-=== Slowbro Mega ===
-=== Bulky Setup ===
-Slowbro-Mega @ Slowbronite
-Ability: Regenerator
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Calm Mind
-- Psyshock
-- Scald
-- Slack Off
-
-=== Steelix Mega ===
-=== Bulky Support ===
-Steelix-Mega @ Steelixite
-Ability: Sturdy
-Tera Type: Normal
-- Dragon Tail
-- Earthquake
-- Heavy Slam
-- Stealth Rock
-
-=== Swampert Mega ===
-=== Setup Sweeper ===
-Swampert-Mega @ Swampertite
-Ability: Damp
-Tera Type: Normal
-- Earthquake
-- Ice Punch
-- Rain Dance
-- Superpower
-
-=== Tyranitar Mega ===
-=== Setup Sweeper ===
-Tyranitar-Mega @ Tyranitarite
-Ability: Sand Stream
-Tera Type: Normal
-- Crunch
-- Dragon Dance
-- Earthquake
-- Fire Punch
-
-=== Venusaur Mega ===
-=== Bulky Attacker ===
-Venusaur-Mega @ Venusaurite
-Ability: Chlorophyll
-Tera Type: Normal
-- Earthquake
-- Giga Drain
-- Knock Off
-- Sleep Powder
-
-=== Wormadam Sandy ===
-=== Staller ===
-Wormadam-Sandy @ Leftovers
-Ability: Overcoat
-Tera Type: Normal
-- Earthquake
-- Infestation
-- Protect
-- Stealth Rock
-
-=== Wormadam Trash ===
-=== Staller ===
-Wormadam-Trash @ Leftovers
-Ability: Overcoat
-Tera Type: Normal
-EVs: 0 ATK
-Adamant Nature
-- Flash Cannon
-- Infestation
-- Protect
-- Stealth Rock
-

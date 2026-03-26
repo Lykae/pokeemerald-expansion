@@ -1,5 +1,7 @@
 import os
 from collections import OrderedDict
+import re
+import unicodedata
 
 INPUT_FILE = 'src/data/pokemon/pokemon.sets'
 OUTPUT_FILE = 'src/data/pokemon/pokemon_sets.h'
@@ -21,16 +23,125 @@ STAT_INDEX = {
     'spd': 5, 'spdef': 5, 'spdefense': 5
 }
 
+MAX_LEN = 14
+
+ABBREVIATIONS = {
+    "Rapid": "R",
+    "Strike": "S",
+    "Single": "S",
+    "Gmax": "G",
+    "Gigantamax": "G",
+    "Mega": "M",
+    "Galar": "G",
+    "Alolan": "A",
+    "Hisuian": "H",
+    "Standard": "",
+    "Form": "",
+}
+
+FORM_TAGS = {
+    "Battle Bond": "BB",
+    "Zen Mode": "Z",
+    "Crowned": "C",
+    "Therian": "T",
+}
+
+
+def compress_name(name: str) -> str:
+    # 1. Normalize spacing
+    name = re.sub(r"\s+", " ", name.strip())
+
+    # 2. Replace known form phrases first (multi-word)
+    for k, v in FORM_TAGS.items():
+        if k in name:
+            name = name.replace(k, v)
+
+    # 3. Replace single-word abbreviations
+    parts = name.split()
+    compressed_parts = []
+
+    for p in parts:
+        compressed_parts.append(ABBREVIATIONS.get(p, p))
+
+    name = "".join(
+        part if part in FORM_TAGS.values() else part + "-"
+        for part in compressed_parts
+    ).rstrip("-")
+
+    # 4. Fix double dashes / cleanup
+    name = name.replace("--", "-")
+
+    # 5. Hard trim if still too long
+    if len(name) > MAX_LEN:
+        # keep first chunk + last meaningful chunk
+        chunks = name.split("-")
+        if len(chunks) >= 2:
+            name = f"{chunks[0]}-{chunks[-1]}"
+        name = name[:MAX_LEN]
+
+    return name
+
+def to_species_enum(name: str) -> str:
+    """
+    Convert ANY Pokémon name into a valid SPECIES_* enum key.
+    Works for all forms without manual mapping.
+    """
+
+
+
+    name = unicodedata.normalize("NFKD", name)
+
+    # Fix weird punctuation first
+    name = name.replace("’", "").replace(".", " ").replace(":", " ").replace("'", "").replace("%", "")
+
+    # Split by hyphen first (form separation)
+    parts = name.split("-")
+
+    def clean_part(part):
+        # Split camel case: UrshifuRapidStrike -> Urshifu Rapid Strike
+        part = re.sub(r'(?<!^)(?=[A-Z])', ' ', part)
+
+        # Normalize whitespace
+        part = re.sub(r"\s+", " ", part).strip()
+
+        # Upper snake conversion
+        return part.replace(" ", "_").upper()
+
+    # Convert all parts
+    cleaned = [clean_part(p) for p in parts if p.strip()]
+
+    return "SPECIES_" + "_".join(cleaned)
+
+#def sanitize(name):
+#    return name.replace("'", "").replace("%", "").replace("-", "_").replace(' ', '_')
+
 def sanitize(name):
-    return name.replace("'", "").replace("%", "").replace("-", "_").replace(' ', '_')
+    return (
+        name
+        .replace("’", "")   # U+2019 (RIGHT SINGLE QUOTE)
+        .replace("‘", "")   # U+2018 (LEFT SINGLE QUOTE)
+        .replace("'", "")   # ASCII apostrophe
+        .replace("%", "")
+        .replace("-", "_")
+        .replace(" ", "_")
+        .replace(":", "_")
+    )
+
+#def convert_species(name):
+#    return f"SPECIES_{sanitize(name).upper()}"
 
 def convert_species(name):
-    return f"SPECIES_{sanitize(name).upper()}"
+    return f"{to_species_enum(name)}"
 
 def convert_item(item):
     return f"ITEM_{sanitize(item).upper()}"
 
 def convert_ability(ability):
+    if "As One" in ability:
+        if "Glastrier" in ability:
+            return "ABILITY_AS_ONE_ICE_RIDER"
+        if "Spectrier" in ability:
+            return "ABILITY_AS_ONE_SHADOW_RIDER"
     return f"ABILITY_{sanitize(ability).upper()}"
 
 def convert_nature(nature):
@@ -113,7 +224,7 @@ def generate_struct(species, data):
     
     return f"""    [{species_key}] = // {data['comment']}
     {{
-        .name = _("{data['display_name']}"),
+        .name = _("{compress_name(data['display_name'])}"),
         .item = {convert_item(data['item'])},
         .ability = {convert_ability(data['ability'])},
         .teraType = {tera_type},
@@ -123,10 +234,40 @@ def generate_struct(species, data):
         .moves = {{{move_str}}}
     }}"""
 
+def normalize_key(name):
+    return (
+        name.lower()
+        .replace(" ", "")
+        .replace("-", "")
+        .replace(".", "")
+        .replace("'", "")
+        .replace("’", "")
+        .replace(":", "")
+    )
+
 def main():
+
     with open(INPUT_FILE) as f:
         text = f.read()
     sets = parse_sets(text)
+    
+    seen = set()
+    deduped = {}
+    edge_cases = {"darmanitangalarstandard", "greninjabattlebond"}
+
+    for species, data in sets.items():
+        key = normalize_key(species)
+
+        if key in edge_cases:
+            continue
+    
+        if key in seen:
+            print(f"[DUPLICATE REMOVED] {species}")
+            continue
+        
+        seen.add(key)
+        deduped[species] = data
+    
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, 'w') as f:
         f.write('#include "constants/species.h"\n')
@@ -137,7 +278,7 @@ def main():
         f.write("// DO NOT MODIFY THIS FILE! It is auto-generated from pokemon.sets\n")
         f.write("//\n")
         f.write("const struct PokemonSets gPokemonSets[NUM_SPECIES] =\n{\n")
-        f.write(",\n\n".join(generate_struct(species, data) for species, data in sets.items()))
+        f.write(",\n\n".join(generate_struct(species, data) for species, data in deduped.items()))
         f.write("\n};\n")
 
 if __name__ == "__main__":
