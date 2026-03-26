@@ -32,6 +32,7 @@ InsideOfTruck_EventScript_SetIntroFlagsMale::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
 	setdynamicwarp MAP_LITTLEROOT_TOWN, 3, 10
 	releaseall
+	helpwindow HELP_START_MENU
 	end
 
 InsideOfTruck_EventScript_SetIntroFlagsFemale::
@@ -45,6 +46,7 @@ InsideOfTruck_EventScript_SetIntroFlagsFemale::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
 	setdynamicwarp MAP_LITTLEROOT_TOWN, 12, 10
 	releaseall
+	helpwindow HELP_START_MENU
 	end
 
 InsideOfTruck_EventScript_MovingBox::

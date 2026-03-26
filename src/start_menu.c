@@ -51,6 +51,8 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "rtc.h"
+#include "help_window.h"
+#include "script_pokemon_util.h"
 
 // Menu actions
 enum
@@ -727,7 +729,30 @@ void ShowStartMenu(void)
 
 static bool8 HandleStartMenuInput(void)
 {
-    if (JOY_NEW(R_BUTTON) || JOY_NEW(L_BUTTON))
+    if (JOY_NEW(SELECT_BUTTON)) {
+        PlaySE(SE_SELECT);
+        RemoveExtraStartMenuWindows();
+        HideStartMenu();
+        ScriptContext_SetupScript(EventScript_HelpWindow);
+        return TRUE;
+    }
+    if (JOY_NEW(L_BUTTON))
+    {
+        PlaySE(SE_USE_ITEM);
+        HealPlayerParty();
+        RemoveExtraStartMenuWindows();
+        HideStartMenu();
+        return TRUE;
+    }
+    if (JOY_NEW(R_BUTTON))
+    {
+        //PlaySE(SE_SELECT);
+        RemoveExtraStartMenuWindows();
+        HideStartMenu();
+        ScriptContext_SetupScript(EventScript_PC);
+        return TRUE;
+    }
+    if (JOY_NEW(DPAD_LEFT) || JOY_NEW(DPAD_RIGHT))
     {
         PlaySE(SE_SELECT);
         FlagToggle(OW_FLAG_NO_ENCOUNTER);
