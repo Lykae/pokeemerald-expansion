@@ -363,6 +363,8 @@ static void DebugAction_Player_Name(u8 taskId);
 static void DebugAction_Player_Gender(u8 taskId);
 static void DebugAction_Player_Id(u8 taskId);
 
+static void DebugAction_ToggleBattleStyle(u8 taskId);
+
 extern const u8 Debug_FlagsNotSetOverworldConfigMessage[];
 extern const u8 Debug_FlagsNotSetBattleConfigMessage[];
 extern const u8 Debug_VarsNotSetBattleConfigMessage[];
@@ -569,6 +571,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_Utilities[] =
     { COMPOUND_STRING("Fly to map…"),       DebugAction_Util_Fly },
     { COMPOUND_STRING("Warp to map warp…"), DebugAction_Util_Warp_Warp },
     { COMPOUND_STRING("Set weather…"),      DebugAction_Util_Weather },
+    { COMPOUND_STRING("Toggle Switch/Set mode"), DebugAction_ToggleBattleStyle },
     { COMPOUND_STRING("Font Test…"),        DebugAction_ExecuteScript, Debug_EventScript_FontTest },
     { COMPOUND_STRING("Time Functions…"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
     { COMPOUND_STRING("Watch credits…"),    DebugAction_Util_WatchCredits },
@@ -1759,6 +1762,17 @@ static void DebugAction_Player_Id(u8 taskId)
 {
     u32 trainerId = Random32();
     SetTrainerId(trainerId, gSaveBlock2Ptr->playerTrainerId);
+    Debug_DestroyMenu_Full(taskId);
+    ScriptContext_Enable();
+}
+
+static void DebugAction_ToggleBattleStyle(u8 taskId)
+{
+    if (gSaveBlock2Ptr->optionsBattleStyle == 0)
+        gSaveBlock2Ptr->optionsBattleStyle = 1;
+    else
+        gSaveBlock2Ptr->optionsBattleStyle = 0;
+    
     Debug_DestroyMenu_Full(taskId);
     ScriptContext_Enable();
 }
