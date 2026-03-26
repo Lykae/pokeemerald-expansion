@@ -30,6 +30,7 @@
 #include "constants/items.h"
 #include "constants/battle_frontier.h"
 #include "randomizer.h"
+#include "pokeball.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleFrontierParty(void);
@@ -502,10 +503,13 @@ u32 ScriptGiveMon(u16 species, u8 level, enum Item item)
 
 static u32 GiveMonSet(u16 species)
 {
+    //static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, enum Item item, enum PokeBall ball, 
+    // u8 nature, u8 abilityNum, u8 gender, u16 *evs, u16 *ivs, enum Move *moves, 
+    // enum ShinyMode shinyMode, bool8 gmaxFactor, enum Type teraType, u8 dmaxLevel)
     return ScriptGiveMonParameterized(0, PARTY_SIZE, species, MAX_LEVEL,
-        (u16) gPokemonSets[species].item, ITEM_POKE_BALL, (u8) gPokemonSets[species].nature,
-        CheckMonAbilitySlot(species, gPokemonSets[species].ability), MON_GENDERLESS, 
-        (u8 *) gPokemonSets[species].evs, (u8 *) gPokemonSets[species].ivs, (u16 *) gPokemonSets[species].moves, FALSE, FALSE, (u8) gPokemonSets[species].teraType, 0);
+        (u16) gPokemonSets[species].item, BALL_POKE, (u8) gPokemonSets[species].nature,
+        CheckMonAbilitySlot(species, gPokemonSets[species].ability), MON_GENDER_RANDOM, 
+        (u16 *) gPokemonSets[species].evs, (u16 *) gPokemonSets[species].ivs, (u16 *) gPokemonSets[species].moves, FALSE, FALSE, 0, 0);
 }
 
 void ScrCmd_givemonset(struct ScriptContext *ctx)
