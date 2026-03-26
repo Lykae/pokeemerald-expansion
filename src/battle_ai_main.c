@@ -877,6 +877,13 @@ static u32 ChooseMoveOrAction_Doubles(enum BattlerId battler)
 
     for (enum BattlerId battlerIndex = 0; battlerIndex < MAX_BATTLERS_COUNT; battlerIndex++)
     {
+        // Workaround for breaking Stevens AI
+        if (battlerIndex == BATTLE_PARTNER(battler) || battlerIndex == battler)
+        {
+            bestMovePointsForTarget[battlerIndex] = -1;
+            continue;
+        }
+
         if (gBattleMons[battlerIndex].hp == 0)
         {
             actionOrMoveIndex[battlerIndex] = 0xFF;
@@ -943,17 +950,12 @@ static u32 ChooseMoveOrAction_Doubles(enum BattlerId battler)
             actionOrMoveIndex[battlerIndex] = mostViableMovesIndices[RandomUniform(RNG_AI_SCORE_TIE_DOUBLES_MOVE, 0, mostViableMovesNo - 1)];
             bestMovePointsForTarget[battlerIndex] = mostViableMovesScores[0];
 
-            // Steven started attacking the player, so this was changed
+            // Steven started attacking the player, so this was changed (workaround at top of the loop)
             // Don't use a move against ally if it has less than 100 points.
             //if (battlerIndex == BATTLE_PARTNER(battler) && bestMovePointsForTarget[battlerIndex] < AI_SCORE_DEFAULT)
             //{
             //    bestMovePointsForTarget[battlerIndex] = -1;
             //}
-
-            if (battlerIndex == BATTLE_PARTNER(battler))
-            {
-                bestMovePointsForTarget[battlerIndex] = -1;
-            }
 
             for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
             {
