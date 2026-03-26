@@ -567,6 +567,12 @@ $(DATA_SRC_SUBDIR)/pokemon/teachable_learnsets.h: $(TEACHABLE_DEPS) | $(ALL_TUTO
 $(DATA_SRC_SUBDIR)/tutor_moves.h: $(DATA_SRC_SUBDIR)/pokemon/special_movesets.json | $(ALL_TUTORS_JSON)
 	python3 $(LEARNSET_HELPERS_DIR)/make_teachables.py  --tutors $(LEARNSET_HELPERS_BUILD_DIR)
 
+POKESETS_DEPS :=  $(DATA_SRC_SUBDIR)/pokemon/pokemon.sets
+
+$(DATA_SRC_SUBDIR)/pokemon/pokemon_sets.h: $(POKESETS_DEPS)
+	python3 $(TOOLS_DIR)/pokemon_sets/convert_sets.py
+	python3 $(TOOLS_DIR)/pokemon_sets/missing_sets.py
+
 # Linker script
 LD_SCRIPT := ld_script_modern.ld
 
