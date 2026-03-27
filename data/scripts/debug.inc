@@ -205,8 +205,7 @@ Debug_EventScript_Text_DefensiveIVs:
 Debug_EventScript_Script_1::
 	giveitem ITEM_RARE_CANDY 999
 	giveitem ITEM_EXP_CANDY_XL 999
-	giveitem ITEM_ABILITY_CAPSULE 999
-	giveitem ITEM_ABILITY_PATCH 999
+	giveitem ITEM_ABILITY_CHANGER 999
 	giveitem ITEM_MASTER_BALL 999
 	release
 	end
