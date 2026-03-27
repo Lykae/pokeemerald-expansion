@@ -72,6 +72,7 @@
 #include "constants/trainers.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "randomizer.h"
 
 extern u16 gSpecialVar_ItemId;
 
