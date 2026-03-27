@@ -970,5 +970,6 @@ void ChangePokemonNicknameWithCallback(void (*callback)(void));
 bool32 DoesSpeciesHaveSet(u16 species);
 u32 CheckMonAbilitySlot(u16 species, const enum Ability ability);
 u32 CanMonLearnMoveCompetetive(u16 species, const u16 move);
+u32 CanMonLearnMoveWithLevel(u16 species, const u16 move, u16 level);
 
 #endif // GUARD_POKEMON_H
