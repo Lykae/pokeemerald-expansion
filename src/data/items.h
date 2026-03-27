@@ -15956,6 +15956,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_QuestionMark,
         .iconPalette = gItemIconPalette_QuestionMark,
     },
+
+    [ITEM_ABILITY_CHANGER] =
+    {
+        .name = ITEM_NAME("Abili-Change"),
+        .price = 5000,
+        .holdEffectParam = 0,
+        .description = COMPOUND_STRING(
+            "Miracle meds that\n"
+            "change a Pokémon's\n"
+            "ability."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_AbilityChanger,
+        .iconPic = gItemIcon_AbilityCapsule,
+        .iconPalette = gItemIconPalette_AbilityCapsule,
+    },
 };
 
 #undef ITEM_NAME
