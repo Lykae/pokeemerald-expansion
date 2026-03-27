@@ -7458,6 +7458,49 @@ bool32 DoesSpeciesHaveSet(u16 species)
     return (gPokemonSets[species].moves[0] > MOVE_POUND && gPokemonSets[species].ability > ABILITY_NONE) || species == SPECIES_EGG;
 }
 
+bool32 DoesSpeciesOrEvolutionHaveSet(u16 species)
+{
+    if (DoesSpeciesHaveSet(species))
+        return TRUE;
+
+    const struct Evolution *evos = GetSpeciesEvolutions(species);
+
+    if (evos == NULL)
+        return FALSE;
+
+    for (int j = 0; evos[j].method != EVOLUTIONS_END; j++)
+    {
+        if (DoesSpeciesHaveSet(evos[j].targetSpecies))
+            return TRUE;
+        if (DoesSpeciesOrEvolutionHaveSet(evos[j].targetSpecies))
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+u16 GetEvolvedSpeciesWithSet(u16 species) 
+{
+    if (DoesSpeciesHaveSet(species))
+        return species;
+
+    const struct Evolution *evos = GetSpeciesEvolutions(species);
+
+    if (evos == NULL)
+        return SPECIES_NONE;
+
+    for (int j = 0; evos[j].method != EVOLUTIONS_END; j++)
+    {
+        if (DoesSpeciesHaveSet(evos[j].targetSpecies))
+            return evos[j].targetSpecies;
+        
+        if (DoesSpeciesOrEvolutionHaveSet(evos[j].targetSpecies))
+            return GetEvolvedSpeciesWithSet(evos[j].targetSpecies);
+    }
+
+    return SPECIES_NONE;
+}
+
 u32 CheckMonAbilitySlot(u16 species, const enum Ability ability)
 {
     for (u8 i = 0; i < NUM_ABILITY_SLOTS; i++)

@@ -2079,7 +2079,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             #endif
 
             // Competitive mons
-            if (FlagGet(FLAG_COMPETITIVE_MONS) == TRUE && DoesSpeciesHaveSet(species)) {
+            if (FlagGet(FLAG_COMPETITIVE_MONS) == TRUE && DoesSpeciesOrEvolutionHaveSet(species)) {
                 if (trainer->battleType != TRAINER_BATTLE_TYPE_SINGLES)
                     personalityValue = 0x80;
                 else if (trainer->gender == TRAINER_GENDER_FEMALE)
@@ -2092,7 +2092,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
 
                 personalityValue += personalityHash << 8;
                 
-                const struct PokemonSets speciesSet = gPokemonSets[species];
+                const struct PokemonSets speciesSet = gPokemonSets[GetEvolvedSpeciesWithSet(species)];
                 CreateMon(&party[i], species, level, personalityValue, otId);
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &(speciesSet.item));
                 CustomTrainerPartyAssignMoves(&party[i], &partyData[monIndex], speciesSet);
