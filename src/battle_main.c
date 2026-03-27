@@ -2065,11 +2065,11 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             {
                 level += (partyMaxLevel - npcTrainerPartyMaxLevel);
             }
-            if (partyData[monIndex].isShiny)
-            {
-                otId.method = OT_ID_PRESET;
-                otId.value = HIHALF(personalityValue) ^ LOHALF(personalityValue);
-            }
+            //if (partyData[monIndex].isShiny)
+            //{
+            //    otId.method = OT_ID_PRESET;
+            //    otId.value = HIHALF(personalityValue) ^ LOHALF(personalityValue);
+            //}
             // TODO implement flag for dynamic level scaling here
             //CreateMon(&party[i], partyData[monIndex].species, partyData[monIndex].lvl, personalityValue, otId);
 

@@ -1854,6 +1854,10 @@ static void PopulateSpeciesFromTrainerParty(int matchCallId, u8 *destStr)
     const u8 *speciesName;
 
     trainerId = GetLastBeatenRematchTrainerId(sMatchCallTrainers[matchCallId].trainerId);
+    if (trainerId >= TRAINERS_COUNT)
+    {
+        trainerId = 851; // fallback to Red
+    }
     party = GetTrainerPartyFromId(trainerId);
     partySize = GetTrainerPartySizeFromId(trainerId);
     if (party != NULL && partySize > 0)
