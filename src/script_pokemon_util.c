@@ -30,6 +30,7 @@
 #include "constants/items.h"
 #include "constants/battle_frontier.h"
 #include "randomizer.h"
+#include "pokeball.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleFrontierParty(void);
@@ -498,6 +499,24 @@ u32 ScriptGiveMon(u16 species, u8 level, enum Item item)
     }
 
     return GiveScriptedMonToPlayer(&mon, PARTY_SIZE);
+}
+
+static u32 GiveMonSet(u16 species)
+{
+    //static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, enum Item item, enum PokeBall ball, 
+    // u8 nature, u8 abilityNum, u8 gender, u16 *evs, u16 *ivs, enum Move *moves, 
+    // enum ShinyMode shinyMode, bool8 gmaxFactor, enum Type teraType, u8 dmaxLevel)
+    return ScriptGiveMonParameterized(0, PARTY_SIZE, species, MAX_LEVEL,
+        (u16) gPokemonSets[species].item, BALL_POKE, (u8) gPokemonSets[species].nature,
+        CheckMonAbilitySlot(species, gPokemonSets[species].ability), MON_GENDER_RANDOM, 
+        (u16 *) gPokemonSets[species].evs, (u16 *) gPokemonSets[species].ivs, (u16 *) gPokemonSets[species].moves, FALSE, FALSE, 0, 0);
+}
+
+void ScrCmd_givemonset(struct ScriptContext *ctx)
+{
+    u16 species = VarGet(ScriptReadHalfword(ctx));
+
+    gSpecialVar_Result = GiveMonSet(species);
 }
 
 #define PARSE_FLAG(n, default_) (flags & (1 << (n))) ? VarGet(ScriptReadHalfword(ctx)) : (default_)

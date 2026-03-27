@@ -5777,3 +5777,17 @@ bool8 CheckAddCoins(void)
     else
         return TRUE;
 }
+
+void GetPokemonNameFeedback(void)
+{
+    for (u32 i = SPECIES_BULBASAUR; i < NUM_SPECIES; i++)
+    {
+        if (!StringCompare(gStringVar2, gPokemonSets[i].name))
+        {
+            gSpecialVar_Result = i;
+            return;
+        }
+    }
+    gSpecialVar_Result = 0;
+    return;
+}

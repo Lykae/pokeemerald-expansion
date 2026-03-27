@@ -1,4 +1,5 @@
 #include "global.h"
+#include "move.h"
 #include "string_util.h"
 #include "test/test.h"
 #include "constants/form_change_types.h"
@@ -194,4 +195,68 @@ TEST("Every species has a description")
     }
 
     EXPECT_NE(StringCompare(GetSpeciesPokedexDescription(species), gFallbackPokedexText), 0);
+}
+
+TEST("gPokemonSets abilities are valid")
+{
+    u32 species = SPECIES_NONE;
+    u32 i;
+
+    for (i = SPECIES_BULBASAUR; i < NUM_SPECIES; i++)
+    {
+        if (DoesSpeciesHaveSet(i))
+            PARAMETRIZE { species = i; }
+    }
+
+    bool8 valid = FALSE;
+    u32 j;
+    for (j = 0; j < NUM_ABILITY_SLOTS; j++)
+    {
+        if (gPokemonSets[species].ability == gSpeciesInfo[species].abilities[j])
+            valid = TRUE;
+
+        if (valid)
+            DebugPrintf("%d: %S - %d PASSED", species, gPokemonSets[species].name, j);
+        else
+            DebugPrintf("%d: %S - %d FAILED", species, gPokemonSets[species].name, j);
+    }
+
+    EXPECT_EQ(valid, TRUE);
+}
+
+TEST("gPokemonSets moves are valid")
+{
+    TO_DO; // because of generational TMs
+
+    u32 species = SPECIES_NONE;
+    u32 i;
+
+    for (i = SPECIES_BULBASAUR; i < NUM_SPECIES; i++)
+    {
+        if (DoesSpeciesHaveSet(i))
+            PARAMETRIZE { species = i; }
+    }
+
+    bool8 valid = FALSE;
+    u32 j;
+    for (j = 0; j < MAX_MON_MOVES; j++)
+    {
+        if (species == SPECIES_SMEARGLE)
+        {
+            if (!IsMoveSketchBanned(j))
+                valid = TRUE;
+        }
+        else
+        {
+            if (CanMonLearnMoveCompetitive(species, gPokemonSets[species].moves[j]))
+                valid = TRUE;
+        }
+
+        if (valid)
+            DebugPrintf("%d: %S - %d PASSED", species, gPokemonSets[species].name, j);
+        else
+            DebugPrintf("%d: %S - %d FAILED", species, gPokemonSets[species].name, j);
+
+        EXPECT_EQ(valid, TRUE); // have to check all 4 moves
+    }
 }

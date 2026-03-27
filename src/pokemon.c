@@ -984,6 +984,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 #include "data/object_events/object_event_pic_tables_followers.h"
 
 #include "data/pokemon/species_info.h"
+#include "data/pokemon/pokemon_sets.h"
 
 #define PP_UP_SHIFTS(val)           val,        (val) << 2,        (val) << 4,        (val) << 6
 #define PP_UP_SHIFTS_INV(val) (u8)~(val), (u8)~((val) << 2), (u8)~((val) << 4), (u8)~((val) << 6)
@@ -7450,4 +7451,87 @@ void ChangePokemonNicknameWithCallback(void (*callback)(void))
     GetBoxMonData(boxMon, MON_DATA_NICKNAME, gStringVar3);
     GetBoxMonData(boxMon, MON_DATA_NICKNAME, gStringVar2);
     DoNamingScreen(NAMING_SCREEN_NICKNAME, gStringVar2, GetBoxMonData(boxMon, MON_DATA_SPECIES), GetBoxMonGender(boxMon), GetBoxMonData(boxMon, MON_DATA_PERSONALITY), callback);
+}
+
+bool32 DoesSpeciesHaveSet(u16 species)
+{
+    return (gPokemonSets[species].moves[0] > MOVE_POUND && gPokemonSets[species].ability > ABILITY_NONE) || species == SPECIES_EGG;
+}
+
+u32 CheckMonAbilitySlot(u16 species, const enum Ability ability)
+{
+    for (u8 i = 0; i < NUM_ABILITY_SLOTS; i++)
+    {
+        if (gSpeciesInfo[species].abilities[i] == ability)
+            return i;
+    }
+    return FALSE;
+}
+
+u32 CanMonLearnMoveCompetitive(u16 species, const u16 move)
+{
+    const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
+    const u16 *eggMoveLearnset = sNoneEggMoveLearnset;
+    u16 j;
+    u16 preSpecies = species;
+
+    // Check teachable moves
+    if (CanLearnTeachableMove(species, move))
+        return TRUE;
+
+    // Check level up moves
+    for (j = 0; learnset[j].move != LEVEL_UP_MOVE_END; j++)
+    {
+        if (move == learnset[j].move)
+            return TRUE;
+    }
+
+    // Check egg move
+    while (preSpecies != SPECIES_NONE)
+    {
+        eggMoveLearnset = GetSpeciesEggMoves(preSpecies);
+        preSpecies = GetSpeciesPreEvolution(preSpecies);
+    }
+    for (j = 0; eggMoveLearnset[j] != MOVE_UNAVAILABLE; j++)
+    {
+        if (move == eggMoveLearnset[j])
+            return TRUE;
+    }
+    return FALSE;
+}
+
+u32 CanMonLearnMoveWithLevel(u16 species, const u16 move, u16 level)
+{
+    const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
+    const u16 *eggMoveLearnset = sNoneEggMoveLearnset;
+    u16 j;
+    u16 preSpecies = species;
+
+    // Check teachable moves
+    if (CanLearnTeachableMove(species, move))
+        return TRUE;
+
+    // Check level up moves
+    for (j = 0; learnset[j].move != LEVEL_UP_MOVE_END; j++)
+    {
+        if (learnset[j].level > level)
+            break;
+        if (learnset[j].level == 0)
+            continue;
+        if (move == learnset[j].move)
+            return TRUE;
+    }
+
+    // Check egg move
+    while (preSpecies != SPECIES_NONE)
+    {
+        eggMoveLearnset = GetSpeciesEggMoves(preSpecies);
+        preSpecies = GetSpeciesPreEvolution(preSpecies);
+    }
+    for (j = 0; eggMoveLearnset[j] != MOVE_UNAVAILABLE; j++)
+    {
+        if (move == eggMoveLearnset[j])
+            return TRUE;
+    }
+    return FALSE;
 }

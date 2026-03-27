@@ -74,7 +74,8 @@ void FillPartnerParty(u16 trainerId)
             j = partyData[i].isShiny;
             SetMonData(&gPlayerParty[i + 3], MON_DATA_IS_SHINY, &j);
             SetMonData(&gPlayerParty[i + 3], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
-            CustomTrainerPartyAssignMoves(&gPlayerParty[i + 3], &partyData[i]);
+            const struct PokemonSets emptySet = {0};
+            CustomTrainerPartyAssignMoves(&gPlayerParty[i + 3], &partyData[i], emptySet);
 
             SetMonData(&gPlayerParty[i + 3], MON_DATA_IVS, &(partyData[i].iv));
             if (partyData[i].ev != NULL)

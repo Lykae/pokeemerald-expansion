@@ -554,6 +554,18 @@ struct AbilityInfo
     u8 failsOnImposter:1; // doesn't work on an Imposter mon; when can we actually use this?
 };
 
+struct PokemonSets
+{
+    u8 name[CODE_NAME_LENGTH + 1]; // name is used in the code system to differentiate forms
+    u16 item;
+    u16 ability;
+    u8 teraType;
+    u16 nature;
+    u16 evs[NUM_STATS];
+    u16 ivs[NUM_STATS];
+    u16 moves[MAX_MON_MOVES];
+};
+
 enum {
     AFFINE_NONE,
     AFFINE_TURN_UP,
@@ -734,6 +746,10 @@ extern const struct SpriteTemplate gBattlerSpriteTemplates[];
 extern const u32 sExpCandyExperienceTable[];
 extern const struct AbilityInfo gAbilitiesInfo[];
 extern const struct NatureInfo gNaturesInfo[];
+#if P_TUTOR_MOVES_ARRAY
+extern const u16 gTutorMoves[];
+#endif // P_TUTOR_MOVES_ARRAY
+extern const struct PokemonSets gPokemonSets[];
 
 void ZeroBoxMonData(struct BoxPokemon *boxMon);
 void ZeroMonData(struct Pokemon *mon);
@@ -951,5 +967,9 @@ bool32 IsSpeciesOfType(u32 species, enum Type type);
 struct BoxPokemon *GetSelectedBoxMonFromPcOrParty(void);
 u32 GiveScriptedMonToPlayer(struct Pokemon *mon, u8 slot);
 void ChangePokemonNicknameWithCallback(void (*callback)(void));
+bool32 DoesSpeciesHaveSet(u16 species);
+u32 CheckMonAbilitySlot(u16 species, const enum Ability ability);
+u32 CanMonLearnMoveCompetitive(u16 species, const u16 move);
+u32 CanMonLearnMoveWithLevel(u16 species, const u16 move, u16 level);
 
 #endif // GUARD_POKEMON_H
