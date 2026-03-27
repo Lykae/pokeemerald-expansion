@@ -637,7 +637,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_Give[] =
     { COMPOUND_STRING("Give item XYZ…"),    DebugAction_Give_Item },
     { COMPOUND_STRING("Pokémon (Basic)"),   DebugAction_Give_PokemonSimple },
     { COMPOUND_STRING("Pokémon (Complex)"), DebugAction_Give_PokemonComplex },
-    { COMPOUND_STRING("Give Competetive Mon"),DebugAction_ExecuteScript, EventScript_GetPokemonFromCodeEntry },
+    { COMPOUND_STRING("Give Competitive Mon"),DebugAction_ExecuteScript, EventScript_GetPokemonFromCodeEntry },
     { COMPOUND_STRING("Give Egg"),          DebugAction_Give_NewEgg },
     { COMPOUND_STRING("Give Decoration…"),  DebugAction_Give_Decoration },
     { COMPOUND_STRING("Max Money"),         DebugAction_Give_MaxMoney },

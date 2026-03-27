@@ -129,7 +129,7 @@ class Trainer:
 
 def write_tutorial(output):
     output.write('/*\n')
-    output.write('Trainers and their parties defined with Competetive Syntax.\n')
+    output.write('Trainers and their parties defined with Competitive Syntax.\n')
     output.write('Compatible with Pokemon Showdown exports.\n')
     output.write('https://github.com/smogon/pokemon-showdown/blob/master/sim/TEAMS.md\n')
     output.write('\n')

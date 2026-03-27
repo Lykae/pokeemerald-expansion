@@ -238,6 +238,10 @@ void NewGameInitData(void)
     ResetDexNav();
     ClearFollowerNPCData();
     VarSet(VAR_CURRENT_SEASON, gSaveBlock2Ptr->optionsSeason);
+    if (gSaveBlock2Ptr->optionsCompetitive == 1)
+    {
+        FlagSet(FLAG_COMPETITIVE_MONS);
+    }
     FlagSet(DN_FLAG_DEXNAV_GET);
     //FlagSet(DN_FLAG_DETECTOR_MODE);
     gSaveBlock1Ptr->optionsRandomizer = optRandomizer;

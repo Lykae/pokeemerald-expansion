@@ -7468,7 +7468,7 @@ u32 CheckMonAbilitySlot(u16 species, const enum Ability ability)
     return FALSE;
 }
 
-u32 CanMonLearnMoveCompetetive(u16 species, const u16 move)
+u32 CanMonLearnMoveCompetitive(u16 species, const u16 move)
 {
     const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
     const u16 *eggMoveLearnset = sNoneEggMoveLearnset;

@@ -25,7 +25,8 @@
 #define tSeason data[4]
 //#define tBattleStyle data[3]
 //#define tSound data[4]
-#define tButtonMode data[5]
+//#define tButtonMode data[5]
+#define tCompetitive data[5]
 #define tWindowFrameType data[6]
 #define tBattleSceneOff data[7]
 
@@ -38,7 +39,8 @@ enum
     MENUITEM_RANDO_MISC,
     MENUITEM_SCALING,
     MENUITEM_SEASON,
-    MENUITEM_BUTTONMODE,
+    MENUITEM_COMPETITIVE,
+    //MENUITEM_BUTTONMODE,
     MENUITEM_FRAMETYPE,
     MENUITEM_BATTLESCENE,
     //MENUITEM_CANCEL,
@@ -57,7 +59,8 @@ enum
 #define YPOS_RANDOMIZER   (MENUITEM_RANDOMIZER * 16)
 //#define YPOS_SOUND        (MENUITEM_SOUND * 16)
 #define YPOS_RANDO_MISC   (MENUITEM_RANDO_MISC * 16)
-#define YPOS_BUTTONMODE   (MENUITEM_BUTTONMODE * 16)
+//#define YPOS_BUTTONMODE   (MENUITEM_BUTTONMODE * 16)
+#define YPOS_COMPETITIVE   (MENUITEM_COMPETITIVE * 16)
 #define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * 16)
 #define YPOS_SEASON       (MENUITEM_SEASON * 16)
 #define YPOS_SCALING       (MENUITEM_SCALING * 16)
@@ -79,12 +82,14 @@ static u8 RandoMisc_ProcessInput(u8 selection);
 static void RandoMisc_DrawChoices(u8 selection);
 static u8 Scaling_ProcessInput(u8 selection);
 static void Scaling_DrawChoices(u8 selection);
+static u8 Competitive_ProcessInput(u8 selection);
+static void Competitive_DrawChoices(u8 selection);
 //static u8 Sound_ProcessInput(u8 selection);
 //static void Sound_DrawChoices(u8 selection);
 static u8 FrameType_ProcessInput(u8 selection);
 static void FrameType_DrawChoices(u8 selection);
-static u8 ButtonMode_ProcessInput(u8 selection);
-static void ButtonMode_DrawChoices(u8 selection);
+//static u8 ButtonMode_ProcessInput(u8 selection);
+//static void ButtonMode_DrawChoices(u8 selection);
 static u8 Season_ProcessInput(u8 selection);
 static void Season_DrawChoices(u8 selection);
 static void DrawHeaderText(void);
@@ -109,9 +114,9 @@ static const u8 gText_BattleSceneOff[]     = _("{COLOR GREEN}{SHADOW LIGHT_GREEN
 //static const u8 gText_SoundStereo[]        = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}STEREO");
 static const u8 gText_FrameType[]          = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}TYPE");
 static const u8 gText_FrameTypeNumber[]    = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}");
-static const u8 gText_ButtonTypeNormal[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
-static const u8 gText_ButtonTypeLR[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}LR");
-static const u8 gText_ButtonTypeLEqualsA[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}L=A");
+//static const u8 gText_ButtonTypeNormal[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
+//static const u8 gText_ButtonTypeLR[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}LR");
+//static const u8 gText_ButtonTypeLEqualsA[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}L=A");
 
 //rando
 static const u8 gText_RandomizerOff[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF");
@@ -129,6 +134,10 @@ static const u8 gText_ScalingOff[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF")
 static const u8 gText_ScalingEasy[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}EASY");
 static const u8 gText_ScalingNormal[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
 
+//SCALING
+static const u8 gText_CompetitiveOff[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
+static const u8 gText_CompetitiveOn[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}HARDER");
+
 static const u16 sOptionMenuText_Pal[] = INCBIN_U16("graphics/interface/option_menu_text.gbapal");
 // note: this is only used in the Japanese release
 static const u8 sEqualSignGfx[] = INCBIN_U8("graphics/interface/option_menu_equals_sign.4bpp");
@@ -142,7 +151,8 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
     [MENUITEM_RANDO_MISC]       = COMPOUND_STRING("RANDOM MISC."),
     [MENUITEM_SCALING]      = COMPOUND_STRING("SCALING"),
     [MENUITEM_SEASON]      = COMPOUND_STRING("SEASON"),
-    [MENUITEM_BUTTONMODE]  = COMPOUND_STRING("BUTTON MODE"),
+    [MENUITEM_COMPETITIVE]  = COMPOUND_STRING("ENEMY MONS"),
+    //[MENUITEM_BUTTONMODE]  = COMPOUND_STRING("BUTTON MODE"),
     [MENUITEM_FRAMETYPE]   = COMPOUND_STRING("FRAME"),
     [MENUITEM_BATTLESCENE] = COMPOUND_STRING("BATTLE SCENE"),
 };
@@ -295,14 +305,13 @@ void CB2_InitOptionMenu(void)
     {
         u8 taskId = CreateTask(Task_OptionMenuFadeIn, 0);
 
-        //TODO RANDOMIZER AND SCALING
-
         gTasks[taskId].tMenuSelection = 0;
         //gTasks[taskId].tTextSpeed = gSaveBlock2Ptr->optionsTextSpeed;
         gTasks[taskId].tBattleSceneOff = gSaveBlock2Ptr->optionsBattleSceneOff;
         //gTasks[taskId].tBattleStyle = gSaveBlock2Ptr->optionsBattleStyle;
         //gTasks[taskId].tSound = gSaveBlock2Ptr->optionsSound;
-        gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
+        gTasks[taskId].tCompetitive = gSaveBlock2Ptr->optionsCompetitive;
+        //gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
         gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
         gTasks[taskId].tSeason = gSaveBlock2Ptr->optionsSeason;
         gTasks[taskId].tRandomizer = gSaveBlock1Ptr->optionsRandomizer;
@@ -310,17 +319,17 @@ void CB2_InitOptionMenu(void)
         gTasks[taskId].tScaling = gSaveBlock1Ptr->optionsScaling;
 
 
-        //TODO RANDOMIZER AND SCALING
         //TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
         BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
         //BattleStyle_DrawChoices(gTasks[taskId].tBattleStyle);
         //Sound_DrawChoices(gTasks[taskId].tSound);
-        ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
+        //ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
         FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
         Season_DrawChoices(gTasks[taskId].tSeason);
         Randomizer_DrawChoices(gTasks[taskId].tRandomizer);
         RandoMisc_DrawChoices(gTasks[taskId].tRandoMisc);
         Scaling_DrawChoices(gTasks[taskId].tScaling);
+        Competitive_DrawChoices(gTasks[taskId].tCompetitive);
         HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
 
         CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
@@ -416,6 +425,13 @@ static void Task_OptionMenuProcessInput(u8 taskId)
             if (previousOption != gTasks[taskId].tScaling)
                 Scaling_DrawChoices(gTasks[taskId].tScaling);
             break;
+        case MENUITEM_COMPETITIVE:
+            previousOption = gTasks[taskId].tCompetitive;
+            gTasks[taskId].tCompetitive = Competitive_ProcessInput(gTasks[taskId].tCompetitive);
+
+            if (previousOption != gTasks[taskId].tCompetitive)
+                Competitive_DrawChoices(gTasks[taskId].tCompetitive);
+            break;
         //case MENUITEM_SOUND:
         //    previousOption = gTasks[taskId].tSound;
         //    gTasks[taskId].tSound = Sound_ProcessInput(gTasks[taskId].tSound);
@@ -423,13 +439,13 @@ static void Task_OptionMenuProcessInput(u8 taskId)
         //    if (previousOption != gTasks[taskId].tSound)
         //        Sound_DrawChoices(gTasks[taskId].tSound);
         //    break;
-        case MENUITEM_BUTTONMODE:
-            previousOption = gTasks[taskId].tButtonMode;
-            gTasks[taskId].tButtonMode = ButtonMode_ProcessInput(gTasks[taskId].tButtonMode);
-
-            if (previousOption != gTasks[taskId].tButtonMode)
-                ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
-            break;
+        //case MENUITEM_BUTTONMODE:
+        //    previousOption = gTasks[taskId].tButtonMode;
+        //    gTasks[taskId].tButtonMode = ButtonMode_ProcessInput(gTasks[taskId].tButtonMode);
+//
+        //    if (previousOption != gTasks[taskId].tButtonMode)
+        //        ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
+        //    break;
         case MENUITEM_FRAMETYPE:
             previousOption = gTasks[taskId].tWindowFrameType;
             gTasks[taskId].tWindowFrameType = FrameType_ProcessInput(gTasks[taskId].tWindowFrameType);
@@ -463,14 +479,21 @@ static void Task_OptionMenuSave(u8 taskId)
     //gSaveBlock2Ptr->optionsBattleStyle = gTasks[taskId].tBattleStyle;
     //TODO RANDOMIZER AND SCALING
     //gSaveBlock2Ptr->optionsSound = gTasks[taskId].tSound;
-    gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
+    //gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
     gSaveBlock2Ptr->optionsSeason = gTasks[taskId].tSeason;
     gSaveBlock1Ptr->optionsRandomizer = gTasks[taskId].tRandomizer;
     gSaveBlock1Ptr->optionsRandoMisc = gTasks[taskId].tRandoMisc;
     gSaveBlock1Ptr->optionsScaling = gTasks[taskId].tScaling;
+    gSaveBlock2Ptr->optionsCompetitive = gTasks[taskId].tCompetitive;
 
     VarSet(VAR_CURRENT_SEASON, gSaveBlock2Ptr->optionsSeason);
+    if (gSaveBlock2Ptr->optionsCompetitive == 0) {
+        FlagClear(FLAG_COMPETITIVE_MONS);
+    } else 
+    {
+        FlagSet(FLAG_COMPETITIVE_MONS);
+    }
     SaveRandomOptions();
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
@@ -645,6 +668,29 @@ static void BattleScene_DrawChoices(u8 selection)
 
     DrawOptionMenuChoice(gText_BattleSceneOn, choicesXPos, YPOS_BATTLESCENE, styles[0]);
     DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleSceneOff, 198), YPOS_BATTLESCENE, styles[1]);
+}
+
+static u8 Competitive_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        selection ^= 1;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static void Competitive_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_CompetitiveOff, choicesXPos, YPOS_COMPETITIVE, styles[0]);
+    DrawOptionMenuChoice(gText_CompetitiveOn, GetStringRightAlignXOffset(FONT_NORMAL, gText_CompetitiveOn, 198), YPOS_COMPETITIVE, styles[1]);
 }
 
 //static u8 BattleStyle_ProcessInput(u8 selection)
@@ -974,51 +1020,51 @@ static void FrameType_DrawChoices(u8 selection)
     DrawOptionMenuChoice(text, 128, YPOS_FRAMETYPE, 1);
 }
 
-static u8 ButtonMode_ProcessInput(u8 selection)
-{
-    if (JOY_NEW(DPAD_RIGHT))
-    {
-        if (selection <= 1)
-            selection++;
-        else
-            selection = 0;
-
-        sArrowPressed = TRUE;
-    }
-    if (JOY_NEW(DPAD_LEFT))
-    {
-        if (selection != 0)
-            selection--;
-        else
-            selection = 2;
-
-        sArrowPressed = TRUE;
-    }
-    return selection;
-}
-
-static void ButtonMode_DrawChoices(u8 selection)
-{
-    s32 widthNormal, widthLR, widthLA, xLR;
-    u8 styles[3];
-
-    styles[0] = 0;
-    styles[1] = 0;
-    styles[2] = 0;
-    styles[selection] = 1;
-
-    DrawOptionMenuChoice(gText_ButtonTypeNormal, choicesXPos, YPOS_BUTTONMODE, styles[0]);
-
-    widthNormal = GetStringWidth(FONT_NORMAL, gText_ButtonTypeNormal, 0);
-    widthLR = GetStringWidth(FONT_NORMAL, gText_ButtonTypeLR, 0);
-    widthLA = GetStringWidth(FONT_NORMAL, gText_ButtonTypeLEqualsA, 0);
-
-    widthLR -= 94;
-    xLR = (widthNormal - widthLR - widthLA) / 2 + choicesXPos;
-    DrawOptionMenuChoice(gText_ButtonTypeLR, xLR, YPOS_BUTTONMODE, styles[1]);
-
-    DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, GetStringRightAlignXOffset(FONT_NORMAL, gText_ButtonTypeLEqualsA, 198), YPOS_BUTTONMODE, styles[2]);
-}
+//static u8 ButtonMode_ProcessInput(u8 selection)
+//{
+//    if (JOY_NEW(DPAD_RIGHT))
+//    {
+//        if (selection <= 1)
+//            selection++;
+//        else
+//            selection = 0;
+//
+//        sArrowPressed = TRUE;
+//    }
+//    if (JOY_NEW(DPAD_LEFT))
+//    {
+//        if (selection != 0)
+//            selection--;
+//        else
+//            selection = 2;
+//
+//        sArrowPressed = TRUE;
+//    }
+//    return selection;
+//}
+//
+//static void ButtonMode_DrawChoices(u8 selection)
+//{
+//    s32 widthNormal, widthLR, widthLA, xLR;
+//    u8 styles[3];
+//
+//    styles[0] = 0;
+//    styles[1] = 0;
+//    styles[2] = 0;
+//    styles[selection] = 1;
+//
+//    DrawOptionMenuChoice(gText_ButtonTypeNormal, choicesXPos, YPOS_BUTTONMODE, styles[0]);
+//
+//    widthNormal = GetStringWidth(FONT_NORMAL, gText_ButtonTypeNormal, 0);
+//    widthLR = GetStringWidth(FONT_NORMAL, gText_ButtonTypeLR, 0);
+//    widthLA = GetStringWidth(FONT_NORMAL, gText_ButtonTypeLEqualsA, 0);
+//
+//    widthLR -= 94;
+//    xLR = (widthNormal - widthLR - widthLA) / 2 + choicesXPos;
+//    DrawOptionMenuChoice(gText_ButtonTypeLR, xLR, YPOS_BUTTONMODE, styles[1]);
+//
+//    DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, GetStringRightAlignXOffset(FONT_NORMAL, gText_ButtonTypeLEqualsA, 198), YPOS_BUTTONMODE, styles[2]);
+//}
 
 static void DrawHeaderText(void)
 {

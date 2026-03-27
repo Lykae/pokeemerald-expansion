@@ -1952,7 +1952,7 @@ void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon 
         }
     }
 
-    if (FlagGet(FLAG_COMPETETIVE_MONS) && speciesSet.name[0] != 0) {
+    if (FlagGet(FLAG_COMPETITIVE_MONS) && speciesSet.name[0] != 0) {
         u16 setMoves[MAX_MON_MOVES];
         memcpy(setMoves, speciesSet.moves, sizeof(setMoves));
         bool8 alreadyHasMove = FALSE;
@@ -2078,8 +2078,8 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                     species = RandomizeTrainerMon(seed, i, monsCount, species, level);
             #endif
 
-            // Competetive mons
-            if (FlagGet(FLAG_COMPETETIVE_MONS) == TRUE && DoesSpeciesHaveSet(species)) {
+            // Competitive mons
+            if (FlagGet(FLAG_COMPETITIVE_MONS) == TRUE && DoesSpeciesHaveSet(species)) {
                 if (trainer->battleType != TRAINER_BATTLE_TYPE_SINGLES)
                     personalityValue = 0x80;
                 else if (trainer->gender == TRAINER_GENDER_FEMALE)

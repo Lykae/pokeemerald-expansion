@@ -248,7 +248,7 @@ TEST("gPokemonSets moves are valid")
         }
         else
         {
-            if (CanMonLearnMoveCompetetive(species, gPokemonSets[species].moves[j]))
+            if (CanMonLearnMoveCompetitive(species, gPokemonSets[species].moves[j]))
                 valid = TRUE;
         }
 
