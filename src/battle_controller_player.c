@@ -1726,7 +1726,7 @@ static void OpenPartyMenuToViewEnemy(enum BattlerId battler) {
         caseId = gTasks[gBattleControllerData[battler]].data[0];
         DestroyTask(gBattleControllerData[battler]);
         FreeAllWindowBuffers();
-        OpenPartyMenuInBattle(1, caseId);
+        OpenPartyMenuInBattle(1, PARTY_ACTION_CHOOSE_MON);
     }
 }
 
