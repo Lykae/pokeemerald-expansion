@@ -1988,14 +1988,23 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
 
     u8 isTrainerBossTrainer = trainer->isBossTrainer;
     u8 dynamicLevelRatio = trainer->dynamicLevelRatio;
+    u8 flatLevelIncrease = 0;
 
-    if (FlagGet(FLAG_SCALING_ENABLED)) {
+    if (FlagGet(FLAG_SCALING_ENABLED))
+    {
         if (FlagGet(FLAG_SCALING_EASY)) {
             dynamicLevelRatio = 85;
+        }
+        else if(FlagGet(FLAG_SCALING_HARD))
+        {
+            dynamicLevelRatio = 100;
+            flatLevelIncrease = 3;
         } else {
             dynamicLevelRatio = 100;
         }
-    } else {
+    }
+    else
+    {
         dynamicLevelRatio = 0;
     }
 
@@ -2065,6 +2074,10 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             {
                 level += (partyMaxLevel - npcTrainerPartyMaxLevel);
             }
+
+            // for hardest option
+            level += flatLevelIncrease;
+
             //if (partyData[monIndex].isShiny)
             //{
             //    otId.method = OT_ID_PRESET;

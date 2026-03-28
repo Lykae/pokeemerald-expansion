@@ -133,6 +133,7 @@ static const u8 gText_RandomizerMiscBoth[]   = _("{COLOR GREEN}{SHADOW LIGHT_GRE
 static const u8 gText_ScalingOff[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF");
 static const u8 gText_ScalingEasy[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}EASY");
 static const u8 gText_ScalingNormal[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
+static const u8 gText_ScalingHard[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}HARD");
 
 //SCALING
 static const u8 gText_CompetitiveOff[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
@@ -872,9 +873,9 @@ static u8 Scaling_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
-        if (selection < 2)   // 0,1, → increment
+        if (selection < 3)
             selection++;
-        else                 // 2 → wrap around to 0
+        else
             selection = 0;
 
         sArrowPressed = TRUE;
@@ -882,10 +883,10 @@ static u8 Scaling_ProcessInput(u8 selection)
 
     if (JOY_NEW(DPAD_LEFT))
     {
-        if (selection > 0)   // 1,2, → decrement
+        if (selection > 0)
             selection--;
-        else                 // 0 → wrap around to 2
-            selection = 2;
+        else
+            selection = 3;
 
         sArrowPressed = TRUE;
     }
@@ -895,24 +896,25 @@ static u8 Scaling_ProcessInput(u8 selection)
 
 static void Scaling_DrawChoices(u8 selection)
 {
-    u8 styles[3];
-    s32 x[3];
-    s32 widths[3];
+    u8 styles[4];
+    s32 x[4];
+    s32 widths[4];
     const u8 *const names[] =
     {
         gText_ScalingOff,
         gText_ScalingEasy,
         gText_ScalingNormal,
+        gText_ScalingHard,
     };
 
     // Reset styles
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 4; i++)
         styles[i] = 0;
 
     styles[selection] = 1;
 
     // Get widths
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 4; i++)
         widths[i] = GetStringWidth(FONT_NORMAL, names[i], 0);
 
     // Layout: evenly space across the row
@@ -920,18 +922,18 @@ static void Scaling_DrawChoices(u8 selection)
     s32 endX = 198;
 
     s32 totalWidth = 0;
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 4; i++)
         totalWidth += widths[i];
 
     s32 spacing = (endX - startX - totalWidth) / 2;
 
     // Compute positions
     x[0] = startX;
-    for (int i = 1; i < 3; i++)
+    for (int i = 1; i < 4; i++)
         x[i] = x[i - 1] + widths[i - 1] + spacing;
 
     // Draw all three
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 4; i++)
     {
         DrawOptionMenuChoice(names[i], x[i], YPOS_SCALING, styles[i]);
     }

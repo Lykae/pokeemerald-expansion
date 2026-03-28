@@ -33,7 +33,8 @@ enum {
 enum {
     SCALING_OFF,
     SCALING_EASY,
-    SCALING_NORMAL
+    SCALING_NORMAL,
+    SCALING_HARD
 };
 
 // Add the mons you wish to be randomized when given as starter/gift mon to this list
@@ -1169,9 +1170,16 @@ void SaveRandomOptions() {
         case SCALING_EASY:
             FlagSet(FLAG_SCALING_ENABLED);
             FlagSet(FLAG_SCALING_EASY);
+            FlagClear(FLAG_SCALING_HARD);
             break;
         case SCALING_NORMAL:
             FlagSet(FLAG_SCALING_ENABLED);
+            FlagClear(FLAG_SCALING_EASY);
+            FlagClear(FLAG_SCALING_HARD);
+            break;
+        case SCALING_HARD:
+            FlagSet(FLAG_SCALING_ENABLED);
+            FlagSet(FLAG_SCALING_HARD);
             FlagClear(FLAG_SCALING_EASY);
             break;
     }
