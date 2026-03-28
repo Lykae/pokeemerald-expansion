@@ -64,3 +64,6 @@ tools/aif2pcm/aif2pcm
 *.smolTM
 __pycache__
 .map_version
+notes/
+tools/poryscript/poryscript
+data/maps/**/scripts.inc
