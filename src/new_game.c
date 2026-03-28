@@ -51,6 +51,7 @@
 #include "difficulty.h"
 #include "randomizer.h"
 #include "follower_npc.h"
+#include "constants/battle_mode.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 extern const u8 EventScript_ResetAllMapFlagsFrlg[];
@@ -106,6 +107,7 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
     gSaveBlock2Ptr->regionMapZoom = FALSE;
     gSaveBlock2Ptr->optionsSeason = 0;
+    gSaveBlock2Ptr->battleMode = BATTLE_MODE_MIXED;
 }
 
 static void ClearPokedexFlags(void)

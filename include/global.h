@@ -600,6 +600,7 @@ struct SaveBlock2
              u16 regionMapZoom:1; // whether the map is zoomed in
              u16 optionsSeason:2;
              u16 optionsCompetitive:1;
+             u16 battleMode:2;
              //u16 padding1:4;
              //u16 padding2;
     /*0x18*/ struct Pokedex pokedex;

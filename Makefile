@@ -429,6 +429,8 @@ generated: $(AUTO_GEN_TARGETS)
 %.s:   ;
 %.png: ;
 %.pal: ;
+%.aif: ;
+%.pory: ;
 %.wav: ;
 
 %.1bpp:     %.png  ; $(GFX) $< $@
