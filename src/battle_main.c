@@ -2117,7 +2117,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 SetMonData(&party[i], MON_DATA_SPDEF_EV, &(speciesSet.evs[4]));
                 SetMonData(&party[i], MON_DATA_SPEED_EV, &(speciesSet.evs[5]));
 
-                if (speciesSet.ability != ABILITY_NONE)
+                if (speciesSet.ability != ABILITY_NONE || !FlagGet(FLAG_RANDOMIZER_ABILITY_ENABLED))
                 {
                     const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[species];
                     u32 maxAbilityNum = ARRAY_COUNT(speciesInfo->abilities);
@@ -2173,7 +2173,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                     SetMonData(&party[i], MON_DATA_SPEED_EV, &(partyData[monIndex].ev[5]));
                 }
 
-                if (partyData[monIndex].ability != ABILITY_NONE)
+                if (partyData[monIndex].ability != ABILITY_NONE || !FlagGet(FLAG_RANDOMIZER_ABILITY_ENABLED))
                 {
                     const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[partyData[monIndex].species];
                     u32 maxAbilityNum = ARRAY_COUNT(speciesInfo->abilities);
