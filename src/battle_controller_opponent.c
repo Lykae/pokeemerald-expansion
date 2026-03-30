@@ -85,7 +85,7 @@ static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(enum Battler
     [CONTROLLER_PAUSE]                    = BtlController_Empty,
     [CONTROLLER_MOVEANIMATION]            = BtlController_HandleMoveAnimation,
     [CONTROLLER_PRINTSTRING]              = BtlController_HandlePrintString,
-    [CONTROLLER_PRINTSTRINGPLAYERONLY]    = BtlController_Empty,
+    [CONTROLLER_PRINTSTRINGPLAYERONLY]    = BtlController_HandlePrintStringPlayerOnly,
     [CONTROLLER_CHOOSEACTION]             = OpponentHandleChooseAction,
     [CONTROLLER_YESNOBOX]                 = BtlController_Empty,
     [CONTROLLER_CHOOSEMOVE]               = OpponentHandleChooseMove,

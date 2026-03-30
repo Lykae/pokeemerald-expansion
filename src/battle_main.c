@@ -1976,6 +1976,83 @@ void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon 
     }
 }
 
+static u16 GetTotalEVs(const u8 evs[6])
+{
+    u16 total = 0;
+    for (int i = 0; i < 6; i++)
+        total += evs[i];
+    return total;
+}
+
+static void ClampEVs(u8 evs[6])
+{
+    for (int i = 0; i < 6; i++)
+    {
+        if (evs[i] > MAX_PER_STAT_EVS)
+            evs[i] = MAX_PER_STAT_EVS;
+    }
+}
+
+static void GetTopTwoBaseStats(const u16 baseStats[6], int *a, int *b)
+{
+    *a = 0;
+    *b = 1;
+
+    for (int i = 2; i < 6; i++)
+    {
+        if (baseStats[i] > baseStats[*a])
+        {
+            *b = *a;
+            *a = i;
+        }
+        else if (baseStats[i] > baseStats[*b])
+        {
+            *b = i;
+        }
+    }
+}
+
+void AdjustMonEvsTo510(u8 evs[6], const u16 baseStats[6])
+{
+    ClampEVs(evs);
+
+    u16 total = GetTotalEVs(evs);
+
+    if (total >= MAX_TOTAL_EVS)
+        return;
+
+    int best1, best2;
+    GetTopTwoBaseStats(baseStats, &best1, &best2);
+
+    int toggle = 0;
+
+    while (total < MAX_TOTAL_EVS)
+    {
+        int idx = (toggle == 0) ? best1 : best2;
+        toggle ^= 1;
+
+        if (evs[idx] < MAX_PER_STAT_EVS)
+        {
+            evs[idx]++;
+            total++;
+        }
+        else
+        {
+            int other = (idx == best1) ? best2 : best1;
+
+            if (evs[other] < MAX_PER_STAT_EVS)
+            {
+                evs[other]++;
+                total++;
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+}
+
 u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer *trainer, bool32 firstTrainer, u32 battleTypeFlags, u16 seed)
 {
     u32 personalityValue;
@@ -2105,19 +2182,49 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
 
                 personalityValue += personalityHash << 8;
                 
-                const struct PokemonSets speciesSet = gPokemonSets[GetEvolvedSpeciesWithSet(species)];
+                //const struct PokemonSets speciesSet = gPokemonSets[GetEvolvedSpeciesWithSet(species)];
+                u16 evolvedSpeciesWithSet = GetEvolvedSpeciesWithSet(species);
+                const struct PokemonSets *setsForSpecies = gPokemonSets[evolvedSpeciesWithSet];
+                u16 setCount = 0;
+                for (u16 i = 0; i < MAX_SETS_PER_SPECIES; i++)
+                {
+                    if (setsForSpecies[i].species == 0)
+                        break;
+                
+                    setCount++;
+                }
+                u32 setIndex = RandomizeTrainerMonSet(seed, i, monsCount, evolvedSpeciesWithSet, setCount);
+                const struct PokemonSets speciesSet = setsForSpecies[setIndex];
                 CreateMon(&party[i], species, level, personalityValue, otId);
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &(speciesSet.item));
                 CustomTrainerPartyAssignMoves(&party[i], &partyData[monIndex], speciesSet);
                 SetMonData(&party[i], MON_DATA_IVS, &(speciesSet.ivs));
-                SetMonData(&party[i], MON_DATA_HP_EV, &(speciesSet.evs[0]));
-                SetMonData(&party[i], MON_DATA_ATK_EV, &(speciesSet.evs[1]));
-                SetMonData(&party[i], MON_DATA_DEF_EV, &(speciesSet.evs[2]));
-                SetMonData(&party[i], MON_DATA_SPATK_EV, &(speciesSet.evs[3]));
-                SetMonData(&party[i], MON_DATA_SPDEF_EV, &(speciesSet.evs[4]));
-                SetMonData(&party[i], MON_DATA_SPEED_EV, &(speciesSet.evs[5]));
 
-                if (speciesSet.ability != ABILITY_NONE)
+                u16 baseStats[6] =
+                {
+                    gSpeciesInfo[species].baseHP,
+                    gSpeciesInfo[species].baseAttack,
+                    gSpeciesInfo[species].baseDefense,
+                    gSpeciesInfo[species].baseSpAttack,
+                    gSpeciesInfo[species].baseSpDefense,
+                    gSpeciesInfo[species].baseSpeed,
+                };
+
+                u8 evs[6];
+
+                for (int i = 0; i < 6; i++)
+                    evs[i] = speciesSet.evs[i];
+
+                AdjustMonEvsTo510(evs, baseStats);
+
+                SetMonData(&party[i], MON_DATA_HP_EV, &(evs[0]));
+                SetMonData(&party[i], MON_DATA_ATK_EV, &(evs[1]));
+                SetMonData(&party[i], MON_DATA_DEF_EV, &(evs[2]));
+                SetMonData(&party[i], MON_DATA_SPATK_EV, &(evs[3]));
+                SetMonData(&party[i], MON_DATA_SPDEF_EV, &(evs[4]));
+                SetMonData(&party[i], MON_DATA_SPEED_EV, &(evs[5]));
+
+                if (speciesSet.ability != ABILITY_NONE || !FlagGet(FLAG_RANDOMIZER_ABILITY_ENABLED))
                 {
                     const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[species];
                     u32 maxAbilityNum = ARRAY_COUNT(speciesInfo->abilities);
@@ -2173,7 +2280,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                     SetMonData(&party[i], MON_DATA_SPEED_EV, &(partyData[monIndex].ev[5]));
                 }
 
-                if (partyData[monIndex].ability != ABILITY_NONE)
+                if (partyData[monIndex].ability != ABILITY_NONE || !FlagGet(FLAG_RANDOMIZER_ABILITY_ENABLED))
                 {
                     const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[partyData[monIndex].species];
                     u32 maxAbilityNum = ARRAY_COUNT(speciesInfo->abilities);

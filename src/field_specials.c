@@ -5782,7 +5782,7 @@ void GetPokemonNameFeedback(void)
 {
     for (u32 i = SPECIES_BULBASAUR; i < NUM_SPECIES; i++)
     {
-        if (!StringCompare(gStringVar2, gPokemonSets[i].name))
+        if (!StringCompare(gStringVar2, gPokemonSets[i][0].name))
         {
             gSpecialVar_Result = i;
             return;

@@ -212,13 +212,13 @@ TEST("gPokemonSets abilities are valid")
     u32 j;
     for (j = 0; j < NUM_ABILITY_SLOTS; j++)
     {
-        if (gPokemonSets[species].ability == gSpeciesInfo[species].abilities[j])
+        if (gPokemonSets[species][0].ability == gSpeciesInfo[species].abilities[j])
             valid = TRUE;
 
         if (valid)
-            DebugPrintf("%d: %S - %d PASSED", species, gPokemonSets[species].name, j);
+            DebugPrintf("%d: %S - %d PASSED", species, gPokemonSets[species][0].name, j);
         else
-            DebugPrintf("%d: %S - %d FAILED", species, gPokemonSets[species].name, j);
+            DebugPrintf("%d: %S - %d FAILED", species, gPokemonSets[species][0].name, j);
     }
 
     EXPECT_EQ(valid, TRUE);
@@ -248,14 +248,14 @@ TEST("gPokemonSets moves are valid")
         }
         else
         {
-            if (CanMonLearnMoveCompetitive(species, gPokemonSets[species].moves[j]))
+            if (CanMonLearnMoveCompetitive(species, gPokemonSets[species][0].moves[j]))
                 valid = TRUE;
         }
 
         if (valid)
-            DebugPrintf("%d: %S - %d PASSED", species, gPokemonSets[species].name, j);
+            DebugPrintf("%d: %S - %d PASSED", species, gPokemonSets[species][0].name, j);
         else
-            DebugPrintf("%d: %S - %d FAILED", species, gPokemonSets[species].name, j);
+            DebugPrintf("%d: %S - %d FAILED", species, gPokemonSets[species][0].name, j);
 
         EXPECT_EQ(valid, TRUE); // have to check all 4 moves
     }

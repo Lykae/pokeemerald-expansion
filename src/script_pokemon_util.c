@@ -507,9 +507,9 @@ static u32 GiveMonSet(u16 species)
     // u8 nature, u8 abilityNum, u8 gender, u16 *evs, u16 *ivs, enum Move *moves, 
     // enum ShinyMode shinyMode, bool8 gmaxFactor, enum Type teraType, u8 dmaxLevel)
     return ScriptGiveMonParameterized(0, PARTY_SIZE, species, MAX_LEVEL,
-        (u16) gPokemonSets[species].item, BALL_POKE, (u8) gPokemonSets[species].nature,
-        CheckMonAbilitySlot(species, gPokemonSets[species].ability), MON_GENDER_RANDOM, 
-        (u16 *) gPokemonSets[species].evs, (u16 *) gPokemonSets[species].ivs, (u16 *) gPokemonSets[species].moves, FALSE, FALSE, 0, 0);
+        (u16) gPokemonSets[species][0].item, BALL_POKE, (u8) gPokemonSets[species][0].nature,
+        CheckMonAbilitySlot(species, gPokemonSets[species][0].ability), MON_GENDER_RANDOM, 
+        (u16 *) gPokemonSets[species][0].evs, (u16 *) gPokemonSets[species][0].ivs, (u16 *) gPokemonSets[species][0].moves, FALSE, FALSE, 0, 0);
 }
 
 void ScrCmd_givemonset(struct ScriptContext *ctx)
