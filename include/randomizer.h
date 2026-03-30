@@ -118,6 +118,8 @@ bool32 IsRandomizationPossible(u16 tableSpecies, u16 matchSpecies);
 
 u16 RandomizeTrainerMon(u16 trainerId, u8 slot, u8 totalMons, u16 species, u32 level);
 
+u32 RandomizeTrainerMonSet(u16 trainerId, u8 slot, u8 totalMons, u16 species, u16 numberOfSets);
+
 u16 RandomizeFixedEncounterMon(u16 species, u8 mapNum, u8 mapGroup, u8 localId, u32 level);
 
 // Given a starter/gift slot and the list of original starters/gifts, returns the random mon in that slot.

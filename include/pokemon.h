@@ -556,14 +556,21 @@ struct AbilityInfo
 
 struct PokemonSets
 {
-    u8 name[CODE_NAME_LENGTH + 1]; // name is used in the code system to differentiate forms
+    u8 name[40]; // name is used in the code system to differentiate forms
     u16 item;
+    u16 species;
     u16 ability;
     u8 teraType;
     u16 nature;
     u16 evs[NUM_STATS];
     u16 ivs[NUM_STATS];
     u16 moves[MAX_MON_MOVES];
+};
+
+struct PokemonSetsGroup
+{
+    const struct PokemonSets *sets;
+    u16 count;
 };
 
 enum {
@@ -749,7 +756,8 @@ extern const struct NatureInfo gNaturesInfo[];
 #if P_TUTOR_MOVES_ARRAY
 extern const u16 gTutorMoves[];
 #endif // P_TUTOR_MOVES_ARRAY
-extern const struct PokemonSets gPokemonSets[];
+#define MAX_SETS_PER_SPECIES 16
+extern const struct PokemonSets gPokemonSets[NUM_SPECIES][MAX_SETS_PER_SPECIES];
 
 void ZeroBoxMonData(struct BoxPokemon *boxMon);
 void ZeroMonData(struct Pokemon *mon);

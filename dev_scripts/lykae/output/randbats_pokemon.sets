@@ -22,9 +22,31 @@ Adamant Nature
 - Psychic
 - Psyshock
 
+=== Alcremie ===
+=== Tera Blast user ===
+Alcremie @ Leftovers
+Ability: Aroma Veil
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Alluring Voice
+- Calm Mind
+- Recover
+- Tera Blast
+
 === Alomomola ===
 === Fast Support ===
 Alomomola @ Heavy-Duty Boots
+Ability: Regenerator
+Tera Type: Poison
+- Flip Turn
+- Protect
+- Scald
+- Wish
+
+=== Alomomola ===
+=== Bulky Support ===
+Alomomola @ Leftovers
 Ability: Regenerator
 Tera Type: Poison
 - Flip Turn
@@ -42,6 +64,16 @@ Tera Type: Steel
 - Earthquake
 - Haze
 
+=== Altaria ===
+=== Bulky Setup ===
+Altaria @ Heavy-Duty Boots
+Ability: Natural Cure
+Tera Type: Ground
+- Brave Bird
+- Dragon Dance
+- Earthquake
+- Roost
+
 === Ambipom ===
 === Wallbreaker ===
 Ambipom @ Silk Scarf
@@ -51,6 +83,16 @@ Tera Type: Normal
 - Fake Out
 - Knock Off
 - Low Kick
+
+=== Ambipom ===
+=== Fast Attacker ===
+Ambipom @ Choice Band
+Ability: Technician
+Tera Type: Ice
+- Double-Edge
+- Knock Off
+- Low Kick
+- Triple Axel
 
 === Amoonguss ===
 === Bulky Attacker ===
@@ -62,6 +104,18 @@ Tera Type: Steel
 - Spore
 - Stomping Tantrum
 
+=== Amoonguss ===
+=== Bulky Support ===
+Amoonguss @ Leftovers
+Ability: Regenerator
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Clear Smog
+- Giga Drain
+- Sludge Bomb
+- Spore
+
 === Ampharos ===
 === AV Pivot ===
 Ampharos @ Assault Vest
@@ -71,6 +125,18 @@ Tera Type: Fairy
 - Discharge
 - Dragon Tail
 - Focus Blast
+
+=== Ampharos ===
+=== Wallbreaker ===
+Ampharos @ Choice Specs
+Ability: Static
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Agility
+- Dazzling Gleam
+- Focus Blast
+- Thunderbolt
 
 === Annihilape ===
 === Bulky Setup ===
@@ -112,6 +178,26 @@ Tera Type: Grass
 - Gunk Shot
 - Trailblaze
 
+=== Arbok ===
+=== Bulky Attacker ===
+Arbok @ Leftovers
+Ability: Intimidate
+Tera Type: Dark
+- Coil
+- Earthquake
+- Gunk Shot
+- Sucker Punch
+
+=== Arbok ===
+=== Fast Support ===
+Arbok @ Choice Band
+Ability: Intimidate
+Tera Type: Dark
+- Earthquake
+- Glare
+- Gunk Shot
+- Knock Off
+
 === Arboliva ===
 === Bulky Support ===
 Arboliva @ Sitrus Berry
@@ -123,6 +209,18 @@ Adamant Nature
 - Leech Seed
 - Protect
 - Substitute
+
+=== Arboliva ===
+=== Bulky Attacker ===
+Arboliva @ Leftovers
+Ability: Seed Sower
+Tera Type: Grass
+EVs: 0 ATK
+Adamant Nature
+- Earth Power
+- Energy Ball
+- Hyper Voice
+- Strength Sap
 
 === Arcanine ===
 === Bulky Attacker ===
@@ -144,6 +242,18 @@ Tera Type: Fire
 - Head Smash
 - Morning Sun
 
+=== Arcanine-Hisui ===
+=== Fast Attacker ===
+Arcanine-Hisui @ Choice Band
+Ability: Rock Head
+Tera Type: Fire
+EVs: 81 HP
+Adamant Nature
+- Close Combat
+- Extreme Speed
+- Flare Blitz
+- Head Smash
+
 === Arceus ===
 === Fast Bulky Setup ===
 Arceus @ Leftovers
@@ -153,6 +263,16 @@ Tera Type: Ghost
 - Extreme Speed
 - Recover
 - Shadow Claw
+
+=== Arceus ===
+=== Setup Sweeper ===
+Arceus @ Life Orb
+Ability: Multitype
+Tera Type: Normal
+- Earthquake
+- Extreme Speed
+- Recover
+- Swords Dance
 
 === Arceus-Bug ===
 === Bulky Setup ===
@@ -190,6 +310,26 @@ Adamant Nature
 - Judgment
 - Recover
 
+=== Arceus-Dragon ===
+=== Setup Sweeper ===
+Arceus-Dragon @ Draco Plate
+Ability: Multitype
+Tera Type: Fire
+- Extreme Speed
+- Flare Blitz
+- Heavy Slam
+- Outrage
+
+=== Arceus-Dragon ===
+=== Bulky Setup ===
+Arceus-Dragon @ Draco Plate
+Ability: Multitype
+Tera Type: Fire
+- Dragon Dance
+- Flare Blitz
+- Heavy Slam
+- Outrage
+
 === Arceus-Electric ===
 === Bulky Setup ===
 Arceus-Electric @ Zap Plate
@@ -226,6 +366,18 @@ Adamant Nature
 - Recover
 - Shadow Ball
 
+=== Arceus-Fighting ===
+=== Fast Bulky Setup ===
+Arceus-Fighting @ Fist Plate
+Ability: Multitype
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Body Press
+- Cosmic Power
+- Recover
+- Stored Power
+
 === Arceus-Fire ===
 === Fast Bulky Setup ===
 Arceus-Fire @ Flame Plate
@@ -235,6 +387,30 @@ EVs: 81 HP
 Adamant Nature
 - Dragon Dance
 - Earthquake
+- Flare Blitz
+- Recover
+
+=== Arceus-Fire ===
+=== Bulky Setup ===
+Arceus-Fire @ Flame Plate
+Ability: Multitype
+Tera Type: Grass
+EVs: 81 HP / 0 ATK
+Adamant Nature
+- Calm Mind
+- Earth Power
+- Energy Ball
+- Judgment
+
+=== Arceus-Fire ===
+=== Setup Sweeper ===
+Arceus-Fire @ Flame Plate
+Ability: Multitype
+Tera Type: Fire
+EVs: 81 HP
+Adamant Nature
+- Earthquake
+- Extreme Speed
 - Flare Blitz
 - Recover
 
@@ -274,6 +450,18 @@ Adamant Nature
 - Judgment
 - Recover
 
+=== Arceus-Grass ===
+=== Setup Sweeper ===
+Arceus-Grass @ Meadow Plate
+Ability: Multitype
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Earth Power
+- Ice Beam
+- Judgment
+
 === Arceus-Ground ===
 === Bulky Setup ===
 Arceus-Ground @ Earth Plate
@@ -285,6 +473,26 @@ Adamant Nature
 - Fire Blast
 - Ice Beam
 - Judgment
+
+=== Arceus-Ground ===
+=== Fast Bulky Setup ===
+Arceus-Ground @ Earth Plate
+Ability: Multitype
+Tera Type: Ground
+- Dragon Dance
+- Earthquake
+- Recover
+- Stone Edge
+
+=== Arceus-Ground ===
+=== Setup Sweeper ===
+Arceus-Ground @ Earth Plate
+Ability: Multitype
+Tera Type: Normal
+- Earthquake
+- Extreme Speed
+- Stone Edge
+- Swords Dance
 
 === Arceus-Ice ===
 === Bulky Setup ===
@@ -308,6 +516,16 @@ Tera Type: Ground
 - Gunk Shot
 - Swords Dance
 
+=== Arceus-Poison ===
+=== Setup Sweeper ===
+Arceus-Poison @ Toxic Plate
+Ability: Multitype
+Tera Type: Ground
+- Dragon Dance
+- Earthquake
+- Flare Blitz
+- Gunk Shot
+
 === Arceus-Psychic ===
 === Bulky Setup ===
 Arceus-Psychic @ Mind Plate
@@ -330,6 +548,18 @@ Tera Type: Ground
 - Recover
 - Stone Edge
 
+=== Arceus-Rock ===
+=== Bulky Setup ===
+Arceus-Rock @ Stone Plate
+Ability: Multitype
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Earth Power
+- Fire Blast
+- Judgment
+
 === Arceus-Steel ===
 === Bulky Support ===
 Arceus-Steel @ Iron Plate
@@ -339,6 +569,18 @@ Tera Type: Ghost
 - Judgment
 - Recover
 - Will-O-Wisp
+
+=== Arceus-Steel ===
+=== Bulky Setup ===
+Arceus-Steel @ Iron Plate
+Ability: Multitype
+Tera Type: Ghost
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Earth Power
+- Judgment
+- Recover
 
 === Arceus-Water ===
 === Bulky Support ===
@@ -362,6 +604,16 @@ Tera Type: Fighting
 - Dragon Tail
 - Flash Cannon
 
+=== Archaludon ===
+=== Bulky Setup ===
+Archaludon @ Lum Berry
+Ability: Stamina
+Tera Type: Ground
+- Earthquake
+- Iron Head
+- Outrage
+- Swords Dance
+
 === Ariados ===
 === Fast Support ===
 Ariados @ Focus Sash
@@ -383,6 +635,18 @@ Adamant Nature
 - Energy Ball
 - Meteor Beam
 - Psyshock
+
+=== Armarouge ===
+=== Wallbreaker ===
+Armarouge @ Choice Specs
+Ability: Weak Armor
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Armor Cannon
+- Aura Sphere
+- Energy Ball
+- Focus Blast
 
 === Articuno ===
 === Bulky Support ===
@@ -436,6 +700,16 @@ Tera Type: Fairy
 - Nasty Plot
 - Psychic
 
+=== Azelf ===
+=== Fast Support ===
+Azelf @ Assault Vest
+Ability: Levitate
+Tera Type: Dark
+- Encore
+- Explosion
+- Fire Blast
+- Knock Off
+
 === Azumarill ===
 === Bulky Attacker ===
 Azumarill @ Choice Band
@@ -486,6 +760,16 @@ Tera Type: Water
 - Ice Beam
 - Shadow Ball
 
+=== Basculegion-F ===
+=== AV Pivot ===
+Basculegion-F @ Assault Vest
+Ability: Adaptability
+Tera Type: Water
+- Flip Turn
+- Hydro Pump
+- Shadow Ball
+- Wave Crash
+
 === Basculin ===
 === Wallbreaker ===
 Basculin @ Choice Band
@@ -517,6 +801,30 @@ Tera Type: Dragon
 - Earthquake
 - Glaive Rush
 - Icicle Crash
+
+=== Baxcalibur ===
+=== Fast Attacker ===
+Baxcalibur @ Choice Band
+Ability: Thermal Exchange
+Tera Type: Dragon
+EVs: 81 HP
+Adamant Nature
+- Earthquake
+- Glaive Rush
+- Ice Shard
+- Icicle Crash
+
+=== Baxcalibur ===
+=== Bulky Setup ===
+Baxcalibur @ Loaded Dice
+Ability: Thermal Exchange
+Tera Type: Dragon
+EVs: 81 HP
+Adamant Nature
+- Earthquake
+- Icicle Spear
+- Scale Shot
+- Swords Dance
 
 === Beartic ===
 === Wallbreaker ===
@@ -552,6 +860,18 @@ Adamant Nature
 - Quiver Dance
 - Sludge Bomb
 
+=== Bellossom ===
+=== Tera Blast user ===
+Bellossom @ Leftovers
+Ability: Chlorophyll
+Tera Type: Fire
+EVs: 0 ATK
+Adamant Nature
+- Giga Drain
+- Quiver Dance
+- Strength Sap
+- Tera Blast
+
 === Bisharp ===
 === Bulky Attacker ===
 Bisharp @ Eviolite
@@ -571,6 +891,18 @@ Tera Type: Ground
 - Hydro Pump
 - Ice Beam
 - Shell Smash
+
+=== Blastoise ===
+=== Tera Blast user ===
+Blastoise @ White Herb
+Ability: Torrent
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Hydro Pump
+- Ice Beam
+- Shell Smash
+- Tera Blast
 
 === Blaziken ===
 === Setup Sweeper ===
@@ -604,6 +936,16 @@ Tera Type: Rock
 - Roost
 - Stone Edge
 
+=== Bombirdier ===
+=== Bulky Support ===
+Bombirdier @ Heavy-Duty Boots
+Ability: Big Pecks
+Tera Type: Dark
+- Brave Bird
+- Knock Off
+- Roost
+- Stealth Rock
+
 === Brambleghast ===
 === Fast Support ===
 Brambleghast @ Heavy-Duty Boots
@@ -634,6 +976,30 @@ Tera Type: Fairy
 - U-turn
 - Vacuum Wave
 
+=== Braviary-Hisui ===
+=== Bulky Attacker ===
+Braviary-Hisui @ Heavy-Duty Boots
+Ability: Tinted Lens
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Defog
+- Esper Wing
+- Hurricane
+
+=== Braviary-Hisui ===
+=== Setup Sweeper ===
+Braviary-Hisui @ Life Orb
+Ability: Sheer Force
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Agility
+- Heat Wave
+- Hurricane
+- Psychic
+
 === Breloom ===
 === Fast Attacker ===
 Breloom @ Life Orb
@@ -654,6 +1020,16 @@ Tera Type: Fighting
 - Iron Head
 - Psychic Noise
 
+=== Bronzong ===
+=== Bulky Support ===
+Bronzong @ Leftovers
+Ability: Levitate
+Tera Type: Electric
+- Earthquake
+- Hypnosis
+- Iron Head
+- Psychic
+
 === BruteBonnet ===
 === Bulky Support ===
 BruteBonnet @ Leftovers
@@ -661,6 +1037,16 @@ Ability: Protosynthesis
 Tera Type: Dark
 - Crunch
 - Seed Bomb
+- Spore
+- Sucker Punch
+
+=== BruteBonnet ===
+=== Bulky Attacker ===
+BruteBonnet @ Leftovers
+Ability: Protosynthesis
+Tera Type: Fighting
+- Close Combat
+- Crunch
 - Spore
 - Sucker Punch
 
@@ -684,6 +1070,16 @@ Tera Type: Dark
 - Leaf Storm
 - Spikes
 
+=== Cacturne ===
+=== Setup Sweeper ===
+Cacturne @ Life Orb
+Ability: Water Absorb
+Tera Type: Dark
+- Drain Punch
+- Knock Off
+- Seed Bomb
+- Sucker Punch
+
 === Calyrex ===
 === Bulky Setup ===
 Calyrex @ Leftovers
@@ -692,6 +1088,18 @@ Tera Type: Steel
 EVs: 0 ATK
 Adamant Nature
 - Calm Mind
+- Encore
+- Giga Drain
+- Leech Seed
+
+=== Calyrex ===
+=== Bulky Attacker ===
+Calyrex @ Leftovers
+Ability: Unnerve
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Body Press
 - Encore
 - Giga Drain
 - Leech Seed
@@ -705,6 +1113,18 @@ Tera Type: Fighting
 - Close Combat
 - Glacial Lance
 - High Horsepower
+
+=== Calyrex-Ice ===
+=== Wallbreaker ===
+Calyrex-Ice @ Heavy-Duty Boots
+Ability: As One (Glastrier)
+Tera Type: Fighting
+EVs: 0 SPE
+Adamant Nature
+- Close Combat
+- Glacial Lance
+- High Horsepower
+- Trick Room
 
 === Calyrex-Shadow ===
 === Fast Attacker ===
@@ -760,6 +1180,18 @@ Tera Type: Water
 - Icicle Crash
 - Liquidation
 
+=== Cetitan ===
+=== Bulky Setup ===
+Cetitan @ Sitrus Berry
+Ability: Slush Rush
+Tera Type: Ice
+EVs: 81 HP
+Adamant Nature
+- Belly Drum
+- Earthquake
+- Ice Shard
+- Ice Spinner
+
 === Chandelure ===
 === Fast Bulky Setup ===
 Chandelure @ Heavy-Duty Boots
@@ -769,6 +1201,18 @@ Tera Type: Fire
 - Energy Ball
 - Fire Blast
 - Flame Charge
+
+=== Chandelure ===
+=== Fast Attacker ===
+Chandelure @ Choice Scarf
+Ability: Flash Fire
+Tera Type: Fire
+EVs: 0 ATK
+Adamant Nature
+- Energy Ball
+- Fire Blast
+- Shadow Ball
+- Trick
 
 === Chansey ===
 === Bulky Support ===
@@ -792,6 +1236,16 @@ Tera Type: Dragon
 - Focus Blast
 - Hurricane
 
+=== Charizard ===
+=== Setup Sweeper ===
+Charizard @ Heavy-Duty Boots
+Ability: Blaze
+Tera Type: Dragon
+- Dragon Dance
+- Earthquake
+- Flare Blitz
+- Outrage
+
 === Chesnaught ===
 === Fast Bulky Setup ===
 Chesnaught @ Leftovers
@@ -801,6 +1255,16 @@ Tera Type: Steel
 - Iron Defense
 - Synthesis
 - Trailblaze
+
+=== Chesnaught ===
+=== Bulky Support ===
+Chesnaught @ Leftovers
+Ability: Bulletproof
+Tera Type: Steel
+- Body Press
+- Knock Off
+- Spikes
+- Synthesis
 
 === Chi-Yu ===
 === Setup Sweeper ===
@@ -814,6 +1278,18 @@ Adamant Nature
 - Nasty Plot
 - Psychic
 
+=== Chi-Yu ===
+=== Fast Attacker ===
+Chi-Yu @ Choice Scarf
+Ability: Beads of Ruin
+Tera Type: Dark
+EVs: 0 ATK
+Adamant Nature
+- Dark Pulse
+- Flamethrower
+- Overheat
+- Psychic
+
 === Chien-Pao ===
 === Setup Sweeper ===
 Chien-Pao @ Heavy-Duty Boots
@@ -823,6 +1299,16 @@ Tera Type: Dark
 - Sacred Sword
 - Sucker Punch
 - Swords Dance
+
+=== Chien-Pao ===
+=== Wallbreaker ===
+Chien-Pao @ Choice Band
+Ability: Sword of Ruin
+Tera Type: Dark
+- Crunch
+- Ice Shard
+- Icicle Crash
+- Sacred Sword
 
 === Chimecho ===
 === Bulky Setup ===
@@ -835,6 +1321,28 @@ Adamant Nature
 - Dazzling Gleam
 - Psychic Noise
 - Psyshock
+
+=== Chimecho ===
+=== Bulky Attacker ===
+Chimecho @ Leftovers
+Ability: Levitate
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Cosmic Power
+- Dazzling Gleam
+- Recover
+- Stored Power
+
+=== Chimecho ===
+=== Bulky Support ===
+Chimecho @ Leftovers
+Ability: Levitate
+Tera Type: Dark
+- Encore
+- Heal Bell
+- Knock Off
+- Psychic Noise
 
 === Cinccino ===
 === Fast Attacker ===
@@ -858,6 +1366,28 @@ Adamant Nature
 - Pyro Ball
 - U-turn
 
+=== Cinderace ===
+=== Fast Support ===
+Cinderace @ Heavy-Duty Boots
+Ability: Libero
+Tera Type: Grass
+- Court Change
+- Pyro Ball
+- U-turn
+- Will-O-Wisp
+
+=== Cinderace ===
+=== Fast Attacker ===
+Cinderace @ Choice Band
+Ability: Libero
+Tera Type: Fighting
+EVs: 81 HP
+Adamant Nature
+- Court Change
+- Gunk Shot
+- High Jump Kick
+- Pyro Ball
+
 === Clawitzer ===
 === Wallbreaker ===
 Clawitzer @ Choice Specs
@@ -868,6 +1398,16 @@ Tera Type: Dark
 - Dragon Pulse
 - Ice Beam
 
+=== Clawitzer ===
+=== AV Pivot ===
+Clawitzer @ Assault Vest
+Ability: Mega Launcher
+Tera Type: Dragon
+- Aura Sphere
+- Dark Pulse
+- Dragon Pulse
+- U-turn
+
 === Clefable ===
 === Bulky Support ===
 Clefable @ Leftovers
@@ -875,6 +1415,18 @@ Ability: Magic Guard
 Tera Type: Poison
 - Fire Blast
 - Knock Off
+- Moonblast
+- Moonlight
+
+=== Clefable ===
+=== Bulky Setup ===
+Clefable @ Leftovers
+Ability: Magic Guard
+Tera Type: Fire
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Fire Blast
 - Moonblast
 - Moonlight
 
@@ -888,12 +1440,32 @@ Tera Type: Flying
 - Poison Jab
 - Recover
 
+=== Clodsire ===
+=== Bulky Attacker ===
+Clodsire @ Leftovers
+Ability: Unaware
+Tera Type: Flying
+- Curse
+- Earthquake
+- Gunk Shot
+- Poison Jab
+
 === Cloyster ===
 === Setup Sweeper ===
 Cloyster @ White Herb
 Ability: Skill Link
 Tera Type: Ice
 - Hydro Pump
+- Icicle Spear
+- Rock Blast
+- Shell Smash
+
+=== Cloyster ===
+=== Fast Attacker ===
+Cloyster @ White Herb
+Ability: Skill Link
+Tera Type: Ground
+- Drill Run
 - Icicle Spear
 - Rock Blast
 - Shell Smash
@@ -918,6 +1490,28 @@ Tera Type: Ghost
 - Iron Head
 - Stealth Rock
 
+=== Cobalion ===
+=== Fast Bulky Setup ===
+Cobalion @ Leftovers
+Ability: Justified
+Tera Type: Fighting
+- Close Combat
+- Iron Head
+- Stone Edge
+- Swords Dance
+
+=== Cobalion ===
+=== Bulky Setup ===
+Cobalion @ Leftovers
+Ability: Justified
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Aura Sphere
+- Calm Mind
+- Flash Cannon
+- Vacuum Wave
+
 === Comfey ===
 === Bulky Setup ===
 Comfey @ Leftovers
@@ -929,6 +1523,18 @@ Adamant Nature
 - Draining Kiss
 - Giga Drain
 - Stored Power
+
+=== Comfey ===
+=== Tera Blast user ===
+Comfey @ Leftovers
+Ability: Triage
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Draining Kiss
+- Encore
+- Giga Drain
 
 === Conkeldurr ===
 === Wallbreaker ===
@@ -950,6 +1556,16 @@ Tera Type: Fire
 - Heavy Slam
 - Knock Off
 
+=== Copperajah ===
+=== Wallbreaker ===
+Copperajah @ Life Orb
+Ability: Sheer Force
+Tera Type: Fairy
+- Earthquake
+- Iron Head
+- Play Rough
+- Rock Slide
+
 === Corviknight ===
 === Bulky Support ===
 Corviknight @ Leftovers
@@ -970,6 +1586,16 @@ Tera Type: Fighting
 - Ice Hammer
 - Knock Off
 
+=== Crabominable ===
+=== Wallbreaker ===
+Crabominable @ Choice Band
+Ability: Iron Fist
+Tera Type: Fighting
+- Close Combat
+- Drain Punch
+- Earthquake
+- Gunk Shot
+
 === Cramorant ===
 === Bulky Support ===
 Cramorant @ Heavy-Duty Boots
@@ -989,6 +1615,16 @@ Tera Type: Fighting
 - Close Combat
 - Crabhammer
 - Dragon Dance
+
+=== Crawdaunt ===
+=== Setup Sweeper ===
+Crawdaunt @ Life Orb
+Ability: Adaptability
+Tera Type: Water
+- Aqua Jet
+- Crabhammer
+- Dragon Dance
+- Knock Off
 
 === Cresselia ===
 === Bulky Setup ===
@@ -1011,6 +1647,16 @@ Tera Type: Poison
 - Freeze-Dry
 - Haze
 - Rapid Spin
+
+=== Cryogonal ===
+=== Tera Blast user ===
+Cryogonal @ Heavy-Duty Boots
+Ability: Levitate
+Tera Type: Electric
+- Ice Beam
+- Rapid Spin
+- Recover
+- Tera Blast
 
 === Cyclizar ===
 === Fast Support ===
@@ -1054,6 +1700,16 @@ Tera Type: Dark
 - Leaf Storm
 - Roost
 
+=== Decidueye ===
+=== Setup Sweeper ===
+Decidueye @ Life Orb
+Ability: Overgrow
+Tera Type: Ghost
+- Leaf Blade
+- Poltergeist
+- Shadow Sneak
+- Swords Dance
+
 === Decidueye-Hisui ===
 === Bulky Attacker ===
 Decidueye-Hisui @ Leftovers
@@ -1084,6 +1740,16 @@ Tera Type: Flying
 - Ice Shard
 - Ice Spinner
 
+=== Delibird ===
+=== Fast Support ===
+Delibird @ Heavy-Duty Boots
+Ability: Insomnia
+Tera Type: Ghost
+- Brave Bird
+- Freeze-Dry
+- Rapid Spin
+- Spikes
+
 === Delphox ===
 === Fast Attacker ===
 Delphox @ Choice Scarf
@@ -1106,12 +1772,32 @@ Tera Type: Dark
 - Psycho Boost
 - Superpower
 
+=== Deoxys ===
+=== Fast Attacker ===
+Deoxys @ Life Orb
+Ability: Pressure
+Tera Type: Dark
+- Extreme Speed
+- Knock Off
+- Psycho Boost
+- Superpower
+
 === Deoxys-Attack ===
 === Fast Attacker ===
 Deoxys-Attack @ Life Orb
 Ability: Pressure
 Tera Type: Dark
 - Extreme Speed
+- Knock Off
+- Psycho Boost
+- Superpower
+
+=== Deoxys-Attack ===
+=== Wallbreaker ===
+Deoxys-Attack @ Life Orb
+Ability: Pressure
+Tera Type: Dark
+- Ice Beam
 - Knock Off
 - Psycho Boost
 - Superpower
@@ -1128,6 +1814,16 @@ Adamant Nature
 - Recover
 - Stored Power
 
+=== Deoxys-Defense ===
+=== Bulky Support ===
+Deoxys-Defense @ Leftovers
+Ability: Pressure
+Tera Type: Dark
+- Knock Off
+- Psychic Noise
+- Recover
+- Spikes
+
 === Deoxys-Speed ===
 === Fast Support ===
 Deoxys-Speed @ Focus Sash
@@ -1137,6 +1833,18 @@ Tera Type: Dark
 - Psycho Boost
 - Spikes
 - Stealth Rock
+
+=== Deoxys-Speed ===
+=== Setup Sweeper ===
+Deoxys-Speed @ Life Orb
+Ability: Pressure
+Tera Type: Dark
+EVs: 0 ATK
+Adamant Nature
+- Dark Pulse
+- Focus Blast
+- Nasty Plot
+- Psycho Boost
 
 === Dewgong ===
 === Bulky Attacker ===
@@ -1148,6 +1856,16 @@ Tera Type: Dragon
 - Knock Off
 - Surf
 
+=== Dewgong ===
+=== Bulky Support ===
+Dewgong @ Assault Vest
+Ability: Thick Fat
+Tera Type: Dragon
+- Encore
+- Flip Turn
+- Hydro Pump
+- Ice Beam
+
 === Dialga ===
 === AV Pivot ===
 Dialga @ Assault Vest
@@ -1157,6 +1875,16 @@ Tera Type: Dragon
 - Dragon Tail
 - Fire Blast
 - Heavy Slam
+
+=== Dialga ===
+=== Bulky Attacker ===
+Dialga @ Leftovers
+Ability: Pressure
+Tera Type: Dragon
+- Draco Meteor
+- Fire Blast
+- Heavy Slam
+- Stealth Rock
 
 === Dialga-Origin ===
 === Fast Attacker ===
@@ -1168,6 +1896,16 @@ Tera Type: Dragon
 - Flash Cannon
 - Heavy Slam
 
+=== Dialga-Origin ===
+=== Bulky Attacker ===
+Dialga-Origin @ Adamant Crystal
+Ability: Pressure
+Tera Type: Dragon
+- Draco Meteor
+- Dragon Tail
+- Fire Blast
+- Flash Cannon
+
 === Diancie ===
 === Bulky Attacker ===
 Diancie @ Assault Vest
@@ -1177,6 +1915,16 @@ Tera Type: Fighting
 - Diamond Storm
 - Earth Power
 - Moonblast
+
+=== Diancie ===
+=== Bulky Setup ===
+Diancie @ Leftovers
+Ability: Clear Body
+Tera Type: Fairy
+- Calm Mind
+- Diamond Storm
+- Draining Kiss
+- Earth Power
 
 === Dipplin ===
 === Bulky Attacker ===
@@ -1198,6 +1946,16 @@ Tera Type: Ghost
 === Dodrio ===
 === Fast Attacker ===
 Dodrio @ Choice Band
+Ability: Early Bird
+Tera Type: Flying
+- Brave Bird
+- Double-Edge
+- Drill Run
+- Knock Off
+
+=== Dodrio ===
+=== Setup Sweeper ===
+Dodrio @ Heavy-Duty Boots
 Ability: Early Bird
 Tera Type: Flying
 - Brave Bird
@@ -1245,6 +2003,26 @@ Tera Type: Dragon
 - U-turn
 - Will-O-Wisp
 
+=== Dragapult ===
+=== Fast Attacker ===
+Dragapult @ Choice Specs
+Ability: Infiltrator
+Tera Type: Dragon
+- Draco Meteor
+- Fire Blast
+- Shadow Ball
+- U-turn
+
+=== Dragapult ===
+=== Tera Blast user ===
+Dragapult @ Life Orb
+Ability: Clear Body
+Tera Type: Ghost
+- Dragon Dance
+- Dragon Darts
+- Fire Blast
+- Tera Blast
+
 === Dragonite ===
 === Bulky Setup ===
 Dragonite @ Heavy-Duty Boots
@@ -1255,12 +2033,42 @@ Tera Type: Ground
 - Outrage
 - Roost
 
+=== Dragonite ===
+=== Setup Sweeper ===
+Dragonite @ Heavy-Duty Boots
+Ability: Multiscale
+Tera Type: Steel
+- Dragon Dance
+- Earthquake
+- Iron Head
+- Outrage
+
+=== Dragonite ===
+=== Tera Blast user ===
+Dragonite @ Heavy-Duty Boots
+Ability: Multiscale
+Tera Type: Flying
+- Dragon Dance
+- Earthquake
+- Outrage
+- Tera Blast
+
 === Drednaw ===
 === Fast Bulky Setup ===
 Drednaw @ White Herb
 Ability: Shell Armor
 Tera Type: Ground
 - Earthquake
+- Liquidation
+- Shell Smash
+- Stone Edge
+
+=== Drednaw ===
+=== Setup Sweeper ===
+Drednaw @ White Herb
+Ability: Strong Jaw
+Tera Type: Dark
+- Crunch
 - Liquidation
 - Shell Smash
 - Stone Edge
@@ -1289,6 +2097,28 @@ Adamant Nature
 - Earth Power
 - Roost
 
+=== Dudunsparce ===
+=== Bulky Support ===
+Dudunsparce @ Leftovers
+Ability: Serene Grace
+Tera Type: Ghost
+- Earthquake
+- Glare
+- Headbutt
+- Roost
+
+=== Dudunsparce ===
+=== Bulky Setup ===
+Dudunsparce @ Leftovers
+Ability: Rattled
+Tera Type: Ghost
+EVs: 0 ATK
+Adamant Nature
+- Boomburst
+- Calm Mind
+- Roost
+- Shadow Ball
+
 === Dugtrio ===
 === Fast Support ===
 Dugtrio @ Focus Sash
@@ -1298,6 +2128,16 @@ Tera Type: Dark
 - Stone Edge
 - Sucker Punch
 - Swords Dance
+
+=== Dugtrio ===
+=== Wallbreaker ===
+Dugtrio @ Choice Band
+Ability: Arena Trap
+Tera Type: Dark
+- Earthquake
+- Stone Edge
+- Sucker Punch
+- Throat Chop
 
 === Dugtrio-Alola ===
 === Fast Attacker ===
@@ -1339,6 +2179,26 @@ Tera Type: Dark
 - Poltergeist
 - Shadow Sneak
 
+=== Dusknoir ===
+=== Wallbreaker ===
+Dusknoir @ Choice Band
+Ability: Frisk
+Tera Type: Ghost
+- Earthquake
+- Leech Life
+- Pain Split
+- Poltergeist
+
+=== Dusknoir ===
+=== Bulky Attacker ===
+Dusknoir @ Leftovers
+Ability: Frisk
+Tera Type: Fighting
+- Focus Punch
+- Pain Split
+- Poltergeist
+- Substitute
+
 === Eelektross ===
 === Bulky Setup ===
 Eelektross @ Leftovers
@@ -1348,6 +2208,16 @@ Tera Type: Fighting
 - Drain Punch
 - Fire Punch
 - Knock Off
+
+=== Eelektross ===
+=== AV Pivot ===
+Eelektross @ Assault Vest
+Ability: Levitate
+Tera Type: Poison
+- Close Combat
+- Discharge
+- Dragon Tail
+- Flamethrower
 
 === Eiscue ===
 === Setup Sweeper ===
@@ -1361,6 +2231,18 @@ Adamant Nature
 - Iron Head
 - Liquidation
 
+=== Eiscue ===
+=== Tera Blast user ===
+Eiscue @ Sitrus Berry
+Ability: Ice Face
+Tera Type: Electric
+EVs: 81 HP
+Adamant Nature
+- Belly Drum
+- Ice Spinner
+- Liquidation
+- Tera Blast
+
 === Electivire ===
 === Fast Attacker ===
 Electivire @ Choice Band
@@ -1371,6 +2253,16 @@ Tera Type: Dark
 - Ice Punch
 - Knock Off
 
+=== Electivire ===
+=== Setup Sweeper ===
+Electivire @ Life Orb
+Ability: Motor Drive
+Tera Type: Flying
+- Bulk Up
+- Earthquake
+- Ice Punch
+- Supercell Slam
+
 === Electrode ===
 === Fast Support ===
 Electrode @ Assault Vest
@@ -1380,6 +2272,18 @@ Tera Type: Dark
 - Foul Play
 - Taunt
 - Thunder Wave
+
+=== Electrode ===
+=== Tera Blast user ===
+Electrode @ Life Orb
+Ability: Aftermath
+Tera Type: Ice
+EVs: 0 ATK
+Adamant Nature
+- Taunt
+- Tera Blast
+- Thunderbolt
+- Volt Switch
 
 === Electrode-Hisui ===
 === Fast Attacker ===
@@ -1393,6 +2297,18 @@ Adamant Nature
 - Taunt
 - Thunder Wave
 
+=== Electrode-Hisui ===
+=== Fast Support ===
+Electrode-Hisui @ Leftovers
+Ability: Soundproof
+Tera Type: Poison
+EVs: 0 ATK
+Adamant Nature
+- Giga Drain
+- Leech Seed
+- Substitute
+- Thunderbolt
+
 === Emboar ===
 === AV Pivot ===
 Emboar @ Assault Vest
@@ -1402,6 +2318,26 @@ Tera Type: Dark
 - Flare Blitz
 - Knock Off
 - Scald
+
+=== Emboar ===
+=== Bulky Setup ===
+Emboar @ Leftovers
+Ability: Reckless
+Tera Type: Fighting
+- Bulk Up
+- Drain Punch
+- Flare Blitz
+- Trailblaze
+
+=== Emboar ===
+=== Fast Attacker ===
+Emboar @ Choice Band
+Ability: Reckless
+Tera Type: Fire
+- Close Combat
+- Flare Blitz
+- Head Smash
+- Knock Off
 
 === Empoleon ===
 === Bulky Support ===
@@ -1423,6 +2359,18 @@ Tera Type: Fighting
 - Superpower
 - Taunt
 
+=== Enamorus ===
+=== Fast Bulky Setup ===
+Enamorus @ Heavy-Duty Boots
+Ability: Cute Charm
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Earth Power
+- Moonblast
+- Mystical Fire
+
 === Enamorus-Therian ===
 === Bulky Attacker ===
 Enamorus-Therian @ Assault Vest
@@ -1433,6 +2381,16 @@ Tera Type: Fairy
 - Mystical Fire
 - Psychic
 
+=== Enamorus-Therian ===
+=== Bulky Setup ===
+Enamorus-Therian @ Weakness Policy
+Ability: Overcoat
+Tera Type: Ground
+- Agility
+- Earth Power
+- Moonblast
+- Mystical Fire
+
 === Entei ===
 === Fast Attacker ===
 Entei @ Choice Band
@@ -1442,6 +2400,16 @@ Tera Type: Fire
 - Flare Blitz
 - Sacred Fire
 - Stone Edge
+
+=== Entei ===
+=== Wallbreaker ===
+Entei @ Choice Band
+Ability: Inner Focus
+Tera Type: Fire
+- Extreme Speed
+- Flare Blitz
+- Sacred Fire
+- Stomping Tantrum
 
 === Espathra ===
 === Fast Bulky Setup ===
@@ -1454,6 +2422,16 @@ Adamant Nature
 - Dazzling Gleam
 - Protect
 - Roost
+
+=== Espathra ===
+=== Wallbreaker ===
+Espathra @ Choice Specs
+Ability: Speed Boost
+Tera Type: Fairy
+- Dazzling Gleam
+- Lumina Crash
+- Shadow Ball
+- U-turn
 
 === Espeon ===
 === Fast Attacker ===
@@ -1479,6 +2457,30 @@ Adamant Nature
 - Meteor Beam
 - Sludge Bomb
 
+=== Eternatus ===
+=== Bulky Attacker ===
+Eternatus @ Leftovers
+Ability: Pressure
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Dynamax Cannon
+- Fire Blast
+- Recover
+- Sludge Bomb
+
+=== Eternatus ===
+=== Bulky Support ===
+Eternatus @ Leftovers
+Ability: Pressure
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Dynamax Cannon
+- Flamethrower
+- Recover
+- Toxic
+
 === Excadrill ===
 === AV Pivot ===
 Excadrill @ Assault Vest
@@ -1488,6 +2490,16 @@ Tera Type: Grass
 - Iron Head
 - Rapid Spin
 - Rock Slide
+
+=== Excadrill ===
+=== Bulky Setup ===
+Excadrill @ Leftovers
+Ability: Mold Breaker
+Tera Type: Grass
+- Earthquake
+- Iron Head
+- Rapid Spin
+- Swords Dance
 
 === Exeggutor ===
 === Bulky Setup ===
@@ -1501,6 +2513,30 @@ Adamant Nature
 - Psychic
 - Psyshock
 
+=== Exeggutor ===
+=== Bulky Support ===
+Exeggutor @ Sitrus Berry
+Ability: Harvest
+Tera Type: Steel
+EVs: 77 HP / 0 ATK
+Adamant Nature
+- Leech Seed
+- Psychic
+- Psychic Noise
+- Sleep Powder
+
+=== Exeggutor ===
+=== Bulky Attacker ===
+Exeggutor @ Sitrus Berry
+Ability: Harvest
+Tera Type: Steel
+EVs: 77 HP / 0 ATK
+Adamant Nature
+- Leech Seed
+- Protect
+- Psychic Noise
+- Substitute
+
 === Exeggutor-Alola ===
 === Bulky Setup ===
 Exeggutor-Alola @ Sitrus Berry
@@ -1512,6 +2548,28 @@ Adamant Nature
 - Dragon Pulse
 - Flamethrower
 - Giga Drain
+
+=== Exeggutor-Alola ===
+=== Fast Attacker ===
+Exeggutor-Alola @ Sitrus Berry
+Ability: Harvest
+Tera Type: Fire
+- Draco Meteor
+- Dragon Tail
+- Flamethrower
+- Knock Off
+
+=== Exeggutor-Alola ===
+=== Wallbreaker ===
+Exeggutor-Alola @ Choice Specs
+Ability: Frisk
+Tera Type: Fire
+EVs: 0 ATK
+Adamant Nature
+- Draco Meteor
+- Flamethrower
+- Giga Drain
+- Leaf Storm
 
 === Falinks ===
 === Setup Sweeper ===
@@ -1543,6 +2601,16 @@ Tera Type: Grass
 - Liquidation
 - Trailblaze
 
+=== Feraligatr ===
+=== Fast Bulky Setup ===
+Feraligatr @ Life Orb
+Ability: Sheer Force
+Tera Type: Dark
+- Crunch
+- Dragon Dance
+- Ice Punch
+- Liquidation
+
 === Fezandipiti ===
 === Bulky Attacker ===
 Fezandipiti @ Leftovers
@@ -1552,6 +2620,26 @@ Tera Type: Dark
 - Gunk Shot
 - Moonblast
 - Roost
+
+=== Fezandipiti ===
+=== AV Pivot ===
+Fezandipiti @ Assault Vest
+Ability: Toxic Chain
+Tera Type: Dark
+- Beat Up
+- Gunk Shot
+- Heat Wave
+- Moonblast
+
+=== Fezandipiti ===
+=== Tera Blast user ===
+Fezandipiti @ Leftovers
+Ability: Toxic Chain
+Tera Type: Ground
+- Gunk Shot
+- Play Rough
+- Swords Dance
+- Tera Blast
 
 === Flamigo ===
 === Fast Attacker ===
@@ -1563,6 +2651,16 @@ Tera Type: Fighting
 - Throat Chop
 - U-turn
 
+=== Flamigo ===
+=== Setup Sweeper ===
+Flamigo @ Life Orb
+Ability: Scrappy
+Tera Type: Fighting
+- Brave Bird
+- Close Combat
+- Roost
+- Swords Dance
+
 === Flapple ===
 === Fast Attacker ===
 Flapple @ Choice Band
@@ -1572,6 +2670,16 @@ Tera Type: Dragon
 - Grav Apple
 - Outrage
 - Sucker Punch
+
+=== Flapple ===
+=== Tera Blast user ===
+Flapple @ Lum Berry
+Ability: Hustle
+Tera Type: Fire
+- Dragon Dance
+- Grav Apple
+- Outrage
+- Tera Blast
 
 === Flareon ===
 === Setup Sweeper ===
@@ -1593,6 +2701,16 @@ Tera Type: Water
 - Ice Spinner
 - Wave Crash
 
+=== Floatzel ===
+=== Bulky Setup ===
+Floatzel @ Leftovers
+Ability: Water Veil
+Tera Type: Steel
+- Bulk Up
+- Ice Spinner
+- Taunt
+- Wave Crash
+
 === Florges ===
 === Bulky Setup ===
 Florges @ Leftovers
@@ -1605,6 +2723,18 @@ Adamant Nature
 - Protect
 - Wish
 
+=== Florges ===
+=== Tera Blast user ===
+Florges @ Leftovers
+Ability: Flower Veil
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Moonblast
+- Synthesis
+- Tera Blast
+
 === FlutterMane ===
 === Wallbreaker ===
 FlutterMane @ Choice Specs
@@ -1616,6 +2746,18 @@ Adamant Nature
 - Mystical Fire
 - Psyshock
 - Shadow Ball
+
+=== FlutterMane ===
+=== Setup Sweeper ===
+FlutterMane @ Life Orb
+Ability: Protosynthesis
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Moonblast
+- Mystical Fire
+- Psyshock
 
 === Flygon ===
 === Fast Attacker ===
@@ -1636,6 +2778,16 @@ Tera Type: Water
 - Rapid Spin
 - Spikes
 - Stealth Rock
+
+=== Forretress ===
+=== Bulky Attacker ===
+Forretress @ Leftovers
+Ability: Sturdy
+Tera Type: Fighting
+- Body Press
+- Iron Head
+- Rapid Spin
+- Spikes
 
 === Froslass ===
 === Fast Support ===
@@ -1661,6 +2813,18 @@ Adamant Nature
 - Hurricane
 - Ice Beam
 
+=== Frosmoth ===
+=== Tera Blast user ===
+Frosmoth @ Heavy-Duty Boots
+Ability: Ice Scales
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Bug Buzz
+- Giga Drain
+- Ice Beam
+- Quiver Dance
+
 === Furret ===
 === Wallbreaker ===
 Furret @ Choice Band
@@ -1671,12 +2835,32 @@ Tera Type: Ghost
 - Trick
 - U-turn
 
+=== Furret ===
+=== Setup Sweeper ===
+Furret @ Life Orb
+Ability: Frisk
+Tera Type: Ghost
+- Brick Break
+- Double-Edge
+- Knock Off
+- Tidy Up
+
 === Gallade ===
 === Fast Attacker ===
 Gallade @ Choice Band
 Ability: Sharpness
 Tera Type: Dark
 - Leaf Blade
+- Night Slash
+- Psycho Cut
+- Sacred Sword
+
+=== Gallade ===
+=== Setup Sweeper ===
+Gallade @ Life Orb
+Ability: Sharpness
+Tera Type: Dark
+- Agility
 - Night Slash
 - Psycho Cut
 - Sacred Sword
@@ -1703,6 +2887,16 @@ Tera Type: Ground
 - Outrage
 - Spikes
 
+=== Garchomp ===
+=== Setup Sweeper ===
+Garchomp @ Loaded Dice
+Ability: Rough Skin
+Tera Type: Fire
+- Earthquake
+- Fire Fang
+- Iron Head
+- Scale Shot
+
 === Gardevoir ===
 === Fast Attacker ===
 Gardevoir @ Choice Scarf
@@ -1725,6 +2919,26 @@ Tera Type: Dragon
 - Recover
 - Salt Cure
 
+=== Garganacl ===
+=== Bulky Attacker ===
+Garganacl @ Leftovers
+Ability: Purifying Salt
+Tera Type: Dragon
+- Earthquake
+- Protect
+- Recover
+- Salt Cure
+
+=== Garganacl ===
+=== Bulky Setup ===
+Garganacl @ Leftovers
+Ability: Purifying Salt
+Tera Type: Dragon
+- Body Press
+- Iron Defense
+- Recover
+- Salt Cure
+
 === Gastrodon ===
 === Bulky Support ===
 Gastrodon @ Leftovers
@@ -1735,6 +2949,16 @@ Tera Type: Poison
 - Sludge Bomb
 - Stealth Rock
 
+=== Gastrodon ===
+=== Bulky Attacker ===
+Gastrodon @ Leftovers
+Ability: Storm Drain
+Tera Type: Poison
+- Clear Smog
+- Earthquake
+- Ice Beam
+- Recover
+
 === Gengar ===
 === Wallbreaker ===
 Gengar @ Choice Specs
@@ -1744,6 +2968,18 @@ EVs: 0 ATK
 Adamant Nature
 - Focus Blast
 - Nasty Plot
+- Shadow Ball
+- Sludge Wave
+
+=== Gengar ===
+=== Fast Attacker ===
+Gengar @ Life Orb
+Ability: Cursed Body
+Tera Type: Dark
+EVs: 0 ATK
+Adamant Nature
+- Encore
+- Focus Blast
 - Shadow Ball
 - Sludge Wave
 
@@ -1759,6 +2995,18 @@ Adamant Nature
 - Recover
 - Shadow Ball
 
+=== Gholdengo ===
+=== Bulky Attacker ===
+Gholdengo @ Choice Scarf
+Ability: Good as Gold
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Focus Blast
+- Make It Rain
+- Nasty Plot
+- Shadow Ball
+
 === Girafarig ===
 === Bulky Setup ===
 Girafarig @ Eviolite
@@ -1771,6 +3019,18 @@ Adamant Nature
 - Psychic
 - Psyshock
 
+=== Girafarig ===
+=== Fast Bulky Setup ===
+Girafarig @ Eviolite
+Ability: Sap Sipper
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Hyper Voice
+- Nasty Plot
+- Psyshock
+- Thunderbolt
+
 === Giratina ===
 === Bulky Setup ===
 Giratina @ Leftovers
@@ -1781,6 +3041,26 @@ Adamant Nature
 - Calm Mind
 - Dragon Pulse
 - Rest
+- Sleep Talk
+
+=== Giratina ===
+=== Bulky Support ===
+Giratina @ Leftovers
+Ability: Pressure
+Tera Type: Fairy
+- Defog
+- Dragon Tail
+- Rest
+- Shadow Ball
+
+=== Giratina ===
+=== Bulky Attacker ===
+Giratina @ Leftovers
+Ability: Pressure
+Tera Type: Fairy
+- Dragon Tail
+- Rest
+- Shadow Ball
 - Sleep Talk
 
 === Giratina-Origin ===
@@ -1802,6 +3082,18 @@ EVs: 0 ATK
 Adamant Nature
 - Calm Mind
 - Freeze-Dry
+- Protect
+- Wish
+
+=== Glaceon ===
+=== Bulky Attacker ===
+Glaceon @ Heavy-Duty Boots
+Ability: Ice Body
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Freeze-Dry
+- Mud Shot
 - Protect
 - Wish
 
@@ -1837,6 +3129,16 @@ Adamant Nature
 - Meteor Beam
 - Sludge Wave
 
+=== Glimmora ===
+=== Fast Support ===
+Glimmora @ Air Balloon
+Ability: Toxic Debris
+Tera Type: Ground
+- Earth Power
+- Mortal Spin
+- Power Gem
+- Sludge Wave
+
 === Gliscor ===
 === Fast Support ===
 Gliscor @ Toxic Orb
@@ -1845,6 +3147,16 @@ Tera Type: Water
 - Earthquake
 - Protect
 - Substitute
+- Toxic
+
+=== Gliscor ===
+=== Bulky Support ===
+Gliscor @ Toxic Orb
+Ability: Poison Heal
+Tera Type: Water
+- Earthquake
+- Knock Off
+- Protect
 - Toxic
 
 === Gogoat ===
@@ -1869,6 +3181,16 @@ Adamant Nature
 - Hydro Pump
 - Ice Beam
 
+=== Golduck ===
+=== Fast Attacker ===
+Golduck @ Choice Specs
+Ability: Cloud Nine
+Tera Type: Grass
+- Flip Turn
+- Grass Knot
+- Hydro Pump
+- Ice Beam
+
 === Golem ===
 === Bulky Attacker ===
 Golem @ Custap Berry
@@ -1887,6 +3209,16 @@ Tera Type: Electric
 - Double-Edge
 - Earthquake
 - Explosion
+- Stone Edge
+
+=== Golem-Alola ===
+=== Setup Sweeper ===
+Golem-Alola @ Life Orb
+Ability: Galvanize
+Tera Type: Flying
+- Double-Edge
+- Earthquake
+- Rock Polish
 - Stone Edge
 
 === Golurk ===
@@ -1931,6 +3263,18 @@ Adamant Nature
 - Psychic
 - Trick
 
+=== Gothitelle ===
+=== Bulky Setup ===
+Gothitelle @ Leftovers
+Ability: Shadow Tag
+Tera Type: Dark
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Dark Pulse
+- Focus Blast
+- Psychic Noise
+
 === GougingFire ===
 === Setup Sweeper ===
 GougingFire @ Heavy-Duty Boots
@@ -1939,6 +3283,16 @@ Tera Type: Ground
 - Dragon Dance
 - Earthquake
 - Heat Crash
+- Outrage
+
+=== GougingFire ===
+=== Bulky Setup ===
+GougingFire @ Heavy-Duty Boots
+Ability: Protosynthesis
+Tera Type: Fairy
+- Dragon Dance
+- Heat Crash
+- Morning Sun
 - Outrage
 
 === Grafaiai ===
@@ -1951,6 +3305,26 @@ Tera Type: Dark
 - Knock Off
 - Parting Shot
 
+=== Grafaiai ===
+=== AV Pivot ===
+Grafaiai @ Assault Vest
+Ability: Poison Touch
+Tera Type: Dark
+- Gunk Shot
+- Knock Off
+- Super Fang
+- U-turn
+
+=== Grafaiai ===
+=== Setup Sweeper ===
+Grafaiai @ Life Orb
+Ability: Poison Touch
+Tera Type: Dark
+- Gunk Shot
+- Knock Off
+- Low Kick
+- Swords Dance
+
 === Granbull ===
 === Bulky Attacker ===
 Granbull @ Leftovers
@@ -1959,6 +3333,16 @@ Tera Type: Ground
 - Earthquake
 - Encore
 - Play Rough
+- Thunder Wave
+
+=== Granbull ===
+=== Bulky Support ===
+Granbull @ Leftovers
+Ability: Intimidate
+Tera Type: Ground
+- Earthquake
+- Play Rough
+- Roar
 - Thunder Wave
 
 === GreatTusk ===
@@ -1970,6 +3354,26 @@ Tera Type: Ground
 - Headlong Rush
 - Ice Spinner
 - Knock Off
+
+=== GreatTusk ===
+=== Bulky Setup ===
+GreatTusk @ Leftovers
+Ability: Protosynthesis
+Tera Type: Ground
+- Bulk Up
+- Close Combat
+- Earthquake
+- Rapid Spin
+
+=== GreatTusk ===
+=== Fast Bulky Setup ===
+GreatTusk @ Booster Energy
+Ability: Protosynthesis
+Tera Type: Ground
+- Bulk Up
+- Close Combat
+- Earthquake
+- Rapid Spin
 
 === Greedent ===
 === Bulky Setup ===
@@ -1991,6 +3395,16 @@ Tera Type: Dark
 - Gunk Shot
 - Hydro Pump
 
+=== Greninja ===
+=== Wallbreaker ===
+Greninja @ Life Orb
+Ability: Protean
+Tera Type: Poison
+- Grass Knot
+- Gunk Shot
+- Hydro Pump
+- Ice Beam
+
 === Greninja-Bond ===
 === Fast Attacker ===
 Greninja-Bond @ Life Orb
@@ -2011,6 +3425,16 @@ Tera Type: Poison
 - Sucker Punch
 - Taunt
 
+=== Grimmsnarl ===
+=== Bulky Support ===
+Grimmsnarl @ Light Clay
+Ability: Prankster
+Tera Type: Poison
+- Light Screen
+- Parting Shot
+- Reflect
+- Spirit Break
+
 === Groudon ===
 === Bulky Attacker ===
 Groudon @ Leftovers
@@ -2020,6 +3444,16 @@ Tera Type: Fire
 - Precipice Blades
 - Roar
 - Spikes
+
+=== Groudon ===
+=== Bulky Setup ===
+Groudon @ Leftovers
+Ability: Drought
+Tera Type: Fire
+- Heat Crash
+- Precipice Blades
+- Stone Edge
+- Swords Dance
 
 === Grumpig ===
 === Bulky Setup ===
@@ -2033,11 +3467,33 @@ Adamant Nature
 - Focus Blast
 - Nasty Plot
 
+=== Grumpig ===
+=== Bulky Attacker ===
+Grumpig @ Choice Scarf
+Ability: Thick Fat
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Earth Power
+- Focus Blast
+- Psychic
+- Psyshock
+
 === Gumshoos ===
 === Fast Attacker ===
 Gumshoos @ Choice Band
 Ability: Adaptability
 Tera Type: Ground
+- Double-Edge
+- Earthquake
+- Knock Off
+- U-turn
+
+=== Gumshoos ===
+=== Wallbreaker ===
+Gumshoos @ Choice Band
+Ability: Stakeout
+Tera Type: Normal
 - Double-Edge
 - Earthquake
 - Knock Off
@@ -2063,6 +3519,16 @@ Tera Type: Ground
 - Stone Edge
 - Temper Flare
 
+=== Gyarados ===
+=== Tera Blast user ===
+Gyarados @ Heavy-Duty Boots
+Ability: Intimidate
+Tera Type: Flying
+- Dragon Dance
+- Earthquake
+- Tera Blast
+- Waterfall
+
 === Hariyama ===
 === Wallbreaker ===
 Hariyama @ Flame Orb
@@ -2073,6 +3539,16 @@ Tera Type: Normal
 - Facade
 - Fake Out
 
+=== Hariyama ===
+=== AV Pivot ===
+Hariyama @ Assault Vest
+Ability: Thick Fat
+Tera Type: Steel
+- Bullet Punch
+- Close Combat
+- Headlong Rush
+- Heavy Slam
+
 === Hatterene ===
 === AV Pivot ===
 Hatterene @ Assault Vest
@@ -2081,6 +3557,18 @@ Tera Type: Fairy
 - Draining Kiss
 - Mystical Fire
 - Nuzzle
+- Psychic
+
+=== Hatterene ===
+=== Bulky Setup ===
+Hatterene @ Leftovers
+Ability: Magic Bounce
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Draining Kiss
+- Mystical Fire
 - Psychic
 
 === Hawlucha ===
@@ -2103,6 +3591,16 @@ Tera Type: Steel
 - Earthquake
 - Iron Head
 
+=== Haxorus ===
+=== Fast Bulky Setup ===
+Haxorus @ Loaded Dice
+Ability: Mold Breaker
+Tera Type: Steel
+- Close Combat
+- Earthquake
+- Iron Head
+- Scale Shot
+
 === Heatran ===
 === Bulky Support ===
 Heatran @ Air Balloon
@@ -2123,6 +3621,16 @@ Tera Type: Normal
 - Knock Off
 - Trailblaze
 
+=== Heracross ===
+=== Fast Attacker ===
+Heracross @ Choice Band
+Ability: Moxie
+Tera Type: Bug
+- Close Combat
+- Earthquake
+- Knock Off
+- Megahorn
+
 === Hippowdon ===
 === Bulky Setup ===
 Hippowdon @ Leftovers
@@ -2131,6 +3639,16 @@ Tera Type: Rock
 - Curse
 - Earthquake
 - Slack Off
+- Stone Edge
+
+=== Hippowdon ===
+=== Bulky Support ===
+Hippowdon @ Leftovers
+Ability: Sand Stream
+Tera Type: Dragon
+- Earthquake
+- Slack Off
+- Stealth Rock
 - Stone Edge
 
 === Hitmonchan ===
@@ -2143,6 +3661,26 @@ Tera Type: Steel
 - Knock Off
 - Poison Jab
 
+=== Hitmonchan ===
+=== Bulky Setup ===
+Hitmonchan @ Leftovers
+Ability: Iron Fist
+Tera Type: Dark
+- Bulk Up
+- Drain Punch
+- Knock Off
+- Poison Jab
+
+=== Hitmonchan ===
+=== Setup Sweeper ===
+Hitmonchan @ Leftovers
+Ability: Iron Fist
+Tera Type: Dark
+- Drain Punch
+- Ice Punch
+- Knock Off
+- Mach Punch
+
 === Hitmonlee ===
 === Setup Sweeper ===
 Hitmonlee @ White Herb
@@ -2153,6 +3691,18 @@ Tera Type: Dark
 - Poison Jab
 - Stone Edge
 
+=== Hitmonlee ===
+=== Fast Attacker ===
+Hitmonlee @ Choice Band
+Ability: Reckless
+Tera Type: Fighting
+EVs: 81 HP
+Adamant Nature
+- High Jump Kick
+- Knock Off
+- Mach Punch
+- Poison Jab
+
 === Hitmontop ===
 === Bulky Setup ===
 Hitmontop @ Leftovers
@@ -2162,6 +3712,16 @@ Tera Type: Ice
 - Close Combat
 - Rapid Spin
 - Triple Axel
+
+=== Hitmontop ===
+=== Bulky Support ===
+Hitmontop @ Assault Vest
+Ability: Intimidate
+Tera Type: Steel
+- Close Combat
+- Earthquake
+- Rapid Spin
+- Stone Edge
 
 === Ho-Oh ===
 === Bulky Attacker ===
@@ -2182,6 +3742,16 @@ Tera Type: Dark
 - Heat Wave
 - Lash Out
 - Sucker Punch
+
+=== Honchkrow ===
+=== Fast Attacker ===
+Honchkrow @ Heavy-Duty Boots
+Ability: Moxie
+Tera Type: Dark
+- Brave Bird
+- Heat Wave
+- Sucker Punch
+- U-turn
 
 === Hoopa ===
 === Fast Attacker ===
@@ -2205,6 +3775,16 @@ Tera Type: Dark
 - Hyperspace Fury
 - Trick
 
+=== Hoopa-Unbound ===
+=== Bulky Attacker ===
+Hoopa-Unbound @ Assault Vest
+Ability: Magician
+Tera Type: Fighting
+- Focus Blast
+- Gunk Shot
+- Hyperspace Fury
+- Psychic
+
 === Houndoom ===
 === Fast Attacker ===
 Houndoom @ Heavy-Duty Boots
@@ -2225,6 +3805,26 @@ Tera Type: Fairy
 - Poltergeist
 - Shadow Sneak
 
+=== Houndstone ===
+=== Bulky Support ===
+Houndstone @ Leftovers
+Ability: Fluffy
+Tera Type: Fighting
+- Body Press
+- Poltergeist
+- Rest
+- Sleep Talk
+
+=== Houndstone ===
+=== Bulky Attacker ===
+Houndstone @ Choice Band
+Ability: Fluffy
+Tera Type: Fighting
+- Body Press
+- Play Rough
+- Poltergeist
+- Roar
+
 === Hydrapple ===
 === AV Pivot ===
 Hydrapple @ Assault Vest
@@ -2234,6 +3834,30 @@ Tera Type: Steel
 - Earth Power
 - Fickle Beam
 - Giga Drain
+
+=== Hydrapple ===
+=== Wallbreaker ===
+Hydrapple @ Choice Specs
+Ability: Regenerator
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Draco Meteor
+- Earth Power
+- Fickle Beam
+- Leaf Storm
+
+=== Hydrapple ===
+=== Fast Bulky Setup ===
+Hydrapple @ Leftovers
+Ability: Regenerator
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Earth Power
+- Fickle Beam
+- Giga Drain
+- Nasty Plot
 
 === Hydreigon ===
 === Fast Attacker ===
@@ -2254,6 +3878,18 @@ Tera Type: Dark
 - Knock Off
 - Psychic Noise
 - Thunder Wave
+
+=== Hypno ===
+=== Bulky Attacker ===
+Hypno @ Leftovers
+Ability: Insomnia
+Tera Type: Dark
+EVs: 0 ATK
+Adamant Nature
+- Focus Blast
+- Protect
+- Psychic Noise
+- Toxic
 
 === Illumise ===
 === Bulky Support ===
@@ -2276,6 +3912,26 @@ Tera Type: Grass
 - Knock Off
 - Swords Dance
 - Trailblaze
+
+=== Incineroar ===
+=== AV Pivot ===
+Incineroar @ Assault Vest
+Ability: Intimidate
+Tera Type: Fighting
+- Close Combat
+- Fake Out
+- Knock Off
+- Overheat
+
+=== Incineroar ===
+=== Fast Attacker ===
+Incineroar @ Choice Band
+Ability: Intimidate
+Tera Type: Fighting
+- Close Combat
+- Earthquake
+- Flare Blitz
+- Knock Off
 
 === Indeedee ===
 === Fast Attacker ===
@@ -2311,6 +3967,16 @@ Tera Type: Dark
 - Gunk Shot
 - Knock Off
 
+=== Infernape ===
+=== Fast Attacker ===
+Infernape @ Life Orb
+Ability: Blaze
+Tera Type: Dark
+- Close Combat
+- Grass Knot
+- Gunk Shot
+- Knock Off
+
 === Inteleon ===
 === Wallbreaker ===
 Inteleon @ Choice Specs
@@ -2324,6 +3990,16 @@ Tera Type: Water
 === IronBoulder ===
 === Setup Sweeper ===
 IronBoulder @ Life Orb
+Ability: Quark Drive
+Tera Type: Fighting
+- Close Combat
+- Mighty Cleave
+- Swords Dance
+- Zen Headbutt
+
+=== IronBoulder ===
+=== Fast Bulky Setup ===
+IronBoulder @ Booster Energy
 Ability: Quark Drive
 Tera Type: Fighting
 - Close Combat
@@ -2353,6 +4029,18 @@ Adamant Nature
 - Psyshock
 - Tachyon Cutter
 
+=== IronCrown ===
+=== Wallbreaker ===
+IronCrown @ Choice Specs
+Ability: Quark Drive
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Focus Blast
+- Psyshock
+- Tachyon Cutter
+- Volt Switch
+
 === IronHands ===
 === AV Pivot ===
 IronHands @ Assault Vest
@@ -2362,6 +4050,16 @@ Tera Type: Electric
 - Drain Punch
 - Fake Out
 - Heavy Slam
+
+=== IronHands ===
+=== Bulky Attacker ===
+IronHands @ Leftovers
+Ability: Quark Drive
+Tera Type: Fighting
+- Drain Punch
+- Ice Punch
+- Swords Dance
+- Thunder Punch
 
 === IronJugulis ===
 === Setup Sweeper ===
@@ -2374,6 +4072,16 @@ Adamant Nature
 - Earth Power
 - Hurricane
 - Meteor Beam
+
+=== IronJugulis ===
+=== Wallbreaker ===
+IronJugulis @ Choice Specs
+Ability: Quark Drive
+Tera Type: Dark
+- Dark Pulse
+- Earth Power
+- Fire Blast
+- Hurricane
 
 === IronLeaves ===
 === Wallbreaker ===
@@ -2405,6 +4113,16 @@ Tera Type: Flying
 - Spikes
 - Stealth Rock
 
+=== IronThorns ===
+=== Fast Bulky Setup ===
+IronThorns @ Booster Energy
+Ability: Quark Drive
+Tera Type: Flying
+- Dragon Dance
+- Earthquake
+- Ice Punch
+- Stone Edge
+
 === IronTreads ===
 === Bulky Support ===
 IronTreads @ Assault Vest
@@ -2425,6 +4143,26 @@ Tera Type: Dark
 - Knock Off
 - Moonblast
 
+=== IronValiant ===
+=== Setup Sweeper ===
+IronValiant @ Life Orb
+Ability: Quark Drive
+Tera Type: Dark
+- Close Combat
+- Knock Off
+- Spirit Break
+- Swords Dance
+
+=== IronValiant ===
+=== Fast Attacker ===
+IronValiant @ Life Orb
+Ability: Quark Drive
+Tera Type: Fairy
+- Calm Mind
+- Close Combat
+- Moonblast
+- Psychic
+
 === Jirachi ===
 === Bulky Attacker ===
 Jirachi @ Assault Vest
@@ -2434,6 +4172,26 @@ Tera Type: Fighting
 - Drain Punch
 - Iron Head
 - Stealth Rock
+
+=== Jirachi ===
+=== Fast Support ===
+Jirachi @ Leftovers
+Ability: Serene Grace
+Tera Type: Water
+- Body Slam
+- Iron Head
+- Protect
+- Wish
+
+=== Jirachi ===
+=== Bulky Support ===
+Jirachi @ Choice Scarf
+Ability: Serene Grace
+Tera Type: Water
+- Healing Wish
+- Iron Head
+- Protect
+- Psychic
 
 === Jolteon ===
 === Fast Attacker ===
@@ -2445,6 +4203,18 @@ Adamant Nature
 - Alluring Voice
 - Calm Mind
 - Shadow Ball
+- Thunderbolt
+
+=== Jolteon ===
+=== Tera Blast user ===
+Jolteon @ Leftovers
+Ability: Volt Absorb
+Tera Type: Ice
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Substitute
+- Tera Blast
 - Thunderbolt
 
 === Jumpluff ===
@@ -2459,6 +4229,18 @@ Adamant Nature
 - Sleep Powder
 - Strength Sap
 
+=== Jumpluff ===
+=== Bulky Support ===
+Jumpluff @ None
+Ability: Infiltrator
+Tera Type: Steel
+EVs: 81 HP
+Adamant Nature
+- Acrobatics
+- Leech Seed
+- Strength Sap
+- Substitute
+
 === Keldeo-Resolute ===
 === Bulky Setup ===
 Keldeo-Resolute @ Leftovers
@@ -2470,6 +4252,16 @@ Adamant Nature
 - Hydro Pump
 - Secret Sword
 - Substitute
+
+=== Keldeo-Resolute ===
+=== Fast Attacker ===
+Keldeo-Resolute @ Choice Scarf
+Ability: Justified
+Tera Type: Fighting
+- Air Slash
+- Calm Mind
+- Flip Turn
+- Hydro Pump
 
 === Kilowattrel ===
 === Bulky Attacker ===
@@ -2501,6 +4293,26 @@ Tera Type: Water
 - Waterfall
 - Wave Crash
 
+=== Kingdra ===
+=== Fast Bulky Setup ===
+Kingdra @ Lum Berry
+Ability: Sniper
+Tera Type: Steel
+- Dragon Dance
+- Iron Head
+- Outrage
+- Wave Crash
+
+=== Kingdra ===
+=== Fast Attacker ===
+Kingdra @ Life Orb
+Ability: Swift Swim
+Tera Type: Water
+- Draco Meteor
+- Hurricane
+- Rain Dance
+- Wave Crash
+
 === Klawf ===
 === Setup Sweeper ===
 Klawf @ Expert Belt
@@ -2510,6 +4322,16 @@ Tera Type: Dark
 - High Horsepower
 - Knock Off
 - Stone Edge
+
+=== Klawf ===
+=== Fast Attacker ===
+Klawf @ Choice Band
+Ability: Regenerator
+Tera Type: Dark
+- Crabhammer
+- High Horsepower
+- Knock Off
+- Stealth Rock
 
 === Kleavor ===
 === Bulky Attacker ===
@@ -2533,6 +4355,16 @@ Adamant Nature
 - Spikes
 - Thunder Wave
 
+=== Klefki ===
+=== Bulky Support ===
+Klefki @ Leftovers
+Ability: Prankster
+Tera Type: Water
+- Magnet Rise
+- Play Rough
+- Spikes
+- Thunder Wave
+
 === Komala ===
 === Bulky Support ===
 Komala @ Assault Vest
@@ -2553,6 +4385,16 @@ Tera Type: Normal
 - Clangorous Soul
 - Close Combat
 
+=== Kommo-o ===
+=== Setup Sweeper ===
+Kommo-o @ Loaded Dice
+Ability: Soundproof
+Tera Type: Steel
+- Close Combat
+- Iron Head
+- Scale Shot
+- Swords Dance
+
 === Koraidon ===
 === Setup Sweeper ===
 Koraidon @ Loaded Dice
@@ -2562,6 +4404,16 @@ Tera Type: Fire
 - Flare Blitz
 - Scale Shot
 - Swords Dance
+
+=== Koraidon ===
+=== Fast Attacker ===
+Koraidon @ Choice Band
+Ability: Orichalcum Pulse
+Tera Type: Fire
+- Close Combat
+- Flare Blitz
+- Outrage
+- U-turn
 
 === Kricketune ===
 === Fast Support ===
@@ -2583,6 +4435,16 @@ Tera Type: Poison
 - Gunk Shot
 - Knock Off
 
+=== Krookodile ===
+=== Fast Attacker ===
+Krookodile @ Choice Band
+Ability: Intimidate
+Tera Type: Ground
+- Earthquake
+- Gunk Shot
+- Knock Off
+- Stealth Rock
+
 === Kyogre ===
 === Fast Attacker ===
 Kyogre @ Choice Scarf
@@ -2595,6 +4457,18 @@ Adamant Nature
 - Thunder
 - Water Spout
 
+=== Kyogre ===
+=== Bulky Setup ===
+Kyogre @ Leftovers
+Ability: Drizzle
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Ice Beam
+- Origin Pulse
+- Thunder
+
 === Kyurem ===
 === Wallbreaker ===
 Kyurem @ Choice Specs
@@ -2605,6 +4479,16 @@ Tera Type: Ground
 - Freeze-Dry
 - Ice Beam
 
+=== Kyurem ===
+=== Tera Blast user ===
+Kyurem @ Loaded Dice
+Ability: Pressure
+Tera Type: Ground
+- Dragon Dance
+- Icicle Spear
+- Scale Shot
+- Tera Blast
+
 === Kyurem-Black ===
 === Setup Sweeper ===
 Kyurem-Black @ Loaded Dice
@@ -2614,6 +4498,16 @@ Tera Type: Electric
 - Fusion Bolt
 - Icicle Spear
 - Scale Shot
+
+=== Kyurem-Black ===
+=== Tera Blast user ===
+Kyurem-Black @ Loaded Dice
+Ability: Teravolt
+Tera Type: Ground
+- Dragon Dance
+- Icicle Spear
+- Scale Shot
+- Tera Blast
 
 === Kyurem-White ===
 === Bulky Attacker ===
@@ -2626,6 +4520,18 @@ Adamant Nature
 - Freeze-Dry
 - Fusion Flare
 - Ice Beam
+
+=== Kyurem-White ===
+=== Fast Attacker ===
+Kyurem-White @ Choice Scarf
+Ability: Turboblaze
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Draco Meteor
+- Earth Power
+- Freeze-Dry
+- Fusion Flare
 
 === Landorus ===
 === Fast Attacker ===
@@ -2659,6 +4565,18 @@ Adamant Nature
 - Thunderbolt
 - Volt Switch
 
+=== Lanturn ===
+=== Bulky Attacker ===
+Lanturn @ Leftovers
+Ability: Volt Absorb
+Tera Type: Flying
+EVs: 0 ATK
+Adamant Nature
+- Ice Beam
+- Scald
+- Thunder Wave
+- Thunderbolt
+
 === Lapras ===
 === Wallbreaker ===
 Lapras @ Choice Specs
@@ -2669,6 +4587,30 @@ Adamant Nature
 - Freeze-Dry
 - Hydro Pump
 - Ice Beam
+- Sparkling Aria
+
+=== Lapras ===
+=== Setup Sweeper ===
+Lapras @ Loaded Dice
+Ability: Water Absorb
+Tera Type: Ground
+EVs: 81 HP
+Adamant Nature
+- Dragon Dance
+- Earthquake
+- Icicle Spear
+- Waterfall
+
+=== Lapras ===
+=== Bulky Attacker ===
+Lapras @ Heavy-Duty Boots
+Ability: Water Absorb
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Freeze-Dry
+- Rest
+- Sleep Talk
 - Sparkling Aria
 
 === Latias ===
@@ -2695,6 +4637,28 @@ Adamant Nature
 - Luster Purge
 - Recover
 
+=== Latios ===
+=== Bulky Setup ===
+Latios @ Soul Dew
+Ability: Levitate
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Draco Meteor
+- Psyshock
+- Recover
+
+=== Latios ===
+=== Fast Attacker ===
+Latios @ Choice Specs
+Ability: Levitate
+Tera Type: Dragon
+- Aura Sphere
+- Draco Meteor
+- Flip Turn
+- Luster Purge
+
 === Leafeon ===
 === Setup Sweeper ===
 Leafeon @ Leftovers
@@ -2715,6 +4679,16 @@ Tera Type: Ghost
 - Sticky Web
 - Triple Axel
 
+=== Leavanny ===
+=== Fast Support ===
+Leavanny @ Focus Sash
+Ability: Chlorophyll
+Tera Type: Ghost
+- Knock Off
+- Leaf Blade
+- Lunge
+- Sticky Web
+
 === Lilligant ===
 === Setup Sweeper ===
 Lilligant @ Life Orb
@@ -2726,6 +4700,18 @@ Adamant Nature
 - Petal Dance
 - Quiver Dance
 - Sleep Powder
+
+=== Lilligant ===
+=== Tera Blast user ===
+Lilligant @ Life Orb
+Ability: Chlorophyll
+Tera Type: Fire
+EVs: 0 ATK
+Adamant Nature
+- Giga Drain
+- Quiver Dance
+- Sleep Powder
+- Tera Blast
 
 === Lilligant-Hisui ===
 === Setup Sweeper ===
@@ -2747,6 +4733,26 @@ Tera Type: Bug
 - Sucker Punch
 - U-turn
 
+=== Lokix ===
+=== Setup Sweeper ===
+Lokix @ Life Orb
+Ability: Tinted Lens
+Tera Type: Dark
+- Knock Off
+- Leech Life
+- Sucker Punch
+- Swords Dance
+
+=== Lokix ===
+=== Wallbreaker ===
+Lokix @ Life Orb
+Ability: Tinted Lens
+Tera Type: Bug
+- First Impression
+- Knock Off
+- Leech Life
+- Sucker Punch
+
 === Lucario ===
 === Fast Attacker ===
 Lucario @ Choice Band
@@ -2756,6 +4762,18 @@ Tera Type: Normal
 - Extreme Speed
 - Meteor Mash
 - Stone Edge
+
+=== Lucario ===
+=== Setup Sweeper ===
+Lucario @ Life Orb
+Ability: Inner Focus
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Aura Sphere
+- Flash Cannon
+- Focus Blast
+- Nasty Plot
 
 === Ludicolo ===
 === Fast Attacker ===
@@ -2769,6 +4787,18 @@ Adamant Nature
 - Ice Beam
 - Leaf Storm
 
+=== Ludicolo ===
+=== Setup Sweeper ===
+Ludicolo @ Life Orb
+Ability: Swift Swim
+Tera Type: Grass
+EVs: 0 ATK
+Adamant Nature
+- Giga Drain
+- Hydro Pump
+- Ice Beam
+- Rain Dance
+
 === Lugia ===
 === Setup Sweeper ===
 Lugia @ Heavy-Duty Boots
@@ -2781,6 +4811,18 @@ Adamant Nature
 - Psychic Noise
 - Recover
 
+=== Lugia ===
+=== Bulky Setup ===
+Lugia @ Heavy-Duty Boots
+Ability: Multiscale
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Aeroblast
+- Calm Mind
+- Earth Power
+- Recover
+
 === Lumineon ===
 === Fast Support ===
 Lumineon @ Heavy-Duty Boots
@@ -2790,6 +4832,18 @@ Tera Type: Dragon
 - Hydro Pump
 - Ice Beam
 - U-turn
+
+=== Lumineon ===
+=== Fast Attacker ===
+Lumineon @ Life Orb
+Ability: Storm Drain
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Alluring Voice
+- Encore
+- Hydro Pump
+- Ice Beam
 
 === Lunala ===
 === Fast Bulky Setup ===
@@ -2803,6 +4857,18 @@ Adamant Nature
 - Moonlight
 - Psyshock
 
+=== Lunala ===
+=== Bulky Setup ===
+Lunala @ Leftovers
+Ability: Shadow Shield
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Focus Blast
+- Moonblast
+- Moongeist Beam
+
 === Lurantis ===
 === AV Pivot ===
 Lurantis @ Assault Vest
@@ -2811,6 +4877,16 @@ Tera Type: Fighting
 - Knock Off
 - Leaf Storm
 - Leech Life
+- Superpower
+
+=== Lurantis ===
+=== Bulky Attacker ===
+Lurantis @ Leftovers
+Ability: Contrary
+Tera Type: Fighting
+- Defog
+- Knock Off
+- Leaf Storm
 - Superpower
 
 === Luvdisc ===
@@ -2837,6 +4913,16 @@ Adamant Nature
 - Supercell Slam
 - Throat Chop
 
+=== Luxray ===
+=== AV Pivot ===
+Luxray @ Assault Vest
+Ability: Intimidate
+Tera Type: Electric
+- Ice Fang
+- Play Rough
+- Throat Chop
+- Volt Switch
+
 === Lycanroc ===
 === Fast Attacker ===
 Lycanroc @ Choice Band
@@ -2850,6 +4936,16 @@ Tera Type: Fighting
 === Lycanroc-Dusk ===
 === Wallbreaker ===
 Lycanroc-Dusk @ Choice Band
+Ability: Tough Claws
+Tera Type: Fighting
+- Accelerock
+- Close Combat
+- Psychic Fangs
+- Stone Edge
+
+=== Lycanroc-Dusk ===
+=== Setup Sweeper ===
+Lycanroc-Dusk @ Life Orb
 Ability: Tough Claws
 Tera Type: Fighting
 - Accelerock
@@ -2889,6 +4985,18 @@ Adamant Nature
 - Power Gem
 - Shell Smash
 
+=== Magcargo ===
+=== Bulky Support ===
+Magcargo @ Heavy-Duty Boots
+Ability: Flame Body
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Lava Plume
+- Power Gem
+- Recover
+- Stealth Rock
+
 === Magearna ===
 === Bulky Attacker ===
 Magearna @ Choice Scarf
@@ -2901,6 +5009,28 @@ Adamant Nature
 - Fleur Cannon
 - Pain Split
 
+=== Magearna ===
+=== Bulky Setup ===
+Magearna @ Leftovers
+Ability: Soul-Heart
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Flash Cannon
+- Fleur Cannon
+- Shift Gear
+
+=== Magearna ===
+=== Tera Blast user ===
+Magearna @ Weakness Policy
+Ability: Soul-Heart
+Tera Type: Ground
+- Fleur Cannon
+- Iron Head
+- Shift Gear
+- Tera Blast
+
 === Magmortar ===
 === Wallbreaker ===
 Magmortar @ Choice Specs
@@ -2910,6 +5040,16 @@ Tera Type: Electric
 - Focus Blast
 - Knock Off
 - Scorching Sands
+
+=== Magmortar ===
+=== Fast Attacker ===
+Magmortar @ Heavy-Duty Boots
+Ability: Flame Body
+Tera Type: Electric
+- Earthquake
+- Fire Blast
+- Focus Blast
+- Knock Off
 
 === Magnezone ===
 === Fast Attacker ===
@@ -2923,6 +5063,30 @@ Adamant Nature
 - Thunderbolt
 - Volt Switch
 
+=== Magnezone ===
+=== AV Pivot ===
+Magnezone @ Assault Vest
+Ability: Analytic
+Tera Type: Flying
+EVs: 0 ATK
+Adamant Nature
+- Body Press
+- Discharge
+- Flash Cannon
+- Mirror Coat
+
+=== Magnezone ===
+=== Bulky Setup ===
+Magnezone @ Leftovers
+Ability: Analytic
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Body Press
+- Discharge
+- Flash Cannon
+- Iron Defense
+
 === Malamar ===
 === Fast Bulky Setup ===
 Malamar @ Chesto Berry
@@ -2931,6 +5095,16 @@ Tera Type: Fighting
 - Knock Off
 - Psycho Cut
 - Rest
+- Superpower
+
+=== Malamar ===
+=== Bulky Setup ===
+Malamar @ Leftovers
+Ability: Contrary
+Tera Type: Fighting
+- Knock Off
+- Rest
+- Sleep Talk
 - Superpower
 
 === Mamoswine ===
@@ -2965,6 +5139,16 @@ Tera Type: Steel
 - Roost
 - Toxic
 
+=== Mandibuzz ===
+=== Bulky Attacker ===
+Mandibuzz @ Heavy-Duty Boots
+Ability: Overcoat
+Tera Type: Steel
+- Brave Bird
+- Defog
+- Foul Play
+- Knock Off
+
 === Masquerain ===
 === Fast Support ===
 Masquerain @ Heavy-Duty Boots
@@ -2974,6 +5158,18 @@ Tera Type: Ground
 - Hurricane
 - Hydro Pump
 - Sticky Web
+
+=== Masquerain ===
+=== Setup Sweeper ===
+Masquerain @ Heavy-Duty Boots
+Ability: Intimidate
+Tera Type: Water
+EVs: 0 ATK
+Adamant Nature
+- Bug Buzz
+- Hurricane
+- Hydro Pump
+- Quiver Dance
 
 === Maushold ===
 === Setup Sweeper ===
@@ -3005,6 +5201,16 @@ Tera Type: Ground
 - Petal Blizzard
 - Swords Dance
 
+=== Meganium ===
+=== Bulky Attacker ===
+Meganium @ Leftovers
+Ability: Overgrow
+Tera Type: Poison
+- Dragon Tail
+- Encore
+- Energy Ball
+- Knock Off
+
 === Meloetta ===
 === Wallbreaker ===
 Meloetta @ Life Orb
@@ -3014,6 +5220,16 @@ Tera Type: Dark
 - Knock Off
 - Relic Song
 - Triple Axel
+
+=== Meloetta ===
+=== Fast Attacker ===
+Meloetta @ Choice Specs
+Ability: Serene Grace
+Tera Type: Fighting
+- Calm Mind
+- Focus Blast
+- Hyper Voice
+- Psyshock
 
 === Meowscarada ===
 === Fast Support ===
@@ -3059,12 +5275,42 @@ Tera Type: Dark
 - Knock Off
 - Psychic Noise
 
+=== Mesprit ===
+=== Bulky Support ===
+Mesprit @ Leftovers
+Ability: Levitate
+Tera Type: Dark
+- Encore
+- Knock Off
+- Psychic Noise
+- Stealth Rock
+
+=== Mesprit ===
+=== Fast Attacker ===
+Mesprit @ Choice Scarf
+Ability: Levitate
+Tera Type: Electric
+- Dazzling Gleam
+- Ice Beam
+- Nasty Plot
+- Psychic
+
 === Metagross ===
 === Bulky Support ===
 Metagross @ Choice Band
 Ability: Clear Body
 Tera Type: Water
 - Bullet Punch
+- Earthquake
+- Heavy Slam
+- Knock Off
+
+=== Metagross ===
+=== Bulky Setup ===
+Metagross @ Weakness Policy
+Ability: Clear Body
+Tera Type: Ground
+- Agility
 - Earthquake
 - Heavy Slam
 - Knock Off
@@ -3080,6 +5326,26 @@ Adamant Nature
 - Bug Buzz
 - Dark Pulse
 - Earth Power
+
+=== Mew ===
+=== Setup Sweeper ===
+Mew @ Life Orb
+Ability: Synchronize
+Tera Type: Fighting
+- Close Combat
+- Knock Off
+- Leech Life
+- Psychic Fangs
+
+=== Mew ===
+=== Bulky Support ===
+Mew @ Leftovers
+Ability: Synchronize
+Tera Type: Dark
+- Encore
+- Knock Off
+- Psychic
+- Psychic Noise
 
 === Mewtwo ===
 === Fast Attacker ===
@@ -3105,9 +5371,39 @@ Adamant Nature
 - Poison Jab
 - Stone Edge
 
+=== Mienshao ===
+=== Setup Sweeper ===
+Mienshao @ Life Orb
+Ability: Regenerator
+Tera Type: Dark
+- Close Combat
+- Knock Off
+- Poison Jab
+- Swords Dance
+
+=== Mienshao ===
+=== AV Pivot ===
+Mienshao @ Assault Vest
+Ability: Regenerator
+Tera Type: Dark
+- Close Combat
+- Fake Out
+- Knock Off
+- U-turn
+
 === Mightyena ===
 === AV Pivot ===
 Mightyena @ Assault Vest
+Ability: Intimidate
+Tera Type: Fairy
+- Crunch
+- Play Rough
+- Poison Fang
+- Sucker Punch
+
+=== Mightyena ===
+=== Bulky Attacker ===
+Mightyena @ Choice Band
 Ability: Intimidate
 Tera Type: Fairy
 - Crunch
@@ -3132,6 +5428,16 @@ Ability: Disguise
 Tera Type: Fairy
 - Play Rough
 - Shadow Claw
+- Shadow Sneak
+- Swords Dance
+
+=== Mimikyu ===
+=== Setup Sweeper ===
+Mimikyu @ Life Orb
+Ability: Disguise
+Tera Type: Fairy
+- Drain Punch
+- Play Rough
 - Shadow Sneak
 - Swords Dance
 
@@ -3169,6 +5475,18 @@ Adamant Nature
 - Overheat
 - Volt Switch
 
+=== Miraidon ===
+=== Setup Sweeper ===
+Miraidon @ Life Orb
+Ability: Hadron Engine
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Draco Meteor
+- Dragon Pulse
+- Electro Drift
+
 === Misdreavus ===
 === Bulky Setup ===
 Misdreavus @ Eviolite
@@ -3192,6 +5510,30 @@ Adamant Nature
 - Mystical Fire
 - Nasty Plot
 - Shadow Ball
+
+=== Mismagius ===
+=== Wallbreaker ===
+Mismagius @ Choice Specs
+Ability: Levitate
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Dazzling Gleam
+- Energy Ball
+- Mystical Fire
+- Shadow Ball
+
+=== Mismagius ===
+=== Tera Blast user ===
+Mismagius @ Leftovers
+Ability: Levitate
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Nasty Plot
+- Shadow Ball
+- Substitute
+- Tera Blast
 
 === Moltres ===
 === Bulky Attacker ===
@@ -3225,6 +5567,16 @@ Tera Type: Electric
 - Protect
 - Rapid Spin
 
+=== Morpeko ===
+=== Fast Support ===
+Morpeko @ Heavy-Duty Boots
+Ability: Hunger Switch
+Tera Type: Electric
+- Aura Wheel
+- Parting Shot
+- Protect
+- Rapid Spin
+
 === Mudsdale ===
 === Bulky Attacker ===
 Mudsdale @ Leftovers
@@ -3244,6 +5596,16 @@ Tera Type: Dark
 - Gunk Shot
 - Ice Punch
 - Knock Off
+
+=== Muk ===
+=== Bulky Attacker ===
+Muk @ Choice Band
+Ability: Poison Touch
+Tera Type: Dark
+- Drain Punch
+- Gunk Shot
+- Haze
+- Ice Punch
 
 === Muk-Alola ===
 === AV Pivot ===
@@ -3265,6 +5627,16 @@ Tera Type: Fighting
 - Psyshock
 - Sludge Wave
 
+=== Munkidori ===
+=== AV Pivot ===
+Munkidori @ Assault Vest
+Ability: Toxic Chain
+Tera Type: Dark
+- Fake Out
+- Psychic Noise
+- Sludge Wave
+- U-turn
+
 === Necrozma ===
 === Bulky Setup ===
 Necrozma @ Leftovers
@@ -3274,6 +5646,16 @@ Tera Type: Dark
 - Dragon Dance
 - Earth Power
 - Earthquake
+
+=== Necrozma ===
+=== Setup Sweeper ===
+Necrozma @ Life Orb
+Ability: Prism Armor
+Tera Type: Dark
+- Dragon Dance
+- Earthquake
+- Knock Off
+- Photon Geyser
 
 === Necrozma-Dawn-Wings ===
 === Bulky Setup ===
@@ -3285,6 +5667,16 @@ Adamant Nature
 - Calm Mind
 - Moongeist Beam
 - Moonlight
+- Photon Geyser
+
+=== Necrozma-Dawn-Wings ===
+=== Setup Sweeper ===
+Necrozma-Dawn-Wings @ Life Orb
+Ability: Prism Armor
+Tera Type: Fighting
+- Brick Break
+- Dragon Dance
+- Moongeist Beam
 - Photon Geyser
 
 === Necrozma-Dusk-Mane ===
@@ -3321,6 +5713,18 @@ Adamant Nature
 - Freeze-Dry
 - Moonblast
 
+=== Ninetales-Alola ===
+=== Fast Support ===
+Ninetales-Alola @ Light Clay
+Ability: Snow Warning
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Aurora Veil
+- Blizzard
+- Encore
+- Moonblast
+
 === Noctowl ===
 === Bulky Attacker ===
 Noctowl @ Heavy-Duty Boots
@@ -3343,6 +5747,18 @@ Tera Type: Normal
 - Flamethrower
 - Hurricane
 
+=== Noivern ===
+=== Fast Support ===
+Noivern @ Heavy-Duty Boots
+Ability: Infiltrator
+Tera Type: Fire
+EVs: 0 ATK
+Adamant Nature
+- Defog
+- Draco Meteor
+- Flamethrower
+- Hurricane
+
 === Ogerpon ===
 === Fast Support ===
 Ogerpon @ Choice Band
@@ -3353,6 +5769,16 @@ Tera Type: Grass
 - Knock Off
 - Spikes
 
+=== Ogerpon ===
+=== Setup Sweeper ===
+Ogerpon @ Life Orb
+Ability: Defiant
+Tera Type: Grass
+- Ivy Cudgel
+- Knock Off
+- Superpower
+- Swords Dance
+
 === Ogerpon-Cornerstone ===
 === Setup Sweeper ===
 Ogerpon-Cornerstone @ Cornerstone Mask
@@ -3362,6 +5788,16 @@ Tera Type: Rock
 - Ivy Cudgel
 - Power Whip
 - Superpower
+
+=== Ogerpon-Cornerstone ===
+=== Bulky Attacker ===
+Ogerpon-Cornerstone @ Cornerstone Mask
+Ability: Sturdy
+Tera Type: Rock
+- Encore
+- Ivy Cudgel
+- Power Whip
+- Spikes
 
 === Ogerpon-Hearthflame ===
 === Setup Sweeper ===
@@ -3385,6 +5821,16 @@ Tera Type: Water
 - Knock Off
 - Play Rough
 
+=== Ogerpon-Wellspring ===
+=== Bulky Attacker ===
+Ogerpon-Wellspring @ Wellspring Mask
+Ability: Water Absorb
+Tera Type: Water
+- Encore
+- Ivy Cudgel
+- Spikes
+- Synthesis
+
 === Oinkologne ===
 === Bulky Setup ===
 Oinkologne @ Leftovers
@@ -3405,6 +5851,16 @@ Tera Type: Fairy
 - Rest
 - Sleep Talk
 
+=== Oinkologne-F ===
+=== Bulky Setup ===
+Oinkologne-F @ Leftovers
+Ability: Thick Fat
+Tera Type: Ground
+- Body Slam
+- Curse
+- Double-Edge
+- High Horsepower
+
 === Okidogi ===
 === AV Pivot ===
 Okidogi @ Assault Vest
@@ -3413,6 +5869,16 @@ Tera Type: Dark
 - Drain Punch
 - Gunk Shot
 - High Horsepower
+- Knock Off
+
+=== Okidogi ===
+=== Bulky Setup ===
+Okidogi @ Leftovers
+Ability: Toxic Chain
+Tera Type: Dark
+- Bulk Up
+- Drain Punch
+- Gunk Shot
 - Knock Off
 
 === Oranguru ===
@@ -3425,6 +5891,18 @@ Adamant Nature
 - Focus Blast
 - Nasty Plot
 - Psychic
+- Psyshock
+
+=== Oranguru ===
+=== Wallbreaker ===
+Oranguru @ Choice Specs
+Ability: Inner Focus
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Focus Blast
+- Hyper Voice
+- Nasty Plot
 - Psyshock
 
 === Oricorio ===
@@ -3485,6 +5963,16 @@ Tera Type: Electric
 - Shed Tail
 - Spikes
 
+=== Orthworm ===
+=== Bulky Setup ===
+Orthworm @ Chesto Berry
+Ability: Earth Eater
+Tera Type: Electric
+- Body Press
+- Coil
+- Iron Tail
+- Rest
+
 === Overqwil ===
 === Fast Attacker ===
 Overqwil @ Choice Band
@@ -3495,6 +5983,16 @@ Tera Type: Water
 - Gunk Shot
 - Liquidation
 
+=== Overqwil ===
+=== Setup Sweeper ===
+Overqwil @ Loaded Dice
+Ability: Intimidate
+Tera Type: Dragon
+- Crunch
+- Gunk Shot
+- Scale Shot
+- Swords Dance
+
 === Pachirisu ===
 === AV Pivot ===
 Pachirisu @ Assault Vest
@@ -3503,6 +6001,16 @@ Tera Type: Flying
 - Nuzzle
 - Super Fang
 - Thunderbolt
+- U-turn
+
+=== Pachirisu ===
+=== Fast Support ===
+Pachirisu @ Heavy-Duty Boots
+Ability: Volt Absorb
+Tera Type: Flying
+- Discharge
+- Encore
+- Super Fang
 - U-turn
 
 === Palafin ===
@@ -3515,9 +6023,31 @@ Tera Type: Fighting
 - Jet Punch
 - Wave Crash
 
+=== Palafin ===
+=== Bulky Setup ===
+Palafin @ Leftovers
+Ability: Zero to Hero
+Tera Type: Dragon
+- Bulk Up
+- Drain Punch
+- Ice Punch
+- Jet Punch
+
 === Palkia ===
 === Bulky Attacker ===
 Palkia @ Lustrous Orb
+Ability: Pressure
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Draco Meteor
+- Fire Blast
+- Hydro Pump
+- Spacial Rend
+
+=== Palkia ===
+=== Fast Attacker ===
+Palkia @ Choice Scarf
 Ability: Pressure
 Tera Type: Dragon
 EVs: 0 ATK
@@ -3561,6 +6091,16 @@ Tera Type: Dark
 - Gunk Shot
 - Knock Off
 
+=== Passimian ===
+=== Bulky Setup ===
+Passimian @ Leftovers
+Ability: Defiant
+Tera Type: Dark
+- Bulk Up
+- Drain Punch
+- Gunk Shot
+- Knock Off
+
 === Pawmot ===
 === Wallbreaker ===
 Pawmot @ Life Orb
@@ -3570,6 +6110,16 @@ Tera Type: Electric
 - Double Shock
 - Ice Punch
 - Revival Blessing
+
+=== Pawmot ===
+=== Fast Attacker ===
+Pawmot @ Leppa Berry
+Ability: Volt Absorb
+Tera Type: Electric
+- Close Combat
+- Double Shock
+- Knock Off
+- Nuzzle
 
 === Pecharunt ===
 === Bulky Attacker ===
@@ -3593,11 +6143,31 @@ Tera Type: Ground
 - Knock Off
 - Roost
 
+=== Pelipper ===
+=== Wallbreaker ===
+Pelipper @ Choice Specs
+Ability: Drizzle
+Tera Type: Flying
+- Hurricane
+- Hydro Pump
+- U-turn
+- Weather Ball
+
 === Perrserker ===
 === Wallbreaker ===
 Perrserker @ Choice Band
 Ability: Steely Spirit
 Tera Type: Steel
+- Close Combat
+- Iron Head
+- Knock Off
+- Stealth Rock
+
+=== Perrserker ===
+=== Fast Attacker ===
+Perrserker @ Choice Band
+Ability: Tough Claws
+Tera Type: Fighting
 - Close Combat
 - Iron Head
 - Knock Off
@@ -3613,6 +6183,16 @@ Tera Type: Ghost
 - Switcheroo
 - U-turn
 
+=== Persian ===
+=== Fast Attacker ===
+Persian @ Silk Scarf
+Ability: Technician
+Tera Type: Normal
+- Double-Edge
+- Fake Out
+- Knock Off
+- U-turn
+
 === Persian-Alola ===
 === Fast Bulky Setup ===
 Persian-Alola @ Leftovers
@@ -3625,6 +6205,28 @@ Adamant Nature
 - Nasty Plot
 - Power Gem
 
+=== Persian-Alola ===
+=== Fast Support ===
+Persian-Alola @ Heavy-Duty Boots
+Ability: Fur Coat
+Tera Type: Fairy
+- Foul Play
+- Knock Off
+- Parting Shot
+- Taunt
+
+=== Persian-Alola ===
+=== Tera Blast user ===
+Persian-Alola @ Life Orb
+Ability: Fur Coat
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Dark Pulse
+- Nasty Plot
+- Tera Blast
+- Thunderbolt
+
 === Phione ===
 === Bulky Attacker ===
 Phione @ Leftovers
@@ -3635,6 +6237,18 @@ Adamant Nature
 - Grass Knot
 - Ice Beam
 - Scald
+- Take Heart
+
+=== Phione ===
+=== Bulky Setup ===
+Phione @ Leftovers
+Ability: Hydration
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Rest
+- Scald
+- Sleep Talk
 - Take Heart
 
 === Pikachu ===
@@ -3667,6 +6281,18 @@ Tera Type: Grass
 - Recover
 - Zing Zap
 
+=== Pincurchin ===
+=== Bulky Attacker ===
+Pincurchin @ Leftovers
+Ability: Electric Surge
+Tera Type: Water
+EVs: 0 ATK
+Adamant Nature
+- Discharge
+- Recover
+- Scald
+- Spikes
+
 === Plusle ===
 === Setup Sweeper ===
 Plusle @ Life Orb
@@ -3691,6 +6317,18 @@ Adamant Nature
 - Hydro Pump
 - Hypnosis
 
+=== Politoed ===
+=== Fast Attacker ===
+Politoed @ Choice Specs
+Ability: Drizzle
+Tera Type: Water
+EVs: 0 ATK
+Adamant Nature
+- Focus Blast
+- Hydro Pump
+- Ice Beam
+- Weather Ball
+
 === Poliwrath ===
 === Setup Sweeper ===
 Poliwrath @ Life Orb
@@ -3700,6 +6338,26 @@ Tera Type: Dark
 - Knock Off
 - Liquidation
 - Rain Dance
+
+=== Poliwrath ===
+=== AV Pivot ===
+Poliwrath @ Assault Vest
+Ability: Water Absorb
+Tera Type: Dark
+- Circle Throw
+- Close Combat
+- Knock Off
+- Liquidation
+
+=== Poliwrath ===
+=== Bulky Setup ===
+Poliwrath @ Leftovers
+Ability: Water Absorb
+Tera Type: Fighting
+- Bulk Up
+- Drain Punch
+- Ice Punch
+- Knock Off
 
 === Polteageist ===
 === Setup Sweeper ===
@@ -3713,6 +6371,18 @@ Adamant Nature
 - Shell Smash
 - Stored Power
 
+=== Polteageist ===
+=== Tera Blast user ===
+Polteageist @ White Herb
+Ability: Cursed Body
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Shadow Ball
+- Shell Smash
+- Stored Power
+- Strength Sap
+
 === Porygon-Z ===
 === Fast Attacker ===
 Porygon-Z @ Choice Scarf
@@ -3724,6 +6394,18 @@ Adamant Nature
 - Nasty Plot
 - Shadow Ball
 - Thunderbolt
+
+=== Porygon-Z ===
+=== Tera Blast user ===
+Porygon-Z @ Life Orb
+Ability: Adaptability
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Agility
+- Nasty Plot
+- Shadow Ball
+- Tera Blast
 
 === Porygon2 ===
 === Bulky Support ===
@@ -3737,6 +6419,16 @@ Adamant Nature
 - Recover
 - Tri Attack
 
+=== Porygon2 ===
+=== Tera Blast user ===
+Porygon2 @ Eviolite
+Ability: Download
+Tera Type: Fairy
+- Recover
+- Shadow Ball
+- Tera Blast
+- Thunder Wave
+
 === Primarina ===
 === Bulky Attacker ===
 Primarina @ Leftovers
@@ -3748,6 +6440,28 @@ Adamant Nature
 - Draining Kiss
 - Psychic
 - Sparkling Aria
+
+=== Primarina ===
+=== Bulky Setup ===
+Primarina @ Leftovers
+Ability: Liquid Voice
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Draining Kiss
+- Moonblast
+- Psychic Noise
+
+=== Primarina ===
+=== Wallbreaker ===
+Primarina @ Choice Specs
+Ability: Torrent
+Tera Type: Water
+- Flip Turn
+- Hydro Pump
+- Moonblast
+- Psychic
 
 === Probopass ===
 === Bulky Setup ===
@@ -3793,6 +6507,26 @@ Tera Type: Fighting
 - Encore
 - Knock Off
 
+=== Quaquaval ===
+=== Wallbreaker ===
+Quaquaval @ Choice Band
+Ability: Moxie
+Tera Type: Fighting
+- Aqua Step
+- Close Combat
+- Knock Off
+- Triple Axel
+
+=== Quaquaval ===
+=== Bulky Attacker ===
+Quaquaval @ Leftovers
+Ability: Moxie
+Tera Type: Steel
+- Aqua Step
+- Close Combat
+- Rapid Spin
+- Roost
+
 === Qwilfish ===
 === Fast Support ===
 Qwilfish @ Heavy-Duty Boots
@@ -3802,6 +6536,16 @@ Tera Type: Dark
 - Gunk Shot
 - Pain Split
 - Thunder Wave
+
+=== Qwilfish ===
+=== Bulky Support ===
+Qwilfish @ Leftovers
+Ability: Intimidate
+Tera Type: Dark
+- Destiny Bond
+- Gunk Shot
+- Spikes
+- Taunt
 
 === Qwilfish-Hisui ===
 === Bulky Support ===
@@ -3837,6 +6581,30 @@ Adamant Nature
 - Thunderbolt
 - Thunderclap
 
+=== RagingBolt ===
+=== AV Pivot ===
+RagingBolt @ Assault Vest
+Ability: Protosynthesis
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Discharge
+- Draco Meteor
+- Thunderbolt
+- Thunderclap
+
+=== RagingBolt ===
+=== Fast Bulky Setup ===
+RagingBolt @ Booster Energy
+Ability: Protosynthesis
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Dragon Pulse
+- Thunderbolt
+- Thunderclap
+
 === Raichu ===
 === Fast Support ===
 Raichu @ Assault Vest
@@ -3846,6 +6614,18 @@ Tera Type: Grass
 - Encore
 - Focus Blast
 - Grass Knot
+
+=== Raichu ===
+=== Tera Blast user ===
+Raichu @ Life Orb
+Ability: Lightning Rod
+Tera Type: Ice
+EVs: 0 ATK
+Adamant Nature
+- Encore
+- Focus Blast
+- Nasty Plot
+- Surf
 
 === Raichu-Alola ===
 === Fast Attacker ===
@@ -3859,6 +6639,18 @@ Adamant Nature
 - Grass Knot
 - Psychic
 
+=== Raichu-Alola ===
+=== Setup Sweeper ===
+Raichu-Alola @ Life Orb
+Ability: Surge Surfer
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Alluring Voice
+- Focus Blast
+- Grass Knot
+- Nasty Plot
+
 === Raikou ===
 === Bulky Attacker ===
 Raikou @ Choice Specs
@@ -3871,6 +6663,18 @@ Adamant Nature
 - Shadow Ball
 - Thunderbolt
 
+=== Raikou ===
+=== Bulky Setup ===
+Raikou @ Leftovers
+Ability: Pressure
+Tera Type: Grass
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Scald
+- Substitute
+- Thunderbolt
+
 === Rampardos ===
 === Wallbreaker ===
 Rampardos @ Life Orb
@@ -3881,6 +6685,16 @@ Tera Type: Fire
 - Rock Slide
 - Zen Headbutt
 
+=== Rampardos ===
+=== Fast Attacker ===
+Rampardos @ Choice Scarf
+Ability: Sheer Force
+Tera Type: Fire
+- Earthquake
+- Fire Punch
+- Head Smash
+- Rock Slide
+
 === Rayquaza ===
 === Setup Sweeper ===
 Rayquaza @ Heavy-Duty Boots
@@ -3890,6 +6704,26 @@ Tera Type: Flying
 - Dragon Dance
 - Earthquake
 - Outrage
+
+=== Rayquaza ===
+=== Fast Attacker ===
+Rayquaza @ Choice Band
+Ability: Air Lock
+Tera Type: Normal
+- Dragon Ascent
+- Earthquake
+- Extreme Speed
+- Swords Dance
+
+=== Rayquaza ===
+=== Fast Bulky Setup ===
+Rayquaza @ Loaded Dice
+Ability: Air Lock
+Tera Type: Dragon
+- Dragon Ascent
+- Earthquake
+- Scale Shot
+- Swords Dance
 
 === Regice ===
 === Bulky Attacker ===
@@ -3913,6 +6747,26 @@ Tera Type: Dragon
 - Earthquake
 - Outrage
 
+=== Regidrago ===
+=== Setup Sweeper ===
+Regidrago @ Lum Berry
+Ability: Dragon's Maw
+Tera Type: Dragon
+- Draco Meteor
+- Dragon Dance
+- Earthquake
+- Outrage
+
+=== Regidrago ===
+=== Tera Blast user ===
+Regidrago @ Life Orb
+Ability: Dragon's Maw
+Tera Type: Steel
+- Dragon Claw
+- Dragon Dance
+- Earthquake
+- Tera Blast
+
 === Regieleki ===
 === Fast Support ===
 Regieleki @ Magnet
@@ -3920,6 +6774,16 @@ Ability: Transistor
 Tera Type: Electric
 - Explosion
 - Rapid Spin
+- Thunderbolt
+- Volt Switch
+
+=== Regieleki ===
+=== Tera Blast user ===
+Regieleki @ Magnet
+Ability: Transistor
+Tera Type: Ice
+- Rapid Spin
+- Tera Blast
 - Thunderbolt
 - Volt Switch
 
@@ -3933,6 +6797,16 @@ Tera Type: Ghost
 - Rest
 - Sleep Talk
 
+=== Regigigas ===
+=== Bulky Attacker ===
+Regigigas @ Leftovers
+Ability: Slow Start
+Tera Type: Ghost
+- Body Slam
+- Knock Off
+- Protect
+- Substitute
+
 === Regirock ===
 === Bulky Attacker ===
 Regirock @ Leftovers
@@ -3942,6 +6816,16 @@ Tera Type: Fighting
 - Iron Defense
 - Stealth Rock
 - Stone Edge
+
+=== Regirock ===
+=== Bulky Setup ===
+Regirock @ Chesto Berry
+Ability: Clear Body
+Tera Type: Fighting
+- Body Press
+- Curse
+- Iron Defense
+- Rest
 
 === Registeel ===
 === Bulky Support ===
@@ -3953,6 +6837,16 @@ Tera Type: Fighting
 - Iron Head
 - Stealth Rock
 
+=== Registeel ===
+=== Bulky Setup ===
+Registeel @ Chesto Berry
+Ability: Clear Body
+Tera Type: Fighting
+- Body Press
+- Iron Defense
+- Iron Head
+- Rest
+
 === Reshiram ===
 === Setup Sweeper ===
 Reshiram @ Heavy-Duty Boots
@@ -3962,6 +6856,16 @@ Tera Type: Dragon
 - Flare Blitz
 - Outrage
 - Stone Edge
+
+=== Reshiram ===
+=== Fast Attacker ===
+Reshiram @ Heavy-Duty Boots
+Ability: Turboblaze
+Tera Type: Fire
+- Blue Flare
+- Draco Meteor
+- Dragon Tail
+- Earth Power
 
 === Reuniclus ===
 === Bulky Setup ===
@@ -4005,6 +6909,16 @@ Tera Type: Bug
 - Ice Punch
 - Megahorn
 
+=== Rhyperior ===
+=== Bulky Setup ===
+Rhyperior @ Weakness Policy
+Ability: Solid Rock
+Tera Type: Bug
+- Earthquake
+- Ice Punch
+- Megahorn
+- Rock Polish
+
 === Ribombee ===
 === Fast Support ===
 Ribombee @ Focus Sash
@@ -4014,6 +6928,18 @@ Tera Type: Ghost
 - Moonblast
 - Sticky Web
 - Stun Spore
+
+=== Ribombee ===
+=== Tera Blast user ===
+Ribombee @ Heavy-Duty Boots
+Ability: Shield Dust
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Bug Buzz
+- Moonblast
+- Quiver Dance
+- Tera Blast
 
 === Rillaboom ===
 === Wallbreaker ===
@@ -4025,6 +6951,16 @@ Tera Type: Grass
 - Swords Dance
 - U-turn
 
+=== Rillaboom ===
+=== Fast Attacker ===
+Rillaboom @ Choice Band
+Ability: Grassy Surge
+Tera Type: Grass
+- Grassy Glide
+- High Horsepower
+- Swords Dance
+- U-turn
+
 === RoaringMoon ===
 === Setup Sweeper ===
 RoaringMoon @ Lum Berry
@@ -4032,6 +6968,26 @@ Ability: Protosynthesis
 Tera Type: Dark
 - Dragon Dance
 - Earthquake
+- Iron Head
+- Knock Off
+
+=== RoaringMoon ===
+=== Bulky Attacker ===
+RoaringMoon @ Choice Band
+Ability: Protosynthesis
+Tera Type: Dark
+- Iron Head
+- Knock Off
+- Outrage
+- U-turn
+
+=== RoaringMoon ===
+=== Fast Bulky Setup ===
+RoaringMoon @ Booster Energy
+Ability: Protosynthesis
+Tera Type: Flying
+- Acrobatics
+- Dragon Dance
 - Iron Head
 - Knock Off
 
@@ -4083,6 +7039,18 @@ Adamant Nature
 - Pain Split
 - Thunderbolt
 
+=== Rotom-Heat ===
+=== Bulky Support ===
+Rotom-Heat @ Heavy-Duty Boots
+Ability: Levitate
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Discharge
+- Overheat
+- Pain Split
+- Volt Switch
+
 === Rotom-Mow ===
 === Bulky Attacker ===
 Rotom-Mow @ Choice Scarf
@@ -4106,6 +7074,18 @@ Adamant Nature
 - Nasty Plot
 - Pain Split
 - Thunderbolt
+
+=== Rotom-Wash ===
+=== Bulky Support ===
+Rotom-Wash @ Leftovers
+Ability: Levitate
+Tera Type: Electric
+EVs: 0 ATK
+Adamant Nature
+- Discharge
+- Hydro Pump
+- Pain Split
+- Volt Switch
 
 === Sableye ===
 === Bulky Support ===
@@ -4139,6 +7119,18 @@ Adamant Nature
 - Substitute
 - Toxic
 
+=== Salazzle ===
+=== Tera Blast user ===
+Salazzle @ Heavy-Duty Boots
+Ability: Corrosion
+Tera Type: Grass
+EVs: 0 ATK
+Adamant Nature
+- Fire Blast
+- Nasty Plot
+- Sludge Wave
+- Tera Blast
+
 === Samurott ===
 === AV Pivot ===
 Samurott @ Assault Vest
@@ -4148,6 +7140,16 @@ Tera Type: Dark
 - Flip Turn
 - Grass Knot
 - Hydro Pump
+
+=== Samurott ===
+=== Setup Sweeper ===
+Samurott @ Life Orb
+Ability: Torrent
+Tera Type: Dark
+- Aqua Jet
+- Knock Off
+- Liquidation
+- Megahorn
 
 === Samurott-Hisui ===
 === Fast Attacker ===
@@ -4169,6 +7171,26 @@ Tera Type: Dragon
 - Rock Blast
 - Scale Shot
 
+=== Sandaconda ===
+=== Bulky Attacker ===
+Sandaconda @ Leftovers
+Ability: Shed Skin
+Tera Type: Dragon
+- Earthquake
+- Glare
+- Rest
+- Stealth Rock
+
+=== Sandaconda ===
+=== Bulky Setup ===
+Sandaconda @ Leftovers
+Ability: Shed Skin
+Tera Type: Dragon
+- Coil
+- Earthquake
+- Glare
+- Rest
+
 === Sandslash ===
 === Bulky Support ===
 Sandslash @ Assault Vest
@@ -4186,6 +7208,16 @@ Ability: Slush Rush
 Tera Type: Flying
 - Earthquake
 - Iron Head
+- Knock Off
+- Rapid Spin
+
+=== Sandslash-Alola ===
+=== Setup Sweeper ===
+Sandslash-Alola @ Leftovers
+Ability: Slush Rush
+Tera Type: Ground
+- Earthquake
+- Ice Shard
 - Knock Off
 - Rapid Spin
 
@@ -4211,6 +7243,16 @@ Tera Type: Normal
 - Horn Leech
 - Swords Dance
 
+=== Sawsbuck ===
+=== Setup Sweeper ===
+Sawsbuck @ Life Orb
+Ability: Sap Sipper
+Tera Type: Ground
+- Double-Edge
+- High Horsepower
+- Horn Leech
+- Swords Dance
+
 === Sceptile ===
 === Fast Attacker ===
 Sceptile @ Life Orb
@@ -4221,6 +7263,28 @@ Tera Type: Grass
 - Giga Drain
 - Leaf Storm
 
+=== Sceptile ===
+=== Fast Support ===
+Sceptile @ Leftovers
+Ability: Overgrow
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Focus Blast
+- Giga Drain
+- Leech Seed
+- Substitute
+
+=== Sceptile ===
+=== Setup Sweeper ===
+Sceptile @ Life Orb
+Ability: Overgrow
+Tera Type: Rock
+- Earthquake
+- Leaf Blade
+- Rock Slide
+- Swords Dance
+
 === Scizor ===
 === Wallbreaker ===
 Scizor @ Choice Band
@@ -4230,6 +7294,26 @@ Tera Type: Steel
 - Close Combat
 - Knock Off
 - U-turn
+
+=== Scizor ===
+=== Bulky Support ===
+Scizor @ Choice Band
+Ability: Technician
+Tera Type: Dragon
+- Bullet Punch
+- Close Combat
+- Defog
+- Knock Off
+
+=== Scizor ===
+=== Setup Sweeper ===
+Scizor @ Life Orb
+Ability: Technician
+Tera Type: Steel
+- Bug Bite
+- Bullet Punch
+- Close Combat
+- Knock Off
 
 === Scovillain ===
 === Fast Attacker ===
@@ -4243,6 +7327,28 @@ Adamant Nature
 - Leaf Storm
 - Overheat
 
+=== Scovillain ===
+=== Bulky Attacker ===
+Scovillain @ Leftovers
+Ability: Chlorophyll
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Flamethrower
+- Leech Seed
+- Protect
+- Substitute
+
+=== Scovillain ===
+=== Wallbreaker ===
+Scovillain @ Heavy-Duty Boots
+Ability: Chlorophyll
+Tera Type: Fire
+- Energy Ball
+- Fire Blast
+- Stomping Tantrum
+- Sunny Day
+
 === Scrafty ===
 === Bulky Attacker ===
 Scrafty @ Leftovers
@@ -4253,6 +7359,16 @@ Tera Type: Poison
 - Knock Off
 - Poison Jab
 
+=== Scrafty ===
+=== Bulky Setup ===
+Scrafty @ Leftovers
+Ability: Shed Skin
+Tera Type: Poison
+- Bulk Up
+- Drain Punch
+- Knock Off
+- Rest
+
 === ScreamTail ===
 === Bulky Support ===
 ScreamTail @ Leftovers
@@ -4260,6 +7376,18 @@ Ability: Protosynthesis
 Tera Type: Poison
 - Encore
 - Play Rough
+- Protect
+- Thunder Wave
+
+=== ScreamTail ===
+=== Bulky Attacker ===
+ScreamTail @ Leftovers
+Ability: Protosynthesis
+Tera Type: Poison
+EVs: 0 ATK
+Adamant Nature
+- Dazzling Gleam
+- Encore
 - Protect
 - Thunder Wave
 
@@ -4273,6 +7401,16 @@ Tera Type: Fighting
 - Dual Wingbeat
 - Swords Dance
 
+=== Scyther ===
+=== Fast Support ===
+Scyther @ Heavy-Duty Boots
+Ability: Technician
+Tera Type: Fighting
+- Close Combat
+- Defog
+- Dual Wingbeat
+- U-turn
+
 === Serperior ===
 === Fast Attacker ===
 Serperior @ Leftovers
@@ -4285,6 +7423,16 @@ Adamant Nature
 - Leaf Storm
 - Leech Seed
 
+=== Serperior ===
+=== Tera Blast user ===
+Serperior @ Leftovers
+Ability: Contrary
+Tera Type: Fire
+- Glare
+- Leaf Storm
+- Leech Seed
+- Substitute
+
 === Seviper ===
 === Bulky Setup ===
 Seviper @ Leftovers
@@ -4294,6 +7442,16 @@ Tera Type: Grass
 - Gunk Shot
 - Swords Dance
 - Trailblaze
+
+=== Seviper ===
+=== Fast Attacker ===
+Seviper @ Choice Scarf
+Ability: Infiltrator
+Tera Type: Dark
+- Earthquake
+- Flamethrower
+- Giga Drain
+- Glare
 
 === Shaymin ===
 === Bulky Support ===
@@ -4307,6 +7465,18 @@ Adamant Nature
 - Seed Flare
 - Substitute
 
+=== Shaymin ===
+=== Bulky Attacker ===
+Shaymin @ Leftovers
+Ability: Natural Cure
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Air Slash
+- Earth Power
+- Seed Flare
+- Synthesis
+
 === Shaymin-Sky ===
 === Fast Attacker ===
 Shaymin-Sky @ Choice Specs
@@ -4319,6 +7489,30 @@ Adamant Nature
 - Earth Power
 - Seed Flare
 
+=== Shaymin-Sky ===
+=== Bulky Attacker ===
+Shaymin-Sky @ Heavy-Duty Boots
+Ability: Serene Grace
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Air Slash
+- Earth Power
+- Seed Flare
+- Synthesis
+
+=== Shaymin-Sky ===
+=== Bulky Support ===
+Shaymin-Sky @ Leftovers
+Ability: Serene Grace
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Air Slash
+- Leech Seed
+- Seed Flare
+- Substitute
+
 === Shiftry ===
 === Fast Support ===
 Shiftry @ Heavy-Duty Boots
@@ -4328,6 +7522,26 @@ Tera Type: Dark
 - Knock Off
 - Leaf Storm
 - Sucker Punch
+
+=== Shiftry ===
+=== Setup Sweeper ===
+Shiftry @ Life Orb
+Ability: Wind Rider
+Tera Type: Dark
+- Knock Off
+- Leaf Blade
+- Low Kick
+- Tailwind
+
+=== Shiftry ===
+=== Fast Bulky Setup ===
+Shiftry @ Life Orb
+Ability: Wind Rider
+Tera Type: Dark
+- Knock Off
+- Leaf Blade
+- Sucker Punch
+- Swords Dance
 
 === Sinistcha ===
 === Bulky Setup ===
@@ -4351,6 +7565,26 @@ Tera Type: Dragon
 - Spikes
 - Stealth Rock
 
+=== Skarmory ===
+=== Bulky Attacker ===
+Skarmory @ Leftovers
+Ability: Sturdy
+Tera Type: Dragon
+- Body Press
+- Brave Bird
+- Roost
+- Spikes
+
+=== Skarmory ===
+=== Bulky Setup ===
+Skarmory @ Leftovers
+Ability: Sturdy
+Tera Type: Fighting
+- Body Press
+- Brave Bird
+- Iron Defense
+- Roost
+
 === Skeledirge ===
 === Bulky Support ===
 Skeledirge @ Heavy-Duty Boots
@@ -4362,6 +7596,16 @@ Adamant Nature
 - Slack Off
 - Torch Song
 - Will-O-Wisp
+
+=== Skeledirge ===
+=== Bulky Attacker ===
+Skeledirge @ Heavy-Duty Boots
+Ability: Unaware
+Tera Type: Fairy
+- Flame Charge
+- Shadow Ball
+- Slack Off
+- Torch Song
 
 === Skuntank ===
 === Fast Support ===
@@ -4383,6 +7627,16 @@ Tera Type: Ghost
 - Giga Impact
 - Knock Off
 
+=== Slaking ===
+=== Fast Attacker ===
+Slaking @ Choice Band
+Ability: Truant
+Tera Type: Normal
+- Double-Edge
+- Earthquake
+- Giga Impact
+- Knock Off
+
 === SlitherWing ===
 === Fast Attacker ===
 SlitherWing @ Choice Band
@@ -4392,6 +7646,26 @@ Tera Type: Bug
 - Earthquake
 - First Impression
 - Flare Blitz
+
+=== SlitherWing ===
+=== Fast Support ===
+SlitherWing @ Heavy-Duty Boots
+Ability: Protosynthesis
+Tera Type: Fire
+- Close Combat
+- Morning Sun
+- U-turn
+- Will-O-Wisp
+
+=== SlitherWing ===
+=== Fast Bulky Setup ===
+SlitherWing @ Booster Energy
+Ability: Protosynthesis
+Tera Type: Electric
+- Acrobatics
+- Bulk Up
+- Close Combat
+- Earthquake
 
 === Slowbro ===
 === AV Pivot ===
@@ -4405,6 +7679,30 @@ Adamant Nature
 - Future Sight
 - Ice Beam
 
+=== Slowbro ===
+=== Bulky Attacker ===
+Slowbro @ Leftovers
+Ability: Regenerator
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Psychic Noise
+- Psyshock
+- Scald
+
+=== Slowbro ===
+=== Bulky Setup ===
+Slowbro @ Leftovers
+Ability: Regenerator
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Body Press
+- Iron Defense
+- Scald
+- Slack Off
+
 === Slowbro-Galar ===
 === Wallbreaker ===
 Slowbro-Galar @ Life Orb
@@ -4416,6 +7714,26 @@ Adamant Nature
 - Psychic
 - Shell Side Arm
 - Trick Room
+
+=== Slowbro-Galar ===
+=== Bulky Attacker ===
+Slowbro-Galar @ Leftovers
+Ability: Regenerator
+Tera Type: Dark
+- Earthquake
+- Fire Blast
+- Haze
+- Psychic
+
+=== Slowbro-Galar ===
+=== AV Pivot ===
+Slowbro-Galar @ Assault Vest
+Ability: Regenerator
+Tera Type: Dark
+- Earthquake
+- Fire Blast
+- Foul Play
+- Psychic
 
 === Slowking ===
 === Bulky Attacker ===
@@ -4429,6 +7747,18 @@ Adamant Nature
 - Psyshock
 - Scald
 
+=== Slowking ===
+=== Fast Support ===
+Slowking @ Heavy-Duty Boots
+Ability: Regenerator
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Chilly Reception
+- Future Sight
+- Scald
+- Slack Off
+
 === Slowking-Galar ===
 === Bulky Attacker ===
 Slowking-Galar @ Heavy-Duty Boots
@@ -4441,6 +7771,18 @@ Adamant Nature
 - Psychic Noise
 - Psyshock
 
+=== Slowking-Galar ===
+=== AV Pivot ===
+Slowking-Galar @ Assault Vest
+Ability: Regenerator
+Tera Type: Poison
+EVs: 0 ATK
+Adamant Nature
+- Fire Blast
+- Future Sight
+- Psychic Noise
+- Sludge Bomb
+
 === Smeargle ===
 === Setup Sweeper ===
 Smeargle @ Wide Lens
@@ -4450,6 +7792,16 @@ Tera Type: Ghost
 - Power Trip
 - Shell Smash
 - Spore
+
+=== Smeargle ===
+=== Fast Support ===
+Smeargle @ Focus Sash
+Ability: Own Tempo
+Tera Type: Ghost
+- Ceaseless Edge
+- Spore
+- Stealth Rock
+- Sticky Web
 
 === Sneasler ===
 === Fast Attacker ===
@@ -4461,6 +7813,16 @@ Tera Type: Dark
 - Throat Chop
 - U-turn
 
+=== Sneasler ===
+=== Setup Sweeper ===
+Sneasler @ White Herb
+Ability: Unburden
+Tera Type: Flying
+- Acrobatics
+- Close Combat
+- Dire Claw
+- Gunk Shot
+
 === Snorlax ===
 === Bulky Attacker ===
 Snorlax @ Leftovers
@@ -4471,6 +7833,16 @@ Tera Type: Fairy
 - Rest
 - Sleep Talk
 
+=== Snorlax ===
+=== Bulky Setup ===
+Snorlax @ Chesto Berry
+Ability: Thick Fat
+Tera Type: Ground
+- Body Slam
+- Crunch
+- Curse
+- Earthquake
+
 === Solgaleo ===
 === Bulky Setup ===
 Solgaleo @ Weakness Policy
@@ -4480,6 +7852,16 @@ Tera Type: Dark
 - Earthquake
 - Flame Charge
 - Knock Off
+
+=== Solgaleo ===
+=== Bulky Attacker ===
+Solgaleo @ Leftovers
+Ability: Full Metal Body
+Tera Type: Water
+- Close Combat
+- Earthquake
+- Knock Off
+- Morning Sun
 
 === Spectrier ===
 === Setup Sweeper ===
@@ -4492,6 +7874,18 @@ Adamant Nature
 - Draining Kiss
 - Nasty Plot
 - Shadow Ball
+
+=== Spectrier ===
+=== Tera Blast user ===
+Spectrier @ Leftovers
+Ability: Grim Neigh
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Nasty Plot
+- Shadow Ball
+- Substitute
+- Tera Blast
 
 === Spidops ===
 === Bulky Support ===
@@ -4597,6 +7991,30 @@ Adamant Nature
 - Scald
 - Substitute
 
+=== Suicune ===
+=== Fast Support ===
+Suicune @ Leftovers
+Ability: Pressure
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Protect
+- Scald
+- Substitute
+
+=== Suicune ===
+=== Bulky Attacker ===
+Suicune @ Leftovers
+Ability: Pressure
+Tera Type: Dragon
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Rest
+- Scald
+- Sleep Talk
+
 === Sunflora ===
 === Setup Sweeper ===
 Sunflora @ Life Orb
@@ -4609,6 +8027,18 @@ Adamant Nature
 - Sunny Day
 - Weather Ball
 
+=== Sunflora ===
+=== Wallbreaker ===
+Sunflora @ Choice Specs
+Ability: Chlorophyll
+Tera Type: Fairy
+EVs: 0 ATK
+Adamant Nature
+- Dazzling Gleam
+- Earth Power
+- Leaf Storm
+- Sludge Bomb
+
 === Swalot ===
 === Bulky Attacker ===
 Swalot @ Assault Vest
@@ -4618,6 +8048,26 @@ Tera Type: Dark
 - Earthquake
 - Encore
 - Ice Beam
+
+=== Swalot ===
+=== Bulky Setup ===
+Swalot @ Leftovers
+Ability: Liquid Ooze
+Tera Type: Dark
+- Earthquake
+- Gunk Shot
+- Knock Off
+- Swords Dance
+
+=== Swalot ===
+=== Bulky Support ===
+Swalot @ Leftovers
+Ability: Liquid Ooze
+Tera Type: Ground
+- Earthquake
+- Protect
+- Sludge Bomb
+- Toxic
 
 === Swampert ===
 === Bulky Support ===
@@ -4661,6 +8111,16 @@ Tera Type: Dragon
 - Overheat
 - Roost
 
+=== Talonflame ===
+=== Tera Blast user ===
+Talonflame @ Heavy-Duty Boots
+Ability: Flame Body
+Tera Type: Ground
+- Brave Bird
+- Flare Blitz
+- Swords Dance
+- Tera Blast
+
 === Tatsugiri ===
 === Fast Support ===
 Tatsugiri @ Heavy-Duty Boots
@@ -4681,6 +8141,16 @@ Tera Type: Fighting
 - Throat Chop
 - Zen Headbutt
 
+=== Tauros ===
+=== Fast Attacker ===
+Tauros @ Life Orb
+Ability: Sheer Force
+Tera Type: Fighting
+- Body Slam
+- Close Combat
+- Earthquake
+- Throat Chop
+
 === Tauros-Paldea-Aqua ===
 === Wallbreaker ===
 Tauros-Paldea-Aqua @ Choice Band
@@ -4691,6 +8161,28 @@ Tera Type: Water
 - Stone Edge
 - Wave Crash
 
+=== Tauros-Paldea-Aqua ===
+=== Fast Bulky Setup ===
+Tauros-Paldea-Aqua @ Sitrus Berry
+Ability: Cud Chew
+Tera Type: Steel
+EVs: 73 HP
+Adamant Nature
+- Bulk Up
+- Close Combat
+- Liquidation
+- Substitute
+
+=== Tauros-Paldea-Aqua ===
+=== Setup Sweeper ===
+Tauros-Paldea-Aqua @ Life Orb
+Ability: Intimidate
+Tera Type: Water
+- Aqua Jet
+- Bulk Up
+- Close Combat
+- Liquidation
+
 === Tauros-Paldea-Blaze ===
 === Wallbreaker ===
 Tauros-Paldea-Blaze @ Choice Band
@@ -4700,6 +8192,18 @@ Tera Type: Fighting
 - Flare Blitz
 - Stone Edge
 - Wild Charge
+
+=== Tauros-Paldea-Blaze ===
+=== Fast Bulky Setup ===
+Tauros-Paldea-Blaze @ Sitrus Berry
+Ability: Cud Chew
+Tera Type: Water
+EVs: 73 HP
+Adamant Nature
+- Bulk Up
+- Close Combat
+- Raging Bull
+- Substitute
 
 === Tauros-Paldea-Combat ===
 === Wallbreaker ===
@@ -4731,6 +8235,16 @@ Tera Type: Stellar
 - Rapid Spin
 - Rest
 
+=== Terapagos ===
+=== Fast Bulky Setup ===
+Terapagos @ Chesto Berry
+Ability: Tera Shift
+Tera Type: Stellar
+- Calm Mind
+- Earth Power
+- Rapid Spin
+- Rest
+
 === Terrakion ===
 === Setup Sweeper ===
 Terrakion @ Life Orb
@@ -4741,6 +8255,16 @@ Tera Type: Fighting
 - Stone Edge
 - Swords Dance
 
+=== Terrakion ===
+=== Wallbreaker ===
+Terrakion @ Choice Band
+Ability: Justified
+Tera Type: Fighting
+- Close Combat
+- Earthquake
+- Quick Attack
+- Stone Edge
+
 === Thundurus ===
 === Fast Attacker ===
 Thundurus @ Choice Specs
@@ -4750,6 +8274,26 @@ Tera Type: Electric
 - Grass Knot
 - Knock Off
 - Nasty Plot
+
+=== Thundurus ===
+=== Tera Blast user ===
+Thundurus @ Heavy-Duty Boots
+Ability: Defiant
+Tera Type: Flying
+- Focus Blast
+- Nasty Plot
+- Tera Blast
+- Thunderbolt
+
+=== Thundurus ===
+=== Wallbreaker ===
+Thundurus @ Choice Specs
+Ability: Defiant
+Tera Type: Electric
+- Acrobatics
+- Focus Blast
+- Grass Knot
+- Knock Off
 
 === Thundurus-Therian ===
 === Fast Attacker ===
@@ -4763,6 +8307,18 @@ Adamant Nature
 - Nasty Plot
 - Psychic
 
+=== Thundurus-Therian ===
+=== Tera Blast user ===
+Thundurus-Therian @ Heavy-Duty Boots
+Ability: Volt Absorb
+Tera Type: Flying
+EVs: 0 ATK
+Adamant Nature
+- Focus Blast
+- Nasty Plot
+- Tera Blast
+- Thunderbolt
+
 === Ting-Lu ===
 === Bulky Attacker ===
 Ting-Lu @ Assault Vest
@@ -4773,6 +8329,16 @@ Tera Type: Ghost
 - Payback
 - Ruination
 
+=== Ting-Lu ===
+=== Bulky Support ===
+Ting-Lu @ Leftovers
+Ability: Vessel of Ruin
+Tera Type: Ghost
+- Earthquake
+- Spikes
+- Stealth Rock
+- Throat Chop
+
 === Tinkaton ===
 === Bulky Setup ===
 Tinkaton @ Leftovers
@@ -4782,6 +8348,16 @@ Tera Type: Steel
 - Knock Off
 - Play Rough
 - Protect
+
+=== Tinkaton ===
+=== Bulky Attacker ===
+Tinkaton @ Leftovers
+Ability: Mold Breaker
+Tera Type: Water
+- Encore
+- Gigaton Hammer
+- Knock Off
+- Play Rough
 
 === Toedscruel ===
 === Bulky Support ===
@@ -4803,6 +8379,16 @@ Tera Type: Dragon
 - Solar Beam
 - Stealth Rock
 
+=== Torkoal ===
+=== Wallbreaker ===
+Torkoal @ Heavy-Duty Boots
+Ability: Drought
+Tera Type: Grass
+- Earthquake
+- Fire Blast
+- Lava Plume
+- Rapid Spin
+
 === Tornadus ===
 === Fast Attacker ===
 Tornadus @ Choice Specs
@@ -4822,6 +8408,16 @@ Tera Type: Dark
 - Heat Wave
 - Knock Off
 - U-turn
+
+=== Tornadus-Therian ===
+=== Fast Attacker ===
+Tornadus-Therian @ Choice Specs
+Ability: Regenerator
+Tera Type: Fighting
+- Bleakwind Storm
+- Focus Blast
+- Grass Knot
+- Heat Wave
 
 === Torterra ===
 === Setup Sweeper ===
@@ -4863,6 +8459,16 @@ Tera Type: Dark
 - Gunk Shot
 - Sucker Punch
 
+=== Toxicroak ===
+=== Fast Attacker ===
+Toxicroak @ Choice Band
+Ability: Dry Skin
+Tera Type: Dark
+- Close Combat
+- Earthquake
+- Gunk Shot
+- Knock Off
+
 === Toxtricity ===
 === Fast Attacker ===
 Toxtricity @ Choice Scarf
@@ -4875,6 +8481,16 @@ Adamant Nature
 - Sludge Wave
 - Volt Switch
 
+=== Toxtricity ===
+=== Setup Sweeper ===
+Toxtricity @ Throat Spray
+Ability: Punk Rock
+Tera Type: Normal
+- Boomburst
+- Gunk Shot
+- Overdrive
+- Shift Gear
+
 === Trevenant ===
 === Bulky Support ===
 Trevenant @ Sitrus Berry
@@ -4885,6 +8501,16 @@ Tera Type: Dark
 - Protect
 - Toxic
 
+=== Trevenant ===
+=== Wallbreaker ===
+Trevenant @ Choice Band
+Ability: Natural Cure
+Tera Type: Fighting
+- Drain Punch
+- Horn Leech
+- Poltergeist
+- Rest
+
 === Tropius ===
 === Setup Sweeper ===
 Tropius @ Sitrus Berry
@@ -4894,6 +8520,18 @@ Tera Type: Ground
 - Dual Wingbeat
 - Earthquake
 - Leaf Blade
+
+=== Tropius ===
+=== Bulky Support ===
+Tropius @ Sitrus Berry
+Ability: Harvest
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Air Slash
+- Leech Seed
+- Protect
+- Substitute
 
 === Tsareena ===
 === Fast Support ===
@@ -4929,6 +8567,18 @@ Adamant Nature
 - Focus Blast
 - Shadow Ball
 
+=== Typhlosion-Hisui ===
+=== Fast Attacker ===
+Typhlosion-Hisui @ Choice Scarf
+Ability: Blaze
+Tera Type: Fire
+EVs: 0 ATK
+Adamant Nature
+- Eruption
+- Fire Blast
+- Focus Blast
+- Shadow Ball
+
 === Tyranitar ===
 === Bulky Support ===
 Tyranitar @ Assault Vest
@@ -4937,6 +8587,16 @@ Tera Type: Ghost
 - Dragon Tail
 - Earthquake
 - Ice Beam
+- Knock Off
+
+=== Tyranitar ===
+=== Bulky Setup ===
+Tyranitar @ Weakness Policy
+Ability: Sand Stream
+Tera Type: Ghost
+- Dragon Dance
+- Earthquake
+- Ice Punch
 - Knock Off
 
 === Umbreon ===
@@ -4973,6 +8633,18 @@ Adamant Nature
 - Earth Power
 - Moonlight
 
+=== Ursaluna-Bloodmoon ===
+=== Bulky Setup ===
+Ursaluna-Bloodmoon @ Leftovers
+Ability: Mind's Eye
+Tera Type: Fighting
+EVs: 0 ATK
+Adamant Nature
+- Blood Moon
+- Calm Mind
+- Moonlight
+- Vacuum Wave
+
 === Ursaring ===
 === Bulky Attacker ===
 Ursaring @ Eviolite
@@ -4982,6 +8654,16 @@ Tera Type: Ghost
 - Earthquake
 - Rest
 - Sleep Talk
+
+=== Ursaring ===
+=== Setup Sweeper ===
+Ursaring @ Toxic Orb
+Ability: Quick Feet
+Tera Type: Normal
+- Close Combat
+- Crunch
+- Facade
+- Swords Dance
 
 === Urshifu ===
 === Fast Attacker ===
@@ -5023,6 +8705,30 @@ Tera Type: Ghost
 - Protect
 - Scald
 
+=== Vaporeon ===
+=== Bulky Setup ===
+Vaporeon @ Leftovers
+Ability: Water Absorb
+Tera Type: Ghost
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Protect
+- Scald
+- Wish
+
+=== Vaporeon ===
+=== Bulky Attacker ===
+Vaporeon @ Leftovers
+Ability: Water Absorb
+Tera Type: Ghost
+EVs: 0 ATK
+Adamant Nature
+- Haze
+- Protect
+- Roar
+- Scald
+
 === Veluza ===
 === Fast Attacker ===
 Veluza @ Choice Band
@@ -5032,6 +8738,16 @@ Tera Type: Dark
 - Aqua Jet
 - Flip Turn
 - Night Slash
+
+=== Veluza ===
+=== Setup Sweeper ===
+Veluza @ Sitrus Berry
+Ability: Sharpness
+Tera Type: Dark
+- Aqua Cutter
+- Fillet Away
+- Night Slash
+- Psycho Cut
 
 === Venomoth ===
 === Setup Sweeper ===
@@ -5055,6 +8771,18 @@ Tera Type: Dark
 - Knock Off
 - Sleep Powder
 
+=== Venusaur ===
+=== Bulky Support ===
+Venusaur @ Leftovers
+Ability: Chlorophyll
+Tera Type: Steel
+EVs: 0 ATK
+Adamant Nature
+- Giga Drain
+- Leech Seed
+- Sleep Powder
+- Sludge Bomb
+
 === Vespiquen ===
 === Bulky Support ===
 Vespiquen @ Heavy-Duty Boots
@@ -5075,6 +8803,26 @@ Tera Type: Fire
 - Sunny Day
 - Weather Ball
 
+=== Victreebel ===
+=== Setup Sweeper ===
+Victreebel @ Life Orb
+Ability: Chlorophyll
+Tera Type: Dark
+- Poison Jab
+- Power Whip
+- Sucker Punch
+- Swords Dance
+
+=== Victreebel ===
+=== Wallbreaker ===
+Victreebel @ Life Orb
+Ability: Chlorophyll
+Tera Type: Grass
+- Knock Off
+- Power Whip
+- Sleep Powder
+- Sludge Wave
+
 === Vigoroth ===
 === Bulky Attacker ===
 Vigoroth @ Eviolite
@@ -5083,6 +8831,16 @@ Tera Type: Ground
 - Body Slam
 - Bulk Up
 - Earthquake
+- Slack Off
+
+=== Vigoroth ===
+=== Bulky Setup ===
+Vigoroth @ Eviolite
+Ability: Vital Spirit
+Tera Type: Ghost
+- Body Slam
+- Bulk Up
+- Knock Off
 - Slack Off
 
 === Vikavolt ===
@@ -5131,6 +8889,18 @@ Adamant Nature
 - Quiver Dance
 - Sleep Powder
 
+=== Vivillon ===
+=== Tera Blast user ===
+Vivillon @ Heavy-Duty Boots
+Ability: Compound Eyes
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Hurricane
+- Quiver Dance
+- Sleep Powder
+- Tera Blast
+
 === Volbeat ===
 === Bulky Attacker ===
 Volbeat @ Heavy-Duty Boots
@@ -5140,6 +8910,16 @@ Tera Type: Steel
 - Lunge
 - Roost
 - Thunder Wave
+
+=== Volbeat ===
+=== Bulky Support ===
+Volbeat @ Heavy-Duty Boots
+Ability: Prankster
+Tera Type: Steel
+- Encore
+- Roost
+- Thunder Wave
+- U-turn
 
 === Volcanion ===
 === Bulky Attacker ===
@@ -5163,6 +8943,18 @@ Adamant Nature
 - Fire Blast
 - Giga Drain
 
+=== Volcarona ===
+=== Tera Blast user ===
+Volcarona @ Heavy-Duty Boots
+Ability: Flame Body
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Bug Buzz
+- Fiery Dance
+- Fire Blast
+- Giga Drain
+
 === WalkingWake ===
 === Wallbreaker ===
 WalkingWake @ Choice Specs
@@ -5172,6 +8964,18 @@ Tera Type: Fire
 - Flamethrower
 - Flip Turn
 - Hydro Pump
+
+=== WalkingWake ===
+=== Fast Attacker ===
+WalkingWake @ Life Orb
+Ability: Protosynthesis
+Tera Type: Fire
+EVs: 0 ATK
+Adamant Nature
+- Draco Meteor
+- Flamethrower
+- Hydro Steam
+- Sunny Day
 
 === Weavile ===
 === Fast Attacker ===
@@ -5213,6 +9017,18 @@ Tera Type: Poison
 - Moonblast
 - Stun Spore
 
+=== Whimsicott ===
+=== Bulky Support ===
+Whimsicott @ Leftovers
+Ability: Prankster
+Tera Type: Poison
+EVs: 0 ATK
+Adamant Nature
+- Encore
+- Leech Seed
+- Moonblast
+- Substitute
+
 === Whiscash ===
 === Bulky Support ===
 Whiscash @ Leftovers
@@ -5222,6 +9038,16 @@ Tera Type: Ghost
 - Hydro Pump
 - Ice Beam
 - Spikes
+
+=== Whiscash ===
+=== Setup Sweeper ===
+Whiscash @ Life Orb
+Ability: Oblivious
+Tera Type: Ground
+- Dragon Dance
+- Earthquake
+- Liquidation
+- Stone Edge
 
 === Wigglytuff ===
 === Bulky Support ===
@@ -5273,6 +9099,18 @@ Tera Type: Bug
 - Giga Drain
 - U-turn
 
+=== Yanmega ===
+=== Tera Blast user ===
+Yanmega @ Heavy-Duty Boots
+Ability: Speed Boost
+Tera Type: Ground
+EVs: 0 ATK
+Adamant Nature
+- Air Slash
+- Bug Buzz
+- Protect
+- Tera Blast
+
 === Zacian ===
 === Fast Attacker ===
 Zacian @ Choice Band
@@ -5302,6 +9140,16 @@ Tera Type: Dark
 - Crunch
 - Iron Head
 - Psychic Fangs
+
+=== Zamazenta ===
+=== Bulky Setup ===
+Zamazenta @ Chesto Berry
+Ability: Dauntless Shield
+Tera Type: Fighting
+- Body Press
+- Crunch
+- Iron Defense
+- Iron Head
 
 === Zamazenta-Crowned ===
 === Bulky Setup ===
@@ -5353,6 +9201,16 @@ Tera Type: Dark
 - Power Whip
 - U-turn
 
+=== Zarude ===
+=== Fast Bulky Setup ===
+Zarude @ Leftovers
+Ability: Leaf Guard
+Tera Type: Dark
+- Close Combat
+- Knock Off
+- Power Whip
+- Swords Dance
+
 === Zebstrika ===
 === Fast Attacker ===
 Zebstrika @ Life Orb
@@ -5383,6 +9241,18 @@ Tera Type: Poison
 - Focus Blast
 - Psychic
 
+=== Zoroark ===
+=== Setup Sweeper ===
+Zoroark @ Life Orb
+Ability: Illusion
+Tera Type: Poison
+EVs: 0 ATK
+Adamant Nature
+- Dark Pulse
+- Encore
+- Focus Blast
+- Nasty Plot
+
 === Zoroark-Hisui ===
 === Fast Attacker ===
 Zoroark-Hisui @ Life Orb
@@ -5393,8 +9263,18 @@ Tera Type: Fighting
 - Poltergeist
 - Will-O-Wisp
 
+=== Zoroark-Hisui ===
+=== Wallbreaker ===
+Zoroark-Hisui @ Choice Specs
+Ability: Illusion
+Tera Type: Fighting
+- Bitter Malice
+- Flamethrower
+- Focus Blast
+- Hyper Voice
+
 === Absol ===
-=== Default Set ===
+=== Default ===
 Absol @ Choice Band
 Ability: Justified
 Tera Type: Normal
@@ -5404,7 +9284,7 @@ Tera Type: Normal
 - Sucker Punch
 
 === Accelgor ===
-=== Default Set ===
+=== Default ===
 Accelgor @ Choice Specs
 Ability: Sticky Hold
 Tera Type: Normal
@@ -5416,7 +9296,7 @@ Adamant Nature
 - Sludge Bomb
 
 === Aegislash ===
-=== Default Set ===
+=== Default ===
 Aegislash @ Leftovers
 Ability: Stance Change
 Tera Type: Normal
@@ -5426,7 +9306,7 @@ Tera Type: Normal
 - Shadow Ball
 
 === Aegislash-Blade ===
-=== Default Set ===
+=== Default ===
 Aegislash-Blade @ Choice Band
 Ability: Stance Change
 Tera Type: Normal
@@ -5436,7 +9316,7 @@ Tera Type: Normal
 - Shadow Sneak
 
 === Aerodactyl ===
-=== Default Set ===
+=== Default ===
 Aerodactyl @ Choice Band
 Ability: Unnerve
 Tera Type: Normal
@@ -5446,7 +9326,7 @@ Tera Type: Normal
 - Hone Claws
 
 === Aggron ===
-=== Default Set ===
+=== Default ===
 Aggron @ Air Balloon
 Ability: Rock Head
 Tera Type: Normal
@@ -5456,7 +9336,7 @@ Tera Type: Normal
 - Heavy Slam
 
 === Alakazam ===
-=== Default Set ===
+=== Default ===
 Alakazam @ Focus Sash
 Ability: Magic Guard
 Tera Type: Normal
@@ -5468,7 +9348,7 @@ Adamant Nature
 - Psychic
 
 === Alcremie-Gmax ===
-=== Default Set ===
+=== Default ===
 Alcremie-Gmax @ Leftovers
 Ability: Aroma Veil
 Tera Type: Normal
@@ -5480,7 +9360,7 @@ Adamant Nature
 - Psychic
 
 === Appletun-Gmax ===
-=== Default Set ===
+=== Default ===
 Appletun-Gmax @ Leftovers
 Ability: Thick Fat
 Tera Type: Normal
@@ -5492,7 +9372,7 @@ Adamant Nature
 - Recover
 
 === Archeops ===
-=== Default Set ===
+=== Default ===
 Archeops @ Choice Band
 Ability: Defeatist
 Tera Type: Normal
@@ -5502,7 +9382,7 @@ Tera Type: Normal
 - Stone Edge
 
 === Arctovish ===
-=== Default Set ===
+=== Default ===
 Arctovish @ Assault Vest
 Ability: Slush Rush
 Tera Type: Normal
@@ -5512,7 +9392,7 @@ Tera Type: Normal
 - Icicle Crash
 
 === Arctozolt ===
-=== Default Set ===
+=== Default ===
 Arctozolt @ Assault Vest
 Ability: Slush Rush
 Tera Type: Normal
@@ -5522,7 +9402,7 @@ Tera Type: Normal
 - Stomping Tantrum
 
 === Armaldo ===
-=== Default Set ===
+=== Default ===
 Armaldo @ Choice Band
 Ability: Swift Swim
 Tera Type: Normal
@@ -5532,7 +9412,7 @@ Tera Type: Normal
 - Rapid Spin
 
 === Aromatisse ===
-=== Default Set ===
+=== Default ===
 Aromatisse @ Leftovers
 Ability: Aroma Veil
 Tera Type: Normal
@@ -5544,7 +9424,7 @@ Adamant Nature
 - Toxic
 
 === Audino ===
-=== Default Set ===
+=== Default ===
 Audino @ Leftovers
 Ability: Regenerator
 Tera Type: Normal
@@ -5554,7 +9434,7 @@ Tera Type: Normal
 - Toxic
 
 === Aurorus ===
-=== Default Set ===
+=== Default ===
 Aurorus @ Choice Specs
 Ability: Snow Warning
 Tera Type: Normal
@@ -5566,7 +9446,7 @@ Adamant Nature
 - Freeze-Dry
 
 === Barbaracle ===
-=== Default Set ===
+=== Default ===
 Barbaracle @ Choice Band
 Ability: Tough Claws
 Tera Type: Normal
@@ -5576,7 +9456,7 @@ Tera Type: Normal
 - Shell Smash
 
 === Beheeyem ===
-=== Default Set ===
+=== Default ===
 Beheeyem @ Choice Specs
 Ability: Analytic
 Tera Type: Normal
@@ -5588,7 +9468,7 @@ Adamant Nature
 - Trick
 
 === Bewear ===
-=== Default Set ===
+=== Default ===
 Bewear @ Choice Band
 Ability: Fluffy
 Tera Type: Normal
@@ -5598,7 +9478,7 @@ Tera Type: Normal
 - Ice Punch
 
 === Blacephalon ===
-=== Default Set ===
+=== Default ===
 Blacephalon @ Choice Scarf
 Ability: Beast Boost
 Tera Type: Normal
@@ -5610,7 +9490,7 @@ Adamant Nature
 - Shadow Ball
 
 === Blastoise-Gmax ===
-=== Default Set ===
+=== Default ===
 Blastoise-Gmax @ Leftovers
 Ability: Torrent
 Tera Type: Normal
@@ -5620,7 +9500,7 @@ Tera Type: Normal
 - Scald
 
 === Boltund ===
-=== Default Set ===
+=== Default ===
 Boltund @ Choice Band
 Ability: Strong Jaw
 Tera Type: Normal
@@ -5630,7 +9510,7 @@ Tera Type: Normal
 - Play Rough
 
 === Bouffalant ===
-=== Default Set ===
+=== Default ===
 Bouffalant @ Choice Band
 Ability: Reckless
 Tera Type: Normal
@@ -5640,7 +9520,7 @@ Tera Type: Normal
 - Megahorn
 
 === Butterfree ===
-=== Default Set ===
+=== Default ===
 Butterfree @ Heavy-Duty Boots
 Ability: Compound Eyes
 Tera Type: Normal
@@ -5652,7 +9532,7 @@ Adamant Nature
 - Sleep Powder
 
 === Butterfree-Gmax ===
-=== Default Set ===
+=== Default ===
 Butterfree-Gmax @ Heavy-Duty Boots
 Ability: Tinted Lens
 Tera Type: Normal
@@ -5664,7 +9544,7 @@ Adamant Nature
 - Sleep Powder
 
 === Buzzwole ===
-=== Default Set ===
+=== Default ===
 Buzzwole @ Choice Band
 Ability: Beast Boost
 Tera Type: Normal
@@ -5674,7 +9554,7 @@ Tera Type: Normal
 - Earthquake
 
 === Carracosta ===
-=== Default Set ===
+=== Default ===
 Carracosta @ Weakness Policy
 Ability: Solid Rock
 Tera Type: Normal
@@ -5684,7 +9564,7 @@ Tera Type: Normal
 - Stone Edge
 
 === Celebi ===
-=== Default Set ===
+=== Default ===
 Celebi @ Choice Scarf
 Ability: Natural Cure
 Tera Type: Normal
@@ -5694,7 +9574,7 @@ Tera Type: Normal
 - Nasty Plot
 
 === Celesteela ===
-=== Default Set ===
+=== Default ===
 Celesteela @ Assault Vest
 Ability: Beast Boost
 Tera Type: Normal
@@ -5704,7 +9584,7 @@ Tera Type: Normal
 - Flash Cannon
 
 === Centiskorch ===
-=== Default Set ===
+=== Default ===
 Centiskorch @ Heavy-Duty Boots
 Ability: Flash Fire
 Tera Type: Normal
@@ -5714,7 +9594,7 @@ Tera Type: Normal
 - Leech Life
 
 === Cherrim ===
-=== Default Set ===
+=== Default ===
 Cherrim @ Choice Scarf
 Ability: Flower Gift
 Tera Type: Normal
@@ -5726,7 +9606,7 @@ Adamant Nature
 - Petal Dance
 
 === Cinderace-Gmax ===
-=== Default Set ===
+=== Default ===
 Cinderace-Gmax @ Heavy-Duty Boots
 Ability: Libero
 Tera Type: Normal
@@ -5736,7 +9616,7 @@ Tera Type: Normal
 - Sucker Punch
 
 === Claydol ===
-=== Default Set ===
+=== Default ===
 Claydol @ Assault Vest
 Ability: Levitate
 Tera Type: Normal
@@ -5746,7 +9626,7 @@ Tera Type: Normal
 - Rapid Spin
 
 === Coalossal-Gmax ===
-=== Default Set ===
+=== Default ===
 Coalossal-Gmax @ Air Balloon
 Ability: Flame Body
 Tera Type: Normal
@@ -5756,7 +9636,7 @@ Tera Type: Normal
 - Stealth Rock
 
 === Cofagrigus ===
-=== Default Set ===
+=== Default ===
 Cofagrigus @ Leftovers
 Ability: Mummy
 Tera Type: Normal
@@ -5768,7 +9648,7 @@ Adamant Nature
 - Toxic Spikes
 
 === Copperajah-Gmax ===
-=== Default Set ===
+=== Default ===
 Copperajah-Gmax @ Choice Band
 Ability: Heavy Metal
 Tera Type: Normal
@@ -5778,7 +9658,7 @@ Tera Type: Normal
 - Power Whip
 
 === Corsola ===
-=== Default Set ===
+=== Default ===
 Corsola @ Rocky Helmet
 Ability: Regenerator
 Tera Type: Normal
@@ -5790,7 +9670,7 @@ Adamant Nature
 - Stealth Rock
 
 === Corsola-Galar ===
-=== Default Set ===
+=== Default ===
 Corsola-Galar @ Eviolite
 Ability: Cursed Body
 Tera Type: Normal
@@ -5802,7 +9682,7 @@ Adamant Nature
 - Strength Sap
 
 === Cradily ===
-=== Default Set ===
+=== Default ===
 Cradily @ Leftovers
 Ability: Storm Drain
 Tera Type: Normal
@@ -5812,7 +9692,7 @@ Tera Type: Normal
 - Stone Edge
 
 === Crobat ===
-=== Default Set ===
+=== Default ===
 Crobat @ Black Sludge
 Ability: Infiltrator
 Tera Type: Normal
@@ -5822,7 +9702,7 @@ Tera Type: Normal
 - Super Fang
 
 === Crustle ===
-=== Default Set ===
+=== Default ===
 Crustle @ Heavy-Duty Boots
 Ability: Sturdy
 Tera Type: Normal
@@ -5832,7 +9712,7 @@ Tera Type: Normal
 - X-Scissor
 
 === Cursola ===
-=== Default Set ===
+=== Default ===
 Cursola @ Choice Specs
 Ability: Weak Armor
 Tera Type: Normal
@@ -5844,7 +9724,7 @@ Adamant Nature
 - Shadow Ball
 
 === Darmanitan ===
-=== Default Set ===
+=== Default ===
 Darmanitan @ Life Orb
 Ability: Sheer Force
 Tera Type: Normal
@@ -5856,7 +9736,7 @@ Adamant Nature
 - Superpower
 
 === Darmanitan-Galar ===
-=== Default Set ===
+=== Default ===
 Darmanitan-Galar @ Choice Scarf
 Ability: Gorilla Tactics
 Tera Type: Normal
@@ -5868,7 +9748,7 @@ Adamant Nature
 - Superpower
 
 === Darmanitan-Galar-Zen ===
-=== Default Set ===
+=== Default ===
 Darmanitan-Galar-Zen @ Salac Berry
 Ability: Zen Mode
 Tera Type: Normal
@@ -5878,7 +9758,7 @@ Tera Type: Normal
 - Icicle Crash
 
 === Dhelmise ===
-=== Default Set ===
+=== Default ===
 Dhelmise @ Assault Vest
 Ability: Steelworker
 Tera Type: Normal
@@ -5888,7 +9768,7 @@ Tera Type: Normal
 - Power Whip
 
 === Diggersby ===
-=== Default Set ===
+=== Default ===
 Diggersby @ Choice Band
 Ability: Huge Power
 Tera Type: Normal
@@ -5898,7 +9778,7 @@ Tera Type: Normal
 - Quick Attack
 
 === Doublade ===
-=== Default Set ===
+=== Default ===
 Doublade @ Eviolite
 Ability: No Guard
 Tera Type: Normal
@@ -5908,7 +9788,7 @@ Tera Type: Normal
 - Shadow Sneak
 
 === Dracovish ===
-=== Default Set ===
+=== Default ===
 Dracovish @ Choice Band
 Ability: Sand Rush
 Tera Type: Normal
@@ -5918,7 +9798,7 @@ Tera Type: Normal
 - Low Kick
 
 === Dracozolt ===
-=== Default Set ===
+=== Default ===
 Dracozolt @ Choice Band
 Ability: Hustle
 Tera Type: Normal
@@ -5928,7 +9808,7 @@ Tera Type: Normal
 - Low Kick
 
 === Drampa ===
-=== Default Set ===
+=== Default ===
 Drampa @ Choice Specs
 Ability: Berserk
 Tera Type: Normal
@@ -5940,7 +9820,7 @@ Adamant Nature
 - Hyper Voice
 
 === Drapion ===
-=== Default Set ===
+=== Default ===
 Drapion @ Black Sludge
 Ability: Sniper
 Tera Type: Normal
@@ -5950,7 +9830,7 @@ Tera Type: Normal
 - Poison Jab
 
 === Druddigon ===
-=== Default Set ===
+=== Default ===
 Druddigon @ Choice Band
 Ability: Mold Breaker
 Tera Type: Normal
@@ -5960,7 +9840,7 @@ Tera Type: Normal
 - Outrage
 
 === Dubwool ===
-=== Default Set ===
+=== Default ===
 Dubwool @ Leftovers
 Ability: Bulletproof
 Tera Type: Normal
@@ -5972,7 +9852,7 @@ Adamant Nature
 - Sleep Talk
 
 === Durant ===
-=== Default Set ===
+=== Default ===
 Durant @ Choice Band
 Ability: Hustle
 Tera Type: Normal
@@ -5982,7 +9862,7 @@ Tera Type: Normal
 - Rock Slide
 
 === Eldegoss ===
-=== Default Set ===
+=== Default ===
 Eldegoss @ Heavy-Duty Boots
 Ability: Regenerator
 Tera Type: Normal
@@ -5992,7 +9872,7 @@ Tera Type: Normal
 - Rapid Spin
 
 === Emolga ===
-=== Default Set ===
+=== Default ===
 Emolga @ Choice Specs
 Ability: Motor Drive
 Tera Type: Normal
@@ -6002,7 +9882,7 @@ Tera Type: Normal
 - Roost
 
 === Escavalier ===
-=== Default Set ===
+=== Default ===
 Escavalier @ Choice Band
 Ability: Overcoat
 Tera Type: Normal
@@ -6012,7 +9892,7 @@ Tera Type: Normal
 - Knock Off
 
 === Exploud ===
-=== Default Set ===
+=== Default ===
 Exploud @ Choice Specs
 Ability: Scrappy
 Tera Type: Normal
@@ -6024,7 +9904,7 @@ Adamant Nature
 - Surf
 
 === Farfetch’d ===
-=== Default Set ===
+=== Default ===
 Farfetch’d @ Leek
 Ability: Defiant
 Tera Type: Normal
@@ -6034,7 +9914,7 @@ Tera Type: Normal
 - Leaf Blade
 
 === Ferrothorn ===
-=== Default Set ===
+=== Default ===
 Ferrothorn @ Leftovers
 Ability: Iron Barbs
 Tera Type: Normal
@@ -6044,7 +9924,7 @@ Tera Type: Normal
 - Power Whip
 
 === Garbodor-Gmax ===
-=== Default Set ===
+=== Default ===
 Garbodor-Gmax @ Black Sludge
 Ability: Aftermath
 Tera Type: Normal
@@ -6054,7 +9934,7 @@ Tera Type: Normal
 - Spikes
 
 === Genesect ===
-=== Default Set ===
+=== Default ===
 Genesect @ Assault Vest
 Ability: Download
 Tera Type: Normal
@@ -6064,7 +9944,7 @@ Tera Type: Normal
 - Leech Life
 
 === Genesect-Douse ===
-=== Default Set ===
+=== Default ===
 Genesect-Douse @ Douse Drive
 Ability: Download
 Tera Type: Normal
@@ -6074,7 +9954,7 @@ Tera Type: Normal
 - Ice Beam
 
 === Gengar-Gmax ===
-=== Default Set ===
+=== Default ===
 Gengar-Gmax @ Choice Specs
 Ability: Cursed Body
 Tera Type: Normal
@@ -6086,7 +9966,7 @@ Adamant Nature
 - Sludge Wave
 
 === Gigalith ===
-=== Default Set ===
+=== Default ===
 Gigalith @ Choice Band
 Ability: Sand Stream
 Tera Type: Normal
@@ -6096,7 +9976,7 @@ Tera Type: Normal
 - Stone Edge
 
 === Golisopod ===
-=== Default Set ===
+=== Default ===
 Golisopod @ Choice Band
 Ability: Emergency Exit
 Tera Type: Normal
@@ -6106,7 +9986,7 @@ Tera Type: Normal
 - Liquidation
 
 === Gourgeist ===
-=== Default Set ===
+=== Default ===
 Gourgeist @ Leftovers
 Ability: Frisk
 Tera Type: Normal
@@ -6116,7 +9996,7 @@ Tera Type: Normal
 - Synthesis
 
 === Gourgeist-Large ===
-=== Default Set ===
+=== Default ===
 Gourgeist-Large @ Leftovers
 Ability: Frisk
 Tera Type: Normal
@@ -6126,7 +10006,7 @@ Tera Type: Normal
 - Synthesis
 
 === Gourgeist-Small ===
-=== Default Set ===
+=== Default ===
 Gourgeist-Small @ Leftovers
 Ability: Frisk
 Tera Type: Normal
@@ -6136,7 +10016,7 @@ Tera Type: Normal
 - Substitute
 
 === Gourgeist-Super ===
-=== Default Set ===
+=== Default ===
 Gourgeist-Super @ Choice Band
 Ability: Frisk
 Tera Type: Normal
@@ -6146,7 +10026,7 @@ Tera Type: Normal
 - Shadow Sneak
 
 === Grapploct ===
-=== Default Set ===
+=== Default ===
 Grapploct @ Life Orb
 Ability: Limber
 Tera Type: Normal
@@ -6156,7 +10036,7 @@ Tera Type: Normal
 - Ice Punch
 
 === Grimmsnarl-Gmax ===
-=== Default Set ===
+=== Default ===
 Grimmsnarl-Gmax @ Chesto Berry
 Ability: Prankster
 Tera Type: Normal
@@ -6166,7 +10046,7 @@ Tera Type: Normal
 - Rest
 
 === Guzzlord ===
-=== Default Set ===
+=== Default ===
 Guzzlord @ Assault Vest
 Ability: Beast Boost
 Tera Type: Normal
@@ -6176,7 +10056,7 @@ Tera Type: Normal
 - Knock Off
 
 === Hatterene-Gmax ===
-=== Default Set ===
+=== Default ===
 Hatterene-Gmax @ Choice Specs
 Ability: Magic Bounce
 Tera Type: Normal
@@ -6188,7 +10068,7 @@ Adamant Nature
 - Psychic
 
 === Heatmor ===
-=== Default Set ===
+=== Default ===
 Heatmor @ Heavy-Duty Boots
 Ability: Flash Fire
 Tera Type: Normal
@@ -6198,7 +10078,7 @@ Tera Type: Normal
 - Substitute
 
 === Heliolisk ===
-=== Default Set ===
+=== Default ===
 Heliolisk @ Choice Specs
 Ability: Dry Skin
 Tera Type: Normal
@@ -6210,7 +10090,7 @@ Adamant Nature
 - Surf
 
 === Inteleon-Gmax ===
-=== Default Set ===
+=== Default ===
 Inteleon-Gmax @ Scope Lens
 Ability: Sniper
 Tera Type: Normal
@@ -6222,7 +10102,7 @@ Adamant Nature
 - Surf
 
 === Jellicent ===
-=== Default Set ===
+=== Default ===
 Jellicent @ Leftovers
 Ability: Water Absorb
 Tera Type: Normal
@@ -6234,7 +10114,7 @@ Adamant Nature
 - Shadow Ball
 
 === Jynx ===
-=== Default Set ===
+=== Default ===
 Jynx @ Choice Scarf
 Ability: Dry Skin
 Tera Type: Normal
@@ -6246,7 +10126,7 @@ Adamant Nature
 - Nasty Plot
 
 === Kabutops ===
-=== Default Set ===
+=== Default ===
 Kabutops @ Assault Vest
 Ability: Swift Swim
 Tera Type: Normal
@@ -6256,7 +10136,7 @@ Tera Type: Normal
 - Rapid Spin
 
 === Kangaskhan ===
-=== Default Set ===
+=== Default ===
 Kangaskhan @ Assault Vest
 Ability: Scrappy
 Tera Type: Normal
@@ -6266,7 +10146,7 @@ Tera Type: Normal
 - Hammer Arm
 
 === Kartana ===
-=== Default Set ===
+=== Default ===
 Kartana @ Choice Band
 Ability: Beast Boost
 Tera Type: Normal
@@ -6276,7 +10156,7 @@ Tera Type: Normal
 - Smart Strike
 
 === Kingler ===
-=== Default Set ===
+=== Default ===
 Kingler @ Life Orb
 Ability: Sheer Force
 Tera Type: Normal
@@ -6286,7 +10166,7 @@ Tera Type: Normal
 - Superpower
 
 === Klinklang ===
-=== Default Set ===
+=== Default ===
 Klinklang @ Leftovers
 Ability: Clear Body
 Tera Type: Normal
@@ -6296,7 +10176,7 @@ Tera Type: Normal
 - Wild Charge
 
 === Lapras-Gmax ===
-=== Default Set ===
+=== Default ===
 Lapras-Gmax @ Choice Specs
 Ability: Water Absorb
 Tera Type: Normal
@@ -6308,7 +10188,7 @@ Adamant Nature
 - Sparkling Aria
 
 === Lickilicky ===
-=== Default Set ===
+=== Default ===
 Lickilicky @ Choice Band
 Ability: Oblivious
 Tera Type: Normal
@@ -6318,7 +10198,7 @@ Tera Type: Normal
 - Heal Bell
 
 === Liepard ===
-=== Default Set ===
+=== Default ===
 Liepard @ Choice Band
 Ability: Prankster
 Tera Type: Normal
@@ -6328,7 +10208,7 @@ Tera Type: Normal
 - Play Rough
 
 === Linoone ===
-=== Default Set ===
+=== Default ===
 Linoone @ Aguav Berry
 Ability: Gluttony
 Tera Type: Normal
@@ -6340,7 +10220,7 @@ Adamant Nature
 - Throat Chop
 
 === Lopunny ===
-=== Default Set ===
+=== Default ===
 Lopunny @ Toxic Orb
 Ability: Cute Charm
 Tera Type: Normal
@@ -6350,7 +10230,7 @@ Tera Type: Normal
 - Switcheroo
 
 === Lunatone ===
-=== Default Set ===
+=== Default ===
 Lunatone @ Choice Specs
 Ability: Levitate
 Tera Type: Normal
@@ -6362,7 +10242,7 @@ Adamant Nature
 - Power Gem
 
 === Machamp ===
-=== Default Set ===
+=== Default ===
 Machamp @ Choice Band
 Ability: Guts
 Tera Type: Normal
@@ -6372,7 +10252,7 @@ Tera Type: Normal
 - Facade
 
 === Manectric ===
-=== Default Set ===
+=== Default ===
 Manectric @ Choice Scarf
 Ability: Lightning Rod
 Tera Type: Normal
@@ -6384,7 +10264,7 @@ Adamant Nature
 - Thunderbolt
 
 === Mantine ===
-=== Default Set ===
+=== Default ===
 Mantine @ Heavy-Duty Boots
 Ability: Water Absorb
 Tera Type: Normal
@@ -6396,7 +10276,7 @@ Adamant Nature
 - Scald
 
 === Maractus ===
-=== Default Set ===
+=== Default ===
 Maractus @ Focus Sash
 Ability: Chlorophyll
 Tera Type: Normal
@@ -6406,7 +10286,7 @@ Tera Type: Normal
 - Spikes
 
 === Marowak ===
-=== Default Set ===
+=== Default ===
 Marowak @ Thick Club
 Ability: Battle Armor
 Tera Type: Normal
@@ -6416,7 +10296,7 @@ Tera Type: Normal
 - Stealth Rock
 
 === Marowak-Alola ===
-=== Default Set ===
+=== Default ===
 Marowak-Alola @ Thick Club
 Ability: Lightning Rod
 Tera Type: Normal
@@ -6426,7 +10306,7 @@ Tera Type: Normal
 - Poltergeist
 
 === Marshadow ===
-=== Default Set ===
+=== Default ===
 Marshadow @ Choice Band
 Ability: Technician
 Tera Type: Normal
@@ -6436,7 +10316,7 @@ Tera Type: Normal
 - Rock Tomb
 
 === Mawile ===
-=== Default Set ===
+=== Default ===
 Mawile @ Focus Sash
 Ability: Intimidate
 Tera Type: Normal
@@ -6446,7 +10326,7 @@ Tera Type: Normal
 - Sucker Punch
 
 === Melmetal ===
-=== Default Set ===
+=== Default ===
 Melmetal @ Choice Band
 Ability: Iron Fist
 Tera Type: Normal
@@ -6456,7 +10336,7 @@ Tera Type: Normal
 - Thunder Punch
 
 === Miltank ===
-=== Default Set ===
+=== Default ===
 Miltank @ Leftovers
 Ability: Sap Sipper
 Tera Type: Normal
@@ -6466,7 +10346,7 @@ Tera Type: Normal
 - Milk Drink
 
 === Mr.Mime ===
-=== Default Set ===
+=== Default ===
 Mr.Mime @ Choice Scarf
 Ability: Filter
 Tera Type: Normal
@@ -6478,7 +10358,7 @@ Adamant Nature
 - Nasty Plot
 
 === Mr.Mime-Galar ===
-=== Default Set ===
+=== Default ===
 Mr.Mime-Galar @ Eviolite
 Ability: Screen Cleaner
 Tera Type: Normal
@@ -6488,7 +10368,7 @@ Tera Type: Normal
 - Psychic
 
 === Mr.Rime ===
-=== Default Set ===
+=== Default ===
 Mr.Rime @ Choice Scarf
 Ability: Screen Cleaner
 Tera Type: Normal
@@ -6498,7 +10378,7 @@ Tera Type: Normal
 - Rapid Spin
 
 === Musharna ===
-=== Default Set ===
+=== Default ===
 Musharna @ Leftovers
 Ability: Synchronize
 Tera Type: Normal
@@ -6510,7 +10390,7 @@ Adamant Nature
 - Psychic
 
 === Naganadel ===
-=== Default Set ===
+=== Default ===
 Naganadel @ Choice Specs
 Ability: Beast Boost
 Tera Type: Normal
@@ -6522,7 +10402,7 @@ Adamant Nature
 - Nasty Plot
 
 === Nidoking ===
-=== Default Set ===
+=== Default ===
 Nidoking @ Life Orb
 Ability: Sheer Force
 Tera Type: Normal
@@ -6532,7 +10412,7 @@ Tera Type: Normal
 - Substitute
 
 === Nidoqueen ===
-=== Default Set ===
+=== Default ===
 Nidoqueen @ Life Orb
 Ability: Sheer Force
 Tera Type: Normal
@@ -6544,7 +10424,7 @@ Adamant Nature
 - Stealth Rock
 
 === Nihilego ===
-=== Default Set ===
+=== Default ===
 Nihilego @ Black Sludge
 Ability: Beast Boost
 Tera Type: Normal
@@ -6556,7 +10436,7 @@ Adamant Nature
 - Stealth Rock
 
 === Ninjask ===
-=== Default Set ===
+=== Default ===
 Ninjask @ None
 Ability: Speed Boost
 Tera Type: Normal
@@ -6568,7 +10448,7 @@ Adamant Nature
 - U-turn
 
 === Obstagoon ===
-=== Default Set ===
+=== Default ===
 Obstagoon @ Flame Orb
 Ability: Guts
 Tera Type: Normal
@@ -6578,7 +10458,7 @@ Tera Type: Normal
 - Knock Off
 
 === Octillery ===
-=== Default Set ===
+=== Default ===
 Octillery @ Choice Specs
 Ability: Sniper
 Tera Type: Normal
@@ -6588,7 +10468,7 @@ Tera Type: Normal
 - Hydro Pump
 
 === Omastar ===
-=== Default Set ===
+=== Default ===
 Omastar @ White Herb
 Ability: Swift Swim
 Tera Type: Normal
@@ -6600,7 +10480,7 @@ Adamant Nature
 - Shell Smash
 
 === Orbeetle ===
-=== Default Set ===
+=== Default ===
 Orbeetle @ Heavy-Duty Boots
 Ability: Frisk
 Tera Type: Normal
@@ -6610,7 +10490,7 @@ Tera Type: Normal
 - Psychic
 
 === Pangoro ===
-=== Default Set ===
+=== Default ===
 Pangoro @ Choice Band
 Ability: Scrappy
 Tera Type: Normal
@@ -6620,7 +10500,7 @@ Tera Type: Normal
 - Knock Off
 
 === Pheromosa ===
-=== Default Set ===
+=== Default ===
 Pheromosa @ Choice Band
 Ability: Beast Boost
 Tera Type: Normal
@@ -6630,7 +10510,7 @@ Tera Type: Normal
 - Throat Chop
 
 === Pinsir ===
-=== Default Set ===
+=== Default ===
 Pinsir @ Choice Band
 Ability: Mold Breaker
 Tera Type: Normal
@@ -6640,7 +10520,7 @@ Tera Type: Normal
 - Stealth Rock
 
 === Pyukumuku ===
-=== Default Set ===
+=== Default ===
 Pyukumuku @ Leftovers
 Ability: Unaware
 Tera Type: Normal
@@ -6652,7 +10532,7 @@ Adamant Nature
 - Toxic
 
 === Rapidash ===
-=== Default Set ===
+=== Default ===
 Rapidash @ Heavy-Duty Boots
 Ability: Flash Fire
 Tera Type: Normal
@@ -6662,7 +10542,7 @@ Tera Type: Normal
 - Swords Dance
 
 === Rapidash-Galar ===
-=== Default Set ===
+=== Default ===
 Rapidash-Galar @ Leftovers
 Ability: Pastel Veil
 Tera Type: Normal
@@ -6672,7 +10552,7 @@ Tera Type: Normal
 - Swords Dance
 
 === Relicanth ===
-=== Default Set ===
+=== Default ===
 Relicanth @ Choice Band
 Ability: Rock Head
 Tera Type: Normal
@@ -6682,7 +10562,7 @@ Tera Type: Normal
 - Liquidation
 
 === Rillaboom-Gmax ===
-=== Default Set ===
+=== Default ===
 Rillaboom-Gmax @ Grassy Seed
 Ability: Grassy Surge
 Tera Type: Normal
@@ -6692,7 +10572,7 @@ Tera Type: Normal
 - Knock Off
 
 === Roserade ===
-=== Default Set ===
+=== Default ===
 Roserade @ Black Sludge
 Ability: Natural Cure
 Tera Type: Normal
@@ -6704,7 +10584,7 @@ Adamant Nature
 - Spikes
 
 === Runerigus ===
-=== Default Set ===
+=== Default ===
 Runerigus @ Leftovers
 Ability: Wandering Spirit
 Tera Type: Normal
@@ -6714,7 +10594,7 @@ Tera Type: Normal
 - Stealth Rock
 
 === Sawk ===
-=== Default Set ===
+=== Default ===
 Sawk @ Choice Band
 Ability: Mold Breaker
 Tera Type: Normal
@@ -6724,7 +10604,7 @@ Tera Type: Normal
 - Poison Jab
 
 === Scolipede ===
-=== Default Set ===
+=== Default ===
 Scolipede @ Black Sludge
 Ability: Speed Boost
 Tera Type: Normal
@@ -6734,7 +10614,7 @@ Tera Type: Normal
 - Protect
 
 === Seaking ===
-=== Default Set ===
+=== Default ===
 Seaking @ Choice Band
 Ability: Lightning Rod
 Tera Type: Normal
@@ -6744,7 +10624,7 @@ Tera Type: Normal
 - Swords Dance
 
 === Seismitoad ===
-=== Default Set ===
+=== Default ===
 Seismitoad @ Life Orb
 Ability: Swift Swim
 Tera Type: Normal
@@ -6754,7 +10634,7 @@ Tera Type: Normal
 - Sludge Bomb
 
 === Sharpedo ===
-=== Default Set ===
+=== Default ===
 Sharpedo @ Life Orb
 Ability: Speed Boost
 Tera Type: Normal
@@ -6764,7 +10644,7 @@ Tera Type: Normal
 - Protect
 
 === Shedinja ===
-=== Default Set ===
+=== Default ===
 Shedinja @ Focus Sash
 Ability: Wonder Guard
 Tera Type: Normal
@@ -6774,7 +10654,7 @@ Tera Type: Normal
 - Will-O-Wisp
 
 === Shiinotic ===
-=== Default Set ===
+=== Default ===
 Shiinotic @ Leftovers
 Ability: Effect Spore
 Tera Type: Normal
@@ -6786,7 +10666,7 @@ Adamant Nature
 - Spore
 
 === Shuckle ===
-=== Default Set ===
+=== Default ===
 Shuckle @ Heavy-Duty Boots
 Ability: Sturdy
 Tera Type: Normal
@@ -6796,7 +10676,7 @@ Tera Type: Normal
 - Sticky Web
 
 === Sigilyph ===
-=== Default Set ===
+=== Default ===
 Sigilyph @ Choice Specs
 Ability: Magic Guard
 Tera Type: Normal
@@ -6808,7 +10688,7 @@ Adamant Nature
 - Heat Wave
 
 === Silvally ===
-=== Default Set ===
+=== Default ===
 Silvally @ Assault Vest
 Ability: RKS System
 Tera Type: Normal
@@ -6818,7 +10698,7 @@ Tera Type: Normal
 - Flamethrower
 
 === Silvally-Bug ===
-=== Default Set ===
+=== Default ===
 Silvally-Bug @ Bug Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6828,7 +10708,7 @@ Tera Type: Normal
 - Psychic Fangs
 
 === Silvally-Dark ===
-=== Default Set ===
+=== Default ===
 Silvally-Dark @ Dark Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6838,7 +10718,7 @@ Tera Type: Normal
 - Psychic Fangs
 
 === Silvally-Dragon ===
-=== Default Set ===
+=== Default ===
 Silvally-Dragon @ Dragon Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6848,7 +10728,7 @@ Tera Type: Normal
 - Parting Shot
 
 === Silvally-Electric ===
-=== Default Set ===
+=== Default ===
 Silvally-Electric @ Electric Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6858,7 +10738,7 @@ Tera Type: Normal
 - Parting Shot
 
 === Silvally-Fairy ===
-=== Default Set ===
+=== Default ===
 Silvally-Fairy @ Fairy Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6868,7 +10748,7 @@ Tera Type: Normal
 - Swords Dance
 
 === Silvally-Fighting ===
-=== Default Set ===
+=== Default ===
 Silvally-Fighting @ Fighting Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6878,7 +10758,7 @@ Tera Type: Normal
 - Swords Dance
 
 === Silvally-Fire ===
-=== Default Set ===
+=== Default ===
 Silvally-Fire @ Fire Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6888,7 +10768,7 @@ Tera Type: Normal
 - Swords Dance
 
 === Silvally-Flying ===
-=== Default Set ===
+=== Default ===
 Silvally-Flying @ Flying Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6898,7 +10778,7 @@ Tera Type: Normal
 - Rock Slide
 
 === Silvally-Ghost ===
-=== Default Set ===
+=== Default ===
 Silvally-Ghost @ Ghost Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6908,7 +10788,7 @@ Tera Type: Normal
 - Swords Dance
 
 === Silvally-Grass ===
-=== Default Set ===
+=== Default ===
 Silvally-Grass @ Grass Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6918,7 +10798,7 @@ Tera Type: Normal
 - Multi-Attack
 
 === Silvally-Ground ===
-=== Default Set ===
+=== Default ===
 Silvally-Ground @ Ground Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6928,7 +10808,7 @@ Tera Type: Normal
 - Multi-Attack
 
 === Silvally-Ice ===
-=== Default Set ===
+=== Default ===
 Silvally-Ice @ Ice Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6938,7 +10818,7 @@ Tera Type: Normal
 - Swords Dance
 
 === Silvally-Poison ===
-=== Default Set ===
+=== Default ===
 Silvally-Poison @ Poison Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6948,7 +10828,7 @@ Tera Type: Normal
 - Parting Shot
 
 === Silvally-Psychic ===
-=== Default Set ===
+=== Default ===
 Silvally-Psychic @ Psychic Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6958,7 +10838,7 @@ Tera Type: Normal
 - X-Scissor
 
 === Silvally-Rock ===
-=== Default Set ===
+=== Default ===
 Silvally-Rock @ Rock Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6968,7 +10848,7 @@ Tera Type: Normal
 - Psychic Fangs
 
 === Silvally-Steel ===
-=== Default Set ===
+=== Default ===
 Silvally-Steel @ Steel Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6978,7 +10858,7 @@ Tera Type: Normal
 - Parting Shot
 
 === Silvally-Water ===
-=== Default Set ===
+=== Default ===
 Silvally-Water @ Water Memory
 Ability: RKS System
 Tera Type: Normal
@@ -6988,7 +10868,7 @@ Tera Type: Normal
 - Parting Shot
 
 === Sirfetch’d ===
-=== Default Set ===
+=== Default ===
 Sirfetch’d @ Choice Band
 Ability: Scrappy
 Tera Type: Normal
@@ -6998,7 +10878,7 @@ Tera Type: Normal
 - Knock Off
 
 === Slurpuff ===
-=== Default Set ===
+=== Default ===
 Slurpuff @ Sitrus Berry
 Ability: Unburden
 Tera Type: Normal
@@ -7008,7 +10888,7 @@ Tera Type: Normal
 - Play Rough
 
 === Snorlax-Gmax ===
-=== Default Set ===
+=== Default ===
 Snorlax-Gmax @ Chesto Berry
 Ability: Thick Fat
 Tera Type: Normal
@@ -7018,7 +10898,7 @@ Tera Type: Normal
 - Earthquake
 
 === Solrock ===
-=== Default Set ===
+=== Default ===
 Solrock @ Leftovers
 Ability: Levitate
 Tera Type: Normal
@@ -7028,7 +10908,7 @@ Tera Type: Normal
 - Rock Slide
 
 === Stakataka ===
-=== Default Set ===
+=== Default ===
 Stakataka @ Air Balloon
 Ability: Beast Boost
 Tera Type: Normal
@@ -7040,7 +10920,7 @@ Adamant Nature
 - Stealth Rock
 
 === Starmie ===
-=== Default Set ===
+=== Default ===
 Starmie @ Choice Specs
 Ability: Analytic
 Tera Type: Normal
@@ -7050,7 +10930,7 @@ Tera Type: Normal
 - Rapid Spin
 
 === Steelix ===
-=== Default Set ===
+=== Default ===
 Steelix @ Leftovers
 Ability: Rock Head
 Tera Type: Normal
@@ -7060,7 +10940,7 @@ Tera Type: Normal
 - Heavy Slam
 
 === Stoutland ===
-=== Default Set ===
+=== Default ===
 Stoutland @ Choice Band
 Ability: Intimidate
 Tera Type: Normal
@@ -7070,7 +10950,7 @@ Tera Type: Normal
 - Superpower
 
 === Stunfisk ===
-=== Default Set ===
+=== Default ===
 Stunfisk @ Assault Vest
 Ability: Sand Veil
 Tera Type: Normal
@@ -7080,7 +10960,7 @@ Tera Type: Normal
 - Sludge Bomb
 
 === Stunfisk-Galar ===
-=== Default Set ===
+=== Default ===
 Stunfisk-Galar @ Leftovers
 Ability: Mimicry
 Tera Type: Normal
@@ -7090,7 +10970,7 @@ Tera Type: Normal
 - Stone Edge
 
 === Swoobat ===
-=== Default Set ===
+=== Default ===
 Swoobat @ Focus Sash
 Ability: Simple
 Tera Type: Normal
@@ -7102,7 +10982,7 @@ Adamant Nature
 - Roost
 
 === Tangrowth ===
-=== Default Set ===
+=== Default ===
 Tangrowth @ Assault Vest
 Ability: Regenerator
 Tera Type: Normal
@@ -7112,7 +10992,7 @@ Tera Type: Normal
 - Leech Seed
 
 === TapuBulu ===
-=== Default Set ===
+=== Default ===
 TapuBulu @ Choice Band
 Ability: Grassy Surge
 Tera Type: Normal
@@ -7122,7 +11002,7 @@ Tera Type: Normal
 - Megahorn
 
 === TapuFini ===
-=== Default Set ===
+=== Default ===
 TapuFini @ Leftovers
 Ability: Misty Surge
 Tera Type: Normal
@@ -7134,7 +11014,7 @@ Adamant Nature
 - Surf
 
 === TapuKoko ===
-=== Default Set ===
+=== Default ===
 TapuKoko @ Choice Specs
 Ability: Electric Surge
 Tera Type: Normal
@@ -7146,7 +11026,7 @@ Adamant Nature
 - Substitute
 
 === TapuLele ===
-=== Default Set ===
+=== Default ===
 TapuLele @ Choice Scarf
 Ability: Psychic Surge
 Tera Type: Normal
@@ -7158,7 +11038,7 @@ Adamant Nature
 - Psychic
 
 === Thievul ===
-=== Default Set ===
+=== Default ===
 Thievul @ Choice Specs
 Ability: Stakeout
 Tera Type: Normal
@@ -7168,7 +11048,7 @@ Tera Type: Normal
 - Nasty Plot
 
 === Throh ===
-=== Default Set ===
+=== Default ===
 Throh @ Chesto Berry
 Ability: Guts
 Tera Type: Normal
@@ -7178,7 +11058,7 @@ Tera Type: Normal
 - Knock Off
 
 === Togedemaru ===
-=== Default Set ===
+=== Default ===
 Togedemaru @ Choice Band
 Ability: Iron Barbs
 Tera Type: Normal
@@ -7188,7 +11068,7 @@ Tera Type: Normal
 - U-turn
 
 === Togekiss ===
-=== Default Set ===
+=== Default ===
 Togekiss @ Choice Scarf
 Ability: Serene Grace
 Tera Type: Normal
@@ -7200,7 +11080,7 @@ Adamant Nature
 - Nasty Plot
 
 === Toxtricity-Low-Key ===
-=== Default Set ===
+=== Default ===
 Toxtricity-Low-Key @ Choice Scarf
 Ability: Punk Rock
 Tera Type: Normal
@@ -7212,7 +11092,7 @@ Adamant Nature
 - Volt Switch
 
 === Turtonator ===
-=== Default Set ===
+=== Default ===
 Turtonator @ Heavy-Duty Boots
 Ability: Shell Armor
 Tera Type: Normal
@@ -7222,7 +11102,7 @@ Tera Type: Normal
 - Fire Blast
 
 === Type:Null ===
-=== Default Set ===
+=== Default ===
 Type:Null @ Eviolite
 Ability: Battle Armor
 Tera Type: Normal
@@ -7232,7 +11112,7 @@ Tera Type: Normal
 - Sleep Talk
 
 === Tyrantrum ===
-=== Default Set ===
+=== Default ===
 Tyrantrum @ Choice Band
 Ability: Rock Head
 Tera Type: Normal
@@ -7242,7 +11122,7 @@ Tera Type: Normal
 - Head Smash
 
 === Unfezant ===
-=== Default Set ===
+=== Default ===
 Unfezant @ Scope Lens
 Ability: Super Luck
 Tera Type: Normal
@@ -7252,7 +11132,7 @@ Tera Type: Normal
 - Roost
 
 === Urshifu-Gmax ===
-=== Default Set ===
+=== Default ===
 Urshifu-Gmax @ Leftovers
 Ability: Unseen Fist
 Tera Type: Normal
@@ -7262,7 +11142,7 @@ Tera Type: Normal
 - Wicked Blow
 
 === Urshifu-Rapid-Strike-Gmax ===
-=== Default Set ===
+=== Default ===
 Urshifu-Rapid-Strike-Gmax @ Choice Band
 Ability: Unseen Fist
 Tera Type: Normal
@@ -7272,7 +11152,7 @@ Tera Type: Normal
 - Surging Strikes
 
 === Vanilluxe ===
-=== Default Set ===
+=== Default ===
 Vanilluxe @ Assault Vest
 Ability: Snow Warning
 Tera Type: Normal
@@ -7282,7 +11162,7 @@ Tera Type: Normal
 - Flash Cannon
 
 === Victini ===
-=== Default Set ===
+=== Default ===
 Victini @ Assault Vest
 Ability: Victory Star
 Tera Type: Normal
@@ -7292,7 +11172,7 @@ Tera Type: Normal
 - Glaciate
 
 === Wailord ===
-=== Default Set ===
+=== Default ===
 Wailord @ Choice Specs
 Ability: Oblivious
 Tera Type: Normal
@@ -7304,7 +11184,7 @@ Adamant Nature
 - Water Spout
 
 === Walrein ===
-=== Default Set ===
+=== Default ===
 Walrein @ Leftovers
 Ability: Thick Fat
 Tera Type: Normal
@@ -7316,7 +11196,7 @@ Adamant Nature
 - Toxic
 
 === Wishiwashi ===
-=== Default Set ===
+=== Default ===
 Wishiwashi @ Choice Specs
 Ability: Schooling
 Tera Type: Normal
@@ -7326,7 +11206,7 @@ Tera Type: Normal
 - Scald
 
 === Wobbuffet ===
-=== Default Set ===
+=== Default ===
 Wobbuffet @ Sitrus Berry
 Ability: Shadow Tag
 Tera Type: Normal
@@ -7338,7 +11218,7 @@ Adamant Nature
 - Mirror Coat
 
 === Xatu ===
-=== Default Set ===
+=== Default ===
 Xatu @ Heavy-Duty Boots
 Ability: Magic Bounce
 Tera Type: Normal
@@ -7350,7 +11230,7 @@ Adamant Nature
 - Teleport
 
 === Xerneas ===
-=== Default Set ===
+=== Default ===
 Xerneas @ Power Herb
 Ability: Fairy Aura
 Tera Type: Normal
@@ -7362,7 +11242,7 @@ Adamant Nature
 - Psyshock
 
 === Xurkitree ===
-=== Default Set ===
+=== Default ===
 Xurkitree @ Blunder Policy
 Ability: Beast Boost
 Tera Type: Normal
@@ -7374,7 +11254,7 @@ Adamant Nature
 - Thunderbolt
 
 === Yveltal ===
-=== Default Set ===
+=== Default ===
 Yveltal @ Assault Vest
 Ability: Dark Aura
 Tera Type: Normal
@@ -7384,7 +11264,7 @@ Tera Type: Normal
 - Oblivion Wing
 
 === Zeraora ===
-=== Default Set ===
+=== Default ===
 Zeraora @ Assault Vest
 Ability: Volt Absorb
 Tera Type: Normal
@@ -7394,7 +11274,7 @@ Tera Type: Normal
 - Grass Knot
 
 === Zygarde ===
-=== Default Set ===
+=== Default ===
 Zygarde @ Leftovers
 Ability: Power Construct
 Tera Type: Normal
@@ -7404,7 +11284,7 @@ Tera Type: Normal
 - Thousand Arrows
 
 === Zygarde-10% ===
-=== Default Set ===
+=== Default ===
 Zygarde-10% @ Choice Band
 Ability: Aura Break
 Tera Type: Normal
@@ -7432,6 +11312,16 @@ Tera Type: Normal
 - Knock Off
 - Play Rough
 - Pursuit
+
+=== Absol-Mega ===
+=== Setup Sweeper ===
+Absol-Mega @ Absolite
+Ability: Justified
+Tera Type: Normal
+- Knock Off
+- Play Rough
+- Sucker Punch
+- Superpower
 
 === Aerodactyl-Mega ===
 === Fast Attacker ===
@@ -7487,6 +11377,18 @@ Adamant Nature
 - Focus Blast
 - Rest
 
+=== Ampharos-Mega ===
+=== Bulky Attacker ===
+Ampharos-Mega @ Ampharosite
+Ability: Static
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Agility
+- Dragon Pulse
+- Focus Blast
+- Thunderbolt
+
 === Audino-Mega ===
 === Staller ===
 Audino-Mega @ Audinite
@@ -7498,6 +11400,18 @@ Adamant Nature
 - Protect
 - Toxic
 - Wish
+
+=== Audino-Mega ===
+=== Bulky Support ===
+Audino-Mega @ Audinite
+Ability: Regenerator
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Dazzling Gleam
+- Fire Blast
+- Protect
 
 === Banette-Mega ===
 === Fast Support ===
@@ -7512,6 +11426,18 @@ Tera Type: Normal
 === Beautifly ===
 === Z-Move user ===
 Beautifly @ Buginium Z
+Ability: Swarm
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Air Cutter
+- Bug Buzz
+- Hidden Power Ground
+- Quiver Dance
+
+=== Beautifly ===
+=== Setup Sweeper ===
+Beautifly @ Leftovers
 Ability: Swarm
 Tera Type: Normal
 EVs: 0 ATK
@@ -7540,6 +11466,16 @@ Tera Type: Normal
 - Knock Off
 - Poison Jab
 - Swords Dance
+
+=== Beedrill-Mega ===
+=== Fast Attacker ===
+Beedrill-Mega @ Beedrillite
+Ability: Swarm
+Tera Type: Normal
+- Drill Run
+- Knock Off
+- Poison Jab
+- U-turn
 
 === Bibarel ===
 === Setup Sweeper ===
@@ -7595,6 +11531,16 @@ Tera Type: Normal
 - Power Whip
 - Sleep Powder
 
+=== Carnivine ===
+=== Bulky Setup ===
+Carnivine @ Leftovers
+Ability: Levitate
+Tera Type: Normal
+- Knock Off
+- Power Whip
+- Swords Dance
+- Synthesis
+
 === Castform ===
 === Bulky Attacker ===
 Castform @ Assault Vest
@@ -7629,6 +11575,18 @@ Adamant Nature
 - Roost
 - Solar Beam
 
+=== Charizard-Mega-Y ===
+=== Bulky Attacker ===
+Charizard-Mega-Y @ Charizardite Y
+Ability: Blaze
+Tera Type: Normal
+EVs: 81 HP / 0 ATK
+Adamant Nature
+- Dragon Pulse
+- Fire Blast
+- Roost
+- Solar Beam
+
 === Chatot ===
 === Setup Sweeper ===
 Chatot @ Life Orb
@@ -7640,6 +11598,18 @@ Adamant Nature
 - Chatter
 - Heat Wave
 - Nasty Plot
+
+=== Chatot ===
+=== Wallbreaker ===
+Chatot @ Choice Specs
+Ability: Tangled Feet
+Tera Type: Normal
+EVs: 81 HP
+Adamant Nature
+- Boomburst
+- Chatter
+- Heat Wave
+- Hidden Power Ground
 
 === Delcatty ===
 === Fast Support ===
@@ -7671,6 +11641,18 @@ Tera Type: Normal
 - Roost
 - Toxic
 
+=== Dustox ===
+=== Bulky Setup ===
+Dustox @ Black Sludge
+Ability: Shield Dust
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Bug Buzz
+- Hidden Power Ground
+- Quiver Dance
+- Roost
+
 === Fearow ===
 === Setup Sweeper ===
 Fearow @ Scope Lens
@@ -7679,6 +11661,16 @@ Tera Type: Normal
 - Drill Peck
 - Drill Run
 - Focus Energy
+- Return
+
+=== Fearow ===
+=== Wallbreaker ===
+Fearow @ Choice Band
+Ability: Sniper
+Tera Type: Normal
+- Double-Edge
+- Drill Peck
+- Drill Run
 - Return
 
 === Floette-Eternal ===
@@ -7702,6 +11694,16 @@ Tera Type: Normal
 - Return
 - Thunder Wave
 - Toxic
+
+=== Furfrou ===
+=== Staller ===
+Furfrou @ Chesto Berry
+Ability: Fur Coat
+Tera Type: Normal
+- Cotton Guard
+- Rest
+- Return
+- Substitute
 
 === Gallade-Mega ===
 === Setup Sweeper ===
@@ -7733,6 +11735,16 @@ Tera Type: Normal
 - Fire Blast
 - Stealth Rock
 
+=== Garchomp-Mega ===
+=== Setup Sweeper ===
+Garchomp-Mega @ Garchompite
+Ability: Rough Skin
+Tera Type: Normal
+- Earthquake
+- Fire Fang
+- Outrage
+- Stone Edge
+
 === Gardevoir-Mega ===
 === Setup Sweeper ===
 Gardevoir-Mega @ Gardevoirite
@@ -7745,6 +11757,18 @@ Adamant Nature
 - Focus Blast
 - Hyper Voice
 
+=== Gardevoir-Mega ===
+=== Fast Attacker ===
+Gardevoir-Mega @ Gardevoirite
+Ability: Trace
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Focus Blast
+- Hyper Voice
+- Psyshock
+- Substitute
+
 === Gengar-Mega ===
 === Fast Attacker ===
 Gengar-Mega @ Gengarite
@@ -7755,6 +11779,18 @@ Adamant Nature
 - Destiny Bond
 - Disable
 - Focus Blast
+- Shadow Ball
+
+=== Gengar-Mega ===
+=== Fast Support ===
+Gengar-Mega @ Gengarite
+Ability: Cursed Body
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Disable
+- Perish Song
+- Protect
 - Shadow Ball
 
 === Glalie-Mega ===
@@ -7800,6 +11836,16 @@ Tera Type: Normal
 - Precipice Blades
 - Rock Polish
 - Swords Dance
+
+=== Groudon-Primal ===
+=== Bulky Support ===
+Groudon-Primal @ Red Orb
+Ability: Drought
+Tera Type: Normal
+- Dragon Tail
+- Lava Plume
+- Precipice Blades
+- Stealth Rock
 
 === Gyarados-Mega ===
 === Setup Sweeper ===
@@ -7853,6 +11899,16 @@ Tera Type: Normal
 - Fake Out
 - Seismic Toss
 
+=== Kangaskhan-Mega ===
+=== Setup Sweeper ===
+Kangaskhan-Mega @ Kangaskhanite
+Ability: Scrappy
+Tera Type: Normal
+- Body Slam
+- Crunch
+- Earthquake
+- Power-Up Punch
+
 === Kecleon ===
 === Fast Support ===
 Kecleon @ Assault Vest
@@ -7862,6 +11918,16 @@ Tera Type: Normal
 - Fake Out
 - Knock Off
 - Recover
+
+=== Kecleon ===
+=== Bulky Attacker ===
+Kecleon @ Leftovers
+Ability: Protean
+Tera Type: Normal
+- Drain Punch
+- Knock Off
+- Recover
+- Stealth Rock
 
 === Keldeo ===
 === Bulky Setup ===
@@ -7875,6 +11941,30 @@ Adamant Nature
 - Secret Sword
 - Substitute
 
+=== Keldeo ===
+=== Fast Attacker ===
+Keldeo @ Choice Scarf
+Ability: Justified
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Focus Blast
+- Hydro Pump
+- Scald
+- Secret Sword
+
+=== Keldeo ===
+=== Setup Sweeper ===
+Keldeo @ Life Orb
+Ability: Justified
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Hidden Power Electric
+- Hidden Power Flying
+- Hydro Pump
+
 === Kyogre-Primal ===
 === Setup Sweeper ===
 Kyogre-Primal @ Blue Orb
@@ -7886,6 +11976,18 @@ Adamant Nature
 - Ice Beam
 - Origin Pulse
 - Thunder
+
+=== Kyogre-Primal ===
+=== Bulky Setup ===
+Kyogre-Primal @ Blue Orb
+Ability: Drizzle
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Calm Mind
+- Rest
+- Scald
+- Sleep Talk
 
 === Latias-Mega ===
 === Bulky Attacker ===
@@ -7943,6 +12045,18 @@ Tera Type: Normal
 - Meteor Mash
 - Swords Dance
 
+=== Lucario-Mega ===
+=== Setup Sweeper ===
+Lucario-Mega @ Lucarionite
+Ability: Justified
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Aura Sphere
+- Flash Cannon
+- Nasty Plot
+- Vacuum Wave
+
 === Manectric-Mega ===
 === Fast Attacker ===
 Manectric-Mega @ Manectite
@@ -7987,6 +12101,16 @@ Tera Type: Normal
 - Hammer Arm
 - Meteor Mash
 
+=== Metagross-Mega ===
+=== Setup Sweeper ===
+Metagross-Mega @ Metagrossite
+Ability: Clear Body
+Tera Type: Normal
+- Earthquake
+- Hammer Arm
+- Hone Claws
+- Meteor Mash
+
 === Mewtwo-Mega-X ===
 === Setup Sweeper ===
 Mewtwo-Mega-X @ Mewtwonite X
@@ -8012,6 +12136,18 @@ Adamant Nature
 === Mothim ===
 === Z-Move user ===
 Mothim @ Buginium Z
+Ability: Tinted Lens
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Air Slash
+- Bug Buzz
+- Energy Ball
+- Quiver Dance
+
+=== Mothim ===
+=== Setup Sweeper ===
+Mothim @ Leftovers
 Ability: Tinted Lens
 Tera Type: Normal
 EVs: 0 ATK
@@ -8073,6 +12209,16 @@ Tera Type: Normal
 - Gunk Shot
 - Stone Edge
 
+=== Primeape ===
+=== Setup Sweeper ===
+Primeape @ Life Orb
+Ability: Defiant
+Tera Type: Normal
+- Close Combat
+- Earthquake
+- Gunk Shot
+- Hone Claws
+
 === Purugly ===
 === Fast Attacker ===
 Purugly @ Choice Band
@@ -8102,6 +12248,16 @@ Tera Type: Normal
 - Knock Off
 - Pursuit
 - Return
+
+=== Raticate-Alola ===
+=== Z-Move user ===
+Raticate-Alola @ Normalium Z
+Ability: Hustle
+Tera Type: Normal
+- Double-Edge
+- Knock Off
+- Sucker Punch
+- Swords Dance
 
 === Rayquaza-Mega ===
 === Fast Attacker ===
@@ -8145,6 +12301,16 @@ Tera Type: Normal
 - Outrage
 - Swords Dance
 
+=== Sceptile-Mega ===
+=== Fast Attacker ===
+Sceptile-Mega @ Sceptilite
+Ability: Overgrow
+Tera Type: Normal
+- Dragon Pulse
+- Earthquake
+- Focus Blast
+- Giga Drain
+
 === Scizor-Mega ===
 === Bulky Setup ===
 Scizor-Mega @ Scizorite
@@ -8152,6 +12318,16 @@ Ability: Light Metal
 Tera Type: Normal
 - Bug Bite
 - Bullet Punch
+- Knock Off
+- Roost
+
+=== Scizor-Mega ===
+=== Bulky Support ===
+Scizor-Mega @ Scizorite
+Ability: Light Metal
+Tera Type: Normal
+- Bullet Punch
+- Defog
 - Knock Off
 - Roost
 
@@ -8188,6 +12364,16 @@ Adamant Nature
 - Giga Drain
 - Hidden Power Ice
 - Nasty Plot
+
+=== Simisage ===
+=== Fast Attacker ===
+Simisage @ Life Orb
+Ability: Overgrow
+Tera Type: Normal
+- Gunk Shot
+- Hidden Power Ice
+- Knock Off
+- Leaf Storm
 
 === Simisear ===
 === Setup Sweeper ===
@@ -8263,6 +12449,16 @@ Tera Type: Normal
 - Protect
 - Quick Attack
 
+=== Swellow ===
+=== Wallbreaker ===
+Swellow @ Choice Specs
+Ability: Scrappy
+Tera Type: Normal
+- Boomburst
+- Heat Wave
+- Hurricane
+- U-turn
+
 === Tyranitar-Mega ===
 === Setup Sweeper ===
 Tyranitar-Mega @ Tyranitarite
@@ -8303,6 +12499,16 @@ Tera Type: Normal
 - Return
 - Super Fang
 
+=== Watchog ===
+=== Setup Sweeper ===
+Watchog @ Life Orb
+Ability: Analytic
+Tera Type: Normal
+- Hypnosis
+- Knock Off
+- Return
+- Stomping Tantrum
+
 === Wormadam ===
 === Setup Sweeper ===
 Wormadam @ Life Orb
@@ -8314,6 +12520,30 @@ Adamant Nature
 - Energy Ball
 - Giga Drain
 - Hidden Power Ground
+
+=== Wormadam ===
+=== Wallbreaker ===
+Wormadam @ Choice Specs
+Ability: Anticipation
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Bug Buzz
+- Hidden Power Ground
+- Hidden Power Rock
+- Leaf Storm
+
+=== Wormadam ===
+=== Staller ===
+Wormadam @ Leftovers
+Ability: Anticipation
+Tera Type: Normal
+EVs: 0 ATK
+Adamant Nature
+- Giga Drain
+- Hidden Power Ground
+- Protect
+- Toxic
 
 === Wormadam-Sandy ===
 === Staller ===

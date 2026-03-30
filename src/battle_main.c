@@ -2105,7 +2105,19 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
 
                 personalityValue += personalityHash << 8;
                 
-                const struct PokemonSets speciesSet = gPokemonSets[GetEvolvedSpeciesWithSet(species)];
+                //const struct PokemonSets speciesSet = gPokemonSets[GetEvolvedSpeciesWithSet(species)];
+                u16 evolvedSpeciesWithSet = GetEvolvedSpeciesWithSet(species);
+                const struct PokemonSets *setsForSpecies = gPokemonSets[evolvedSpeciesWithSet];
+                u16 setCount = 0;
+                for (u16 i = 0; i < MAX_SETS_PER_SPECIES; i++)
+                {
+                    if (setsForSpecies[i].species == 0)
+                        break;
+                
+                    setCount++;
+                }
+                u32 setIndex = RandomizeTrainerMonSet(seed, i, monsCount, evolvedSpeciesWithSet, setCount);
+                const struct PokemonSets speciesSet = setsForSpecies[setIndex];
                 CreateMon(&party[i], species, level, personalityValue, otId);
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &(speciesSet.item));
                 CustomTrainerPartyAssignMoves(&party[i], &partyData[monIndex], speciesSet);

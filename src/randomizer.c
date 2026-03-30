@@ -1011,6 +1011,27 @@ u16 RandomizeTrainerMon(u16 trainerId, u8 slot, u8 totalMons, u16 species, u32 l
     return species;
 }
 
+u32 RandomizeTrainerMonSet(u16 trainerId, u8 slot, u8 totalMons, u16 species, u16 numberOfSets)
+{
+    if (numberOfSets == 0)
+        return -1;
+    if (numberOfSets == 1)
+        return 0;
+
+    u32 seed;
+    seed = (u32)trainerId << 16;
+    seed |= (u32)totalMons << 8;
+    seed |= slot;
+    
+    struct Sfc32State state = RandomizerRandSeed(RANDOMIZER_REASON_TRAINER_PARTY, seed, species);
+
+    u32 minIndex = 0;
+    u32 maxIndex = numberOfSets - 1;
+    u32 resultIndex = RandomizerNextRange(&state, maxIndex - minIndex + 1) + minIndex;
+
+    return resultIndex;
+}
+
 u16 RandomizeFixedEncounterMon(u16 species, u8 mapNum, u8 mapGroup, u8 localId, u32 level)
 {
     if (RandomizerFeatureEnabled(RANDOMIZE_FIXED_MON))

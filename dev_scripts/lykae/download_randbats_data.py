@@ -1,9 +1,11 @@
 import requests
+import random
 
 GENS = [9, 8, 7]
 BASE_URL = "https://data.pkmn.cc/randbats/gen{}randombattle.json"
 
-# Download JSON for a generation
+OUTPUT_FILE = "dev_scripts/lykae/output/randbats_pokemon.sets"
+
 def download_gen(gen):
     url = BASE_URL.format(gen)
     print(f"Downloading Gen {gen}...")
@@ -11,7 +13,6 @@ def download_gen(gen):
     r.raise_for_status()
     return r.json()
 
-# Merge generations (newer gens override older)
 def merge_data():
     merged = {}
     for gen in GENS:
@@ -21,42 +22,38 @@ def merge_data():
                 merged[mon] = info
     return merged
 
-# Format Pokémon name
 def format_name(mon):
-    return mon.replace("-", "-").replace(" ", "")
+    return mon.replace(" ", "")
 
-# Select one role / set per Pokémon
-def select_role(mon_data):
-    if "roles" in mon_data and mon_data["roles"]:
-        # pick first role (deterministic)
-        role_name = list(mon_data["roles"].keys())[0]
-        role = mon_data["roles"][role_name]
-        role["role_name"] = role_name
-        return role
-    return mon_data
+def pick(lst, default="None", randomize=False):
+    if not lst:
+        return default
+    return random.choice(lst) if randomize else lst[0]
 
-def generate_set(mon, mon_data):
-    role = select_role(mon_data)
+def generate_set(mon, mon_data, role_name, role, randomize=False):
+    # Moves
+    moves_pool = role.get("moves", [])
+    if randomize and len(moves_pool) > 4:
+        moves = random.sample(moves_pool, 4)
+    else:
+        moves = moves_pool[:4]
 
-    moves = role.get("moves", [])
-    # Only keep the first 4 moves
-    moves = moves[:4]
+    # Ability / Item / Tera
+    ability = pick(role.get("abilities", mon_data.get("abilities", [])), randomize=randomize)
+    item = pick(role.get("items", mon_data.get("items", [])), randomize=randomize)
+    tera = pick(role.get("teraTypes", mon_data.get("randomBattleTeraTypes", ["Normal"])), randomize=randomize)
 
-    ability = role.get("abilities", mon_data.get("abilities", ["None"]))[0]
-    item = role.get("items", mon_data.get("items", ["None"]))[0]
-    tera = role.get("teraTypes", mon_data.get("randomBattleTeraTypes", ["Normal"]))[0]
-
-    # EVs and Nature
+    # EVs
     evs_dict = role.get("evs", {})
     evs = " / ".join(f"{v} {k.upper()}" for k, v in evs_dict.items()) if evs_dict else None
-    natures = ["Adamant", "Bold", "Timid", "Jolly"]
-    nature = natures[0] if evs_dict else None
 
-    set_name = role.get("role_name", "Default Set")
+    # Nature (basic fallback)
+    natures = ["Adamant", "Bold", "Timid", "Jolly", "Modest", "Impish", "Careful"]
+    nature = random.choice(natures) if randomize and evs_dict else (natures[0] if evs_dict else None)
 
     return {
         "mon": format_name(mon),
-        "set_name": set_name,
+        "set_name": role_name,
         "item": item,
         "ability": ability,
         "tera": tera,
@@ -65,27 +62,51 @@ def generate_set(mon, mon_data):
         "moves": moves
     }
 
-def write_sets(data):
-    with open("dev_scripts/lykae/output/randbats_pokemon.sets", "w", encoding="utf-8") as f:
+def write_sets(data, randomize=False):
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         for mon, mon_data in data.items():
-            s = generate_set(mon, mon_data)
-            f.write(f"=== {s['mon']} ===\n")
-            f.write(f"=== {s['set_name']} ===\n")
-            f.write(f"{s['mon']} @ {s['item']}\n")
-            f.write(f"Ability: {s['ability']}\n")
-            f.write(f"Tera Type: {s['tera']}\n")
-            if s['evs']:
-                f.write(f"EVs: {s['evs']}\n")
-            if s['nature']:
-                f.write(f"{s['nature']} Nature\n")
-            for move in s['moves']:
-                f.write(f"- {move}\n")
-            f.write("\n")
+
+            roles = mon_data.get("roles", {})
+
+            # If roles exist → multiple sets
+            if roles:
+                for role_name, role in roles.items():
+                    s = generate_set(mon, mon_data, role_name, role, randomize)
+
+                    write_block(f, s)
+
+            # Fallback (no roles)
+            else:
+                s = generate_set(mon, mon_data, "Default", mon_data, randomize)
+                write_block(f, s)
+
+def write_block(f, s):
+    f.write(f"=== {s['mon']} ===\n")
+    f.write(f"=== {s['set_name']} ===\n")
+    f.write(f"{s['mon']} @ {s['item']}\n")
+    f.write(f"Ability: {s['ability']}\n")
+    f.write(f"Tera Type: {s['tera']}\n")
+
+    if s['evs']:
+        f.write(f"EVs: {s['evs']}\n")
+
+    if s['nature']:
+        f.write(f"{s['nature']} Nature\n")
+
+    for move in s['moves']:
+        f.write(f"- {move}\n")
+
+    f.write("\n")
 
 def main():
     merged = merge_data()
-    write_sets(merged)
-    print("Done! File saved as pokemon.sets")
+
+    # Toggle this:
+    RANDOMIZE = False  # True = more Showdown-like randomness
+
+    write_sets(merged, randomize=RANDOMIZE)
+
+    print(f"Done! File saved as {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()

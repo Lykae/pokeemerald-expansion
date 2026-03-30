@@ -7456,7 +7456,16 @@ void ChangePokemonNicknameWithCallback(void (*callback)(void))
 
 bool32 DoesSpeciesHaveSet(u16 species)
 {
-    return (gPokemonSets[species].moves[0] > MOVE_POUND && gPokemonSets[species].ability > ABILITY_NONE) || species == SPECIES_EGG;
+    const struct PokemonSets *setsForSpecies = gPokemonSets[species];
+    for (u16 i = 0; i < MAX_SETS_PER_SPECIES; i++)
+    {
+        if (setsForSpecies[i].species == 0)
+            break;
+
+        if (setsForSpecies[i].ability != ABILITY_NONE)
+            return TRUE;
+    }
+    return FALSE;
 }
 
 bool32 DoesSpeciesOrEvolutionHaveSet(u16 species)
