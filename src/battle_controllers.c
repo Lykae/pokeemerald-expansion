@@ -2684,7 +2684,7 @@ void BtlController_HandlePrintString(enum BattlerId battler)
 
 void BtlController_HandlePrintStringPlayerOnly(enum BattlerId battler)
 {
-    if (IsOnPlayerSide(battler))
+    if (IsOnPlayerSide(battler) || GetBattlerSide(battler) == B_SIDE_OPPONENT)
         BtlController_HandlePrintString(battler);
     else
         BtlController_Complete(battler);

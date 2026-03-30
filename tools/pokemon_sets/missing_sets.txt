@@ -1,0 +1,387 @@
+Rattata A
+Raticate A
+Spearow
+Pikachu C
+Pikachu R
+Pikachu B
+Pikachu P
+Pikachu Ph
+Pikachu L
+Pikachu O C
+Nidoran F
+Nidorina
+Nidoran M
+Nidorino
+Vulpix
+Vulpix A
+Jigglypuff
+Zubat
+Golbat
+Oddish
+Paras
+Venonat
+Diglett
+Meowth A
+Meowth G
+Growlithe
+Poliwag
+Poliwhirl
+Abra
+Kadabra
+Machop
+Machoke
+Geodude
+Geodude A
+Graveler
+Graveler A
+Ponyta
+Ponyta G
+Rapidash G
+Slowpoke G
+Farfetch d G
+Seel
+Grimer
+Gastly
+Onix
+Drowzee
+Krabby
+Voltorb
+Voltorb H
+Exeggcute
+Cubone
+Marowak A
+Lickitung
+Tangela
+Horsea
+Goldeen
+Staryu
+Mr Mime G
+Tauros P
+Magikarp
+Eevee
+Porygon
+Omanyte
+Kabuto
+Dratini
+Chikorita
+Bayleef
+Cyndaquil
+Quilava
+Totodile
+Croconaw
+Sentret
+Hoothoot
+Ledyba
+Spinarak
+Pichu
+Cleffa
+Igglybuff
+Togepi
+Togetic
+Natu
+Mareep
+Flaaffy
+Marill
+Hoppip
+Skiploom
+Aipom
+Sunkern
+Yanma
+Wooper
+Wooper P
+Pineco
+Teddiursa
+Slugma
+Swinub
+Remoraid
+Houndour
+Phanpy
+Tyrogue
+Smoochum
+Larvitar
+Pupitar
+Grovyle
+Combusken
+Mudkip
+Poochyena
+Zigzagoon
+Zigzagoon G
+Linoone G
+Wurmple
+Silcoon
+Cascoon
+Lotad
+Lombre
+Seedot
+Nuzleaf
+Taillow
+Ralts
+Kirlia
+Surskit
+Shroomish
+Slakoth
+Nincada
+Whismur
+Loudred
+Makuhita
+Nosepass
+Skitty
+Aron
+Lairon
+Electrike
+Roselia
+Gulpin
+Carvanha
+Wailmer
+Spoink
+Vibrava
+Cacnea
+Swablu
+Barboach
+Baltoy
+Lileep
+Anorith
+Feebas
+Shuppet
+Duskull
+Wynaut
+Snorunt
+Spheal
+Sealeo
+Clamperl
+Bagon
+Shelgon
+Beldum
+Metang
+Turtwig
+Chimchar
+Piplup
+Starly
+Staravia
+Bidoof
+Kricketot
+Shinx
+Luxio
+Budew
+Cranidos
+Shieldon
+Burmy
+Burmy S
+Burmy T
+Wormadam S
+Wormadam T
+Combee
+Cherubi
+Shellos
+Shellos E
+Gastrodon E
+Buneary
+Glameow
+Chingling
+Bronzor
+Bonsly
+Mime Jr
+Happiny
+Munchlax
+Riolu
+Skorupi
+Finneon
+Mantyke
+Rotom F
+Snivy
+Tepig
+Oshawott
+Patrat
+Lillipup
+Herdier
+Purrloin
+Pansage
+Pansear
+Panpour
+Munna
+Pidove
+Tranquill
+Blitzle
+Roggenrola
+Boldore
+Woobat
+Tympole
+Palpitoad
+Sewaddle
+Swadloon
+Venipede
+Whirlipede
+Petilil
+Basculin B
+Basculin W
+Darumaka
+Darumaka G
+Darmanitan G
+Dwebble
+Yamask
+Yamask G
+Tirtouga
+Archen
+Trubbish
+Gothorita
+Solosis
+Ducklett
+Vanillite
+Vanillish
+Deerling
+Deerling S
+Deerling A
+Deerling W
+Sawsbuck S
+Sawsbuck A
+Sawsbuck W
+Karrablast
+Frillish
+Joltik
+Ferroseed
+Klink
+Klang
+Tynamo
+Elgyem
+Litwick
+Cubchoo
+Shelmet
+Stunfisk G
+Golett
+Deino
+Fennekin
+Froakie
+Greninja B
+Bunnelby
+Fletchling
+Scatterbug
+Spewpa
+Litleo
+Flabebe
+Flabebe Y
+Flabebe O
+Flabebe B
+Flabebe W
+Floette
+Floette Y
+Floette O
+Floette B
+Floette W
+Floette E
+Florges Y
+Florges O
+Florges B
+Florges W
+Skiddo
+Pancham
+Espurr
+Honedge
+Spritzee
+Swirlix
+Inkay
+Binacle
+Skrelp
+Clauncher
+Helioptile
+Tyrunt
+Amaura
+Goomy
+Sliggoo
+Phantump
+Pumpkaboo
+Pumpkaboo S
+Pumpkaboo L
+Pumpkaboo S P
+Gourgeist S
+Gourgeist L
+Gourgeist S P
+Bergmite
+Noibat
+Rowlet
+Litten
+Popplio
+Brionne
+Pikipek
+Trumbeak
+Yungoos
+Grubbin
+Crabrawler
+Oricorio P
+Oricorio S
+Rockruff
+Dewpider
+Fomantis
+Morelull
+Salandit
+Stufful
+Bounsweet
+Steenee
+Wimpod
+Minior O
+Minior Y
+Minior G
+Minior B
+Minior I
+Minior V
+Jangmo o
+Cosmog
+Cosmoem
+Magearna O
+Poipole
+Meltan
+Scorbunny
+Sobble
+Drizzile
+Skwovet
+Rookidee
+Corvisquire
+Blipbug
+Dottler
+Nickit
+Gossifleur
+Wooloo
+Yamper
+Rolycoly
+Applin
+Silicobra
+Arrokuda
+Toxel
+Sizzlipede
+Clobbopus
+Sinistea
+Hatenna
+Milcery
+Snom
+Cufant
+Dreepy
+Kubfu
+Sprigatito
+Floragato
+Lechonk
+Tarountula
+Pawmi
+Pawmo
+Tandemaus
+Maushold 3
+Fidough
+Smoliv
+Dolliv
+Squawkabilly B
+Squawkabilly Y
+Squawkabilly W
+Nacli
+Charcadet
+Tadbulb
+Capsakid
+Rellor
+Flittle
+Wiglett
+Greavard
+Cetoddle
+Tatsugiri D
+Tatsugiri S
+Dudunsparce 3
+Frigibax
+Gimmighoul
+Gimmighoul R
+Poltchageist
