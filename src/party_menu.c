@@ -5150,15 +5150,18 @@ void Task_AbilityChanger(u8 taskId)
     static const u8 doneText[] = _("{STR_VAR_1}'s ability became\n{STR_VAR_2}!{PAUSE_UNTIL_PRESS}");
     s16 *data = gTasks[taskId].data;
     static u8 newAbilityNum;
+    enum Ability abilitySlot0 = GetAbilityBySpecies(tSpecies, 0, FALSE);
+    enum Ability abilitySlot1 = GetAbilityBySpecies(tSpecies, 1, FALSE);
+    enum Ability abilitySlot2 = GetAbilityBySpecies(tSpecies, 2, FALSE);
 
     switch (tState)
     {
     case 0:
         // Can't use if all abilities are the same or if no species (egg etc.)
-        if ((gSpeciesInfo[tSpecies].abilities[0] == gSpeciesInfo[tSpecies].abilities[1] // If all abilities are the same
-            && gSpeciesInfo[tSpecies].abilities[0] == gSpeciesInfo[tSpecies].abilities[2]
-            && gSpeciesInfo[tSpecies].abilities[1] == gSpeciesInfo[tSpecies].abilities[2])
-            || (gSpeciesInfo[tSpecies].abilities[1] == 0 && gSpeciesInfo[tSpecies].abilities[2] == 0) // Or the 2nd and 3rd ability slots are empty
+        if ((abilitySlot0 == abilitySlot1 // If all abilities are the same
+            && abilitySlot0 == abilitySlot2
+            && abilitySlot1 == abilitySlot2)
+            || (abilitySlot1 == 0 && abilitySlot2 == 0) // Or the 2nd and 3rd ability slots are empty
             || !tSpecies) // Or the mon is an Egg etc.
         {
             gPartyMenuUseExitCallback = FALSE;
@@ -5171,13 +5174,13 @@ void Task_AbilityChanger(u8 taskId)
         gPartyMenuUseExitCallback = TRUE;
         GetMonNickname(&gPlayerParty[tMonId], gStringVar1);
         // If mon has 1st ability and 1st ability isn't the same as 2nd ability and 2nd ability isn't empty, offer 2nd ability
-        if (tAbilityNum == 0 && gSpeciesInfo[tSpecies].abilities[0] != gSpeciesInfo[tSpecies].abilities[1] && gSpeciesInfo[tSpecies].abilities[1] != 0)
+        if (tAbilityNum == 0 && abilitySlot0 != abilitySlot1 && abilitySlot1 != 0)
         {
             newAbilityNum = 1;
             StringCopy(gStringVar2, gAbilitiesInfo[GetAbilityBySpecies(tSpecies, newAbilityNum, FALSE)].name);
         }
         // If mon has 2nd or 3rd ability and 1st ability isn't empty, offer 1st ability
-        else if ((tAbilityNum == 1 || tAbilityNum == 2) && gSpeciesInfo[tSpecies].abilities[0] != 0)
+        else if ((tAbilityNum == 1 || tAbilityNum == 2) && abilitySlot0 != 0)
         {
             newAbilityNum = 0;
             StringCopy(gStringVar2, gAbilitiesInfo[GetAbilityBySpecies(tSpecies, newAbilityNum, FALSE)].name);
@@ -5211,7 +5214,7 @@ void Task_AbilityChanger(u8 taskId)
         case 1:
         case MENU_B_PRESSED:
             // Mon only has two abilities and the player didn't choose the first option, don't offer them a second option
-            if (gSpeciesInfo[tSpecies].abilities[0] == 0 || gSpeciesInfo[tSpecies].abilities[1] == 0 || gSpeciesInfo[tSpecies].abilities[2] == 0)
+            if (abilitySlot0 == 0 || abilitySlot1 == 0 || abilitySlot2 == 0)
             {
                 gPartyMenuUseExitCallback = FALSE;
                 PlaySE(SE_SELECT);
@@ -5229,9 +5232,9 @@ void Task_AbilityChanger(u8 taskId)
         break;
     case 3:
         // Can't use if all abilities are the same or if no species (egg etc.)
-        if ((gSpeciesInfo[tSpecies].abilities[0] == gSpeciesInfo[tSpecies].abilities[1]
-            && gSpeciesInfo[tSpecies].abilities[0] == gSpeciesInfo[tSpecies].abilities[2]
-            && gSpeciesInfo[tSpecies].abilities[1] == gSpeciesInfo[tSpecies].abilities[2])
+        if ((abilitySlot0 == abilitySlot1
+            && abilitySlot0 == abilitySlot2
+            && abilitySlot1 == abilitySlot2)
             || !tSpecies)
         {
             gPartyMenuUseExitCallback = FALSE;
