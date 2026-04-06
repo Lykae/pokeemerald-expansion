@@ -15972,6 +15972,21 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_AbilityCapsule,
         .iconPalette = gItemIconPalette_AbilityCapsule,
     },
+
+    [ITEM_REGIO_STONE] =
+    {
+        .name = ITEM_NAME("Regio-Stone"),
+        .price = 2000,
+        .description = sEvolutionStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+        .flingPower = 30,
+        .iconPic = gItemIcon_HardStone,
+        .iconPalette = gItemIconPalette_HardStone,
+    },
 };
 
 #undef ITEM_NAME

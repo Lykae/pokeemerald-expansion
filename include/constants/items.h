@@ -1061,8 +1061,11 @@ enum __attribute__((packed)) Item
     ITEM_WATERFALL_TOOL,
     ITEM_DIVE_TOOL,
 
-    //Ability Changer
+    // Ability Changer
     ITEM_ABILITY_CHANGER,
+
+    // Custom
+    ITEM_REGIO_STONE,
 
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,
